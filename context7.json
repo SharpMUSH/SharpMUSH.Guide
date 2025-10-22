@@ -1,0 +1,12 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "SharpMUSH",
+  "description": "PennMUSH emulation capable MUSH Server",
+  "folders": [],
+  "excludeFolders": [".github"],
+  "excludeFiles": [],
+  "rules": [
+    "SharpMUSH uses a DSL also referred to as 'softcode' for in-game programming", 
+    "Each Command sent to SharpMUSH must be on a new line."
+  ]
+}
