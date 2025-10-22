@@ -1,3 +1,4 @@
+# NAMEGRAB()
 # NAMEGRABALL()
 `namegrab(<dbref list>, <name>)`
 `namegraball(<dbref list>, <name>)`

@@ -1,3 +1,4 @@
+# OEMIT()
 # NSOEMIT()
 `oemit([<room>/]<object> [... <object>], <message>)`
 `nsoemit([<room>/]<object> [... <object>], <message>)`

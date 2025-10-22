@@ -1,3 +1,4 @@
+# NAND()
 # NCAND()
 `nand(<boolean1>[, ... , <booleanN>])`
 `ncand(<boolean1>[, ... , <booleanN>])`

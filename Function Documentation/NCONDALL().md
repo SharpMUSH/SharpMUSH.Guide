@@ -1,3 +1,6 @@
+# COND()
+# CONDALL()
+# NCOND()
 # NCONDALL()
 `cond(<cond>, <expr>[, ... , <condN>, <exprN>][, <default>])`
 `condall(<cond>, <expr>[, ... , <condN>, <exprN>][, <default>])`

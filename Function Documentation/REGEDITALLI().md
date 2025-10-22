@@ -1,3 +1,6 @@
+# REGEDIT()
+# REGEDITALL()
+# REGEDITI()
 # REGEDITALLI()
 `regedit(<string>, <regexp>, <replace>[, ... , <regexpN>, <replaceN>])`
 `regediti(<string>, <regexp>, <replace>[, ... , <regexpN>, <replaceN>])`

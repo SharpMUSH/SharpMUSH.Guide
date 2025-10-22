@@ -1,3 +1,6 @@
+# PEMIT()
+# NSPEMIT()
+# PROMPT()
 # NSPROMPT()
 `pemit(<object list|port numbers>, <message>)`
 `nspemit(<object list|port numbers>, <message>)`

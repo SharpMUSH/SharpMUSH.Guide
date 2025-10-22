@@ -1,3 +1,4 @@
+# ahelp
 # anews
 `ahelp [<topic>]`
 `anews [<topic>]`

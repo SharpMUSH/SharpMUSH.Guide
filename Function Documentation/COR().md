@@ -1,3 +1,4 @@
+# OR()
 # COR()
 `or(<boolean1>, <boolean2>[, ... , <booleanN>])`
 `cor(<boolean1>, <boolean2>[, ... , <booleanN>])`

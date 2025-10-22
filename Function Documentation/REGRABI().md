@@ -1,3 +1,5 @@
+# GRAB()
+# REGRAB()
 # REGRABI()
 `grab(<list>, <pattern>[, <delimiter>])`
 `regrab(<list>, <regexp>[, <delimiter>])`

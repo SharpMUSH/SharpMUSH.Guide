@@ -1,3 +1,4 @@
+# CONVSECS()
 # CONVUTCSECS()
 `convsecs(<seconds>[, <timezone>])`
 `convutcsecs(<seconds>)`

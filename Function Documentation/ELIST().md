@@ -1,3 +1,4 @@
+# ITEMIZE()
 # ELIST()
 `itemize(<list>[, <delim>[, <conjunction>[, <punctuation>]]])`
 `elist(<list>[, <conjunction>[, <delim>[, <osep>[, <punctuation>]]]])`

@@ -1,3 +1,6 @@
+# @leave
+# @oleave
+# @oxleave
 # @aleave
 `@leave <object>[=<message>]`
 `@oleave <object>[=<message>]`

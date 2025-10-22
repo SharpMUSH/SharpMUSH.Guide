@@ -1,3 +1,6 @@
+# LATTR()
+# LATTRP()
+# REGLATTR()
 # REGLATTRP()
 `lattr(<object>[/<attribute pattern>][, <output separator>])`
 `lattrp(<object>[/<attribute pattern>][, <output separator>])`

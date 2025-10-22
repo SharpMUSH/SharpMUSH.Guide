@@ -1,3 +1,4 @@
+# EMIT()
 # NSEMIT()
 `emit(<message>)`
 `nsemit(<message>)`

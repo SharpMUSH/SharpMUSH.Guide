@@ -1,3 +1,4 @@
+# ATAN()
 # ATAN2()
 `atan(<tangent>[, <angle type>])`
 `atan2(<number1>, <number2>[, <angle type>])`

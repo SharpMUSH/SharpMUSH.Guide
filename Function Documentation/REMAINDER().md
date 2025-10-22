@@ -1,3 +1,6 @@
+# MOD()
+# MODULO()
+# MODULUS()
 # REMAINDER()
 `modulo(<number>, <number>[, ..., <numberN>])`
 `remainder(<number>, <number>[, ..., <numberN>])`

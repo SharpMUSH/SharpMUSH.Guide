@@ -1,3 +1,4 @@
+# NOR()
 # NCOR()
 `nor(<boolean1>[, ... , <booleanN>])`
 `ncor(<boolean1>[, ... , <booleanN>])`

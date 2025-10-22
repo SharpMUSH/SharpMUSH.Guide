@@ -1,3 +1,4 @@
+# AVG()
 # MEAN()
 `mean(<number1>, <number2>[, ... , <numberN>])`
 

@@ -1,3 +1,4 @@
+# REMIT()
 # NSREMIT()
 `remit(<object list>, <message>)`
 `nsremit(<object list>, <message>)`

@@ -1,3 +1,4 @@
+# @describe
 # @desc
 `@describe <object>[=<description>]`
 

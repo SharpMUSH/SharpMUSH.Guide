@@ -1,3 +1,4 @@
+# IDLE()
 # IDLESECS()
 `idle(<player|descriptor>)`
 

@@ -1,3 +1,4 @@
+# FUNCTION LIST
 # FUNCTION TYPES
   Several major variants of functions are available. The help topics are listed below, together with a quick summary of the function type and some examples of that type of function.
 

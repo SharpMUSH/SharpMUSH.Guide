@@ -1,3 +1,5 @@
+# @receive
+# @oreceive
 # @areceive
 `@receive <recipient>[=<message>]`
 `@oreceive <recipient>[=<message>]`

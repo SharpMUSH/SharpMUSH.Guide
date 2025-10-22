@@ -1,3 +1,4 @@
+# STRFIRSTOF()
 # STRALLOF()
 `strfirstof(<expr>[, ... , <exprN>], <default>)`
 `strallof(<expr>[, ... , <exprN>], <osep>)`

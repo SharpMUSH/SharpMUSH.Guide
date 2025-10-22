@@ -1,3 +1,5 @@
+# @apayment
+# @payment
 # @opayment
 `@payment <object>[=<message>]`
 `@opayment <object>[=<message>]`

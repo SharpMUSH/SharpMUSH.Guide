@@ -1,3 +1,4 @@
+# AND()
 # CAND()
 `and(<boolean1>, <boolean2>[, ... , <booleanN>])`
 `cand(<boolean1>, <boolean2>[, ... , <booleanN>])`

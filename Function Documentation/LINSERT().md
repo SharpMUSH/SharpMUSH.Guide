@@ -1,3 +1,4 @@
+# INSERT()
 # LINSERT()
 `linsert(<list>, <position>, <new item>[, <delim>])`
 

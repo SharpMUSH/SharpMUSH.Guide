@@ -1,3 +1,4 @@
+# @adescribe
 # @odescribe
 `@odescribe <object>[=<message>]`
 `@adescribe <object>[=<action list>]`

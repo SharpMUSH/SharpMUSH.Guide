@@ -1,3 +1,5 @@
+# GRABALL()
+# REGRABALL()
 # REGRABALLI()
 `graball(<list>, <pattern>[, <delim>[, <osep>]])`
 `regraball(<list>, <regexp>[, <delim>[, <osep>]])`

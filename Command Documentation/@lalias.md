@@ -1,3 +1,4 @@
+# @ealias
 # @lalias
 `@ealias <object>[=<enter alias1>[; ... ; <enter aliasN>]]`
 `@lalias <object>[=<leave alias1>[; ... ; <leave aliasN>]]`

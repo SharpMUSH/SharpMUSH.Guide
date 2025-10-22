@@ -1,3 +1,5 @@
+# @asuccess
+# @success
 # @osuccess
 `@success <object>[=<message>]`
 `@osuccess <object>[=<message>]`

@@ -1,3 +1,4 @@
+# NVEXITS()
 # NEXITS()
 `nexits(<room>)`
 `nvexits(<room>)`

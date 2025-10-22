@@ -1,3 +1,4 @@
+# ZWHO()
 # ZMWHO()
 `zwho(<object>[, <viewer>])`
 `zmwho(<object>)`

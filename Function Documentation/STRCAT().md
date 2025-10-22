@@ -1,3 +1,4 @@
+# CAT()
 # STRCAT()
 `cat(<string>[, ... , <stringN>])`
 `strcat(<string1>[, ... , <stringN>])`

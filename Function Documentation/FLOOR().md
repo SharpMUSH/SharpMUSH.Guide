@@ -1,3 +1,5 @@
+# ROUND()
+# CEIL()
 # FLOOR()
 `round(<number>, <places>[, <pad>])`
 `floor(<number>)`

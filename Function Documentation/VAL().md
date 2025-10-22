@@ -1,3 +1,4 @@
+# TRUNC()
 # VAL()
 `trunc(<string>)`
 

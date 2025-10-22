@@ -1,3 +1,4 @@
+# @ulock
 # @uunlock
 `@ulock <object>[=<key>]`
 `@uunlock <object>`

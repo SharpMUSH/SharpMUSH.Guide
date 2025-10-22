@@ -1,3 +1,4 @@
+# SOUNDLIKE()
 # SOUNDSLIKE()
 `soundslike(<word>, <word>[, <hash type>])`
 `soundlike(<word>, <word>[, <hash type>])`

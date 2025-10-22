@@ -1,3 +1,6 @@
+# @move
+# @omove
+# @oxmove
 # @amove
 `@move <object>[=<message>]`
 `@omove <object>[=<message>]`

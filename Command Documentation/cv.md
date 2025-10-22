@@ -1,3 +1,5 @@
+# cd
+# ch
 # cv
 `cd <name> <password>`
 `ch <name> <password>`

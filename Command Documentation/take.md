@@ -1,3 +1,4 @@
+# get
 # take
 `get <object>`
 `get <box>'s <object>`

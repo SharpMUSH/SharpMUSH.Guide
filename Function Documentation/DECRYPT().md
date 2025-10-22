@@ -1,3 +1,4 @@
+# ENCRYPT()
 # DECRYPT()
 `encrypt(<string>, <password>[, <encode>])`
 `decrypt(<string>, <password>[, <encoded>])`

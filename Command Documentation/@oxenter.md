@@ -1,3 +1,6 @@
+# @aenter
+# @enter
+# @oenter
 # @oxenter
 `@enter <object>[=<message>]`
 `@oenter <object>[=<message>]`

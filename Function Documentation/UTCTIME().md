@@ -1,3 +1,4 @@
+# TIME()
 # UTCTIME()
 `time()`
 `time(<timezone>)`

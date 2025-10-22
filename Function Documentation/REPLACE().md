@@ -1,3 +1,4 @@
+# LREPLACE()
 # REPLACE()
 `lreplace(<list>, <position(s)>, <new item>[, <delimiter>[, <osep>]])`
 

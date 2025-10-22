@@ -1,3 +1,5 @@
+# @ahear
+# @amhear
 # @aahear
 `@ahear <object>[=<action list>]`
 `@amhear <object>[=<action list>]`

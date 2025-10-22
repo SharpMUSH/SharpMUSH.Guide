@@ -1,3 +1,4 @@
+# ORFLAGS()
 # ORLFLAGS()
 `orflags(<object>, <string of flag characters>)`
 `orlflags(<object>, <list of flag names>)`
