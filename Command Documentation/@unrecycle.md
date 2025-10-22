@@ -1,3 +1,4 @@
+# @undestroy
 # @unrecycle
 `@undestroy <object>`
 

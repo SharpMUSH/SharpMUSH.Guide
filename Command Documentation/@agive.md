@@ -1,3 +1,5 @@
+# @give
+# @ogive
 # @agive
 `@give <giver>[=<message>]`
 `@ogive <giver>[=<message>]`

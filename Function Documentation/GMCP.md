@@ -1,3 +1,4 @@
+# OOB()
 # GMCP
 `oob(<players>, <package>[, <message>])`
 

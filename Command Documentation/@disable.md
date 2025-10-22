@@ -1,3 +1,4 @@
+# @enable
 # @disable
 `@enable <option>`
 `@disable <option>`

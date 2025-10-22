@@ -1,3 +1,6 @@
+# WIDTH()
+# HEIGHT()
+# SCREENWIDTH
 # SCREENHEIGHT
 `width(<player|descriptor>[, <default>])`
 `height(<player|descriptor>[, <default>])`

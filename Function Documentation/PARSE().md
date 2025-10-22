@@ -1,3 +1,4 @@
+# ITER()
 # PARSE()
 `iter(<list>, <pattern>[, <delimiter>[, <output separator>]])`
 

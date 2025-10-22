@@ -1,3 +1,5 @@
+# ELEMENT()
+# MATCH()
 # MATCHALL()
 `match(<list>, <pattern>[, <delimiter>])`
 `matchall(<list>, <pattern>[, <delimiter>[, <output separator>]])`

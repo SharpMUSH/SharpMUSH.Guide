@@ -1,3 +1,6 @@
+# TEXTFILE()
+# TEXTENTRIES()
+# TEXTSEARCH()
 # DYNHELP()
 `textfile(<type>, <entry>)`
 `textentries(<type>, <pattern>[, <osep>])`

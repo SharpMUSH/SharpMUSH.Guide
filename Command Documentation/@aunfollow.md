@@ -1,3 +1,5 @@
+# @unfollow
+# @ounfollow
 # @aunfollow
 `@unfollow <object>[=<message>]`
 `@ounfollow <object>[=<message>]`

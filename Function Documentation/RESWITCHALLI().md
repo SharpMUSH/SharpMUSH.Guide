@@ -1,3 +1,6 @@
+# RESWITCH()
+# RESWITCHI()
+# RESWITCHALL()
 # RESWITCHALLI()
 `reswitch(<str>, <re1>, <list1>[, ... , <reN>, <listN>][, <default>])`
 `reswitchall(<str>, <re1>, <list1>[, ... , <reN>, <listN>][, <default>])`

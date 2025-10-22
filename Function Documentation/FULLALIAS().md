@@ -1,3 +1,4 @@
+# ALIAS()
 # FULLALIAS()
 `alias(<object>[, <new alias>])`
 `fullalias(<object>)`

@@ -1,3 +1,4 @@
+# @elock
 # @eunlock
 `@elock <object>[=<key>]`
 `@eunlock <object>`

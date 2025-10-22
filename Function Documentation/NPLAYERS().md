@@ -1,3 +1,4 @@
+# NVPLAYERS()
 # NPLAYERS()
 `nplayers(<object>)`
 `nvplayers(<object>)`

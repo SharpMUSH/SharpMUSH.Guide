@@ -1,3 +1,4 @@
+# ZEMIT()
 # NSZEMIT()
 `zemit(<zone>, <message>)`
 `nszemit(<zone>, <message>)`

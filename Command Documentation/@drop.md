@@ -1,3 +1,5 @@
+# @adrop
+# @odrop
 # @drop
 `@drop <object>[=<message>]`
 `@odrop <object>[=<message>]`

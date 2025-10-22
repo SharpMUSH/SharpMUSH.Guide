@@ -1,3 +1,6 @@
+# :
+# ;
+# pose
 # semipose
 `pose[/noeval] <action>`
 `:<action>`
@@ -16,4 +19,17 @@ See [pose2] for examples.
 - [say]
 - [@emit]
 - [@speechmod]
+# pose2
+Examples:
+```
+> pose waves.
+Bob waves.
+```
+
+```
+> :laughs out loud.
+Bob laughs out loud.
+> ;'s laughing on the inside.
+Bob's laughing on the inside.
+```
 

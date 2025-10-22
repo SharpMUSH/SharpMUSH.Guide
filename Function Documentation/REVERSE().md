@@ -1,3 +1,4 @@
+# FLIP()
 # REVERSE()
 `flip(<string>)`
 

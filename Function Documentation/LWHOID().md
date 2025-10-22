@@ -1,3 +1,4 @@
+# LWHO()
 # LWHOID()
 `lwho([<viewer>[, <status>]])`
 `lwhoid([<viewer>[, <status>]])`

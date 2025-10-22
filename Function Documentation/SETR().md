@@ -1,3 +1,4 @@
+# SETQ()
 # SETR()
 `setq(<register1>, <string1>[, ... , <registerN>, <stringN>])`
 `setr(<register1>, <string1>[, ... , <registerN>, <stringN>])`

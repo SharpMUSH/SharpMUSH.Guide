@@ -1,3 +1,5 @@
+# @follow
+# @ofollow
 # @afollow
 `@follow <object>[=<message>]`
 `@ofollow <object>[=<message>]`

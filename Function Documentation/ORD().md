@@ -1,3 +1,4 @@
+# CHR()
 # ORD()
 `chr(<number>)`
 `ord(<character>)`

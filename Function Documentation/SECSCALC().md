@@ -1,3 +1,4 @@
+# TIMECALC()
 # SECSCALC()
 `timecalc(<timestring>, <modifier>, ...)`
 `secscalc(<timestring>, <modifier>, ...)`

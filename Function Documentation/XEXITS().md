@@ -1,3 +1,4 @@
+# XVEXITS()
 # XEXITS()
 `xexits(<room>, <start>, <count>)`
 `xvexits(<room>, <start>, <count>)`

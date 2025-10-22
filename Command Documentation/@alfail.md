@@ -1,3 +1,5 @@
+# @lfail
+# @olfail
 # @alfail
 `@lfail <object>[=<message>]`
 `@olfail <object>[=<message>]`

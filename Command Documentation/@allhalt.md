@@ -1,3 +1,4 @@
+# @halt
 # @allhalt
 `@halt[/noeval] <object>[=<action list>]`
 `@halt/pid <pid>`

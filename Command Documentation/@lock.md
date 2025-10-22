@@ -1,3 +1,5 @@
+# LOCKING
+# LOCKS
 # @lock
 `@lock[/<switch>] <object>=<key>`
 

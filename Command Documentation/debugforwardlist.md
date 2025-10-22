@@ -1,3 +1,4 @@
+# @debugforwardlist
 # debugforwardlist
 `@debugforwardlist <object>[=<list of dbrefs>]`
 

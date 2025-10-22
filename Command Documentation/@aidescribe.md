@@ -1,3 +1,5 @@
+# @idescribe
+# @oidescribe
 # @aidescribe
 `@idescribe <object>[=<description>]`
 `@oidescribe <object>[=<message>]`

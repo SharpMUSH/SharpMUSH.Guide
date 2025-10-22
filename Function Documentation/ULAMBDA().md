@@ -1,3 +1,5 @@
+# U()
+# UFUN()
 # ULAMBDA()
 `ufun([<object>/]<attribute>[, <arg0>[, ... , <arg29>]])`
 `ulambda([<object>/]<attribute>[, <arg0>[, ... , <arg29>]])`

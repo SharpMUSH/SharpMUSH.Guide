@@ -1,3 +1,4 @@
+# LCSTR()
 # LCSTR2()
 `lcstr(<string>)`
 `lcstr2(<string>)`

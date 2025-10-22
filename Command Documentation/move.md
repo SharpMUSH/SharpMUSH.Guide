@@ -1,3 +1,5 @@
+# go
+# goto
 # move
 `go[to] <direction>`
 `go[to] home`

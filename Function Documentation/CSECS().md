@@ -1,3 +1,4 @@
+# CTIME()
 # CSECS()
 `ctime(<object>[, <utc>])`
 `csecs(<object>)`

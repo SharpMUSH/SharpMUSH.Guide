@@ -1,3 +1,6 @@
+# XATTR()
+# XATTRP()
+# REGXATTR()
 # REGXATTRP()
 `xattr(<object>[/<attribute pattern>], <start>, <count>[, <osep>])`
 `xattrp(<object>[/<attribute pattern>], <start>, <count>[, <osep>])`

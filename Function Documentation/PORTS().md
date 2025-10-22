@@ -1,3 +1,4 @@
+# LPORTS()
 # PORTS()
 `lports([<viewer>[, <status>]])`
 `ports(<player name>)`

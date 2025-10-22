@@ -1,3 +1,4 @@
+# VERSION()
 # NUMVERSION()
 `version()`
 `numversion()`

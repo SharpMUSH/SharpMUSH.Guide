@@ -1,3 +1,4 @@
+# @SOCKSET
 # SOCKSET
 `SOCKSET [<option>=<value>]`
 `@sockset [<descriptor>][=<option>, <value>[, ..., <optionN>, <valueN>]]`

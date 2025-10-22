@@ -1,3 +1,4 @@
+# @@()
 # NULL()
 `@@(<expression>)`
 `null(<expression>[, ... , <expression>])`

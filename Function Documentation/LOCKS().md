@@ -1,3 +1,4 @@
+# LLOCKS()
 # LOCKS()
 `llocks([<object>])`
 `locks(<object>)`

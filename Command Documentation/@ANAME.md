@@ -1,3 +1,4 @@
+# @ONAME
 # @ANAME
 `@oname <object>[=<message>]`
 `@aname <object>[=<action list>]`

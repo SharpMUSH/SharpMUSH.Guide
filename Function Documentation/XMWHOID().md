@@ -1,3 +1,6 @@
+# XWHO()
+# XWHOID()
+# XMWHO()
 # XMWHOID()
 `xwho([<looker>, ]<start>, <count>)`
 `xmwho(<start>, <count>)`

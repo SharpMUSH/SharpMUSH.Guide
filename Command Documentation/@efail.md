@@ -1,3 +1,5 @@
+# @aefail
+# @oefail
 # @efail
 `@efail <object>[=<message>]`
 `@oefail <object>[=<message>]`

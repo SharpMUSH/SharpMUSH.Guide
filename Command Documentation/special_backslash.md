@@ -1,3 +1,4 @@
+# @emit
 # \
 `@emit[/<switch>] <message>`
 `\<message>`

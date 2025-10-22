@@ -1,3 +1,4 @@
+# RANDWORD()
 # PICKRAND()
 `randword(<list>[, <delimiter>])`
 

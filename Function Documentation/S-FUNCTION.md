@@ -1,3 +1,4 @@
+# S()
 # S-FUNCTION
 `s(<string>)`
 

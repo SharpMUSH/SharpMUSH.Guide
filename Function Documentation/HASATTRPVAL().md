@@ -1,3 +1,6 @@
+# HASATTR()
+# HASATTRP()
+# HASATTRVAL()
 # HASATTRPVAL()
 `hasattr(<object>, <attribute>)`
 `hasattrp(<object>, <attribute>)`

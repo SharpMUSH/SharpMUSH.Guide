@@ -1,3 +1,4 @@
+# HOST()
 # HOSTNAME()
 `host(<player|descriptor>)`
 

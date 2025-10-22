@@ -1,3 +1,7 @@
+# DIGEST()
+# MD5
+# SHA1
+# CHECKSUM
 # HASH
 `digest(list)`
 `digest(<algorithm>, <string>)`

@@ -1,3 +1,5 @@
+# @buy
+# @abuy
 # @obuy
 `@buy <object>[=<message>]`
 `@obuy <object>[=<message>]`

@@ -1,3 +1,5 @@
+# @wall
+# @rwall
 # @wizwall
 `@wall[/emit][/noeval] <message>`
 `@rwall[/emit][/noeval] <message>`

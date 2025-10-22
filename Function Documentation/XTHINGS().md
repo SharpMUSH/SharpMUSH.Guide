@@ -1,3 +1,4 @@
+# XVTHINGS()
 # XTHINGS()
 `xthings(<object>, <start>, <count>)`
 `xvthings(<object>, <start>, <count>)`

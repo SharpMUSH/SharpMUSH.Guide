@@ -1,3 +1,5 @@
+# @zenter
+# @ozenter
 # @azenter
 `@zenter <object>[=<message>]`
 `@ozenter <object>[=<message>]`

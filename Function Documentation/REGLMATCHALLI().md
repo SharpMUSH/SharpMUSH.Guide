@@ -1,3 +1,6 @@
+# REGLMATCH()
+# REGLMATCHI()
+# REGLMATCHALL()
 # REGLMATCHALLI()
 `reglmatch(<list>, <regexp>[, <delimiter>])`
 `reglmatchi(<list>, <regexp>[, <delimiter>])`

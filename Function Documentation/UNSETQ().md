@@ -1,3 +1,4 @@
+# LISTQ()
 # UNSETQ()
 `listq([<pattern>])`
 `unsetq([<pattern1> [<pattern2> [...]]])`

@@ -1,3 +1,5 @@
+# TRIM()
+# TRIMPENN()
 # TRIMTINY()
 `trim(<string>[, <characters to trim>[, <trim style>]])`
 `trimpenn(<string>[, <characters to trim>[, <trim style>]])`

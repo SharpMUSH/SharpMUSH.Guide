@@ -1,3 +1,6 @@
+# @motd
+# @listmotd
+# @wizmotd
 # @rejectmotd
 `@motd[/<type>] <message>`
 `@motd/clear[/<type>]`

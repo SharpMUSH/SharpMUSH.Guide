@@ -1,3 +1,5 @@
+# DIV()
+# FLOORDIV()
 # FDIV()
 `div(<number1>, <number2>[, ... , <numberN>])`
 `fdiv(<number1>, <number2>[, ... , <numberN>])`

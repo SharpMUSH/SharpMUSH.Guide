@@ -1,3 +1,4 @@
+# NVTHINGS()
 # NTHINGS()
 `nthings(<object>)`
 `nvthings(<object>)`

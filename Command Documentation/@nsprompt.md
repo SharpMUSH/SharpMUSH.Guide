@@ -1,3 +1,9 @@
+# @nspemit
+# @nsemit
+# @nslemit
+# @nsremit
+# @nszemit
+# @nsoemit
 # @nsprompt
 `@nsemit[/<switch>] [<message>]`
 `@nslemit[/<switch>] <message>`

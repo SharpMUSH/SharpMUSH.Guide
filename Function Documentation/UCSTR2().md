@@ -1,3 +1,4 @@
+# UCSTR()
 # UCSTR2()
 `ucstr(<string>)`
 `ucstr2(<string>)`

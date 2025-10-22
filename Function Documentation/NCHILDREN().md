@@ -1,3 +1,9 @@
+# LSEARCH()
+# NLSEARCH()
+# SEARCH()
+# NSEARCH()
+# LSEARCHR()
+# CHILDREN()
 # NCHILDREN()
 `lsearch(<player>[, ... , <classN>, <restrictionN>])`
 `nlsearch(<player>[, ... , <classN>, <restrictionN>])`

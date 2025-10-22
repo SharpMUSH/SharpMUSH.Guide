@@ -1,3 +1,8 @@
+# NATTR()
+# NATTRP()
+# ATTRCNT()
+# ATTRPCNT()
+# REGNATTR()
 # REGNATTRP()
 `nattr(<object>[/<attribute pattern>])`
 `nattrp(<object>[/<attribute pattern>])`

@@ -1,3 +1,4 @@
+# CONVTIME()
 # CONVUTCTIME()
 `convtime(<time string>,[<timezone>])`
 `convutctime(<time string>)`

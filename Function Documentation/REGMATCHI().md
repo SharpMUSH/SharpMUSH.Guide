@@ -1,3 +1,4 @@
+# REGMATCH()
 # REGMATCHI()
   (Help text from TinyMUSH 2.2.4, with permission)
 `regmatch(<string>, <regexp>[, <register list>])`

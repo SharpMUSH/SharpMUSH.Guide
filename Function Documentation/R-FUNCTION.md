@@ -1,3 +1,5 @@
+# R()
+# %q
 # R-FUNCTION
 `r(<register>[, <type>])`
 

@@ -1,3 +1,6 @@
+# SWITCH()
+# SWITCHALL()
+# CASE()
 # CASEALL()
 `switch(<str>, <expr1>, <list1>[, ... , <exprN>, <listN>][, <default>])`
 `switchall(<str>, <expr1>, <list1>[, ... , <exprN>, <listN>][, <default>])`

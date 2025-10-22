@@ -1,3 +1,4 @@
+# NSLEMIT()
 # LEMIT()
 `lemit(<message>)`
 `nslemit(<message>)`

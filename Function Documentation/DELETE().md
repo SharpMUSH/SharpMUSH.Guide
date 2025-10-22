@@ -1,3 +1,4 @@
+# STRDELETE()
 # DELETE()
 `strdelete(<string>, <first>, <len>)`
 

@@ -1,3 +1,5 @@
+# @aufail
+# @oufail
 # @ufail
 `@ufail <object>=[<message>]`
 `@oufail <object>=[<message>]`

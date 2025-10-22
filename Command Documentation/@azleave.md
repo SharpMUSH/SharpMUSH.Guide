@@ -1,3 +1,5 @@
+# @zleave
+# @ozleave
 # @azleave
 `@zleave <object>[=<message>]`
 `@ozleave <object>[=<message>]`

@@ -1,3 +1,5 @@
+# @ause
+# @use
 # @ouse
 `@use <object>[=<message>]`
 `@ouse <object>[=<message>]`

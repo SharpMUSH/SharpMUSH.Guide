@@ -1,3 +1,9 @@
+# GREP()
+# REGREP()
+# WILDGREP()
+# GREPI()
+# REGREPI()
+# WILDGREPI()
 # PGREP()
 `grep(<object>, <attrs>, <substring>)`
 `wildgrep(<object>, <attrs>, <pattern>)`

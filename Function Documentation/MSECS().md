@@ -1,3 +1,4 @@
+# MTIME()
 # MSECS()
 `mtime(<object>[, <utc?>])`
 `msecs(<object>)`

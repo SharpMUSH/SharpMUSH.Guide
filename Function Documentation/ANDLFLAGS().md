@@ -1,3 +1,4 @@
+# ANDFLAGS()
 # ANDLFLAGS()
 `andflags(<object>, <string of flag letters>)`
 `andlflags(<object>, <list of flag names>)`

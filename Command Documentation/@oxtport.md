@@ -1,3 +1,6 @@
+# @atport
+# @tport
+# @otport
 # @oxtport
 `@tport <object>[=<message>]`
 `@otport <object>[=<message>]`

@@ -1,3 +1,4 @@
+# LSTATS()
 # STATS()
 `lstats([<player>])`
 

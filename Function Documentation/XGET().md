@@ -1,3 +1,4 @@
+# GET()
 # XGET()
 `get(<object>/<attribute>)`
 `xget(<object>, <attribute>)`

@@ -1,3 +1,5 @@
+# @afailure
+# @ofailure
 # @failure
 `@failure <object>[=<message>]`
 `@ofailure <object>[=<message>]`
