@@ -18,4 +18,15 @@ When including attribute contents, @include ignores any ^...: or $...: at the st
 The including environment (%0-%9) is available to the included actions. If arguments are provided to @include, they are substituted for the environment's %0, %1, etc. while the included action list is running. The environment is then restored after the @include.
 
 See [@include2].
+# @include2
+@include takes the following switches to alter its behaviour:
+- /nobreak: Prevents an @break/@assert in the included attribute from breaking the including action list.
+- /localize: Saves all q-registers before including the attribute, and restores them after including the attribute.
+- /clearregs: Clears all q-registers before including the attribute.
+
+
+## See Also
+- [@trigger]
+- [ufun()]
+- [@break]
 

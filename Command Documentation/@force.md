@@ -14,4 +14,48 @@ If `/inline` is given, `<object>` will run `<action list>` _now_, instead of bei
 `<dbref> <action list>`
 
 See [@force2].
+# @force2
+Normally, the action list is evaluated twice - once when @force is run, and again when `<object>` runs the action list. If the `/noeval` switch is given, `<action list>` is not evaluated until it is run by `<object>`.
+
+Examples:
+```
+> @create Lackey
+Created: Object #103
+> @force Lackey=go east
+Lackey goes east.
+Lackey has left.
+> @force #103=page Cyclonus=Hi there!
+Lackey pages: Hi there!
+> #103 page Cyclonus=Whee
+Lackey pages: Whee
+```
+
+See [@force3].
+# @force3
+Normally, @force creates a new queue entry. `@force/inline` does not.
+
+Examples:
+```
+> @create Lackey
+Created: Object #103
+> &order me=$order *:say Lackey, %0 ; @force Lackey=%0 ; say Done?
+> order pose salutes!
+You say, "Lackey, pose salutes!"
+You say, "Done?"
+Lackey salutes!
+```
+
+```
+> &order me=$order *:say Lackey, %0 ; @force/inline Lackey=%0 ; say Done?
+> order pose salutes!
+You say, "Lackey, pose salutes!"
+Lackey salutes!
+You say, "Done?"
+```
+
+
+## See Also
+- [PUPPET]
+- [DBREF]
+- [objeval()]
 
