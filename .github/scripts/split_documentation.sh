@@ -52,11 +52,23 @@ BEGIN {
   
   # Save previous entry if exists (this is a new entry, not a continuation)
   if (current_file != "" && content != "") {
-    # Clean filename for output, but preserve special chars like ], @, etc.
+    # Clean filename for output with readable special character names
     clean_filename = current_file
-    # Only replace truly problematic characters for Windows/Unix filenames
-    # Replace: < > : " / \ | ? * and actual whitespace (space/tab/newline)
-    gsub(/[<>:"/\\|?*[:space:]]/, "_", clean_filename)
+    
+    # Replace special characters with readable names
+    gsub(/:/, "special_colon", clean_filename)
+    gsub(/;/, "special_semicolon", clean_filename)
+    gsub(/\?/, "special_question", clean_filename)
+    gsub(/\*/, "special_asterisk", clean_filename)
+    gsub(/</, "special_less", clean_filename)
+    gsub(/>/, "special_greater", clean_filename)
+    gsub(/\|/, "special_pipe", clean_filename)
+    gsub(/"/, "special_quote", clean_filename)
+    gsub(/\//, "special_slash", clean_filename)
+    gsub(/\\/, "special_backslash", clean_filename)
+    
+    # Replace remaining problematic characters and whitespace
+    gsub(/[[:space:]]/, "_", clean_filename)
     gsub(/_+/, "_", clean_filename)
     gsub(/^_|_$/, "", clean_filename)
     
@@ -77,12 +89,12 @@ BEGIN {
   content = $0 "\n"
   next
 }
-/^#\b/ {
-  # Handle case where we have single # headers for aliases (like # @adescribe)
+/^#/ {
+  # Handle case where we have multiple # headers for the same content (aliases)
   if (current_file != "") {
-    # Extract the header name  
+    # Extract the header name
     header = $0
-    gsub(/^#[[:space:]]*/, "", header)  # Remove "# " and spaces
+    gsub(/^#+[[:space:]]*/, "", header)  # Remove any number of # and spaces
     
     # Get base name
     base_name = header
@@ -96,7 +108,21 @@ BEGIN {
     
     # This is an alias - save the current content with this new name too
     clean_alias = header
-    gsub(/[<>:"/\\|?*[:space:]]/, "_", clean_alias)
+    
+    # Replace special characters with readable names
+    gsub(/:/, "special_colon", clean_alias)
+    gsub(/;/, "special_semicolon", clean_alias)
+    gsub(/\?/, "special_question", clean_alias)
+    gsub(/\*/, "special_asterisk", clean_alias)
+    gsub(/</, "special_less", clean_alias)
+    gsub(/>/, "special_greater", clean_alias)
+    gsub(/\|/, "special_pipe", clean_alias)
+    gsub(/"/, "special_quote", clean_alias)
+    gsub(/\//, "special_slash", clean_alias)
+    gsub(/\\/, "special_backslash", clean_alias)
+    
+    # Replace remaining problematic characters and whitespace
+    gsub(/[[:space:]]/, "_", clean_alias)
     gsub(/_+/, "_", clean_alias)
     gsub(/^_|_$/, "", clean_alias)
     
@@ -125,7 +151,21 @@ END {
   # Save final entry
   if (current_file != "" && content != "") {
     clean_filename = current_file
-    gsub(/[<>:"/\\|?*[:space:]]/, "_", clean_filename)
+    
+    # Replace special characters with readable names
+    gsub(/:/, "special_colon", clean_filename)
+    gsub(/;/, "special_semicolon", clean_filename)
+    gsub(/\?/, "special_question", clean_filename)
+    gsub(/\*/, "special_asterisk", clean_filename)
+    gsub(/</, "special_less", clean_filename)
+    gsub(/>/, "special_greater", clean_filename)
+    gsub(/\|/, "special_pipe", clean_filename)
+    gsub(/"/, "special_quote", clean_filename)
+    gsub(/\//, "special_slash", clean_filename)
+    gsub(/\\/, "special_backslash", clean_filename)
+    
+    # Replace remaining problematic characters and whitespace
+    gsub(/[[:space:]]/, "_", clean_filename)
     gsub(/_+/, "_", clean_filename)
     gsub(/^_|_$/, "", clean_filename)
     
