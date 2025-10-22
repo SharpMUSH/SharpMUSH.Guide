@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # Final test of the corrected AWK logic
+# Navigate to repository root since this script is now in .github/
+cd "$(dirname "$0")/.."
+
 mkdir -p test-final/source test-final/output
 
 cat > test-final/source/test.md << 'EOF'
@@ -200,4 +203,4 @@ for file in test-final/output/*.md; do
 done
 
 # Cleanup
-rm -rf test-final test_final.sh
+rm -rf test-final
