@@ -1,0 +1,277 @@
+name: Sync Documentation from SharpMUSH
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    # Allow manual triggering
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/sync-documentation.yml'
+
+jobs:
+  sync-docs:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Setup Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+      
+      - name: Clone SharpMUSH repository
+        run: |
+          git clone https://github.com/SharpMUSH/SharpMUSH.git temp-sharpmush
+      
+      - name: Check if documentation exists
+        id: check_docs
+        run: |
+          if [ -d "temp-sharpmush/SharpMUSH.Documentation/SharpMUSH" ]; then
+            echo "docs_exist=true" >> $GITHUB_OUTPUT
+            echo "Documentation folder found"
+          else
+            echo "docs_exist=false" >> $GITHUB_OUTPUT
+            echo "Documentation folder not found"
+          fi
+      
+      - name: Process and organize documentation
+        if: steps.check_docs.outputs.docs_exist == 'true'
+        run: |
+          # Create temporary processing directory
+          mkdir -p temp-processed/{functions,commands,configuration}
+          
+          # Source directory
+          SOURCE_DIR="temp-sharpmush/SharpMUSH.Documentation/SharpMUSH"
+          
+          echo "Processing documentation from: $SOURCE_DIR"
+          
+          # Function to split documentation file into individual entries
+          split_documentation() {
+            local source_file="$1"
+            local output_dir="$2"
+            local file_type="$3"
+            
+            if [ ! -f "$source_file" ]; then
+              echo "Warning: $source_file not found"
+              return 0
+            fi
+            
+            echo "Processing $file_type documentation from: $(basename "$source_file")"
+            
+            # Use awk to split the file by # headers
+            awk '
+            BEGIN { 
+              current_file = ""
+              content = ""
+              file_count = 0
+            }
+            /^# / {
+              # Save previous entry if exists
+              if (current_file != "" && content != "") {
+                output_file = "'"$output_dir"'/" current_file ".md"
+                print content > output_file
+                close(output_file)
+                file_count++
+              }
+              
+              # Start new entry
+              header = $0
+              gsub(/^# /, "", header)  # Remove "# " prefix
+              
+              # Handle multiple commands on same line (e.g., "# @adescribe" and "# @odescribe")
+              # Split by newlines in case there are multiple headers
+              current_file = header
+              
+              # Clean filename - remove special characters and spaces
+              gsub(/[^a-zA-Z0-9@_-]/, "_", current_file)
+              gsub(/_+/, "_", current_file)  # Replace multiple underscores with single
+              gsub(/^_|_$/, "", current_file)  # Remove leading/trailing underscores
+              
+              content = $0 "\n"
+              next
+            }
+            /^#/ {
+              # Handle case where we have multiple # headers for the same content (aliases)
+              if (current_file != "") {
+                # This is an alias - save the current content with this new name too
+                header = $0
+                gsub(/^#+\s*/, "", header)  # Remove any number of # and spaces
+                
+                alias_file = header
+                gsub(/[^a-zA-Z0-9@_-]/, "_", alias_file)
+                gsub(/_+/, "_", alias_file)
+                gsub(/^_|_$/, "", alias_file)
+                
+                if (alias_file != current_file && alias_file != "") {
+                  output_file = "'"$output_dir"'/" alias_file ".md"
+                  print content $0 "\n" > output_file
+                  close(output_file)
+                  file_count++
+                }
+              }
+              content = content $0 "\n"
+              next
+            }
+            {
+              # Add line to current entry content
+              if (current_file != "") {
+                content = content $0 "\n"
+              }
+            }
+            END {
+              # Save final entry
+              if (current_file != "" && content != "") {
+                output_file = "'"$output_dir"'/" current_file ".md"
+                print content > output_file
+                close(output_file)
+                file_count++
+              }
+              print "Extracted " file_count " '"$file_type"' entries"
+            }' "$source_file"
+          }
+          
+          # Initialize counters
+          FUNCTION_COUNT=0
+          COMMAND_COUNT=0
+          CONFIG_COUNT=0
+          
+          # Process each documentation file
+          if [ -f "$SOURCE_DIR/pennfunc.md" ]; then
+            split_documentation "$SOURCE_DIR/pennfunc.md" "temp-processed/functions" "function"
+            FUNCTION_COUNT=$(find temp-processed/functions -type f -name "*.md" | wc -l)
+          else
+            echo "Warning: pennfunc.md not found"
+          fi
+          
+          if [ -f "$SOURCE_DIR/penncmd.md" ]; then
+            split_documentation "$SOURCE_DIR/penncmd.md" "temp-processed/commands" "command"
+            COMMAND_COUNT=$(find temp-processed/commands -type f -name "*.md" | wc -l)
+          else
+            echo "Warning: penncmd.md not found"
+          fi
+          
+          if [ -f "$SOURCE_DIR/pennconf.md" ]; then
+            split_documentation "$SOURCE_DIR/pennconf.md" "temp-processed/configuration" "configuration"
+            CONFIG_COUNT=$(find temp-processed/configuration -type f -name "*.md" | wc -l)
+          else
+            echo "Warning: pennconf.md not found"
+          fi
+          
+          echo "Processed entries:"
+          echo "- Functions: $FUNCTION_COUNT"
+          echo "- Commands: $COMMAND_COUNT"
+          echo "- Configuration: $CONFIG_COUNT"
+          
+          # Set output for next step
+          echo "function_count=$FUNCTION_COUNT" >> $GITHUB_OUTPUT
+          echo "command_count=$COMMAND_COUNT" >> $GITHUB_OUTPUT
+          echo "config_count=$CONFIG_COUNT" >> $GITHUB_OUTPUT
+        id: process_docs
+      
+      - name: Update documentation folders
+        if: steps.check_docs.outputs.docs_exist == 'true'
+        run: |
+          # Backup existing files by renaming them with .bak extension
+          echo "Backing up existing documentation..."
+          
+          if [ -d "Function Documentation" ]; then
+            find "Function Documentation" -name "*.md" -not -name "Function Guide.md" -exec mv {} {}.bak \;
+          fi
+          
+          if [ -d "Command Documentation" ]; then
+            find "Command Documentation" -name "*.md" -not -name "Command Guide.md" -exec mv {} {}.bak \;
+          fi
+          
+          if [ -d "Configuration Documentation" ]; then
+            find "Configuration Documentation" -name "*.md" -not -name "Config Guide.md" -exec mv {} {}.bak \;
+          fi
+          
+          # Copy new files
+          echo "Copying new documentation..."
+          
+          if [ -d "temp-processed/functions" ] && [ "$(ls -A temp-processed/functions)" ]; then
+            cp temp-processed/functions/* "Function Documentation/" 2>/dev/null || true
+          fi
+          
+          if [ -d "temp-processed/commands" ] && [ "$(ls -A temp-processed/commands)" ]; then
+            cp temp-processed/commands/* "Command Documentation/" 2>/dev/null || true
+          fi
+          
+          if [ -d "temp-processed/configuration" ] && [ "$(ls -A temp-processed/configuration)" ]; then
+            cp temp-processed/configuration/* "Configuration Documentation/" 2>/dev/null || true
+          fi
+          
+          # Remove backup files if copy was successful
+          find . -name "*.bak" -delete 2>/dev/null || true
+      
+      - name: Clean up temporary files
+        run: |
+          rm -rf temp-sharpmush temp-processed
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected"
+            git diff --cached --name-only
+          fi
+      
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          # Create commit message with details
+          COMMIT_MSG="docs: sync documentation from SharpMUSH/SharpMUSH"
+          
+          if [ "${{ steps.process_docs.outputs.function_count }}" != "" ]; then
+            COMMIT_MSG="$COMMIT_MSG
+
+          Updated documentation:
+          - Functions: ${{ steps.process_docs.outputs.function_count }} files
+          - Commands: ${{ steps.process_docs.outputs.command_count }} files  
+          - Configuration: ${{ steps.process_docs.outputs.config_count }} files
+          
+          Source: SharpMUSH/SharpMUSH repository
+          Date: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          fi
+          
+          git commit -m "$COMMIT_MSG"
+          git push origin main
+      
+      - name: Create summary
+        run: |
+          echo "## Documentation Sync Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.check_docs.outputs.docs_exist }}" == "false" ]; then
+            echo "❌ **Documentation folder not found** in SharpMUSH/SharpMUSH repository" >> $GITHUB_STEP_SUMMARY
+            echo "Expected path: \`SharpMUSH.Documentation/SharpMUSH\`" >> $GITHUB_STEP_SUMMARY
+          elif [ "${{ steps.check_changes.outputs.changes }}" == "false" ]; then
+            echo "✅ **No changes detected** - documentation is up to date" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "✅ **Documentation successfully synced**" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Updated Files:" >> $GITHUB_STEP_SUMMARY
+            echo "- **Functions**: ${{ steps.process_docs.outputs.function_count }} files" >> $GITHUB_STEP_SUMMARY
+            echo "- **Commands**: ${{ steps.process_docs.outputs.command_count }} files" >> $GITHUB_STEP_SUMMARY
+            echo "- **Configuration**: ${{ steps.process_docs.outputs.config_count }} files" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "📅 **Sync Date**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          fi
