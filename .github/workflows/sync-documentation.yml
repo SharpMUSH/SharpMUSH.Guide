@@ -2,8 +2,8 @@ name: Sync Documentation from SharpMUSH
 
 on:
   schedule:
-    # Run daily at 2 AM UTC
-    - cron: '0 2 * * *'
+    # Run daily at 6 AM UTC
+    - cron: '0 6 * * *'
   workflow_dispatch:
     # Allow manual triggering
   push:
@@ -47,220 +47,23 @@ jobs:
             echo "Documentation folder not found"
           fi
       
+      - name: Make scripts executable
+        if: steps.check_docs.outputs.docs_exist == 'true'
+        run: |
+          chmod +x .github/scripts/*.sh
+      
       - name: Process and organize documentation
         if: steps.check_docs.outputs.docs_exist == 'true'
         run: |
-          # Create temporary processing directory
-          mkdir -p temp-processed/{functions,commands,configuration}
-          
-          # Source directory
-          SOURCE_DIR="temp-sharpmush/SharpMUSH.Documentation/Helpfiles/SharpMUSH"
-          
-          echo "Processing documentation from: $SOURCE_DIR"
-          
-          # Function to split documentation file into individual entries
-          split_documentation() {
-            local source_file="$1"
-            local output_dir="$2"
-            local file_type="$3"
-            
-            if [ ! -f "$source_file" ]; then
-              echo "Warning: $source_file not found"
-              return 0
-            fi
-            
-            echo "Processing $file_type documentation from: $(basename "$source_file")"
-            
-            # Use awk to split the file by # headers
-            awk '
-            BEGIN { 
-              current_file = ""
-              base_current_file = ""
-              content = ""
-              file_count = 0
-            }
-            /^# / {
-              # Extract the header name
-              header = $0
-              gsub(/^# /, "", header)  # Remove "# " prefix
-              
-              # Get base name by removing trailing numbers
-              base_name = header
-              gsub(/[0-9]+$/, "", base_name)
-              
-              # Check if this is a numbered continuation
-              is_continuation = (current_file != "" && base_current_file != "" && base_name == base_current_file)
-              
-              if (is_continuation) {
-                # This is a continuation - add to current content without saving separately
-                content = content $0 "\n"
-                next
-              }
-              
-              # Save previous entry if exists (this is a new entry, not a continuation)
-              if (current_file != "" && content != "") {
-                # Clean filename for output, but preserve special chars like ]
-                clean_filename = current_file
-                # Only replace truly problematic characters, keep @, ], etc.
-                gsub(/[<>:"/\\|?*\s]/, "_", clean_filename)
-                gsub(/_+/, "_", clean_filename)
-                gsub(/^_|_$/, "", clean_filename)
-                
-                # Handle special case where filename becomes empty
-                if (clean_filename == "") {
-                  clean_filename = "special_" file_count
-                }
-                
-                output_file = "'"$output_dir"'/" clean_filename ".md"
-                print content > output_file
-                close(output_file)
-                file_count++
-              }
-              
-              # Start new entry
-              current_file = header
-              base_current_file = base_name
-              content = $0 "\n"
-              next
-            }
-            /^#/ {
-              # Handle case where we have multiple # headers for the same content (aliases)
-              if (current_file != "") {
-                # Extract the header name
-                header = $0
-                gsub(/^#+\s*/, "", header)  # Remove any number of # and spaces
-                
-                # Get base name
-                base_name = header
-                gsub(/[0-9]+$/, "", base_name)
-                
-                # Check if this is a numbered continuation
-                if (base_name == base_current_file) {
-                  content = content $0 "\n"
-                  next
-                }
-                
-                # This is an alias - save the current content with this new name too
-                clean_alias = header
-                gsub(/[<>:"/\\|?*\s]/, "_", clean_alias)
-                gsub(/_+/, "_", clean_alias)
-                gsub(/^_|_$/, "", clean_alias)
-                
-                if (clean_alias == "") {
-                  clean_alias = "special_alias_" file_count
-                }
-                
-                if (clean_alias != "" && clean_alias != current_file) {
-                  output_file = "'"$output_dir"'/" clean_alias ".md"
-                  # For aliases, include all content so far plus this header
-                  print content $0 "\n" > output_file
-                  close(output_file)
-                  file_count++
-                }
-              }
-              content = content $0 "\n"
-              next
-            }
-            {
-              # Add line to current entry content
-              if (current_file != "") {
-                content = content $0 "\n"
-              }
-            }
-            END {
-              # Save final entry
-              if (current_file != "" && content != "") {
-                clean_filename = current_file
-                gsub(/[<>:"/\\|?*\s]/, "_", clean_filename)
-                gsub(/_+/, "_", clean_filename)
-                gsub(/^_|_$/, "", clean_filename)
-                
-                if (clean_filename == "") {
-                  clean_filename = "special_final_" file_count
-                }
-                
-                output_file = "'"$output_dir"'/" clean_filename ".md"
-                print content > output_file
-                close(output_file)
-                file_count++
-              }
-              print "Extracted " file_count " '"$file_type"' entries"
-            }' "$source_file"
-          }
-          
-          # Initialize counters
-          FUNCTION_COUNT=0
-          COMMAND_COUNT=0
-          CONFIG_COUNT=0
-          
-          # Process each documentation file
-          if [ -f "$SOURCE_DIR/pennfunc.md" ]; then
-            split_documentation "$SOURCE_DIR/pennfunc.md" "temp-processed/functions" "function"
-            FUNCTION_COUNT=$(find temp-processed/functions -type f -name "*.md" | wc -l)
-          else
-            echo "Warning: pennfunc.md not found"
-          fi
-          
-          if [ -f "$SOURCE_DIR/penncmd.md" ]; then
-            split_documentation "$SOURCE_DIR/penncmd.md" "temp-processed/commands" "command"
-            COMMAND_COUNT=$(find temp-processed/commands -type f -name "*.md" | wc -l)
-          else
-            echo "Warning: penncmd.md not found"
-          fi
-          
-          if [ -f "$SOURCE_DIR/pennconf.md" ]; then
-            split_documentation "$SOURCE_DIR/pennconf.md" "temp-processed/configuration" "configuration"
-            CONFIG_COUNT=$(find temp-processed/configuration -type f -name "*.md" | wc -l)
-          else
-            echo "Warning: pennconf.md not found"
-          fi
-          
-          echo "Processed entries:"
-          echo "- Functions: $FUNCTION_COUNT"
-          echo "- Commands: $COMMAND_COUNT"
-          echo "- Configuration: $CONFIG_COUNT"
-          
-          # Set output for next step
-          echo "function_count=$FUNCTION_COUNT" >> $GITHUB_OUTPUT
-          echo "command_count=$COMMAND_COUNT" >> $GITHUB_OUTPUT
-          echo "config_count=$CONFIG_COUNT" >> $GITHUB_OUTPUT
+          # Run the modular processing script
+          ./.github/scripts/process_documentation.sh "temp-sharpmush/SharpMUSH.Documentation/Helpfiles/SharpMUSH" "temp-processed"
         id: process_docs
       
       - name: Update documentation folders
         if: steps.check_docs.outputs.docs_exist == 'true'
         run: |
-          # Backup existing files by renaming them with .bak extension
-          echo "Backing up existing documentation..."
-          
-          if [ -d "Function Documentation" ]; then
-            find "Function Documentation" -name "*.md" -not -name "Function Guide.md" -exec mv {} {}.bak \;
-          fi
-          
-          if [ -d "Command Documentation" ]; then
-            find "Command Documentation" -name "*.md" -not -name "Command Guide.md" -exec mv {} {}.bak \;
-          fi
-          
-          if [ -d "Configuration Documentation" ]; then
-            find "Configuration Documentation" -name "*.md" -not -name "Config Guide.md" -exec mv {} {}.bak \;
-          fi
-          
-          # Copy new files
-          echo "Copying new documentation..."
-          
-          if [ -d "temp-processed/functions" ] && [ "$(ls -A temp-processed/functions)" ]; then
-            cp temp-processed/functions/* "Function Documentation/" 2>/dev/null || true
-          fi
-          
-          if [ -d "temp-processed/commands" ] && [ "$(ls -A temp-processed/commands)" ]; then
-            cp temp-processed/commands/* "Command Documentation/" 2>/dev/null || true
-          fi
-          
-          if [ -d "temp-processed/configuration" ] && [ "$(ls -A temp-processed/configuration)" ]; then
-            cp temp-processed/configuration/* "Configuration Documentation/" 2>/dev/null || true
-          fi
-          
-          # Remove backup files if copy was successful
-          find . -name "*.bak" -delete 2>/dev/null || true
+          # Run the update script
+          ./.github/scripts/update_documentation_folders.sh
       
       - name: Clean up temporary files
         run: |
