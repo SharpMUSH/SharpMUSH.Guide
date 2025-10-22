@@ -79,47 +79,78 @@ jobs:
               file_count = 0
             }
             /^# / {
-              # Save previous entry if exists
-              if (current_file != "" && content != "") {
-                output_file = "'"$output_dir"'/" current_file ".md"
-                print content > output_file
-                close(output_file)
-                file_count++
-              }
-              
-              # Start new entry
+              # Extract header name
               header = $0
               gsub(/^# /, "", header)  # Remove "# " prefix
               
-              # Handle multiple commands on same line (e.g., "# @adescribe" and "# @odescribe")
-              # Split by newlines in case there are multiple headers
-              current_file = header
+              # Check if this is a numbered continuation (e.g., ]2, @dolist2, etc.)
+              is_continuation = 0
+              base_name = header
               
-              # Clean filename - remove special characters and spaces
-              gsub(/[^a-zA-Z0-9@_-]/, "_", current_file)
-              gsub(/_+/, "_", current_file)  # Replace multiple underscores with single
-              gsub(/^_|_$/, "", current_file)  # Remove leading/trailing underscores
+              # Remove trailing numbers to get base name
+              if (match(header, /^(.+?)([0-9]+)$/, arr)) {
+                base_name = arr[1]
+                # Check if we already have this base name as current_file
+                if (current_file != "" && current_file == base_name) {
+                  is_continuation = 1
+                }
+              }
               
-              content = $0 "\n"
+              if (!is_continuation) {
+                # Save previous entry if exists and this is not a continuation
+                if (current_file != "" && content != "") {
+                  output_file = "'"$output_dir"'/" current_file ".md"
+                  print content > output_file
+                  close(output_file)
+                  file_count++
+                }
+                
+                # Start new entry
+                current_file = base_name
+                
+                # Clean filename - remove special characters and spaces
+                gsub(/[^a-zA-Z0-9@_-]/, "_", current_file)
+                gsub(/_+/, "_", current_file)  # Replace multiple underscores with single
+                gsub(/^_|_$/, "", current_file)  # Remove leading/trailing underscores
+                
+                content = $0 "\n"
+              } else {
+                # This is a continuation, just add to current content
+                content = content $0 "\n"
+              }
               next
             }
             /^#/ {
               # Handle case where we have multiple # headers for the same content (aliases)
               if (current_file != "") {
-                # This is an alias - save the current content with this new name too
+                # Extract header name
                 header = $0
                 gsub(/^#+\s*/, "", header)  # Remove any number of # and spaces
                 
-                alias_file = header
-                gsub(/[^a-zA-Z0-9@_-]/, "_", alias_file)
-                gsub(/_+/, "_", alias_file)
-                gsub(/^_|_$/, "", alias_file)
+                # Check if this is a numbered continuation
+                is_continuation = 0
+                base_name = header
                 
-                if (alias_file != current_file && alias_file != "") {
-                  output_file = "'"$output_dir"'/" alias_file ".md"
-                  print content $0 "\n" > output_file
-                  close(output_file)
-                  file_count++
+                if (match(header, /^(.+?)([0-9]+)$/, arr)) {
+                  base_name = arr[1]
+                  if (current_file != "" && current_file == base_name) {
+                    is_continuation = 1
+                  }
+                }
+                
+                if (!is_continuation) {
+                  # This is an alias - save the current content with this new name too
+                  alias_file = base_name
+                  gsub(/[^a-zA-Z0-9@_-]/, "_", alias_file)
+                  gsub(/_+/, "_", alias_file)
+                  gsub(/^_|_$/, "", alias_file)
+                  
+                  if (alias_file != current_file && alias_file != "") {
+                    output_file = "'"$output_dir"'/" alias_file ".md"
+                    print content $0 "\n" > output_file
+                    close(output_file)
+                    file_count++
+                  }
                 }
               }
               content = content $0 "\n"
