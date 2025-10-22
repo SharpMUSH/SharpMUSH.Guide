@@ -63,7 +63,8 @@ jobs:
         if: steps.check_docs.outputs.docs_exist == 'true'
         run: |
           # Run the update script
-          ./.github/scripts/update_documentation_folders.sh
+          ./.github/scripts/update_documentation_folders.sh temp-processed
+
       
       - name: Clean up temporary files
         run: |
