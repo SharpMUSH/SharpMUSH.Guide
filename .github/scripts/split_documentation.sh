@@ -77,12 +77,12 @@ BEGIN {
   content = $0 "\n"
   next
 }
-/^#/ {
-  # Handle case where we have multiple # headers for the same content (aliases)
+/^#\b/ {
+  # Handle case where we have single # headers for aliases (like # @adescribe)
   if (current_file != "") {
-    # Extract the header name
+    # Extract the header name  
     header = $0
-    gsub(/^#+[[:space:]]*/, "", header)  # Remove any number of # and spaces
+    gsub(/^#[[:space:]]*/, "", header)  # Remove "# " and spaces
     
     # Get base name
     base_name = header
