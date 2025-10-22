@@ -39,7 +39,7 @@ jobs:
       - name: Check if documentation exists
         id: check_docs
         run: |
-          if [ -d "temp-sharpmush/SharpMUSH.Documentation/SharpMUSH" ]; then
+          if [ -d "temp-sharpmush/SharpMUSH.Documentation/Helpfiles/SharpMUSH" ]; then
             echo "docs_exist=true" >> $GITHUB_OUTPUT
             echo "Documentation folder found"
           else
@@ -54,7 +54,7 @@ jobs:
           mkdir -p temp-processed/{functions,commands,configuration}
           
           # Source directory
-          SOURCE_DIR="temp-sharpmush/SharpMUSH.Documentation/SharpMUSH"
+          SOURCE_DIR="temp-sharpmush/SharpMUSH.Documentation/Helpfiles/SharpMUSH"
           
           echo "Processing documentation from: $SOURCE_DIR"
           
@@ -262,7 +262,7 @@ jobs:
           
           if [ "${{ steps.check_docs.outputs.docs_exist }}" == "false" ]; then
             echo "❌ **Documentation folder not found** in SharpMUSH/SharpMUSH repository" >> $GITHUB_STEP_SUMMARY
-            echo "Expected path: \`SharpMUSH.Documentation/SharpMUSH\`" >> $GITHUB_STEP_SUMMARY
+            echo "Expected path: \`SharpMUSH.Documentation/Helpfiles/SharpMUSH\`" >> $GITHUB_STEP_SUMMARY
           elif [ "${{ steps.check_changes.outputs.changes }}" == "false" ]; then
             echo "✅ **No changes detected** - documentation is up to date" >> $GITHUB_STEP_SUMMARY
           else
