@@ -7,7 +7,6 @@
   "excludeFiles": [],
   "rules": [
     "SharpMUSH uses a DSL also referred to as 'softcode' for in-game programming", 
-    "Each Command sent to SharpMUSH must be on a new line.", 
     "Avoid functions with side-effects, favor commands and commandlists instead when manipulating data where possible"
   ]
 }
