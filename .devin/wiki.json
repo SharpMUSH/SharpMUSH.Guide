@@ -1,0 +1,8 @@
+{
+  "repo_notes": [
+        {
+            "content": "Only the *.md files should be analyzed and documented. Ignore all other file types. Ignore folders starting with a dot (`.`). The documentation is for SharpMUSH, which can be found here: [https://github.com/SharpMUSH/SharpMUSH] and here: [https://sharpmush.com/].",
+            "author": "Harry Cordewener"
+        }
+    ]
+}
