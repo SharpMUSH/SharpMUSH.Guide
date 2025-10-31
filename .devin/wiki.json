@@ -1,8 +1,164 @@
 {
   "repo_notes": [
+    {
+      "content": "Only the *.md files should be analyzed and documented.",
+      "author": "Harry Cordewener"
+    },
+    {
+      "content": "Ignore all other file types. - Ignore folders starting with a dot (`.`).",
+      "author": "Harry Cordewener"
+    },
+    {
+      "content": "The documentation is for SharpMUSH, which can be found here: [https://github.com/SharpMUSH/SharpMUSH] and here: [https://sharpmush.com/].",
+      "author": "Harry Cordewener"
+    },
+    {
+      "content": "Do not cover, nor document the SharpMUSH github submodule repo.",
+      "author": "Harry Cordewener"
+    },
+    {
+      "content": "Do not cover, nor document the automation for transforming documentation.",
+      "author": "Harry Cordewener"
+    },
+    {
+      "content": "Only focus on the *.md files that cover the actual softcode.",
+      "author": "Harry Cordewener"
+    }
+  ],
+  "pages": [
+    {
+      "title": "Overview",
+      "purpose": "Introduce the SharpMUSH.Guide repository, documenting the SharpMUSH project, and provide a high-level understanding of the architecture of the DSL language for SharpMUSH (also referred to as Softcode)",
+      "page_notes": [
         {
-            "content": "Only the *.md files should be analyzed and documented. Ignore all other file types. Ignore folders starting with a dot (`.`). The documentation is for SharpMUSH, which can be found here: [https://github.com/SharpMUSH/SharpMUSH] and here: [https://sharpmush.com/].",
-            "author": "Harry Cordewener"
+          "content": ""
         }
-    ]
+      ]
+    },
+    {
+      "title": "SharpMUSH Command Documentation",
+      "purpose": "Provide an overview of the SharpMUSH command system structure and the four main command categories documented in this repository",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "SharpMUSH Function Documentation",
+      "purpose": "Provide an overview of the SharpMUSH function system structure and categories documented in this repository",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "SharpMUSH Function List",
+      "purpose": "Provides a full list of functions and documentation.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "SharpMUSH Command List",
+      "purpose": "Provides a full list of commands and documentation.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "SharpMUSH Configuration Documentation",
+      "purpose": "Provide an overview of the SharpMUSH configuration options documented in this repository",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "@-ATTRIBUTES Commands",
+      "purpose": "Document the 60+ attribute commands that follow a three-version pattern (base, object-specific, action-specific) for setting messages and properties on objects",
+      "parent": "SharpMUSH Command Documentation",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "@-BUILDING Commands",
+      "purpose": "Detail the 27 building commands that manage object lifecycle, access control, and relationships within the MUD/MUSH environment",
+      "parent": "SharpMUSH Command Documentation",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "@-GENERAL Commands",
+      "purpose": "Explain the 40+ general utility commands covering programmatic control, communication, and system information",
+      "parent": "SharpMUSH Command Documentation",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "@-WIZARD Commands",
+      "purpose": "Document the 38+ administrative commands restricted to wizard/privileged users for system control, user management, and resource allocation",
+      "parent": "SharpMUSH Command Documentation",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Event-Driven Attributes",
+      "purpose": "Explain attributes that trigger actions based on events like connections, disconnections, name changes, and sound detection",
+      "parent": "SharpMUSH Command Documentation",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Object Interaction Attributes",
+      "purpose": "Document attributes that control interactions with objects including buying, dropping, describing, and cloning",
+      "parent": "SharpMUSH Command Documentation",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Special Commands and Modifiers",
+      "purpose": "Cover specialized commands including speech modification, suggestion systems, and the null comment operator",
+      "parent": "SharpMUSH Command Documentation",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Network and System Commands",
+      "purpose": "Document commands for HTTP operations, socket configuration, and daemon management",
+      "parent": "SharpMUSH Command Documentation",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    }
+  ]
 }
