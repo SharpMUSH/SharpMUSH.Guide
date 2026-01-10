@@ -9,7 +9,7 @@ The `&<attr>` and `@_<attr>` commands can be used to set or clear an attribute f
 ATTRIB_SET is the internal command which powers &attr and @_attr setting; it cannot be used directly, but can be restricted or @hook'd to change the behaviour of &attr/@_attr-setting.
 
 
-## See Also
+**See Also:**
 - [@set]
 - [attrib_set()]
 

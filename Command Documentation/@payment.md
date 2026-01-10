@@ -15,7 +15,7 @@ Example:
 ```
 
 
-## See Also
+**See Also:**
 - [give]
 - [@cost]
 - [buy]

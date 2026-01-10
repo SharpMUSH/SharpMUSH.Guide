@@ -10,6 +10,6 @@ A site admin can achieve the same effect by sending the MUSH process a kill -1 o
 @readcache does not load updates to the configuration files (mush.cnf, restrict.cnf, etc) - the game must be restarted with `@shutdown/reboot` to reload these.
 
 
-## See Also
+**See Also:**
 - [@shutdown]
 

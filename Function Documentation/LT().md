@@ -14,7 +14,7 @@ th lt(1,3,2)
 ```
 
 
-## See Also
+**See Also:**
 - [lte()]
 - [gt()]
 - [gte()]

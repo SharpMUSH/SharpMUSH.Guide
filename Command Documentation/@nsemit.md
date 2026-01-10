@@ -16,7 +16,7 @@
 These commands work like @emit, @lemit, @pemit, @prompt, @remit, @oemit, and @zemit, respectively, but will not include nospoof information if used by Wizards or someone with the Can_spoof @power. They are meant to be used by commands in the master room where the nospoof information is just useless noise. They take the same switches as their respective commands, with a few exceptions (`/spoof`, and for @nspemit, `/contents` and the admin-only `/port`).
 
 
-## See Also
+**See Also:**
 - [@emit]
 - [@lemit]
 - [@pemit]

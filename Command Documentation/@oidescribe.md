@@ -12,7 +12,7 @@ The @oidescribe attribute is shown to others inside `<object>` when someone look
 If there is no IDESCRIBE set for an object, those who enter or look inside it will see its @describe. In this case, others in the object will see nothing, and the @aidescribe will not be triggered. If you want to use @aidescribe without @idescribe, set @idescribe to a blank string, or to u(describe) to show the description.
 
 
-## See Also
+**See Also:**
 - [enter]
 - [@enter]
 - [ENTER_OK]

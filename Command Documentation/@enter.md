@@ -20,7 +20,7 @@ Example:
 ```
 
 
-## See Also
+**See Also:**
 - [enter]
 - [@ealias]
 - [leave]

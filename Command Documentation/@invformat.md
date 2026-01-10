@@ -11,7 +11,7 @@ You're holding: Red Ball, Pickle, and Piano
 ```
 
 
-## See Also
+**See Also:**
 - [inventory]
 - [@conformat]
 - [@exitformat]

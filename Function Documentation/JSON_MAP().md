@@ -9,7 +9,7 @@
 
   See [json_map2] for examples.
 
-## See Also
+**See Also:**
 - [json()]
 - [json_query()]
 

@@ -14,7 +14,7 @@ The `/me` switch boots all descriptors for the player using the command which ha
 Only admin and those with the "boot" power can @boot other players.
 
 
-## See Also
+**See Also:**
 - [QUIT]
 - [LOGOUT]
 

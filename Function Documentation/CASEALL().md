@@ -11,12 +11,12 @@
 
   switch() and switchall() use wildcard and lt/gt `<expr>`s, as described in [switch wildcards]. case() and caseall() do a case-sensitive exact match, like member() or comp(). In this case, $0-$9 will be set to the text that the nth wildcard character met.
 
-  If the string "#$" appears in the `<list>` to be evaluated, it will be replaced with the evaluated value of `<str>` /before/ evaluation of `<list>`. This is not done in case() and caseall(), for TinyMUSH 3 compatibility. Note that this replacement happens before evaluation, which makes it unsafe when `<str>` contains user input, and makes it unsuitable for use in nested switch()es. It is strongly recommended you use the %$`<n>` substitution or stext() function instead, which solves these problems.
+  If the string "#$" appears in the `<list>` to be evaluated, it will be replaced with the evaluated value of `<str>` /before/ evaluation of `<list>`. This is not done in case() and caseall(), for TinyMUSH 3 compatibility. Note that this replacement happens before evaluation, which makes it unsafe when `<str>` contains user input, and makes it unsuitable for use in nested switch()es. It is strongly recommended you use the %$`\<n\>` substitution or stext() function instead, which solves these problems.
 
   See [switch2] for examples.
 
 
-## See Also
+**See Also:**
 - [reswitch()]
 - [stext()]
 - [slev()]

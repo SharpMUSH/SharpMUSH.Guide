@@ -8,7 +8,7 @@
   The substitution %: returns the object id of the enactor.
 
 
-## See Also
+**See Also:**
 - [num()]
 - [csecs()]
 - [ctime()]

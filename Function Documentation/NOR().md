@@ -8,7 +8,7 @@
   Equivalent to not(or()) and not(cor()), but more efficient.
 
 
-## See Also
+**See Also:**
 - [and()]
 - [or()]
 - [xor()]

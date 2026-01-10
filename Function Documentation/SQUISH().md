@@ -13,6 +13,6 @@
 ```
 
 
-## See Also
+**See Also:**
 - [trim()]
 

@@ -6,7 +6,7 @@
   With two arguments, name() attempts to rename `<object>` to `<new name>`, as per @name.
 
 
-## See Also
+**See Also:**
 - [fullname()]
 - [accname()]
 - [iname()]

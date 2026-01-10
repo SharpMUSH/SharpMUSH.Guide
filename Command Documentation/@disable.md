@@ -9,6 +9,6 @@ These wizard-only commands allow for any boolean @config options to be changed (
 `@disable <option>` is the same thing as `@config/set <option>=no`
 
 
-## See Also
+**See Also:**
 - [@config]
 

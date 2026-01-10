@@ -14,7 +14,7 @@ With the `/noisy` switch, other players in the room may be informed who you whis
 The `/list` switch lets you whisper to multiple people at once. In this case, `<players>` is a space-separated list of names, and names with spaces should be enclosed in double-quotes, as per page/list.
 
 
-## See Also
+**See Also:**
 - [page]
 - [pose]
 - [@pemit]

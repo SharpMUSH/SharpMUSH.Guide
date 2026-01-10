@@ -17,7 +17,7 @@ You say, "abcdefgh"
     Fix the typo
 
 
-## See Also
+**See Also:**
 - [strdelete()]
 - [strinsert()]
 - [ldelete()]

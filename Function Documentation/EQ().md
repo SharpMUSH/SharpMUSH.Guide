@@ -4,7 +4,7 @@
   Takes two or more `<number>`s, and returns 1 if they are all equal, and 0 otherwise.
 
 
-## See Also
+**See Also:**
 - [neq()]
 - [lmath()]
 

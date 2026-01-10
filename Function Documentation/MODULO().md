@@ -21,7 +21,7 @@
   mod() and modulus() are aliases for modulo().
 
 
-## See Also
+**See Also:**
 - [div()]
 - [lmath()]
 

@@ -8,7 +8,7 @@
   nsemit() works like @nsemit.
 
 
-## See Also
+**See Also:**
 - [pemit()]
 - [remit()]
 - [lemit()]

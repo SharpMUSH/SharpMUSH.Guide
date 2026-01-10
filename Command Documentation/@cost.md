@@ -24,7 +24,7 @@ Your exit has been created.
 ```
 
 
-## See Also
+**See Also:**
 - [give]
 - [MONEY]
 - [@pay]

@@ -4,7 +4,7 @@
   Takes two or more booleans and returns a 1 if one, and only one, of the inputs is equivalent to true(1).
 
 
-## See Also
+**See Also:**
 - [BOOLEAN VALUES]
 - [and()]
 - [or()]

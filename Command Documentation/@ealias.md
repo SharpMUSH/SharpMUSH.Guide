@@ -14,7 +14,7 @@ Example:
 ```
 
 
-## See Also
+**See Also:**
 - [enter]
 - [leave]
 - [goto]

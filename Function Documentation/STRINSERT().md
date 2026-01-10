@@ -14,7 +14,7 @@ My name
 ```
 
 
-## See Also
+**See Also:**
 - [strdelete()]
 - [linsert()]
 - [strreplace()]

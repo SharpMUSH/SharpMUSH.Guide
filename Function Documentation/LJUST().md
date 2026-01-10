@@ -23,7 +23,7 @@ You say, "foo   "
     You say, "This is t"
 
 
-## See Also
+**See Also:**
 - [align()]
 - [center()]
 - [rjust()]

@@ -10,7 +10,7 @@
 For players and things, this means failure to get/take. For exits, it means failure to go through the exit. For rooms the lock is checked when objects "look" inside the room, though failure to pass the lock does not prevent the object from looking.
 
 
-## See Also
+**See Also:**
 - [get]
 - [move]
 - [@lock]

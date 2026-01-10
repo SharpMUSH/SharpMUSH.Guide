@@ -10,7 +10,7 @@
   If not specified, it defaults to "wait semaphore".
 
 
-## See Also
+**See Also:**
 - [@ps]
 - [getpids()]
 - [pidinfo()]

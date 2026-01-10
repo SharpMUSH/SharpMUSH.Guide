@@ -11,7 +11,7 @@
   You can also limit the range of the dbrefs searched by giving `<begin>` and `<end>`. If you control `<object>`, or have the Search or See_All powers, all objects linked to `<object>` are returned. Otherwise, only objects you can examine will be included.
 
 
-## See Also
+**See Also:**
 - [lsearch()]
 - [@entrances]
 

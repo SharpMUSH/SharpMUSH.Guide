@@ -8,7 +8,7 @@
   With two arguments, it attempts to set `<power>` on `<object>`, as per @power `<object>`=`<power>`.
 
 
-## See Also
+**See Also:**
 - [andlpowers()]
 - [orlpowers()]
 - [@power]

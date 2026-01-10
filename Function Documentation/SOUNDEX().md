@@ -9,6 +9,6 @@
   For details of how the algorithm works, see [soundex2].
 
 
-## See Also
+**See Also:**
 - [soundslike()]
 

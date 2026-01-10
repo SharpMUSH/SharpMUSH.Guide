@@ -13,7 +13,7 @@
   except that the attribute's owner is also changed when you lock it via atrlock().
 
 
-## See Also
+**See Also:**
 - [@atrlock]
 - [@atrchown]
 - [hasflag()]

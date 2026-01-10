@@ -24,7 +24,7 @@ You say, "1"
     You say, "1/foo/bar/baz"
 
 
-## See Also
+**See Also:**
 - [comp()]
 - [match()]
 - [setq()]

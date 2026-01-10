@@ -10,7 +10,7 @@
   These functions are equivilent to words(lwho([`<viewer>`])) and words(mwho()), but are more efficient, and don't suffer from buffer constraints.
 
 
-## See Also
+**See Also:**
 - [lwho()]
 - [mwho()]
 - [xwho()]

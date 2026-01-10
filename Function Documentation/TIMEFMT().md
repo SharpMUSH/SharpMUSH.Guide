@@ -12,7 +12,7 @@ Monday, the 17th day of July.
 ```
 
 
-## See Also
+**See Also:**
 - [convsecs()]
 - [etimefmt()]
 - [timezones]

@@ -26,7 +26,7 @@ When using `@switch/inline`, an @break in an `<action>` will stop the calling ac
 
 See [@switch3] for examples.
 
-## See Also
+**See Also:**
 - [SWITCH WILDCARDS]
 - [switch()]
 - [@if]

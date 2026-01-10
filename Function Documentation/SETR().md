@@ -11,7 +11,7 @@
 
   See [setq2] for more on limits, or [setq3] for examples.
 
-## See Also
+**See Also:**
 - [r()]
 - [listq()]
 - [unsetq()]

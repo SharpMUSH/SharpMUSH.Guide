@@ -39,7 +39,7 @@ Commands added with `@command/add`, like other standard commands, are always cas
 
 See [@command3] for examples.
 
-## See Also
+**See Also:**
 - [@hook]
 - [RESTRICT]
 - [EVALUATION ORDER]

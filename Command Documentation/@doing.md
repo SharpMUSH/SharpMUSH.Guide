@@ -8,7 +8,7 @@ With no `<message>` the attribute is cleared.
 To change the message shown above player @doings in WHO, use @poll.
 
 
-## See Also
+**See Also:**
 - [@poll]
 - [WHO]
 - [doing()]

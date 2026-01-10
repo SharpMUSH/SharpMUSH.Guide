@@ -4,7 +4,7 @@
   Returns the distance between two points in the Cartesian plane that have coordinates (`<x1>`, `<y1>`) and (`<x2>`, `<y2>`).
 
 
-## See Also
+**See Also:**
 - [dist3d()]
 - [lmath()]
 

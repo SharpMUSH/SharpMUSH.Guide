@@ -4,7 +4,7 @@ This internal command is run when someone attempts to use an unimplemented comma
 By default, the command just shows the message "This command has not been implemented.", but you can @hook it to perform other actions.
 
 
-## See Also
+**See Also:**
 - [huh_command]
 - [warn_on_missing]
 - [@command]

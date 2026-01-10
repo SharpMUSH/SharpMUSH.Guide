@@ -8,7 +8,7 @@
   Equivalent to not(and()) and not(cand()), but more efficient.
 
 
-## See Also
+**See Also:**
 - [lmath()]
 - [and()]
 - [cand()]

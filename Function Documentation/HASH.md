@@ -28,7 +28,7 @@ SHA224(foo) => 0808f64e60d58979fcb676c96ec938270dea42445aeefcd3a4e6f8db
 ```
 
 
-## See Also
+**See Also:**
 - [encode64()]
 - [encrypt()]
 - [hmac()]

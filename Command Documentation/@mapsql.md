@@ -23,7 +23,7 @@ Examples:
 ```
 
 
-## See Also
+**See Also:**
 - [@sql]
 - [sql()]
 - [sqlescape()]

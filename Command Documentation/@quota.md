@@ -21,7 +21,7 @@ Players always have enough quota for the objects they currently own; if you atte
 `@quota/set` and `@quota/all` are equivilent to @squota and @allquota, respectively.
 
 
-## See Also
+**See Also:**
 - [QUOTAS]
 - [Quotas Power]
 - [No_Quota Power]

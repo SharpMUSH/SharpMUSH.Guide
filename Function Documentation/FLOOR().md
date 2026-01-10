@@ -22,7 +22,7 @@ think floor(3.14159)
 ```
 
 
-## See Also
+**See Also:**
 - [bound()]
 - [trunc()]
 

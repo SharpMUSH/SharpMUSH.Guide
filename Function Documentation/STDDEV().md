@@ -4,7 +4,7 @@
   Returns the sample standard deviation of its arguments.
 
 
-## See Also
+**See Also:**
 - [mean()]
 - [median()]
 - [lmath()]

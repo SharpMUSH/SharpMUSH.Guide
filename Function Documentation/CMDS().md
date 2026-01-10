@@ -6,6 +6,6 @@
   You must be a Wizard, Royalty or See_All to use this function on anyone but yourself.
 
 
-## See Also
+**See Also:**
 - [CONNECTION FUNCTIONS]
 

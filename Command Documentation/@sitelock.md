@@ -20,7 +20,7 @@ If the `/player` switch is given, `<host-pattern>` is treated as a player name, 
 
 See [@sitelock2].
 
-## See Also
+**See Also:**
 - [WILDCARDS]
 - [REGEXPS]
 - [ipaddr()]

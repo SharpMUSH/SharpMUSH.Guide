@@ -8,7 +8,7 @@ Sounds are only forwarded if the speaker also passes `<object>`'s @lock/infilter
 For an explanation of infilter patterns, see the help for "@filter".
 
 
-## See Also
+**See Also:**
 - [@filter]
 - [@listen]
 - [@inprefix]

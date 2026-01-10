@@ -13,7 +13,7 @@ This is [a test].
 ```
 
 
-## See Also
+**See Also:**
 - [hasattr()]
 - [visible()]
 - [ufun()]

@@ -8,7 +8,7 @@
   If changing ownership, #-1 or 0 is returned on failure, 1 on success.
 
 
-## See Also
+**See Also:**
 - [lockowner()]
 - [@chown]
 - [@atrchown]

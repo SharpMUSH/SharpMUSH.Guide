@@ -16,7 +16,7 @@ You say, "GRÜSSEN
 ```
 
 
-## See Also
+**See Also:**
 - [lcstr()]
 - [capstr()]
 

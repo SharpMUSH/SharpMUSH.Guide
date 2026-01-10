@@ -6,7 +6,7 @@
   The caller can use the function on himself, but using on any other player requires privileged power such as Wizard, Royalty or SEE_ALL.
 
 
-## See Also
+**See Also:**
 - [Connection Functions]
 - [hostname()]
 - [ports()]

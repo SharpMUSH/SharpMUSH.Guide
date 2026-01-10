@@ -6,7 +6,7 @@ Displays the name and dbref of every room, thing, or player you control whose na
 You may wish to use the @search command instead, which can filter the results more complexly.
 
 
-## See Also
+**See Also:**
 - [@search]
 - [lsearch()]
 - [@entrances]

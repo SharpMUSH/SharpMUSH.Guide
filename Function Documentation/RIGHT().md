@@ -4,7 +4,7 @@
   Returns the `<length>` rightmost characters from `<string>`.
 
 
-## See Also
+**See Also:**
 - [left()]
 - [mid()]
 

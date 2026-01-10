@@ -14,6 +14,6 @@
   If you need to have a leading `< or >` that's treated like a normal character in a wildcard match, use \\`< or \\>` (the \\ will turn into \ when the argument is evaluated, and then that single \ will stop the greater/less than check).
 
 
-## See Also
+**See Also:**
 - [WILDCARDS]
 

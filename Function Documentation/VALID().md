@@ -26,7 +26,7 @@
 
   See [valid2] for examples.
 
-## See Also
+**See Also:**
 - [colors()]
 - [ansi()]
 

@@ -4,7 +4,7 @@
   Returns the string with all ansi and HTML codes removed.
 
 
-## See Also
+**See Also:**
 - [stripaccents()]
 - [ansi()]
 - [tag()]

@@ -16,7 +16,7 @@ To only lock who can use $-commands, use `@lock/command`. To only lock who can t
 Example: if I want everyone but Bob to be able to use my toy, I would "`@lock/use toy=!*Bob`". If I want only Bob to be able to use it, I would "`@lock/use toy==*Bob`".
 
 
-## See Also
+**See Also:**
 - [@lock]
 - [use]
 - [locktypes]

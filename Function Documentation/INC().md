@@ -21,7 +21,7 @@ think inc(3)
   If the null_eq_zero @config option is on, using inc() on a string which does not end in an integer will return `<string>`1. When null_eq_zero is turned off, it will return an error.
 
 
-## See Also
+**See Also:**
 - [dec()]
 - [add()]
 - [sub()]

@@ -7,7 +7,7 @@
   pickrand() is an alias for randword().
 
 
-## See Also
+**See Also:**
 - [rand()]
 - [randextract()]
 

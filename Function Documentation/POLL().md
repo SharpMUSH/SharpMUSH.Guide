@@ -4,7 +4,7 @@
   This function returns the current @poll.
 
 
-## See Also
+**See Also:**
 - [@poll]
 - [doing()]
 - [@doing]

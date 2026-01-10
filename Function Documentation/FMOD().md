@@ -9,7 +9,7 @@ think fmod(6.1,2.5)
 1.1
 ```
 
-## See Also
+**See Also:**
 - [fdiv()]
 - [div()]
 - [mod()]

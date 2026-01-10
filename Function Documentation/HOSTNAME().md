@@ -9,7 +9,7 @@
   hostname() is an alias for host().
 
 
-## See Also
+**See Also:**
 - [Connection Functions]
 - [ipaddr()]
 - [ports()]

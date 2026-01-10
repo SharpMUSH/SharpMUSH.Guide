@@ -10,7 +10,7 @@
   xvthings() is identical, except it follows the restrictions of lvthings().
 
 
-## See Also
+**See Also:**
 - [nthings()]
 - [lthings()]
 - [lvthings()]

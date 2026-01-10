@@ -12,7 +12,7 @@
 The message is prefixed with the value of the wall_prefix, rwall_prefix or wizwall_prefix options, depending on the command used.
 
 
-## See Also
+**See Also:**
 - [@wizwall]
 - [@rwall]
 

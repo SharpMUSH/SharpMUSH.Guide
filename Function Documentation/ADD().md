@@ -4,7 +4,7 @@
   Returns the sum of the given numbers.
 
 
-## See Also
+**See Also:**
 - [MATH FUNCTIONS]
 - [lmath()]
 

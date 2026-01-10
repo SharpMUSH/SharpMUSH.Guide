@@ -15,7 +15,7 @@ If you have a SPEECHMOD attribute set, it will be evaluated with `<action>` as %
 
 See [pose2] for examples.
 
-## See Also
+**See Also:**
 - [say]
 - [@emit]
 - [@speechmod]

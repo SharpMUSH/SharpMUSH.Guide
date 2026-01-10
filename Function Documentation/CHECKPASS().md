@@ -6,7 +6,7 @@
   This function can only be used by wizards.
 
 
-## See Also
+**See Also:**
 - [@password]
 - [@newpassword]
 

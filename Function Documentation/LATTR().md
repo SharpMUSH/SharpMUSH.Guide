@@ -18,7 +18,7 @@
   When returning large numbers of attributes, the results may be truncated due to buffer limits. In these cases, you can use nattr() and xattr() to retrieve the results in smaller pieces.
 
 
-## See Also
+**See Also:**
 - [nattr()]
 - [xattr()]
 - [hasattr()]

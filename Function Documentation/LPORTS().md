@@ -12,7 +12,7 @@
   These port numbers also appear in the wizard WHO, and can be used with @boot/port, page/port, and the functions that return information about a connection to make them use a specific connection rather than the least-idle one when a player has multiple connections open. Players can get information about their own connections. See_all is needed to use them to get information about other people's ports.
 
 
-## See Also
+**See Also:**
 - [lwho()]
 - [player()]
 - [Connection Functions]

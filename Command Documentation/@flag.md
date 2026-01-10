@@ -26,7 +26,7 @@ All other switches to this command are restricted to God:
 See [@flag2] for information on `@flag/add`.
 
 
-## See Also
+**See Also:**
 - [FLAGS]
 - [@set]
 - [@power]

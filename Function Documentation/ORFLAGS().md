@@ -12,7 +12,7 @@
     > say orlflags(%#, wizard dark !ansi)
 
 
-## See Also
+**See Also:**
 - [andflags()]
 - [flags()]
 - [lflags()]

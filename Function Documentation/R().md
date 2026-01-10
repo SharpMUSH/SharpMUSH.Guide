@@ -13,10 +13,10 @@
     switch     - stext() context from switch() or @switch. Must be an int, or "L" for the outermost stext()
     regexp     - regexp capture names from re*() regexp functions
 
-  qregisters can also be accessed via the %qX (for one-char register names) or %q`<X>` (for registers with longer names) substitutions.
+  qregisters can also be accessed via the %qX (for one-char register names) or %q`\<X\>` (for registers with longer names) substitutions.
 
 
-## See Also
+**See Also:**
 - [setq()]
 - [letq()]
 - [listq()]

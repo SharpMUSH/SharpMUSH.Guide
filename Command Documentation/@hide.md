@@ -9,7 +9,7 @@ The first form of this command affects the single connection specified by `<desc
 The `/on` and `/yes` switches hide connections, while `/off` and `/no` unhide connections. If no switch is given, the command acts as a toggle: for a single descriptor, the hide status is reversed. For a player, if all his connections are hidden, they will be unhidden. If any are unhidden, they will all be hidden.
 
 
-## See Also
+**See Also:**
 - [hidden()]
 - [WHO]
 - [lwho()]

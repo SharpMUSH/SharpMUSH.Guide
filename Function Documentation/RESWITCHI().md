@@ -16,7 +16,7 @@
   The string "#$" in the `<list>`s will be replaced with the value of `<str>`, /before/ `<list>` is evaluated. You can also use $N in `<list>` to refer to the Nth subpattern which matched in `<re>`, with $0 being the entire matching string. Use $`<name>` (the '<>' are literal) to refer to named subpatterns.
 
 
-## See Also
+**See Also:**
 - [switch()]
 - [regmatch()]
 - [regedit()]

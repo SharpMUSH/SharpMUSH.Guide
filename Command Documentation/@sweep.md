@@ -6,6 +6,6 @@
 The four command options can also be used as switches (i.e., you can use "`@sweep/connected`" instead of "`@sweep connected`"). If the connected flag is given, only connected players and puppets owned by connected players will be shown in the @sweep. The "here" and "inventory" flags check only your location or inventory, respectively. "exits" only checks for AUDIBLE exits.
 
 
-## See Also
+**See Also:**
 - [@scan]
 

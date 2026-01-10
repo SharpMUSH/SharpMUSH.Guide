@@ -73,7 +73,7 @@ Example:
 This creates a new version of ansi() that doesn't do any colorization, and that needs two arguments, like the built-in version. It will be restricted to non-guest players.
 
 
-## See Also
+**See Also:**
 - [RESTRICT]
 - [FUNCTIONS]
 - [@startup]

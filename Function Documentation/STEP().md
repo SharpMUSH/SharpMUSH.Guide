@@ -18,7 +18,7 @@ d - e -
     d - e
 
 
-## See Also
+**See Also:**
 - [map()]
 - [iter()]
 - [fold()]

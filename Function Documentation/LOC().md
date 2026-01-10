@@ -8,7 +8,7 @@
   You can also get the location of the enactor using the %L substitution, whether you are near to/can examine it or not.
 
 
-## See Also
+**See Also:**
 - [locate()]
 - [rloc()]
 - [home()]

@@ -6,7 +6,7 @@
   You can get the complete contents of any container you may examine, regardless of whether or not objects are dark. You can get the partial contents (obeying DARK/LIGHT/etc.) of your current location or the enactor (%#). You CANNOT get the contents of anything else, regardless of whether or not you have objects in it. These rules apply to exits, as well.
 
 
-## See Also
+**See Also:**
 - [lcon()]
 - [lexits()]
 - [con()]

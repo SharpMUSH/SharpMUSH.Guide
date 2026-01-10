@@ -15,7 +15,7 @@ You say, "101"
   val() is an alias for trunc().
 
 
-## See Also
+**See Also:**
 - [ceil()]
 - [floor()]
 - [bound()]

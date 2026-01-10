@@ -11,7 +11,7 @@ The third form manipulates powers on objects, and is limited to Wizards. `@power
 God can add, delete, and otherwise manipulate power definitions. See help @power2 for these commands.
 
 
-## See Also
+**See Also:**
 - [powers()]
 - [@flag]
 # @power2

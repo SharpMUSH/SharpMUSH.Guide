@@ -12,7 +12,7 @@
     warnings  - The time of the next automatic warnings check, or -1 if automated warnings are disabled.
 
 
-## See Also
+**See Also:**
 - [@uptime]
 - [secs()]
 - [convsecs()]

@@ -6,7 +6,7 @@
   The definition of truth and falsehood depends on configuration settings; see [boolean values] for details.
 
 
-## See Also
+**See Also:**
 - [Boolean Functions]
 - [t()]
 - [and()]

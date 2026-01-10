@@ -12,7 +12,7 @@ You say, "hello"
 ```
 
 
-## See Also
+**See Also:**
 - [merge()]
 - [splice()]
 

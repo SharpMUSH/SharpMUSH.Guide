@@ -14,7 +14,7 @@ You say, "foo bar baz"
 ```
 
 
-## See Also
+**See Also:**
 - [capstr()]
 - [ucstr()]
 

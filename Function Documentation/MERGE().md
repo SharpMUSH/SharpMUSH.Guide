@@ -18,7 +18,7 @@ You say, "ABcdEF"
 ```
 
 
-## See Also
+**See Also:**
 - [splice()]
 - [tr()]
 

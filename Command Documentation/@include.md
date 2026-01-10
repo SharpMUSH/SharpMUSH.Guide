@@ -25,7 +25,7 @@ See [@include2].
 - /clearregs: Clears all q-registers before including the attribute.
 
 
-## See Also
+**See Also:**
 - [@trigger]
 - [ufun()]
 - [@break]

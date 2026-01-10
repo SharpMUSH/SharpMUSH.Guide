@@ -3,7 +3,7 @@
 `colors(<wildcard>)`
 `colors(<colors>, <format>)`
 
-  With no arguments, colors() returns an unsorted, space-separated list of colors that PennMUSH knows the name of. You can use these colors in ansi(+`<colorname>`,text). The colors "xterm0" to "xterm255" are not included in the list, but can also be used in ansi().
+  With no arguments, colors() returns an unsorted, space-separated list of colors that SharpMUSH knows the name of. You can use these colors in ansi(+`<colorname>`,text). The colors "xterm0" to "xterm255" are not included in the list, but can also be used in ansi().
 
   With one argument, returns an unsorted, space-separated list of colors that match the wildcard pattern `<wildcard>`.
 
@@ -23,7 +23,7 @@
 
   See [colors2] for examples.
 
-## See Also
+**See Also:**
 - [ansi()]
 - [valid()]
 - [colorstyle]

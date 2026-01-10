@@ -15,7 +15,7 @@
 
   See [reglmatch2] for examples.
 
-## See Also
+**See Also:**
 - [regmatch()]
 - [regrab()]
 - [match()]

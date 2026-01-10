@@ -14,7 +14,7 @@
 
   See [match2] for examples.
 
-## See Also
+**See Also:**
 - [grab()]
 - [strmatch()]
 - [member()]

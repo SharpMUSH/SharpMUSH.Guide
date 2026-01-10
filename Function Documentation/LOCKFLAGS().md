@@ -7,7 +7,7 @@
   Given no arguments, this function returns a string consisting of all the flag letters the server knows.
 
 
-## See Also
+**See Also:**
 - [llockflags()]
 - [lset()]
 - [lock()]

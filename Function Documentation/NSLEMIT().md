@@ -8,7 +8,7 @@
   nslemit() like @nslemit.
 
 
-## See Also
+**See Also:**
 - [@lemit]
 - [remit()]
 

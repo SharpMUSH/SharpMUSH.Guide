@@ -7,6 +7,6 @@
   4 2 3
 
 
-## See Also
+**See Also:**
 - [VECTOR FUNCTIONS]
 

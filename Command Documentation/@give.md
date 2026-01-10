@@ -10,7 +10,7 @@ These attributes contain the message shown to `<giver>` when he gives an object,
 In all cases, %0 is the dbref of the object being given, and %1 is the dbref of the recipient.
 
 
-## See Also
+**See Also:**
 - [give]
 - [@receive]
 - [ACTION LISTS]

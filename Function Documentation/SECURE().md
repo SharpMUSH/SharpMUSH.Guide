@@ -6,7 +6,7 @@
   Note that the use of this function is very rarely needed.
 
 
-## See Also
+**See Also:**
 - [decompose()]
 - [escape()]
 

@@ -11,7 +11,7 @@ When inside a thing or player, you will see its @idescribe instead, if one is se
 @describe can be abbreviated as @desc.
 
 
-## See Also
+**See Also:**
 - [look]
 - [@adescribe]
 - [@idescribe]

@@ -20,7 +20,7 @@ Switches:
 
 See [@message2] for examples.
 
-## See Also
+**See Also:**
 - [message()]
 - [@chatformat]
 - [@pageformat]

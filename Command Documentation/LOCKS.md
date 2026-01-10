@@ -12,7 +12,7 @@ Just like attributes, locks can be inherited from parents. By default, locks are
 A listing of lock types, such as pagelocks, look at [locktypes]. For the available key types, such as how to check an attribute on an object trying to pass a lock, see [lockkeys].
 
 
-## See Also
+**See Also:**
 - [@lock-simple]
 - [locktypes]
 - [lockkeys]
