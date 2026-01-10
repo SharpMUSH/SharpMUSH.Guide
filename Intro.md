@@ -1,5 +1,5 @@
 # What is SharpMUSH?
-SharpMUSH is a MUSH server with modern amenities that allow easier administration of a server, and a more modern approach to the MUSH server. It inherits a feature referred to as ‘Softcode’ (A Domain Specific Language), that allows players and admin to further spice up their roleplay, create new objects, rooms, and add other enhancements into the game world. It features a modern web interface, allowing for easy access to the server from anywhere, and modern amenities such as a Scene Logging System.
+SharpMUSH is a MUSH server with modern amenities that allow easier administration of a server, and a more modern approach to the MUSH server. It inherits a feature referred to as ‘Softcode’ (A Domain Specific Language), that allows players and admin to further spice up their roleplay, create new objects, rooms, and add other enhancements into the game world. It features a modern web interface, allowing for easy access to the server from anywhere, and modern amenities such as a Scene Logging System. 
 
 # Important Considerations
 - SharpMUSH is a single instance software. 
