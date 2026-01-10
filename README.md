@@ -1,0 +1,1 @@
+[![Sync Documentation from SharpMUSH](https://github.com/SharpMUSH/SharpMUSH.Guide/actions/workflows/sync-documentation.yml/badge.svg)](https://github.com/SharpMUSH/SharpMUSH.Guide/actions/workflows/sync-documentation.yml)
