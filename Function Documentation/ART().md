@@ -1,5 +1,0 @@
-# ART()
-`art(<string>)`
-
-  This function returns the proper article, "a" or "an", based on whether or not `<string>` begins with a vowel.
-
