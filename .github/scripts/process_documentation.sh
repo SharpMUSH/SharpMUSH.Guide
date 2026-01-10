@@ -32,25 +32,25 @@ COMMAND_COUNT=0
 CONFIG_COUNT=0
 
 # Process each documentation file
-if [ -f "$source_dir/pennfunc.md" ]; then
-    "$SCRIPT_DIR/split_documentation.sh" "$source_dir/pennfunc.md" "$output_dir/functions" "function"
+if [ -f "$source_dir/sharpfunc.md" ]; then
+    "$SCRIPT_DIR/split_documentation.sh" "$source_dir/sharpfunc.md" "$output_dir/functions" "function"
     FUNCTION_COUNT=$(find "$output_dir/functions" -type f -name "*.md" | wc -l)
 else
-    echo "Warning: pennfunc.md not found"
+    echo "Warning: sharpfunc.md not found"
 fi
 
-if [ -f "$source_dir/penncmd.md" ]; then
-    "$SCRIPT_DIR/split_documentation.sh" "$source_dir/penncmd.md" "$output_dir/commands" "command"
+if [ -f "$source_dir/sharpcmd.md" ]; then
+    "$SCRIPT_DIR/split_documentation.sh" "$source_dir/sharpcmd.md" "$output_dir/commands" "command"
     COMMAND_COUNT=$(find "$output_dir/commands" -type f -name "*.md" | wc -l)
 else
-    echo "Warning: penncmd.md not found"
+    echo "Warning: sharpcmd.md not found"
 fi
 
-if [ -f "$source_dir/pennconf.md" ]; then
-    "$SCRIPT_DIR/split_documentation.sh" "$source_dir/pennconf.md" "$output_dir/configuration" "configuration"
+if [ -f "$source_dir/sharpconf.md" ]; then
+    "$SCRIPT_DIR/split_documentation.sh" "$source_dir/sharpconf.md" "$output_dir/configuration" "configuration"
     CONFIG_COUNT=$(find "$output_dir/configuration" -type f -name "*.md" | wc -l)
 else
-    echo "Warning: pennconf.md not found"
+    echo "Warning: sharpconf.md not found"
 fi
 
 echo "Processed entries:"
