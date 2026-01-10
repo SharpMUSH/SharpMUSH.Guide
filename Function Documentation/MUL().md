@@ -4,7 +4,7 @@
   Returns the product of some numbers.
 
 
-## See Also
+**See Also:**
 - [lmath()]
 - [div()]
 - [fdiv()]

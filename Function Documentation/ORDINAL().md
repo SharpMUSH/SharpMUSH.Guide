@@ -10,6 +10,6 @@ first
 ```
 
 
-## See Also
+**See Also:**
 - [spellnum()]
 

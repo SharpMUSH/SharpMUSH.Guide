@@ -26,7 +26,7 @@ Hello, Walker!
 ```
 
 
-## See Also
+**See Also:**
 - [SEMAPHORES]
 - [@drain]
 - [@wait]

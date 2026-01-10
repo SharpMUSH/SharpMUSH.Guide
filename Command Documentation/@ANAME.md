@@ -12,7 +12,7 @@ Example:
 ```
 
 
-## See Also
+**See Also:**
 - [@name]
 - [name()]
 - [VERBS]

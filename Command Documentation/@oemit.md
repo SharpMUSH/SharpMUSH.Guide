@@ -10,7 +10,7 @@ The `/spoof` switch causes nospoof notifications to show the enactor's dbref ins
 
 See [@oemit2] for examples.
 
-## See Also
+**See Also:**
 - [@emit]
 - [@pemit]
 - [@nsoemit]

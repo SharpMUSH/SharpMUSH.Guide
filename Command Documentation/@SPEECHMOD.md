@@ -25,7 +25,7 @@ Test
 ```
 
 
-## See Also
+**See Also:**
 - [say]
 - [pose]
 - [@emit]

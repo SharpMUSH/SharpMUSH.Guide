@@ -15,6 +15,6 @@ The default policy of erasing a log can be changed by giving one of the followin
 God must give the log wipe password from the MUSH's configuration file to use this command.
 
 
-## See Also
+**See Also:**
 - [@log]
 

@@ -24,7 +24,7 @@ LOC
 ```
 
 
-## See Also
+**See Also:**
 - [setq()]
 - [letq()]
 - [r()]

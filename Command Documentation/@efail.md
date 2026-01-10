@@ -8,7 +8,7 @@
 These attributes contain the message shown to someone who fails to enter `<object>`, the message shown to others when someone fails to enter `<object>`, and the actions to be taken when someone fails to enter it, respectively.
 
 
-## See Also
+**See Also:**
 - [enter]
 - [@enter]
 - [FAILURE]

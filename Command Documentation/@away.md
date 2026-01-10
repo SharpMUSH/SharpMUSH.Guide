@@ -9,7 +9,7 @@ Example:
 ```
 
 
-## See Also
+**See Also:**
 - [@idle]
 - [@haven]
 

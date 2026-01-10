@@ -4,7 +4,7 @@
   Returns the first element of a list.
 
 
-## See Also
+**See Also:**
 - [before()]
 - [rest()]
 - [last()]

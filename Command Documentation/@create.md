@@ -8,7 +8,7 @@ Some MUSHes choose to limit the number of objects you can create by setting a qu
 Wizards and objects with the pick_dbref power can also specify the `<dbref>` of a garbage object to use when creating the object. Otherwise, the object is given the next available dbref.
 
 
-## See Also
+**See Also:**
 - [give]
 - [@quota]
 - [MONEY]

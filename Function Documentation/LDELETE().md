@@ -18,7 +18,7 @@ You say, "foo ~ bar ~ boing"
 ```
 
 
-## See Also
+**See Also:**
 - [strdelete()]
 - [remove()]
 - [linsert()]

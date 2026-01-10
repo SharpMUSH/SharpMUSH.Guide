@@ -11,7 +11,7 @@ and
 `@lock/enter <object>`
 
 
-## See Also
+**See Also:**
 - [@lock]
 - [locktypes]
 - [enter]

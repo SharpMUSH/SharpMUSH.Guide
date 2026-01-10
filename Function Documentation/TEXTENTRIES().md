@@ -27,10 +27,10 @@ You say, "CWHO() LWHO() MWHO() NWHO() XWHO() ZWHO()"
       Returns the natural log of `<number>`.
 
 
-## See Also
+**See Also:**
 - [log()]
     "
 
-## See Also
+**See Also:**
 - [WILDCARDS]
 

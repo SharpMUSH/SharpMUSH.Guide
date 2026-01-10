@@ -6,7 +6,7 @@
   See [@lset] for more information on what flags are available.
 
 
-## See Also
+**See Also:**
 - [lockflags()]
 - [llockflags()]
 - [lock()]

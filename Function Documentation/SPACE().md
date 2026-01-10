@@ -10,6 +10,6 @@ Amberyl says, "a     b"
 ```
 
 
-## See Also
+**See Also:**
 - [repeat()]
 

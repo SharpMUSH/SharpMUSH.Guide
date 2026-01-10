@@ -13,6 +13,6 @@ If the `/paranoid` switch is given, the game performs additional consistency che
 These switches should ONLY be used if a normal @dump is not being done correctly. They should generally only be done by wizards with access to the account on which the MUSH is running, since others will not have access to the checkpoint log file.
 
 
-## See Also
+**See Also:**
 - [@shutdown]
 

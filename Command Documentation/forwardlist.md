@@ -7,7 +7,7 @@ If `<object>` is set AUDIBLE, any sound it hears which passes its @filter and @l
 In order to forward to an object, you must either control it, have the pemit_all power, or pass its @lock/forward. (If you want to allow all objects you own to forward to you, regardless of whether or not they control you, use `@lock/forward me=$me`)
 
 
-## See Also
+**See Also:**
 - [@filter]
 - [@prefix]
 - [AUDIBLE]

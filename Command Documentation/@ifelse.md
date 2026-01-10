@@ -12,7 +12,7 @@ For RhostMUSH compatability, @skip runs the action list `<false>` when `<boolean
 
 See [@if2] for examples.
 
-## See Also
+**See Also:**
 - [@break]
 - [@switch]
 - [if()]

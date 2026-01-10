@@ -6,7 +6,7 @@
   You must control `<player>` or have the See_All or Quotas @powers to use this function.
 
 
-## See Also
+**See Also:**
 - [@quota]
 - [@squota]
 - [@allquota]

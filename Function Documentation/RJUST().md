@@ -23,7 +23,7 @@ You say, "-   foo-"
     You say, " too long"
 
 
-## See Also
+**See Also:**
 - [align()]
 - [center()]
 - [ljust()]

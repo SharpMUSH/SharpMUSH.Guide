@@ -44,7 +44,7 @@ Walker slaps himself around with a trout
 
 See [@trigger3] for examples.
 
-## See Also
+**See Also:**
 - [@include]
 - [ufun()]
 - [VERBS]

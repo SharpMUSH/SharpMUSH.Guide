@@ -9,19 +9,23 @@
     > say allof(grab(v(s),rats),grab(v(s),mats),grab(v(s),bats),)
     You say, "Rats Bats"
 ```
+
 ```
     > say allof(#-1,#101,#2970,,#-3,0,#319,null(This Doesn't Count),|)
     You say, "#101|#2970|#319"
 ```
+
+```
     > say allof(foo, 0, #-1, bar, baz,)
     You say, "foobarbaz"
 ```
+
 ```
     > say allof(foo, 0, #-1, bar, baz,%b)
     You say, "foo bar baz"
 ```
 
-## See Also
+**See Also:**
 - [firstof()]
 - [BOOLEAN VALUES]
 - [strallof()]

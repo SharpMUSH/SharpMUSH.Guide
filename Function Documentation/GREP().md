@@ -23,7 +23,7 @@
   pgrep() works like grep(), but also checks attributes inherited from parents.
 
 
-## See Also
+**See Also:**
 - [@grep]
 - [lattr()]
 - [WILDCARDS]

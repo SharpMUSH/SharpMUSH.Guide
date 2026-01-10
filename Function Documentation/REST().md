@@ -4,7 +4,7 @@
   Returns a list minus its first element.
 
 
-## See Also
+**See Also:**
 - [after()]
 - [first()]
 - [last()]

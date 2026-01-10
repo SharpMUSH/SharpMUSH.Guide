@@ -40,7 +40,7 @@ Replace a literal '^' with 'v'
 ```
 
 
-## See Also
+**See Also:**
 - [edit()]
 - [regedit()]
 - [ATTRIBUTES]

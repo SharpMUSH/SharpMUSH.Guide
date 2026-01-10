@@ -10,7 +10,7 @@
   decrypt() decrypts a string encrypted with encrypt(). The `<encoded>` argument indicates that the encrypted string was base-64 encoded.
 
 
-## See Also
+**See Also:**
 - [encode64()]
 - [digest()]
 

@@ -12,7 +12,7 @@ Examples:
 ```
 
 
-## See Also
+**See Also:**
 - [look]
 - [@describe]
 - [@idescribe]

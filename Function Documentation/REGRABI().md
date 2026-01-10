@@ -12,7 +12,7 @@
   or the regular expression variation thereof.
 
 
-## See Also
+**See Also:**
 - [graball()]
 - [match()]
 - [extract()]

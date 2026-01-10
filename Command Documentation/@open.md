@@ -13,11 +13,11 @@ To open an exit in a room, you must control the room, have the Open_Anywhere @po
 
 Example:
 ```
-> @open Up <U>;up;u;climb=#255, Down <D>;down;d;fall
+> @open Up \<U\>;up;u;climb=#255, Down \<D\>;down;d;fall
 ```
 
 
-## See Also
+**See Also:**
 - [EXITS]
 - [@link]
 - [@dig]

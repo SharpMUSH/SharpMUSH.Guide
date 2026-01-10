@@ -12,7 +12,7 @@ The third form combines the first two: the enactor will execute `<command_list>`
 More forms that support semaphores on arbitrary attributes are described in [@wait2].
 
 
-## See Also
+**See Also:**
 - [SEMAPHORES]
 - [@drain]
 - [@notify]

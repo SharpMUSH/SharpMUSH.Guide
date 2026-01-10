@@ -23,7 +23,7 @@
   Note that add(mul(div(%0,%1),%1),remainder(%0,%1)) always yields %0, and add(mul(floordiv(%0,%1),%1),modulo(%0,%1)) also always yields %0.
 
 
-## See Also
+**See Also:**
 - [modulo()]
 - [lmath()]
 

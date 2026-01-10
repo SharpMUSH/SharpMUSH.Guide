@@ -6,7 +6,7 @@ You can use this command to send a private message to yourself. Pronoun substitu
 One possible use: `@adesc me=think %n just looked at you.`
 
 
-## See Also
+**See Also:**
 - [@pemit]
 - [@@]
 

@@ -9,6 +9,6 @@
 
   stats() is an alias for lstats().
 
-## See Also
+**See Also:**
 - [nsearch()]
 

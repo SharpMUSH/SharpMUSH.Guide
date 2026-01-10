@@ -19,7 +19,7 @@ Show just the object names (with no ansi) in a table:
 ```
 
 
-## See Also
+**See Also:**
 - [look]
 - [@exitformat]
 - [@nameformat]

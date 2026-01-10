@@ -10,6 +10,6 @@ You say, "eep baz bar foo"
 ```
 
 
-## See Also
+**See Also:**
 - [flip()]
 

@@ -6,7 +6,7 @@
   If a `<new value>` is given, lock() attempts to change the lock as @lock would first. You must control the object.
 
 
-## See Also
+**See Also:**
 - [@lock]
 - [locktypes]
 - [elock()]

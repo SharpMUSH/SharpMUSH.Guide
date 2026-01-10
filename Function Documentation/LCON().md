@@ -15,7 +15,7 @@
     puppet             - return only THINGs set PUPPET
 
 
-## See Also
+**See Also:**
 - [lexits()]
 - [lplayers()]
 - [lthings()]

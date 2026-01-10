@@ -26,7 +26,7 @@ You say "Trim Test"
 ```
 
 
-## See Also
+**See Also:**
 - [squish()]
 - [edit()]
 

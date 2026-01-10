@@ -12,7 +12,7 @@ think hasflag(me, wizard)
 ```
 
 
-## See Also
+**See Also:**
 - [orlflags()]
 - [andlflags()]
 - [orflags()]

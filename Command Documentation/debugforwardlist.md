@@ -7,7 +7,7 @@ When `<object>` has an @debugforwardlist attribute set, any debug output it prod
 The @debugforwardlist must be a space-seperated list of dbrefs. In order to forward to an object, you must either control it, have the pemit_all power, or pass its @lock/forward.
 
 
-## See Also
+**See Also:**
 - [DEBUG]
 - [@forwardlist]
 - [@lock]

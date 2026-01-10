@@ -1,5 +1,5 @@
 # ROOT()
-`root(<number>, <n>)`
+`root(<number>, \<n\>)`
 
   Returns the n-th root of `<number>`. The 2nd root is the square root, the 3rd the cube root, and so on.
 
@@ -12,7 +12,7 @@ think power(3, 3)
 ```
 
 
-## See Also
+**See Also:**
 - [sqrt()]
 - [power()]
 

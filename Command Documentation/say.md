@@ -10,7 +10,7 @@ If you have a SPEECHMOD attribute set, it will be evaluated with `<message>` pas
 If `<message>` begins with a double-quote and the chat_strip_quote @config option is on, the leading " will be stripped.
 
 
-## See Also
+**See Also:**
 - [pose]
 - [whisper]
 - [@speechmod]

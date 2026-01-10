@@ -8,7 +8,7 @@
   nsremit() works like @nsremit/list.
 
 
-## See Also
+**See Also:**
 - [@remit]
 - [pemit()]
 - [lemit()]

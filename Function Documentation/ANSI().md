@@ -11,7 +11,7 @@
     * a list of red, green and blue values from 0-255, in angle brackets (`<0 0 0>`, `<255 0 85>`, etc)
     * a number from 0-255; this is the same as using "+xterm`<number>`", for Rhost compatability.
 
-  For example, "ansi(+orange/#0000ff,Test)" would color "Test" in orange, on a blue background. In the event that your client does not support those colors, PennMUSH will downgrade the color to the closest fit that your client can understand.
+  For example, "ansi(+orange/#0000ff,Test)" would color "Test" in orange, on a blue background. In the event that your client does not support those colors, SharpMUSH will downgrade the color to the closest fit that your client can understand.
 
   Codes are parsed from left to right so, with later codes overriding earlier ones. So, for example:
 ```
@@ -21,7 +21,7 @@ would show white text on an ANSI-blue background.
 
   See [ansi3] for more examples.
 
-## See Also
+**See Also:**
 - [ANSI]
 - [COLOR]
 - [@sockset]

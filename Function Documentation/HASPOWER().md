@@ -6,7 +6,7 @@
   You can check the powers of any object, whether you control it or not.
 
 
-## See Also
+**See Also:**
 - [@power]
 - [powers list]
 - [hasflag()]

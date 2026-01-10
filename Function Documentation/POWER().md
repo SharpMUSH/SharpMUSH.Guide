@@ -6,6 +6,6 @@
   (For the functional version of @power, see [powers()].)
 
 
-## See Also
+**See Also:**
 - [root()]
 

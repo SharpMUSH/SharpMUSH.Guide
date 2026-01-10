@@ -17,7 +17,7 @@ think elock(Dancing Slippers/drop, Princess)
     0
 
 
-## See Also
+**See Also:**
 - [@lock]
 - [locktypes]
 - [testlock()]

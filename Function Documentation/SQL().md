@@ -14,7 +14,7 @@
   See [sql examples] for examples.
 
 
-## See Also
+**See Also:**
 - [sqlescape()]
 - [mapsql()]
 - [@sql]

@@ -7,6 +7,6 @@ This wizard-only command puts `<message>` in a log file, tagged with the time an
 Adding the `/recall` switch will display the last `<number>` lines written to that log file, or the entire log buffer (Which is the last 1 kilobyte or so of data written to the log) if omitted.
 
 
-## See Also
+**See Also:**
 - [@logwipe]
 

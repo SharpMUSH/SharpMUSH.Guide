@@ -16,7 +16,7 @@ Only wizards and objects with the halt @power can @halt other player's objects. 
 `@halt/all` is a synonym for @allhalt, and is a wizard-only command which halts all objects in the game in an effort to free up the queue.
 
 
-## See Also
+**See Also:**
 - [@wait]
 - [@ps]
 - [SEMAPHORES]

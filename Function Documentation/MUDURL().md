@@ -14,6 +14,6 @@ You say, "http://www.testmush.com"
 ```
 
 
-## See Also
+**See Also:**
 - [config()]
 

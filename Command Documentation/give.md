@@ -9,7 +9,7 @@ The first two forms of this command give `<number>` pennies to `<recipient>`. If
 The last two forms of this command give an `<object>` from your inventory to `<recipient>`. The recipient must be set ENTER_OK, and you must pass his @lock/from. You must also pass `<object>`'s @lock/give, and `<object>` must pass `<recipient>`'s @lock/receive. When you give an object successfully, your GIVE/OGIVE/AGIVE attributes, `<recipient>`'s RECEIVE/ORECEIVE/ARECEIVE attributes, and `<object>`'s SUCCESS/ASUCCESS/OSUCCESS attributes are all triggered.
 
 
-## See Also
+**See Also:**
 - [@pay]
 - [@cost]
 - [@lock]

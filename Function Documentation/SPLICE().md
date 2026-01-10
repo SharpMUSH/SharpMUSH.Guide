@@ -13,6 +13,6 @@ You say, "foo moof baz"
 ```
 
 
-## See Also
+**See Also:**
 - [merge()]
 

@@ -18,7 +18,7 @@ think testlock(\\+FOO:BAR,*Walker)
 
 
 
-## See Also
+**See Also:**
 - [@lock]
 - [lock()]
 - [elock()]

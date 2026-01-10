@@ -20,7 +20,7 @@
   All four functions will also work with one argument in the form of `<object>`/`<attribute>`.
 
 
-## See Also
+**See Also:**
 - [visible()]
 - [lattr()]
 

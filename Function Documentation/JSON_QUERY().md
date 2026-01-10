@@ -13,7 +13,7 @@
 
   See [json_query2] for examples.
 
-## See Also
+**See Also:**
 - [json()]
 - [json_map()]
 

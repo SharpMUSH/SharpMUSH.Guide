@@ -10,10 +10,11 @@
   See [accent2] for some examples.
 
 
-## See Also
+**See Also:**
 - [stripaccents()]
 - [NOACCENTS]
 - [@nameaccent]
 - [accname()]
 - [ACCENTS]
+
 

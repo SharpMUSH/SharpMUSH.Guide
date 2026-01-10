@@ -15,7 +15,7 @@
 See [@pageformat2] for examples.
 
 
-## See Also
+**See Also:**
 - [page]
 - [speak()]
 - [@chatformat]

@@ -14,7 +14,7 @@
 
   See [iter2] for examples.
 
-## See Also
+**See Also:**
 - [itext()]
 - [inum()]
 - [ilev()]

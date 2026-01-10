@@ -11,7 +11,7 @@ Example:
 ```
 
 
-## See Also
+**See Also:**
 - [sql()]
 - [sqlescape()]
 - [mapsql()]

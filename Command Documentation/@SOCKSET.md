@@ -25,7 +25,7 @@ Options:
 Note that changing 'telnet' or 'pueblo' may stop your client from parsing or displaying output correctly; only use if you know what you're doing!
 
 
-## See Also
+**See Also:**
 - [SOCKET COMMANDS]
 - [terminfo()]
 - [Pueblo]

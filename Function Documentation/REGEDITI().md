@@ -20,7 +20,7 @@ You say "this Trash is the Brash string"
 ```
 
 
-## See Also
+**See Also:**
 - [edit()]
 - [@edit]
 - [regmatch()]

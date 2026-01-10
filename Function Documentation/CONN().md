@@ -6,6 +6,6 @@
   This function returns -1 for invalid `<player|descriptor>`s, offline players and players who are dark, if the caller is not able to see them.
 
 
-## See Also
+**See Also:**
 - [CONNECTION FUNCTIONS]
 

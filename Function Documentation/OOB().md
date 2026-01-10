@@ -15,7 +15,7 @@
   Returns the number of descriptors the message was sent to on success, or a string starting with #-1 on error.
 
 
-## See Also
+**See Also:**
 - [json()]
 - [wsjson()]
 

@@ -10,7 +10,7 @@ If the `/generate` switch is given, a new, random password is generated automati
 The `<password>` must not contain whitespace, unprintable characters, or '='.
 
 
-## See Also
+**See Also:**
 - [@password]
 - [checkpass()]
 

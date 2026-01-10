@@ -6,7 +6,7 @@ This command does nothing. It does not reset a connection's idle time. It is use
 Some routers will only consider a connection alive if text is received, as well as sent. If you give a `<string>` with the IDLE command, that same `<string>` will be sent back to you for this purpose.
 
 
-## See Also
+**See Also:**
 - [KEEPALIVE]
 - [@idle]
 

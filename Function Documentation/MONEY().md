@@ -23,6 +23,6 @@ You say, "150"
     Count von Count says, "2 Pennies. Ah.. ah.. ah."
 
 
-## See Also
+**See Also:**
 - [score]
 

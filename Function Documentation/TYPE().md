@@ -15,7 +15,7 @@ ROOM
 ```
 
 
-## See Also
+**See Also:**
 - [hastype()]
 - [TYPES OF OBJECTS]
 

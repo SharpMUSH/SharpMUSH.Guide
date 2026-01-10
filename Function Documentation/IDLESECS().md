@@ -7,7 +7,7 @@
   idlesecs() is an alias for idle().
 
 
-## See Also
+**See Also:**
 - [Connection Functions]
 - [conn()]
 

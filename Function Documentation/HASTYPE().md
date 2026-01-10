@@ -13,7 +13,7 @@ think hastype(test object, PLAYER THING)
 ```
 
 
-## See Also
+**See Also:**
 - [TYPES]
 - [type()]
 

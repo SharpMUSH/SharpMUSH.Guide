@@ -12,7 +12,7 @@ This command any combination of these four switches:
 If no switch is given, all locations are checked. `<command>` must be entered exactly as you would type it (so, to match the $-command `$foo *:` you must type '`@scan foo <something>`', not just '`@scan foo`').
 
 
-## See Also
+**See Also:**
 - [$-commands]
 - [EVALUATION ORDER]
 

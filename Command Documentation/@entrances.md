@@ -12,7 +12,7 @@ You can use any combination of switches to limit the types of objects:
 If you control `<object>`, or have the Search or See_All powers, all objects linked to `<object>` are listed. Otherwise, only objects which you can examine will be shown.
 
 
-## See Also
+**See Also:**
 - [@link]
 - [@search]
 - [entrances()]

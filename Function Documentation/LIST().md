@@ -17,7 +17,7 @@
   "commands"/"functions" return both built-in and local commands/functions by default. You can specify a `<type>` of either "builtin", "local" or "all" to limit this if you wish.
 
 
-## See Also
+**See Also:**
 - [@list]
 - [flags()]
 - [lflags()]

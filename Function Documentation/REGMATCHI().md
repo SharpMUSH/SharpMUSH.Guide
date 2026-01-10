@@ -13,7 +13,7 @@
   See [regmatch2] for an example.
 
 
-## See Also
+**See Also:**
 - [regrab()]
 - [regedit()]
 - [valid()]

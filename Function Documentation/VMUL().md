@@ -9,6 +9,6 @@
   2 6 12
 
 
-## See Also
+**See Also:**
 - [VECTOR FUNCTIONS]
 

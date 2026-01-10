@@ -6,7 +6,7 @@
   The optional third argument can be used to specify a garbage object to use for the new player.
 
 
-## See Also
+**See Also:**
 - [@pcreate]
 - [create()]
 - [dig()]

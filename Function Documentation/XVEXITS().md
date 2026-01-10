@@ -10,7 +10,7 @@
   xvexits() is identical, but follows the restrictions of lvexits().
 
 
-## See Also
+**See Also:**
 - [nexits()]
 - [lexits()]
 - [lvexits()]

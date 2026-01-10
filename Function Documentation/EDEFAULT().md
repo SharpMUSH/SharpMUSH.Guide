@@ -15,7 +15,7 @@ You say "You have lost 6 marbles."
     You say "You have no marbles."
 
 
-## See Also
+**See Also:**
 - [get()]
 - [eval()]
 - [ufun()]

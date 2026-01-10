@@ -6,6 +6,6 @@ This command works like an abbreviated version of "examine", showing information
 `<object>` defaults to "here".
 
 
-## See Also
+**See Also:**
 - [examine]
 

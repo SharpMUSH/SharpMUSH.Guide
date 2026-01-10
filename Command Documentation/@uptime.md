@@ -10,7 +10,7 @@ While the exact statistics displayed depends on the operating system of the game
 Under Linux, memory usage is split into a number of different categories including shared libraries, resident set size, stack size, and some other figures. Also under linux, more information on signals is printed.
 
 
-## See Also
+**See Also:**
 - [@stats]
 - [@list]
 

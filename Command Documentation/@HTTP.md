@@ -15,7 +15,7 @@ Restricted to objects set Wizard or with the Can_HTTP @Power.
 Note: The response body has the same 8k limit as other MUSH strings. Anything longer is truncated; this command is best used with APIs that provide short responses.
 
 
-## See Also
+**See Also:**
 - [urlencode()]
 - [urldecode()]
 

@@ -16,6 +16,6 @@ a          b          areallylon d
     brown     |fox
 
 
-## See Also
+**See Also:**
 - [align()]
 

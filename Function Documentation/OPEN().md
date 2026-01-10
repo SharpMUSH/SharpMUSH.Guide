@@ -10,7 +10,7 @@
   It returns the dbref of the newly created exit, or #-1 on error.
 
 
-## See Also
+**See Also:**
 - [@open]
 - [@link]
 - [dig()]

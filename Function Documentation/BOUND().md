@@ -6,7 +6,7 @@
   If you just want to know whether `<number>` is within the range of `<lower>` to `<higher>`, consider using lte(`<lower>`, `<number>`, `<higher>`) instead to get a boolean result.
 
 
-## See Also
+**See Also:**
 - [ceil()]
 - [floor()]
 - [round()]

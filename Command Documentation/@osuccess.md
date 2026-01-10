@@ -23,7 +23,7 @@ Example:
 ```
 
 
-## See Also
+**See Also:**
 - [get]
 - [goto]
 - [@lock]

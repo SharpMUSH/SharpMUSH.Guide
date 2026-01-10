@@ -12,7 +12,7 @@ To get an object from someone else's inventory, the possessive_get @config optio
 'take' is usually an alias for the 'get' command.
 
 
-## See Also
+**See Also:**
 - [@lock]
 - [ENTER_OK]
 - [give]

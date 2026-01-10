@@ -6,7 +6,7 @@ Lists what you are carrying. Can be abbreviated by just 'i', or 'inv'. It also t
 Note that on some MUSHes it is possible to take things that are in someone else's inventory. To be safe, @lock any objects that you do not want to lose.
 
 
-## See Also
+**See Also:**
 - [score]
 - [take]
 - [drop]

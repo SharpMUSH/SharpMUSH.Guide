@@ -25,7 +25,7 @@ You say, "709395750"
     You say, "Wed Jun 24 14:22:30 1992"
 ```
 
-## See Also
+**See Also:**
 - [convtime()]
 - [time()]
 - [timefmt()]

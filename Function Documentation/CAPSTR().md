@@ -10,7 +10,7 @@ Foo bar baz
 ```
 
 
-## See Also
+**See Also:**
 - [lcstr()]
 - [ucstr()]
 

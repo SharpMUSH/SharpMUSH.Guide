@@ -8,7 +8,7 @@
   This function has been deprecated and may be removed in a future patchlevel; locate(`<container>`, `<object>`, i) should be used instead.
 
 
-## See Also
+**See Also:**
 - [locate()]
 - [num()]
 - [rloc()]

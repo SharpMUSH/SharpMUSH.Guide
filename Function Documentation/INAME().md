@@ -6,7 +6,7 @@
   You must be see_all, control `<object>`, or be inside it to use this function.
 
 
-## See Also
+**See Also:**
 - [@nameformat]
 - [@nameaccent]
 - [name()]

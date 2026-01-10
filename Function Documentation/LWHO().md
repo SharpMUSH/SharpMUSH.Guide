@@ -12,7 +12,7 @@
   lwhoid() returns a list of objid's instead.
 
 
-## See Also
+**See Also:**
 - [mwho()]
 - [nwho()]
 - [xwho()]

@@ -11,7 +11,7 @@ Goes in the specified direction. `<Direction>` can be the name or alias of an ex
 'go home' is a special command that returns you to your home room/object.
 
 
-## See Also
+**See Also:**
 - [HOME]
 - [@link]
 - [@ealias]

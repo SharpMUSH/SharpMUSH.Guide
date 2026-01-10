@@ -14,7 +14,7 @@ You say, "foo b"
 ```
 
 
-## See Also
+**See Also:**
 - [after()]
 - [first()]
 

@@ -14,7 +14,7 @@
   prompt() adds a telnet GOAHEAD to the end of the message, as per the @prompt command. nsprompt() that works like @nsprompt.
 
 
-## See Also
+**See Also:**
 - [@prompt]
 - [@nsprompt]
 - [PROMPT_NEWLINES]

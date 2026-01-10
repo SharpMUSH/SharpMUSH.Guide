@@ -19,7 +19,7 @@ Formatted> Foo Bar Baz
   Formatted> Backwards Compatability Is Annoying Sometimes
 
 
-## See Also
+**See Also:**
 - [@message]
 - [oemit()]
 - [remit()]

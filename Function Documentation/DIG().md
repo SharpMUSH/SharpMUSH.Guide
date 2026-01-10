@@ -6,7 +6,7 @@
   Wizards and objects with the pick_dbref power can supply optional fourth through sixth arguments to specify garbage objects to use for the new room and exits.
 
 
-## See Also
+**See Also:**
 - [@dig]
 - [open()]
 - [@open]

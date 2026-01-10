@@ -12,7 +12,7 @@ You say, "es"
 ```
 
 
-## See Also
+**See Also:**
 - [left()]
 - [right()]
 - [strdelete()]

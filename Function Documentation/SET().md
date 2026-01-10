@@ -7,7 +7,7 @@
   The attribute-setting ability of set() is deprecated. You should use attrib_set() instead; it's easier to read, and allows you to clear attributes, too.
 
 
-## See Also
+**See Also:**
 - [attrib_set()]
 - [@set]
 - [wipe()]

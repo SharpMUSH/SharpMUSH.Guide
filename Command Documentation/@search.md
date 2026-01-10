@@ -47,7 +47,7 @@ If multiple `<class>` and `<restrictions>` are given, objects must meet all crit
 
 See [@search5] for some examples.
 
-## See Also
+**See Also:**
 - [lsearch()]
 - [@find]
 # @search5

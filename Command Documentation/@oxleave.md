@@ -12,7 +12,7 @@ These attributes contain the message shown to anyone leaving `<object>`, the mes
 The leaver's new location is passed in %0, if `<object>` has permission to see it there.
 
 
-## See Also
+**See Also:**
 - [leave]
 - [@oxleave]
 - [@lfail]

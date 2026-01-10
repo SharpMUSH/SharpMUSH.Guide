@@ -4,7 +4,7 @@
   Returns the first `<length>` characters from `<string>`.
 
 
-## See Also
+**See Also:**
 - [right()]
 - [mid()]
 - [ljust()]

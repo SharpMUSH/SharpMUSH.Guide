@@ -16,7 +16,7 @@ You enjoy a delicious coke.
 ```
 
 
-## See Also
+**See Also:**
 - [@BUY]
 - [@PRICELIST]
 - [give]

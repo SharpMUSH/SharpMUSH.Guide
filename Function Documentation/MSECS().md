@@ -10,7 +10,7 @@
   Only things, rooms, and exits have modification times. You must be able to examine an object to see its modification time.
 
 
-## See Also
+**See Also:**
 - [ctime()]
 - [time()]
 - [secs()]

@@ -16,7 +16,7 @@
   xwhoid() and xmwhoid() return objids instead of dbrefs.
 
 
-## See Also
+**See Also:**
 - [lwho()]
 - [mwho()]
 - [nwho()]

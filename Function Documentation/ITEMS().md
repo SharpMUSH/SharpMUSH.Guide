@@ -12,6 +12,6 @@
    Another way to think about this is that items() counts the number of times `<delim>` appears in `<list>`, and adds 1.
 
 
-## See Also
+**See Also:**
 - [words()]
 
