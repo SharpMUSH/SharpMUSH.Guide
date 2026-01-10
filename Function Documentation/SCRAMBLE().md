@@ -1,0 +1,15 @@
+# SCRAMBLE()
+`scramble(<string>)`
+
+  This function scrambles a string, returning a random permutation of its characters. Note that this function does not pay any attention to spaces or other special characters; it will scramble these characters just like normal characters.
+
+  Example:
+```
+say scramble(abcdef)
+You say, "cfaedb"
+```
+
+
+## See Also
+- [shuffle()]
+
