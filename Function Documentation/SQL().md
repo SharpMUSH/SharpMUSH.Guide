@@ -1,5 +1,5 @@
 # SQL()
-`sql(<query>[, <row separator>[, <field separator>[, <register>]]])`
+`sql(<query>[, <row separator>[, <field separator>[, <register>[, <param1>[, <param2>[, ...]]]]]])`
 
   Performs an SQL query if the MUSH is configured to connect to an SQL database server. This function requires a WIZARD flag or the Sql_Ok power.
 
@@ -11,7 +11,14 @@
 
   If `<register>` is specified, and `<query>` alters the database (such as an UPDATE or INSERT query), there is a side-effect: the number of affected rows is stored into the specified q-register.
 
-  See [sql examples] for examples.
+  **Prepared Statements (Parameterized Queries):** If more than 4 arguments are provided, sql() automatically uses prepared statements. The 5th argument onwards are treated as parameters that replace `?` placeholders in the query. This is the recommended way to prevent SQL injection attacks, as parameters are properly escaped and type-safe.
+
+  Example using prepared statements:
+  ```
+  > think sql(lit(SELECT name FROM users WHERE id = ?),%r,%b,,123)
+  ```
+
+  See [sql examples] for more examples.
 
 
 **See Also:**

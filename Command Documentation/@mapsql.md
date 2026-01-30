@@ -1,5 +1,5 @@
 # @mapsql
-`@mapsql[/notify][/colnames][/spoof] <obj>/<attr>=<query>`
+`@mapsql[/notify][/colnames][/spoof][/prepare] <obj>/<attr>=<query>[, <param1>[, <param2>[, ...]]]`
 
 This command issues an SQL query if the MUSH supports SQL and can connect to an SQL server. You must be WIZARD or have the Sql_Ok power to use @sql.
 
@@ -11,6 +11,8 @@ The `/colnames` switch causes @mapsql to first queue the obj/attr with row numbe
 
 By default, the object using @mapsql will be the enactor (%#) for the triggered attribute. However, if you control `<object>`, the `/spoof` switch can be used to preserve the current enactor.
 
+The `/prepare` switch enables prepared statement mode. When used, additional comma-separated parameters after the query are treated as values that replace `?` placeholders in the query. This is the recommended way to prevent SQL injection attacks, as parameters are properly escaped and type-safe. When using `/prepare` with queries containing commas, store the query in an attribute and use v() to retrieve it, or escape commas with backslash.
+
 Examples:
 ```
 > &desctable me=think align(30 20 4 10 10,%0,%1,%2,%3,%4)
@@ -20,6 +22,13 @@ Examples:
 ```
 > &showresult me=@pemit %#=%0. [r(name, arg)] ([r(age, arg)])
 > @mapsql me/showresult=SELECT `name`, `age` FROM `people`
+```
+
+Prepared statement example:
+```
+> &showresult me=@pemit %#=%0. %1 (%2)
+> &QUERY me=SELECT `name`, `age` FROM `people` WHERE status = ?
+> @mapsql/prepare me/showresult=v(QUERY),active
 ```
 
 
