@@ -3,15 +3,15 @@
 
 @include inserts the contents of the attribute provided into the action list in-place, without adding a new queue entry. It is useful to avoid having to copy the same code into multiple commands. The attribute to be included must be visible to the enactor.
 
-Example:
-```
+### Example
+```sharp
 &CHECKS me=@assert [orflags(%#,Wr)]; @break [gt(words(lwho()),%0)]
 &CMD1 me=$cmd *: @include me/CHECKS; @pemit %#=You passed.
 &CMD2 me=$othercmd *: @include me/CHECKS; @@ Do something else...
 ```
 
 When including attribute contents, @include ignores any ^...: or $...: at the start, so the CHECKS attribute above could also be written like this, to allow for "unit testing":
-```
+```sharp
 &CHECKS me=$testchk *: @assert [orflags(%#,Wr)]; @break [gt(words(lwho()),%0)]
 ```
 

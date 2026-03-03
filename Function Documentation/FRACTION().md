@@ -6,7 +6,7 @@
   If `<whole>` is true, and `<number>` is greater than 1.0 (or less than -1.0), the return value will be a whole number followed by the fraction representation of the decimal.
 
   Examples:
-```
+```sharp
 think fraction(.75)
 3/4
 ```

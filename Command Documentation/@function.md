@@ -33,14 +33,14 @@ An optional fifth argument will set restriction flags.
 
 The `/preserve` switch, for MUX compability, does the same thing as the 'localize' restriction - treats the attribute that's evaluated as if it were called with ulocal() instead of u().
 
-Example:
-```
+### Example
+```sharp
 > &WORD_CONCAT #10=%0 %1
 > say u(#10/word_concat, foo, bar)
 You say, "foo bar"
 ```
 
-```
+```sharp
 > @function word_concat=#10, word_concat
 > say word_concat(foo,bar)
 You say, "foo bar"
@@ -51,7 +51,7 @@ See [@function3].
 Global user-defined functions are not automatically loaded when the game is restarted. In order to avoid objects which attempt to use functions that have not been loaded, a @startup containing @function commands should be set on a wizard object with as low a dbref number as possible; God (#1) is suggested for this use. You can also create functions from the alias.cnf file.
 
 For example, if you have one object that stores all your global functions, you could set the following command (the object is #100 in the example):
-```
+```sharp
 @startup #1=@dolist lattr(#100)=@function ##=#100,##
 ```
 
@@ -63,8 +63,8 @@ Normally, built in functions cannot be overriden by @functions. However, if a bu
 
 Using @function on an already-added @function will delete the old one and install a new function with none of the settings of the old one kept.
 
-Example:
-```
+### Example
+```sharp
 > @function/delete ansi
 > &ansi_fun #1234=%1
 > @function ansi=#1234, ansi_fun, 2, -2, noguest

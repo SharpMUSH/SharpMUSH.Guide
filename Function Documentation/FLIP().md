@@ -5,7 +5,7 @@
   flip() reverses a string. reverse() is an alias for flip().
 
   Example:
-```
+```sharp
 say flip(foo bar baz)
 You say, "zab rab oof"
 ```

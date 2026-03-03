@@ -19,8 +19,8 @@ See [@break2] for examples.
 - [@if]
 # @break2
 # @assert2
-Examples:
-```
+### Examples
+```sharp
 > @va obj=$testme *: @pemit %#=You try a test ; @break lt(%0,10)=@pemit %#=But you're too low! ; @pemit %#=And you succeed!
 > testme 0
 You try a test
@@ -33,7 +33,7 @@ You try a test
 And you succeed!
 ```
 
-```
+```sharp
 > @force me={@switch 1=1, think Third; think First; @break 1; think Second}
 First
 Third

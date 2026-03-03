@@ -11,13 +11,13 @@ For exits, they contain the message shown to an object passing through the exit 
 
 In all cases, %0 is the dbref of the moving object's original location.
 
-Example:
-```
+### Example
+```sharp
 > @success Door=You open the door and step inside.
 > @osuccess Door=opens the door and steps inside.
 ```
 
-```
+```sharp
 > @success Box=You pick up the box.
 > @osuccess Box=picks up the box.
 ```

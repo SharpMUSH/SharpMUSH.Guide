@@ -7,8 +7,8 @@ This command sends a message to a player or list of players. If the player's nam
 
 will send the message to the last person paged. You cannot page a player if they are set HAVEN or if you do not pass their @lock/page. In the latter case, the player's PAGE_LOCK`FAILURE, PAGE_LOCK`OFAILURE, and PAGE_LOCK`AFAILURE attributes will be activated if set.
 
-Examples:
-```
+### Examples
+```sharp
 > page airwolf=hi there!
 You paged Airwolf with 'hi there!'.
 > page see, I don't have to retype the name.

@@ -7,18 +7,18 @@ Generally, the sql() function is more useful for coding, as it delimits its retu
 
 The `/prepare` switch enables prepared statement mode. When used, additional comma-separated parameters after the query are treated as values that replace `?` placeholders in the query. This is the recommended way to prevent SQL injection attacks, as parameters are properly escaped and type-safe. When using `/prepare` with queries containing commas, store the query in an attribute and use v() to retrieve it, or escape commas with backslash.
 
-Example:
-```
+### Example
+```sharp
 > @sql SHOW TABLES
 ```
 
 Prepared statement examples:
-```
+```sharp
 > &QUERY me=INSERT INTO users (name, email) VALUES (?, ?)
 > @sql/prepare v(QUERY),John Doe,john@example.com
 ```
 
-```
+```sharp
 > &QUERY me=UPDATE users SET status = ? WHERE id = ?
 > @sql/prepare v(QUERY),active,123
 ```

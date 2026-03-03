@@ -6,7 +6,7 @@
   starttime() returns the time the MUSH was last started, and restarttime() returns the time it was last restarted, including @shutdown/reboots. The times are in the same format as time().
 
   Example:
-```
+```sharp
 say starttime()%r[restarttime()]
 You say "Sat Dec  7 00:09:13 1991
 You say "Sat Dec  7 00:09:13 1991

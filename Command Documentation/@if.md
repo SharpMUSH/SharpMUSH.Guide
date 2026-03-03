@@ -18,18 +18,18 @@ See [@if2] for examples.
 - [if()]
 - [BOOLEAN VALUES]
 # @if2
-Examples:
-```
+### Examples
+```sharp
 > @if 1=say Yes, say No
 You say, "Yes"
 ```
 
-```
+```sharp
 > @if 0=say Yes, say No
 You say, "No"
 ```
 
-```
+```sharp
 > &foo me=$foo *: say Checking... ; @if %0=say Yes, {say No ; say Sorry!}
 ```
 

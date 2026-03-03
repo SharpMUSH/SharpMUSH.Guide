@@ -13,7 +13,7 @@
   textsearch() returns the names of all topics whose contents matches the given `<pattern>`, the same as "help/search `<pattern>`", with topic names separated by `<osep>`.
 
   Example:
-```
+```sharp
 say textentries(help, ?who())
 You say, "CWHO() LWHO() MWHO() NWHO() XWHO() ZWHO()"
 ```

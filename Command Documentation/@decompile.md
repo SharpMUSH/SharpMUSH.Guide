@@ -7,7 +7,7 @@
 All output lines are prefixed with `<prefix>`, if one is given. This is useful for creating client-side scripts for editing code.
 
 You can either @decompile an entire object, or just certain parts of it. To @decompile just a few attributes, for example, you could type:
-```
+```sharp
 @decompile <object>/<attribute pattern> [ ... <attribute patternN>]
 ```
 including each attribute. Attribute patterns can be wildcards.
@@ -46,7 +46,7 @@ In TinyFugue:
 ```
 
 In SimpleMU:
-```
+```sharp
 Set your Options -> Grab Password
 @set me=tfprefix:<grabpassword>FugueEdit >%b
 ```

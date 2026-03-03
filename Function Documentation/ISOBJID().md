@@ -8,7 +8,7 @@
   isdbref() functions the same, but will also return 1 if `<string>` is the dbref of an existing (or garbage) object.
 
   Examples:
-```
+```sharp
 @stats
 100 objects = 20 rooms, 20 exits, 20 things, 20 players, 20 garbage.
 The next object to be created will be #33.

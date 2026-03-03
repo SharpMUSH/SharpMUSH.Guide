@@ -28,14 +28,14 @@ The `/check` and `/quiet` switches work the same as for non-regexp @edits.
 
 Note that, unlike normal @edits, the `<replace>` for an `@edit/regexp` WILL be evaluated, once for each replacement made, with the $0 token being replaced with the overall matching text, $1 with the first subexpression, and so on. Named subexpressions are also possible via `$<name>`.
 
-Example:
-```
+### Example
+```sharp
 > &foo me=Block of text/Wed Feb 22 22:54:02 2012/#10010
 > @edit/regexp me/foo=^(.+)/([^/]+)/(#[0-9]+(?::[0-9]+)?)$, ucstr($1) -- [convtime($2)] -- [name($3)]
 FOO - Set: BLOCK OF TEXT -- 1329951242 -- Minion
 ```
 Replace a literal '^' with 'v'
-```
+```sharp
 > @edit/regexp me/bar=\^, v
 ```
 

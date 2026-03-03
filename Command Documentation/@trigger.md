@@ -28,7 +28,7 @@ By default, the object using @trigger will be the enactor (%#) for the triggered
 Q-registers set at the time @trigger is run will be copied and made available in the triggered attribute, unless the `/clearregs` switch is given.
 
 @trigger can execute obj/attrs that are $-commands or ^-listens. e.g:
-```
+```sharp
 > &SLAP object=$slap *=*:@emit %n slaps %0 around with a %1
 > slap himself=trout
 Walker slaps himself around with a trout
@@ -37,7 +37,7 @@ Walker slaps himself around with a trout
 ```
 
 Note that you have to pass %0 and %1 yourself. For some $-commands or listens, the pattern can get complex (especially with regexps!), so `/match` allows you to pass a command to match the pattern.
-```
+```sharp
 > @trigger/match object/slap=slap himself=trout
 Walker slaps himself around with a trout
 ```
@@ -49,28 +49,28 @@ See [@trigger3] for examples.
 - [ufun()]
 - [VERBS]
 # @trigger3
-Examples:
-```
+### Examples
+```sharp
 > &GREET me=POSE waves hi.
 > @trigger me/GREET
 Cyclonus waves hi.
 ```
 
-```
+```sharp
 > &GREET me=POSE waves to %0! ; say Hi there, %1.
 > @trigger me/GREET=Gears, Arcee
 Cyclonus waves to Gears.
 You say, "Hi there, Arcee."
 ```
 
-```
+```sharp
 > &foo Globals=$foo *: @assert setr(0,locate(%#,%0,*))=@nspemit %#=Who? ; @nspemit %#=You foo [name(%q0)]. ; @trigger %q0/AFOO
 > &AFOO Bar=:is foo'd by %n!
 > FOO BAR
 Bar is foo'd by Globals!
 ```
 
-```
+```sharp
 > &foo Globals=$foo *: @assert setr(0,locate(%#,%0,*))=@nspemit %#=Who? ; @nspemit %#=You foo [name(%q0)]. ; @trigger/spoof %q0/AFOO
 > FOO BAR
 Bar is foo'd by Cyclonus!

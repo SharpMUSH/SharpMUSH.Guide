@@ -14,7 +14,7 @@
   ncond() and ncondall() are identical to cond(), except it returns `<expr>`s for which `<cond>`s evaluate to false.
 
   Examples:
-```
+```sharp
 say cond(0,This is false,#-1,This is also false,#123,This is true)
 You say, "This is true"
 ```

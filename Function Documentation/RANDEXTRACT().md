@@ -9,7 +9,7 @@
   randextract() may return less than `<count>` elements for `<type>`s L and R, depending on the random element chosen and the length of `<list>`. Elements of the returned list are separated by `<osep>`, which defaults to `<delim>`. `<delim>` defaults to a single space, `<count>` defaults to 1, and `<type>` defaults to R.
 
   Examples:
-```
+```sharp
 say randextract(this is a test,3)
 You say "this test a"
 say randextract(this@is@a@test,3,@)

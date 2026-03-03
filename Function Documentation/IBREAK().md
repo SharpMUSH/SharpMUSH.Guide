@@ -4,7 +4,7 @@
   The ibreak() function stops an iter() from running at the end of the current loop. When used in nested iter()s, you can give a `<level>` to specify how many iter()s to break from. iter() will stop evaluating at the end of the current loop, and NOT immediately after ibreak() is called.
 
   Examples:
-```
+```sharp
 say iter(1 2 3 4 5,switch(%i0,3,ibreak())Test %i0!)
 You say, "Test 1! Test 2! Test 3!"
 ```

@@ -6,7 +6,7 @@
   If any of the `<list of numbers>` is negative, it counts backwards from the end of the list of words, with -1 being the last word, -2 the word before last, and so on.
 
   Examples:
-```
+```sharp
 say elements(Foo Ack Beep Moo Zot,2 4)
 You say "Ack Moo"
 ```

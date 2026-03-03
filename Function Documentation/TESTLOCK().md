@@ -6,7 +6,7 @@
   testlock() evaluates the lock from the caller's perspective.
 
   Example:
-```
+```sharp
 think testlock(TYPE^PLAYER&FLAG^WIZARD, *Gandalf)
 1
 think testlock(TYPE^PLAYER&FLAG^WIZARD, *Bilbo)

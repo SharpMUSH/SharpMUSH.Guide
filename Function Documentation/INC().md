@@ -5,7 +5,7 @@
   inc() returns the integer plus 1. If given a string that ends in an integer, it increments only the final integer portion. That is:
 
   Examples:
-```
+```sharp
 think inc(3)
 4
 ```

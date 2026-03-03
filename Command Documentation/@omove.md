@@ -11,8 +11,8 @@ These attributes contain the message shown to `<object>` immediately after it mo
 
 The `<object>`'s new location is in %0 and the old location it moved from in %1.
 
-Example:
-```
+### Example
+```sharp
 > @move me=You moved! You are now in the room: [name(here)].
 > @omove me=stalks into the room wearing a malevolent expression.
 > @oxmove me=stalks away, glaring.

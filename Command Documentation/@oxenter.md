@@ -11,8 +11,8 @@ These attributes contain the messages shown to someone who enters `<object>`, th
 
 The old location of the entering object is passed in %0, if `<object>` had permission to see it there.
 
-Example:
-```
+### Example
+```sharp
 > @enter Sofa=You sit on the comfy sofa.
 > @oenter Sofa=sits with you on the sofa.
 > @oxenter Sofa=sits down on the sofa. It looks comfy.

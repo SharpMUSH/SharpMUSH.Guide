@@ -9,12 +9,12 @@
 
 Attribute flags are copied as well, unless the `/noflagcopy` switch is given. This is recommended when copying from a non-standard attribute to a standard one.
 
-Example:
-```
+### Example
+```sharp
 > @cpattr box/test=box/test1, cube/random, tribble/describe
 ```
 would check the object "box" for an attribute named TEST and then copy it to the attributes TEST1 on "box", RANDOM on the object named "cube", and DESCRIBE on the object named "tribble".
-```
+```sharp
 > @cpattr box/test=cube
 ```
 would copy the TEST attribute from "box" to TEST on "cube".

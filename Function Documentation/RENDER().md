@@ -10,7 +10,7 @@
                   will be stripped, as per stripansi()
 
   Examples:
-```
+```sharp
 say render(<Test 1> & [tagwrap(u,Test 2)], html)
 You say, "&lt;Test 1&gt; &amp; \<u\>Test 2</u>"
 ```

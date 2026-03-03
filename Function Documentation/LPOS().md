@@ -6,7 +6,7 @@
   If `<character>` is a null argument, space is used. If `<character>` is not found anywhere in `<string>`, an empty list is returned.
 
   Example:
-```
+```sharp
 say lpos(a-bc-def-g, -)
 You say, "1 4 8"
 ```

@@ -14,7 +14,7 @@
   Normally, the arguments for trim() are in the same order as trimpenn(). However, if the tiny_trim_fun @config option is on, the `<characters to trim>` and `<trim style>` arguments are reversed. Use trimpenn() or trimtiny() if you want to specify a particular argument sequence no matter how the option is set.
 
   Examples:
-```
+```sharp
 say trim(%b%bfoo bar baz%b%b%beek%b%b)
 You say, "foo bar baz   eek"
 say trim(***BLAM***,*)

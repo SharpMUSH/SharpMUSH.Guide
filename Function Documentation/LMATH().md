@@ -7,7 +7,7 @@
   add and band bor bxor dist2d dist3d div eq fdiv gt gte lt lte max mean median min modulo mul nand neq nor or remainder stddev sub xor
 
   Examples:
-```
+```sharp
 think lmath(add, 1|2|3, |)
 6
 ```

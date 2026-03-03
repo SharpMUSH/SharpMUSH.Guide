@@ -52,7 +52,7 @@ See [@sitelock3].
 If you specify a character name after the options, the options are only checked if the host pattern matches, AND the character being checked for connect support matches the one you gave. Use it only with connect and !connect options, since they're the only ones where an existing character is used.
 
 For example, to disallow anyone from connecting to 'Twink' from one domain, but to allow connections to the character from others, use something like:
-```
+```sharp
 > @sitelock *.somesite.com=!connect,Twink
 ```
 

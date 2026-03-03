@@ -6,7 +6,7 @@
   ord() returns the numerical value of the given character. chr() returns the character with the given numerical value.
 
   Examples:
-```
+```sharp
 say ord(A)
 You say, "65"
 say chr(65)

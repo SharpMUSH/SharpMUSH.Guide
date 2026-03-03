@@ -19,19 +19,19 @@ See [@oemit2] for examples.
 - [NOSPOOF]
 - [SPOOFING]
 # @oemit2
-Examples:
+### Examples
 Show a message in the locations of players Bob and Fred, to everyone except those two players:
-```
+```sharp
 > @oemit *Bob *Fred=Bob throws a paper aeroplane at Fred.
 ```
 
 Show a message in #50 to everyone except the object 'Spy'.
-```
+```sharp
 > @oemit #50/Spy=Sssh!
 ```
 
 Show a message to everyone in your current location, except the 2nd object called 'foo'.
-```
+```sharp
 > @oemit %L/"2nd foo"=bar
 ```
 

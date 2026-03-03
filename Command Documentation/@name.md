@@ -10,8 +10,8 @@ You can change the alias for a player or exit while renaming it, by giving the a
 
 When `<object>`'s name is changed, its ONAME and ANAME verb attributes will be triggered. See [@oname] for details.
 
-Examples:
-```
+### Examples
+```sharp
 > @name here=My Room
 Name set.
 > @name me=Mike;Michael;m

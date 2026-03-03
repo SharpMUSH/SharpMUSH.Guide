@@ -4,7 +4,7 @@
   This function performs SQL-server-implemented escaping of `<string>`. It's important to escape arbitrary data before passing it to the sql() and mapsql() functions, or @sql command, to prevent SQL injection attacks.
 
   Example:
-```
+```sharp
 think sqlescape(You don't say)
 You don\'t say
 ```

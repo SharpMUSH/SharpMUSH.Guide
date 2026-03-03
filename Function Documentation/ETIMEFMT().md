@@ -8,7 +8,7 @@
   A list of all codes is in [etimefmt2].
 
   Examples:
-```
+```sharp
 say etimefmt(I have been connected for $2H:$2M., conn(%#))
 You say, "I have been connected for 01:32."
 think etimefmt($2mm $2ss, 500) - [timestring(500)]

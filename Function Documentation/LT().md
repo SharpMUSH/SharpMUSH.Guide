@@ -4,7 +4,7 @@
   Takes two or more numbers, and returns 1 if and only if each number is less than the number after it, and 0 otherwise.
 
   Examples:
-```
+```sharp
 th lt(1,2)
 1
 th lt(1,2,3)

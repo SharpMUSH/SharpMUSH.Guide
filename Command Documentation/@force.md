@@ -17,8 +17,8 @@ See [@force2].
 # @force2
 Normally, the action list is evaluated twice - once when @force is run, and again when `<object>` runs the action list. If the `/noeval` switch is given, `<action list>` is not evaluated until it is run by `<object>`.
 
-Examples:
-```
+### Examples
+```sharp
 > @create Lackey
 Created: Object #103
 > @force Lackey=go east
@@ -34,8 +34,8 @@ See [@force3].
 # @force3
 Normally, @force creates a new queue entry. `@force/inline` does not.
 
-Examples:
-```
+### Examples
+```sharp
 > @create Lackey
 Created: Object #103
 > &order me=$order *:say Lackey, %0 ; @force Lackey=%0 ; say Done?
@@ -45,7 +45,7 @@ You say, "Done?"
 Lackey salutes!
 ```
 
-```
+```sharp
 > &order me=$order *:say Lackey, %0 ; @force/inline Lackey=%0 ; say Done?
 > order pose salutes!
 You say, "Lackey, pose salutes!"

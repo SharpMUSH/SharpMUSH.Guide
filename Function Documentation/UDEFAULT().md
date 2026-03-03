@@ -10,7 +10,7 @@
   uldefault() saves the global q-registers (%q0-%q9, %qa-%qz, etc) before evaluation, and restores them afterwards, as per ulocal().
 
   Examples:
-```
+```sharp
 &TEST me=center(%0,5,*)
 say udefault(Test,-- BOOM --,ACK)
 You say "*ACK*"

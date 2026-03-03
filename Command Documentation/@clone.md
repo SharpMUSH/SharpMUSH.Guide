@@ -13,7 +13,7 @@ Normally, the Wizard and Royalty flags, @powers and @warnings are stripped from 
 The clone will normally be created with the first available dbref, but Wizards and objects with the pick_dbref power may specify the `<dbref>` of a garbage object to use that instead.
 
 To clone a room and all its exits, use code like:
-```
+```sharp
 > @teleport setq(0,%L)[clone(here)]
 > @dolist lexits(%q0)=@clone ##
 ```

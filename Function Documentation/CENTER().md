@@ -6,7 +6,7 @@
   If `<string>` divides `<width>` into uneven portions, the left side will be one character shorter than the right side.
 
   Examples:
-```
+```sharp
 say center(X,5,-)
 You say, "--X--"
 ```

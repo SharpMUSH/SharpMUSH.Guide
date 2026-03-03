@@ -20,13 +20,13 @@ See [pose2] for examples.
 - [@emit]
 - [@speechmod]
 # pose2
-Examples:
-```
+### Examples
+```sharp
 > pose waves.
 Bob waves.
 ```
 
-```
+```sharp
 > :laughs out loud.
 Bob laughs out loud.
 > ;'s laughing on the inside.

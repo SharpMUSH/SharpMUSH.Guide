@@ -27,7 +27,7 @@ See [@hook3] for more information about `@hook/override/inline`, [@hook4] for in
 `@hook/override/inline` and `@hook/extend/inline` allow you to write softcoded commands which act exactly like built-in commands - because they're run immediately, instead of being queued, output from the command appears in the right order relative to other commands in the action list. By default, commands hooked with `/inline` have access to the q-registers of the calling action list, and @breaks in the hooked command propagate to the calling action list, allowing you to write your own control structures.
 
 For example, this adds a new command, @qbreak, which works like @break but stops command execution when %q0 contains a true value:
-```
+```sharp
 > &qbreak #123=$@qbreak: @break %q0=@pemit/silent %#=Stopping.
 > @command/add @qbreak
 > @hook/override/inline @qbreak=#123, qbreak
@@ -43,7 +43,7 @@ This behaviour can be altered by adding the following switches to `@hook/inline`
 See [@hook6] for some examples of using `@hook/override/inline`.
 # @hook4
 `@hook/extend` can be used to add new features to a built-in command, via additional switches, without forcing you to also rewrite the existing functionality like `@hook/override` would. For example:
-```
+```sharp
 > &who`active #123=$who/active*: @nspemit %#=ufun(fun_who, lwho(%#), switch(%0, ?*, stringsecs(%0)))
 > &who`staff #123=$who/staff: @nspemit %#=ufun(fun_who, setunion(lwho(%#), lsearch(all, elock, type^player&(flag^wizard|flag^royalty)))
 > @hook/extend WHO=#123
@@ -54,7 +54,7 @@ This leaves the built-in WHO command working as normal, but adds two new switche
 `@hook/igswitch` is an alias for `@hook/extend`, for Rhost compatability.
 # @hook5
 An example of @hook:
-```
+```sharp
 > &top_line #3=pemit(%#, What follows is the results of a look)
 > &bottom_line #3=pemit(%#, You're done looking.)
 > @hook/before look=#3, top_line
@@ -66,7 +66,7 @@ You are in Room Zero. It's very dark here.
 You're done looking.
 ```
 
-```
+```sharp
 > &cmd.say #3=$say *: @remit %L=if(hasflag(%#,OOC),<OOC>%b)%n says, "%0"
 > @hook/override say=#3, cmd.say
 > @set me=OOC
@@ -76,7 +76,7 @@ You're done looking.
 
 See [@hook6] for /inplace examples.
 # @hook6
-```
+```sharp
 > &dance me=$dance:pose sticks his right foot in ; say Do the hokey pokey ; pose sticks his right foot out
 > dance
 Walker sticks his right foot in
@@ -84,7 +84,7 @@ You say, "Do the hokey pokey"
 Walker sticks his right foot out
 ```
 
-```
+```sharp
 > &cmd.say #3=$say *:@remit %l=%n declares, "%0"
 > @hook/override say=#3,cmd.say
 > dance
@@ -93,7 +93,7 @@ Walker sticks his right foot out
 Walker declares, "Do the hokey pokey"
 ```
 
-```
+```sharp
 > @hook/override/inplace say=#3,cmd.say
 > dance
 Walker sticks his right foot in

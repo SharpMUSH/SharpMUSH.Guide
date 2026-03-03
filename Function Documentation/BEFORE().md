@@ -4,7 +4,7 @@
   Returns the portion of `<string1>` that occurs before `<string2>`. If `<string2>` isn't in `<string1>`, `<string1>` is returned. This is case-sensitive.
 
   Examples:
-```
+```sharp
 say before(foo bar baz,bar)
 You say, "foo"
 say before(foo bar baz,r)

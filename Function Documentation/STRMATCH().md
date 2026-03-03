@@ -6,7 +6,7 @@
   If `<register list>` is given, there is a side-effect: Wildcards and patterns are stored in q-registers, in the order they are given. `<register list>` is a space-separated list of register names.
 
   Examples:
-```
+```sharp
 say strmatch(Foo bar baz, *Baz)
 You say, "1"
 ```

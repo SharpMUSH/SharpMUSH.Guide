@@ -11,7 +11,7 @@
   elist() uses `<osep>` after `<punc>`/`<conj>` instead of a space.
   The default `<conjunction>` is "and", default punctuation is ",".
   Examples:
-```
+```sharp
 say itemize(eggs) * [itemize(eggs bacon)]
 You say, "eggs * eggs and bacon"
 say itemize(eggs bacon spam)

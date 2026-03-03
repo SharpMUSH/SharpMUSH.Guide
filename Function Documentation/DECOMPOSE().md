@@ -4,7 +4,7 @@
   decompose() works like escape() with the additional caveat that it inserts parse-able characters to recreate `<string>` exactly after one parsing. It takes care of multiple spaces, '%r's, and '%t's.
 
   Example:
-```
+```sharp
 think decompose(This is \[a [ansi(y,test)]\][space(3)])
 This is \[a%b[ansi(y,test)]\] %b%b
 ```

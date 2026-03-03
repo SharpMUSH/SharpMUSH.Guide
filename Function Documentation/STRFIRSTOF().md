@@ -8,7 +8,7 @@
   strallof() returns all `<expr>`s which evaluate to non-empty strings, with each expression separated by `<osep>`.
 
   Examples:
-```
+```sharp
 say strfirstof(,  ,@@(Nothing),foo,default)
 You say, "foo"
 ```

@@ -3,8 +3,8 @@
 
 When an object has an @listen, any string it hears which is propagated to its contents will be prefixed with `<message>`. Useful for vehicles, etc, which have an @listen of "*".
 
-Example:
-```
+### Example
+```sharp
 > @create Vehicle
 Created: Object #103.
 > @create Test

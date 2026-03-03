@@ -44,8 +44,8 @@ See [@command3] for examples.
 - [RESTRICT]
 - [EVALUATION ORDER]
 # @command3
-Examples:
-```
+### Examples
+```sharp
 > @create Dining Machine
 > &eat dining=$eat *:@remit %L=%n takes a bite of %0.
 > @command/add/noparse eat
@@ -56,7 +56,7 @@ Walker takes a bite of meat loaf.
 Walker takes a bite of randword(apple tomato pear)
 ```
 
-```
+```sharp
 > &drink dining=$^drink(/noeval)? (.*)$:@remit %L=%n drinks %2.
 > @set dining/drink=regexp
 > @command/add drink

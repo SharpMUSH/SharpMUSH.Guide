@@ -8,7 +8,7 @@
   With two arguments, alias() attempts to change the alias for `<object>` to `<new alias>`, as per @alias.
 
   Examples:
-```
+```sharp
 ex *Noltar/ALIAS
 ALIAS [#7$v]: $;No;Nol;Noli;Nolt
 say alias(*Noltar)

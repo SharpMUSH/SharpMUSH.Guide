@@ -8,7 +8,7 @@
   This function evaluates arguments one at a time, stopping as soon as one is true.
 
   Examples:
-```
+```sharp
 say firstof(0,2)
 You say, "2"
 ```

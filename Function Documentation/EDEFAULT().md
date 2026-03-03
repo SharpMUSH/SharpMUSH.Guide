@@ -4,7 +4,7 @@
   This function returns the evaluated value of `<obj>`/`<attr>`, as if retrieved via the get_eval() function, if the attribute exists and is readable by you. Otherwise, it evaluates `<default case>`, and returns that. `<default case>` is only evaluated if the attribute does not exist or cannot be read.
 
   Example:
-```
+```sharp
 &TEST me=You have lost [rand(10)] marbles.
 say edefault(me/Test,You have no marbles.)
 You say "You have lost 6 marbles."

@@ -4,7 +4,7 @@
   This function returns 1 if its argument is valid JSON, 0 if not.
 
   Examples:
-```
+```sharp
 think isjson(1)
 1
 think isjson(true)

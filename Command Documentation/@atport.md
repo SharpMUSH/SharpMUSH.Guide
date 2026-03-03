@@ -11,8 +11,8 @@ These attributes contain the message shown to `<object>` when it is teleported, 
 
 In all of these attributes, %0 is the object which teleported `<object>`, and %1 is `<object>`'s old location.
 
-Example:
-```
+### Example
+```sharp
 > @tport me=name(%0) has teleported you from [name(%1)] to [name(here)].
 > @otport me=appears in a puff of smoke.
 > @oxtport me=disappears in a puff of smoke.

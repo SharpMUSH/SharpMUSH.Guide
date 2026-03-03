@@ -9,8 +9,8 @@ A price is either a number (20), a range of numbers (10-30), or a minimum number
 
 A player must pass `<object>`'s @lock/pay in order to purchase from it.
 
-Example::
-```
+### Example
+```sharp
 > @PRICELIST vendor=mansion:1000+ large_house:100-200 house:20,30,50
 ```
 

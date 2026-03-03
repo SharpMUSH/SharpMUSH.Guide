@@ -5,8 +5,8 @@ When set, the exitformat attribute is evaluated and shown in place of the "Obvio
 
 Q-registers (set via setq() and similar functions) are inherited from the @conformat.
 
-Example:
-```
+### Example
+```sharp
 > @exitformat here=Exits: [itemize(iter(%0, name(%i0)))]
 ```
 

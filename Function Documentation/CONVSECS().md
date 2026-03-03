@@ -12,15 +12,15 @@
   convutcsecs(`<seconds>`) is an alias for convsecs(`<seconds>`, utc).
 
   Examples:
-```
+```sharp
 say secs()
 You say, "709395750"
 ```
-```
+```sharp
     > say convsecs(709395750)
     You say, "Wed Jun 24 10:22:54 1992"
 ```
-```
+```sharp
     > say convutcsecs(709395750)
     You say, "Wed Jun 24 14:22:30 1992"
 ```

@@ -5,8 +5,8 @@ If `<player>` is not set UNFINDABLE, this command will tell you where the player
 
 To avoid being found this way, just do: `@set me=UNFINDABLE`
 
-Example:
-```
+### Example
+```sharp
 > @whereis Moonchilde
 ```
 

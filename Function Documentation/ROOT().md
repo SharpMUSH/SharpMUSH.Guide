@@ -4,7 +4,7 @@
   Returns the n-th root of `<number>`. The 2nd root is the square root, the 3rd the cube root, and so on.
 
   Examples:
-```
+```sharp
 think root(27, 3)
 3
 think power(3, 3)

@@ -4,19 +4,19 @@
 
   dec() returns the given `<integer>` minus 1. If given a string that ends in an integer, it decrements only the final integer portion. That is:
 
-```
+```sharp
     > think dec(3)
     2
 ```
-```
+```sharp
     > think dec(hi3)
     hi2
 ```
-```
+```sharp
     > think dec(1.3.3)
     1.3.2
 ```
-```
+```sharp
     > think dec(1.3)
     1.2
 ```

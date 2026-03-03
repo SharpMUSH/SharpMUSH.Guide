@@ -4,7 +4,7 @@
   Returns `<string>` with the first character capitalized.
 
   Example:
-```
+```sharp
 think capstr(foo bar baz)
 Foo bar baz
 ```

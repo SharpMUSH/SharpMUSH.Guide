@@ -8,7 +8,7 @@
   strreplace() attempts to preserve ansi: if `<text>` contains ansi, it will be kept the same. If `<text>` contains no ansi, but `<string>` does, `<text>` will be inserted with the same ansi as the text it replaces. To force `<text>` to be inserted with no ansi, even if `<string>` has ansi, wrap it in ansi(n,....).
 
   Examples:
-```
+```sharp
 say strreplace(abcXYZgh, 3, 3, def)
 You say, "abcdefgh"
 ```

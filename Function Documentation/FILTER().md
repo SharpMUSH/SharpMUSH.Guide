@@ -10,7 +10,7 @@
   filter(`<obj>`/`<attr>`, `<list>`) is roughly equivalent to squish(iter(`<list>`, switch(ufun(`<obj>`/`<attr>`, %i0),1,%i0,))) though the filter() version is much more efficient.
 
   Example:
-```
+```sharp
 &IS_ODD test=mod(%0,2)
 say filter(test/is_odd, 1 2 3 4 5 6)
 You say, "1 3 5"

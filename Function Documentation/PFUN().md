@@ -8,7 +8,7 @@
   It differs from ufun() when the caller does have the attribute set - pfun() will ignore the attribute on the child, and evaluate the attribute as it would be inherited from the parent.
 
   Example:
-```
+```sharp
 @create ParentObject
 @parent me=ParentObject
 &foo me=ChildFoo

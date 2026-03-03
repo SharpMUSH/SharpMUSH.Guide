@@ -7,7 +7,7 @@
   Given no arguments, this function returns a space-separated list of all flag names known to the server, as per @list/flags.
 
   Examples:
-```
+```sharp
 @create Test
 @set Test=no_command puppet
 think flags(Test)

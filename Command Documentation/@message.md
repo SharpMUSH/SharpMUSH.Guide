@@ -28,8 +28,8 @@ See [@message2] for examples.
 - [@remit]
 - [speak()]
 # @message2
-Example:
-```
+### Example
+```sharp
 > &sayformat *Mike=%n sez, '%0'
 > &sayformat *Walker=From %n: %0
 > &cmd.fsay me=$fsay *: @message/spoof *Mike *Walker *Javelin=%n says\, "%0", SAYFORMAT, %0
@@ -50,7 +50,7 @@ Player says, "This is a test"
 ```
 
 A rough implementation of @chatformat:
-```
+```sharp
 > &cmd.chat Globals=$^@chat (.+?)=([\:;]?)(.+?)$: @message/spoof cwho(%1)=setr(0,<%1> [speak(&[squish(ctitle(%1, %#) %n)], %2%3)]), CHATFORMAT, firstof(%2, "), %1, %3, %n, ctitle(%1, %#), %q0
 > @set Globals/cmd.chat=regexp
 ```
@@ -58,7 +58,7 @@ A rough implementation of @chatformat:
 See [@message3] for more examples.
 # @message3
 A (very) basic language system:
-```
+```sharp
 > &skill`spanish Juan=2
 > &skill`spanish Bob=1
 > &cmd.spanish Globals=$+spanish *: @nspemit %#=You say (Spanish), "%0"; @message/oemit/spoof %#=setr(0,%n says (Spanish)\, "%0"), %!/TRANSLATE, ##, SPANISH, %q0

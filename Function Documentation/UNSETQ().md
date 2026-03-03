@@ -12,7 +12,7 @@
   unsetq(`<arg>`) will clear all registers returned by listq(`<arg>`).
 
   Example:
-```
+```sharp
 think setq(name,Walker,num,#6061,loc,Bahamas)[listq()]
 LOC NAME NUM
 think setq(name,Walker,num,#6061,loc,Bahamas)[listq(n*)]

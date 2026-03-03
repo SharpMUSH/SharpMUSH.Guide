@@ -7,7 +7,7 @@
   If `<position>` is negative, it counts backwards from the end of the list. A `<position>` of -1 will replace the last element, -2 the element before last, and so on.
 
   Examples:
-```
+```sharp
 say lreplace(Turn north at the junction,2,south)
 You say, "Turn south at the junction"
 ```

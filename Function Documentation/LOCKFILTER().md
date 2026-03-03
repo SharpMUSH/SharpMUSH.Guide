@@ -10,7 +10,7 @@
   `<delim>` defaults to a space, and is the delimiter of `<dbrefs>` and the list returned by lockfilter().
 
   Examples:
-```
+```sharp
 Get all male players with a name starting with 'W'.
 think iter(lockfilter(NAME^W*&SEX:M*,lwho()),name(%i0))
 Walker WalkerBot Wilco

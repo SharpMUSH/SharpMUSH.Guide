@@ -12,7 +12,7 @@
   regedit() only replaces the first match, while regeditall() replaces all matches. The versions ending in i are case insensitive. The `<replace>` argument is evaluated once for each match, allowing for more complex transformations than is possible with straight replacement.
 
   Examples:
-```
+```sharp
 say regedit(this test is the best string, (?P<char>.)est, $<char>rash)
 You say "this trash is the best string"
 say regeditall(this test is the best string, (.)est, capstr($1)rash)

@@ -12,8 +12,8 @@ If no DESTINATION attribute is set on a variable exit, the MUSH will also check 
 
 Note that, unlike most attributes, @destination cannot be abbreviated and must be typed in full.
 
-Example:
-```
+### Example
+```sharp
 > @open Random Exit;re
 > @link re=variable
 > @power re=link_anywhere

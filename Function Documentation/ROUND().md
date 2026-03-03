@@ -10,7 +10,7 @@
   floor() rounds `<number>` down, and ceil() rounds `<number>` up, to 0 decimal places.
 
   Examples:
-```
+```sharp
 think round(3.14159, 2)
 3.14
 think round(3.5, 3, 1)

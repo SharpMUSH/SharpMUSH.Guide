@@ -10,8 +10,8 @@ Several arguments are passed to @adisconnect:
 %4 = commands issued by the disconnecting descriptor
 %5 = 1 if the descriptor was hidden on disconnect, 0 otherwise
 
-Example:
-```
+### Example
+```sharp
 > @adisconnect me = home
 ```
 

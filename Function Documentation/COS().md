@@ -4,11 +4,11 @@
   Returns the cosine of `<angle>`. Angle must be in the given angle type, or radians by default.
 
   Examples:
-```
+```sharp
 say cos(90, d)
 You say, "0"
 ```
-```
+```sharp
     > say cos(1.570796)
     You say, "0"
 ```

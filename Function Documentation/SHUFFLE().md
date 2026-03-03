@@ -6,7 +6,7 @@
   `<delimiter>` defaults to a space, and `<osep>` defaults to `<delimiter>`.
 
   Example:
-```
+```sharp
 say shuffle(foo bar baz gleep)
 You say, "baz foo gleep bar"
 ```

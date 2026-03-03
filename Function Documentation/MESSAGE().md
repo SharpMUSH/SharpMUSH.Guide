@@ -6,7 +6,7 @@
   `<switches>` is a space-separated list of one or more of "nospoof", "spoof", "oemit" and "remit", and makes message() behaviour as per @message/`<switches>`. For backwards-compatability reasons, all ten `<arg>` arguments must be given (even if empty) to use `<switches>`.
 
   Examples:
-```
+```sharp
 &formatter #123
 think message(me, Default> foo bar baz, #123/formatter, foo bar baz)
 Foo Bar Baz

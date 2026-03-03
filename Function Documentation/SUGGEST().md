@@ -8,7 +8,7 @@
  If the dict_file @config option is set, loads that file into the 'words' category.
 
  Example:
-```
+```sharp
 think suggest(words, ardvark)
 AARDVARK AARDVARKS AARDVARK'S etc...
 ```

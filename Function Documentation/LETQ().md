@@ -6,7 +6,7 @@
   It returns the result of `<expr>`.
 
   Examples:
-```
+```sharp
 think setr(A, 1):[letq(A, 2, %qA)]:%qA
 1:2:1
 think setr(A, 1)[setr(B,1)]:[letq(A, 2, %qA[setr(B,2)])]:%qA%qB

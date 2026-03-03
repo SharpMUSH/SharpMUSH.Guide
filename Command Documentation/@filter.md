@@ -23,16 +23,16 @@ See [@filter2] for an example.
 - [@prefix]
 - [WILDCARDS]
 # @filter2
-Example:
+### Example
 An audible exit leads from the room where Wizard is standing to another room where the puppet "Wiztoy" is standing.
-```
+```sharp
 > @prefix exit=From inside,
 > :tests.
 Wizard tests.
 Wiztoy> From inside, Wizard tests.
 ```
 
-```
+```sharp
 > @filter exit=* jumps.,* tests.
 > :jumps.
 Wizard jumps.
@@ -40,7 +40,7 @@ Wizard jumps.
 Wizard tests.
 ```
 
-```
+```sharp
 > :tests again.
 Wizard tests again.
 Wiztoy> From inside, Wizard tests again.

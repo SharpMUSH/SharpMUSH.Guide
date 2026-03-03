@@ -34,8 +34,8 @@ See [@switch3] for examples.
 - [stext()]
 - [slev()]
 # @switch3
-Examples:
-```
+### Examples
+```sharp
 > &SWITCH_EX thing=$foo *: @switch %0=*a*, :acks, *b*, :bars, :glurps
 > foo abc
 thing acks
@@ -44,19 +44,19 @@ thing bars
 thing glurps
 ```
 
-```
+```sharp
 > &SWITCH_EX thing=$foo *: @switch/first %0=*a*, :acks,*b*, :bars, :glurps
 > foo abc
 thing acks
 ```
 
-```
+```sharp
 > &SWITCH_EX thing=$test: @switch hasflag(%#,PUPPET)=1, say Puppet!, say Not Puppet!
 > test
 thing says, "Not Puppet!"
 ```
 
-```
+```sharp
 > &SWITCH_EX thing=$foo *: @switch %0=*a*,say Before: '$0'. After: '$1'
 > foo foobarbaz
 thing says, "Before: 'foob'. After: 'rbaz'
@@ -64,8 +64,8 @@ thing says, "Before: 'foob'. After: 'rbaz'
 
 See [@switch4].
 # @switch4
-Examples:
-```
+### Examples
+```sharp
 > &SWITCH_EX me=$foo *:think before ; @switch %0=1,think one ; think after
 > foo 1
 thing before
@@ -73,7 +73,7 @@ thing after
 thing one
 ```
 
-```
+```sharp
 > &SWITCH_EX me=$foo *:think before ; @switch/inline %0=1,think one ; think after
 > foo 1
 thing before

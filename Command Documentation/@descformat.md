@@ -7,8 +7,8 @@ This is primarily useful for room parents, to enforce a consistent look for all 
 
 Q-registers (set via setq() and similar functions) are inherited from the @nameformat, and passed on to the @conformat.
 
-Example:
-```
+### Example
+```sharp
 > @descformat Room Parent=repeat(=, width(%#))%r%0[repeat(=, width(%#))]
 ```
 

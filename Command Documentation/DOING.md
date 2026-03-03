@@ -14,7 +14,7 @@ If a `<pattern>` is given for either command, only connected players whose names
 See [who2].
 # WHO2
 Existing games which have softcoded 'who' commands can maintain separation from 'WHO' by using an @hook/ignore on the WHO command, such as:
-```
+```sharp
 > &HOOK`WHO <object>=not(comp(left(%c,3),WHO))
 > @hook/ignore WHO=<object>,HOOK`WHO
 ```

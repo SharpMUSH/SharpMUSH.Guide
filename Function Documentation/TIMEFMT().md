@@ -6,7 +6,7 @@
   A list of all codes for `<format>` is in [timefmt2].
 
   Example:
-```
+```sharp
 think timefmt($A\, the $dth day of $B.)
 Monday, the 17th day of July.
 ```

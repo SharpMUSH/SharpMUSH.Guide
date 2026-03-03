@@ -7,7 +7,7 @@
   number of words.
 
   Example:
-```
+```sharp
 say splice(foo bar baz,eek moof gleep,bar)
 You say, "foo moof baz"
 ```

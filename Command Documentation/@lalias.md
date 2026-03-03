@@ -7,8 +7,8 @@ These attributes contain lists of "enter aliases" and "leave aliases" for `<obje
 
 These attributes only have meaning for players and things (as rooms/exits cannot be "enter"ed) - the aliases for exits are stored in @alias.
 
-Example:
-```
+### Example
+```sharp
 > @ealias Chair=Sit down;sit
 > @lalias Chair=Stand up;stand
 ```

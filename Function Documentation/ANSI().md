@@ -14,7 +14,7 @@
   For example, "ansi(+orange/#0000ff,Test)" would color "Test" in orange, on a blue background. In the event that your client does not support those colors, SharpMUSH will downgrade the color to the closest fit that your client can understand.
 
   Codes are parsed from left to right so, with later codes overriding earlier ones. So, for example:
-```
+```sharp
 ansi(y /+green B <#ffffff>, test)
 would show white text on an ANSI-blue background.
 ```

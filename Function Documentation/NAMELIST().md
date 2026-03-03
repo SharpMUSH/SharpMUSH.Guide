@@ -6,7 +6,7 @@
   If an `<object>`/`<attribute>` is given, the specified attribute will be called once for each invalid name, with the name as %0 and the dbref returned (#-1 for an unmatched name, #-2 for an ambiguous one) as %1.
 
   Example:
-```
+```sharp
 &test me=pemit(%#,Bad name "%0")
 say namelist(#1 Javelin "ringo spar" bogus, test)
 Bad name "bogus"

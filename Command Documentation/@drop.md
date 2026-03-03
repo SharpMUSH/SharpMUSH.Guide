@@ -9,13 +9,13 @@ When `<object>` is a player or thing, the @drop attribute is shown to whoever dr
 
 When `<object>` is an exit, @drop is shown to objects going through `<object>`, and @odrop is shown to objects in the exit's destination. @adrop is triggered when someone passes through the exit.
 
-Example:
-```
+### Example
+```sharp
 > @drop Box=You put the box down gently.
 > @odrop Box=puts the box down gently.
 ```
 
-```
+```sharp
 > @odrop South=arrives from the North.
 ```
 

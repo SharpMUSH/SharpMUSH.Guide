@@ -7,7 +7,7 @@
   Otherwise, it returns the amount of money `<object>` has. If `<object>` has the no_pay power, the value of the 'max_pennies' @config option is returned. `<object>` must have the power itself, rather than inheriting it from its owner, in this case.
 
   Examples:
-```
+```sharp
 say money(Javelin)
 You say, "150"
 ```

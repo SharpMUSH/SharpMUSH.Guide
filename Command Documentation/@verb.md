@@ -24,15 +24,15 @@ See [@verb3] for examples.
 - [VERBS]
 - [@trigger]
 # @verb3
-Examples:
-```
+### Examples
+```sharp
 > &VERB_EXAMPLE Test Object=$test:@verb me=%#,TEST,You just tested.,OTEST,just tested the example.,ATEST,%n
 > test
 You just tested.
 [others see] Cyclonus just tested the example.
 ```
 
-```
+```sharp
 > &TEST Test Object=You have just tested this object!
 > &ATEST Test Object=@emit %0 has failed!
 > &OTEST Test Object=tests test object.
@@ -45,11 +45,11 @@ Cyclonus has failed!
 See [@verb4] for another example.
 # @verb4
 In order to make this into a global command that anyone can use, we need to put it on a WIZARD object in the Master Room.
-```
+```sharp
 > &DO_TEST Global=$test *: @assert setr(0,locate(%#,%0,n))=@pemit %#=I don't see that here. ; @verb %q0=%#, TEST, You test [capstr(%0)]., OTEST,tests [capstr(%0)]. ,ATEST
 ```
 
-```
+```sharp
 > &TEST Example=You test this fun example.
 > &ATEST Example=POSE has been tested!
 > test example

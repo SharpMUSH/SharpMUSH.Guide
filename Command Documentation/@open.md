@@ -11,8 +11,8 @@ Wizards and objects with the pick_dbref power can specify garbage dbrefs to use 
 
 To open an exit in a room, you must control the room, have the Open_Anywhere @power, or the room must be set OPEN_OK and you must pass its @lock/open.
 
-Example:
-```
+### Example
+```sharp
 > @open Up \<U\>;up;u;climb=#255, Down \<D\>;down;d;fall
 ```
 

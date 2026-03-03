@@ -4,7 +4,7 @@
   fn() executes the built-in/hardcoded function `<function name>`, even if the function has been deleted or overridden with @function. It is primarily useful within @functions that override built-ins in order to be able to call the built-in.
 
   Example:
-```
+```sharp
 &BRIGHT_PEMIT #10=fn(pemit,%0,-->[ansi(h,%1)])
 @function/delete PEMIT
 @function PEMIT=#10,BRIGHT_PEMIT

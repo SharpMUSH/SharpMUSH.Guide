@@ -15,7 +15,7 @@
   Depending on the host's OpenSSL version and how it was configured, there might be more (or less) available. digest(list) returns the methods a particular server understands if the OpenSSL library version being used is recent enough (1.0.0 and higher), or '#-1 LISTING NOT SUPPORTED' on older versions. For portable code, stick with MD5, SHA1 and the SHA2 family.
 
   Example:
-```
+```sharp
 think iter(digest(list), %i0(foo) => [digest(%i0, foo)], %b, %r)
 ...
 MD4(foo) => 0ac6700c491d70fb8650940b1ca1e4b2

@@ -8,8 +8,8 @@ Note that long and spammy @aconnect messages, whether in your room or on a chann
 One argument is passed to @aconnect:
 %1 = number of player connections (1 if this is an initial connect)
 
-Example:
-```
+### Example
+```sharp
 > @aconnect me=+who ; +bbscan
 ```
 

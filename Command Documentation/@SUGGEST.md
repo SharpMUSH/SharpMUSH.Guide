@@ -9,8 +9,8 @@ When given no switches or `/list`, shows all available suggestion categories. If
 
 `/add` and `/delete` are Wizard-only switches that do the respective operation for a word in a given category.
 
-Example:
-```
+### Example
+```sharp
 > @suggest/add pets=dog
 > @suggest/add pets=cat
 > @suggest/add pets=bird

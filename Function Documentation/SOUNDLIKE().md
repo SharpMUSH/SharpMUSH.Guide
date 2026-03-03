@@ -6,7 +6,7 @@
   The soundslike function returns 1 if the two words have the same hash code (see [soundex()] for information), which means, in general, if they sound alike. The hash type can be 'soundex' (Default) or 'phone' for a different algorithm that might give better results with some words.
 
   Examples:
-```
+```sharp
 think soundslike(robin,robbyn)
 1
 think soundslike(robin,roebuck, phone)

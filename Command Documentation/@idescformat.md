@@ -9,8 +9,8 @@ This is useful for things like object parents that enforce a consistent "look" f
 
 Q-registers (set via setq() and similar functions) are inherited from the @nameformat, and passed on to the @conformat.
 
-Example:
-```
+### Example
+```sharp
 > @idescribe Vehicle Parent=repeat(*, width(%#))%r%0
 ```
 

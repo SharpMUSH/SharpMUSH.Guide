@@ -9,7 +9,7 @@
   If `<replace>` is an empty string, `<search>` is deleted from the string.
 
   Example:
-```
+```sharp
 say edit(this is a test,^,I think%b,$,.,a test,an exam)
 You say "I think this is an exam."
 ```

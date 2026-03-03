@@ -6,7 +6,7 @@
   If `<position>` is less than 0, an error is returned. If `<position>` is greater than the length of `<string>`, `<insert>` is appended to it.
 
   Examples:
-```
+```sharp
 think strinsert(barbaz, 0, foo)
 foobarbaz
 think strinsert(Myname, 2, %b)

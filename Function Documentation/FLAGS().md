@@ -9,7 +9,7 @@
   With an `<object>`/`<attribute>`, the flag letters for each flag set on the given `<attribute>` are returned.
 
   Examples:
-```
+```sharp
 @create Test
 @set Test=no_command puppet
 think flags(Test)

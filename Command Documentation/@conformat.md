@@ -7,14 +7,14 @@ The dbrefs of the objects which would appear in the normal contents list are pas
 
 Q-registers (set via setq() and similar functions) are inherited from the @descformat, and passed on to the @exitformat.
 
-Examples:
+### Examples
 Show the normal contents list, but in upper-case:
-```
+```sharp
 > @conformat here=edit(ucstr(%1), |, %r)
 ```
 
 Show just the object names (with no ansi) in a table:
-```
+```sharp
 > @conformat here=table(iter(%0, name(%i0), %b, |), 20, width(%#), |)
 ```
 

@@ -5,8 +5,8 @@ When set, this attribute modifies everything `<object>` says, poses, semiposes a
 
 If the attribute evaluates to an empty string, the original text will be used. Otherwise, the result of the attribute is used.
 
-Example:
-```
+### Example
+```sharp
 > @speechmod me=ucstr(%0)!
 > say hello
 You say, "HELLO!"
@@ -14,7 +14,7 @@ You say, "HELLO!"
 Bob WAVES!
 ```
 
-```
+```sharp
 > @speechmod me=switch(%1,",ucstr(%0),:,lcstr(%0))
 > say Test
 You say, "TEST"

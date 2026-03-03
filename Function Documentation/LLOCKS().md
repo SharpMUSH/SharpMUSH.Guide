@@ -8,7 +8,7 @@
   If no object is given, llocks() returns all the predefined lock types available.
 
   Example:
-```
+```sharp
 @lock me==me
 @lock/use me==me
 @lock/user:itsme me==me

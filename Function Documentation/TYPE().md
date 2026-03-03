@@ -4,7 +4,7 @@
   This function returns the type of an object - one of PLAYER, THING, EXIT, ROOM or GARBAGE - or #-1 if the object can't be found.
 
   Examples:
-```
+```sharp
 @create Test
 think type(Test)
 THING

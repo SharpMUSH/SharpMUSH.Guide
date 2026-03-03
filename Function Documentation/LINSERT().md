@@ -9,7 +9,7 @@
   If a `<delim>` is not given, a space is assumed. Null items are counted when determining position, as in 'items()'.
 
   Examples:
-```
+```sharp
 say linsert(This is a string,4,test)
 You say, "This is a test string"
 say linsert(one|three|four,2,two,|)

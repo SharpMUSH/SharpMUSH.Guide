@@ -14,7 +14,7 @@
   **Prepared Statements (Parameterized Queries):** If more than 4 arguments are provided, sql() automatically uses prepared statements. The 5th argument onwards are treated as parameters that replace `?` placeholders in the query. This is the recommended way to prevent SQL injection attacks, as parameters are properly escaped and type-safe.
 
   Example using prepared statements:
-  ```
+```sharp
   > think sql(lit(SELECT name FROM users WHERE id = ?),%r,%b,,123)
   ```
 

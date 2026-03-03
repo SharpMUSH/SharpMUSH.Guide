@@ -6,7 +6,7 @@
   The elapsed time is split into years, weeks, days, hours, minutes and seconds fields. As many non-zero fields as can fit into `<width>` characters are used, in that order. If all fields are 0, seconds are displayed.
 
   Examples:
-```
+```sharp
 think etime(59)
 59s
 think etime(60)

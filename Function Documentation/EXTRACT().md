@@ -8,7 +8,7 @@
   If `<length>` is negative, extract() will return up to and including the `<length>`th element from the right, so -1 will extract up to the last element, -2 up to the element before last, and so on.
 
   Examples:
-```
+```sharp
 think extract(This is a test string,3,2)
 a test
 ```

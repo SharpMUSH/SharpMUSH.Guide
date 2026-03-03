@@ -6,7 +6,7 @@
   hasflag() will accept a full flag name ("Wizard") or a flag letter ("W"). You can check the flags of any object, whether you control them or not.
 
   Example:
-```
+```sharp
 think hasflag(me, wizard)
 1
 ```

@@ -18,8 +18,8 @@ See [@notify2].
 
 `/setq` supercedes all other switches: You cannot `@notify/all/setq` or `@notify/any/setq` - it deals with just one queue entry.
 
-Example:
-```
+### Example
+```sharp
 > @wait me=think Hello, %q0!
 > @notify/setq me=0,Walker
 Hello, Walker!

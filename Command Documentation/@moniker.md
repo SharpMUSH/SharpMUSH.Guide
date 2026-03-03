@@ -5,14 +5,14 @@ This command sets or clears the "moniker" for `<object>`. A moniker is an ansi t
 
 `<moniker>` can contain any text - it will be ignored, and only the ansi colors will be taken into account. If `<object>`'s name is longer than `<moniker>`, the last color will be used for the remaining letters.
 
-Examples:
+### Examples
 Display your name in highligted red
-```
+```sharp
 > @moniker me=ansi(hr,-)
 ```
 
 Show the first letter in orange, and the rest with no color
-```
+```sharp
 > @moniker me=ansi(+orange,-)[ansi(n,-)]
 ```
 

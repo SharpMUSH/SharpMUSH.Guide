@@ -7,9 +7,9 @@ When set, this attribute is evaluated and displayed in place of `<object>`'s nam
 
 Q-registers (set via setq() and similar functions) are passed on from the nameformat to the other @*format attributes used for formatting "look" output. Use localize() if you don't want this behaviour.
 
-Example:
+### Example
 Show the room's zone after its name.
-```
+```sharp
 > @nameformat here = %1 [if(zone(%0),<[name(zone(%0))]>)]
 ```
 

@@ -8,8 +8,8 @@ Normally, @chown'ing an object clears privileged flags and powers, and sets the 
 
 If `/<attribute>` is specified, it acts as an alias for @atrchown; see [@atrchown] for details.
 
-Examples:
-```
+### Examples
+```sharp
 > @chown here=me (for a room)
 > @chown box=Soundwave (for a thing)
 ```

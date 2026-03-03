@@ -6,7 +6,7 @@
   When the `<delimiter>` is a space, empty elements are not counted.
 
   Examples:
-```
+```sharp
 think words(1 2%b%b3, %b)
 3
 ```

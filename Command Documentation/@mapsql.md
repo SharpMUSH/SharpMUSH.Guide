@@ -13,19 +13,19 @@ By default, the object using @mapsql will be the enactor (%#) for the triggered 
 
 The `/prepare` switch enables prepared statement mode. When used, additional comma-separated parameters after the query are treated as values that replace `?` placeholders in the query. This is the recommended way to prevent SQL injection attacks, as parameters are properly escaped and type-safe. When using `/prepare` with queries containing commas, store the query in an attribute and use v() to retrieve it, or escape commas with backslash.
 
-Examples:
-```
+### Examples
+```sharp
 > &desctable me=think align(30 20 4 10 10,%0,%1,%2,%3,%4)
 > @mapsql me/desctable=DESCRIBE table_name
 ```
 
-```
+```sharp
 > &showresult me=@pemit %#=%0. [r(name, arg)] ([r(age, arg)])
 > @mapsql me/showresult=SELECT `name`, `age` FROM `people`
 ```
 
 Prepared statement example:
-```
+```sharp
 > &showresult me=@pemit %#=%0. %1 (%2)
 > &QUERY me=SELECT `name`, `age` FROM `people` WHERE status = ?
 > @mapsql/prepare me/showresult=v(QUERY),active

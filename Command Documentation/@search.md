@@ -51,8 +51,8 @@ See [@search5] for some examples.
 - [lsearch()]
 - [@find]
 # @search5
-Examples:
-```
+### Examples
+```sharp
 @search all type=player,flags=W <-- list all Wizard players
 @search type=room <-- list all rooms owned by me.
 @search zone=#50 <-- list all objects belong to zone #50.

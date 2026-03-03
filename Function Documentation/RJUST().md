@@ -6,7 +6,7 @@
   If `<string>` is longer than `<length>`, it will be returned unaltered, unless `<truncate?>` is true, in which case only the last `<length>` characters of `<string>` are returned.
 
   Examples:
-```
+```sharp
 say -[rjust(foo,6)]-
 You say, "-   foo-"
 ```

@@ -4,7 +4,7 @@
   This function merges `<string1>` and `<string2>`, depending on `<characters>`. If a character in `<string1>` is the same as one in `<characters>`, it is replaced by the character in the corresponding position in `<string2>`. The two strings must be of the same length.
 
   Example:
-```
+```sharp
 say merge(AB--EF,abcdef,-)
 You say, "ABcdEF"
 ```
@@ -12,7 +12,7 @@ You say, "ABcdEF"
   Spaces need to be treated specially. An empty argument is considered to equal a space, for `<characters>`.
 
   Example:
-```
+```sharp
 say merge(AB[space(2)]EF,abcdef,)
 You say, "ABcdEF"
 ```

@@ -6,7 +6,7 @@
   version() returns a string which contains various version information for the MUSH you're on. numversion() returns an integer representation of the version/patchlevel which can be used for softcode comparison.
 
   Example:
-```
+```sharp
 say version()
 You say "SharpMUSH version 1.8.1 patchlevel 4 [12/06/2005]"
 say numversion()

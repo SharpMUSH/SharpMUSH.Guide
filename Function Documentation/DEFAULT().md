@@ -6,12 +6,12 @@
   This is useful for code that needs to return the value of an attribute, or an error message or default case, if that attribute does not exist.
 
   Examples:
-```
+```sharp
 &TEST me=apple orange banana
 say default(me/Test, No fruits!)
 You say "apple orange banana"
 ```
-```
+```sharp
     > &TEST ME
     > say default(me/Test, No fruits!)
     You say "No fruits!"

@@ -11,7 +11,7 @@
   stext(L) returns the `<string>` for the outermost switch, and is equivilent to stext(slev()). %$`\<n\>` is equivilent to stext(`\<n\>`), for `\<n\>`s of 0-9 or L.
 
   Examples:
-```
+```sharp
 &cmd.whois me=$whois *: @pemit %#=switch(pmatch(%0),#-*, I don't know '%0', '%0' is %$0)
 @switch foo=f*, say switch(bar, b*,%$1 %$0!)
 You say, "foo bar!"

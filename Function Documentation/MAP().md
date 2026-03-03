@@ -7,7 +7,7 @@
 `iter(<list>, ulambda(<object>/<attribute>, %i0, inum(0)), <delim>, <osep>)`
 
   Examples:
-```
+```sharp
 &times_two me=mul(%0,2)
 ```
 

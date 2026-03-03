@@ -34,8 +34,8 @@ See [@attribute3].
 
 `@attribute/enum` lets you restrict all _new_ values for an attribute to match an item in a list. It will also perform partial matching on the list, much like a grab. Delimiter is optional, and defaults to a space.
 
-Examples:
-```
+### Examples
+```sharp
 @attribute/enum sex=male female   <-- requires 'male' or 'female' as @sex
 @attribute/enum | race=Wookie|Indy 500 <- Your race can be 'wookie' or 'Indy 500'
 @attribute/limit score=^\\d+$    <-- @score can only contain digits. (Remember, Penn's parser eats a \)

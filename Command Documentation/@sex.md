@@ -3,8 +3,8 @@
 
 You can use this command to set yourself or any of your objects to be male, female, neuter, or plural. The SEX attribute is used for pronoun substitution by the MUSH, and anything not recognizable will be treated as neuter.
 
-Examples:
-```
+### Examples
+```sharp
 > @sex me=Male
 > @sex me=Female
 > @sex me=Woman

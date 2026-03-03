@@ -4,7 +4,7 @@
   localize() saves the q-registers, evaluates its argument, and restores the registers afterwards. It has the same effect as ulocal(), but doesn't require setting the code into an attribute.
 
   Examples:
-```
+```sharp
 say setr(0, Outside)-[setr(0, Inside)]-%q0
 You say, "Outside-Inside-Inside"
 ```

@@ -12,7 +12,7 @@
   If the extended convtime() is supported (See @config compile), more formats for the date are enabled, including ones missing the day of week and year, and a 'Month Day Year' format. In this case, convtime() can also handle dates prior to 1970 (in which case a negative number will be returned).
 
   Example:
-```
+```sharp
 say time()
 You say, "Wed Jun 24 10:22:54 1992"
 ```

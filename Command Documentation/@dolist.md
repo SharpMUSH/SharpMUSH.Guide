@@ -30,15 +30,15 @@ See [@dolist3] for examples.
 - [SEMAPHORES]
 - [ACTION LISTS]
 # @dolist3
-Examples:
-```
+### Examples
+```sharp
 > @dolist a b c=say %i0 is number [inum(0)]
 You say, "a is number 1"
 You say, "b is number 2"
 You say, "c is number 3"
 ```
 
-```
+```sharp
 > &test me=$test: say Starting ; @wait me={say Done} ;
                   @dolist/notify a b c=say %i0 is [inum(0)]
 > test
@@ -50,7 +50,7 @@ Notified.
 You say, "Done"
 ```
 
-```
+```sharp
 > @dolist a b c=@dolist 1 2 3=say %iL/%i0
 You say, "a/1"
 You say, "a/2"

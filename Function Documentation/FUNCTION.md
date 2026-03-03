@@ -5,7 +5,7 @@
   The brackets are used to delimit and force evaluation of the function (or nested functions). The brackets can also be used to group functions for the purposes of string concatenation. In general, more than one pair of brackets is not required, but you can nest an arbitrary number of brackets.
 
   Examples:
-```
+```sharp
 say first(rest(This is a nice day))
 You say, "is"
 ```

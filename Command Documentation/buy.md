@@ -5,8 +5,8 @@ When you try buying an item, PRICELIST attributes on nearby objects (or `<vendor
 
 If the pricelist match contains a list of prices, ITEM:30,20,10, the first one you can afford will be the resulting price.
 
-Example:
-```
+### Example
+```sharp
 > @PRICELIST vendor=coke:20 pepsi:20
 > &drink`coke vendor=You enjoy a delicious coke.
 > &drink`pepsi vendor=It tastes like a funny coke.

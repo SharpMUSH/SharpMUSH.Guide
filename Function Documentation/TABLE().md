@@ -6,7 +6,7 @@
   `<line length>` is how wide a table row can be, and defaults to 78. `<delimiter>` is the delimiter used in `<list>`, and defaults to a space. `<osep>` is a single character to be used between entries in the table, and also defaults to a space.
 
   Examples:
-```
+```sharp
 think table(a b areallylongone d)
 a          b          areallylon d
 ```
