@@ -7,11 +7,11 @@
 
   When used on exits, this function returns #-1.
 
-  For compatability with other codebases, a `<type>` can be given to limit the results. Valid `<type>`s are:
-    player             - equivalent to lplayers(`<object>`)
-    connect            - equivalent to lvplayers(`<object>`)
-    thing (or object)  - equivalent to lthings(`<object>`)
-    listen             - return only listening objects
+  For compatability with other codebases, a `<type>` can be given to limit the results. Valid `<type>`s are:<br>
+    player             - equivalent to lplayers(`<object>`)<br>
+    connect            - equivalent to lvplayers(`<object>`)<br>
+    thing (or object)  - equivalent to lthings(`<object>`)<br>
+    listen             - return only listening objects<br>
     puppet             - return only THINGs set PUPPET
 
 

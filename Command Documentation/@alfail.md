@@ -1,8 +1,8 @@
 # @lfail
 # @olfail
 # @alfail
-`@lfail <object>[=<message>]`
-`@olfail <object>[=<message>]`
+`@lfail <object>[=<message>]`<br>
+`@olfail <object>[=<message>]`<br>
 `@alfail <object>[=<action list>]`
 
 These attributes contain the message shown to objects who try to leave `<object>` and fail, the message shown to others inside `<object>` when someone fails to leave, and the actions to be taken by `<object>` when someone attempts to leave it and fails.

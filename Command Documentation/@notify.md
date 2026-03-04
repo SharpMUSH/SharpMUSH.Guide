@@ -1,5 +1,5 @@
 # @notify
-`@notify[/any][/all] <object>[/<attribute>][=<number>]`
+`@notify[/any][/all] <object>[/<attribute>][=<number>]`<br>
 `@notify/setq <object>[/<attribute>]=<qreg1>,<qval1>[,...]`
 
 This command notifies a semaphore, allowing commands queued for that semaphore to be executed.

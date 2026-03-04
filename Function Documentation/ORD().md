@@ -1,6 +1,6 @@
 # CHR()
 # ORD()
-`chr(<number>)`
+`chr(<number>)`<br>
 `ord(<character>)`
 
   ord() returns the numerical value of the given character. chr() returns the character with the given numerical value.

@@ -5,7 +5,7 @@ This command shows `<message>` to everyone in the location of `<object>` EXCEPT 
 
 If `<room>` is specified (usually as a dbref), this command shows `<message>` to everyone in `<room>` except for the given `<object>`s. In this case, each `<object>` is matched relative to `<room>`. If no matching `<object>`s are found in `<room>`, this is the equivilent of `@remit <room>=<message>`.
 
-The `/noeval` switch prevents the MUSH from evaluating `<message>`.
+The `/noeval` switch prevents the MUSH from evaluating `<message>`.<br>
 The `/spoof` switch causes nospoof notifications to show the enactor's dbref instead of the executor's dbref, and requires control over the enactor or the Can_spoof power.
 
 See [@oemit2] for examples.

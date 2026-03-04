@@ -2,9 +2,9 @@
 # @omove
 # @oxmove
 # @amove
-`@move <object>[=<message>]`
-`@omove <object>[=<message>]`
-`@oxmove <object>[=<message>]`
+`@move <object>[=<message>]`<br>
+`@omove <object>[=<message>]`<br>
+`@oxmove <object>[=<message>]`<br>
 `@amove <object>[=<action list>]`
 
 These attributes contain the message shown to `<object>` immediately after it moves, the message shown to others in the room `<object>` moves into, the message shown to objects in the location `<object>` leaves, and the actions to be taken when `<object>` moves, respectively. Please note that long @omoves are frequently found annoying.

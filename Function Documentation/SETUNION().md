@@ -9,10 +9,10 @@ say setunion(foo baz gleep bar, bar moof gleep)
 You say, "bar baz foo gleep moof"
 ```
 
-    > say setunion(1.1 1.0, 1.000)
+    > say setunion(1.1 1.0, 1.000)<br>
     You say, "1.0 1.000 1.1"
 
-    > say setunion(1.1 1.0, 1.000, %b, f)
+    > say setunion(1.1 1.0, 1.000, %b, f)<br>
     You say, "1.0 1.1"
 
 

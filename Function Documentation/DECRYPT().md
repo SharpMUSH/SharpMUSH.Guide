@@ -1,6 +1,6 @@
 # ENCRYPT()
 # DECRYPT()
-`encrypt(<string>, <password>[, <encode>])`
+`encrypt(<string>, <password>[, <encode>])`<br>
 `decrypt(<string>, <password>[, <encoded>])`
 
   encrypt() returns an encrypted string produced by a simple password-based encrypted algorithm. Good passwords are long passwords. This is not high-security encryption.

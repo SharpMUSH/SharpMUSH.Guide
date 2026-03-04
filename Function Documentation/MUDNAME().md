@@ -1,6 +1,6 @@
 # MUDNAME()
 # MUDURL()
-`mudname()`
+`mudname()`<br>
 `mudurl()`
 
   These functions return the name of the MUSH and the MUSH's website address, as set in the 'mud_name' and 'mud_url' @config options.

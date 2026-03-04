@@ -2,9 +2,9 @@
 # RESWITCHI()
 # RESWITCHALL()
 # RESWITCHALLI()
-`reswitch(<str>, <re1>, <list1>[, ... , <reN>, <listN>][, <default>])`
-`reswitchall(<str>, <re1>, <list1>[, ... , <reN>, <listN>][, <default>])`
-`reswitchi(<str>, <re1>, <list1>[, ... , <reN>, <listN>][, <default>])`
+`reswitch(<str>, <re1>, <list1>[, ... , <reN>, <listN>][, <default>])`<br>
+`reswitchall(<str>, <re1>, <list1>[, ... , <reN>, <listN>][, <default>])`<br>
+`reswitchi(<str>, <re1>, <list1>[, ... , <reN>, <listN>][, <default>])`<br>
 `reswitchalli(<str>, <re1>, <list1>[, ... , <reN>, <listN>][, <default>])`
 
   These functions are just like switch() except they compare `<string>` against a series of regular expressions, not wildcard patterns.

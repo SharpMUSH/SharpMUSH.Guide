@@ -8,8 +8,8 @@
 
   When only `<speaker>` and `<string>` are given, this function formats `<string>` as if it were speech from `<speaker>`, as follows.
 
-  If `<string>` is...  the resulting string is...
-  :`<pose>`            `<speaker's name>` `<pose>`
+  If `<string>` is...  the resulting string is...<br>
+  :`<pose>`            `<speaker's name>` `<pose>`<br>
   ;`<pose>`            `<speaker's name>``<pose>`
   |`<emit>`            `<emit>`
   `<speech>`           `<speaker's name>` says, "`<speech>`"

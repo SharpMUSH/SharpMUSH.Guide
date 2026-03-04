@@ -10,9 +10,9 @@ say first(rest(This is a nice day))
 You say, "is"
 ```
 
-    > @va me=This is a
-    > @vb me=nice day
-    > say first(rest(v(va) [v(vb)]))
+    > @va me=This is a<br>
+    > @vb me=nice day<br>
+    > say first(rest(v(va) [v(vb)]))<br>
     You say, "is"
 
   See [functions2] for more.

@@ -9,9 +9,9 @@ say index(Cup of Tea | Mug of Beer | Glass of Wine, |, 2, 1)
 You say, "Mug of Beer"
 ```
 
-    > say index(%rtoy boat^%rblue tribble^%rcute doll^%rred ball,^,2,2)
-    You say, "
-    blue tribble^
+    > say index(%rtoy boat^%rblue tribble^%rcute doll^%rred ball,^,2,2)<br>
+    You say, "<br>
+    blue tribble^<br>
     cute doll"
 
 

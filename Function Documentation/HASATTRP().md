@@ -2,9 +2,9 @@
 # HASATTRP()
 # HASATTRVAL()
 # HASATTRPVAL()
-`hasattr(<object>, <attribute>)`
-`hasattrp(<object>, <attribute>)`
-`hasattrval(<object>, <attribute>)`
+`hasattr(<object>, <attribute>)`<br>
+`hasattrp(<object>, <attribute>)`<br>
+`hasattrval(<object>, <attribute>)`<br>
 `hasattrpval(<object>, <attribute>)`
 
   The hasattr*() functions check to see if `<object>` has a given attribute. They return #-1 if the object does not exist or the attribute can't be examined by the player. Otherwise, they return 1 if the attribute is present and 0 if it is not.

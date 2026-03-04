@@ -1,7 +1,7 @@
 # V()
 # V-FUNCTION
-`v(<variable>)`
-`v(<integer>)`
+`v(<variable>)`<br>
+`v(<integer>)`<br>
 `v(<attribute>)`
 
   The first form of this function returns the value of the `<variable>` %-sub. In most cases, using the %-sub is preferable. Not all %-subs are accessible this way; only the following `<variable>`s are valid:

@@ -1,6 +1,6 @@
 # get
 # take
-`get <object>`
+`get <object>`<br>
 `get <box>'s <object>`
 
 The first form of this command lets you pick up `<object>` from your current location. The second form allows you to take `<object>` from inside `<box>`'s inventory.

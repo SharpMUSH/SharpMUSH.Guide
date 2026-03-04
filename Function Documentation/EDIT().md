@@ -3,9 +3,9 @@
 
   For each given `<search>` and `<replace>` pair, edit() replaces all occurrences of `<search>` in `<string>` with the corresponding `<replace>`.
 
-  If `<search>` is a caret (^), `<replace>` is prepended.
-  If `<search>` is a dollar sign ($), `<replace>` is appended.
-  If `<search>` is an empty string, `<replace>` is inserted between every character, and before the first and after the last.
+  If `<search>` is a caret (^), `<replace>` is prepended.<br>
+  If `<search>` is a dollar sign ($), `<replace>` is appended.<br>
+  If `<search>` is an empty string, `<replace>` is inserted between every character, and before the first and after the last.<br>
   If `<replace>` is an empty string, `<search>` is deleted from the string.
 
   Example:

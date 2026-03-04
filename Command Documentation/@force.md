@@ -10,7 +10,7 @@ If `/inline` is given, `<object>` will run `<action list>` _now_, instead of bei
 
 `@force/inplace` is an alias for `@force/inline/nobreak/localize`.
 
-@force can be abbreviated as
+@force can be abbreviated as<br>
 `<dbref> <action list>`
 
 See [@force2].

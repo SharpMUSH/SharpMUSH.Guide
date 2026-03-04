@@ -5,11 +5,11 @@
 
   It can be a bit tricky to get a literal string with spaces into an attrib, however, since spaces are usually squished in setting an attribute. This example illustrates how to make it work:
 
-    > @va me=$test: think {[lit(near       far)]}
-    Set.
-    > ex me/va
-    VA [#1]: $test: think {[lit(near       far)]}
-    > test
+    > @va me=$test: think {[lit(near       far)]}<br>
+    Set.<br>
+    > ex me/va<br>
+    VA [#1]: $test: think {[lit(near       far)]}<br>
+    > test<br>
     near       far
 
   Leaving out the {}'s will not work in the above.

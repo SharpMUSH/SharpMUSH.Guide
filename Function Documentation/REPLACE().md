@@ -12,13 +12,13 @@ say lreplace(Turn north at the junction,2,south)
 You say, "Turn south at the junction"
 ```
 
-    > say lreplace(Turn north at the junction,-1,crossroads)
+    > say lreplace(Turn north at the junction,-1,crossroads)<br>
     You say, "Turn north at the crossroads"
 
-    > say lreplace(blue|red|green|yellow,3,white,|)
+    > say lreplace(blue|red|green|yellow,3,white,|)<br>
     You say, "blue|red|white|yellow"
 
-    > say lreplace(this starts and ends the same, 1 -1, foo)
+    > say lreplace(this starts and ends the same, 1 -1, foo)<br>
     You say, "foo starts and ends the foo"
 
   replace() is an alias for lreplace(), for backwards compatability.

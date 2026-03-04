@@ -11,16 +11,16 @@ say strmatch(Foo bar baz, *Baz)
 You say, "1"
 ```
 
-    > say strmatch(Foo bar baz,*Foo)
+    > say strmatch(Foo bar baz,*Foo)<br>
     You say, "0"
 
-    > say strmatch(Foo bar baz,*o*a*)
+    > say strmatch(Foo bar baz,*o*a*)<br>
     You say, "1"
 
-    > say strmatch(foo:bar,*:*,0 1)/%q0/%q1
+    > say strmatch(foo:bar,*:*,0 1)/%q0/%q1<br>
     You say, "1/foo/bar"
 
-    > say strmatch(foo:bar=baz,*:*=*,L1 L2 right)/%q`<L1>`/%q`<L2>`/%q`<right>`
+    > say strmatch(foo:bar=baz,*:*=*,L1 L2 right)/%q`<L1>`/%q`<L2>`/%q`<right>`<br>
     You say, "1/foo/bar/baz"
 
 

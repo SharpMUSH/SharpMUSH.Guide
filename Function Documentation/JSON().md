@@ -5,12 +5,12 @@
 
   If any errors occur, json() returns a string starting with #-1.
 
-  For `<type>`...   `<data>` should be...
-  null            not given
-  boolean         one arg, either "true", "1", "false" or "0"
-  string          one arg, any string, including an empty string
-  number          one arg, a valid number
-  array           zero or more args, each themselves valid JSON
+  For `<type>`...   `<data>` should be...<br>
+  null            not given<br>
+  boolean         one arg, either "true", "1", "false" or "0"<br>
+  string          one arg, any string, including an empty string<br>
+  number          one arg, a valid number<br>
+  array           zero or more args, each themselves valid JSON<br>
   object          zero or more pairs of arguments, the first a plain string (NOT a quoted JSON string), the second valid JSON of any type
 
   When `<type>` is "array" or "object", it's recommended that subsequent JSON arguments are created with nested calls to JSON().

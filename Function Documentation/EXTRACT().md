@@ -13,10 +13,10 @@ think extract(This is a test string,3,2)
 a test
 ```
 
-    > think extract(Skip the first and last elements, 2, -2)
+    > think extract(Skip the first and last elements, 2, -2)<br>
     the first and last
 
-    > think extract(Get just the last three elements,-3, 3)
+    > think extract(Get just the last three elements,-3, 3)<br>
     last three elements
 
 

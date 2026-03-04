@@ -9,10 +9,10 @@ say iter(1 2 3 4 5,switch(%i0,3,ibreak())Test %i0!)
 You say, "Test 1! Test 2! Test 3!"
 ```
 
-    > say iter(1 2 3 4 5,switch(%i0,3,ibreak(),Test %i0!))
+    > say iter(1 2 3 4 5,switch(%i0,3,ibreak(),Test %i0!))<br>
     You say, "Test 1! Test 2! "
 
-    > say iter(a b c, iter(1 2 3, switch(%i0%i1, 2c, ibreak(2), %$0)))
+    > say iter(a b c, iter(1 2 3, switch(%i0%i1, 2c, ibreak(2), %$0)))<br>
     You say, "1a 2a 3a 1b 2b 3b 1c "
 
 

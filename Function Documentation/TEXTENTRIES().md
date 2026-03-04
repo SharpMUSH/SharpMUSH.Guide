@@ -2,8 +2,8 @@
 # TEXTENTRIES()
 # TEXTSEARCH()
 # DYNHELP()
-`textfile(<type>, <entry>)`
-`textentries(<type>, <pattern>[, <osep>])`
+`textfile(<type>, <entry>)`<br>
+`textentries(<type>, <pattern>[, <osep>])`<br>
 `textsearch(<type>, <pattern>[, <osep>])`
 
   textfile() returns the text of entries from cached text files (such as "help", "news", "events", etc.) All whitespace and newlines are included, so you may want to edit %r's and squish the result if you plan to use the text as a list of words rather than a display.
@@ -18,10 +18,10 @@ say textentries(help, ?who())
 You say, "CWHO() LWHO() MWHO() NWHO() XWHO() ZWHO()"
 ```
 
-    > say textsearch(help, pronouns, |)
+    > say textsearch(help, pronouns, |)<br>
     You say, "1.6.0P0|GENDER|SEX"
 
-    > say textfile(help, ln\(\))
+    > say textfile(help, ln\(\))<br>
     You say, "  ln(`<number>`)
 
       Returns the natural log of `<number>`.

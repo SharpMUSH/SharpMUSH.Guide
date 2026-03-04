@@ -5,10 +5,10 @@
 # LSEARCHR()
 # CHILDREN()
 # NCHILDREN()
-`lsearch(<player>[, ... , <classN>, <restrictionN>])`
-`nlsearch(<player>[, ... , <classN>, <restrictionN>])`
-`lsearchr(<player>[, ... , <classN>, <restrictionN>])`
-`children(<object>)`
+`lsearch(<player>[, ... , <classN>, <restrictionN>])`<br>
+`nlsearch(<player>[, ... , <classN>, <restrictionN>])`<br>
+`lsearchr(<player>[, ... , <classN>, <restrictionN>])`<br>
+`children(<object>)`<br>
 `nchildren(<object>)`
 
   This function is similar to the @search command, except it returns just a list of dbref numbers. The function must have at least three arguments. You can specify "all" or `<player>` for the `<player>` field; for mortals, only objects they can examine are included. If you do not want to restrict something, use "none" for `<class>` and `<restriction>`.

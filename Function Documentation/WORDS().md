@@ -11,7 +11,7 @@ think words(1 2%b%b3, %b)
 3
 ```
 
-    > think words(1|2||3, |)
+    > think words(1|2||3, |)<br>
     4
 
 

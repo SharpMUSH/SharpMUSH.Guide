@@ -1,8 +1,8 @@
 # @ause
 # @use
 # @ouse
-`@use <object>[=<message>]`
-`@ouse <object>[=<message>]`
+`@use <object>[=<message>]`<br>
+`@ouse <object>[=<message>]`<br>
 `@ause <object>[=<action list>]`
 
 These attributes contain the message shown to someone who successfully uses `<object>`, the message shown to others when someone uses `<object>`, and the actions to be taken by `<object>` when it is used, respectively.

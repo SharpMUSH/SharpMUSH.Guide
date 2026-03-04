@@ -1,6 +1,6 @@
 # LWHO()
 # LWHOID()
-`lwho([<viewer>[, <status>]])`
+`lwho([<viewer>[, <status>]])`<br>
 `lwhoid([<viewer>[, <status>]])`
 
   lwho() returns a list of the dbref numbers for all currently-connected players. When mortals use this function, the dbref numbers of hidden wizards or royalty do NOT appear on the dbref list.

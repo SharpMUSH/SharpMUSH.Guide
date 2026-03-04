@@ -5,6 +5,6 @@
 
 Two different daemons are used:
 
-info: Resolves IP addresses into host names whenever a new connection is established.
+info: Resolves IP addresses into host names whenever a new connection is established.<br>
 ssl : Handles encrypted SSL connections across @shutdown/reboots.
 

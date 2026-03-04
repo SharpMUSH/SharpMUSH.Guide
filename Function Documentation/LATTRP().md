@@ -2,9 +2,9 @@
 # LATTRP()
 # REGLATTR()
 # REGLATTRP()
-`lattr(<object>[/<attribute pattern>][, <output separator>])`
-`lattrp(<object>[/<attribute pattern>][, <output separator>])`
-`reglattr(<object>[/<regexp>][, <output separator>])`
+`lattr(<object>[/<attribute pattern>][, <output separator>])`<br>
+`lattrp(<object>[/<attribute pattern>][, <output separator>])`<br>
+`reglattr(<object>[/<regexp>][, <output separator>])`<br>
 `reglattrp(<object>[/<regexp>][, <output separator>])`
 
   lattr() returns a list of all the attributes on `<object>` which you can see, and which match the wildcard `<attribute pattern>`. If no `<attribute pattern>` is given, it defaults to "*". Note that this does not include branches in attribute trees; you must use the "**" wildcard to include those.

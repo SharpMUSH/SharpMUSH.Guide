@@ -1,6 +1,6 @@
 # @ealias
 # @lalias
-`@ealias <object>[=<enter alias1>[; ... ; <enter aliasN>]]`
+`@ealias <object>[=<enter alias1>[; ... ; <enter aliasN>]]`<br>
 `@lalias <object>[=<leave alias1>[; ... ; <leave aliasN>]]`
 
 These attributes contain lists of "enter aliases" and "leave aliases" for `<object>` - any of the aliases can be used in place of "enter `<object>`" and "leave `<object>`" to enter/leave the object.

@@ -1,5 +1,5 @@
 # @list
-`@list/<switch>`
+`@list/<switch>`<br>
 `@list[/lowercase] <switch>`
 
 The @list command lists useful MUSH information.

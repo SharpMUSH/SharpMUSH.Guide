@@ -1,5 +1,5 @@
 # @trigger
-`@trigger[/<switches>] <object>/<attribute>[=<arg0>, ..., <arg29>]`
+`@trigger[/<switches>] <object>/<attribute>[=<arg0>, ..., <arg29>]`<br>
 `@trigger/match[/<switches>] <object>/<attribute>=<string>`
 
 @trigger queues an action list stored in an attribute. It can also pass values to that attribute on the stack, as %0 to %9 and `r(0,args)` to `r(29,args)`.

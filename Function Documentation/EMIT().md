@@ -1,6 +1,6 @@
 # EMIT()
 # NSEMIT()
-`emit(<message>)`
+`emit(<message>)`<br>
 `nsemit(<message>)`
 
   Sends a message to the room, as per @emit.

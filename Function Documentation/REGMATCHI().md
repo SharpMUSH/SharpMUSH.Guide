@@ -1,7 +1,7 @@
 # REGMATCH()
 # REGMATCHI()
-  (Help text from TinyMUSH 2.2.4, with permission)
-`regmatch(<string>, <regexp>[, <register list>])`
+  (Help text from TinyMUSH 2.2.4, with permission)<br>
+`regmatch(<string>, <regexp>[, <register list>])`<br>
 `regmatchi(<string>, <regexp>[, <register list>])`
 
   regmatch() checks to see if the entirety of `<string>` matches the regular expression `<regexp>`, and returns 1 if so and 0 if not. regmatchi() does the same thing, but case-insensitively. They are the regexp-equivilent of strmatch(); if you're looking for a regexp version of match(), see [reglmatch()].

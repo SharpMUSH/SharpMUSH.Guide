@@ -1,6 +1,6 @@
 # @pemit
-`@pemit[/<switches>] <object>=<message>`
-`@pemit/list[/<switches>] <object list>=<message>`
+`@pemit[/<switches>] <object>=<message>`<br>
+`@pemit/list[/<switches>] <object list>=<message>`<br>
 `@pemit/port[/list][/silent] <descriptor(s)>=<message>`
 
 The basic form of this command sends `<message>` to `<object>` directly. It is very similar in its effects to @emit except only one object will see the message.

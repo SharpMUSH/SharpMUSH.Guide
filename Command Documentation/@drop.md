@@ -1,8 +1,8 @@
 # @adrop
 # @odrop
 # @drop
-`@drop <object>[=<message>]`
-`@odrop <object>[=<message>]`
+`@drop <object>[=<message>]`<br>
+`@odrop <object>[=<message>]`<br>
 `@adrop <object>[=<action list>]`
 
 When `<object>` is a player or thing, the @drop attribute is shown to whoever drops `<object>`, and @odrop to others in the location `<object>` is dropped in. The @adrop attribute is triggered when `<object>` is dropped.
@@ -18,7 +18,6 @@ When `<object>` is an exit, @drop is shown to objects going through `<object>`, 
 ```sharp
 > @odrop South=arrives from the North.
 ```
-
 
 **See Also:**
 - [drop]

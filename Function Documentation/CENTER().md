@@ -11,13 +11,13 @@ say center(X,5,-)
 You say, "--X--"
 ```
 
-    > say center(X,5,-=)
+    > say center(X,5,-=)<br>
     You say, "-=X=-"
 
-    > say center(.NEAT.,15,-,=)
+    > say center(.NEAT.,15,-,=)<br>
     You say, "----.NEAT.====="
 
-    > say center(hello,16,12345)
+    > say center(hello,16,12345)<br>
     You say, "12345hello543215"
 
 

@@ -1,8 +1,8 @@
 # @apayment
 # @payment
 # @opayment
-`@payment <object>[=<message>]`
-`@opayment <object>[=<message>]`
+`@payment <object>[=<message>]`<br>
+`@opayment <object>[=<message>]`<br>
 `@apayment <object>[=<action list>]`
 
 These attributes contain the messages shown to someone who pays `<object>` pennies with the "give" command, the message shown to others when someone pays `<object>`, and the actions to be taken by `<object>` when it's paid. Each attribute is passed the number of pennies paid as %0.

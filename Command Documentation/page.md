@@ -26,8 +26,8 @@ When a player is paged, their PAGEFORMAT attribute is checked, and if exists, th
 
 Page takes three switches: `/noeval`, `/override`, and `/port`.
 
-The `/noeval` switch prevents the MUSH from evaluating the message.
-The `/override` switch is admin-only, and overrides pagelocks and HAVEN.
+The `/noeval` switch prevents the MUSH from evaluating the message.<br>
+The `/override` switch is admin-only, and overrides pagelocks and HAVEN.<br>
 The `/port` switch is admin-only, and will page a single port descriptor directly, including connections that have not yet logged into a player.
 
 

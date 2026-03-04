@@ -2,7 +2,7 @@
 # HEIGHT()
 # SCREENWIDTH
 # SCREENHEIGHT
-`width(<player|descriptor>[, <default>])`
+`width(<player|descriptor>[, <default>])`<br>
 `height(<player|descriptor>[, <default>])`
 
   These two functions return the screen width and height for a connected player. If the player's client is capable of doing so, it will let the mush know what the correct sizes are on connection and when the client is resized.

@@ -1,5 +1,5 @@
 # @teleport
-`@teleport[/<switches>] [<object>=]<destination>`
+`@teleport[/<switches>] [<object>=]<destination>`<br>
 `@teleport/list[/<switches>] <object-list>=<destination>`
 
 Teleports `<object>` to `<destination>`. `<object>` can be a player, thing or exit, and defaults to yourself. (Exits must be specified by dbref, things or players can be specified by name.) The destination must be either JUMP_OK or controlled by you, and you must either control `<object>` or `<object>`'s current location. Also, the destination, if a room, cannot be teleport-locked against `<object>`. Mortals cannot teleport HEAVY objects. If the destination is a room with a drop-to, `<object>` may go to the drop-to room instead.

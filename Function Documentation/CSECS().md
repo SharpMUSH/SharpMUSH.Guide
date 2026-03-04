@@ -1,6 +1,6 @@
 # CTIME()
 # CSECS()
-`ctime(<object>[, <utc>])`
+`ctime(<object>[, <utc>])`<br>
 `csecs(<object>)`
 
   ctime() returns the date and time that `<object>` was created. The time returned is in the server's local timezone, unless `<utc>` is true, in which case the time is in the UTC timezone.

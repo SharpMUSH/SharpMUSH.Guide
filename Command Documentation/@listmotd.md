@@ -2,8 +2,8 @@
 # @listmotd
 # @wizmotd
 # @rejectmotd
-`@motd[/<type>] <message>`
-`@motd/clear[/<type>]`
+`@motd[/<type>] <message>`<br>
+`@motd/clear[/<type>]`<br>
 `@motd/list`
 
 This command is used for manipulating the various Messages of the Day, or MotD. The first form of this command sets the `<type>` MotD to `<message>`, the second form clears the `<type>` MotD, and the third form lists the current value of each MotD. If no switch is given, `<type>` defaults to /connect.

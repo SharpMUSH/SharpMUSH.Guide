@@ -1,6 +1,6 @@
 # @wcheck
-`@wcheck <object>`
-`@wcheck/all`
+`@wcheck <object>`<br>
+`@wcheck/all`<br>
 `@wcheck/me`
 
 The first form of the command performs warning checks on a specific object. The player must own the object or be see_all. When the owner runs the command, the @warnings of the object are used to determine which warnings to give. If the object has no @warning's set, the @warnings of the owner are used. When a non-owner runs the command, the @warnings of the non-owner are used.

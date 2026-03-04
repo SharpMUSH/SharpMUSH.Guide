@@ -1,8 +1,8 @@
 # @asuccess
 # @success
 # @osuccess
-`@success <object>[=<message>]`
-`@osuccess <object>[=<message>]`
+`@success <object>[=<message>]`<br>
+`@osuccess <object>[=<message>]`<br>
 `@asuccess <object>[=<action list>]`
 
 For players and things, these attributes contain the message shown to someone who picks up `<object>` with the "get" command, the message shown to others when someone gets `<object>`, and the actions to be taken by `<object>` when someone gets it, respectively.

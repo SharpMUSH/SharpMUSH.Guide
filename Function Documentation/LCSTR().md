@@ -1,6 +1,6 @@
 # LCSTR()
 # LCSTR2()
-`lcstr(<string>)`
+`lcstr(<string>)`<br>
 `lcstr2(<string>)`
 
   Returns `<string>` with all letters converted to lowercase.

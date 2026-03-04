@@ -3,7 +3,7 @@
 
   Returns the magnitude of a vector, using a Euclidean distance metric. That is, for vector a b c d, returns sqrt(a^2+b^2+c^2+d^2).
 
-  > think vmag(3 4)
+  > think vmag(3 4)<br>
   5
 
 

@@ -3,7 +3,7 @@
 
   This function splices `<list1>` and `<list2>` together. `<list1>` and `<list2>` are space-separated lists of words.
 
-  If a word in `<list1>` is the same as `<word>`, it is replaced by the word in the corresponding position in `<list2>`. Both lists must have the same
+  If a word in `<list1>` is the same as `<word>`, it is replaced by the word in the corresponding position in `<list2>`. Both lists must have the same<br>
   number of words.
 
   Example:

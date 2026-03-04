@@ -3,7 +3,7 @@
 # SHA1
 # CHECKSUM
 # HASH
-`digest(list)`
+`digest(list)`<br>
 `digest(<algorithm>, <string>)`
 
   Returns a checksum (hash, digest, etc.) of `<string>` using the given `<algorithm>`. The result is a unique large number represented in base 16.

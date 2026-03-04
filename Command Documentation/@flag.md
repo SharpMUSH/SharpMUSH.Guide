@@ -1,14 +1,14 @@
 # @flag
-`@flag <flag name>`
-`@flag/list [<flag name pattern>]`
-`@flag/add <flag name>=[<letter>], [<type(s)>], [<setperms>], [<unsetperms>]`
-`@flag/delete <flag name>`
-`@flag/alias <flag name>=<alias>`
-`@flag/letter <flag name>[=<letter>]`
-`@flag/restrict <flag name>=[<setperms>], [<unsetperms>]`
-`@flag/type <flag name>=<type(s)>`
-`@flag/enable <flag name>`
-`@flag/disable <flagname>`
+`@flag <flag name>`<br>
+`@flag/list [<flag name pattern>]`<br>
+`@flag/add <flag name>=[<letter>], [<type(s)>], [<setperms>], [<unsetperms>]`<br>
+`@flag/delete <flag name>`<br>
+`@flag/alias <flag name>=<alias>`<br>
+`@flag/letter <flag name>[=<letter>]`<br>
+`@flag/restrict <flag name>=[<setperms>], [<unsetperms>]`<br>
+`@flag/type <flag name>=<type(s)>`<br>
+`@flag/enable <flag name>`<br>
+`@flag/disable <flagname>`<br>
 `@flag/decompile [<pattern>]`
 
 This command manipulates the list of flags in the database. With no switches, the command displays information about the given flag, including aliases and permissions. `@flag/list` lists names of enabled flags, and may be given a wildcarded pattern to restrict which names it will show.
@@ -34,9 +34,9 @@ See [@flag2] for information on `@flag/add`.
 # @flag2
 `@flag/add` is used to add a new flag with the given name. Arguments other than the flag name are optional:
 
-`<letter>` gives the flag's one-letter abbreviation, which must not conflict with the one-letter abbreviation of another flag that could be applied to the same object type(s). It defaults to none, which means it won't appear in a list of flag characters but can still be tested for with hasflag(), andlflags(), and orlflags().
-`<type>` specifies the space-separated list of types to which the flag applies, and may be 'any' (the default) or one or more of 'room', 'thing', 'player', or 'exit'.
-`<setperms>` specifies the space-separated list of permissions for who can set and/or see the flag. See [flag permissions] for details. It defaults to 'any'
+`<letter>` gives the flag's one-letter abbreviation, which must not conflict with the one-letter abbreviation of another flag that could be applied to the same object type(s). It defaults to none, which means it won't appear in a list of flag characters but can still be tested for with hasflag(), andlflags(), and orlflags().<br>
+`<type>` specifies the space-separated list of types to which the flag applies, and may be 'any' (the default) or one or more of 'room', 'thing', 'player', or 'exit'.<br>
+`<setperms>` specifies the space-separated list of permissions for who can set and/or see the flag. See [flag permissions] for details. It defaults to 'any'<br>
 `<unsetperms>` specifies the space-separated list of permissions for who can clear the flag on an object they control. It defaults to whatever `<setperms>` is given, or 'any'.
 
 Flags added with `@flag/add` are saved with the database when it is dumped, and do not need to be re-added at startup. They are treated exactly as any other flag in the server.

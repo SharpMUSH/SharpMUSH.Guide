@@ -1,6 +1,6 @@
 # CAT()
 # STRCAT()
-`cat(<string>[, ... , <stringN>])`
+`cat(<string>[, ... , <stringN>])`<br>
 `strcat(<string1>[, ... , <stringN>])`
 
   These functions concatenate multiple strings together. cat() adds a space between each string; strcat() does not.

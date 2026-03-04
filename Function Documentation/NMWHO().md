@@ -1,6 +1,6 @@
 # NMWHO()
 # NWHO()
-`nwho([<viewer>])`
+`nwho([<viewer>])`<br>
 `nmwho()`
 
   nwho() returns a count of all currently-connected players. When mortals use this function, hidden players are NOT counted. See_All players can specify a `<viewer>` to get a count of the number of players that `<viewer>` can see is online.

@@ -1,5 +1,5 @@
 # @retry
-`@retry <boolean>`
+`@retry <boolean>`<br>
 `@retry <boolean>=<arg0>[,...[,<argN>]]`
 
 The @retry command restarts the current queue entry, enabling people to loop their command without requiring a wait for the next queue entry. It can be a little tricky to understand at first. It basically tells the parser: "If `<boolean>` is true, then go back to the beginning." It can also replace %0-%9 with the arguments passed to it. (`<arg0>`,...).
@@ -29,7 +29,7 @@ You say, "0 bottles of beer!"
 You say, "Go get some more!"
 ```
 
-Implementing a folding algorithm:
+Implementing a folding algorithm:<br>
 (Yes, I know lmath is better, but this is just an example! :D)
 ```sharp
 > &add me=$add *:@retry words(%0)=rest(%0),add(first(%0),0%1) ; think %1

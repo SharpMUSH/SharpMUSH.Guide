@@ -2,8 +2,8 @@
 # SLEV()
 # %$
 # %$0
-`slev()`
-`stext([\<n\>])`
+`slev()`<br>
+`stext([\<n\>])`<br>
   %$`\<n\>`
 
   slev() returns the current nesting depth of switch*(), reswitch*() and @switch/@selects. stext() returns the `<string>` being matched for the current switch, or the `\<n\>`th switch where n=0 is the current switch, n=1 is the switch the current switch is nested in, and so on. It is a safer replacement for the "#$" token, which (because it is replaced before evaluation) is unsafe with user input, and unsuitable for use in nested switches.

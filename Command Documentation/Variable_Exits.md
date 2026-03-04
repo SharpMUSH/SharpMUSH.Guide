@@ -1,7 +1,7 @@
 # @destination
 # @exitto
 # Variable Exits
-`@destination <exit>[=<destination>]`
+`@destination <exit>[=<destination>]`<br>
 `@exitto <exit>[=<destination>]`
 
 The DESTINATION attribute is used by variable exits. To make a variable exit, you create it in the usual way (with @open), then @link it to "variable" instead of a dbref. When someone attempts to pass through the exit, the DESTINATION attribute will be evaluated, and should return a dbref; the dbref will be used as the location for the person to go to. The exit name or alias the moving player used is passed to the attribute as %0.

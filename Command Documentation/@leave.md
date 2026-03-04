@@ -2,9 +2,9 @@
 # @oleave
 # @oxleave
 # @aleave
-`@leave <object>[=<message>]`
-`@oleave <object>[=<message>]`
-`@oxleave <object>[=<message>]`
+`@leave <object>[=<message>]`<br>
+`@oleave <object>[=<message>]`<br>
+`@oxleave <object>[=<message>]`<br>
 `@aleave <object>[=<action list>]`
 
 These attributes contain the message shown to anyone leaving `<object>`, the message shown to others inside `<object>` when someone leaves it, the message shown to others in `<object>`'s location when someone leaves it, and the actions to be taken by `<object>` when someone leaves it, respectively.

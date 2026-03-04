@@ -1,5 +1,5 @@
 # @hide
-`@hide[/<switch>] <descriptor>`
+`@hide[/<switch>] <descriptor>`<br>
 `@hide[/<switch>] [<player>]`
 
 This command allows players to hide their online status. Hidden connections don't show up on WHO, in lwho(), etc, when used by players without see_all.

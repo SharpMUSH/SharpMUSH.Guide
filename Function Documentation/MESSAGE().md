@@ -15,7 +15,7 @@ think message(me, Default> foo bar baz, #123/formatter, foo bar baz)
 Formatted> Foo Bar Baz
 ```
 
-  > think message(here, default, #123/formatter, backwards compatability is annoying sometimes,,,,,,,,,,remit)
+  > think message(here, default, #123/formatter, backwards compatability is annoying sometimes,,,,,,,,,,remit)<br>
   Formatted> Backwards Compatability Is Annoying Sometimes
 
 

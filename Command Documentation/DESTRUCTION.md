@@ -1,7 +1,7 @@
 # @destroy
 # @recycle
 # @nuke
-`@destroy[/override] <object>` or `@recyle[/override] <object>`
+`@destroy[/override] <object>` or `@recyle[/override] <object>`<br>
 `@nuke <object>`
 
 The @destroy command marks `<object>` for destruction, or destroys `<object>` instantly if it was already marked for destruction. You must either control `<object>`, control its source or destination room (for exits), or it must be set DESTROY_OK and you must pass its @lock/destroy.

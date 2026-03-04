@@ -1,6 +1,6 @@
 # "
 # say
-`say[/noeval] <message>`
+`say[/noeval] <message>`<br>
 `"<message>`
 
 Says `<message>` out loud. The message will be enclosed in double-quotes. A single double-quote is the abbreviation for this common command. If the `/noeval` switch is given, `<message>` will not be evaluated.

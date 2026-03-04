@@ -1,5 +1,5 @@
 # LFLAGS()
-`lflags()`
+`lflags()`<br>
 `lflags(<object>[/<attribute>])`
 
   With an argument, lflags() returns a space-separated list consisting of the names of all the flags attached to `<object>`, or `<object>`'s `<attribute>`.
@@ -14,7 +14,7 @@ think flags(Test)
 NO_COMMAND PUPPET
 ```
 
-    > think flags(me/describe)
+    > think flags(me/describe)<br>
     NO_COMMAND VISUAL
 
 

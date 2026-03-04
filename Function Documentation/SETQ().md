@@ -1,6 +1,6 @@
 # SETQ()
 # SETR()
-`setq(<register1>, <string1>[, ... , <registerN>, <stringN>])`
+`setq(<register1>, <string1>[, ... , <registerN>, <stringN>])`<br>
 `setr(<register1>, <string1>[, ... , <registerN>, <stringN>])`
 
   The setq() and setr() functions are used to copy strings into local registers assigned arbitrary names (Much like variables in other programming languages.) setq() returns a null string; it is a purely "side effect" function. setr() returns the value stored. Multiple registers can be assigned with a single setq() or setr(), with additional pairs of registers and values in the function's arguments. In this case, setr() returns the value stored in the first register listed. All arguments are evaluated before any registers are set; if you want to use the result of setting one register in setting another, use multiple setq()s.

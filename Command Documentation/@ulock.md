@@ -1,12 +1,12 @@
 # @ulock
 # @uunlock
-`@ulock <object>[=<key>]`
+`@ulock <object>[=<key>]`<br>
 `@uunlock <object>`
 
 These commands set the Use lock for `<object>` to `<key>`, or clear the Use lock. They are deprecated, and should be replaced with
 
-`@lock/use <object>[=<key>]`
-and
+`@lock/use <object>[=<key>]`<br>
+and<br>
 `@lock/use <object>`
 
 The Use lock determines who is allowed to "use" the object or trigger any $-commands or ^-listens on the object.

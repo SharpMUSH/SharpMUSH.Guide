@@ -1,8 +1,8 @@
 # @zenter
 # @ozenter
 # @azenter
-`@zenter <object>[=<message>]`
-`@ozenter <object>[=<message>]`
+`@zenter <object>[=<message>]`<br>
+`@ozenter <object>[=<message>]`<br>
 `@azenter <object>[=<action list>]`
 
 These attributes set the message shown to a player when he enters the zone `<object>`, the message shown to others in the room the player enters when he enters the zone, and the action to be taken by the zone `<object>` when the player moves into an area zoned to it.

@@ -1,8 +1,8 @@
 # @ps
-`@ps[/<switch>] [<player>]`
+`@ps[/<switch>] [<player>]`<br>
 `@ps[/debug] <pid>`
 
-@ps lists all commands currently on your 'to be executed' queue, thus allowing you to identify infinite (or unnecessary) loops with-out putting in says or poses. It gives a count of the total commands in each of the queues (Command, Wait, and Semaphore), displayed in the format:
+@ps lists all commands currently on your 'to be executed' queue, thus allowing you to identify infinite (or unnecessary) loops with-out putting in says or poses. It gives a count of the total commands in each of the queues (Command, Wait, and Semaphore), displayed in the format:<br>
 `<Number of your queued commands> / <Total number of queued commands>`.
 
 Some of the queues also include a [Ndel] after the total. That number is the number of entries made by objects that have been halted but haven't been removed from the queue yet.

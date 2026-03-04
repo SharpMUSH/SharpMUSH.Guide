@@ -1,8 +1,8 @@
 # TRIM()
 # TRIMPENN()
 # TRIMTINY()
-`trim(<string>[, <characters to trim>[, <trim style>]])`
-`trimpenn(<string>[, <characters to trim>[, <trim style>]])`
+`trim(<string>[, <characters to trim>[, <trim style>]])`<br>
+`trimpenn(<string>[, <characters to trim>[, <trim style>]])`<br>
 `trimtiny(<string>[, <trim style>[, <characters to trim>]])`
 
   trim() strips leading and/or trailing occurrences of each of the `<characters to trim>` from `<string>`.

@@ -1,8 +1,8 @@
 # @halt
 # @allhalt
-`@halt[/noeval] <object>[=<action list>]`
-`@halt/pid <pid>`
-`@halt/all`
+`@halt[/noeval] <object>[=<action list>]`<br>
+`@halt/pid <pid>`<br>
+`@halt/all`<br>
 `@allhalt`
 
 The @halt command removes all queued actions for `<object>`. If given, `<action list>` is placed in the queue for the object instead. If no action list is specified, the object is set HALT.

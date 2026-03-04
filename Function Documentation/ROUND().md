@@ -1,8 +1,8 @@
 # ROUND()
 # CEIL()
 # FLOOR()
-`round(<number>, <places>[, <pad>])`
-`floor(<number>)`
+`round(<number>, <places>[, <pad>])`<br>
+`floor(<number>)`<br>
 `ceil(<number>)`
 
   round() rounds `<number>` to `<places>` decimal places. `<places>` must be between 0 and config(float_precision). If the optional `<pad>` argument is true, the result will be padded with 0s if it would otherwise have fewer than `<places>` digits after the decimal point.

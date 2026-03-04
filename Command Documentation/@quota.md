@@ -9,7 +9,7 @@ See [@quota2].
 # @quota2
 # @squota
 # @allquota
-`@squota <player>=[+|-]<amount>`
+`@squota <player>=[+|-]<amount>`<br>
 `@allquota[/quiet] [<limit>]`
 
 @squota is a Wizard-only command which adjusts the quota of `<player>`. If `<amount>` is prefixed by + or -, their current quota will be incremented or decremented by `<amount>`, respectively. Otherwise, their total quota is set to `<amount>`.

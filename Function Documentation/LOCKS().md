@@ -1,6 +1,6 @@
 # LLOCKS()
 # LOCKS()
-`llocks([<object>])`
+`llocks([<object>])`<br>
 `locks(<object>)`
 
 `llocks() and locks() both list @locks set on <object>, including user-defined locks (prefixed with USER:)`

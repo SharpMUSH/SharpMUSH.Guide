@@ -3,7 +3,7 @@
 
   This allows you to mark up a string using ANSI terminal effects, 16-color codes, and 256 XTERM colors (specified as color names or hex values).
 
-  The old-style `<ansi-codes>` are listed in "help ansi2".
+  The old-style `<ansi-codes>` are listed in "help ansi2".<br>
   Each block of space-separated `<codes>` can be one or more old-style ANSI codes, as listed in "help ansi2", or a foreground and/or background color. Background colors are prefixed with a "/". Each color can be one of:
 
     * +`<colorname>` (for a list of valid names, see [colors()])

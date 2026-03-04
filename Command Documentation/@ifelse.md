@@ -1,7 +1,7 @@
 # @if
 # @ifelse
 # @skip
-`@if <boolean>=<true>[, <false>]`
+`@if <boolean>=<true>[, <false>]`<br>
 `@skip <boolean>=<false>`
 
 If `<boolean>` is true, the action list `<true>` is run, otherwise the action list `<false>` is run. The action list is not queued, it is run immediately, in the same action list as @if.

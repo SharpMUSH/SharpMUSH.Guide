@@ -11,8 +11,8 @@ If `<class>`=TYPE, possible `<restriction>`s include THING (or OBJECT), ROOM, EX
 
 If `<class>`=NAME, only objects whose name begin with the string `<restriction>` will be listed. If `<class>`=EXITS, OBJECTS, ROOMS or PLAYERS, only objects of that type whose name begins with `<restriction>` are listed.
 
-If `<class>`=ZONE, only objects in the zone `<restriction>` will be listed.
-If `<class>`=PARENT, only children of parent `<restriction>` will be listed.
+If `<class>`=ZONE, only objects in the zone `<restriction>` will be listed.<br>
+If `<class>`=PARENT, only children of parent `<restriction>` will be listed.<br>
 For ZONE and PARENT, `<restriction>` must be specified as a dbref number.
 
 See [@search2].

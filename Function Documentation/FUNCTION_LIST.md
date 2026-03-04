@@ -21,7 +21,7 @@
   [Time functions]: formatting and display of time (TIME, CONVSECS) <br>
   [Utility functions]: general utilities (ISINT, COMP) <br>
 
-  The command "@list/functions" lists all functions on the game.
+  The command "@list/functions" lists all functions on the game.<br>
   The command "@function" lists only the game's custom global functions defined via the @function command.
 
 

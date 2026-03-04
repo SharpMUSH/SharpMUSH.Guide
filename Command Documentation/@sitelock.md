@@ -1,9 +1,9 @@
 # @sitelock
-`@sitelock`
-`@sitelock/name <name>`
-`@sitelock[/player] <host-pattern>=<options>[, <name>]`
-`@sitelock[/<ban|register>][/player] <host-pattern>`
-`@sitelock/check <host>`
+`@sitelock`<br>
+`@sitelock/name <name>`<br>
+`@sitelock[/player] <host-pattern>=<options>[, <name>]`<br>
+`@sitelock[/<ban|register>][/player] <host-pattern>`<br>
+`@sitelock/check <host>`<br>
 `@sitelock/remove[/player] <string>`
 
 The @sitelock command adds rules to the access.cnf file, controlling a host's level of access to the MUSH, or adds banned player names to the names.cnf file. Only Wizards may use @sitelock.

@@ -1,6 +1,6 @@
 # @poll
-`@poll`
-`@poll <message>`
+`@poll`<br>
+`@poll <message>`<br>
 `@poll/clear`
 
 This command manipulate the message at the top of WHO/DOING. By itself, it displays the current poll. Wizards and those with the poll @power can set or clear the message.

@@ -1,6 +1,6 @@
 # @atrlock
 # @attrlock
-`@atrlock <object>/<attribute>`
+`@atrlock <object>/<attribute>`<br>
 `@atrlock <object>/<attribute=[on|off]`
 
 The first form of this command tells you whether or not the given attribute is locked (whether it has the "locked" attribute flag set).

@@ -1,6 +1,6 @@
 # CONVSECS()
 # CONVUTCSECS()
-`convsecs(<seconds>[, <timezone>])`
+`convsecs(<seconds>[, <timezone>])`<br>
 `convutcsecs(<seconds>)`
 
   This function converts `<seconds>` (the number of seconds which have elapsed since midnight on January 1, 1970 UTC) to a time string. Because it's based on UTC, but returns local time, convsecs(0) is not going to be "Thu Jan 1 00:00:00 1970" unless you're in the UTC (GMT) timezone.

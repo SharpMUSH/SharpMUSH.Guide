@@ -1,7 +1,7 @@
 # give
-`give[/silent] <recipient>=<number>`
-`give[/silent] <number> to <recipient>`
-`give <recipient>=<object>`
+`give[/silent] <recipient>=<number>`<br>
+`give[/silent] <number> to <recipient>`<br>
+`give <recipient>=<object>`<br>
 `give <object> to <recipient>`
 
 The first two forms of this command give `<number>` pennies to `<recipient>`. If `<recipient>` is a non-player, it must have an @COST, and any pennies given to it will go to its owner. The amount given must match `<recipient>`'s @cost (if set). If `/silent` is given, the message informing the recipient how many pennies were given is suppressed. Wizards may "give" a negative number of pennies to take from players. When you give `<recipient>` pennies, his PAYMENT/OPAYMENT/APAYMENT attributes are triggered. You must pass `<recipient>`'s @lock/pay, unless you are a Wizard and are either giving a negative number of pennies, or giving to a player with no @cost.

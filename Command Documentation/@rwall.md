@@ -1,8 +1,8 @@
 # @wall
 # @rwall
 # @wizwall
-`@wall[/emit][/noeval] <message>`
-`@rwall[/emit][/noeval] <message>`
+`@wall[/emit][/noeval] <message>`<br>
+`@rwall[/emit][/noeval] <message>`<br>
 `@wizwall[/emit][/noeval] <message>`
 
 @wall sends `<message>` to all connected players. @rwall only sends the message to connected wizards and royalty, and @wizwall is seen only be wizards.

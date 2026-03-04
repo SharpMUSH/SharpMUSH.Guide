@@ -2,9 +2,9 @@
 # CONDALL()
 # NCOND()
 # NCONDALL()
-`cond(<cond>, <expr>[, ... , <condN>, <exprN>][, <default>])`
-`condall(<cond>, <expr>[, ... , <condN>, <exprN>][, <default>])`
-`ncond(<cond>, <expr>[, ... , <condN>, <exprN>][, <default>])`
+`cond(<cond>, <expr>[, ... , <condN>, <exprN>][, <default>])`<br>
+`condall(<cond>, <expr>[, ... , <condN>, <exprN>][, <default>])`<br>
+`ncond(<cond>, <expr>[, ... , <condN>, <exprN>][, <default>])`<br>
 `ncondall(<cond>, <expr>[, ... , <condN>, <exprN>][, <default>])`
 
   cond() evaluates `<cond>`s until one returns a true value. Should none return true, `<default>` is returned.
@@ -19,10 +19,10 @@ say cond(0,This is false,#-1,This is also false,#123,This is true)
 You say, "This is true"
 ```
 
-    > say ncond(0,This is false,#-1,This is also false,#123,This is true)
+    > say ncond(0,This is false,#-1,This is also false,#123,This is true)<br>
     You say, "This is false"
 
-    > say ncondall(0,This is false,#-1,This is also false,#123,This is true)
+    > say ncondall(0,This is false,#-1,This is also false,#123,This is true)<br>
     You say, "This is falseThis is also false"
 
 

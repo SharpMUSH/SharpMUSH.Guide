@@ -13,13 +13,13 @@ say firstof(0,2)
 You say, "2"
 ```
 
-    > say firstof(10,11,0)
+    > say firstof(10,11,0)<br>
     You say, "10"
 
-    > say firstof(grab(the cat,mommy),grab(in the hat,daddy),#-1 Error)
+    > say firstof(grab(the cat,mommy),grab(in the hat,daddy),#-1 Error)<br>
     You say, "#-1 Error"
 
-    > say firstof(get(%#/royal cheese),#-1 This Has No Meaning,0,)
+    > say firstof(get(%#/royal cheese),#-1 This Has No Meaning,0,)<br>
     You say, ""
 
 

@@ -1,6 +1,6 @@
 # XVPLAYERS()
 # XPLAYERS()
-`xplayers(<object>, <start>, <count>)`
+`xplayers(<object>, <start>, <count>)`<br>
 `xvplayers(<object>, <start>, <count>)`
 
   xplayers() fetches `<count>` or fewer player dbrefs from `<object>`'s contents starting at position `<start>`. It is useful when the number of players in a container causes lplayers() to exceed the buffer limit. It is equivalent to

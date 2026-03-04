@@ -1,8 +1,8 @@
 # whisper
-`whisper <player>=<message>`
-`whisper/silent <player>=<message>`
-`whisper/noisy <player>=<message>`
-`whisper/noeval <player>=<message>`
+`whisper <player>=<message>`<br>
+`whisper/silent <player>=<message>`<br>
+`whisper/noisy <player>=<message>`<br>
+`whisper/noeval <player>=<message>`<br>
 `whisper/list <players>=<message>`
 
 Whispers the message to the named person, if they are nearby. If `<message>` is prefixed with a ':' or ';' it will be posed or semiposed, respectively.

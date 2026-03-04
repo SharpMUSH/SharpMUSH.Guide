@@ -1,8 +1,8 @@
 # @receive
 # @oreceive
 # @areceive
-`@receive <recipient>[=<message>]`
-`@oreceive <recipient>[=<message>]`
+`@receive <recipient>[=<message>]`<br>
+`@oreceive <recipient>[=<message>]`<br>
 `@areceive <recipient>[=<action list>]`
 
 These attributes contain the message shown `<recipient>` when he receives an object (via 'get' or 'give'), the message shown to others in `<recipient>`'s location when he receives an object, and the actions to be taken by `<recipient>` when he receives an object, respectively.

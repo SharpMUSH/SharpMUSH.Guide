@@ -2,9 +2,9 @@
 # SWITCHALL()
 # CASE()
 # CASEALL()
-`switch(<str>, <expr1>, <list1>[, ... , <exprN>, <listN>][, <default>])`
-`switchall(<str>, <expr1>, <list1>[, ... , <exprN>, <listN>][, <default>])`
-`case(<str>, <expr1>, <list1>[, ... , <exprN>, <listN>][, <default>])`
+`switch(<str>, <expr1>, <list1>[, ... , <exprN>, <listN>][, <default>])`<br>
+`switchall(<str>, <expr1>, <list1>[, ... , <exprN>, <listN>][, <default>])`<br>
+`case(<str>, <expr1>, <list1>[, ... , <exprN>, <listN>][, <default>])`<br>
 `caseall(<str>, <expr1>, <list1>[, ... , <exprN>, <listN>][, <default>])`
 
   These functions match `<string>` against the `<expr>`essions, returning the corresponding `<list>`. If nothing is matched, the `<default>` is returned. switch() and case() return the `<str>` for the first matching `<expr>`, while switchall() and caseall() return the corresponding `<list>` for all `<expr>`s which match.

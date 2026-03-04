@@ -9,7 +9,7 @@ say stringsecs(5m 1s)
 You say, "301"
 ```
 
-    > say stringsecs(3y 2m 7d 5h 23m)
+    > say stringsecs(3y 2m 7d 5h 23m)<br>
     You say, "95232300"
 
 

@@ -11,15 +11,15 @@ say ljust(foo,6)
 You say, "foo   "
 ```
 
-    > say %r0[ljust(foo,6,-)]7%r01234567
-    You say, "
-    0foo---7
+    > say %r0[ljust(foo,6,-)]7%r01234567<br>
+    You say, "<br>
+    0foo---7<br>
     01234567"
 
-    > say ljust(foo,12,=+)
+    > say ljust(foo,12,=+)<br>
     You say, "foo=+=+=+=+="
 
-    > say ljust(This is too long,9,,1)
+    > say ljust(This is too long,9,,1)<br>
     You say, "This is t"
 
 

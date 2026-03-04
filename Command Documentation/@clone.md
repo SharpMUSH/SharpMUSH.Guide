@@ -1,5 +1,5 @@
 # @clone
-`@clone <object>[=<new name>[, <dbref>]]`
+`@clone <object>[=<new name>[, <dbref>]]`<br>
 `@clone/preserve <object>[=<new name>[, <dbref>]]`
 
 This command creates a copy of `<object>`. The clone will have the same name as the original unless a `<new name>` is given for it. You can only clone things, rooms and exits, not players. You must control `<object>`. The new object will be owned by the player who performs the @clone, not the owner of the original `<object>`.

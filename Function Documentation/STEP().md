@@ -11,10 +11,10 @@ a - b - c
 d - e -
 ```
 
-  Using registers() to avoid extra delimiters:
-    > &foo me=iter(registers(,args),v(%i0),,%b-%b)
-    > think step(foo, a b c d e, 3,, %r)
-    a - b - c
+  Using registers() to avoid extra delimiters:<br>
+    > &foo me=iter(registers(,args),v(%i0),,%b-%b)<br>
+    > think step(foo, a b c d e, 3,, %r)<br>
+    a - b - c<br>
     d - e
 
 

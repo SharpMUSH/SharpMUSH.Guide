@@ -1,7 +1,7 @@
 # ATTRIB_SET
 # @_
-`&<attr> <object>[=<value>]`
-`@_<attr> <object>[=<value>]`
+`&<attr> <object>[=<value>]`<br>
+`@_<attr> <object>[=<value>]`<br>
 `ATTRIB_SET/<attr> <object>=<value>`
 
 The `&<attr>` and `@_<attr>` commands can be used to set or clear an attribute from an object. When entered directly from a client, they do not evaluate the `<value>`.

@@ -1,8 +1,8 @@
 # @idescribe
 # @oidescribe
 # @aidescribe
-`@idescribe <object>[=<description>]`
-`@oidescribe <object>[=<message>]`
+`@idescribe <object>[=<description>]`<br>
+`@oidescribe <object>[=<message>]`<br>
 `@aidescribe <object>[=<action list>]`
 
 @idescribe command sets the internal description for an object, which is shown to anyone who enters or looks while inside the object. It's only used for players and things; rooms and exits always use @describe.

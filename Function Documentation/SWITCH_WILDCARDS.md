@@ -1,10 +1,10 @@
 # SWITCH WILDCARDS
   @switch, @select, switch(), and switchall() normally do wildcard matching between their first argument and the `<expr>`ession arguments, with the normal * and ? special characters. However, if one of the `<expr>`essions starts with "`<" or ">`", a less-than or greater-than check is done instead of wildcard matching for that pair.
 
-  switch(X, >Y, A, B) returns A if X is greater than Y, and B if it's not.
+  switch(X, >Y, A, B) returns A if X is greater than Y, and B if it's not.<br>
   switch(X, >=Y, A, B) returns A if X is greater than or equal to Y, and B if it's not.
 
-  switch(X, <Y, A, B) returns A if X is less than Y, and B if it's not.
+  switch(X, <Y, A, B) returns A if X is less than Y, and B if it's not.<br>
   switch(X, <=Y, A, B) returns A if X is less than or equal to Y, and B if it's not.
 
   If X and Y are numbers, the test is like using gt()/lt() or gte()/lte().

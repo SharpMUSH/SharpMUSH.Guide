@@ -1,6 +1,6 @@
 # @SOCKSET
 # SOCKSET
-`SOCKSET [<option>=<value>]`
+`SOCKSET [<option>=<value>]`<br>
 `@sockset [<descriptor>][=<option>, <value>[, ..., <optionN>, <valueN>]]`
 
 SOCKSET is a socket command which sets or queries socket-specific options. These options are usually set automatically, or negotiated by the MUSH and your client, but this command lets you override those settings.

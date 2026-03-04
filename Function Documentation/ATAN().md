@@ -1,6 +1,6 @@
 # ATAN()
 # ATAN2()
-`atan(<tangent>[, <angle type>])`
+`atan(<tangent>[, <angle type>])`<br>
 `atan2(<number1>, <number2>[, <angle type>])`
 
   Returns the angle with the given `<tangent>` (arc-tangent), with the angle expressed in the given `<angle type>`, or radians by default.

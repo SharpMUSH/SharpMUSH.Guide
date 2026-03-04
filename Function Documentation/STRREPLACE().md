@@ -13,7 +13,7 @@ say strreplace(abcXYZgh, 3, 3, def)
 You say, "abcdefgh"
 ```
 
-    > think strreplace(Fix teh typo, 4, 3, the)
+    > think strreplace(Fix teh typo, 4, 3, the)<br>
     Fix the typo
 
 

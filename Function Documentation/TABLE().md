@@ -11,8 +11,8 @@ think table(a b areallylongone d)
 a          b          areallylon d
 ```
 
-    > think table(the quick brown fox, 10, 25, , |)
-    the       |quick
+    > think table(the quick brown fox, 10, 25, , |)<br>
+    the       |quick<br>
     brown     |fox
 
 

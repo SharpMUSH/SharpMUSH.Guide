@@ -1,6 +1,6 @@
 # LISTQ()
 # UNSETQ()
-`listq([<pattern>])`
+`listq([<pattern>])`<br>
 `unsetq([<pattern1> [<pattern2> [...]]])`
 
   listq() returns a space-separated list of set q-registers with values available in the current q-register scope. If `<pattern>` is provided, then only those that match the wildcard pattern `<pattern>` will be returned.

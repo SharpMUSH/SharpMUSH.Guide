@@ -1,6 +1,6 @@
 # ISDBREF()
 # ISOBJID()
-`isdbref(<string>)`
+`isdbref(<string>)`<br>
 `isobjid(<string>)`
 
   isobjid() returns 1 if `<string>` is the object id of an existing object. If `<string>` is not a full objid, or is the objid of a garbage object, it returns 0.
@@ -14,22 +14,22 @@
 The next object to be created will be #33.
 ```
 
-    > think isdbref(#33)
-    1
-    > think isobjid(#33:1234567890)
+    > think isdbref(#33)<br>
+    1<br>
+    > think isobjid(#33:1234567890)<br>
     0
 
-    > think csecs(#1)
-    1324654503
-    > think isdbref(#1)
-    1
-    > think isobjid(#)
-    0
-    > think isdbref(#1:1324654503)
-    1
-    > think isobjid(#1:1324654503)
-    1
-    > think isobjid(#1:9876543210)
+    > think csecs(#1)<br>
+    1324654503<br>
+    > think isdbref(#1)<br>
+    1<br>
+    > think isobjid(#)<br>
+    0<br>
+    > think isdbref(#1:1324654503)<br>
+    1<br>
+    > think isobjid(#1:1324654503)<br>
+    1<br>
+    > think isobjid(#1:9876543210)<br>
     0
 
 

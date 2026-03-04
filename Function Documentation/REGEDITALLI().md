@@ -2,9 +2,9 @@
 # REGEDITALL()
 # REGEDITI()
 # REGEDITALLI()
-`regedit(<string>, <regexp>, <replace>[, ... , <regexpN>, <replaceN>])`
-`regediti(<string>, <regexp>, <replace>[, ... , <regexpN>, <replaceN>])`
-`regeditall(<string>, <regexp>, <replace>[, ... , <regexpN>, <replaceN>])`
+`regedit(<string>, <regexp>, <replace>[, ... , <regexpN>, <replaceN>])`<br>
+`regediti(<string>, <regexp>, <replace>[, ... , <regexpN>, <replaceN>])`<br>
+`regeditall(<string>, <regexp>, <replace>[, ... , <regexpN>, <replaceN>])`<br>
 `regeditalli(<string>, <regexp>, <replace>[, ... , <regexpN>, <replaceN>])`
 
   These functions edit `<string>`, replacing the part of the string which matches the regular expression `<regexp>` with the accompanying `<replace>`. In `<replace>`, the string "$`<number>`" is expanded during evaluation to the `<number>`th sub-expression, with $0 being the entire matched section. If you use named sub-expressions (?P`<name>`subexpr), they are referred to with "$`<name>`". Note that, with named sub-expressions, the "<>" are literal.

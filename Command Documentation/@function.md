@@ -1,10 +1,10 @@
 # @function
-`@function [<function name>]`
-`@function[/preserve] <name>=<obj>, <attrib>[, <min args>, <max args>[, <restrictions>]]`
-`@function <function name>=<object>/<attribute>`
-`@function/<switch> <function name>`
-`@function/restrict[/builtin] <function name>=<restrictions>`
-`@function/alias <function name>=<alias>`
+`@function [<function name>]`<br>
+`@function[/preserve] <name>=<obj>, <attrib>[, <min args>, <max args>[, <restrictions>]]`<br>
+`@function <function name>=<object>/<attribute>`<br>
+`@function/<switch> <function name>`<br>
+`@function/restrict[/builtin] <function name>=<restrictions>`<br>
+`@function/alias <function name>=<alias>`<br>
 `@function/clone <function name>=<clone>`
 
 When used without any arguments, this command lists all global user-defined functions. For wizards and others with the Functions power, it also lists the dbref number and attribute corresponding to the listed functions.

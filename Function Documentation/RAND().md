@@ -1,6 +1,6 @@
 # RAND()
-`rand()`
-`rand(<num>)`
+`rand()`<br>
+`rand(<num>)`<br>
 `rand(<min>, <max>)`
 
   Return a random number.
@@ -11,7 +11,7 @@
 
   The third returns an integer between `<min>` and `<max>`, inclusive.
 
-  If called with an invalid argument, rand() returns an error message
+  If called with an invalid argument, rand() returns an error message<br>
   beginning with #-1.
 
 

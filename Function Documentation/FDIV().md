@@ -1,8 +1,8 @@
 # DIV()
 # FLOORDIV()
 # FDIV()
-`div(<number1>, <number2>[, ... , <numberN>])`
-`fdiv(<number1>, <number2>[, ... , <numberN>])`
+`div(<number1>, <number2>[, ... , <numberN>])`<br>
+`fdiv(<number1>, <number2>[, ... , <numberN>])`<br>
 `floordiv(<number1>, <number2>[, ... , <numberN>])`
 
   These functions divide `<number1>` by `<number2>` (and, for each subsequent argument, divide the previous result by `<numberN>`) and return the final result.

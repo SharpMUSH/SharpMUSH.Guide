@@ -1,6 +1,6 @@
 # WHO
 # DOING
-`WHO [<pattern>]`
+`WHO [<pattern>]`<br>
 `DOING [<pattern>]`
 
 For mortals, the WHO command displays a list of players currently connected to the MUSH, the amount of time they've been connected, their idle time, and their @doing. Hidden players are not shown.

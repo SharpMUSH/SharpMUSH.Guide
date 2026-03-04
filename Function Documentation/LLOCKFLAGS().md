@@ -1,5 +1,5 @@
 # LLOCKFLAGS()
-`llockflags(<object>[/<locktype>])`
+`llockflags(<object>[/<locktype>])`<br>
 `llockflags()`
 
   If an `<object>` is given, llockflags() returns a space-separated list of the lock flags on `<object>`'s `<locktype>` lock, or Basic lock if no locktype is given. You must be able to examine the lock.

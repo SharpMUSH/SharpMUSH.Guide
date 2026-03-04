@@ -1,7 +1,7 @@
 # @lset
 `@lset <object>/<lock type>=[!]<flag>`
 
-This commands sets or clears flags on locks.
+This commands sets or clears flags on locks.<br>
 Valid flags include:
 
 - visual (v) This lock can be seen even if the object it's on isn't visual.

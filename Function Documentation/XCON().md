@@ -1,6 +1,6 @@
 # XVCON()
 # XCON()
-`xcon(<object>, <start>, <count>)`
+`xcon(<object>, <start>, <count>)`<br>
 `xvcon(<object>, <start>, <count>)`
 
   xcon() fetches `<count>` or fewer item dbrefs from `<object>`'s contents starting at position `<start>`. It is useful when the number of objects in a container causes lcon() to exceed the buffer limit.

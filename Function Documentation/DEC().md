@@ -1,5 +1,5 @@
 # DEC()
-`dec(<integer>)`
+`dec(<integer>)`<br>
 `dec(<string-ending-in-integer>)`
 
   dec() returns the given `<integer>` minus 1. If given a string that ends in an integer, it decrements only the final integer portion. That is:

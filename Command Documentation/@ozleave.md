@@ -1,8 +1,8 @@
 # @zleave
 # @ozleave
 # @azleave
-`@zleave <object>[=<message>]`
-`@ozleave <object>[=<message>]`
+`@zleave <object>[=<message>]`<br>
+`@ozleave <object>[=<message>]`<br>
 `@azleave <object>[=<action list>]`
 
 These attributes set the message shown to a player when he leaves the zone `<object>`, the message shown to others in the room he left when leaving the zone, and the actions to be taken by `<object>` with a player leaves an area zoned to it.

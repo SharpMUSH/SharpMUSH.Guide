@@ -1,6 +1,6 @@
 # ALIAS()
 # FULLALIAS()
-`alias(<object>[, <new alias>])`
+`alias(<object>[, <new alias>])`<br>
 `fullalias(<object>)`
 
   alias() returns the first of `<object>`'s aliases. fullalias() returns all the aliases set for `<object>`. Note that, while any object can have an alias set, they are only meaningful for players and exits.

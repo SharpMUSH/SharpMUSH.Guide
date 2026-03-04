@@ -10,8 +10,8 @@ say edefault(me/Test,You have no marbles.)
 You say "You have lost 6 marbles."
 ```
 
-    > &TEST me
-    > say edefault(me/Test,You have no marbles.)
+    > &TEST me<br>
+    > say edefault(me/Test,You have no marbles.)<br>
     You say "You have no marbles."
 
 

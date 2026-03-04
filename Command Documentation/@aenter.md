@@ -2,9 +2,9 @@
 # @enter
 # @oenter
 # @oxenter
-`@enter <object>[=<message>]`
-`@oenter <object>[=<message>]`
-`@oxenter <object>[=<message>]`
+`@enter <object>[=<message>]`<br>
+`@oenter <object>[=<message>]`<br>
+`@oxenter <object>[=<message>]`<br>
 `@aenter <object>[=<action list>]`
 
 These attributes contain the messages shown to someone who enters `<object>`, the message shown to others inside `<object>` when someone enters it, the message shown to those in `<object>`'s location when someone enters it, and the actions to be taken by `<object>` when someone enters it, respectively.

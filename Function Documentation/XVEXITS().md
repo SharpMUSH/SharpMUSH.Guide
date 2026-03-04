@@ -1,6 +1,6 @@
 # XVEXITS()
 # XEXITS()
-`xexits(<room>, <start>, <count>)`
+`xexits(<room>, <start>, <count>)`<br>
 `xvexits(<room>, <start>, <count>)`
 
   xexits() fetches `<count>` or fewer exit dbrefs from `<room>` starting at position `<start>`. It is useful when the number of exits in a container causes lexits() to exceed the buffer limit.

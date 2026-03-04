@@ -1,5 +1,5 @@
 # @chzone
-`@chzone[/preserve] <object>=<zone>`
+`@chzone[/preserve] <object>=<zone>`<br>
 `@chzone <object>=none`
 
 The first form of this command changes the zone of `<object>` to `<zone>`. This puts the object on that zone and may (if the zone_control_zmp_only @config option is off) allow anyone who passes the Zone @lock of `<zone>` to control `<object>`. Any kind of object can be @chzoned, and any kind of object can be used as a zone.

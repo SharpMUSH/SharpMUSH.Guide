@@ -1,5 +1,5 @@
 # @hook
-`@hook/<switch> <command>[=<object>[, <attribute>]]`
+`@hook/<switch> <command>[=<object>[, <attribute>]]`<br>
 `@hook/list [<command>]`
 
 @hook makes the command parser evaluate given attributes at certain points in command evaluation. The possible points, indicated by the proper switch:

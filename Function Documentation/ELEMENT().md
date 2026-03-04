@@ -1,7 +1,7 @@
 # ELEMENT()
 # MATCH()
 # MATCHALL()
-`match(<list>, <pattern>[, <delimiter>])`
+`match(<list>, <pattern>[, <delimiter>])`<br>
 `matchall(<list>, <pattern>[, <delimiter>[, <output separator>]])`
 
   match() returns the index of the first element of `<list>` which matches the wildcard pattern `<pattern>`. The first word has an index of 1. If no matches are found, 0 is returned. element() is an alias for match().

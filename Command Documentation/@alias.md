@@ -1,5 +1,5 @@
 # @alias
-`@alias <player>[=<name1>[;<name2>[;...;<nameN>]]]`
+`@alias <player>[=<name1>[;<name2>[;...;<nameN>]]]`<br>
 `@alias <object>[=<string>]`
 
 For players and exits, the ALIAS attribute has special meaning: it contains a list of aliases (separated by semicolons) which can be used instead of its name to refer to the player or exit.

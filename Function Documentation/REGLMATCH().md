@@ -2,9 +2,9 @@
 # REGLMATCHI()
 # REGLMATCHALL()
 # REGLMATCHALLI()
-`reglmatch(<list>, <regexp>[, <delimiter>])`
-`reglmatchi(<list>, <regexp>[, <delimiter>])`
-`reglmatchall(<list>, <regexp>[, <delimiter>[, <output separator>]])`
+`reglmatch(<list>, <regexp>[, <delimiter>])`<br>
+`reglmatchi(<list>, <regexp>[, <delimiter>])`<br>
+`reglmatchall(<list>, <regexp>[, <delimiter>[, <output separator>]])`<br>
 `reglmatchalli(<list>, <regexp>[, <delimiter>[, <output separator>]])`
 
   These functions are the regexp versions of match() and matchall(). reglmatch() returns the position of the first element in `<list>` which matches the regular expression `<regexp>`. reglmatchi() does the same thing, but case-insensitively.

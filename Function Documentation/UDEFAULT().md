@@ -1,6 +1,6 @@
 # UDEFAULT()
 # ULDEFAULT()
-`udefault([<object>/]<attribute>, <default case>[, <arg0>[, ... , <arg29>]])`
+`udefault([<object>/]<attribute>, <default case>[, <arg0>[, ... , <arg29>]])`<br>
 `uldefault([<object>/]<attribute>, <default case>[, <arg0>[, ... <arg29>]])`
 
   If the given `<attribute>` on `<object>` (or the caller, if no `<object>` is given) can be read, the attribute is evaluated, and the result returned. Up to thirty `<arg>`s can be passed to the attribute, as per ufun().

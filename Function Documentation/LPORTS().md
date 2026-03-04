@@ -1,6 +1,6 @@
 # LPORTS()
 # PORTS()
-`lports([<viewer>[, <status>]])`
+`lports([<viewer>[, <status>]])`<br>
 `ports(<player name>)`
 
   These functions return the list of descriptors ("ports") that are used by connected players. lports() returns all ports, in the same order as lwho() returns dbrefs, and ports() returns those a specific player is connected to, from most recent to least recent. Mortals can use ports() on themselves, but only See_All players can use ports() on others, or use lports().

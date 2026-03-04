@@ -1,8 +1,8 @@
 # @afailure
 # @ofailure
 # @failure
-`@failure <object>[=<message>]`
-`@ofailure <object>[=<message>]`
+`@failure <object>[=<message>]`<br>
+`@ofailure <object>[=<message>]`<br>
 `@afailure <object>[=<action list>]`
 
 @failure contains the message shown to someone who fails to pass `<object>`'s Basic @lock. @ofailure contains the message shown to others, and @afailure contains the actions to be taken by `<object>`.

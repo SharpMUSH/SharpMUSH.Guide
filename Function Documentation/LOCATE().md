@@ -5,14 +5,14 @@
 
   `<parameters>` is a string of characters which control the type of the object to find, and where (relative to `<looker>`) to look for it.
 
-  You can control the preferred types of the match with:
-    N - No type (this is the default)
-    E - Exits
-    L - Prefer an object whose Basic @lock `<looker>` passes
-    P - Players
-    R - Rooms
-    T - Things
-    F - Return #-1 if what's found is of a different type than the preferred one.
+  You can control the preferred types of the match with:<br>
+    N - No type (this is the default)<br>
+    E - Exits<br>
+    L - Prefer an object whose Basic @lock `<looker>` passes<br>
+    P - Players<br>
+    R - Rooms<br>
+    T - Things<br>
+    F - Return #-1 if what's found is of a different type than the preferred one.<br>
     X - Never return #-2. Use the last dbref found if the match is ambiguous.
 
   If type(s) are given, locate() will attempt to find an object with one of the given types first. If none are found, it will attempt to find any type of object, unless 'F' is specified, in which case it will return #-1.

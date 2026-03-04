@@ -16,15 +16,15 @@ think iter(lockfilter(NAME^W*&SEX:M*,lwho()),name(%i0))
 Walker WalkerBot Wilco
 ```
 
-    List all wizroys online:
-    > think iter(lockfilter(FLAG^WIZARD|FLAG^ROYALTY,lwho()),name(%i0))
+    List all wizroys online:<br>
+    > think iter(lockfilter(FLAG^WIZARD|FLAG^ROYALTY,lwho()),name(%i0))<br>
     Sketch Viila Tanaku Raevnos Zebranky Cheetah Walker
 
-    List all players with an IC age > 20.
+    List all players with an IC age > 20.<br>
     > think lockfilter(age:>20,lwho())
     #123 #456 #789
-    Note: You can escape the first character of `<key>` using double back slashes, for example, if you are checking for an attribute named +FOO to have the value of BAR on all connected players:
-    > think map(#apply/name,lockfilter(\\+FOO:BAR,lwho()))
+    Note: You can escape the first character of `<key>` using double back slashes, for example, if you are checking for an attribute named +FOO to have the value of BAR on all connected players:<br>
+    > think map(#apply/name,lockfilter(\\+FOO:BAR,lwho()))<br>
     Mike Walker Qon
 
 

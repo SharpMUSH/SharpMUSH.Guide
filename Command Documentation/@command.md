@@ -1,8 +1,8 @@
 # @command
-`@command <command>`
-`@command/<switch> <command>`
-`@command/alias <command>=<alias>`
-`@command/clone <command>=<clone>`
+`@command <command>`<br>
+`@command/<switch> <command>`<br>
+`@command/alias <command>=<alias>`<br>
+`@command/clone <command>=<clone>`<br>
 `@command/restrict <command>=<restriction> [" <error message>]`
 
 @command can be used for adding new built-in commands, altering the way a built-in command works, and displaying information about how commands currently work.

@@ -1,5 +1,5 @@
 # @log
-`@log[/<switch>] <message>`
+`@log[/<switch>] <message>`<br>
 `@log/recall/<switch> [<number>]`
 
 This wizard-only command puts `<message>` in a log file, tagged with the time and object executing the command. The available switches are /check, /cmd, /conn, /err, /trace, and /wiz, specifying which file to log to. /cmd is default.

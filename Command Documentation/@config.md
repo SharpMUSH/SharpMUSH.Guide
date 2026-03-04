@@ -1,7 +1,7 @@
 # @config
-`@config`
-`@config [<category>|<option>]`
-`@config/set <option>=<value>`
+`@config`<br>
+`@config [<category>|<option>]`<br>
+`@config/set <option>=<value>`<br>
 `@config/save <option>=<value>`
 
 With no arguments, @config lists the categories of configuration options for the MUSH. With an argument, @config lists the options in the given `<category>`, or shows the current value of the given `<option>`.

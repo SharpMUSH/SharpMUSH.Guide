@@ -1,6 +1,6 @@
 # @break
 # @assert
-`@break[/queued] <boolean>[=<action list>]`
+`@break[/queued] <boolean>[=<action list>]`<br>
 `@assert[/queued] <boolean>[=<action list>]`
 
 `@break` stops the execution of further commands in the current action list if `<boolean>` is a true value. It doesn't affect new queue entries made by previous commands in the action list. It can be useful for doing error checking without having to nest @switches.

@@ -1,6 +1,6 @@
 # @charges
 # @runout
-`@charges <object>[=<integer>]`
+`@charges <object>[=<integer>]`<br>
 `@runout <object>[=<action list>]`
 
 These attributes can limit how many times an object can be successfully "use"d. When you "use" an object with a CHARGES attribute set, the object's AUSE attribute is only triggered if CHARGES is a positive integer. When CHARGES is less than 1 (or not a number), the object's RUNOUT attribute is triggered instead.

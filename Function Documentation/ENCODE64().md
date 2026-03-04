@@ -1,7 +1,7 @@
 # ENCODE64()
 # DECODE64()
 # base64
-`encode64(<string>)`
+`encode64(<string>)`<br>
 `decode64(<string>)`
 
   encode64() returns `<string>` encoded using base-64 format.

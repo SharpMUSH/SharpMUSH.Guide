@@ -1,8 +1,8 @@
 # @buy
 # @abuy
 # @obuy
-`@buy <object>[=<message>]`
-`@obuy <object>[=<message>]`
+`@buy <object>[=<message>]`<br>
+`@obuy <object>[=<message>]`<br>
 `@abuy <object>[=<message>]`
 
 These attributes contain the message shown to a player who successfully buys something from `<object>` using the "buy" command, the message shown to others in the room when something is bought from `<object>` (prefixed with the buyer's name), and the actions to be taken by `<object>` when something is bought from it, respectively. Each attribute is passed the item being purchased as %0 and the amount paid for it as %1.

@@ -1,6 +1,6 @@
 # STARTTIME()
 # RESTARTTIME()
-`starttime()`
+`starttime()`<br>
 `restarttime()`
 
   starttime() returns the time the MUSH was last started, and restarttime() returns the time it was last restarted, including @shutdown/reboots. The times are in the same format as time().

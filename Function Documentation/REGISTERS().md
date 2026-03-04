@@ -3,10 +3,10 @@
 
   The registers() function returns a list of the names of all existing registers of the specified `<types>`. `<types>` is a space-separated list containing zero or more of:
 
-    qregisters - registers set with setq(), setr() and similar functions
-    args       - %0-%9 arguments
-    iter       - itext() context from iter() or @dolist
-    switch     - stext() context from switch() or @switch
+    qregisters - registers set with setq(), setr() and similar functions<br>
+    args       - %0-%9 arguments<br>
+    iter       - itext() context from iter() or @dolist<br>
+    switch     - stext() context from switch() or @switch<br>
     regexp     - regexp capture names
 
   If `<types>` is empty, all types of registers are included. If `<pattern>` is specified, only registers whose name matches `<pattern>` will be included. The results are separated by `<osep>`, which defaults to a single space.

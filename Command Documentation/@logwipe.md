@@ -3,7 +3,7 @@
 
 This God-only command erases one of the MUSH logs.
 
-`<log>` specifies which log file to erase, and must be one of:
+`<log>` specifies which log file to erase, and must be one of:<br>
 /check, /cmd, /conn, /err (Default), /trace, and /wiz.
 
 The default policy of erasing a log can be changed by giving one of the following switches:

@@ -1,5 +1,5 @@
 # @dump
-`@dump`
+`@dump`<br>
 `@dump[/paranoid|/debug|/nofork] [<check interval>]`
 
 This is a wizard-only command which saves a copy of the database from memory into the outdb file on disk. The MUSH saves the game automatically at a regular interval, controlled by the "dump_interval" @config option.

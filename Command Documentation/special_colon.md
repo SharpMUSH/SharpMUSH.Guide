@@ -2,11 +2,11 @@
 # ;
 # pose
 # semipose
-`pose[/noeval] <action>`
+`pose[/noeval] <action>`<br>
 `:<action>`
 
-`pose/nospace[/noeval] <action>`
-`semipose[/noeval] <action>`
+`pose/nospace[/noeval] <action>`<br>
+`semipose[/noeval] <action>`<br>
 `;<action>`
 
 The pose and semipose commands allow you to perform actions. Pose shows your name, a space, and then `<action>`; semipose omits the space. They can be abbreviated to ':' and ';' respectively. The `/noeval` switch stops `<action>` from being evaluated.

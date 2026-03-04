@@ -1,7 +1,7 @@
 # @edit
 # @gedit
-`@edit[/first][/check][/quiet] <object>/<attributes>=<search>, <replace>`
-`@edit[/check][/quiet] <object>/<attributes>=$, <string to append>`
+`@edit[/first][/check][/quiet] <object>/<attributes>=<search>, <replace>`<br>
+`@edit[/check][/quiet] <object>/<attributes>=$, <string to append>`<br>
 `@edit[/check][/quiet] <object>/<attributes>=^, <string to prepend>`
 
 This command allows you to edit the contents of attributes, without having to retype the entire attribute.

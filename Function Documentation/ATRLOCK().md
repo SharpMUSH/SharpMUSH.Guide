@@ -7,7 +7,7 @@
 
   A locked attribute is one which has the "locked" attribute flag, so this function is roughly equivilent to:
 
-`hasattr(<object>/<attrib>, locked)`
+`hasattr(<object>/<attrib>, locked)`<br>
 `set(<object>/<attribute>, [!]locked)`
 
   except that the attribute's owner is also changed when you lock it via atrlock().

@@ -1,6 +1,6 @@
 # TIMECALC()
 # SECSCALC()
-`timecalc(<timestring>, <modifier>, ...)`
+`timecalc(<timestring>, <modifier>, ...)`<br>
 `secscalc(<timestring>, <modifier>, ...)`
 
 
@@ -8,14 +8,14 @@
 
  `<timestring>` can be in the following formats:
 
-  YYYY-MM-DD
-  YYYY-MM-DD HH:MM
-  YYYY-MM-DD HH:MM:SS
-  YYYY-MM-DD HH:MM:SS.SSS
-  HH:MM
-  HH:MM:SS
-  HH:MM:SS.SSS
-  now (Current time in UTC)
+  YYYY-MM-DD<br>
+  YYYY-MM-DD HH:MM<br>
+  YYYY-MM-DD HH:MM:SS<br>
+  YYYY-MM-DD HH:MM:SS.SSS<br>
+  HH:MM<br>
+  HH:MM:SS<br>
+  HH:MM:SS.SSS<br>
+  now (Current time in UTC)<br>
   DDDDDDDDDD (Julian day, or seconds if followed by a unixepoch modifier)
 
 Continued in HELP TIMECALC2

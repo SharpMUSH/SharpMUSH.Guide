@@ -1,8 +1,8 @@
 # GRABALL()
 # REGRABALL()
 # REGRABALLI()
-`graball(<list>, <pattern>[, <delim>[, <osep>]])`
-`regraball(<list>, <regexp>[, <delim>[, <osep>]])`
+`graball(<list>, <pattern>[, <delim>[, <osep>]])`<br>
+`regraball(<list>, <regexp>[, <delim>[, <osep>]])`<br>
 `regraballi(<list>, <regexp>[, <delim>[, <osep>]])`
 
   These functions work identically to the grab() and regrab()/regrabi() functions, except they return all matches, not just the first: They return all words in the `<list>` which match `<pattern>`. If none match, an empty string is returned. `<delim>` defaults to a space, and `<osep>` defaults to `<delim>`.

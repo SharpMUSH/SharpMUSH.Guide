@@ -1,5 +1,5 @@
 # COLORSTYLE
-`SOCKSET colorstyle=<value>`
+`SOCKSET colorstyle=<value>`<br>
 `@SOCKSET [me|<descriptor>]=colorstyle,<value>`
 
 You can override the color format you receive from SharpMUSH. Normally, SharpMUSH tries to guess what your client is capable of through telnet negotiation and your player flags. @sockset lets you inform SharpMUSH that your client can support more colors than expected.

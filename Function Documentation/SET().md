@@ -1,5 +1,5 @@
 # SET()
-`set(<object>[/<attribute>], <flag>)`
+`set(<object>[/<attribute>], <flag>)`<br>
 `set(<object>, <attribute>:<value>)`
 
   This function is equivalent to @set, and can be used to toggle flags and set attributes. The two arguments to the function are the same as the arguments that would appear on either side of the '=' in @set. This function returns nothing.

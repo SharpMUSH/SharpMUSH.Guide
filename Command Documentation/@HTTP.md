@@ -1,7 +1,7 @@
 # @HTTP
-`@http <obj>/<attr>=<URL>`
-`@http/delete <obj>/<att>=<URL>[,<data>]`
-`@http/post <obj>/<att>=<URL>[,<data>]`
+`@http <obj>/<attr>=<URL>`<br>
+`@http/delete <obj>/<att>=<URL>[,<data>]`<br>
+`@http/post <obj>/<att>=<URL>[,<data>]`<br>
 `@http/put <obj>/<att>=<URL>[,<data>]`
 
 Attempts to retrieve URL with a HTTP GET request, and upon doing so, queues the action list in `<obj>/<attr>`. The body of the reply from the remote web server is passed as %0, with the HTTP status in %q`<status>` and the Content-Type header in %q`<content-type>`. Any commas in the URL need to be escaped.

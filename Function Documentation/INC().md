@@ -1,5 +1,5 @@
 # INC()
-`inc(<integer>)`
+`inc(<integer>)`<br>
 `inc(<string-ending-in-integer>)`
 
   inc() returns the integer plus 1. If given a string that ends in an integer, it increments only the final integer portion. That is:
@@ -10,10 +10,10 @@ think inc(3)
 4
 ```
 
-    > think inc(hi3)
+    > think inc(hi3)<br>
     hi4
 
-    > think inc(1.3.3)
+    > think inc(1.3.3)<br>
     1.3.4
 
   Note especially the last example, which will trip you up if you use floating point numbers with inc() and expect it to work like add().

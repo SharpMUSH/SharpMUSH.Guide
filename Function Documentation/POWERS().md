@@ -1,6 +1,6 @@
 # POWERS()
-`powers()`
-`powers(<object>)`
+`powers()`<br>
+`powers(<object>)`<br>
 `powers(<object>, <power>)`
 
   With no arguments, powers() returns a space-separated list of all defined @powers on the MUSH. With one argument, it returns a list of the powers possessed by `<object>`.

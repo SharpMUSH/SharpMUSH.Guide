@@ -1,7 +1,7 @@
 # TIME()
 # UTCTIME()
-`time()`
-`time(<timezone>)`
+`time()`<br>
+`time(<timezone>)`<br>
 `time(<dbref>)`
 
   time() gives you the current time on the MUSH. By default this is the time on the server the MUSH is running on, and not the time of the caller.

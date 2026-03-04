@@ -2,14 +2,14 @@
 # XATTRP()
 # REGXATTR()
 # REGXATTRP()
-`xattr(<object>[/<attribute pattern>], <start>, <count>[, <osep>])`
-`xattrp(<object>[/<attribute pattern>], <start>, <count>[, <osep>])`
-`regxattr(<object>[/<regexp>], <start>, <count>[, <osep>])`
+`xattr(<object>[/<attribute pattern>], <start>, <count>[, <osep>])`<br>
+`xattrp(<object>[/<attribute pattern>], <start>, <count>[, <osep>])`<br>
+`regxattr(<object>[/<regexp>], <start>, <count>[, <osep>])`<br>
 `regxattrp(<object>[/<regexp>], <start>, <count>[, <osep>])`
 
   xattr() fetches `<count>` or fewer attribute names from `<object>` starting at position `<start>`. It is useful when the number of attributes on an object causes lattr() to exceed the buffer limit. The resulting list is separated by `<osep>`, which defaults to a space. `<start>` begins at 1.
 
-  It is equivalent to
+  It is equivalent to<br>
 `extract(lattr(<object>[/<attribute pattern>]), <start>, <count>, <osep>)`
 
   `<attribute pattern>` is a wildcard pattern which defaults to "*"; use "**" to get all attributes, including leaf attributes in trees. regxattr() matches attributes against the regular expression `<regexp>`.

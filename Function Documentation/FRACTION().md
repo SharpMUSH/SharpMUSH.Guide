@@ -11,15 +11,15 @@ think fraction(.75)
 3/4
 ```
 
-    > think fraction(pi())
+    > think fraction(pi())<br>
     348987/111086
 
-    > think fraction(2)
+    > think fraction(2)<br>
     2
 
-    > think fraction(2.75)
+    > think fraction(2.75)<br>
     11/4
 
-    > think fraction(2.75, 1)
+    > think fraction(2.75, 1)<br>
     2 3/4
 

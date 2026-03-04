@@ -1,6 +1,6 @@
 # @SUGGEST
-`@suggest[/list]`
-`@suggest/add <category>=<word>`
+`@suggest[/list]`<br>
+`@suggest/add <category>=<word>`<br>
 `@suggest/delete <category>=<word>`
 
 Given a list of known good words in a category, the mush can suggest ones based on misspelled or otherwise invalid words. This is used for suggesting function names, help entries, etc. @suggest provides a way to add custom categories and vocabulary words.

@@ -1,6 +1,6 @@
 # @ONAME
 # @ANAME
-`@oname <object>[=<message>]`
+`@oname <object>[=<message>]`<br>
 `@aname <object>[=<action list>]`
 
 Whenever `<object>`'s name is changed (via @name), others in the same location will see the contents of `<object>`'s ONAME attribute, prepended with `<object>`'s new name. At the same time, `<object>`'s ANAME attribute will be triggered. Both attributes receive the old name as %0, and the new name as %1.

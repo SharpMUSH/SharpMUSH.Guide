@@ -1,6 +1,6 @@
 # @boot
-`@boot[/silent] <player>`
-`@boot/port[/silent] <descriptor number>`
+`@boot[/silent] <player>`<br>
+`@boot/port[/silent] <descriptor number>`<br>
 `@boot/me`
 
 The first form of this command disconnects all of `<player>`'s connections from the game.

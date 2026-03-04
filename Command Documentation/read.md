@@ -1,8 +1,8 @@
 # look
 # read
-`look [<object>]`
-`look <container>'s <object>`
-`look <exit>'s <object>`
+`look [<object>]`<br>
+`look <container>'s <object>`<br>
+`look <exit>'s <object>`<br>
 `look/outside [<object>]`
 
 Displays the description of `<object>`, or the room you're in if you don't name a specific object. You can also look at objects inside others, as long as the `<container>` is not set OPAQUE, or at objects on the other side of an exit, if the exit is set TRANSPARENT or CLOUDY.

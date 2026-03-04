@@ -1,5 +1,5 @@
 # @name
-`@name <object>=<new name>`
+`@name <object>=<new name>`<br>
 `@name <player|exit>=<new name>[;<alias1>[;<aliasN>]]`
 
 Changes the name of `<object>` to `<new name>`.

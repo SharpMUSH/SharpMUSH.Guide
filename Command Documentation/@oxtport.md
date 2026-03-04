@@ -2,9 +2,9 @@
 # @tport
 # @otport
 # @oxtport
-`@tport <object>[=<message>]`
-`@otport <object>[=<message>]`
-`@oxtport <object> [=<message>]`
+`@tport <object>[=<message>]`<br>
+`@otport <object>[=<message>]`<br>
+`@oxtport <object> [=<message>]`<br>
 `@atport <object>[=<action list>]`
 
 These attributes contain the message shown to `<object>` when it is teleported, the message shown to others in the room `<object>` is teleported to, the message shown to others in the room `<object>` is teleported from, and the actions to be taken by `<object>` when it disappears, respectively.

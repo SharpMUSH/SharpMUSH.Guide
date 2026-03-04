@@ -1,5 +1,5 @@
 # FLAGS()
-`flags()`
+`flags()`<br>
 `flags([<object>[/<attribute>]])`
 
   With no arguments, flags() returns a string consisting of the flag letters for each flag on the MUSH. Note that some flags have no letter, and mutlple flags may have the same letter (and so will appear multiple times).
@@ -16,7 +16,7 @@ think flags(Test)
 Tnp
 ```
 
-    > think flags(me/describe)
+    > think flags(me/describe)<br>
     $vp
 
 

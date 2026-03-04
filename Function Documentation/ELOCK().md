@@ -12,8 +12,8 @@ think elock(Dancing Slippers/drop, Princess)
 0
 ```
 
-    > @lock/user:test map==*Fred|=*George
-    > think elock(map/test,*Snape)
+    > @lock/user:test map==*Fred|=*George<br>
+    > think elock(map/test,*Snape)<br>
     0
 
 

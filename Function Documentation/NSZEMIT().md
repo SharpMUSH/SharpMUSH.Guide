@@ -1,6 +1,6 @@
 # ZEMIT()
 # NSZEMIT()
-`zemit(<zone>, <message>)`
+`zemit(<zone>, <message>)`<br>
 `nszemit(<zone>, <message>)`
 
   zemit() emits `<message>` in every room @chzone'd to `<zone>`, as per @zemit.

@@ -1,6 +1,6 @@
 # REMIT()
 # NSREMIT()
-`remit(<object list>, <message>)`
+`remit(<object list>, <message>)`<br>
 `nsremit(<object list>, <message>)`
 
   Sends a message to the contents of all the objects specified in `<object list>`, as per @remit/list.

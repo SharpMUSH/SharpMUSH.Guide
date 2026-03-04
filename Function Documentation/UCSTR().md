@@ -1,6 +1,6 @@
 # UCSTR()
 # UCSTR2()
-`ucstr(<string>)`
+`ucstr(<string>)`<br>
 `ucstr2(<string>)`
 
   Returns `<string>` with all letters converted to uppercase.

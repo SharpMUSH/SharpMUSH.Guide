@@ -11,15 +11,15 @@ say -[rjust(foo,6)]-
 You say, "-   foo-"
 ```
 
-    > say %r0[rjust(foo,6,-)]%r01234567
-    You say, "
-    0---foo7
+    > say %r0[rjust(foo,6,-)]%r01234567<br>
+    You say, "<br>
+    0---foo7<br>
     01234567"
 
-    > say rjust(foo,12,=-)
+    > say rjust(foo,12,=-)<br>
     You say, "=-=-=-=-=foo"
 
-    > say rjust(This is too long,9,,1)
+    > say rjust(This is too long,9,,1)<br>
     You say, " too long"
 
 
