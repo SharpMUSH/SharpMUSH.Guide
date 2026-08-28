@@ -3,10 +3,13 @@
   "projectTitle": "SharpMUSH",
   "description": "PennMUSH emulation capable MUSH Server",
   "folders": [],
-  "excludeFolders": [".github"],
+  "excludeFolders": [
+    ".claude",
+    ".github"
+  ],
   "excludeFiles": [],
   "rules": [
-    "SharpMUSH uses a DSL also referred to as 'softcode' for in-game programming", 
+    "SharpMUSH uses a DSL also referred to as 'softcode' for in-game programming",
     "Avoid functions with side-effects, favor commands and commandlists instead when manipulating data where possible"
   ]
 }
