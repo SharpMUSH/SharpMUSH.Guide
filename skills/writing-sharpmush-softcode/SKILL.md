@@ -84,7 +84,7 @@ SharpMUSH is a functional MUSH server with its own idioms: handlers come pre-pop
 
 Guard with `@assert`/`@break`, one specific error per check, real work last:
 
-```
+```sharp
 &CMD`SETRANK obj=$+setrank *=*: @assert orflags(%#,Wr)=@pemit %#=Permission denied.; @assert isdbref(setr(who, locate(%#, %0, PFym)))=@pemit %#=No such player: %0; @assert match(recruit member officer, lcstr(%1))=@pemit %#=Rank must be one of those.; @include me/INC`SETRANK=%q<who>,[lcstr(%1)]
 ```
 
@@ -105,14 +105,14 @@ Guard with `@assert`/`@break`, one specific error per check, real work last:
 - **Scope follows `nearby()`** — same location, *or one inside the other*. An object in a player's inventory is inside them, so its commands match for the carrier alone; an object on the floor matches for everyone in the room. Carried tools therefore need no authorization tier at all.
 - **Object flags.** Not `HALTED` (`@halt`/`@restart`), not set `No_command` — the *object* flag, one `/` from the attribute flag: `@set obj/DATA=no_command` scopes a branch, `@set obj=no_command` kills every `$`-command on the object.
 - **Locks.** Enactor must not be `GAGGED` and must pass `@lock/use` and `@lock/command`. `$`-commands on yourself need `@lock/use me==me`.
-- **Build where you are, publish last.** Name matching reaches only your location and inventory, so `&FUN`X <object>=…` stops resolving once the object is in `#2`. Set everything, `@teleport` last — that also gives you a private window to test.
+- **Build where you are, publish last.** Name matching reaches only your location and inventory, so `` &FUN`X <object>=… `` stops resolving once the object is in `#2`. Set everything, `@teleport` last — that also gives you a private window to test.
 - **Failure message.** A lock failure with no other match gives a bare `Huh?`; set `` COMMAND_LOCK`FAILURE `` (with `OFAILURE`/`AFAILURE`).
 
 ## Classify code attributes by role
 
 `` INC`IS`<X> `` assertions · `` INC`CAN`<X> `` authorization · `` INC`DISPLAY`<X> `` output · `` INC`DO`<X> `` shared effects · `` FUN`IS`<X> `` predicates · `` FUN`GET`<X> `` lookups · `` FUN`DISPLAY`<X> `` formatting. A guarded command then reads as a sentence:
 
-```
+```sharp
 &CMD`KICK obj=$+group/kick *=*: @include/chain me/INC`IS`GROUP me/INC`CAN`MODERATE me/INC`IS`PLAYER me/INC`IS`MEMBER=%0,%1; @include me/INC`DO`CLEARMEMBER=%q<who>,%q<key>; @include me/INC`DISPLAY`SUCCESS=Removed [name(%q<who>)] from %q<gname>.
 ```
 
@@ -145,7 +145,7 @@ The same feature needs a different shape depending on who owns it.
 
 Never pack fields into one delimited value. One branch per record, one leaf per fact:
 
-```
+```sharp
 &DATA obj=Guild records, one branch per guild.
 @set obj/DATA=no_command
 &DATA`1`NAME obj=Ivory Syndicate
@@ -155,7 +155,7 @@ Never pack fields into one delimited value. One branch per record, one leaf per 
 
 **Association lives on the member**, not as a list on the record: each player carries `` DATA`GUILD ``, and the search finds them. A destroyed player leaves the search on its own — cleanup for free, no stale entry. Avoid maintaining lists of dbrefs where a search over data on the objects will do. The cost is deletion: removing a record means sweeping members with a queued `@dolist`.
 
-**Key once.** Grouping by kind at the root is namespacing — that is what `` CMD` ``/`` FUN` ``/`` DATA` `` are. What goes wrong is keying two *different* roots by the same value: `` TITLE`<key> `` beside `` MOD`<key> `` leaves the relationship with no node of its own and lets the halves drift. Give it a node: `` GROUP`<key> `` with `` GROUP`<key>`TITLE `` and `` GROUP`<key>`MOD `` beneath. The invariant then holds structurally — a fact under a membership cannot outlive it, so "a moderator must be a member" needs no re-check.
+**Key once.** Grouping by kind at the root is namespacing — that is what `` CMD` ``/`` FUN` ``/`` DATA` `` are. What goes wrong is keying two *different* roots by the same value: `` TITLE`<key> `` beside `` MOD`<key> `` leaves the relationship with no node of its own and lets the halves drift. Give it a node: `` GROUP`<key> `` with `` GROUP`<key>`TITLE `` and `` GROUP`<key>`MOD `` beneath, so everything about one membership is in one place and one `lattr` finds it. **The tree does not cascade a delete**: clearing `` GROUP`<key> `` leaves `` GROUP`<key>`MOD `` sitting there. Only `@wipe` removes a subtree, and it refuses wizard-changeable attributes for anyone but God — which is exactly what flagging the root `wizard` makes them. So clear every leaf explicitly when a relationship ends, and keep the membership check where the role grants authority; containment makes the cleanup findable, not automatic.
 
 **Enumerating.** `lattr()` lists only attributes that exist, and a branch is not one unless set. `` lattr(obj/DATA`*) `` is empty; match a leaf (`` DATA`*`NAME ``), use `**` for every depth, or give the branch a real datum (a join date, the worn slot) so `` lattr(obj/ROOT`*) `` enumerates directly.
 
@@ -200,7 +200,7 @@ Shape the data in one pass and let each stage consume the last, rather than re-a
 
 ### Events — add an attribute to #9
 
-```
+```sharp
 &PLAYER`CONNECT #9=@cemit Admin=[name(%0)] connected (connection %1).
 ```
 
@@ -212,7 +212,7 @@ Shape the data in one pass and let each stage consume the last, rather than re-a
 
 Verb routers (`&GET`, `&POST`, …) are pre-installed. URLs live under `/http/` on the game's **web server** (the host/port serving the portal — deployment-specific, never the telnet port). `/http/guildroster` maps to `` GET`GUILDROSTER `` (slashes→backticks), 404 if absent. Don't edit the routers; add routes:
 
-```
+```sharp
 &GET`GUILDROSTER #8=@respond/type application/json; think json_array(iter(lattr(#300/DATA`*`NAME), json(string, get(#300/%i0))))
 ```
 
