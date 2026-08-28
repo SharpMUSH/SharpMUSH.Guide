@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "sharpmush-softcode",
+  "description": "Writing, reviewing, and debugging SharpMUSH softcode — $-commands, +commands, MUSH functions, attribute code, event handlers, and HTTP endpoints. Covers SharpMUSH's own idioms and the places habit from other MUSH servers goes wrong.",
+  "version": "1.0.0",
+  "keywords": [
+    "sharpmush",
+    "mush",
+    "softcode",
+    "mushcode",
+    "mud"
+  ],
+  "author": {
+    "name": "SharpMUSH"
+  },
+  "homepage": "https://github.com/SharpMUSH/SharpMUSH.Guide"
+}
