@@ -4,8 +4,9 @@
   "description": "In-game reference for SharpMUSH: every command and function, the configuration options, and worked softcode examples. SharpMUSH is a PennMUSH-compatible MUSH server whose in-game programming language is called softcode.",
   "folders": [],
   "excludeFolders": [
-    ".claude",
-    ".github"
+    ".claude-plugin",
+    ".github",
+    "skills"
   ],
   "excludeFiles": [],
   "rules": [
