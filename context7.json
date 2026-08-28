@@ -1,12 +1,22 @@
 {
   "$schema": "https://context7.com/schema/context7.json",
   "projectTitle": "SharpMUSH",
-  "description": "PennMUSH emulation capable MUSH Server",
+  "description": "In-game reference for SharpMUSH: every command and function, the configuration options, and worked softcode examples. SharpMUSH is a PennMUSH-compatible MUSH server whose in-game programming language is called softcode.",
   "folders": [],
-  "excludeFolders": [".github"],
+  "excludeFolders": [
+    ".claude",
+    ".github"
+  ],
   "excludeFiles": [],
   "rules": [
-    "SharpMUSH uses a DSL also referred to as 'softcode' for in-game programming", 
-    "Avoid functions with side-effects, favor commands and commandlists instead when manipulating data where possible"
+    "SharpMUSH uses a DSL also referred to as 'softcode' for in-game programming",
+    "Avoid functions with side-effects, favor commands and commandlists instead when manipulating data where possible",
+    "Attribute trees are separated by backticks, never dots: CMD`SETRANK, DATA`GUILD. A tree path is just an attribute name, so anywhere a name is accepted a path is accepted",
+    "A function that follows literal text needs [brackets] to evaluate; a bare %-substitution like %0 or %q<name> must never be bracketed",
+    "Validate with @assert or @break guards, one specific error per check, rather than nested @switch ladders",
+    "if(), @assert, @break and filterbool() already test truthiness, so t() inside them is redundant; filter() and filterq() are the exception and keep only exactly 1",
+    "Use %i0 or itext(0) for the current element of @dolist and iter(). ## is substituted textually before evaluation, so elements run as code and nesting resolves to the outermost loop",
+    "Never re-evaluate stored player text with u(); read it with get() or v(). s() re-evaluates and secure() corrupts input",
+    "The event handler #9 and HTTP handler #8 are pre-created and already configured; add an attribute to them rather than creating or configuring a handler"
   ]
 }

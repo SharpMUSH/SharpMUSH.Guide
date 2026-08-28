@@ -1,7 +1,7 @@
 # Function Snippets
 ## List Grab
 Contents to store
-```
+```text
 elements(%0,lmath(min,firstof(filterbool(#lambda/%%0,iter(%1,match(%0,%i0,%2),%2)),0)),%2)
 ```
 
@@ -19,7 +19,7 @@ Both <list> and <patternlist> must use the same [delimiter], if specified (defau
 
 ## All List Grab
 Contents to store
-```
+```text
 elements(%0,lmatch(%1,%2,strfirstof(%3,%b)),strfirstof(%3,%b),strfirstof(%4,%b))
 ```
 
@@ -39,7 +39,7 @@ lmatch is not a standard function. See the 'List Match' example for lmatch.
 
 ## List Match
 Contents to store
-```
+```text
 iter(%1,match(%0,%i0,strfirstof(%2,%b)),strfirstof(%2,%b),strfirstof(%3,%b))
 ```
 

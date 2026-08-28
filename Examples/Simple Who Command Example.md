@@ -1,6 +1,6 @@
 # A Simple Who command
 ## Code
-```
+```sharp
 @create Generic Command Holder
 @set Generic Command Holder=!no_command
 &cmd`who Generic Command Holder=$+swho:@nspemit %:=u(fun`header,+swho)%r[u(fun`who)]%r[u(fun`footer)]
@@ -14,7 +14,7 @@
 `+swho`
 
 ## Expected Output
-```
+```text
 --------------------------------------------[ +swho ]--------------------------------------------
 Thylonicus                             6m 37s           1h  0m 21s
 Shaenyl                               18m 13s           1h 46m 37s
