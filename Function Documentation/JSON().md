@@ -20,6 +20,7 @@
 **See Also:**
 - [oob()]
 - [isjson()]
+- [json_array()]
 - [json_query()]
 - [json_map()]
 - [render()]

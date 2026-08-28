@@ -3,17 +3,18 @@
 
 |                  |                  |                  |                  |
 |------------------|------------------|------------------|------------------|
-| [elements()]     | [extract()]      | [filter()]       | [filterbool()]   |
-| [first()]        | [fold()]         | [grab()]         | [graball()]      |
-| [index()]        | [itemize()]      | [items()]        | [iter()]         |
-| [last()]         | [ldelete()]      | [linsert()]      | [lreplace()]     |
-| [lockfilter()]   | [map()]          | [match()]        | [matchall()]     |
+| [chain()]        | [elements()]     | [every()]        | [extract()]      |
+| [filter()]       | [filterbool()]   | [filterq()]      | [first()]        |
+| [fold()]         | [grab()]         | [graball()]      | [index()]        |
+| [itemize()]      | [items()]        | [iter()]         | [jiter()]        |
+| [last()]         | [ldelete()]      | [linsert()]      | [lockfilter()]   |
+| [lreplace()]     | [map()]          | [match()]        | [matchall()]     |
 | [member()]       | [mix()]          | [munge()]        | [namegrab()]     |
 | [namegraball()]  | [randword()]     | [remove()]       | [rest()]         |
 | [revwords()]     | [setdiff()]      | [setinter()]     | [setsymdiff()]   |
-| [setunion()]     | [shuffle()]      | [sort()]         | [sortby()]       |
-| [sortkey()]      | [splice()]       | [step()]         | [table()]        |
-| [unique()]       | [wordpos()]      | [words()]        |                  |
+| [setunion()]     | [shuffle()]      | [some()]         | [sort()]         |
+| [sortby()]       | [sortkey()]      | [splice()]       | [step()]         |
+| [table()]        | [unique()]       | [wordpos()]      | [words()]        |
 
 **See Also:**
 - [LISTS]

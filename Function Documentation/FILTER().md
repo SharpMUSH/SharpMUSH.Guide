@@ -22,5 +22,8 @@ You say, "1 3 5"
 - [firstof()]
 - [allof()]
 - [lockfilter()]
+- [filterq()]
+- [every()]
+- [some()]
 - [boolean values]
 
