@@ -41,7 +41,7 @@ with the exception that `@decompile/tf` does not include commands for setting at
 To set up `@decompile/tf`:
 
 In TinyFugue:
-```
+```text
 /def -ag -mglob -p100 -t"FugueEdit > *" fe = /grab %-2
 ```
 

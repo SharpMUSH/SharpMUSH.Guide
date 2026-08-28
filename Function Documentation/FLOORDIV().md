@@ -10,7 +10,7 @@
   div() returns the integer part of the quotient. floordiv() returns the largest integer less than or equal to the quotient; for positive numbers, they are identical, but for negative numbers they may differ. fdiv() returns the floating-point quotient.
 
   Examples:
-```
+```sharp
    div(13,4)          ==>   3      and     floordiv(13,4)     ==>   3
    div(-13,4)         ==>  -3      but     floordiv(-13,4)    ==>  -4
    div(13,-4)         ==>  -3      but     floordiv(13,-4)    ==>  -4

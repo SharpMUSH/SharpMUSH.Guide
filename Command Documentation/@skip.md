@@ -33,13 +33,13 @@ You say, "No"
 > &foo me=$foo *: say Checking... ; @if %0=say Yes, {say No ; say Sorry!}
 ```
 
-```
+```sharp
 > foo 1
 You say, "Checking..."
 You say, "Yes"
 ```
 
-```
+```sharp
 > foo 0
 You say, "Checking..."
 You say, "No"

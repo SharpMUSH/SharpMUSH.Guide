@@ -27,7 +27,7 @@ You try a test
 But you're too low!
 ```
 
-```
+```sharp
 > testme 10
 You try a test
 And you succeed!

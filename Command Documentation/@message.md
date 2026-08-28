@@ -37,15 +37,15 @@ See [@message2] for examples.
 ```
 
 Mike sees:
-```
+```text
 Player sez, 'This is a test'
 ```
 Walker sees:
-```
+```text
 From Player: This is a test
 ```
 Javelin sees:
-```
+```text
 Player says, "This is a test"
 ```
 
@@ -68,15 +68,15 @@ A (very) basic language system:
 ```
 
 You see:
-```
+```text
 You say (Spanish), "The rain in Spain falls mainly on the plain"
 ```
 Bob sees (something like):
-```
+```text
 Mike says (Spanish), "The rain ... ... falls ... ... ... ..."
 ```
 Juan sees:
-```
+```text
 Mike says (Spanish), "The rain in Spain falls mainly on the plain"
 ```
 
