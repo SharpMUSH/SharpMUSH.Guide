@@ -1,15 +1,19 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "sharpmush",
   "description": "Official SharpMUSH plugins for AI coding agents.",
-  "owner": { "name": "SharpMUSH" },
+  "owner": {
+    "name": "SharpMUSH"
+  },
   "plugins": [
     {
       "name": "sharpmush-softcode",
       "description": "Writing, reviewing, and debugging SharpMUSH softcode, alongside the helpfiles it teaches agents to read.",
-      "author": { "name": "SharpMUSH" },
+      "author": {
+        "name": "SharpMUSH"
+      },
       "category": "development",
-      "source": "."
+      "source": "./"
     }
   ]
 }
