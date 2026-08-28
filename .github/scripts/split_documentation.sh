@@ -3,20 +3,20 @@
 # split_documentation.sh - Splits documentation files by headers
 # Usage: split_documentation.sh <source_file> <output_dir> <file_type>
 
-set -e
+set -euo pipefail
+
+if [ $# -ne 3 ]; then
+    echo "Usage: $0 <source_file> <output_dir> <file_type>" >&2
+    exit 1
+fi
 
 source_file="$1"
 output_dir="$2"
 file_type="$3"
 
-if [ $# -ne 3 ]; then
-    echo "Usage: $0 <source_file> <output_dir> <file_type>"
-    exit 1
-fi
-
 if [ ! -f "$source_file" ]; then
-    echo "Warning: $source_file not found"
-    exit 0
+    echo "Error: $source_file not found" >&2
+    exit 1
 fi
 
 echo "Processing $file_type documentation from: $(basename "$source_file")"
