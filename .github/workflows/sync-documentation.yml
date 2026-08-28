@@ -97,7 +97,10 @@ jobs:
           fi
 
       - name: Commit and push changes
-        if: steps.check_changes.outputs.changes == 'true'
+        # Guarded on main for the same reason as the keepalive step below:
+        # workflow_dispatch can run on any branch, actions/checkout takes the
+        # triggering ref, and this pushes HEAD to main.
+        if: steps.check_changes.outputs.changes == 'true' && github.ref == 'refs/heads/main'
         run: |
           git commit -m "docs: sync documentation from SharpMUSH/SharpMUSH" -m "Updated documentation:
           - Functions: ${{ steps.process_docs.outputs.function_count }} files
@@ -138,7 +141,9 @@ jobs:
           {
             echo "## Documentation Sync Summary"
             echo ""
-            if [ "${{ steps.check_changes.outputs.changes }}" == "true" ]; then
+            if [ "${{ job.status }}" != "success" ]; then
+              echo "❌ **Sync failed** - see the failing step above"
+            elif [ "${{ steps.check_changes.outputs.changes }}" == "true" ]; then
               echo "✅ **Documentation successfully synced**"
               echo ""
               echo "### Entries extracted:"
