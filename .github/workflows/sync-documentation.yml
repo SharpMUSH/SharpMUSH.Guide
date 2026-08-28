@@ -11,65 +11,78 @@ on:
       - main
     paths:
       - '.github/workflows/sync-documentation.yml'
+      - '.github/scripts/**'
+
+env:
+  UPSTREAM_DOCS: temp-sharpmush/SharpMUSH.Documentation/Helpfiles/SharpMUSH
 
 jobs:
   sync-docs:
     runs-on: ubuntu-latest
-    
+
     permissions:
       contents: write
-      pull-requests: write
-    
+
     steps:
       - name: Checkout current repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          # Needed so the keepalive step can read the age of the last commit.
           fetch-depth: 0
-      
+
       - name: Setup Git
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-      
+
       - name: Clone SharpMUSH repository
         run: |
-          git clone https://github.com/SharpMUSH/SharpMUSH.git temp-sharpmush
-      
-      - name: Check if documentation exists
-        id: check_docs
-        run: |
-          if [ -d "temp-sharpmush/SharpMUSH.Documentation/Helpfiles/SharpMUSH" ]; then
-            echo "docs_exist=true" >> $GITHUB_OUTPUT
-            echo "Documentation folder found"
-          else
-            echo "docs_exist=false" >> $GITHUB_OUTPUT
-            echo "Documentation folder not found"
-          fi
-      
-      - name: Make scripts executable
-        if: steps.check_docs.outputs.docs_exist == 'true'
-        run: |
-          chmod +x .github/scripts/*.sh
-      
-      - name: Process and organize documentation
-        if: steps.check_docs.outputs.docs_exist == 'true'
-        run: |
-          # Run the modular processing script
-          ./.github/scripts/process_documentation.sh "temp-sharpmush/SharpMUSH.Documentation/Helpfiles/SharpMUSH" "temp-processed"
-        id: process_docs
-      
-      - name: Update documentation folders
-        if: steps.check_docs.outputs.docs_exist == 'true'
-        run: |
-          # Run the update script
-          ./.github/scripts/update_documentation_folders.sh temp-processed
+          # Only the helpfiles are needed; the rest of the tree is a large
+          # checkout we would immediately throw away.
+          git clone --depth 1 --filter=blob:none --sparse \
+            https://github.com/SharpMUSH/SharpMUSH.git temp-sharpmush
+          git -C temp-sharpmush sparse-checkout set SharpMUSH.Documentation/Helpfiles
 
-      
-      - name: Clean up temporary files
+      - name: Verify upstream documentation layout
         run: |
-          rm -rf temp-sharpmush temp-processed
-      
+          # Fail loudly rather than "succeeding" with an empty sync: a silent
+          # no-op here is indistinguishable from "upstream had no changes", and
+          # would hide an upstream path rename for months.
+          if [ ! -d "$UPSTREAM_DOCS" ]; then
+            echo "::error::Upstream documentation folder not found at $UPSTREAM_DOCS. Did SharpMUSH/SharpMUSH move its helpfiles?"
+            exit 1
+          fi
+
+          missing=0
+          for helpfile in sharpfunc.md sharpcmd.md sharpconf.md; do
+            if [ ! -f "$UPSTREAM_DOCS/$helpfile" ]; then
+              echo "::error::Expected helpfile '$helpfile' is missing from $UPSTREAM_DOCS"
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            echo "Files actually present:"
+            ls -la "$UPSTREAM_DOCS"
+            exit 1
+          fi
+
+          echo "Upstream documentation layout verified."
+
+      - name: Make scripts executable
+        run: chmod +x .github/scripts/*.sh
+
+      - name: Process and organize documentation
+        id: process_docs
+        run: ./.github/scripts/process_documentation.sh "$UPSTREAM_DOCS" "temp-processed"
+
+      - name: Update documentation folders
+        run: ./.github/scripts/update_documentation_folders.sh temp-processed
+
+      - name: Clean up temporary files
+        if: always()
+        run: rm -rf temp-sharpmush temp-processed
+
       - name: Check for changes
         id: check_changes
         run: |
@@ -80,47 +93,72 @@ jobs:
           else
             echo "changes=true" >> $GITHUB_OUTPUT
             echo "Changes detected"
-            git diff --cached --name-only
+            git diff --cached --stat
           fi
-      
-      - name: Commit and push changes
-        if: steps.check_changes.outputs.changes == 'true'
-        run: |
-          # Create commit message with details
-          COMMIT_MSG="docs: sync documentation from SharpMUSH/SharpMUSH"
-          
-          if [ "${{ steps.process_docs.outputs.function_count }}" != "" ]; then
-            COMMIT_MSG="$COMMIT_MSG
 
-          Updated documentation:
+      - name: Commit and push changes
+        # Guarded on main for the same reason as the keepalive step below:
+        # workflow_dispatch can run on any branch, actions/checkout takes the
+        # triggering ref, and this pushes HEAD to main.
+        if: steps.check_changes.outputs.changes == 'true' && github.ref == 'refs/heads/main'
+        run: |
+          git commit -m "docs: sync documentation from SharpMUSH/SharpMUSH" -m "Updated documentation:
           - Functions: ${{ steps.process_docs.outputs.function_count }} files
-          - Commands: ${{ steps.process_docs.outputs.command_count }} files  
+          - Commands: ${{ steps.process_docs.outputs.command_count }} files
           - Configuration: ${{ steps.process_docs.outputs.config_count }} files
-          
+
           Source: SharpMUSH/SharpMUSH repository
           Date: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
-          fi
-          
-          git commit -m "$COMMIT_MSG"
-          git push origin main
-      
-      - name: Create summary
+
+          git push origin HEAD:main
+
+      - name: Keep the schedule alive
+        if: steps.check_changes.outputs.changes != 'true' && github.ref == 'refs/heads/main'
         run: |
-          echo "## Documentation Sync Summary" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          
-          if [ "${{ steps.check_docs.outputs.docs_exist }}" == "false" ]; then
-            echo "❌ **Documentation folder not found** in SharpMUSH/SharpMUSH repository" >> $GITHUB_STEP_SUMMARY
-            echo "Expected path: \`SharpMUSH.Documentation/Helpfiles/SharpMUSH\`" >> $GITHUB_STEP_SUMMARY
-          elif [ "${{ steps.check_changes.outputs.changes }}" == "false" ]; then
-            echo "✅ **No changes detected** - documentation is up to date" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "✅ **Documentation successfully synced**" >> $GITHUB_STEP_SUMMARY
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "### Updated Files:" >> $GITHUB_STEP_SUMMARY
-            echo "- **Functions**: ${{ steps.process_docs.outputs.function_count }} files" >> $GITHUB_STEP_SUMMARY
-            echo "- **Commands**: ${{ steps.process_docs.outputs.command_count }} files" >> $GITHUB_STEP_SUMMARY
-            echo "- **Configuration**: ${{ steps.process_docs.outputs.config_count }} files" >> $GITHUB_STEP_SUMMARY
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "📅 **Sync Date**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          # GitHub disables a scheduled workflow after 60 days without repository
+          # activity, and a sync commit is the only activity this repo normally
+          # gets. Upstream helpfiles went untouched from 2026-03-04 to
+          # 2026-06-14 (102 days), which is exactly what silently disabled this
+          # workflow. Commit a dated marker before the repo reaches the cutoff.
+          last_commit_epoch=$(git log -1 --format=%ct)
+          age_days=$(( ( $(date -u +%s) - last_commit_epoch ) / 86400 ))
+          echo "Days since last commit: $age_days"
+
+          if [ "$age_days" -lt 45 ]; then
+            echo "Below the 45-day keepalive threshold; nothing to do."
+            exit 0
           fi
+
+          date -u '+%Y-%m-%dT%H:%M:%SZ' > .github/last-sync-check
+          git add .github/last-sync-check
+          git commit -m "chore: keepalive commit so the docs sync schedule is not auto-disabled"
+          git push origin HEAD:main
+          echo "keepalive=true" >> $GITHUB_ENV
+
+      - name: Create summary
+        if: always()
+        run: |
+          {
+            echo "## Documentation Sync Summary"
+            echo ""
+            if [ "${{ job.status }}" != "success" ]; then
+              echo "❌ **Sync failed** - see the failing step above"
+            elif [ "${{ steps.check_changes.outputs.changes }}" == "true" ]; then
+              echo "✅ **Documentation successfully synced**"
+              echo ""
+              echo "### Entries extracted:"
+              echo "- **Functions**: ${{ steps.process_docs.outputs.function_count }} files"
+              echo "- **Commands**: ${{ steps.process_docs.outputs.command_count }} files"
+              echo "- **Configuration**: ${{ steps.process_docs.outputs.config_count }} files"
+            elif [ "${{ steps.check_changes.outputs.changes }}" == "false" ]; then
+              echo "✅ **No changes detected** - documentation is already up to date"
+              if [ "${keepalive:-}" == "true" ]; then
+                echo ""
+                echo "A keepalive commit was pushed to stop GitHub auto-disabling this schedule."
+              fi
+            else
+              echo "❌ **Sync failed before the change check** - see the failing step above"
+            fi
+            echo ""
+            echo "📅 **Sync Date**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          } >> $GITHUB_STEP_SUMMARY
