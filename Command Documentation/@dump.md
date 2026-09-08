@@ -12,7 +12,10 @@ If the `/paranoid` switch is given, the game performs additional consistency che
 
 These switches should ONLY be used if a normal @dump is not being done correctly. They should generally only be done by wizards with access to the account on which the MUSH is running, since others will not have access to the checkpoint log file.
 
+In SharpMUSH `@dump` does nothing. There is no in-memory copy to write out: every change is committed to the database as it is made, so the game on disk is already current. To take a copy of it that is safe to read while the game runs, use `@backup`.
+
 
 **See Also:**
+- [@backup]
 - [@shutdown]
 
