@@ -16,6 +16,8 @@ SharpMUSH is a functional MUSH server with its own idioms: handlers come pre-pop
 ## Evaluation
 
 - **A function after literal text needs `[brackets]`**: `think Kept: [filter(...)]`. A bare leading function evaluates alone: `&F obj=add(%0,1)` works, `&F obj=ibreak()add(%0,1)` does not — write `ibreak()[add(%0,1)]`.
+- **A literal `[ ] ( )` needs `%[` `%]` `%(` `%)`.** An unescaped `(` inside a function argument closes the call early — `` [header(Home ([wiki(%0,namespace)]))] `` prints `Home (main` and leaks the `)` after the rule. `\[` also escapes, but only where the backslash survives to evaluation: it does in a value the package manager or `@set` wrote, and inside a `[...]` region, but a client-typed `&ATTR obj=A\[B\]C` stores `A[B]C` and the bracket is then read as an evaluation bracket. `%[` survives every path — prefer it.
+- **`[[]x[]]` is not an escape for `[x]`.** An empty `[]` is not a function call, and SharpMUSH refuses it — sometimes as `#-1 PARSER FAILURE`, sometimes by swallowing the whole line, so `&ATTR me=A[[]x[]]B` can silently store nothing at all. (PennMUSH evaluates it away to a bare `x`, so the brackets are lost there too.) Escape them.
 - **Never bracket a bare %-substitution.** `%0`, `%q<name>`, `%#` as-is; `[%0]` does nothing.
 - **Player-typed input is single-command mode**: a typed `;` is literal. Command lists exist only inside stored attributes and command arguments. Brace `{}` a segment whose own `;` must not split the list.
 - **`&` vs `@set` on the value.** `@set obj/ATTR=<v>` always evaluates `<v>`. `&ATTR obj=<v>` stores verbatim when typed at a client — which is why `&` stores code — but evaluates when run from inside an attribute. Brace `{}` what must survive.
@@ -250,6 +252,7 @@ Prefer queued `@dolist` (with `/notify` + semaphore `@wait`) over `/inline` for 
 | Using an objid as an attribute-tree key | `:` is illegal in attribute names — key by something else, keep objids in values |
 | `@assert %#` to detect system events | `%#` is `#1` there; gate on event args |
 | `ibreak()add(…)` trailing function unevaluated | `ibreak()[add(…)]` |
+| `[[]x[]]` to print `[x]`; a bare `(` inside `header()`/`align()` | `%[x%]`; `%(` `%)`. Empty `[]` is a parse error, and a bare paren closes the call |
 | `if(t(<x>),…)`, `@assert t(<x>)` | Both already test truthiness |
 | `##`/`#@` in `@dolist`/`iter` | Spliced textually *before* evaluation, so elements run as code and nesting resolves to the outermost loop. Use `%i0`/`inum(0)`. `##` is still correct in `lsearch` eval classes — no iteration context there |
 | `$`-command correct but never fires | Room or Master Room, not `HALTED`/`No_command`, passes `@lock/use` + `@lock/command` |
