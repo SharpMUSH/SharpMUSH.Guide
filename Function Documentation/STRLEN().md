@@ -1,7 +1,7 @@
 # STRLEN()
 `strlen(<string>)`
 
-  Returns the length of the string (the number of characters in it).
+  Returns terminal display columns, ignoring markup. Wide CJK characters count as two columns and combining marks add no columns. This existing behavior is unchanged; [displaywidth()] names the unit explicitly. Use [graphemecount()] to count whole grapheme clusters.
 
   Example:
 ```sharp

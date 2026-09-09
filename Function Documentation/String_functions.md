@@ -20,7 +20,8 @@
 | [strinsert()]    | [stripaccents()] | [stripansi()]    | [strlen()]       |
 | [strmatch()]     | [strreplace()]   | [switch()]       | [tr()]           |
 | [trim()]         | [ucstr()]        | [urldecode()]    | [urlencode()]    |
-| [wrap()]         |                  |                  |                  |
+| [wrap()]         | [displaywidth()] | [graphemecount()] | [graphemes()]     |
+| [printf()]       | [strdistance()]  |                  |                  |
 
 **See Also:**
 - [STRINGS]
