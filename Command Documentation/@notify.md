@@ -4,6 +4,8 @@
 
 This command notifies a semaphore, allowing commands queued for that semaphore to be executed.
 
+The semaphore counter is stored before waiting commands are released. If the database cannot confirm a counter change, affected work stays reserved and further semaphore changes are refused until reconciliation succeeds. A later attempt verifies the stored count before completing or abandoning the uncertain operation. Conflicting counts or incomplete semaphore flags require administrator repair.
+
 If the `/any` switch is given, then all semaphores associated with `<object>` are @notified. Otherwise, only the specified semaphore `<attribute>` (or SEMAPHORE if no attribute is specified) is @notified.
 
 If the `/all` switch is given, then all queue entries associated with the selected semaphore(s) are executed. Otherwise, only the first `<number>` of queue entries are run. If no `<number>` is given, then only one queue entry is run.

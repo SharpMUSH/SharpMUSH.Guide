@@ -3,6 +3,8 @@
 
 This command discards commands waiting on a semaphore without executing them. (For non-semaphore queues, use @halt or @halt/pid.)
 
+Waiting commands are discarded only after the corresponding counter change is confirmed. An uncertain database result retains the waiting entries for reconciliation, using the same recovery behavior as [@notify].
+
 If the `/any` switch is given, then all semaphores associated with `<object>` are @drained. Otherwise, only the specified semaphore attribute (or SEMAPHORE if no `<attribute>` is specified) is @drained.
 
 If the `/all` switch is given, then all queue entries associated with the selected semaphore(s) are discarded, and the semaphore attribute(s) are cleared. Otherwise, only the indicated `<number>` of queue entries are discarded. If no `<number>` is given, then the `/all` switch is assumed.
