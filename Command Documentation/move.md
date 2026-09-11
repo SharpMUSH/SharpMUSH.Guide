@@ -17,4 +17,5 @@ Goes in the specified direction. `<Direction>` can be the name or alias of an ex
 - [@ealias]
 - [@lalias]
 - [EXITS]
+- [movement]
 

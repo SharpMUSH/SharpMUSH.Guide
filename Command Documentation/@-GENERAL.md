@@ -10,9 +10,10 @@ These '@' commands are general utility and programming commands:
 | [@halt]      | [@if]        | [@lemit]     | [@listmotd]  | [@mail]      |
 | [@notify]    | [@nsemit]    | [@nslemit]   | [@nsoemit]   | [@nspemit]   |
 | [@nsprompt]  | [@nsremit]   | [@nszemit]   | [@oemit]     | [@password]  |
+| [@profile]   |              |              |              |              |
 | [@pemit]     | [@prompt]    | [@ps]        | [@remit]     | [@restart]   |
 | [@scan]      | [@search]    | [@select]    | [@stats]     | [@sweep]     |
 | [@switch]    | [@teleport]  | [@trigger]   | [@verb]      | [@version]   |
-| [@wait]      | [@whereis]   | [@wiki]      | [@zemit]     |              |
+| [@wait]      | [@whereis]   | [@wiki]      | [@zemit]     | [@input]     |
 
 
