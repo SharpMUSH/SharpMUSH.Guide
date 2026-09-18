@@ -1,5 +1,5 @@
 # TIMESTRING()
-`timestring(<seconds>[, <pad flag>])`
+`timestring(<seconds>[, <pad flag>[, <precision>]])`
 
   The timestring function takes a number of seconds as input and returns the amount of time formatted into days, hours, minutes, and seconds. If `<pad flag>` is 1, all time periods will be used even if the number of seconds is less than a day, hour, or minute. If `<pad flag>` is 2, all numbers will be 2 digits long.
 

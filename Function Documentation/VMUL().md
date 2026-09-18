@@ -1,5 +1,5 @@
 # VMUL()
-`vmul(<vector1|number1>, <vector2|number2>[, <delimiter>])`
+`vmul(<vector1|number1>, <vector2|number2>[, <delimiter>[, <osep>]])`
 
   Returns the result of either multiplying a vector by a number, or the element-wise product of two vectors. The element-wise product of a b c by w x z is aw bx cz
 

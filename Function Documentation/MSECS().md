@@ -1,7 +1,7 @@
 # MTIME()
 # MSECS()
 `mtime(<object>[, <utc?>])`<br>
-`msecs(<object>)`
+`msecs(<object>[, <precision>])`
 
   mtime() returns the date and time that one of `<object>`'s attributes or locks was last added, deleted, or modified. The time returned is in the server's local timezone, unless `<utc?>` is true, in which case the time is in the UTC timezone.
 

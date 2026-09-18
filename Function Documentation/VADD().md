@@ -1,5 +1,5 @@
 # VADD()
-`vadd(<vector1>, <vector2>[, <delimiter>])`
+`vadd(<vector1>, <vector2>[, <delimiter>[, <osep>]])`
 
   Returns the sum of two vectors. A vector is a list of numbers separated by spaces or `<delimiter>`.
 

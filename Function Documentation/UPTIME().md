@@ -1,5 +1,5 @@
 # UPTIME()
-`UPTIME([<type>])`
+`UPTIME([<type>[, <precision>]])`
 
   This function returns the time, as a number of seconds, that something happend (or will happen). Exactly what is returned depends on the given `<type>`, which should be one of:
 

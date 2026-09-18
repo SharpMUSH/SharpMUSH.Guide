@@ -1,5 +1,5 @@
 # STDDEV()
-`stddev(<number1>, <number2>[, ... , <numberN>])`
+`stddev(<number1>[, ... , <numberN>])`
 
   Returns the sample standard deviation of its arguments.
 

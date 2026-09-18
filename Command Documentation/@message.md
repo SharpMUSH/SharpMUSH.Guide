@@ -51,7 +51,7 @@ Player says, "This is a test"
 
 A rough implementation of @chatformat:
 ```sharp
-> &cmd.chat Globals=$^@chat (.+?)=([\:;]?)(.+?)$: @message/spoof cwho(%1)=setr(0,<%1> [speak(&[squish(ctitle(%1, %#) %n)], %2%3)]), CHATFORMAT, firstof(%2, "), %1, %3, %n, ctitle(%1, %#), %q0
+> &cmd.chat Globals=$^@chat (.+?)=([\:;]?)(.+?)$: @message/spoof cwho(%1)=setr(0,<%1> [speak(&[squish(ctitle(%#, %1) %n)], %2%3)]), CHATFORMAT, firstof(%2, "), %1, %3, %n, ctitle(%#, %1), %q0
 > @set Globals/cmd.chat=regexp
 ```
 

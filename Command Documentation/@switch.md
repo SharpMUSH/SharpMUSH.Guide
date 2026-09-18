@@ -1,4 +1,5 @@
 # @switch
+# @sw
 # @select
 `@switch[/<switch>] <string>=<expr1>, <action1> [,<exprN>, <actionN>]... [,<default>]`<br>
 `@select <string>=<expr1>, <action1> [,<exprN>, <actionN>]... [,<default>]`

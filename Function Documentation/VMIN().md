@@ -1,5 +1,5 @@
 # VMIN()
-`vmin(<vector1>, <vector2>[, <delimiter>])`
+`vmin(<vector1>, <vector2>[, <delimiter>[, <osep>]])`
 
   Returns a new vector made out of the minimums of each corresponding pair of numbers from the two vectors. The vectors must be of the same length.
 

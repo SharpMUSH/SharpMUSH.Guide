@@ -1,5 +1,5 @@
 # VSUB()
-`vsub(<vector1>, <vector2>[, <delimiter>])`
+`vsub(<vector1>, <vector2>[, <delimiter>[, <osep>]])`
 
   Returns the difference between two vectors.
 

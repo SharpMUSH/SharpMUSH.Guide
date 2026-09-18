@@ -1,5 +1,5 @@
 # CONNLOG()
-`CONNLOG(all|[not] logged in|<name>, <spec>...[, <osep>])`
+`CONNLOG(all|[not] logged in|<name>, <spec>, <spec>...[, <osep>])`
 
   If connection tracking is enabled, this Wizard-only returns a list of connections that match the given `<spec>`. The format of the list elements is '`<dbref>` `<unique-id>`', with elements seperated by `<osep>` (defaulting to |). `<unique-id>` is an identifier that can be used to get more information from the connection with connrecord().
 

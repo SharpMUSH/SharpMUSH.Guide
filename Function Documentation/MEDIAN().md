@@ -1,5 +1,5 @@
 # MEDIAN()
-`median(<number>, <number>[, ... , <numberN>)`
+`median(<number>[, ... , <numberN>])`
 
   Returns the median (the middlemost numerically) of its arguments.
 

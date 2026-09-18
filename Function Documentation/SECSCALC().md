@@ -1,7 +1,7 @@
 # TIMECALC()
 # SECSCALC()
-`timecalc(<timestring>, <modifier>, ...)`<br>
-`secscalc(<timestring>, <modifier>, ...)`
+`timecalc(<timestring>[, <modifier>, ... ])`<br>
+`secscalc(<timestring>[, <modifier>, ... ])`
 
 
  Takes a time and returns the resulting time after applying any modifiers. timecalc() returns a time is the same format as time(), and secscalc() as the seconds since the epoch. These functions can deal with a much broader range of times than the other time functions.

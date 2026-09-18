@@ -1,5 +1,7 @@
 # XVTHINGS()
 # XTHINGS()
+# XOBJECTS()
+# XVOBJECTS()
 `xthings(<object>, <start>, <count>)`<br>
 `xvthings(<object>, <start>, <count>)`
 

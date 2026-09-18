@@ -1,4 +1,5 @@
 # look
+# l
 # read
 `look [<object>]`<br>
 `look <container>'s <object>`<br>

@@ -1,5 +1,5 @@
 # ADDRLOG()
-`ADDRLOG([count,], ip|hostname, <pattern>[, <osep>)`
+`ADDRLOG([<count>, ]ip|hostname, <pattern>[, <osep>])`
 
   Searches the log of unique sites that have connected to the mush and returns a list of 'IPADDRESS HOSTNAME' pairs that match the given field with the given wildcard pattern, separated by `<osep>`, which defaults to |. If 'count' is given, returns the total number of matches instead.
 

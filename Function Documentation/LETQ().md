@@ -1,5 +1,5 @@
 # LETQ()
-`letq([<reg1>, <value1>[, ... , <regN>, <valueN>], <expr>)`
+`letq([<reg1>, <value1>[, ... , <regN>, <valueN>], ]<expr>)`
 
   letq() saves the current values of the given q-`<reg>`isters, sets them to new `<value>`s, evaluates `<expr>` and then restores the saved registers. It does not restore registers that are not listed. None of the values can see the updated contents of the registers -- they are only visible to `<expr>`.
 

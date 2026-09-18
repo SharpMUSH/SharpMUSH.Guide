@@ -1,5 +1,5 @@
 # VDOT()
-`vdot(<vector1>, <vector2>[, <delimiter>])`
+`vdot(<vector1>, <vector2>[, <delimiter>[, <osep>]])`
 
   Returns the dot product of two vectors. A dot product is the sum of the products of the corresponding elements of the two vectors, e.g. vdot(a b c,d e f) = ad + be + cf. The vectors must be of the same length.
 

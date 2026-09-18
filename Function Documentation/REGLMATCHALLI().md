@@ -2,6 +2,7 @@
 # REGLMATCHI()
 # REGLMATCHALL()
 # REGLMATCHALLI()
+# REGMATCHALLI()
 `reglmatch(<list>, <regexp>[, <delimiter>])`<br>
 `reglmatchi(<list>, <regexp>[, <delimiter>])`<br>
 `reglmatchall(<list>, <regexp>[, <delimiter>[, <output separator>]])`<br>
@@ -12,6 +13,8 @@
   reglmatchall() returns the positions of all elements in `<list>` which match `<regexp>`. reglmatchalli() is case-insensitive.
 
   In all cases, the elements of `<list>` are separated by `<delimiter>`, which defaults to a space. The elements outputted by reglmatchall() are separated by `<output separator>`, if one is given, or by `<delimiter>` if not.
+
+  SharpMUSH also registers regmatchalli() for reglmatchalli(). Despite the name it searches a list and returns positions, as the rest of this family does — it is not a case-insensitive [regmatch()].
 
   See [reglmatch2] for examples.
 

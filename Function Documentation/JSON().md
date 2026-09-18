@@ -1,5 +1,5 @@
 # JSON()
-`json(<type>[, <data>[, ..., <dataN>])`
+`json(<type>[, <data>[, ... , <dataN>]])`
 
   This function encodes `<data>` as a valid JSON (JavaScript Object Notation) message. `<type>` specifies the type of data to represent; valid `<type>`s and correspending `<data>`s are listed below.
 

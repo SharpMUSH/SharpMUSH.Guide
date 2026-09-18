@@ -1,5 +1,7 @@
 # NVTHINGS()
 # NTHINGS()
+# NOBJECTS()
+# NVOBJECTS()
 `nthings(<object>)`<br>
 `nvthings(<object>)`
 

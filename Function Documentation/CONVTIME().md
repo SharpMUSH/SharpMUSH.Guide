@@ -1,7 +1,7 @@
 # CONVTIME()
 # CONVUTCTIME()
-`convtime(<time string>,[<timezone>])`<br>
-`convutctime(<time string>)`
+`convtime(<time string>[, <timezone>[, <precision>]])`<br>
+`convutctime(<time string>[, <precision>])`
 
   This functions converts a time string to the number of seconds since Jan 1, 1970 GMT. A time string is of the format:<br>
       Ddd MMM DD HH:MM:SS YYYY<br>

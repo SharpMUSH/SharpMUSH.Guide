@@ -1,5 +1,5 @@
 # ETIMEFMT()
-`etimefmt(<format>, <secs>)`
+`etimefmt(<format>, <secs>[, <precision>])`
 
   This function is similar to timestring() - it formats a number of seconds into days, hours, minutes and seconds. However, its formatting is much more versatile than timestring(), as well as being more complex.
 

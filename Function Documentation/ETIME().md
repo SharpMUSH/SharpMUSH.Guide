@@ -1,5 +1,5 @@
 # ETIME()
-`etime(<seconds>[, <width>])`
+`etime(<seconds>[, <width>[, <precision>]])`
 
   This function formats a number of seconds using the same rules as the 'On for' and 'Idle' columens in WHO's output. The optional `<width>` argument controls the maximum size of the returned string.
 

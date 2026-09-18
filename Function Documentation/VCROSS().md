@@ -1,5 +1,5 @@
 # VCROSS()
-`vcross(<vector1>, <vector2>[, <delimiter>])`
+`vcross(<vector1>, <vector2>[, <delimiter>[, <osep>]])`
 
   Returns the 3-dimensional vector that is the cross product of its 3-dimensional argument vectors. The cross product is defined as:
 

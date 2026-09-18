@@ -1,5 +1,5 @@
 # FIRSTOF()
-`firstof(<expr>[, ... , <exprN>], <default>)`
+`firstof([<expr>, ... , <exprN>][, <default>])`
 
   Returns the first evaluated `<expr>` that is true. If no `<expr>` arguments are true, `<default>` is returned.
 

@@ -1,6 +1,6 @@
 # AVG()
 # MEAN()
-`mean(<number1>, <number2>[, ... , <numberN>])`
+`mean(<number1>[, ... , <numberN>])`
 
   Returns the mean (arithmetic average) of its arguments.
 

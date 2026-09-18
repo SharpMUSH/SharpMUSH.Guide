@@ -1,7 +1,7 @@
 # NAMEGRAB()
 # NAMEGRABALL()
-`namegrab(<dbref list>, <name>)`<br>
-`namegraball(<dbref list>, <name>)`
+`namegrab(<dbref list>, <name>[, <delimiter>])`<br>
+`namegraball(<dbref list>, <name>[, <delimiter>])`
 
   The namegrab() function returns the first dbref in the list that would match `<name>` as if you were checking num() or locate(). An exact match has priority over partial matches.
 

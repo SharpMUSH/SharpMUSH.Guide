@@ -1,5 +1,5 @@
 # PCREATE()
-`pcreate(<name>, <password>[, <dbref>])`
+`pcreate(<name>, <password>)`
 
   Creates a player with a given `<name>` and `<password>`. This function can only be used by wizards.
 
