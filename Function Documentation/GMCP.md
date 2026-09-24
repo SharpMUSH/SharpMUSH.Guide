@@ -17,5 +17,4 @@
 
 **See Also:**
 - [json()]
-- [wsjson()]
 
