@@ -1,7 +1,7 @@
 # UNIMPLEMENTED_COMMAND
-This internal command is run when someone attempts to use an unimplemented command. Currently, this only occurs when a command has been added with @command/add but has not been properly @hooked to run softcode. UNIMPLEMENTED_COMMAND cannot be run directly.
+This command shows the message "This command has not been implemented." It can be typed directly and @hooked like any other command.
 
-By default, the command just shows the message "This command has not been implemented.", but you can @hook it to perform other actions.
+A command added with @command/add and not @hooked shows the same message, but it does so itself: it does not run UNIMPLEMENTED_COMMAND, so a hook on UNIMPLEMENTED_COMMAND does not change it. To change what an added command does, @hook the added command. This differs from PennMUSH; see [COMPATIBILITY COMMANDS].
 
 
 **See Also:**
