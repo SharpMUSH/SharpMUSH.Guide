@@ -16,6 +16,6 @@ ROOM
 
 
 **See Also:**
-- [hastype()]
+- [HASTYPE()]
 - [TYPES OF OBJECTS]
 

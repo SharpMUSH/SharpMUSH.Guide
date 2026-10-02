@@ -7,7 +7,7 @@
 
 
 **See Also:**
-- [num()]
-- [namelist()]
+- [NUM()]
+- [NAMELIST()]
 - [locate()]
 

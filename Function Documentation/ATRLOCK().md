@@ -17,5 +17,5 @@
 **See Also:**
 - [@atrlock]
 - [@atrchown]
-- [hasflag()]
+- [HASFLAG()]
 

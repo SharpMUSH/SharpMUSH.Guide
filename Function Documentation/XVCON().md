@@ -11,7 +11,7 @@
 
 
 **See Also:**
-- [ncon()]
-- [lcon()]
-- [lvcon()]
+- [NVCON()]
+- [LCON()]
+- [LVCON()]
 

@@ -3,19 +3,19 @@
 
 |                  |                  |                  |                  |
 |------------------|------------------|------------------|------------------|
-| [accname()]      | [alias()]        | [andflags()]     | [andlflags()]    |
-| [andlpowers()]   | [config()]       | [controls()]     | [csecs()]        |
-| [ctime()]        | [elock()]        | [findable()]     | [flags()]        |
-| [fullalias()]    | [fullname()]     | [getpids()]      | [hasattr()]      |
-| [hasattrp()]     | [hasflag()]      | [haspower()]     | [hastype()]      |
-| [iname()]        | [isapproved()]   | [lflags()]       | [lock()]         |
-| [lockflags()]    | [lockowner()]    | [locks()]        | [lpids()]        |
-| [lstats()]       | [money()]        | [moniker()]      | [msecs()]        |
-| [mtime()]        | [mudname()]      | [mudurl()]       | [name()]         |
-| [nattr()]        | [nearby()]       | [objid()]        | [objmem()]       |
-| [orflags()]      | [orlflags()]     | [orlpowers()]    | [pidinfo()]      |
-| [playermem()]    | [poll()]         | [powers()]       | [quota()]        |
-| [restarts()]     | [type()]         | [version()]      | [visible()]      |
+| [ACCNAME()]      | [ALIAS()]        | [ANDFLAGS()]     | [ANDFLAGS()]    |
+| [ANDLPOWERS()]   | [CONFIG()]       | [CONTROLS()]     | [CTIME()]        |
+| [CTIME()]        | [ELOCK()]        | [FINDABLE()]     | [FLAGS()]        |
+| [ALIAS()]    | [FULLNAME()]     | [GETPIDS()]      | [HASATTR()]      |
+| [HASATTR()]     | [HASFLAG()]      | [HASPOWER()]     | [HASTYPE()]      |
+| [INAME()]        | [ISAPPROVED()]   | [LFLAGS()]       | [LOCK()]         |
+| [LOCKFLAGS()]    | [LOCKOWNER()]    | [LLOCKS()]        | [LPIDS()]        |
+| [LSTATS()]       | [MONEY()]        | [MONIKER()]      | [MTIME()]        |
+| [MTIME()]        | [MUDNAME()]      | [MUDNAME()]       | [NAME()]         |
+| [NATTR()]        | [NEARBY()]       | [OBJID()]        | [OBJMEM()]       |
+| [ORFLAGS()]      | [ORFLAGS()]     | [ORLPOWERS()]    | [PIDINFO()]      |
+| [PLAYERMEM()]    | [POLL()]         | [POWERS()]       | [QUOTA()]        |
+| [RESTARTS()]     | [TYPE()]         | [VERSION()]      | [VISIBLE()]      |
 
 **See Also:**
 - [Dbref functions]

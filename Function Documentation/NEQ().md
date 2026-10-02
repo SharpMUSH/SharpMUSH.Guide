@@ -5,7 +5,7 @@
 
 
 **See Also:**
-- [eq()]
-- [not()]
-- [lmath()]
+- [EQ()]
+- [NOT()]
+- [LMATH()]
 

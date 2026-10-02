@@ -26,9 +26,9 @@ LOC
 
 **See Also:**
 - [setq()]
-- [letq()]
-- [r()]
-- [localize()]
-- [registers()]
+- [LETQ()]
+- [R()]
+- [LOCALIZE()]
+- [REGISTERS()]
 - [WILDCARDS]
 

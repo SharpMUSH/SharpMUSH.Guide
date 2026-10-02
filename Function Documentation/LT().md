@@ -15,9 +15,9 @@ th lt(1,3,2)
 
 
 **See Also:**
-- [lte()]
-- [gt()]
-- [gte()]
-- [lnum()]
-- [lmath()]
+- [LTE()]
+- [GT()]
+- [GTE()]
+- [LNUM()]
+- [LMATH()]
 

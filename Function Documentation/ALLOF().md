@@ -26,8 +26,8 @@
 ```
 
 **See Also:**
-- [firstof()]
-- [BOOLEAN VALUES]
-- [strallof()]
-- [filter()]
+- [FIRSTOF()]
+- [boolean values]
+- [STRFIRSTOF()]
+- [FILTER()]
 

@@ -5,5 +5,5 @@ This wizard-only command creates a player with the given name and password. If s
 
 
 **See Also:**
-- [pcreate()]
+- [PCREATE()]
 

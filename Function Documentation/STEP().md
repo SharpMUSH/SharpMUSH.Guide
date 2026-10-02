@@ -19,9 +19,9 @@ d - e -
 
 
 **See Also:**
-- [map()]
+- [MAP()]
 - [iter()]
 - [fold()]
 - [anonymous attributes]
-- [registers()]
+- [REGISTERS()]
 

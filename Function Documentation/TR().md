@@ -13,6 +13,6 @@ You say, "hello"
 
 
 **See Also:**
-- [merge()]
-- [splice()]
+- [MERGE()]
+- [SPLICE()]
 

@@ -24,6 +24,6 @@ The old location of the entering object is passed in %0, if `<object>` had permi
 - [enter]
 - [@ealias]
 - [leave]
-- [ACTION LISTS]
-- [VERBS]
+- [action lists]
+- [verbs]
 

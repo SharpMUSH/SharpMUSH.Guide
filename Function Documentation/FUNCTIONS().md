@@ -5,6 +5,6 @@
 
 
 **See Also:**
-- [list()]
-- [config()]
+- [LIST()]
+- [CONFIG()]
 

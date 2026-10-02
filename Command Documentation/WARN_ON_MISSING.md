@@ -17,6 +17,6 @@ By default it sends the owner of the offending object a message, so they can fix
 
 
 **See Also:**
-- [huh_command]
-- [unimplemented_command]
+- [HUH_COMMAND]
+- [UNIMPLEMENTED_COMMAND]
 

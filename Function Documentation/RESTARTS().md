@@ -5,6 +5,6 @@
 
 
 **See Also:**
-- [restarttime()]
-- [starttime()]
+- [STARTTIME()]
+- [STARTTIME()]
 

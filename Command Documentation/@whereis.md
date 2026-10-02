@@ -13,5 +13,5 @@ To avoid being found this way, just do: `@set me=UNFINDABLE`
 
 **See Also:**
 - [UNFINDABLE]
-- [loc()]
+- [LOC()]
 

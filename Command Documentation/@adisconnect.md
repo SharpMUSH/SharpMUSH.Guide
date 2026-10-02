@@ -17,9 +17,9 @@ Several arguments are passed to @adisconnect:<br>
 
 **See Also:**
 - [@aconnect]
-- [ACTION LISTS]
-- [recv()]
-- [sent()]
-- [cmds()]
+- [action lists]
+- [RECV()]
+- [SENT()]
+- [CMDS()]
 - [EVENTS]
 

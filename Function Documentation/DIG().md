@@ -8,8 +8,8 @@
 
 **See Also:**
 - [@dig]
-- [open()]
+- [OPEN()]
 - [@open]
-- [create()]
-- [pcreate()]
+- [CREATE()]
+- [PCREATE()]
 

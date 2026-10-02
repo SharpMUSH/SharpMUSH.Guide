@@ -18,8 +18,8 @@ You say, "abcdefgh"
 
 
 **See Also:**
-- [strdelete()]
-- [strinsert()]
-- [ldelete()]
-- [lreplace()]
+- [STRDELETE()]
+- [STRINSERT()]
+- [LDELETE()]
+- [LREPLACE()]
 

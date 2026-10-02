@@ -12,5 +12,5 @@ You say, "zab rab oof"
 
 
 **See Also:**
-- [revwords()]
+- [REVWORDS()]
 

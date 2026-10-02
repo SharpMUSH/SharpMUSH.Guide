@@ -17,6 +17,6 @@ The `/list` switch lets you whisper to multiple people at once. In this case, `<
 
 **See Also:**
 - [page]
-- [pose]
+- [:]
 - [@pemit]
 

@@ -16,6 +16,6 @@ think words(1 2%b%b3, %b)
 
 
 **See Also:**
-- [strlen()]
-- [items()]
+- [STRLEN()]
+- [ITEMS()]
 

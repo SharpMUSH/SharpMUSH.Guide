@@ -11,7 +11,7 @@ Sets the message shown to someone who begins following `<object>`, the message s
 - [follow]
 - [unfollow]
 - [@unfollow]
-- [followers()]
-- [ACTION LISTS]
-- [VERBS]
+- [FOLLOWERS()]
+- [action lists]
+- [verbs]
 

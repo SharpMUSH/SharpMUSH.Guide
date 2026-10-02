@@ -10,5 +10,5 @@
 
 **See Also:**
 - [@lemit]
-- [remit()]
+- [REMIT()]
 

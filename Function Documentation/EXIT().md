@@ -7,6 +7,6 @@
 
 
 **See Also:**
-- [lexits()]
-- [next()]
+- [LEXITS()]
+- [NEXT()]
 

@@ -12,7 +12,7 @@ and<br>
 
 
 **See Also:**
-- [@lock]
+- [LOCKING]
 - [locktypes]
 - [enter]
 - [ENTER_OK]

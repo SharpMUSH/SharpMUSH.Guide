@@ -14,9 +14,9 @@ Kept: 12 7 / Dropped: apples pears
 
 
 **See Also:**
-- [filter()]
-- [filterbool()]
-- [every()]
-- [some()]
+- [FILTER()]
+- [FILTER()]
+- [E()]
+- [E()]
 - [setq()]
 

@@ -13,7 +13,7 @@ You may not specify both the `/any` switch and a specific attribute. Similarly, 
 
 
 **See Also:**
-- [SEMAPHORES]
+- [semaphores]
 - [@wait]
 - [@notify]
 - [@halt]

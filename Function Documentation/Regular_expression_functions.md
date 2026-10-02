@@ -3,15 +3,15 @@
 
 |                  |                  |                  |                  |
 |------------------|------------------|------------------|------------------|
-| [regedit()]      | [regeditall()]   | [regeditalli()]  | [regediti()]     |
-| [reglattr()]     | [reglattrp()]    | [regmatch()]     | [regmatchi()]    |
-| [regnattr()]     | [regnattrp()]    | [regrab()]       | [regraball()]    |
-| [regraballi()]   | [regrabi()]      | [regrep()]       | [regrepi()]      |
-| [reswitch()]     | [reswitchall()]  | [reswitchalli()] | [reswitchi()]    |
-| [regxattr()]     | [regxattrp()]    |                  |                  |
+| [REGEDIT()]      | [REGEDIT()]   | [REGEDIT()]  | [REGEDIT()]     |
+| [LATTR()]     | [LATTR()]    | [regmatch()]     | [regmatch()]    |
+| [NATTR()]     | [NATTR()]    | [GRAB()]       | [GRABALL()]    |
+| [GRABALL()]   | [GRAB()]      | [GREP()]       | [GREP()]      |
+| [RESWITCH()]     | [RESWITCH()]  | [RESWITCH()] | [RESWITCH()]    |
+| [XATTR()]     | [XATTR()]    |                  |                  |
 
 **See Also:**
-- [string functions]
+- [String functions]
 - [regexp]
 
 

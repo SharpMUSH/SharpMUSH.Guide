@@ -6,6 +6,6 @@
 
 **See Also:**
 - [@wipe]
-- [attrib_set()]
-- [set()]
+- [ATTRIB_SET()]
+- [SET()]
 

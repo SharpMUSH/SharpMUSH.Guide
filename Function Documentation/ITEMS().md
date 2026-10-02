@@ -13,5 +13,5 @@
 
 
 **See Also:**
-- [words()]
+- [WORDS()]
 

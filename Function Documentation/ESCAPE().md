@@ -9,7 +9,7 @@
 
 
 **See Also:**
-- [decompose()]
-- [secure()]
+- [DECOMPOSE()]
+- [SECURE()]
 - []
 

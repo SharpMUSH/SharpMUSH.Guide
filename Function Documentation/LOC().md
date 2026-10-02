@@ -10,11 +10,11 @@
 
 **See Also:**
 - [locate()]
-- [rloc()]
-- [home()]
-- [where()]
-- [rnum()]
-- [room()]
+- [RLOC()]
+- [HOME()]
+- [WHERE()]
+- [RNUM()]
+- [ROOM()]
 - [@link]
   UNFINDABLE, @whereis
 

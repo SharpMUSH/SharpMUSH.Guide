@@ -7,8 +7,8 @@
 
 
 **See Also:**
-- [ceil()]
-- [floor()]
-- [round()]
-- [trunc()]
+- [ROUND()]
+- [ROUND()]
+- [ROUND()]
+- [TRUNC()]
 

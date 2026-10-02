@@ -26,7 +26,7 @@ You say, "709395750"
 ```
 
 **See Also:**
-- [convtime()]
+- [CONVTIME()]
 - [time()]
 - [timefmt()]
 

@@ -14,9 +14,9 @@ This is [a test].
 
 
 **See Also:**
-- [hasattr()]
-- [visible()]
-- [ufun()]
-- [default()]
-- [udefault()]
+- [HASATTR()]
+- [VISIBLE()]
+- [u()]
+- [DEFAULT()]
+- [UDEFAULT()]
 

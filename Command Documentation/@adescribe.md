@@ -16,5 +16,5 @@ These attributes contain the message shown to others in the enactor's location w
 - [look]
 - [@describe]
 - [@idescribe]
-- [ACTION LISTS]
+- [action lists]
 

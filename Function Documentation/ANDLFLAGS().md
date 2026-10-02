@@ -13,7 +13,7 @@
 
 
 **See Also:**
-- [orflags()]
-- [flags()]
-- [lflags()]
+- [ORFLAGS()]
+- [FLAGS()]
+- [LFLAGS()]
 

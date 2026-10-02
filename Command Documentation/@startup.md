@@ -11,7 +11,7 @@ Note that @startups are NEVER inherited from parent objects.
 **See Also:**
 - [@restart]
 - [@undestroy]
-- [ACTION LISTS]
+- [action lists]
 - [@function]
 - [@command]
 - [@hook]

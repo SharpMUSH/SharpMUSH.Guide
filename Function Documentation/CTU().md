@@ -11,10 +11,10 @@ You say, "90 degrees is 1.570796 radians"
 
 
 **See Also:**
-- [acos()]
-- [asin()]
-- [atan()]
-- [cos()]
-- [sin()]
-- [tan()]
+- [ACOS()]
+- [ASIN()]
+- [ATAN()]
+- [COS()]
+- [SIN()]
+- [TAN()]
 

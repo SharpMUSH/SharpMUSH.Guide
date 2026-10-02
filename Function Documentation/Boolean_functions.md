@@ -5,11 +5,11 @@
 
 |              |              |              |              |              |
 |--------------|--------------|--------------|--------------|--------------|  
-| [and()]      | [cand()]     | [cor()]      | [eq()]       | [gt()]       |
-| [gte()]      | [lt()]       | [lte()]      | [nand()]     | [neq()]      |
-| [nor()]      | [not()]      | [or()]       | [t()]        | [xor()]      |
+| [AND()]      | [AND()]     | [OR()]      | [EQ()]       | [GT()]       |
+| [GTE()]      | [LT()]       | [LTE()]      | [NAND()]     | [NEQ()]      |
+| [NOR()]      | [NOT()]      | [OR()]       | [T()]        | [XOR()]      |
 
 **See Also:**
-- [BOOLEAN VALUES]
+- [boolean values]
 - [@config]
 

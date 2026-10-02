@@ -9,8 +9,8 @@
 
 
 **See Also:**
-- [mtime()]
+- [MTIME()]
 - [time()]
-- [secs()]
-- [objid()]
+- [SECS()]
+- [OBJID()]
 

@@ -16,6 +16,6 @@
 
 **See Also:**
 - [@motd]
-- [poll()]
+- [POLL()]
 - [@poll]
 

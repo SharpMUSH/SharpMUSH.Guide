@@ -7,9 +7,9 @@
 
 
 **See Also:**
-- [BOOLEAN VALUES]
+- [boolean values]
 - [switch()]
 - [@if]
 - [@break]
-- [cond()]
+- [COND()]
 

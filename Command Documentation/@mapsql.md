@@ -34,7 +34,7 @@ Prepared statement example:
 
 **See Also:**
 - [@sql]
-- [sql()]
-- [sqlescape()]
-- [mapsql()]
+- [SQL()]
+- [SQLESCAPE()]
+- [MAPSQL()]
 

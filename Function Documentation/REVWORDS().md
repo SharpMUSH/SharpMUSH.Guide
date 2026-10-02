@@ -11,5 +11,5 @@ You say, "eep baz bar foo"
 
 
 **See Also:**
-- [flip()]
+- [FLIP()]
 

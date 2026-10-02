@@ -7,6 +7,6 @@ Attempts to run a user-defined command on a specific object. If the `/room` swit
 
 
 **See Also:**
-- [USER-DEFINED COMMANDS]
-- [EVALUATION ORDER]
+- [$-commands]
+- [evaluation order]
 

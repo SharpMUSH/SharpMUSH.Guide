@@ -5,10 +5,10 @@
 
 
 **See Also:**
-- [BOOLEAN VALUES]
-- [and()]
-- [or()]
-- [not()]
-- [nor()]
-- [lmath()]
+- [boolean values]
+- [AND()]
+- [OR()]
+- [NOT()]
+- [NOR()]
+- [LMATH()]
 

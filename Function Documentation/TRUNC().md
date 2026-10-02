@@ -16,9 +16,9 @@ You say, "101"
 
 
 **See Also:**
-- [ceil()]
-- [floor()]
-- [bound()]
-- [round()]
-- [left()]
+- [ROUND()]
+- [ROUND()]
+- [BOUND()]
+- [ROUND()]
+- [LEFT()]
 

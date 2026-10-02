@@ -19,6 +19,6 @@ You say, "ABcdEF"
 
 
 **See Also:**
-- [splice()]
-- [tr()]
+- [SPLICE()]
+- [TR()]
 

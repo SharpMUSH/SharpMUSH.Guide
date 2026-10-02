@@ -3,25 +3,25 @@
 
 |                  |                  |                  |                  |
 |------------------|------------------|------------------|------------------|
-| [accent()]       | [after()]        | [align()]        | [alphamax()]     |
-| [alphamin()]     | [art()]          | [before()]       | [brackets()]     |
-| [capstr()]       | [case()]         | [caseall()]      | [cat()]          |
-| [center()]       | [chr()]          | [comp()]         | [cond()]         |
-| [condall()]      | [decode64()]     | [decompose()]    | [decrypt()]      |
-| [digest()]       | [edit()]         | [encode64()]     | [encrypt()]      |
-| [escape()]       | [flip()]         | [foreach()]      | [formdecode()]   |
-| [formq()]        | [hmac()]         | [if()]           | [ifelse()]       |
-| [lcstr()]        | [left()]         | [lit()]          | [ljust()]        |
-| [lpos()]         | [merge()]        | [mid()]          | [ord()]          |
-| [ordinal()]      | [pos()]          | [regedit()]      | [regmatch()]     |
-| [repeat()]       | [right()]        | [rjust()]        | [scramble()]     |
-| [secure()]       | [space()]        | [spellnum()]     | [squish()]       |
-| [strallof()]     | [strcat()]       | [strdelete()]    | [strfirstof()]   |
-| [strinsert()]    | [stripaccents()] | [stripansi()]    | [strlen()]       |
-| [strmatch()]     | [strreplace()]   | [switch()]       | [tr()]           |
-| [trim()]         | [ucstr()]        | [urldecode()]    | [urlencode()]    |
-| [wrap()]         | [displaywidth()] | [graphemecount()] | [graphemes()]     |
-| [printf()]       | [strdistance()]  |                  |                  |
+| [accent()]       | [AFTER()]        | [align()]        | [ALPHAMAX()]     |
+| [ALPHAMIN()]     | [ART()]          | [BEFORE()]       | [BRACKETS()]     |
+| [CAPSTR()]       | [switch()]         | [switch()]      | [CAT()]          |
+| [CENTER()]       | [CHR()]          | [COMP()]         | [COND()]         |
+| [COND()]      | [ENCODE64()]     | [DECOMPOSE()]    | [ENCRYPT()]      |
+| [DIGEST()]       | [EDIT()]         | [ENCODE64()]     | [ENCRYPT()]      |
+| [ESCAPE()]       | [FLIP()]         | [foreach()]      | [FORMDECODE()]   |
+| [FORMQ()]        | [HMAC()]         | [IF()]           | [IF()]       |
+| [LCSTR()]        | [LEFT()]         | [LIT()]          | [LJUST()]        |
+| [LPOS()]         | [MERGE()]        | [MID()]          | [CHR()]          |
+| [ORDINAL()]      | [POS()]          | [REGEDIT()]      | [regmatch()]     |
+| [REPEAT()]       | [RIGHT()]        | [RJUST()]        | [SCRAMBLE()]     |
+| [SECURE()]       | [SPACE()]        | [SPELLNUM()]     | [SQUISH()]       |
+| [STRFIRSTOF()]     | [CAT()]       | [STRDELETE()]    | [STRFIRSTOF()]   |
+| [STRINSERT()]    | [STRIPACCENTS()] | [STRIPANSI()]    | [STRLEN()]       |
+| [STRMATCH()]     | [STRREPLACE()]   | [switch()]       | [TR()]           |
+| [TRIM()]         | [UCSTR()]        | [URLDECODE()]    | [URLENCODE()]    |
+| [WRAP()]         | [DISPLAYWIDTH()] | [GRAPHEMECOUNT()] | [GRAPHEMES()]     |
+| [PRINTF()]       | [STRDISTANCE()]  |                  |                  |
 
 **See Also:**
 - [STRINGS]

@@ -14,6 +14,6 @@ think hastype(test object, PLAYER THING)
 
 
 **See Also:**
-- [TYPES]
-- [type()]
+- [TYPES OF OBJECTS]
+- [TYPE()]
 

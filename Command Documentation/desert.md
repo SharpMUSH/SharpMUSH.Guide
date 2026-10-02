@@ -9,6 +9,6 @@ The desert command stops `<object>` from following you and stops you from follow
 - [follow]
 - [unfollow]
 - [dismiss]
-- [followers()]
-- [following()]
+- [FOLLOWERS()]
+- [FOLLOWING()]
 

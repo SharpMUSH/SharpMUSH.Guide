@@ -19,7 +19,7 @@ You say, "foo ~ bar ~ boing"
 
 
 **See Also:**
-- [strdelete()]
-- [remove()]
-- [linsert()]
+- [STRDELETE()]
+- [REMOVE()]
+- [INSERT()]
 

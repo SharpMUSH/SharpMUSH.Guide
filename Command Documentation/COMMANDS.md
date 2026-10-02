@@ -3,14 +3,14 @@ Help is available for the following MUSH commands:
 
 |              |              |              |              |              |
 |--------------|--------------|--------------|--------------|--------------|  
-| [+]          | [:]          | ["]          | [;]          | [\]]         |
-| [ahelp]      | [anews]      | [brief]      | [DOING]      | [drop]       |
-| [enter]      | [events]     | [examine]    | [follow]     | [get]        |
+| [@chat]          | [:]          | ["]          | [:]          | [@emit]]         |
+| [ahelp]      | [ahelp]      | [brief]      | [who]      | [drop]       |
+| [enter]      | [EVENTS]     | [examine]    | [follow]     | [get]        |
 | [give]       | [go]         | [index]      | [leave]      | [look]       |
-| [LOGOUT]     | [move]       | [news]       | [page]       | [pose]       |
-| [QUIT]       | [read]       | [rules]      | [say]        | [score]      |
+| [LOGOUT]     | [go]       | [news]       | [page]       | [:]       |
+| [QUIT]       | [look]       | [rules]      | ["]        | [score]      |
 | [teach]      | [think]      | [unfollow]   | [use]        | [whisper]    |
-| [WHO]        | [with]       |              |              |              |
+| [who]        | [with]       |              |              |              |
 
 
 In addition to these, there are several types of '@' commands. @-commands are usually commands which have permanent effects on the MUSH (such as creating a new object). Here are the help topics on @-commands:

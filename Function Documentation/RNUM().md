@@ -10,7 +10,7 @@
 
 **See Also:**
 - [locate()]
-- [num()]
-- [rloc()]
-- [room()]
+- [NUM()]
+- [RLOC()]
+- [ROOM()]
 

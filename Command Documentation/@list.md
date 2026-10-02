@@ -22,17 +22,17 @@ By default, information is shown in upper-case. Add the `/lowercase` switch to s
 
 
 **See Also:**
-- [list()]
+- [LIST()]
 - [@config]
-- [config()]
-- [functions()]
+- [CONFIG()]
+- [FUNCTIONS()]
 - [@stats]
 - [@command]
 - [@function]
 - [@flag]
 - [@power]
 - [@attribute]
-- [@listmotd]
+- [@motd]
 - [@motd]
 - [locktypes]
 

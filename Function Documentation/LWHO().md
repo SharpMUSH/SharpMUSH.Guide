@@ -13,8 +13,8 @@
 
 
 **See Also:**
-- [mwho()]
-- [nwho()]
-- [xwho()]
-- [lports()]
+- [MWHO()]
+- [NMWHO()]
+- [XWHO()]
+- [LPORTS()]
 

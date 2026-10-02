@@ -9,5 +9,5 @@ The dismiss command stops `<object>` from following you. If no object is given, 
 - [follow]
 - [unfollow]
 - [desert]
-- [followers()]
+- [FOLLOWERS()]
 

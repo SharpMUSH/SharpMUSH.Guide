@@ -6,6 +6,6 @@
 
 
 **See Also:**
-- [lvthings()]
-- [lcon()]
+- [LVTHINGS()]
+- [LCON()]
 

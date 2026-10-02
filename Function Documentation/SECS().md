@@ -5,6 +5,6 @@
 
 
 **See Also:**
-- [convsecs()]
+- [CONVSECS()]
 - [time()]
 

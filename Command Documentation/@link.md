@@ -17,5 +17,5 @@ LINK_OK objects can also be used as semaphores, and any object can be @parented 
 - [@open]
 - [@dig]
 - [DROP-TO]
-- [HOME]
+- [HOMES]
 

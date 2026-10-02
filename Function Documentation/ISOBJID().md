@@ -34,8 +34,8 @@ The next object to be created will be #33.
 
 
 **See Also:**
-- [DBREFS]
-- [OBJECT IDS]
-- [num()]
-- [objid()]
+- [database]
+- [OBJIDS]
+- [NUM()]
+- [OBJID()]
 

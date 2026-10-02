@@ -5,7 +5,7 @@
 `regrab(<list>, <regexp>[, <delimiter>[, <osep>]])`<br>
 `regrabi(<list>, <regexp>[, <delimiter>])`
 
-  These functions return the first word in `<list>` which matches the pattern. For grab(), `<pattern>` is a wildcard pattern ([wildcards]). For regrab() and regrabi(), the pattern is a regular expression. regrabi() is case-insensitive. `<delimiter>` defaults to a space.
+  These functions return the first word in `<list>` which matches the pattern. For grab(), `<pattern>` is a wildcard pattern ([WILDCARDS]). For regrab() and regrabi(), the pattern is a regular expression. regrabi() is case-insensitive. `<delimiter>` defaults to a space.
 
   Basically, this is a much more efficient way to do:<br>
 `elements(<list>, match(<list>, <pattern>[, <delimiter>])[, <delimiter>])`<br>
@@ -13,9 +13,9 @@
 
 
 **See Also:**
-- [graball()]
-- [match()]
-- [extract()]
-- [elements()]
+- [GRABALL()]
+- [element()]
+- [EXTRACT()]
+- [ELEMENTS()]
 - [regmatch()]
 

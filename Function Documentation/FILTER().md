@@ -19,11 +19,11 @@ You say, "1 3 5"
 
 **See Also:**
 - [anonymous attributes]
-- [firstof()]
-- [allof()]
-- [lockfilter()]
-- [filterq()]
-- [every()]
-- [some()]
+- [FIRSTOF()]
+- [ALLOF()]
+- [LOCKFILTER()]
+- [FILTERQ()]
+- [E()]
+- [E()]
 - [boolean values]
 

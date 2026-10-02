@@ -3,9 +3,9 @@
 
   Returns `<number>` to the power of `<exponent>`.
 
-  (For the functional version of @power, see [powers()].)
+  (For the functional version of @power, see [POWERS()].)
 
 
 **See Also:**
-- [root()]
+- [ROOT()]
 

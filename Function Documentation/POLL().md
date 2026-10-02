@@ -6,6 +6,6 @@
 
 **See Also:**
 - [@poll]
-- [doing()]
+- [DOING()]
 - [@doing]
 

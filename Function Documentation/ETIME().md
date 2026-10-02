@@ -20,6 +20,6 @@ think etime(61, 5)
 
 **See Also:**
 - [etimefmt()]
-- [timestring()]
-- [stringsecs()]
+- [TIMESTRING()]
+- [STRINGSECS()]
 

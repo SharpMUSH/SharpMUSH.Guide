@@ -15,6 +15,6 @@
 
 **See Also:**
 - [@ps]
-- [lpids()]
-- [getpids()]
+- [LPIDS()]
+- [GETPIDS()]
 

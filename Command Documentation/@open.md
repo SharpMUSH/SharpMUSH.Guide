@@ -21,5 +21,5 @@ To open an exit in a room, you must control the room, have the Open_Anywhere @po
 - [EXITS]
 - [@link]
 - [@dig]
-- [open()]
+- [OPEN()]
 

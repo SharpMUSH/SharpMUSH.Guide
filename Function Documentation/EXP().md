@@ -8,6 +8,6 @@
   exp() is an alias for e().
 
 **See Also:**
-- [power()]
-- [log()]
+- [POWER()]
+- [LOG()]
 

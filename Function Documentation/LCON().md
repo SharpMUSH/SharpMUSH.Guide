@@ -16,10 +16,10 @@
 
 
 **See Also:**
-- [lexits()]
-- [lplayers()]
-- [lthings()]
-- [con()]
-- [next()]
-- [lvcon()]
+- [LEXITS()]
+- [LPLAYERS()]
+- [LTHINGS()]
+- [CON()]
+- [NEXT()]
+- [LVCON()]
 

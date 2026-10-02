@@ -5,7 +5,7 @@
 
 
 **See Also:**
-- [following()]
+- [FOLLOWING()]
 - [follow]
 - [unfollow]
 

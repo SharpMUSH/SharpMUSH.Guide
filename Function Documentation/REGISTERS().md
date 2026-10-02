@@ -15,12 +15,12 @@
 
 
 **See Also:**
-- [listq()]
+- [LISTQ()]
 - [setq()]
-- [setr()]
-- [letq()]
-- [r()]
-- [v()]
-- [stext()]
-- [itext()]
+- [setq()]
+- [LETQ()]
+- [R()]
+- [V()]
+- [STEXT()]
+- [ilev()]
 

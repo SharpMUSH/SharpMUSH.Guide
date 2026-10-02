@@ -11,5 +11,5 @@ Amberyl says, "a     b"
 
 
 **See Also:**
-- [repeat()]
+- [REPEAT()]
 

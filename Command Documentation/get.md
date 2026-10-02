@@ -13,10 +13,10 @@ To get an object from someone else's inventory, the possessive_get @config optio
 
 
 **See Also:**
-- [@lock]
+- [LOCKING]
 - [ENTER_OK]
 - [give]
 - [drop]
-- [@success]
+- [@asuccess]
 - [inventory]
 

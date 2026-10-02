@@ -3,18 +3,18 @@
 
 |                  |                  |                  |                  |
 |------------------|------------------|------------------|------------------|
-| [chain()]        | [elements()]     | [every()]        | [extract()]      |
-| [filter()]       | [filterbool()]   | [filterq()]      | [first()]        |
-| [fold()]         | [grab()]         | [graball()]      | [index()]        |
-| [itemize()]      | [items()]        | [iter()]         | [jiter()]        |
-| [last()]         | [ldelete()]      | [linsert()]      | [lockfilter()]   |
-| [lreplace()]     | [map()]          | [match()]        | [matchall()]     |
-| [member()]       | [mix()]          | [munge()]        | [namegrab()]     |
-| [namegraball()]  | [randword()]     | [remove()]       | [rest()]         |
-| [revwords()]     | [setdiff()]      | [setinter()]     | [setsymdiff()]   |
-| [setunion()]     | [shuffle()]      | [some()]         | [sort()]         |
-| [sortby()]       | [sortkey()]      | [splice()]       | [step()]         |
-| [table()]        | [unique()]       | [wordpos()]      | [words()]        |
+| [CHAIN()]        | [ELEMENTS()]     | [E()]        | [EXTRACT()]      |
+| [FILTER()]       | [FILTER()]   | [FILTERQ()]      | [FIRST()]        |
+| [fold()]         | [GRAB()]         | [GRABALL()]      | [INDEX()]        |
+| [ITEMIZE()]      | [ITEMS()]        | [iter()]         | [JITER()]        |
+| [LAST()]         | [LDELETE()]      | [INSERT()]      | [LOCKFILTER()]   |
+| [LREPLACE()]     | [MAP()]          | [element()]        | [element()]     |
+| [MEMBER()]       | [mix()]          | [munge()]        | [NAMEGRAB()]     |
+| [NAMEGRAB()]  | [RANDWORD()]     | [REMOVE()]       | [REST()]         |
+| [REVWORDS()]     | [SETDIFF()]      | [SETINTER()]     | [SETSYMDIFF()]   |
+| [SETUNION()]     | [SHUFFLE()]      | [E()]         | [SORT()]         |
+| [SORTBY()]       | [SORTKEY()]      | [SPLICE()]       | [STEP()]         |
+| [TABLE()]        | [UNIQUE()]       | [WORDPOS()]      | [WORDS()]        |
 
 **See Also:**
 - [LISTS]

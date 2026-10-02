@@ -25,11 +25,11 @@ In all cases, %0 is the dbref of the moving object's original location.
 
 **See Also:**
 - [get]
-- [goto]
-- [@lock]
+- [go]
+- [LOCKING]
 - [SUCCESS]
-- [FAILURE]
-- [@odrop]
-- [ACTION LISTS]
-- [VERBS]
+- [failure]
+- [@adrop]
+- [action lists]
+- [verbs]
 

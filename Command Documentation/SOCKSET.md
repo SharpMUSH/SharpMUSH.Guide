@@ -10,7 +10,7 @@ With no args, SOCKSET shows the current value of the socket options. With an `<o
 @sockset is a similar in-game command, but can specify which descriptor to change options for, and can set multiple options at once. Only Wizards can change the options for other players' descriptors. `<descriptor>` defaults to your least-idle descriptor, when used by a player; for non-players, it has no default.
 
 Options:
-- colorstyle: See [colorstyle]
+- colorstyle: See [COLORSTYLE]
 - outputprefix: Same as OUTPUTPREFIX
 - outputsuffix: Same as OUTPUTSUFFIX
 - pueblo: Sets Pueblo-related options. If value has md5=...", then it will set the pueblo checksum. If empty, Pueblo mode is turned off.
@@ -26,9 +26,9 @@ Note that changing 'telnet' or 'pueblo' may stop your client from parsing or dis
 
 
 **See Also:**
-- [SOCKET COMMANDS]
-- [terminfo()]
-- [Pueblo]
-- [colorstyle]
+- [socket commands]
+- [TERMINFO()]
+- [pueblo]
+- [COLORSTYLE]
 - [@prompt]
 

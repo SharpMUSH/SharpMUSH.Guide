@@ -21,7 +21,7 @@ would copy the TEST attribute from "box" to TEST on "cube".
 
 
 **See Also:**
-- [ATTRIBUTES]
+- [attributes]
 - [NON-STANDARD ATTRIBUTES]
 - [@set]
 

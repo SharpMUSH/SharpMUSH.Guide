@@ -8,6 +8,6 @@
 
 
 **See Also:**
-- [rand()]
-- [randextract()]
+- [RAND()]
+- [RANDEXTRACT()]
 

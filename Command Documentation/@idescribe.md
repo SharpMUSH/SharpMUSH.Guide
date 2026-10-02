@@ -14,10 +14,10 @@ If there is no IDESCRIBE set for an object, those who enter or look inside it wi
 
 **See Also:**
 - [enter]
-- [@enter]
+- [@aenter]
 - [ENTER_OK]
 - [@describe]
 - [look]
 - [@idescformat]
-- [VERBS]
+- [verbs]
 

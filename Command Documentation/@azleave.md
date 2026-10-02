@@ -14,8 +14,8 @@ Zone leaving is assumed to occur after room leaving, so these are triggered afte
 
 **See Also:**
 - [@zenter]
-- [ZONES]
+- [zones]
 - [@zemit]
-- [zwho()]
-- [VERBS]
+- [ZWHO()]
+- [verbs]
 

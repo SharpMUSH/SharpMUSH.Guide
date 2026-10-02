@@ -6,5 +6,5 @@
 
 **See Also:**
 - [@stats]
-- [stats()]
+- [LSTATS()]
 

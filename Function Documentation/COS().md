@@ -16,10 +16,10 @@ You say, "0"
   See 'HELP ANGLES' for more on the angle type.
 
 **See Also:**
-- [acos()]
-- [asin()]
-- [atan()]
-- [ctu()]
-- [sin()]
-- [tan()]
+- [ACOS()]
+- [ASIN()]
+- [ATAN()]
+- [CTU()]
+- [SIN()]
+- [TAN()]
 

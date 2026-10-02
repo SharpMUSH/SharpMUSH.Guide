@@ -1,11 +1,11 @@
 # NUM()
 `num(<object>)`
 
-  Returns the dbref number of `<object>`. `<object>` must reference a valid object, as per [matching].
+  Returns the dbref number of `<object>`. `<object>` must reference a valid object, as per [MATCHING].
 
 
 **See Also:**
 - [locate()]
-- [rnum()]
-- [pmatch()]
+- [RNUM()]
+- [PMATCH()]
 

@@ -25,7 +25,7 @@ You say, "-   foo-"
 
 **See Also:**
 - [align()]
-- [center()]
-- [ljust()]
-- [right()]
+- [CENTER()]
+- [LJUST()]
+- [RIGHT()]
 

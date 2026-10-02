@@ -14,8 +14,8 @@ You say, "301"
 
 
 **See Also:**
-- [timestring()]
+- [TIMESTRING()]
 - [etimefmt()]
-- [convtime()]
-- [etime()]
+- [CONVTIME()]
+- [ETIME()]
 

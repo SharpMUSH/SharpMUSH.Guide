@@ -10,5 +10,5 @@
 
 
 **See Also:**
-- [VECTOR FUNCTIONS]
+- [Vector functions]
 

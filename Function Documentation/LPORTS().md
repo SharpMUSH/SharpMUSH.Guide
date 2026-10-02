@@ -13,7 +13,7 @@
 
 
 **See Also:**
-- [lwho()]
-- [player()]
-- [Connection Functions]
+- [LWHO()]
+- [PLAYER()]
+- [Connection functions]
 

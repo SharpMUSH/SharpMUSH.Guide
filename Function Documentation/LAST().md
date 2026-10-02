@@ -5,8 +5,8 @@
 
 
 **See Also:**
-- [first()]
-- [rest()]
-- [before()]
-- [after()]
+- [FIRST()]
+- [REST()]
+- [BEFORE()]
+- [AFTER()]
 

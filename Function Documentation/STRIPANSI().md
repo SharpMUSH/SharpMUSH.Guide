@@ -5,9 +5,9 @@
 
 
 **See Also:**
-- [stripaccents()]
+- [STRIPACCENTS()]
 - [ansi()]
-- [tag()]
-- [render()]
+- [TAG()]
+- [RENDER()]
 
 

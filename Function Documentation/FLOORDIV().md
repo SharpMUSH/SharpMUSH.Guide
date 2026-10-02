@@ -24,6 +24,6 @@
 
 
 **See Also:**
-- [modulo()]
-- [lmath()]
+- [MOD()]
+- [LMATH()]
 

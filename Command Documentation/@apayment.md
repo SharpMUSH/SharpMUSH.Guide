@@ -20,6 +20,6 @@ These attributes contain the messages shown to someone who pays `<object>` penni
 - [@cost]
 - [buy]
 - [MONEY]
-- [ACTION LISTS]
-- [VERBS]
+- [action lists]
+- [verbs]
 

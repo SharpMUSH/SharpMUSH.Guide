@@ -14,12 +14,12 @@
 
 **See Also:**
 - [@uptime]
-- [secs()]
-- [convsecs()]
+- [SECS()]
+- [CONVSECS()]
 - [time()]
-- [starttime()]
-- [restarttime()]
-- [restarts()]
+- [STARTTIME()]
+- [STARTTIME()]
+- [RESTARTS()]
 - [@dbck]
 - [@purge]
 - [@warnings]

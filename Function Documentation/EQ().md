@@ -5,6 +5,6 @@
 
 
 **See Also:**
-- [neq()]
-- [lmath()]
+- [NEQ()]
+- [LMATH()]
 

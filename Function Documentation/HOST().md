@@ -10,8 +10,8 @@
 
 
 **See Also:**
-- [Connection Functions]
-- [ipaddr()]
-- [ports()]
-- [lports()]
+- [Connection functions]
+- [IPADDR()]
+- [LPORTS()]
+- [LPORTS()]
 

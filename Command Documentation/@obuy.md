@@ -19,8 +19,8 @@ These attributes contain the message shown to a player who successfully buys som
 - [buy]
 - [@pricelist]
 - [MONEY]
-- [@lock]
-- [VERBS]
+- [LOCKING]
+- [verbs]
 - [@cost]
 - [give]
 

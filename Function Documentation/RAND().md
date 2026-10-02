@@ -16,5 +16,5 @@
 
 
 **See Also:**
-- [randword()]
+- [RANDWORD()]
 

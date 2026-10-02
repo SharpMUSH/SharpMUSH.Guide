@@ -10,7 +10,7 @@ The NO_LEAVE flag may be enabled on some MUSHes. Objects set with this flag cann
 - [enter]
 - [@leave]
 - [@lfail]
-- [@lalias]
-- [@lock]
-- [INTERIORS]
+- [@ealias]
+- [LOCKING]
+- [interiors]
 

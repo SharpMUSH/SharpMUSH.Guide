@@ -22,6 +22,6 @@
 
 
 **See Also:**
-- [visible()]
-- [lattr()]
+- [VISIBLE()]
+- [LATTR()]
 

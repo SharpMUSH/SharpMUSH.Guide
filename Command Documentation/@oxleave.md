@@ -14,8 +14,8 @@ The leaver's new location is passed in %0, if `<object>` has permission to see i
 
 **See Also:**
 - [leave]
-- [@oxleave]
+- [@leave]
 - [@lfail]
-- [ACTION LISTS]
-- [VERBS]
+- [action lists]
+- [verbs]
 

@@ -3,13 +3,13 @@
 
 |                  |                  |                  |                  |
 |------------------|------------------|------------------|------------------|
-| [addrlog()]      | [cmds()]         | [conn()]         | [connlog()]      |
-| [connrecord()]   | [doing()]        | [height()]       | [hidden()]       |
-| [host()]         | [idle()]         | [ipaddr()]       | [lports()]       |
-| [lwho()]         | [lwhoid()]       | [mwho()]         | [mwhoid()]       |
-| [nmwho()]        | [nwho()]         | [player()]       | [ports()]        |
-| [pueblo()]       | [recv()]         | [sent()]         | [ssl()]          |
-| [terminfo()]     | [width()]        | [xmwho()]        | [xmwhoid()]      |
-| [xwho()]         | [xwhoid()]       | [zmwho()]        | [zwho()]         |
+| [ADDRLOG()]      | [CMDS()]         | [CONN()]         | [connlog()]      |
+| [CONNRECORD()]   | [DOING()]        | [WIDTH()]       | [HIDDEN()]       |
+| [HOST()]         | [IDLE()]         | [IPADDR()]       | [LPORTS()]       |
+| [LWHO()]         | [LWHO()]       | [MWHO()]         | [MWHO()]       |
+| [NMWHO()]        | [NMWHO()]         | [PLAYER()]       | [LPORTS()]        |
+| [PUEBLO()]       | [RECV()]         | [SENT()]         | [SSL()]          |
+| [TERMINFO()]     | [WIDTH()]        | [XWHO()]        | [XWHO()]      |
+| [XWHO()]         | [XWHO()]       | [ZWHO()]        | [ZWHO()]         |
 
 

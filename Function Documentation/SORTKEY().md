@@ -1,7 +1,7 @@
 # SORTKEY()
 `sortkey([<obj>/]<attrib>, <list>[, <sort type>[, <delimiter>[, <osep>]]])`
 
-  This function creates a list of keys by passing every element of `<list>` into the ufun given in `<attrib>`. The list is then sorted according to the sorting method in `<sort type>`, or is automatically guessed (as per [sorting]).
+  This function creates a list of keys by passing every element of `<list>` into the ufun given in `<attrib>`. The list is then sorted according to the sorting method in `<sort type>`, or is automatically guessed (as per [SORTING]).
 
   This is equivalent to:<br>
     > &munge_sort me=sort(%0[, `<sort type>`])<br>
@@ -18,6 +18,6 @@
 
 **See Also:**
 - [anonymous attributes]
-- [sorting]
-- [sortby()]
+- [SORTING]
+- [SORTBY()]
 

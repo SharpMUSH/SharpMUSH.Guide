@@ -5,7 +5,7 @@
 
 
 **See Also:**
-- [right()]
-- [mid()]
-- [ljust()]
+- [RIGHT()]
+- [MID()]
+- [LJUST()]
 

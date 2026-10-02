@@ -17,8 +17,8 @@ If `/<attribute>` is specified, it acts as an alias for @atrchown; see [@atrchow
 
 **See Also:**
 - [CHOWN_OK]
-- [Zone Masters]
+- [zone masters]
 - [@chownall]
-- [owner()]
+- [OWNER()]
 - [@atrchown]
 

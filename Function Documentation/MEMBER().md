@@ -7,8 +7,8 @@
 
 
 **See Also:**
-- [match()]
-- [grab()]
-- [comp()]
-- [strmatch()]
+- [element()]
+- [GRAB()]
+- [COMP()]
+- [STRMATCH()]
 

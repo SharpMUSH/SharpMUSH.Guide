@@ -11,7 +11,7 @@
 
 
 **See Also:**
-- [nexits()]
-- [lexits()]
-- [lvexits()]
+- [NVEXITS()]
+- [LEXITS()]
+- [LVEXITS()]
 

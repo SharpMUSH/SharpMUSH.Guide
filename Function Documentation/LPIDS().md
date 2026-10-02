@@ -12,6 +12,6 @@
 
 **See Also:**
 - [@ps]
-- [getpids()]
-- [pidinfo()]
+- [GETPIDS()]
+- [PIDINFO()]
 

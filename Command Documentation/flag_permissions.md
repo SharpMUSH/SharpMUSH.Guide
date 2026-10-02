@@ -15,5 +15,5 @@ The following permissions can be used to specify whether `<looker>` can see the 
 The following permissions control other behavior related to the flag:
 
 log Log when the flag is set or cleared. Only meaningful in `<setperms>`.<br>
-event Trigger the OBJECT`FLAG event when this flag is set or cleared. Only meaningful in `<setperms>`. See [events] for more information.
+event Trigger the OBJECT`FLAG event when this flag is set or cleared. Only meaningful in `<setperms>`. See [EVENTS] for more information.
 

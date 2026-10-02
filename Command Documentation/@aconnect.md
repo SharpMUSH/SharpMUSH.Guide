@@ -15,6 +15,6 @@ One argument is passed to @aconnect:<br>
 
 **See Also:**
 - [@adisconnect]
-- [ACTION LISTS]
+- [action lists]
 - [EVENTS]
 

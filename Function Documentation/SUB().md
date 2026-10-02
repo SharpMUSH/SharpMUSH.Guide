@@ -5,8 +5,8 @@
 
 
 **See Also:**
-- [add()]
-- [dec()]
-- [lmath()]
-- [vsub()]
+- [ADD()]
+- [DEC()]
+- [LMATH()]
+- [VSUB()]
 

@@ -6,7 +6,7 @@
 
 **See Also:**
 - [@parent]
-- [ancestors]
+- [ANCESTORS]
 - [pfun()]
-- [lparent()]
+- [LPARENT()]
 

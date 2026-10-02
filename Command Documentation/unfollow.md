@@ -9,8 +9,8 @@ This command stops you from following an object that you were formerly following
 - [follow]
 - [dismiss]
 - [desert]
-- [followers()]
+- [FOLLOWERS()]
 - [@follow]
-- [@ofollow]
-- [@afollow]
+- [@follow]
+- [@follow]
 

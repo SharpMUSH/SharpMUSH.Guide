@@ -17,6 +17,6 @@ You say, "-1"
 
 
 **See Also:**
-- [abs()]
-- [bound()]
+- [ABS()]
+- [BOUND()]
 

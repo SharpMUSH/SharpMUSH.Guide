@@ -11,6 +11,6 @@
 
 
 **See Also:**
-- [encode64()]
-- [digest()]
+- [ENCODE64()]
+- [DIGEST()]
 

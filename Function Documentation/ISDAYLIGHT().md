@@ -6,5 +6,5 @@
 
 **See Also:**
 - [timezones]
-- [secs()]
+- [SECS()]
 

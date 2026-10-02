@@ -5,9 +5,9 @@
 
 
 **See Also:**
-- [lt()]
-- [gt()]
-- [gte()]
-- [lnum()]
-- [lmath()]
+- [LT()]
+- [GT()]
+- [GTE()]
+- [LNUM()]
+- [LMATH()]
 

@@ -8,9 +8,9 @@
 
 
 **See Also:**
-- [llockflags()]
-- [lset()]
-- [lock()]
-- [llocks()]
-- [lockowner()]
+- [LLOCKFLAGS()]
+- [LSET()]
+- [LOCK()]
+- [LLOCKS()]
+- [LOCKOWNER()]
 

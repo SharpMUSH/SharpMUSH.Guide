@@ -5,5 +5,5 @@
 
 
 **See Also:**
-- [log()]
+- [LOG()]
 

@@ -19,6 +19,6 @@
 **See Also:**
 - [switch()]
 - [regmatch()]
-- [regedit()]
-- [REGEXPS]
+- [REGEDIT()]
+- [regexp]
 

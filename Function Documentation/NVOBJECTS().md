@@ -9,9 +9,9 @@
 
 
 **See Also:**
-- [ncon()]
-- [nexits()]
-- [xthings()]
-- [lthings()]
-- [lvthings()]
+- [NVCON()]
+- [NVEXITS()]
+- [XVTHINGS()]
+- [LTHINGS()]
+- [LVTHINGS()]
 

@@ -5,6 +5,6 @@
 
 
 **See Also:**
-- [MATH FUNCTIONS]
-- [lmath()]
+- [Math functions]
+- [LMATH()]
 

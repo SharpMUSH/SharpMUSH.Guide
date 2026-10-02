@@ -27,6 +27,6 @@ You say, "This is true"
 
 
 **See Also:**
-- [firstof()]
-- [allof()]
+- [FIRSTOF()]
+- [ALLOF()]
 

@@ -5,7 +5,7 @@
 
 
 **See Also:**
-- [after()]
-- [first()]
-- [last()]
+- [AFTER()]
+- [FIRST()]
+- [LAST()]
 

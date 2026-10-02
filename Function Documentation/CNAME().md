@@ -6,10 +6,10 @@
 
 
 **See Also:**
-- [MONIKERS]
+- [monikers]
 - [@moniker]
-- [name()]
-- [MONIKER]
-- [iname()]
-- [accname()]
+- [NAME()]
+- [MONIKER()]
+- [INAME()]
+- [ACCNAME()]
 

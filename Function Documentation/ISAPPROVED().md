@@ -16,7 +16,7 @@ think isapproved(me)
 
 
 **See Also:**
-- [hasflag()]
+- [HASFLAG()]
 - [@flag]
-- [flags list]
+- [FLAG LIST]
 

@@ -14,6 +14,6 @@ You say, "r baz"
 ```
 
 **See Also:**
-- [before()]
-- [rest()]
+- [BEFORE()]
+- [REST()]
 

@@ -12,5 +12,5 @@ think die(3, 6, 1)
 ```
 
 **See Also:**
-- [rand()]
+- [RAND()]
 

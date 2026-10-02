@@ -15,6 +15,6 @@ You say, "foo bar baz"
 
 
 **See Also:**
-- [capstr()]
-- [ucstr()]
+- [CAPSTR()]
+- [UCSTR()]
 

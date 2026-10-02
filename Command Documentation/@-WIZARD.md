@@ -3,15 +3,15 @@ These '@' commands are only usable by wizards or privileged players:
 
 |                  |                  |                  |                  |
 |------------------|------------------|------------------|------------------|
-| [@allhalt]       | [@allquota]      | [@boot]          | [@chownall]      |
-| [@chzoneall]     | [@comment]       | [@dbck]          | [@disable]       |
+| [@halt]       | [@quota administrative quota changes]      | [@boot]          | [@chownall]      |
+| [@chzoneall]     | [@comment]       | [@dbck]          | [@enable]       |
 | [@dump]          | [@enable]        | [@flag]          | [@hide]          |
-| [@hook]          | [@http]          | [@kick]          | [@log]           |
+| [@hook]          | [@HTTP]          | [@kick]          | [@log]           |
 | [@motd]          | [@newpassword]   | [@pcreate]       | [@poll]          |
 | [@poor]          | [@power]         | [@purge]         | [@quota]         |
-| [@readcache]     | [@rejectmotd]    | [@respond]       | [@shutdown]      |
-| [@sitelock]      | [@sql]           | [@squota]        | [@suggest]       |
-| [@uptime]        | [@wall]          | [@wizmotd]       | [@wizwall]       |
-| [cd]             | [ch]             | [cv]             |                  |
+| [@readcache]     | [@motd]    | [@respond]       | [@shutdown]      |
+| [@sitelock]      | [@sql]           | [@quota administrative quota changes]        | [@SUGGEST]       |
+| [@uptime]        | [@wall]          | [@motd]       | [@wall]       |
+| [cd]             | [cd]             | [cd]             |                  |
 
 

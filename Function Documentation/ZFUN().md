@@ -7,10 +7,10 @@
 
 
 **See Also:**
-- [ufun()]
-- [get()]
-- [zone()]
-- [zemit()]
-- [zwho()]
-- [ZONES]
+- [u()]
+- [GET()]
+- [ZONE()]
+- [ZEMIT()]
+- [ZWHO()]
+- [zones]
 

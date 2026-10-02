@@ -7,7 +7,7 @@ Displays how many pennies you have. Helpful to see if any machines are looping. 
 **See Also:**
 - [LOOPING]
 - [@ps]
-- [QUEUE]
+- [queue]
 - [MONEY]
 - [TRACK_MONEY]
 

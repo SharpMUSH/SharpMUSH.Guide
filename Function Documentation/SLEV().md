@@ -20,6 +20,6 @@ You say, "foo bar!"
 
 **See Also:**
 - [switch()]
-- [reswitch()]
+- [RESWITCH()]
 - [@switch]
 

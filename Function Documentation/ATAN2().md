@@ -11,10 +11,10 @@
 
 
 **See Also:**
-- [acos()]
-- [asin()]
-- [cos()]
-- [ctu()]
-- [sin()]
-- [tan()]
+- [ACOS()]
+- [ASIN()]
+- [COS()]
+- [CTU()]
+- [SIN()]
+- [TAN()]
 

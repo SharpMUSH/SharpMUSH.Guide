@@ -8,7 +8,7 @@ Players can change their name to anything valid which is not currently in use by
 
 You can change the alias for a player or exit while renaming it, by giving the alias(es) after the new name, each separated by a semicolon. If the name is followed by a semicolon with no aliases, the existing alias will be cleared instead.
 
-When `<object>`'s name is changed, its ONAME and ANAME verb attributes will be triggered. See [@oname] for details.
+When `<object>`'s name is changed, its ONAME and ANAME verb attributes will be triggered. See [@ONAME] for details.
 
 ### Examples
 ```sharp
@@ -25,8 +25,8 @@ Name set.
 
 **See Also:**
 - [@alias]
-- [@oname]
-- [name()]
-- [fullname()]
+- [@ONAME]
+- [NAME()]
+- [FULLNAME()]
 Config options: player_name_spaces, player_name_len, only_ascii_in_names
 

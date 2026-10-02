@@ -5,6 +5,6 @@
 
 
 **See Also:**
-- [lports()]
-- [ports()]
+- [LPORTS()]
+- [LPORTS()]
 

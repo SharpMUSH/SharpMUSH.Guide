@@ -14,8 +14,8 @@ Zone entry is assumed to occur before room entry, so these are triggered before 
 
 **See Also:**
 - [@zleave]
-- [ZONES]
+- [zones]
 - [@zemit]
-- [zwho()]
-- [VERBS]
+- [ZWHO()]
+- [verbs]
 

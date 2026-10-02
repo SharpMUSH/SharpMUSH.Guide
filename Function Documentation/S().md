@@ -13,6 +13,6 @@ You say, "When we eval [ucstr(test)], we get TEST"
 
 
 **See Also:**
-- [objeval()]
-- [decompose()]
+- [OBJEVAL()]
+- [DECOMPOSE()]
 

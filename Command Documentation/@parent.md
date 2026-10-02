@@ -5,8 +5,8 @@ This command sets the parent of `<object>` to `<parent>`. If no `<parent>` is gi
 
 
 **See Also:**
-- [PARENTS]
-- [parent()]
-- [lparent()]
+- [parent]
+- [PARENT()]
+- [LPARENT()]
 - [ANCESTORS]
 

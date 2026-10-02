@@ -10,5 +10,5 @@
 
 **See Also:**
 - [connlog()]
-- [connrecord()]
+- [CONNRECORD()]
 

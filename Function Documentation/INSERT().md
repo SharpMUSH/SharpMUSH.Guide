@@ -22,7 +22,7 @@ You say, "meep GOOP bleep gleep"
 
 
 **See Also:**
-- [lreplace()]
-- [ldelete()]
-- [strinsert()]
+- [LREPLACE()]
+- [LDELETE()]
+- [STRINSERT()]
 

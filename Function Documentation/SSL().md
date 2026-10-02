@@ -5,5 +5,5 @@
 
 
 **See Also:**
-- [terminfo()]
+- [TERMINFO()]
 

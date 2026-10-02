@@ -7,5 +7,5 @@ The `<new password>` must not contain whitespace, unprintable characters, or '='
 
 **See Also:**
 - [@newpassword]
-- [checkpass()]
+- [CHECKPASS()]
 

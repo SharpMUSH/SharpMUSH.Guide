@@ -3,21 +3,21 @@
 
 |                  |                  |                  |                  |
 |------------------|------------------|------------------|------------------|
-| [@@()]           | [allof()]        | [ansi()]         | [atrlock()]      |
-| [beep()]         | [benchmark()]    | [checkpass()]    | [clone()]        |
-| [cmdlink()]      | [create()]       | [die()]          | [dig()]          |
-| [endtag()]       | [firstof()]      | [fn()]           | [functions()]    |
-| [html()]         | [ibreak()]       | [ilev()]         | [inum()]         |
-| [isdbref()]      | [isint()]        | [isnum()]        | [isobjid()]      |
-| [isregexp()]     | [isword()]       | [itext()]        | [letq()]         |
-| [link()]         | [list()]         | [listq()]        | [lnum()]         |
-| [localize()]     | [lset()]         | [null()]         | [numversion()]   |
-| [objeval()]      | [open()]         | [pcreate()]      | [r()]            |
-| [rand()]         | [s()]            | [scan()]         | [set()]          |
-| [setq()]         | [setr()]         | [slev()]         | [soundex()]      |
-| [soundslike()]   | [speak()]        | [stext()]        | [suggest()]      |
-| [tag()]          | [tagwrap()]      | [tel()]          | [testlock()]     |
-| [textentries()]  | [textfile()]     | [unsetq()]       | [uptime()]       |
-| [valid()]        | [wipe()]         |                  |                  |
+| [@@()]           | [ALLOF()]        | [ansi()]         | [ATRLOCK()]      |
+| [BEEP()]         | [BENCHMARK()]    | [CHECKPASS()]    | [CLONE()]        |
+| [CMDLINK()]      | [CREATE()]       | [DIE()]          | [DIG()]          |
+| [ENDTAG()]       | [FIRSTOF()]      | [fn()]           | [FUNCTIONS()]    |
+| [HTML()]         | [IBREAK()]       | [ilev()]         | [ilev()]         |
+| [ISDBREF()]      | [ISINT()]        | [ISNUM()]        | [ISDBREF()]      |
+| [ISREGEXP()]     | [ISWORD()]       | [ilev()]        | [LETQ()]         |
+| [LINK()]         | [LIST()]         | [LISTQ()]        | [LNUM()]         |
+| [LOCALIZE()]     | [LSET()]         | [@@()]         | [VERSION()]   |
+| [OBJEVAL()]      | [OPEN()]         | [PCREATE()]      | [R()]            |
+| [RAND()]         | [S()]            | [SCAN()]         | [SET()]          |
+| [setq()]         | [setq()]         | [STEXT()]         | [soundex()]      |
+| [SOUNDLIKE()]   | [speak()]        | [STEXT()]        | [SUGGEST()]      |
+| [TAG()]          | [TAGWRAP()]      | [TEL()]          | [TESTLOCK()]     |
+| [TEXTFILE()]  | [TEXTFILE()]     | [LISTQ()]       | [UPTIME()]       |
+| [valid()]        | [WIPE()]         |                  |                  |
 
 

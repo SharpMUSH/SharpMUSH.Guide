@@ -8,7 +8,7 @@
 
 
 **See Also:**
-- [attrib_set()]
+- [ATTRIB_SET()]
 - [@set]
-- [wipe()]
+- [WIPE()]
 

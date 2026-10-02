@@ -9,10 +9,10 @@
 
 
 **See Also:**
-- [and()]
-- [or()]
-- [xor()]
-- [not()]
-- [nand()]
-- [lmath()]
+- [AND()]
+- [OR()]
+- [XOR()]
+- [NOT()]
+- [NAND()]
+- [LMATH()]
 

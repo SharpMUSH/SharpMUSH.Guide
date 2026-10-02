@@ -19,8 +19,8 @@
 
 
 **See Also:**
-- [lattr()]
-- [hasattr()]
-- [xattr()]
+- [LATTR()]
+- [HASATTR()]
+- [XATTR()]
 - [WILDCARDS]
 

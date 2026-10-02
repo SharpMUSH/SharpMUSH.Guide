@@ -7,10 +7,10 @@
 
 
 **See Also:**
-- [BOOLEAN VALUES]
-- [and()]
-- [nor()]
-- [firstof()]
-- [allof()]
-- [lmath()]
+- [boolean values]
+- [AND()]
+- [NOR()]
+- [FIRSTOF()]
+- [ALLOF()]
+- [LMATH()]
 

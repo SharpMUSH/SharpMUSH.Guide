@@ -5,15 +5,15 @@
   [Attribute functions]: attribute-related manipulations (GET, UFUN) <br>
   [Bitwise functions]: manipulation of individual bits of numbers (SHL, BOR) <br>
   [Boolean functions]: produce 0 or 1 (false or true) answers (OR, AND) <br>
-  [Channel functions]: get information about channels (CTITLE, CWHO) <br>
+  [channel functions]: get information about channels (CTITLE, CWHO) <br>
   [Communication functions]: send messages to objects (PEMIT, OEMIT) <br>
   [Connection functions]: get information about a player's connection (CONN) <br>
   [Dbref functions]: return dbref info related to objects (LOC, LEXITS) <br>
-  [HTML functions]: output HTML tags for Pueblo and WebSocket clients <br>
+  [HTML FUNCTIONS]: output HTML tags for Pueblo and WebSocket clients <br>
   [Information functions]: find out something about objects (FLAGS, MONEY) <br>
-  [JSON functions]: create and manipulate JSON objects (JSON, JSON_MAP) <br>
+  [JSON FUNCTIONS]: create and manipulate JSON objects (JSON, JSON_MAP) <br>
   [List functions]: manipulate lists (REVWORDS, FIRST) <br>
-  [Mail functions]: manipulate @mail (MAIL, FOLDERSTATS) <br>
+  [Mail Functions]: manipulate @mail (MAIL, FOLDERSTATS) <br>
   [Math functions]: number manipulation, generic or integers only (ADD, DIV) <br>
   [Regular expression functions]: Regular expressions (REGMATCH, REGEDIT) <br>
   [SQL functions]: access SQL databases (SQL, SQLESCAPE) <br>

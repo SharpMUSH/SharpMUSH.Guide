@@ -7,9 +7,9 @@ The `/silent` switch suppresses the confirmation message, and `/noisy` causes it
 
 
 **See Also:**
-- [@nszemit]
-- [zemit()]
-- [zone()]
-- [zwho()]
-- [ZONES]
+- [@nspemit]
+- [ZEMIT()]
+- [ZONE()]
+- [ZWHO()]
+- [zones]
 

@@ -13,8 +13,8 @@
 
 
 **See Also:**
-- [andflags()]
-- [flags()]
-- [lflags()]
-- [orlpowers()]
+- [ANDFLAGS()]
+- [FLAGS()]
+- [LFLAGS()]
+- [ORLPOWERS()]
 

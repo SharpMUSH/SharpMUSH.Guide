@@ -17,8 +17,8 @@
 
 
 **See Also:**
-- [lwho()]
-- [mwho()]
-- [nwho()]
-- [zwho()]
+- [LWHO()]
+- [MWHO()]
+- [NMWHO()]
+- [ZWHO()]
 

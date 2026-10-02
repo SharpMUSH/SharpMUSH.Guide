@@ -3,17 +3,17 @@ These '@' commands are general utility and programming commands:
 
 |              |              |              |              |              |
 |--------------|--------------|--------------|--------------|--------------|  
-| [@@]         | [@alias]     | [@break]     | [@cemit]     | [@channel]   |
+| [@@]         | [@alias]     | [@break]     | [@CEMIT]     | [@channel]   |
 | [@chat]      | [@command]   | [@config]    | [@decompile] | [@doing]     |
 | [@dolist]    | [@drain]     | [@edit]      | [@emit]      | [@entrances] |
-| [@find]      | [@force]     | [@function]  | [@gedit]     | [@grep]      |
-| [@halt]      | [@if]        | [@lemit]     | [@listmotd]  | [@mail]      |
-| [@notify]    | [@nsemit]    | [@nslemit]   | [@nsoemit]   | [@nspemit]   |
-| [@nsprompt]  | [@nsremit]   | [@nszemit]   | [@oemit]     | [@password]  |
+| [@find]      | [@force]     | [@function]  | [@edit]     | [@grep]      |
+| [@halt]      | [@if]        | [@lemit]     | [@motd]  | [MAIL]      |
+| [@notify]    | [@nspemit]    | [@nspemit]   | [@nspemit]   | [@nspemit]   |
+| [@nspemit]  | [@nspemit]   | [@nspemit]   | [@oemit]     | [@password]  |
 | [@profile]   |              |              |              |              |
 | [@pemit]     | [@prompt]    | [@ps]        | [@remit]     | [@restart]   |
-| [@scan]      | [@search]    | [@select]    | [@stats]     | [@sweep]     |
+| [@scan]      | [@search]    | [@switch]    | [@stats]     | [@sweep]     |
 | [@switch]    | [@teleport]  | [@trigger]   | [@verb]      | [@version]   |
-| [@wait]      | [@whereis]   | [@wiki]      | [@zemit]     | [@input]     |
+| [@wait]      | [@whereis]   | [wiki]      | [@zemit]     | [@input]     |
 
 

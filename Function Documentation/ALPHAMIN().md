@@ -7,6 +7,6 @@
 
 
 **See Also:**
-- [alphamax()]
-- [min()]
+- [ALPHAMAX()]
+- [MIN()]
 

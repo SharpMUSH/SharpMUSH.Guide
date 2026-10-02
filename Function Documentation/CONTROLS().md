@@ -5,6 +5,6 @@
 
 
 **See Also:**
-- [visible()]
+- [VISIBLE()]
 - [CONTROL]
 

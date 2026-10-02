@@ -11,9 +11,9 @@ If `<message>` begins with a double-quote and the chat_strip_quote @config optio
 
 
 **See Also:**
-- [pose]
+- [:]
 - [whisper]
-- [@speechmod]
+- [@SPEECHMOD]
 - [@emit]
 - [page]
 

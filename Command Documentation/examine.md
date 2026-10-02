@@ -16,8 +16,8 @@ The `/opaque` switch omits contents listings.
 
 
 **See Also:**
-- [ATTRIBUTE TREES]
+- [attribute trees]
 - [brief]
-- [lattr()]
+- [LATTR()]
 - [WILDCARDS]
 

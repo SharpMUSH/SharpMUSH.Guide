@@ -5,5 +5,5 @@ The SESSION command is the same as the admin WHO, but instead of showing the hos
 
 
 **See Also:**
-- [WHO]
+- [who]
 

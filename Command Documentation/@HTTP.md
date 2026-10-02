@@ -16,6 +16,6 @@ Note: The response body has the same 8k limit as other MUSH strings. Anything lo
 
 
 **See Also:**
-- [urlencode()]
-- [urldecode()]
+- [URLENCODE()]
+- [URLDECODE()]
 

@@ -15,6 +15,6 @@ You say, "2"
 ```
 
 **See Also:**
-- [sign()]
+- [SIGN()]
 
 

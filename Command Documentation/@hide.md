@@ -10,9 +10,9 @@ The `/on` and `/yes` switches hide connections, while `/off` and `/no` unhide co
 
 
 **See Also:**
-- [hidden()]
-- [WHO]
-- [lwho()]
-- [lports()]
-- [ports()]
+- [HIDDEN()]
+- [who]
+- [LWHO()]
+- [LPORTS()]
+- [LPORTS()]
 

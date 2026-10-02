@@ -7,8 +7,8 @@
 
 
 **See Also:**
-- [lockflags()]
-- [llockflags()]
-- [lock()]
-- [lockowner()]
+- [LOCKFLAGS()]
+- [LLOCKFLAGS()]
+- [LOCK()]
+- [LOCKOWNER()]
 

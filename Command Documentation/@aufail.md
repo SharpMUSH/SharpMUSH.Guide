@@ -13,8 +13,8 @@ Although the Use @lock also restricts who can trigger $-commands or ^-listens on
 
 **See Also:**
 - [use]
-- [@use]
-- [FAILURE]
-- [ACTION LISTS]
-- [VERBS]
+- [@ause]
+- [failure]
+- [action lists]
+- [verbs]
 

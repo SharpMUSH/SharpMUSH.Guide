@@ -11,9 +11,9 @@
 
 
 **See Also:**
-- [nplayers()]
-- [lplayers()]
-- [lvplayers()]
-- [xthings()]
-- [xexits()]
+- [NVPLAYERS()]
+- [LPLAYERS()]
+- [LVPLAYERS()]
+- [XVTHINGS()]
+- [XVEXITS()]
 

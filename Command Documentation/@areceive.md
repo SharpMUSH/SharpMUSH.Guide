@@ -14,7 +14,7 @@ In all cases, %0 is the dbref of the object received. If the object was 'give'n,
 - [give]
 - [get]
 - [@give]
-- [@success]
-- [ACTION LISTS]
-- [VERBS]
+- [@asuccess]
+- [action lists]
+- [verbs]
 

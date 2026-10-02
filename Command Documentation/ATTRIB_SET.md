@@ -11,5 +11,5 @@ ATTRIB_SET is the internal command which powers &attr and @_attr setting; it can
 
 **See Also:**
 - [@set]
-- [attrib_set()]
+- [ATTRIB_SET()]
 

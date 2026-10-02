@@ -10,8 +10,8 @@ think fmod(6.1,2.5)
 ```
 
 **See Also:**
-- [fdiv()]
-- [div()]
-- [mod()]
-- [lmath()]
+- [DIV()]
+- [DIV()]
+- [MOD()]
+- [LMATH()]
 

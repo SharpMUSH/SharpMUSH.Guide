@@ -10,8 +10,8 @@ These attributes contain the message shown to someone who fails to enter `<objec
 
 **See Also:**
 - [enter]
-- [@enter]
-- [FAILURE]
-- [ACTION LISTS]
-- [VERBS]
+- [@aenter]
+- [failure]
+- [action lists]
+- [verbs]
 

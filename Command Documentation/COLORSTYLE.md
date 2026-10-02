@@ -22,5 +22,5 @@ In the event that your client receives a color that it is unable to display, Sha
 - [ANSI]
 - [COLOR]
 - [XTERM256]
-- [@sockset]
+- [@SOCKSET]
 

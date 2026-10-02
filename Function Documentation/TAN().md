@@ -5,10 +5,10 @@
 
 
 **See Also:**
-- [acos()]
-- [asin()]
-- [atan()]
-- [cos()]
-- [ctu()]
-- [sin()]
+- [ACOS()]
+- [ASIN()]
+- [ATAN()]
+- [COS()]
+- [CTU()]
+- [SIN()]
 

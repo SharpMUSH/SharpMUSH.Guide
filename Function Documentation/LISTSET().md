@@ -6,6 +6,6 @@
   List replacement uses `listset()`. `lset()` sets lock flags.
 
 **See Also:**
-- [replace()]
-- [lset()]
+- [LREPLACE()]
+- [LSET()]
 

@@ -17,9 +17,9 @@
 
 **See Also:**
 - [STACK]
-- [REGISTERS]
-- [SUBSTITUTIONS]
-- [get()]
-- [r()]
-- [ATTRIBUTES]
+- [registers]
+- [%]
+- [GET()]
+- [R()]
+- [attributes]
 

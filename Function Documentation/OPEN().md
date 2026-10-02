@@ -13,8 +13,8 @@
 **See Also:**
 - [@open]
 - [@link]
-- [dig()]
-- [link()]
-- [create()]
-- [pcreate()]
+- [DIG()]
+- [LINK()]
+- [CREATE()]
+- [PCREATE()]
 

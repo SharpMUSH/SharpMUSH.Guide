@@ -19,10 +19,10 @@
 
 
 **See Also:**
-- [nattr()]
-- [xattr()]
-- [hasattr()]
+- [NATTR()]
+- [XATTR()]
+- [HASATTR()]
 - [examine]
-- [grep()]
+- [GREP()]
 - [WILDCARDS]
 

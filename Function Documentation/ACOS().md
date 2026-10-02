@@ -7,10 +7,10 @@
 
 
 **See Also:**
-- [asin()]
-- [atan()]
-- [cos()]
-- [ctu()]
-- [sin()]
-- [tan()]
+- [ASIN()]
+- [ATAN()]
+- [COS()]
+- [CTU()]
+- [SIN()]
+- [TAN()]
 

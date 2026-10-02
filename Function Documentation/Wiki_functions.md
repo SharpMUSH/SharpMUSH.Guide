@@ -3,9 +3,9 @@
 
 |                  |                  |                  |                  |
 |------------------|------------------|------------------|------------------|
-| [wiki()]         | [wikilist()]     | [wikirecent()]   | [wikisearch()]   |
+| [WIKI()]         | [WIKILIST()]     | [WIKIRECENT()]   | [WIKISEARCH()]   |
 
 **See Also:**
-- [@wiki]
+- [wiki]
 
 

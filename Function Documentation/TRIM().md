@@ -27,6 +27,6 @@ You say "Trim Test"
 
 
 **See Also:**
-- [squish()]
-- [edit()]
+- [SQUISH()]
+- [EDIT()]
 

@@ -8,9 +8,9 @@
 
 **See Also:**
 - [@quota]
-- [@squota]
-- [@allquota]
+- [@quota administrative quota changes]
+- [@quota administrative quota changes]
 - [QUOTAS]
-- [Quotas Power]
-- [No_Quota Power]
+- [@power]
+- [@power]
 

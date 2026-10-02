@@ -18,10 +18,10 @@ You say, "Outside-Inside-Inside"
 
 
 **See Also:**
-- [letq()]
+- [LETQ()]
 - [setq()]
-- [setr()]
-- [r()]
+- [setq()]
+- [R()]
 - [ulocal()]
-- [uldefault()]
+- [UDEFAULT()]
 

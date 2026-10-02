@@ -6,5 +6,5 @@
 
 **See Also:**
 - [@link]
-- [open()]
+- [OPEN()]
 

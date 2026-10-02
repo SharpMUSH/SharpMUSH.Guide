@@ -17,6 +17,6 @@ You say, "GRÜSSEN
 
 
 **See Also:**
-- [lcstr()]
-- [capstr()]
+- [LCSTR()]
+- [CAPSTR()]
 

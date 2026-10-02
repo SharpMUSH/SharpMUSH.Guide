@@ -25,7 +25,7 @@ Announcement: Room Zero shouts, "Dunce wins his first typo trophy!"
 
 **See Also:**
 - [@hook]
-- [EVALUATION ORDER]
-- [warn_on_missing]
-- [unimplemented_command]
+- [evaluation order]
+- [WARN_ON_MISSING]
+- [UNIMPLEMENTED_COMMAND]
 

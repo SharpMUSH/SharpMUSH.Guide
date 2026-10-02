@@ -7,10 +7,10 @@
 
 
 **See Also:**
-- [BOOLEAN VALUES]
-- [nand()]
-- [or()]
-- [xor()]
-- [not()]
-- [lmath()]
+- [boolean values]
+- [NAND()]
+- [OR()]
+- [XOR()]
+- [NOT()]
+- [LMATH()]
 

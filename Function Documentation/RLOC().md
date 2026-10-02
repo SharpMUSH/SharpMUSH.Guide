@@ -7,9 +7,9 @@
 
 
 **See Also:**
-- [loc()]
-- [where()]
-- [room()]
-- [rnum()]
+- [LOC()]
+- [WHERE()]
+- [ROOM()]
+- [RNUM()]
 - [locate()]
 

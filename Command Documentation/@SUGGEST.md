@@ -20,7 +20,7 @@ BIRD
 
 
 **See Also:**
-- [suggest()]
+- [SUGGEST()]
 
 
 

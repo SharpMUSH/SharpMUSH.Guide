@@ -7,6 +7,6 @@
 
 
 **See Also:**
-- [decompose()]
-- [escape()]
+- [DECOMPOSE()]
+- [ESCAPE()]
 

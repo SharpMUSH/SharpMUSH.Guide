@@ -9,7 +9,7 @@
 **See Also:**
 - [@nameformat]
 - [@nameaccent]
-- [name()]
-- [fullname()]
-- [accname()]
+- [NAME()]
+- [FULLNAME()]
+- [ACCNAME()]
 

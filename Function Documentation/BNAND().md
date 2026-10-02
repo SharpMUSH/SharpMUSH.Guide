@@ -5,5 +5,5 @@
 
 
 **See Also:**
-- [BITWISE FUNCTIONS]
+- [Bitwise functions]
 

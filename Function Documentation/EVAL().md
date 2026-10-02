@@ -16,8 +16,8 @@ test
 
 
 **See Also:**
-- [get()]
+- [GET()]
 - [u()]
-- [xget()]
-- [edefault()]
+- [GET()]
+- [EDEFAULT()]
 

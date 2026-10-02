@@ -7,9 +7,9 @@
 
 
 **See Also:**
-- [ncon()]
-- [nexits()]
-- [xplayers()]
-- [lplayers()]
-- [lvplayers()]
+- [NVCON()]
+- [NVEXITS()]
+- [XVPLAYERS()]
+- [LPLAYERS()]
+- [LVPLAYERS()]
 

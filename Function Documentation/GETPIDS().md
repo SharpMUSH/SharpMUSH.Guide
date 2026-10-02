@@ -7,7 +7,7 @@
 **See Also:**
 - [@ps]
 - [@wait]
-- [lpids()]
-- [pidinfo()]
-- [SEMAPHORES]
+- [LPIDS()]
+- [PIDINFO()]
+- [semaphores]
 

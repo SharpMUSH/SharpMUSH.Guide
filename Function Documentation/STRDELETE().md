@@ -24,8 +24,8 @@ You say, "abcfgh"
 
 
 **See Also:**
-- [strreplace()]
-- [strinsert()]
-- [mid()]
-- [ldelete()]
+- [STRREPLACE()]
+- [STRINSERT()]
+- [MID()]
+- [LDELETE()]
 

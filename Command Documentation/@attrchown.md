@@ -8,7 +8,7 @@ This command changes the ownership of the attribute `<attribute>` on `<object>` 
 **See Also:**
 - [@atrlock]
 - [@chown]
-- [owner()]
-- [ATTRIBUTES]
+- [OWNER()]
+- [attributes]
 - [NON-STANDARD ATTRIBUTES]
 

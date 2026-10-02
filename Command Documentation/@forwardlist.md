@@ -13,5 +13,5 @@ In order to forward to an object, you must either control it, have the pemit_all
 - [AUDIBLE]
 - [PUPPET]
 - [@debugforwardlist]
-- [@lock]
+- [LOCKING]
 

@@ -11,7 +11,7 @@ Sets the message shown to someone who stops following `<object>`, the message sh
 - [follow]
 - [unfollow]
 - [@follow]
-- [followers()]
-- [ACTION LISTS]
-- [VERBS]
+- [FOLLOWERS()]
+- [action lists]
+- [verbs]
 

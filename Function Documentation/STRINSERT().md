@@ -15,7 +15,7 @@ My name
 
 
 **See Also:**
-- [strdelete()]
-- [linsert()]
-- [strreplace()]
+- [STRDELETE()]
+- [INSERT()]
+- [STRREPLACE()]
 

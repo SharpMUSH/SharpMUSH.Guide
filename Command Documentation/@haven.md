@@ -13,7 +13,7 @@ When someone attempts to page `<player>` and is unable to, either because `<play
 **See Also:**
 - [HAVEN]
 - [page]
-- [@lock]
+- [LOCKING]
 - [@away]
 - [@idle]
 

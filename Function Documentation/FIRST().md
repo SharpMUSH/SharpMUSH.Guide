@@ -5,9 +5,9 @@
 
 
 **See Also:**
-- [before()]
-- [rest()]
-- [last()]
-- [firstof()]
-- [strfirstof()]
+- [BEFORE()]
+- [REST()]
+- [LAST()]
+- [FIRSTOF()]
+- [STRFIRSTOF()]
 

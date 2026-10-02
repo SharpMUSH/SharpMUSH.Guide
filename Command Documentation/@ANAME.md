@@ -14,6 +14,6 @@ Whenever `<object>`'s name is changed (via @name), others in the same location w
 
 **See Also:**
 - [@name]
-- [name()]
-- [VERBS]
+- [NAME()]
+- [verbs]
 

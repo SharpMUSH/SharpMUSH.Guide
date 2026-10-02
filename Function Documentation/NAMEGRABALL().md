@@ -17,6 +17,6 @@
 
 
 **See Also:**
-- [namelist()]
+- [NAMELIST()]
 - [locate()]
 

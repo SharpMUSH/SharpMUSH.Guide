@@ -8,7 +8,7 @@
 
 **See Also:**
 - [@chzone]
-- [zfun()]
-- [zwho()]
+- [ZFUN()]
+- [ZWHO()]
 - [zemit() ZONES]
 

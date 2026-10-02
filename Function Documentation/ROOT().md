@@ -13,6 +13,6 @@ think power(3, 3)
 
 
 **See Also:**
-- [sqrt()]
-- [power()]
+- [SQRT()]
+- [POWER()]
 

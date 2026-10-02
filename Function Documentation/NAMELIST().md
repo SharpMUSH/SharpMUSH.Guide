@@ -15,9 +15,9 @@ You say, "#1 #7 #56 #-1"
 
 
 **See Also:**
-- [namegrab()]
-- [name()]
+- [NAMEGRAB()]
+- [NAME()]
 - [locate()]
-- [num()]
-- [pmatch()]
+- [NUM()]
+- [PMATCH()]
 

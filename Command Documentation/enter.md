@@ -5,5 +5,5 @@ Used to enter a thing or player. You can only enter an object if you own it or i
 
 Insides of objects are best used for vehicles, or storage spaces when you don't have a home. You can describe the interior of an object differently from its exterior by using @idescribe.
 
-See: [@enter], [@efail], [@ealias], [leave], [@lock], [@idescribe], [INTERIORS]
+See: [@aenter], [@aefail], [@ealias], [leave], [LOCKING], [@idescribe], [interiors]
 

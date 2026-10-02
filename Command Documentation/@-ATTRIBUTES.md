@@ -3,28 +3,28 @@ These '@' commands set standard message/action sets on objects. Each comes in 3 
 
 |              |              |              |              |              |
 |--------------|--------------|--------------|--------------|--------------|  
-| [@describe]  | [@drop]      | [@efail]     | [@enter]     | [@failure]   |
+| [@describe]  | [@adrop]      | [@aefail]     | [@aenter]     | [@afailure]   |
 | [@follow]    | [@give]      | [@idescribe] | [@leave]     | [@lfail]     |
-| [@move]      | [@payment]   | [@receive]   | [@success]   | [@tport]     |
-| [@ufail]     | [@unfollow]  | [@use]       | [@zenter]    | [@zleave]    |
+| [@move]      | [@apayment]   | [@receive]   | [@asuccess]   | [@atport]     |
+| [@aufail]     | [@unfollow]  | [@ause]       | [@zenter]    | [@zleave]    |
 
 
 These '@' command set other standard attributes on objects that don't follow the pattern above:
 
 |                  |                  |                  |                  |
 |------------------|------------------|------------------|------------------|
-| [@aahear]        | [@aclone]        | [@aconnect]      | [@adisconnect]   |
-| [@amail]         | [@amhear]        | [@away]          | [@charges]       |
+| [@ahear]        | [@aclone]        | [@aconnect]      | [@adisconnect]   |
+| [@amail]         | [@ahear]        | [@away]          | [@charges]       |
 | [@conformat]     | [@cost]          | [@descformat]    | [@ealias]        |
 | [@exitformat]    | [@filter]        | [@forwardlist]   | [@haven]         |
 | [@idescformat]   | [@idle]          | [@infilter]      | [@inprefix]      |
-| [@lalias]        | [@listen]        | [@nameformat]    | [@oxenter]       |
-| [@oxleave]       | [@oxmove]        | [@oxtport]       | [@prefix]        |
-| [@runout]        | [@sex]           | [@startup]       |                  |
+| [@ealias]        | [@listen]        | [@nameformat]    | [@aenter]       |
+| [@leave]       | [@move]        | [@atport]       | [@prefix]        |
+| [@charges]        | [@sex]           | [@startup]       |                  |
 
 
 **See Also:**
-- [ATTRIBUTES]
+- [attributes]
 - [NON-STANDARD ATTRIBUTES]
 
 

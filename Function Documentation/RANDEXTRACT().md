@@ -22,6 +22,6 @@ You say, "this test is this is is"
 
 
 **See Also:**
-- [rand()]
-- [randword()]
+- [RAND()]
+- [RANDWORD()]
 

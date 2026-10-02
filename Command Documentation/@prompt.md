@@ -10,8 +10,8 @@ If `<message>` is omitted, an empty prompt is sent.
 
 **See Also:**
 - [@pemit]
-- [@nsprompt]
-- [prompt()]
-- [nsprompt()]
+- [@nspemit]
+- [PEMIT()]
+- [PEMIT()]
 - [PROMPT_NEWLINES]
 

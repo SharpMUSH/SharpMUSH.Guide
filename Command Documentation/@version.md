@@ -5,6 +5,6 @@ Tells the player the name of the MUSH, which version of the code is currently ru
 
 
 **See Also:**
-- [version()]
-- [numversion()]
+- [VERSION()]
+- [VERSION()]
 

@@ -5,6 +5,6 @@
 
 
 **See Also:**
-- [BITWISE FUNCTIONS]
-- [lmath()]
+- [Bitwise functions]
+- [LMATH()]
 

@@ -16,10 +16,10 @@ You say "You have lost 6 marbles."
 
 
 **See Also:**
-- [get()]
-- [eval()]
-- [ufun()]
-- [default()]
-- [udefault()]
-- [hasattr()]
+- [GET()]
+- [EVAL()]
+- [u()]
+- [DEFAULT()]
+- [UDEFAULT()]
+- [HASATTR()]
 

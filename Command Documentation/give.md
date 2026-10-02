@@ -12,10 +12,10 @@ The last two forms of this command give an `<object>` from your inventory to `<r
 **See Also:**
 - [@pay]
 - [@cost]
-- [@lock]
+- [LOCKING]
 - [inventory]
 - [@receive]
 - [@give]
 - [buy]
-- [@success]
+- [@asuccess]
 

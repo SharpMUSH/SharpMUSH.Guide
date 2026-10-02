@@ -18,11 +18,11 @@ You say "apple orange banana"
 ```
 
 **See Also:**
-- [get()]
-- [hasattr()]
-- [ufun()]
-- [edefault()]
-- [udefault()]
-- [uldefault()]
-- [strfirstof()]
+- [GET()]
+- [HASATTR()]
+- [u()]
+- [EDEFAULT()]
+- [UDEFAULT()]
+- [UDEFAULT()]
+- [STRFIRSTOF()]
 

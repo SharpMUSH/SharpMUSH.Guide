@@ -5,5 +5,5 @@ Sets the actions to be taken by `<object>` whenever it receives @mail. Admin-onl
 
 
 **See Also:**
-- [@mail]
+- [MAIL]
 

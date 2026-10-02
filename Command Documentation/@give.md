@@ -13,6 +13,6 @@ In all cases, %0 is the dbref of the object being given, and %1 is the dbref of 
 **See Also:**
 - [give]
 - [@receive]
-- [ACTION LISTS]
-- [VERBS]
+- [action lists]
+- [verbs]
 

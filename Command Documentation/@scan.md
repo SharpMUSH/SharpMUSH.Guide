@@ -14,5 +14,5 @@ If no switch is given, all locations are checked. `<command>` must be entered ex
 
 **See Also:**
 - [$-commands]
-- [EVALUATION ORDER]
+- [evaluation order]
 

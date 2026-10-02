@@ -13,6 +13,6 @@ The message is prefixed with the value of the wall_prefix, rwall_prefix or wizwa
 
 
 **See Also:**
-- [@wizwall]
-- [@rwall]
+- [@wall]
+- [@wall]
 

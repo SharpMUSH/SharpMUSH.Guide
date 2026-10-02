@@ -11,5 +11,5 @@ first
 
 
 **See Also:**
-- [spellnum()]
+- [SPELLNUM()]
 

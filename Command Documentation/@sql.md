@@ -25,8 +25,8 @@ Prepared statement examples:
 
 
 **See Also:**
-- [sql()]
-- [sqlescape()]
-- [mapsql()]
+- [SQL()]
+- [SQLESCAPE()]
+- [MAPSQL()]
 - [@mapsql]
 

@@ -7,6 +7,6 @@
 
 
 **See Also:**
-- [lcon()]
-- [next()]
+- [LCON()]
+- [NEXT()]
 

@@ -5,12 +5,12 @@
 
   You must be See_All or pass `<zone>`'s @lock/zone. Objects you could not examine are left out rather than erroring, so the result is what you may see and not necessarily the whole zone.
 
-  This is a SharpMUSH function; PennMUSH offers the zone lists through [search()] and [zwho()].
+  This is a SharpMUSH function; PennMUSH offers the zone lists through [lsearch()] and [ZWHO()].
 
 
 **See Also:**
-- [zwho()]
-- [zone()]
+- [ZWHO()]
+- [ZONE()]
 - [@chzone]
 - [lsearch()]
 

@@ -11,5 +11,5 @@ You say, "cfaedb"
 
 
 **See Also:**
-- [shuffle()]
+- [SHUFFLE()]
 

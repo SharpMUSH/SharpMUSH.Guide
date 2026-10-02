@@ -5,9 +5,9 @@
 
 
 **See Also:**
-- [lockflags()]
-- [llockflags()]
-- [lset()]
-- [lock()]
-- [llocks()]
+- [LOCKFLAGS()]
+- [LLOCKFLAGS()]
+- [LSET()]
+- [LOCK()]
+- [LLOCKS()]
 

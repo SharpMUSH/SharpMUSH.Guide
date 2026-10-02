@@ -30,7 +30,7 @@ You say, "CWHO() LWHO() MWHO() NWHO() XWHO() ZWHO()"
 
 
 **See Also:**
-- [log()]
+- [LOG()]
     "
 
 **See Also:**

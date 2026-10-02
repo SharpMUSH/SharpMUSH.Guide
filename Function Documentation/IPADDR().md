@@ -7,8 +7,8 @@
 
 
 **See Also:**
-- [Connection Functions]
-- [hostname()]
-- [ports()]
-- [lports()]
+- [Connection functions]
+- [HOST()]
+- [LPORTS()]
+- [LPORTS()]
 

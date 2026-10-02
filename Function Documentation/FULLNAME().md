@@ -11,9 +11,9 @@ You say, "South;sout;sou;so;s"
 
 
 **See Also:**
-- [name()]
-- [accname()]
-- [iname()]
-- [alias()]
-- [fullalias()]
+- [NAME()]
+- [ACCNAME()]
+- [INAME()]
+- [ALIAS()]
+- [ALIAS()]
 

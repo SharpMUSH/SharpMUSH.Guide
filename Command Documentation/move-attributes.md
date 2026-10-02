@@ -25,11 +25,11 @@ After every move, the object looks at where it arrived. This look always happens
 silent move; a TERSE player sees the room's name and contents but not its description.
 
 **See Also:**
-- [goto]
+- [go]
 - [@teleport]
 - [enter]
 - [leave]
-- [HOME]
+- [HOMES]
 - [TERSE]
 - [@listen]
 

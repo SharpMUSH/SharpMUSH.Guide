@@ -8,7 +8,7 @@ Some clients, like TinyFugue, are smart enough to interpret GOAHEAD and treat pr
 
 **See Also:**
 - [@prompt]
-- [prompt()]
-- [terminfo()]
-- [@sockset]
+- [PEMIT()]
+- [TERMINFO()]
+- [@SOCKSET]
 

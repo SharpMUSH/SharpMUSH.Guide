@@ -7,5 +7,5 @@
 **See Also:**
 - [@poll]
 - [@doing]
-- [poll()]
+- [POLL()]
 

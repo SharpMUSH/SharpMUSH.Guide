@@ -17,13 +17,13 @@
   > think mapsql(me/DisplayRow,lit(SELECT name\, email FROM users WHERE status = ?),%r,0,active)
   ```
 
-  See [sql examples] for examples.
+  See [SQL Examples] for examples.
 
 
 **See Also:**
 - [anonymous attributes]
-- [sqlescape()]
-- [sql()]
+- [SQLESCAPE()]
+- [SQL()]
 - [@sql]
 - [@mapsql]
 

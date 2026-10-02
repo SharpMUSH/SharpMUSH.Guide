@@ -21,11 +21,11 @@ You say "-- BOOM --"
 
 
 **See Also:**
-- [get()]
-- [eval()]
-- [ufun()]
-- [default()]
-- [edefault()]
+- [GET()]
+- [EVAL()]
+- [u()]
+- [DEFAULT()]
+- [EDEFAULT()]
 - [ulocal()]
-- [localize()]
+- [LOCALIZE()]
 

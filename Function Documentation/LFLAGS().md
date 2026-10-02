@@ -19,6 +19,6 @@ NO_COMMAND PUPPET
 
 
 **See Also:**
-- [flags()]
-- [list()]
+- [FLAGS()]
+- [LIST()]
 

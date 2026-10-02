@@ -17,10 +17,10 @@ You say, "&lt;Test 1&gt; &amp; \<u\>Test 2</u>"
 
 
 **See Also:**
-- [stripaccents()]
-- [stripansi()]
-- [Pueblo]
+- [STRIPACCENTS()]
+- [STRIPANSI()]
+- [pueblo]
 - [@sql]
-- [tagwrap()]
+- [TAGWRAP()]
 - [json()]
 

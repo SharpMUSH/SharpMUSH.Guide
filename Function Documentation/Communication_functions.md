@@ -1,15 +1,14 @@
 # Communication functions
-  Communication functions are side-effect functions that send a message to an object or objects.
+  Communication functions are side-effect functions that send a message to an object or objects. [PAGERECALL()] and [PAGECONVERSATIONS()] are the exception: they read your own page log and send nothing (SharpMUSH extensions).
 
-|              |              |              |              |              |
-|--------------|--------------|--------------|--------------|--------------|  
-| [cemit()]    | [emit()]     | [lemit()]    | [message()]  | [nsemit()]   |
-| [nslemit()]  | [nsoemit()]  | [nspemit()]  | [nsprompt()] | [nsremit()]  |
-| [nszemit()]  | [oemit()]    | [pemit()]    | [prompt()]   | [remit()]    |
-| [zemit()]    |              |              |              |              |
+|                       |                       |                       |                       |
+|-----------------------|-----------------------|-----------------------|-----------------------|
+| [@CEMIT]              | [EMIT()]              | [MESSAGE()]           | [NSLEMIT()]           |
+| [OEMIT()]             | [PEMIT()]             | [REMIT()]             | [ZEMIT()]             |
+| [PAGERECALL()]        | [PAGECONVERSATIONS()] |                       |                       |
 
 **See Also:**
-- [Channel functions]
-- [Mail functions]
+- [channel functions]
+- [Mail Functions]
 
 

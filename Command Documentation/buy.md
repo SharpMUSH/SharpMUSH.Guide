@@ -17,8 +17,8 @@ You enjoy a delicious coke.
 
 
 **See Also:**
-- [@BUY]
-- [@PRICELIST]
+- [@buy]
+- [@pricelist]
 - [give]
-- [@COST]
+- [@cost]
 

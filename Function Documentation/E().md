@@ -23,9 +23,9 @@
 
 
 **See Also:**
-- [filter()]
-- [filterbool()]
-- [filterq()]
+- [FILTER()]
+- [FILTER()]
+- [FILTERQ()]
 - [setq()]
-- [chain()]
+- [CHAIN()]
 

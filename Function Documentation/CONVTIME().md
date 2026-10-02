@@ -22,7 +22,7 @@ You say, "Wed Jun 24 10:22:54 1992"
 
 
 **See Also:**
-- [convsecs()]
+- [CONVSECS()]
 - [time()]
 - [timezones]
 

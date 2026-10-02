@@ -21,7 +21,7 @@ Formatted> Foo Bar Baz
 
 **See Also:**
 - [@message]
-- [oemit()]
-- [remit()]
+- [OEMIT()]
+- [REMIT()]
 - [speak()]
 

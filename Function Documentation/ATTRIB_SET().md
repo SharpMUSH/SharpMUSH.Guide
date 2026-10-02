@@ -7,7 +7,7 @@
 
 
 **See Also:**
-- [set()]
+- [SET()]
 - [@set]
-- [attrib_set#()]
+- [ATTRIB_SET#()]
 

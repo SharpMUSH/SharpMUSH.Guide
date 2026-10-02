@@ -6,6 +6,6 @@
   This is equivilent to ```last(sort(`<word>` ... `<wordN>`,a))```.
 
 **See Also:**
-- [alphamin()]
-- [max()]
+- [ALPHAMIN()]
+- [MAX()]
 

@@ -13,7 +13,7 @@ Wizards and objects with the pick_dbref power can also specify the `<dbref>` of 
 - [@quota]
 - [MONEY]
 - [@clone]
-- [create()]
+- [CREATE()]
 - [@dig]
 - [@open]
 - [@pcreate]

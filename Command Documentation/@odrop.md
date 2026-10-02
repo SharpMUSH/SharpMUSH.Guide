@@ -22,7 +22,7 @@ When `<object>` is an exit, @drop is shown to objects going through `<object>`, 
 **See Also:**
 - [drop]
 - [empty]
-- [ACTION LISTS]
-- [VERBS]
-- [@success]
+- [action lists]
+- [verbs]
+- [@asuccess]
 

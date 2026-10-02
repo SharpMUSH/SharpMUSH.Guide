@@ -9,6 +9,6 @@
 
 
 **See Also:**
-- [lwho()]
-- [nwho()]
+- [LWHO()]
+- [NMWHO()]
 

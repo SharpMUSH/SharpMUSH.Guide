@@ -22,5 +22,5 @@ Show the room's zone after its name.
 - [@nameaccent]
 - [@invformat]
 - [@idescformat]
-- [iname()]
+- [INAME()]
 

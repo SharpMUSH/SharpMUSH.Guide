@@ -7,9 +7,9 @@
 
 
 **See Also:**
-- [fullname()]
-- [accname()]
-- [iname()]
-- [alias()]
-- [moniker()]
+- [FULLNAME()]
+- [ACCNAME()]
+- [INAME()]
+- [ALIAS()]
+- [MONIKER()]
 

@@ -11,9 +11,9 @@
 
 
 **See Also:**
-- [lmath()]
-- [and()]
-- [cand()]
-- [or()]
-- [nor()]
+- [LMATH()]
+- [AND()]
+- [AND()]
+- [OR()]
+- [NOR()]
 

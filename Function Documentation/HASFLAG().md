@@ -13,14 +13,14 @@ think hasflag(me, wizard)
 
 
 **See Also:**
-- [orlflags()]
-- [andlflags()]
-- [orflags()]
-- [andflags()]
-- [flags()]
-- [lflags()]
+- [ORFLAGS()]
+- [ANDFLAGS()]
+- [ORFLAGS()]
+- [ANDFLAGS()]
+- [FLAGS()]
+- [LFLAGS()]
 - [attribute flags]
 - [@flag]
-- [haspower()]
-- [hastype()]
+- [HASPOWER()]
+- [HASTYPE()]
 

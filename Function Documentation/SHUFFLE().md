@@ -13,6 +13,6 @@ You say, "baz foo gleep bar"
 
 
 **See Also:**
-- [scramble()]
-- [pickrand()]
+- [SCRAMBLE()]
+- [RANDWORD()]
 

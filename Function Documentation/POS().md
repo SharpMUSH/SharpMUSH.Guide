@@ -5,8 +5,8 @@
 
 
 **See Also:**
-- [member()]
-- [match()]
-- [lpos()]
-- [wordpos()]
+- [MEMBER()]
+- [element()]
+- [LPOS()]
+- [WORDPOS()]
 

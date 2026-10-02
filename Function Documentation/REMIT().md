@@ -10,6 +10,6 @@
 
 **See Also:**
 - [@remit]
-- [pemit()]
-- [lemit()]
+- [PEMIT()]
+- [NSLEMIT()]
 

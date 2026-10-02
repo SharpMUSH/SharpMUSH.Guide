@@ -15,5 +15,5 @@ If you control `<object>`, or have the Search or See_All powers, all objects lin
 **See Also:**
 - [@link]
 - [@search]
-- [entrances()]
+- [ENTRANCES()]
 

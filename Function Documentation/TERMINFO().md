@@ -10,10 +10,10 @@
   ssl              present if the client is using an SSL/TLS connection.<br>
   websocket        present if the client is connected via WebSocket.<br>
   portal           present if the connection is a background portal (system) session.<br>
-  prompt_newlines  see [prompt_newlines]<br>
+  prompt_newlines  see [PROMPT_NEWLINES]<br>
   stripaccents     client is receiving 7-bit ascii, no accented characters
 
-  One of the color styles shown in [colorstyle] will also be included.
+  One of the color styles shown in [COLORSTYLE] will also be included.
 
   Other fields may be added in the future, if, for example, MXP support is ever added.
 
@@ -21,10 +21,10 @@
 
 
 **See Also:**
-- [pueblo()]
-- [width()]
-- [height()]
-- [ssl()]
-- [@sockset]
-- [oob()]
+- [PUEBLO()]
+- [WIDTH()]
+- [WIDTH()]
+- [SSL()]
+- [@SOCKSET]
+- [OOB()]
 

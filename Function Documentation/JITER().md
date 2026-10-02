@@ -17,9 +17,9 @@ You say, "One|PLAYER"
 
 
 **See Also:**
-- [chain()]
-- [map()]
+- [CHAIN()]
+- [MAP()]
 - [iter()]
 - [fold()]
-- [ufun()]
+- [u()]
 

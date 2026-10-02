@@ -7,8 +7,8 @@
 
 
 **See Also:**
-- [lcon()]
-- [lexits()]
-- [con()]
-- [exit()]
+- [LCON()]
+- [LEXITS()]
+- [CON()]
+- [EXIT()]
 

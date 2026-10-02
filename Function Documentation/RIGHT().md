@@ -5,6 +5,6 @@
 
 
 **See Also:**
-- [left()]
-- [mid()]
+- [LEFT()]
+- [MID()]
 

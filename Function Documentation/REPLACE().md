@@ -25,9 +25,9 @@ You say, "Turn south at the junction"
 
 
 **See Also:**
-- [ldelete()]
-- [linsert()]
-- [setdiff()]
-- [splice()]
-- [strreplace()]
+- [LDELETE()]
+- [INSERT()]
+- [SETDIFF()]
+- [SPLICE()]
+- [STRREPLACE()]
 

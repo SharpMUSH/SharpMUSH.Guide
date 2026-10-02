@@ -15,6 +15,6 @@ Such a failure usually occurs because `<object>` is set NO_LEAVE, or because the
 - [@leave]
 - [NO_LEAVE]
 - [locktypes]
-- [ACTION LISTS]
-- [VERBS]
+- [action lists]
+- [verbs]
 

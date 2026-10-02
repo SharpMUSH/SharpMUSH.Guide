@@ -26,8 +26,8 @@ Test
 
 
 **See Also:**
-- [say]
-- [pose]
+- ["]
+- [:]
 - [@emit]
 - [@chatformat]
 - [@pageformat]

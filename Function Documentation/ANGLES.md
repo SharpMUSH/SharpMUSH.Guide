@@ -6,11 +6,11 @@
 
 
 **See Also:**
-- [acos()]
-- [asin()]
-- [atan()]
-- [cos()]
-- [ctu()]
-- [sin()]
-- [tan()]
+- [ACOS()]
+- [ASIN()]
+- [ATAN()]
+- [COS()]
+- [CTU()]
+- [SIN()]
+- [TAN()]
 

@@ -18,7 +18,7 @@
 
 **See Also:**
 - [anonymous attributes]
-- [sorting]
-- [sort()]
-- [sortkey()]
+- [SORTING]
+- [SORT()]
+- [SORTKEY()]
 

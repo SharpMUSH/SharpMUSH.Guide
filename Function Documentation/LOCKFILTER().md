@@ -29,10 +29,10 @@ Walker WalkerBot Wilco
 
 
 **See Also:**
-- [@lock]
-- [lock()]
-- [elock()]
-- [lockkeys]
-- [filter()]
-- [testlock()]
+- [LOCKING]
+- [LOCK()]
+- [ELOCK()]
+- [lock keys]
+- [FILTER()]
+- [TESTLOCK()]
 

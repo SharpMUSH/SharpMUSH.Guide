@@ -12,9 +12,9 @@ For players and things, this means failure to get/take. For exits, it means fail
 
 **See Also:**
 - [get]
-- [move]
-- [@lock]
-- [ACTION LISTS]
-- [VERBS]
-- [@success]
+- [go]
+- [LOCKING]
+- [action lists]
+- [verbs]
+- [@asuccess]
 

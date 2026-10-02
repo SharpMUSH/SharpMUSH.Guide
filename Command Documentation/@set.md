@@ -22,6 +22,6 @@ The fourth form sets (or unsets) an attribute flag on the specified attribute. S
 
 **See Also:**
 - [ATTRIB_SET]
-- [attrib_set()]
-- [set()]
+- [ATTRIB_SET()]
+- [SET()]
 

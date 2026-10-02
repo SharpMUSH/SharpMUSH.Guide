@@ -9,9 +9,9 @@
 
 
 **See Also:**
-- [pemit()]
-- [remit()]
-- [lemit()]
-- [oemit()]
-- [zemit()]
+- [PEMIT()]
+- [REMIT()]
+- [NSLEMIT()]
+- [OEMIT()]
+- [ZEMIT()]
 

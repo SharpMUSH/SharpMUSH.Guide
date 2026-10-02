@@ -3,16 +3,16 @@
 
 |                  |                  |                  |                  |
 |------------------|------------------|------------------|------------------|
-| [children()]     | [con()]          | [entrances()]    | [exit()]         |
-| [followers()]    | [following()]    | [home()]         | [lcon()]         |
-| [lexits()]       | [loc()]          | [locate()]       | [lparent()]      |
-| [lplayers()]     | [lsearch()]      | [lvcon()]        | [lvexits()]      |
-| [lvplayers()]    | [namelist()]     | [next()]         | [nextdbref()]    |
-| [num()]          | [owner()]        | [parent()]       | [pmatch()]       |
-| [rloc()]         | [rnum()]         | [room()]         | [where()]        |
-| [zone()]         |                  |                  |                  |
+| [lsearch()]     | [CON()]          | [ENTRANCES()]    | [EXIT()]         |
+| [FOLLOWERS()]    | [FOLLOWING()]    | [HOME()]         | [LCON()]         |
+| [LEXITS()]       | [LOC()]          | [locate()]       | [LPARENT()]      |
+| [LPLAYERS()]     | [lsearch()]      | [LVCON()]        | [LVEXITS()]      |
+| [LVPLAYERS()]    | [NAMELIST()]     | [NEXT()]         | [NEXTDBREF()]    |
+| [NUM()]          | [OWNER()]        | [PARENT()]       | [PMATCH()]       |
+| [RLOC()]         | [RNUM()]         | [ROOM()]         | [WHERE()]        |
+| [ZONE()]         |                  |                  |                  |
 
 **See Also:**
-- [DBREF]
+- [database]
 - [Information functions]
 

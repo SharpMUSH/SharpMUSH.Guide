@@ -11,7 +11,7 @@ If a container has both a @nameaccent and a @nameformat, the @nameformat is used
 **See Also:**
 - [accent()]
 - [@nameformat]
-- [accname()]
-- [stripaccents()]
-- [iname()]
+- [ACCNAME()]
+- [STRIPACCENTS()]
+- [INAME()]
 

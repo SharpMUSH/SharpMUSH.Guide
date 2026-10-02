@@ -8,7 +8,7 @@
 
 
 **See Also:**
-- [median()]
-- [stddev()]
-- [lmath()]
+- [MEDIAN()]
+- [STDDEV()]
+- [LMATH()]
 

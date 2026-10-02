@@ -24,8 +24,8 @@ You say, "2"
 
 
 **See Also:**
-- [allof()]
-- [BOOLEAN VALUES]
-- [strfirstof()]
-- [filter()]
+- [ALLOF()]
+- [boolean values]
+- [STRFIRSTOF()]
+- [FILTER()]
 

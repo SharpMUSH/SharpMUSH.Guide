@@ -7,5 +7,5 @@
 
 
 **See Also:**
-- [playermem()]
+- [PLAYERMEM()]
 

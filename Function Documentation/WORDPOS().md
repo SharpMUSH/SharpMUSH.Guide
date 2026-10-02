@@ -11,6 +11,6 @@ You say, "2"
 
 
 **See Also:**
-- [member()]
-- [pos()]
+- [MEMBER()]
+- [POS()]
 

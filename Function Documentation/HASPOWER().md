@@ -8,6 +8,6 @@
 
 **See Also:**
 - [@power]
-- [powers list]
-- [hasflag()]
+- [@power]
+- [HASFLAG()]
 

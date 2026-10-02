@@ -10,6 +10,6 @@ Sets the actions to be taken after the object's @listen is matched. @ahear will 
 
 **See Also:**
 - [@listen]
-- [LISTENING]
-- [ACTION LISTS]
+- [listening]
+- [action lists]
 

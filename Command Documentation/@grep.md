@@ -15,8 +15,8 @@ For backwards compatability, the `/list` switch provides the default behaviour o
 
 
 **See Also:**
-- [grep()]
-- [wildgrep()]
-- [regrep()]
+- [GREP()]
+- [GREP()]
+- [GREP()]
 - [WILDCARDS]
 

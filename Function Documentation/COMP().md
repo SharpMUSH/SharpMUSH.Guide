@@ -15,6 +15,6 @@
   Whether or not the a sort type is case-sensitive or not depends on the particular MUSH and its environment.
 
 **See Also:**
-- [strmatch()]
-- [eq()]
+- [STRMATCH()]
+- [EQ()]
 

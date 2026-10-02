@@ -17,6 +17,6 @@ These attributes only have meaning for players and things (as rooms/exits cannot
 **See Also:**
 - [enter]
 - [leave]
-- [goto]
+- [go]
 - [ENTER_OK]
 

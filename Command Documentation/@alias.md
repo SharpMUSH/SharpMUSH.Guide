@@ -15,6 +15,6 @@ For other types of object, @alias has no special meaning.
 
 **See Also:**
 - [@name]
-- [alias()]
-- [fullalias()]
+- [ALIAS()]
+- [ALIAS()]
 

@@ -6,5 +6,5 @@ This wizard-only command forces the immediate execution of `<number>` items from
 
 **See Also:**
 - [@ps]
-- [QUEUE]
+- [queue]
 

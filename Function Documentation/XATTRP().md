@@ -18,8 +18,8 @@
 
 
 **See Also:**
-- [nattr()]
-- [lattr()]
+- [NATTR()]
+- [LATTR()]
 - [WILDCARDS]
-- [REGEXPS]
+- [regexp]
 

@@ -19,9 +19,9 @@ printf(lit(%4s|%-4s),ansi(r,界),ansi(b,😀))
 ```
 
 **See Also:**
-- [displaywidth()]
+- [DISPLAYWIDTH()]
 - [align()]
-- [table()]
-- [wrap()]
+- [TABLE()]
+- [WRAP()]
 
 

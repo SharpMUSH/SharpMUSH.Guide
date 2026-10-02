@@ -5,7 +5,7 @@
 
 
 **See Also:**
-- [mean()]
-- [median()]
-- [lmath()]
+- [AVG()]
+- [MEDIAN()]
+- [LMATH()]
 

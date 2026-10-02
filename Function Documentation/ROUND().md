@@ -23,6 +23,6 @@ think floor(3.14159)
 
 
 **See Also:**
-- [bound()]
-- [trunc()]
+- [BOUND()]
+- [TRUNC()]
 

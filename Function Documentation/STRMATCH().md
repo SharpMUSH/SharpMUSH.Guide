@@ -25,9 +25,9 @@ You say, "1"
 
 
 **See Also:**
-- [comp()]
-- [match()]
+- [COMP()]
+- [element()]
 - [setq()]
-- [r()]
+- [R()]
 - [WILDCARDS]
 

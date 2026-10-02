@@ -13,5 +13,5 @@ lZj9lZYz8qZKfX6YWWZ3SqbzNLyALlszAXcuyO1u7Vo=
 
 
 **See Also:**
-- [digest()]
+- [DIGEST()]
 

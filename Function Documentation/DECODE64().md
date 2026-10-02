@@ -10,6 +10,6 @@
 
 
 **See Also:**
-- [encrypt()]
-- [digest()]
+- [ENCRYPT()]
+- [DIGEST()]
 

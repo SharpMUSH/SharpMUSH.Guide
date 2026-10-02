@@ -7,8 +7,8 @@
 
 
 **See Also:**
-- [lcon()]
-- [exit()]
-- [next()]
-- [lvexits()]
+- [LCON()]
+- [EXIT()]
+- [NEXT()]
+- [LVEXITS()]
 

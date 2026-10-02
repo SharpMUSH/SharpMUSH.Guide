@@ -11,15 +11,15 @@ The `/noeval` switch prevents the MUSH from evaluating `<message>`. The `/spoof`
 
 
 **See Also:**
-- [@nsemit]
-- [emit()]
+- [@nspemit]
+- [EMIT()]
 - [@pemit]
 - [@remit]
 - [@oemit]
 - [@lemit]
 - [@zemit]
-- [@cemit]
-- [@speechmod]
+- [@CEMIT]
+- [@SPEECHMOD]
 - [NOSPOOF]
 - [SPOOFING].]
 

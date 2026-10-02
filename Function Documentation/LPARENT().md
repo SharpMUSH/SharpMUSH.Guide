@@ -5,8 +5,8 @@
 
 
 **See Also:**
-- [parent()]
-- [children()]
-- [PARENTS]
+- [PARENT()]
+- [lsearch()]
+- [parent]
 - [ANCESTORS]
 

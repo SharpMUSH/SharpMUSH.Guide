@@ -21,10 +21,10 @@ You say, "foo"
 
 
 **See Also:**
-- [allof()]
-- [firstof()]
-- [first()]
-- [strlen()]
-- [cat()]
-- [default()]
+- [ALLOF()]
+- [FIRSTOF()]
+- [FIRST()]
+- [STRLEN()]
+- [CAT()]
+- [DEFAULT()]
 

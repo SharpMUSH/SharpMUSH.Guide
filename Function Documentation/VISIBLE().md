@@ -7,6 +7,6 @@
 
 
 **See Also:**
-- [controls()]
+- [CONTROLS()]
 - [VISUAL]
 

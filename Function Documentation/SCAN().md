@@ -23,6 +23,6 @@
 - [@scan]
 - [@sweep]
 - [MASTER ROOM]
-- [EVALUATION ORDER]
-- [$-COMMANDS]
+- [evaluation order]
+- [$-commands]
 

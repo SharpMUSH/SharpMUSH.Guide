@@ -17,7 +17,7 @@
 - [json()]
 - [json_array()]
 - [json_query()]
-- [filter()]
-- [map()]
-- [chain()]
+- [FILTER()]
+- [MAP()]
+- [CHAIN()]
 

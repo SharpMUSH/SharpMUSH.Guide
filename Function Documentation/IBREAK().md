@@ -18,7 +18,7 @@ You say, "Test 1! Test 2! Test 3!"
 
 **See Also:**
 - [iter()]
-- [itext()]
-- [inum()]
+- [ilev()]
+- [ilev()]
 - [ilev()]
 

@@ -6,7 +6,7 @@
 
 
 **See Also:**
-- [obj()]
-- [poss()]
-- [subj()]
+- [OBJ()]
+- [POSS()]
+- [SUBJ()]
 

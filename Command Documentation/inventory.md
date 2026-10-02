@@ -9,9 +9,9 @@ Note that on some MUSHes it is possible to take things that are in someone else'
 
 **See Also:**
 - [score]
-- [take]
+- [get]
 - [drop]
 - [OPAQUE]
-- [@lock]
+- [LOCKING]
 - [@invformat]
 

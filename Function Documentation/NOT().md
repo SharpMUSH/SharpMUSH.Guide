@@ -7,10 +7,10 @@
 
 
 **See Also:**
-- [Boolean Functions]
-- [t()]
-- [and()]
-- [or()]
-- [nor()]
-- [xor()]
+- [Boolean functions]
+- [T()]
+- [AND()]
+- [OR()]
+- [NOR()]
+- [XOR()]
 

@@ -12,10 +12,10 @@ Goes in the specified direction. `<Direction>` can be the name or alias of an ex
 
 
 **See Also:**
-- [HOME]
+- [HOMES]
 - [@link]
 - [@ealias]
-- [@lalias]
+- [@ealias]
 - [EXITS]
 - [movement]
 

@@ -28,6 +28,6 @@ Your exit has been created.
 - [give]
 - [MONEY]
 - [@pay]
-- [money()]
+- [MONEY()]
 - [buy]
 

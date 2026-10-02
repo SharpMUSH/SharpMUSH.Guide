@@ -3,18 +3,18 @@
 
 |                  |                  |                  |                  |
 |------------------|------------------|------------------|------------------|
-| [aposs()]        | [attrib_set()]   | [default()]      | [edefault()]     |
-| [eval()]         | [flags()]        | [get()]          | [grep()]         |
-| [grepi()]        | [hasattr()]      | [hasattrp()]     | [hasattrval()]   |
-| [hasflag()]      | [lattr()]        | [lflags()]       | [nattr()]        |
-| [obj()]          | [owner()]        | [pfun()]         | [poss()]         |
-| [reglattr()]     | [regrep()]       | [regrepi()]      | [regxattr()]     |
-| [set()]          | [subj()]         | [udefault()]     | [ufun()]         |
-| [ulambda()]      | [uldefault()]    | [ulocal()]       | [v()]            |
-| [wildgrep()]     | [wildgrepi()]    | [xattr()]        | [xget()]         |
-| [zfun()]         |                  |                  |                  |
+| [APOSS()]        | [ATTRIB_SET()]   | [DEFAULT()]      | [EDEFAULT()]     |
+| [EVAL()]         | [FLAGS()]        | [GET()]          | [GREP()]         |
+| [GREP()]        | [HASATTR()]      | [HASATTR()]     | [HASATTR()]   |
+| [HASFLAG()]      | [LATTR()]        | [LFLAGS()]       | [NATTR()]        |
+| [OBJ()]          | [OWNER()]        | [pfun()]         | [POSS()]         |
+| [LATTR()]     | [GREP()]       | [GREP()]      | [XATTR()]     |
+| [SET()]          | [SUBJ()]         | [UDEFAULT()]     | [u()]         |
+| [u()]      | [UDEFAULT()]    | [ulocal()]       | [V()]            |
+| [GREP()]     | [GREP()]    | [XATTR()]        | [GET()]         |
+| [ZFUN()]         |                  |                  |                  |
 
 **See Also:**
-- [ATTRIBUTES]
+- [attributes]
 - [NON-STANDARD ATTRIBUTES]
 

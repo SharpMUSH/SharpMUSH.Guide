@@ -7,8 +7,8 @@ If you pass the lock, you will see `<object>`'s USE attribute, and others in you
 
 
 **See Also:**
-- [@use]
+- [@ause]
 - [@charges]
-- [@lock]
-- [@ufail]
+- [LOCKING]
+- [@aufail]
 

@@ -23,6 +23,6 @@ You say, "--X--"
 
 **See Also:**
 - [align()]
-- [ljust()]
-- [rjust()]
+- [LJUST()]
+- [RJUST()]
 

@@ -9,24 +9,24 @@ Whenever you "pass" the basic lock, you succeed in doing something with the obje
 
 Just like attributes, locks can be inherited from parents. By default, locks are set no_inherit, but this flag can be cleared using @lset. More details and a list of flags can be found in [@lset].
 
-A listing of lock types, such as pagelocks, look at [locktypes]. For the available key types, such as how to check an attribute on an object trying to pass a lock, see [lockkeys].
+A listing of lock types, such as pagelocks, look at [locktypes]. For the available key types, such as how to check an attribute on an object trying to pass a lock, see [lock keys].
 
 
 **See Also:**
-- [@lock-simple]
+- [@LOCK-SIMPLE]
 - [locktypes]
-- [lockkeys]
-- [@clock]
+- [lock keys]
+- [@CHANNEL CLOCK]
 - [failure]
-- [success]
-- [elock()]
-- [lock()]
+- [SUCCESS]
+- [ELOCK()]
+- [LOCK()]
 - [@lset]
-- [@clock]
-- [testlock()]
-- [locks()]
-- [lockflags()]
-- [lockowner()]
+- [@CHANNEL CLOCK]
+- [TESTLOCK()]
+- [LLOCKS()]
+- [LOCKFLAGS()]
+- [LOCKOWNER()]
 - [clock()]
-- [llocks()]
+- [LLOCKS()]
 

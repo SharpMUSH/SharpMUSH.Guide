@@ -17,7 +17,7 @@ Example: if I want everyone but Bob to be able to use my toy, I would "`@lock/us
 
 
 **See Also:**
-- [@lock]
+- [LOCKING]
 - [use]
 - [locktypes]
 

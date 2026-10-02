@@ -19,9 +19,9 @@ think testlock(\\+FOO:BAR,*Walker)
 
 
 **See Also:**
-- [@lock]
-- [lock()]
-- [elock()]
-- [lockfilter()]
+- [LOCKING]
+- [LOCK()]
+- [ELOCK()]
+- [LOCKFILTER()]
 - [locktypes]
 

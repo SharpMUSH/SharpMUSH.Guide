@@ -13,9 +13,9 @@
 
 
 **See Also:**
-- [nthings()]
-- [lthings()]
-- [lvthings()]
-- [xplayers()]
-- [xexits()]
+- [NVTHINGS()]
+- [LTHINGS()]
+- [LVTHINGS()]
+- [XVPLAYERS()]
+- [XVEXITS()]
 

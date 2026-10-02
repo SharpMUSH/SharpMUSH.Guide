@@ -15,6 +15,6 @@ as a matter of course.
 **See Also:**
 - [NO_COMMAND]
 - [@set]
-- [flag list]
+- [FLAG LIST]
 
 

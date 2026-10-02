@@ -5,8 +5,8 @@
 
 
 **See Also:**
-- [lplayers()]
-- [lvcon()]
-- [lvthings()]
-- [lvexits()]
+- [LPLAYERS()]
+- [LVCON()]
+- [LVTHINGS()]
+- [LVEXITS()]
 

@@ -22,6 +22,6 @@
 
 
 **See Also:**
-- [div()]
-- [lmath()]
+- [DIV()]
+- [LMATH()]
 

@@ -13,7 +13,7 @@ You say, "es"
 
 
 **See Also:**
-- [left()]
-- [right()]
-- [strdelete()]
+- [LEFT()]
+- [RIGHT()]
+- [STRDELETE()]
 

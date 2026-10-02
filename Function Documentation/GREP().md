@@ -25,6 +25,6 @@
 
 **See Also:**
 - [@grep]
-- [lattr()]
+- [LATTR()]
 - [WILDCARDS]
 

@@ -8,7 +8,7 @@
 
 **See Also:**
 - [@pcreate]
-- [create()]
-- [dig()]
-- [open()]
+- [CREATE()]
+- [DIG()]
+- [OPEN()]
 

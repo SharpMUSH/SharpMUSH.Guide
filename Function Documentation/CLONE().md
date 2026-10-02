@@ -11,7 +11,7 @@
 
 **See Also:**
 - [@clone]
-- [create()]
-- [dig()]
-- [open()]
+- [CREATE()]
+- [DIG()]
+- [OPEN()]
 

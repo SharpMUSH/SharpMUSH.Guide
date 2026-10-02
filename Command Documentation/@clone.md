@@ -23,7 +23,7 @@ Note: If @create is restricted or disabled, it will also restrict or disable thi
 
 **See Also:**
 - [@create]
-- [clone()]
-- [create()]
+- [CLONE()]
+- [CREATE()]
 - [@cpattr]
 

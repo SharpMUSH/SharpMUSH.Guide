@@ -8,9 +8,9 @@ If you pass the object's follow lock, you begin following it. As the object move
 - [unfollow]
 - [dismiss]
 - [desert]
-- [followers()]
-- [following()]
+- [FOLLOWERS()]
+- [FOLLOWING()]
 - [@follow]
-- [@ofollow]
-- [@afollow]
+- [@follow]
+- [@follow]
 

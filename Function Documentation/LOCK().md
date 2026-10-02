@@ -7,13 +7,13 @@
 
 
 **See Also:**
-- [@lock]
+- [LOCKING]
 - [locktypes]
-- [elock()]
-- [lockflags()]
-- [llockflags()]
-- [lset()]
-- [llocks()]
-- [lockowner()]
-- [lockfilter()]
+- [ELOCK()]
+- [LOCKFLAGS()]
+- [LLOCKFLAGS()]
+- [LSET()]
+- [LLOCKS()]
+- [LOCKOWNER()]
+- [LOCKFILTER()]
 

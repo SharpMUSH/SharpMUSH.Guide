@@ -5,5 +5,5 @@
 
 
 **See Also:**
-- [REGEXP]
+- [regexp]
 

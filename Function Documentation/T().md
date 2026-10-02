@@ -5,10 +5,10 @@
 
 
 **See Also:**
-- [not()]
-- [if()]
-- [cond()]
+- [NOT()]
+- [IF()]
+- [COND()]
 - [@break]
-- [or()]
-- [and()]
+- [OR()]
+- [AND()]
 

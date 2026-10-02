@@ -6,8 +6,8 @@
 
 
 **See Also:**
-- [name()]
-- [fullname()]
-- [iname()]
-- [ACCENTS]
+- [NAME()]
+- [FULLNAME()]
+- [INAME()]
+- [accents]
 

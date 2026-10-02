@@ -14,5 +14,5 @@ You say, "foo moof baz"
 
 
 **See Also:**
-- [merge()]
+- [MERGE()]
 

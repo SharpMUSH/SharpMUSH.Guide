@@ -18,13 +18,13 @@
 
 **See Also:**
 - [setq()]
-- [letq()]
-- [listq()]
-- [unsetq()]
-- [registers()]
-- [v()]
-- [itext()]
-- [stext()]
+- [LETQ()]
+- [LISTQ()]
+- [LISTQ()]
+- [REGISTERS()]
+- [V()]
 - [ilev()]
-- [slev()]
+- [STEXT()]
+- [ilev()]
+- [STEXT()]
 

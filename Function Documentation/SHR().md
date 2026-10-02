@@ -5,5 +5,5 @@
 
 
 **See Also:**
-- [shl()]
+- [SHL()]
 

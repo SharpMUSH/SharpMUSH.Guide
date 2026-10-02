@@ -9,7 +9,7 @@
 **See Also:**
 - [accent()]
 - [@nameaccent]
-- [accname()]
-- [stripansi()]
-- [render()]
+- [ACCNAME()]
+- [STRIPANSI()]
+- [RENDER()]
 

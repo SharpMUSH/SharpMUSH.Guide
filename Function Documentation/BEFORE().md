@@ -15,6 +15,6 @@ You say, "foo b"
 
 
 **See Also:**
-- [after()]
-- [first()]
+- [AFTER()]
+- [FIRST()]
 

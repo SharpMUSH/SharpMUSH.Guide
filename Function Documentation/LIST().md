@@ -19,11 +19,11 @@
 
 **See Also:**
 - [@list]
-- [flags()]
-- [lflags()]
-- [config()]
-- [functions()]
-- [@listmotd]
+- [FLAGS()]
+- [LFLAGS()]
+- [CONFIG()]
+- [FUNCTIONS()]
+- [@motd]
 - [@motd]
 `llocks()`
 

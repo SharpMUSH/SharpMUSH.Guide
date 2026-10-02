@@ -8,6 +8,6 @@
 
 
 **See Also:**
-- [Connection Functions]
-- [conn()]
+- [Connection functions]
+- [CONN()]
 

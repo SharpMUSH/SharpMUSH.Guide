@@ -18,14 +18,14 @@
   > think sql(lit(SELECT name FROM users WHERE id = ?),%r,%b,,123)
   ```
 
-  See [sql examples] for more examples.
+  See [SQL Examples] for more examples.
 
 
 **See Also:**
-- [sqlescape()]
-- [mapsql()]
+- [SQLESCAPE()]
+- [MAPSQL()]
 - [@sql]
 - [setq()]
-- [r()]
+- [R()]
 - [@mapsql]
 

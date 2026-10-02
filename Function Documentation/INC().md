@@ -22,7 +22,7 @@ think inc(3)
 
 
 **See Also:**
-- [dec()]
-- [add()]
-- [sub()]
+- [DEC()]
+- [ADD()]
+- [SUB()]
 

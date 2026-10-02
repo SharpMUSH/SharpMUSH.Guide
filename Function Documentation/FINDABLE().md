@@ -8,5 +8,5 @@
 
 **See Also:**
 - [locate()]
-- [loc()]
+- [LOC()]
 

@@ -26,10 +26,10 @@
 
 
 **See Also:**
-- [sort()]
-- [sortby()]
-- [sortkey()]
-- [setunion()]
-- [setinter()]
-- [setdiff()]
+- [SORT()]
+- [SORTBY()]
+- [SORTKEY()]
+- [SETUNION()]
+- [SETINTER()]
+- [SETDIFF()]
 

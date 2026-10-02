@@ -9,8 +9,8 @@
 
 
 **See Also:**
-- [num()]
-- [csecs()]
-- [ctime()]
-- [ENACTOR]
+- [NUM()]
+- [CTIME()]
+- [CTIME()]
+- [%#]
 

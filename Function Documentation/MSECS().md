@@ -11,9 +11,9 @@
 
 
 **See Also:**
-- [ctime()]
+- [CTIME()]
 - [time()]
-- [secs()]
-- [convtime()]
-- [convsecs()]
+- [SECS()]
+- [CONVTIME()]
+- [CONVSECS()]
 

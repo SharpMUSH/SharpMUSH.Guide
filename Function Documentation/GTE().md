@@ -5,10 +5,10 @@
 
 
 **See Also:**
-- [gt()]
-- [lt()]
-- [lte()]
-- [eq()]
-- [neq()]
-- [lmath()]
+- [GT()]
+- [LT()]
+- [LTE()]
+- [EQ()]
+- [NEQ()]
+- [LMATH()]
 

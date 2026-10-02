@@ -16,6 +16,6 @@
 
 **See Also:**
 - [@prompt]
-- [@nsprompt]
+- [@nspemit]
 - [PROMPT_NEWLINES]
 

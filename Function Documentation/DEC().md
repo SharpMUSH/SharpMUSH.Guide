@@ -27,6 +27,6 @@
 
 
 **See Also:**
-- [inc()]
-- [sub()]
+- [INC()]
+- [SUB()]
 

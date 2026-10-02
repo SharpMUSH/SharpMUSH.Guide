@@ -5,7 +5,7 @@
 
 
 **See Also:**
-- [lmath()]
-- [div()]
-- [fdiv()]
+- [LMATH()]
+- [DIV()]
+- [DIV()]
 

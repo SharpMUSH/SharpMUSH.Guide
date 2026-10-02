@@ -13,5 +13,5 @@ For an explanation of infilter patterns, see the help for "@filter".
 - [@listen]
 - [@inprefix]
 - [AUDIBLE]
-- [LISTENING]
+- [listening]
 

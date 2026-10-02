@@ -8,7 +8,7 @@ The @debugforwardlist must be a space-seperated list of dbrefs. In order to forw
 
 
 **See Also:**
-- [DEBUG]
+- [debug]
 - [@forwardlist]
-- [@lock]
+- [LOCKING]
 

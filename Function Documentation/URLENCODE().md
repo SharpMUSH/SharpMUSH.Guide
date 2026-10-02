@@ -5,6 +5,6 @@
 
 
 **See Also:**
-- [urldecode()]
-- [@http]
+- [URLDECODE()]
+- [@HTTP]
 

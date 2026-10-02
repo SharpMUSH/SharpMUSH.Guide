@@ -12,5 +12,5 @@ The `<password>` must not contain whitespace, unprintable characters, or '='.
 
 **See Also:**
 - [@password]
-- [checkpass()]
+- [CHECKPASS()]
 

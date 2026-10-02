@@ -7,5 +7,5 @@
 
 
 **See Also:**
-- [Connection Functions]
+- [Connection functions]
 

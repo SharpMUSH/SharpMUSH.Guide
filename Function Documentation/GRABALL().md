@@ -19,8 +19,8 @@ You say "This is"
 
 
 **See Also:**
-- [match()]
-- [matchall()]
-- [grab()]
+- [element()]
+- [element()]
+- [GRAB()]
 - [regmatch()]
 

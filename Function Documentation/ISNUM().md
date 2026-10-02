@@ -5,5 +5,5 @@
 
 
 **See Also:**
-- [isint()]
+- [ISINT()]
 

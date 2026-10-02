@@ -8,6 +8,6 @@ This command manipulate the message at the top of WHO/DOING. By itself, it displ
 
 **See Also:**
 - [@doing]
-- [WHO]
-- [DOING]
+- [who]
+- [who]
 

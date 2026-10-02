@@ -13,8 +13,8 @@ You say, "1 4 8"
 
 
 **See Also:**
-- [pos()]
-- [member()]
-- [match()]
-- [wordpos()]
+- [POS()]
+- [MEMBER()]
+- [element()]
+- [WORDPOS()]
 

@@ -16,7 +16,7 @@ You say, "Mug of Beer"
 
 
 **See Also:**
-- [extract()]
-- [elements()]
-- [grab()]
+- [EXTRACT()]
+- [ELEMENTS()]
+- [GRAB()]
 

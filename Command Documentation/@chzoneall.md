@@ -6,5 +6,5 @@ Changes the zone of all objects owned by `<player>` to `<zone object>`. If `<zon
 
 **See Also:**
 - [@chzone]
-- [ZONES]
+- [zones]
 

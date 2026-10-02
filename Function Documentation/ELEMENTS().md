@@ -19,7 +19,7 @@ You say "Ack Moo"
 
 
 **See Also:**
-- [extract()]
-- [index()]
-- [grab()]
+- [EXTRACT()]
+- [INDEX()]
+- [GRAB()]
 

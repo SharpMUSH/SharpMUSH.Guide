@@ -5,8 +5,8 @@
 
 
 **See Also:**
-- [max()]
-- [lmath()]
-- [bound()]
-- [alphamin()]
+- [MAX()]
+- [LMATH()]
+- [BOUND()]
+- [ALPHAMIN()]
 

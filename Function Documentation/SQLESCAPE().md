@@ -20,8 +20,8 @@ You don\'t say
 
 
 **See Also:**
-- [sql()]
-- [mapsql()]
+- [SQL()]
+- [MAPSQL()]
 - [@sql]
 - [@mapsql]
 

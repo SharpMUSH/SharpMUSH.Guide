@@ -21,6 +21,6 @@ Tnp
 
 
 **See Also:**
-- [lflags()]
-- [list()]
+- [LFLAGS()]
+- [LIST()]
 

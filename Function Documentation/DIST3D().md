@@ -5,6 +5,6 @@
 
 
 **See Also:**
-- [dist2d()]
-- [lmath()]
+- [DIST2D()]
+- [LMATH()]
 

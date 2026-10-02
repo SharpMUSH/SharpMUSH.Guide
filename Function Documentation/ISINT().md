@@ -5,5 +5,5 @@
 
 
 **See Also:**
-- [isnum()]
+- [ISNUM()]
 

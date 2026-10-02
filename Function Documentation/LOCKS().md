@@ -18,9 +18,9 @@ Basic USER:ITSME Use
 
 
 **See Also:**
-- [lock()]
-- [lset()]
-- [lockflags()]
-- [llockflags()]
-- [lockowner()]
+- [LOCK()]
+- [LSET()]
+- [LOCKFLAGS()]
+- [LLOCKFLAGS()]
+- [LOCKOWNER()]
 

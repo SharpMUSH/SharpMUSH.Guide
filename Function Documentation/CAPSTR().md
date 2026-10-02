@@ -11,6 +11,6 @@ Foo bar baz
 
 
 **See Also:**
-- [lcstr()]
-- [ucstr()]
+- [LCSTR()]
+- [UCSTR()]
 

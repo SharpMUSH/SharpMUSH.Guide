@@ -7,7 +7,7 @@
 
 
 **See Also:**
-- [linsert()]
-- [ldelete()]
-- [setdiff()]
+- [INSERT()]
+- [LDELETE()]
+- [SETDIFF()]
 

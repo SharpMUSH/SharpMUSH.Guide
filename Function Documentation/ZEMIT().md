@@ -10,8 +10,8 @@
 
 **See Also:**
 - [@zemit]
-- [zone()]
-- [zfun()]
-- [zwho()]
-- [ZONES]
+- [ZONE()]
+- [ZFUN()]
+- [ZWHO()]
+- [zones]
 

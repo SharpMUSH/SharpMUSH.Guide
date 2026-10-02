@@ -9,7 +9,7 @@
 
 
 **See Also:**
-- [lockowner()]
+- [LOCKOWNER()]
 - [@chown]
 - [@atrchown]
 

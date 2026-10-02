@@ -5,5 +5,5 @@
 
 
 **See Also:**
-- [shr()]
+- [SHR()]
 

@@ -6,5 +6,5 @@
 
 **See Also:**
 - [locate()]
-- [findable()]
+- [FINDABLE()]
 

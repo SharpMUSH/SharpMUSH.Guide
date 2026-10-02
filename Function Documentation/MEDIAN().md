@@ -5,7 +5,7 @@
 
 
 **See Also:**
-- [mean()]
-- [stddev()]
-- [lmath()]
+- [AVG()]
+- [STDDEV()]
+- [LMATH()]
 

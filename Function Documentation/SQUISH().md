@@ -14,5 +14,5 @@
 
 
 **See Also:**
-- [trim()]
+- [TRIM()]
 

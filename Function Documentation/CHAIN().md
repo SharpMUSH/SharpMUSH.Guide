@@ -24,10 +24,10 @@ You say, "*HELLO*!"
 
 **See Also:**
 - [fold()]
-- [map()]
+- [MAP()]
 - [iter()]
-- [ibreak()]
-- [jiter()]
-- [ufun()]
-- [@include3]
+- [IBREAK()]
+- [JITER()]
+- [u()]
+- [@include attribute pipelines]
 

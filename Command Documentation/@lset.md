@@ -12,8 +12,8 @@ Valid flags include:
 
 
 **See Also:**
-- [@lock]
-- [lockflags()]
-- [llockflags()]
-- [lset()]
+- [LOCKING]
+- [LOCKFLAGS()]
+- [LLOCKFLAGS()]
+- [LSET()]
 

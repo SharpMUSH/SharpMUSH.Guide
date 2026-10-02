@@ -3,12 +3,12 @@
 
 |                  |                  |                  |                  |
 |------------------|------------------|------------------|------------------|
-| [convsecs()]     | [convtime()]     | [convutcsecs()]  | [convutctime()]  |
-| [ctime()]        | [etime()]        | [etimefmt()]     | [isdaylight()]   |
-| [mtime()]        | [restarttime()]  | [secs()]         | [starttime()]    |
-| [stringsecs()]   | [time()]         | [timecalc()]     | [timefmt()]      |
-| [timestring()]   | [uptime()]       | [utctime()]      |                  |
+| [CONVSECS()]     | [CONVTIME()]     | [CONVSECS()]  | [CONVTIME()]  |
+| [CTIME()]        | [ETIME()]        | [etimefmt()]     | [ISDAYLIGHT()]   |
+| [MTIME()]        | [STARTTIME()]  | [SECS()]         | [STARTTIME()]    |
+| [STRINGSECS()]   | [time()]         | [timecalc()]     | [timefmt()]      |
+| [TIMESTRING()]   | [UPTIME()]       | [time()]      |                  |
 
 **See Also:**
-- [TIMEZONES]
+- [timezones]
 

@@ -9,9 +9,9 @@
 
 
 **See Also:**
-- [lwho()]
-- [nwho()]
-- [zone()]
-- [zfun()]
-- [zemit()]
+- [LWHO()]
+- [NMWHO()]
+- [ZONE()]
+- [ZFUN()]
+- [ZEMIT()]
 

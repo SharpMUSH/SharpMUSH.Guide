@@ -8,10 +8,10 @@
 
 
 **See Also:**
-- [room()]
-- [loc()]
-- [rnum()]
+- [ROOM()]
+- [LOC()]
+- [RNUM()]
 - [locate()]
-- [home()]
+- [HOME()]
 - [@whereis]
 

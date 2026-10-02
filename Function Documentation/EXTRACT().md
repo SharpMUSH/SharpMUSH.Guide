@@ -21,7 +21,7 @@ a test
 
 
 **See Also:**
-- [index()]
-- [elements()]
-- [grab()]
+- [INDEX()]
+- [ELEMENTS()]
+- [GRAB()]
 

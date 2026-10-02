@@ -5,11 +5,13 @@
 
   `<flags>` is a string of letters; only `i` (match case-insensitively) is meaningful. Replacement is always global, so a `g` is accepted and changes nothing. An invalid `<regexp>` returns `#-1 INVALID REGEX`.
 
-  This is a SharpMUSH function. PennMUSH spells the same idea [regedit()], which takes alternating pattern/replacement pairs instead of a flags argument and uses `%1`-style backreferences.
+  Its replacement tokens and numeric group order are those of .NET, unlike `regedit()` softcode captures. Use `lit()` when the replacement contains literal braces, for example `lit(${name})`.
+
+  This is a SharpMUSH function. PennMUSH spells the same idea [REGEDIT()], which takes alternating pattern/replacement pairs instead of a flags argument and uses `$1` / `$<name>` softcode capture substitutions.
 
 
 **See Also:**
-- [regedit()]
+- [REGEDIT()]
 - [regmatch()]
-- [REGEXP SYNTAX]
+- [regexp syntax]
 

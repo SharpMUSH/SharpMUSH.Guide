@@ -21,7 +21,7 @@ A cancelled delayed entry remains reserved until its scheduled trigger is confir
 **See Also:**
 - [@wait]
 - [@ps]
-- [SEMAPHORES]
+- [semaphores]
 - [@drain]
 - [@notify]
 

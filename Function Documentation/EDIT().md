@@ -19,5 +19,5 @@ You say "I think this is an exam."
 
 **See Also:**
 - [@edit]
-- [regedit()]
+- [REGEDIT()]
 

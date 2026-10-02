@@ -10,5 +10,5 @@ The `/spoof` switch causes nospoof notifications to show the enactor's dbref ins
 
 **See Also:**
 - [@remit]
-- [@nslemit]
+- [@nspemit]
 

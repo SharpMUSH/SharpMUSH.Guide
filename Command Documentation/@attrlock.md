@@ -11,8 +11,8 @@ If you wish to lock an attribute without gaining ownership, you can set it "lock
 
 
 **See Also:**
-- [atrlock()]
+- [ATRLOCK()]
 - [@atrchown]
-- [ATTRIBUTES]
+- [attributes]
 - [NON-STANDARD ATTRIBUTES]
 

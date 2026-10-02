@@ -5,8 +5,8 @@
 
 
 **See Also:**
-- [loc()]
-- [rloc()]
-- [rnum()]
-- [where()]
+- [LOC()]
+- [RLOC()]
+- [RNUM()]
+- [WHERE()]
 

@@ -9,8 +9,8 @@
 
 
 **See Also:**
-- [andlpowers()]
-- [orlpowers()]
+- [ANDLPOWERS()]
+- [ORLPOWERS()]
 - [@power]
-- [POWERS LIST]
+- [@power]
 

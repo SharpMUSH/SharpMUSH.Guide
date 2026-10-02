@@ -10,6 +10,6 @@ To change the message shown above player @doings in WHO, use @poll.
 
 **See Also:**
 - [@poll]
-- [WHO]
-- [doing()]
+- [who]
+- [DOING()]
 
