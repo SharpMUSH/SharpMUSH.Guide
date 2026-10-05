@@ -24,6 +24,7 @@ SharpMUSH is a functional MUSH server with its own idioms: handlers come pre-pop
 - **Executor identity depends on how you were called.** A hardcode-invoked template — a `` RENDERMARKUP`<ELEMENT> `` for `rendermarkdowncustom()` — is evaluated with the **caller** as executor, so `me`/`%!` is not the object holding it and `` me/FUN`X `` silently resolves against the wrong object. Address its helpers by explicit dbref. A global `@function` is the opposite: it runs as its backing object. Check which you have before writing `me/`.
 - **Clearing: omit the `=`.** `&ATTR obj` always clears. `&ATTR obj=` clears only when `empty_attrs` is off; otherwise it stores empty. Cleanup written with `=` works on one game and silently leaves data on another.
 - **Truthiness.** `if()`, `@assert`, `@break`, `filterbool()` already test it, so `t()` inside them is always redundant: `if(t(%1),…)` is `if(%1,…)`. Empty and `0` are falsy, everything else truthy — including `{}`, so an empty JSON object is *true*; test the list you built it from. `filter()`/`filterq()` are the exception, keeping only exactly `1`.
+- **Booleans: `cand()`/`cor()`, not `and()`/`or()`.** The `c` forms stop at the first argument that settles the answer and never evaluate the rest, so a costly test placed last runs only when it matters, and a later argument can rely on the earlier ones: `` cand(isdbref(%0), u(me/FUN`IS`MEMBER, %0)) `` never calls the predicate on a non-object. Same for the negations: `ncand()`/`ncor()` over `nand()`/`nor()`. `and()`/`or()` evaluate every argument; reach for them only when each argument has a side effect that must run.
 - **`@assert` is not if-then** — it *stops the list*. For a conditional effect, compute the value instead: `&WORN obj=[if(strmatch(%q<w>,%q<old>),%q<new>,%q<w>)]`.
 
 ## Substitutions
@@ -253,6 +254,7 @@ Prefer queued `@dolist` (with `/notify` + semaphore `@wait`) over `/inline` for 
 | `@assert %#` to detect system events | `%#` is `#1` there; gate on event args |
 | `ibreak()add(…)` trailing function unevaluated | `ibreak()[add(…)]` |
 | `[[]x[]]` to print `[x]`; a bare `(` inside `header()`/`align()` | `%[x%]`; `%(` `%)`. Empty `[]` is a parse error, and a bare paren closes the call |
+| `and(…)`/`or(…)` as the default boolean | `cand()`/`cor()` stop at the first deciding argument; `and()`/`or()` evaluate everything |
 | `if(t(<x>),…)`, `@assert t(<x>)` | Both already test truthiness |
 | `##`/`#@` in `@dolist`/`iter` | Spliced textually *before* evaluation, so elements run as code and nesting resolves to the outermost loop. Use `%i0`/`inum(0)`. `##` is still correct in `lsearch` eval classes — no iteration context there |
 | `$`-command correct but never fires | Room or Master Room, not `HALTED`/`No_command`, passes `@lock/use` + `@lock/command` |
