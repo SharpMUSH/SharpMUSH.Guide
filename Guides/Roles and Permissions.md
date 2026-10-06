@@ -80,7 +80,7 @@ think hasrole(*Bob, approved)
 think lsearch(all, type, player, elock, role^approved)
 ```
 
-`lsearch()` with a `role^` lock lists every approved character with no per-object softcode. For a mortal, `lsearch()` includes only objects they can examine, so run it from the global or another privileged object.
+`lsearch()` with a `role^` lock lists every approved character with no per-object softcode. For a mortal, `lsearch()` includes only objects they can examine, so run it from the global or another privileged object. This needs [SharpMUSH#1619](https://github.com/SharpMUSH/SharpMUSH/pull/1619); before it, `elock` tested the searcher instead of each candidate and the search returns everything or nothing.
 
 To revoke, `@role/unassign <player>=approved`, or give the global a matching `+unapprove`.
 
