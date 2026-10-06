@@ -28,3 +28,6 @@ Prefer cand() and cor() over and() and or(). The cancelling forms stop evaluatin
 - The negations follow the same rule: ncand() and ncor() over nand() and nor().
 
 and(), or(), nand() and nor() always evaluate every argument. Use them only when each argument has a side effect that must run regardless of the result, which is rare once side effects live in commands.
+
+## Authorization
+Ask the game who may do what instead of keeping a list of staff. Gate a command on a permission with permission(%#, <permission>), and use roles to tag what someone is, such as Approved. See [Roles and Permissions](Roles%20and%20Permissions.md).
