@@ -22,7 +22,7 @@ You say, "*HELLO*!"
   WRAP wraps the base "hello" in the side-arg "*" to make "*hello*"; that result becomes %0 for SHOUT, which upper-cases it and appends "!".
 
 
-**See Also:**
+::: seealso
 - [fold()]
 - [MAP()]
 - [iter()]
@@ -30,4 +30,5 @@ You say, "*HELLO*!"
 - [JITER()]
 - [u()]
 - [@include attribute pipelines]
+:::
 

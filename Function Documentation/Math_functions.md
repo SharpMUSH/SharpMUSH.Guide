@@ -25,6 +25,7 @@
   Math functions are affected by a number of @config options, including the TinyMUSH compatability options null_eq_zero and tiny_math.
 
 
-**See Also:**
+::: seealso
 - [Vector functions]
+:::
 

@@ -21,8 +21,9 @@ You say, "--X--"
     You say, "12345hello543215"
 
 
-**See Also:**
+::: seealso
 - [align()]
 - [LJUST()]
 - [RJUST()]
+:::
 

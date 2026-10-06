@@ -4,11 +4,12 @@
   Takes two or more booleans and returns a 1 if one, and only one, of the inputs is equivalent to true(1).
 
 
-**See Also:**
+::: seealso
 - [boolean values]
 - [AND()]
 - [OR()]
 - [NOT()]
 - [NOR()]
 - [LMATH()]
+:::
 

@@ -10,10 +10,11 @@
   xvplayers() is identical, but follows the restrictions of lvplayers().
 
 
-**See Also:**
+::: seealso
 - [NVPLAYERS()]
 - [LPLAYERS()]
 - [LVPLAYERS()]
 - [XVTHINGS()]
 - [XVEXITS()]
+:::
 

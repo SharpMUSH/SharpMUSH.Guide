@@ -5,8 +5,9 @@
 
   Examples: `graphemecount(é)` returns `1`; `graphemecount(👩‍👩‍👧‍👦)` returns `1`.
 
-**See Also:**
+::: seealso
 - [DISPLAYWIDTH()]
 - [GRAPHEMES()]
+:::
 
 

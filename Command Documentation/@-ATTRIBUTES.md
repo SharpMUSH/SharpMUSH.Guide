@@ -23,8 +23,9 @@ These '@' command set other standard attributes on objects that don't follow the
 | [@charges]        | [@sex]           | [@startup]       |                  |
 
 
-**See Also:**
+::: seealso
 - [attributes]
 - [NON-STANDARD ATTRIBUTES]
+:::
 
 

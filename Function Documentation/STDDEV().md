@@ -4,8 +4,9 @@
   Returns the sample standard deviation of its arguments.
 
 
-**See Also:**
+::: seealso
 - [AVG()]
 - [MEDIAN()]
 - [LMATH()]
+:::
 

@@ -29,9 +29,10 @@
 
   Read the answer later with `` get(me/DATA`ANSWER) ``. Evaluating player-supplied text is an explicit application choice; ordinary storage and substitution preserve it as data.
 
-**See Also:**
+::: seealso
 - [@prompt]
 - [@trigger]
 - [@include]
+:::
 
 

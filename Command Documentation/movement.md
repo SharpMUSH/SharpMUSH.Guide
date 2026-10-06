@@ -24,7 +24,7 @@ for `@teleport` also the `@tport` family. It does not suppress the enter and lea
 After every move, the object looks at where it arrived. This look always happens, including on a
 silent move; a TERSE player sees the room's name and contents but not its description.
 
-**See Also:**
+::: seealso
 - [go]
 - [@teleport]
 - [enter]
@@ -32,4 +32,5 @@ silent move; a TERSE player sees the room's name and contents but not its descri
 - [HOMES]
 - [TERSE]
 - [@listen]
+:::
 

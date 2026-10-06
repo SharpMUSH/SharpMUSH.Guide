@@ -10,7 +10,7 @@ The `/noeval` switch prevents the MUSH from evaluating `<message>`. The `/spoof`
 @emit can be abbreviated as `\`
 
 
-**See Also:**
+::: seealso
 - [@nspemit]
 - [EMIT()]
 - [@pemit]
@@ -21,5 +21,6 @@ The `/noeval` switch prevents the MUSH from evaluating `<message>`. The `/spoof`
 - [@CEMIT]
 - [@SPEECHMOD]
 - [NOSPOOF]
-- [SPOOFING].]
+- [SPOOFING]
+:::
 

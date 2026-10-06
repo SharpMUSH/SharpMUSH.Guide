@@ -8,11 +8,12 @@ Sets the list of actions on `<object>` that will happen whenever the MUSH is res
 Note that @startups are NEVER inherited from parent objects.
 
 
-**See Also:**
+::: seealso
 - [@restart]
 - [@undestroy]
 - [action lists]
 - [@function]
 - [@command]
 - [@hook]
+:::
 

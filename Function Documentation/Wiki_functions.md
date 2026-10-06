@@ -3,9 +3,11 @@
 
 |                  |                  |                  |                  |
 |------------------|------------------|------------------|------------------|
-| [WIKI()]         | [WIKILIST()]     | [WIKIRECENT()]   | [WIKISEARCH()]   |
+| [WIKI()]         | [WIKICATEGORY()] | [WIKILIST()]     | [WIKIRECENT()]   |
+| [WIKISEARCH()]   | [WIKIACCESS()]   |                  |                  |
 
-**See Also:**
+::: seealso
 - [wiki]
+:::
 
 

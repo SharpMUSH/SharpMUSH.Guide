@@ -23,9 +23,10 @@ You say, "2"
     You say, ""
 
 
-**See Also:**
+::: seealso
 - [ALLOF()]
 - [boolean values]
 - [STRFIRSTOF()]
 - [FILTER()]
+:::
 

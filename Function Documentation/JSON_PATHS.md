@@ -6,7 +6,8 @@
   [N]    - the Nth element of a JSON array. Note that the brackets need to be escaped.
 
 
-**See Also:**
+::: seealso
 - [json_mod()]
 - [json_query()]
+:::
 

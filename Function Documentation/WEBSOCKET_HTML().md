@@ -10,7 +10,8 @@
   These are SharpMUSH functions; PennMUSH has neither.
 
 
-**See Also:**
+::: seealso
 - [OOB()]
 - [json()]
+:::
 

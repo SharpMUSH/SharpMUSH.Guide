@@ -6,7 +6,8 @@
   The object executing the function needs to be see_all or control both `<object>` and `<victim>`.
 
 
-**See Also:**
+::: seealso
 - [locate()]
 - [LOC()]
+:::
 

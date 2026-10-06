@@ -8,10 +8,11 @@
   nszemit() works like @nszemit.
 
 
-**See Also:**
+::: seealso
 - [@zemit]
 - [ZONE()]
 - [ZFUN()]
 - [ZWHO()]
 - [zones]
+:::
 

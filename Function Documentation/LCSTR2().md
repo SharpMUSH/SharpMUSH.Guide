@@ -14,7 +14,8 @@ You say, "foo bar baz"
 ```
 
 
-**See Also:**
+::: seealso
 - [CAPSTR()]
 - [UCSTR()]
+:::
 

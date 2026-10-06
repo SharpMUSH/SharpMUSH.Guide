@@ -9,6 +9,7 @@
   2 6 12
 
 
-**See Also:**
+::: seealso
 - [Vector functions]
+:::
 

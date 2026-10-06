@@ -8,10 +8,11 @@ The `<accent template>` is explained in [accents].
 If a container has both a @nameaccent and a @nameformat, the @nameformat is used.
 
 
-**See Also:**
+::: seealso
 - [accent()]
 - [@nameformat]
 - [ACCNAME()]
 - [STRIPACCENTS()]
 - [INAME()]
+:::
 

@@ -8,11 +8,12 @@
   Equivalent to not(or()) and not(cor()), but more efficient.
 
 
-**See Also:**
+::: seealso
 - [AND()]
 - [OR()]
 - [XOR()]
 - [NOT()]
 - [NAND()]
 - [LMATH()]
+:::
 

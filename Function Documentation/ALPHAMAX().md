@@ -5,7 +5,8 @@
 
   This is equivilent to ```last(sort(`<word>` ... `<wordN>`,a))```.
 
-**See Also:**
+::: seealso
 - [ALPHAMIN()]
 - [MAX()]
+:::
 

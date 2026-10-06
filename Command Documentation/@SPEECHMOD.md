@@ -25,10 +25,11 @@ Test
 ```
 
 
-**See Also:**
+::: seealso
 - ["]
 - [:]
 - [@emit]
 - [@chatformat]
 - [@pageformat]
+:::
 

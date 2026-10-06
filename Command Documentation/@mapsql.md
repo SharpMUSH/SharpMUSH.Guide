@@ -32,9 +32,10 @@ Prepared statement example:
 ```
 
 
-**See Also:**
+::: seealso
 - [@sql]
 - [SQL()]
 - [SQLESCAPE()]
 - [MAPSQL()]
+:::
 

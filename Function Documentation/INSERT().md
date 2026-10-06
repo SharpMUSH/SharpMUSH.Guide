@@ -21,8 +21,9 @@ You say, "meep GOOP bleep gleep"
   insert() is an alias for linsert(), for backwards compatability.
 
 
-**See Also:**
+::: seealso
 - [LREPLACE()]
 - [LDELETE()]
 - [STRINSERT()]
+:::
 

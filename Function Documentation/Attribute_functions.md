@@ -14,7 +14,8 @@
 | [GREP()]     | [GREP()]    | [XATTR()]        | [GET()]         |
 | [ZFUN()]         |                  |                  |                  |
 
-**See Also:**
+::: seealso
 - [attributes]
 - [NON-STANDARD ATTRIBUTES]
+:::
 

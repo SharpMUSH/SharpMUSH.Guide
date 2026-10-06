@@ -23,9 +23,10 @@ You say, "abcfgh"
   delete() is an alias for strdelete(), for backwards compatability.
 
 
-**See Also:**
+::: seealso
 - [STRREPLACE()]
 - [STRINSERT()]
 - [MID()]
 - [LDELETE()]
+:::
 

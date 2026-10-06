@@ -19,10 +19,11 @@ When `<object>` is an exit, @drop is shown to objects going through `<object>`, 
 > @odrop South=arrives from the North.
 ```
 
-**See Also:**
+::: seealso
 - [drop]
 - [empty]
 - [action lists]
 - [verbs]
 - [@asuccess]
+:::
 

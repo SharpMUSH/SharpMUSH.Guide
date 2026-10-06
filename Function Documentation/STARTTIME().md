@@ -17,7 +17,8 @@ Tue Sep 22 13:54:04 2015
 ```
 
 
-**See Also:**
+::: seealso
 - [CONVTIME()]
 - [RESTARTS()]
+:::
 

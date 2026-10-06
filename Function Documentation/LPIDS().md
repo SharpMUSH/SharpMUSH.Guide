@@ -10,8 +10,9 @@
   If not specified, it defaults to "wait semaphore".
 
 
-**See Also:**
+::: seealso
 - [@ps]
 - [GETPIDS()]
 - [PIDINFO()]
+:::
 

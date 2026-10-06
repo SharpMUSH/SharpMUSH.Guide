@@ -12,10 +12,11 @@ Leaving a zone is said to occur when a player goes from a room in the zone to a 
 Zone leaving is assumed to occur after room leaving, so these are triggered after the room's @[oa]leave.
 
 
-**See Also:**
+::: seealso
 - [@zenter]
 - [zones]
 - [@zemit]
 - [ZWHO()]
 - [verbs]
+:::
 

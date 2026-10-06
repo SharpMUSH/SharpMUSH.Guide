@@ -13,10 +13,11 @@ This is [a test].
 ```
 
 
-**See Also:**
+::: seealso
 - [HASATTR()]
 - [VISIBLE()]
 - [u()]
 - [DEFAULT()]
 - [UDEFAULT()]
+:::
 

@@ -6,8 +6,9 @@ The adestroy attribute is triggered when `<object>` is @destroyed. It can only b
 Please note that there are no destroy or odestroy attributes.
 
 
-**See Also:**
+::: seealso
 - [@destroy]
 - [@undestroy]
 - [EVENTS]
+:::
 

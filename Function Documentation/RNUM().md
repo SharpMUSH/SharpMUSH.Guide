@@ -8,9 +8,10 @@
   This function has been deprecated and may be removed in a future patchlevel; locate(`<container>`, `<object>`, i) should be used instead.
 
 
-**See Also:**
+::: seealso
 - [locate()]
 - [NUM()]
 - [RLOC()]
 - [ROOM()]
+:::
 

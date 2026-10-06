@@ -4,8 +4,9 @@
   Returns a list minus its first element.
 
 
-**See Also:**
+::: seealso
 - [AFTER()]
 - [FIRST()]
 - [LAST()]
+:::
 

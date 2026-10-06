@@ -8,7 +8,8 @@
 | [CTIME()]        | [ELOCK()]        | [FINDABLE()]     | [FLAGS()]        |
 | [ALIAS()]    | [FULLNAME()]     | [GETPIDS()]      | [HASATTR()]      |
 | [HASATTR()]     | [HASFLAG()]      | [HASPOWER()]     | [HASTYPE()]      |
-| [INAME()]        | [ISAPPROVED()]   | [LFLAGS()]       | [LOCK()]         |
+| [HASROLE()]      | [INAME()]        | [ISAPPROVED()]   | [LFLAGS()]       |
+| [LOCK()]         | [PERMISSION()]   | [ROLES()]        |                  |
 | [LOCKFLAGS()]    | [LOCKOWNER()]    | [LLOCKS()]        | [LPIDS()]        |
 | [LSTATS()]       | [MONEY()]        | [MONIKER()]      | [MTIME()]        |
 | [MTIME()]        | [MUDNAME()]      | [MUDNAME()]       | [NAME()]         |
@@ -17,7 +18,8 @@
 | [PLAYERMEM()]    | [POLL()]         | [POWERS()]       | [QUOTA()]        |
 | [RESTARTS()]     | [TYPE()]         | [VERSION()]      | [VISIBLE()]      |
 
-**See Also:**
+::: seealso
 - [Dbref functions]
+:::
 
 

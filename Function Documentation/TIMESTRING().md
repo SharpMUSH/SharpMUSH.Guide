@@ -14,9 +14,10 @@ You say, "00d 00h 05m 01s"
 ```
 
 
-**See Also:**
+::: seealso
 - [STRINGSECS()]
 - [CONVSECS()]
 - [ETIME()]
 - [etimefmt()]
+:::
 

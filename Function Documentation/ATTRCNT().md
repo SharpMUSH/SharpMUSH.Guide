@@ -18,9 +18,10 @@
   attrcnt() and attrpcnt() are aliases for nattr() and nattrp() respectively.
 
 
-**See Also:**
+::: seealso
 - [LATTR()]
 - [HASATTR()]
 - [XATTR()]
 - [WILDCARDS]
+:::
 

@@ -7,9 +7,10 @@
 
   Examples: `displaywidth(界)` returns `2`; `graphemecount(界)` returns `1`.
 
-**See Also:**
+::: seealso
 - [STRLEN()]
 - [GRAPHEMECOUNT()]
 - [GRAPHEMES()]
+:::
 
 

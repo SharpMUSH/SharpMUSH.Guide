@@ -13,8 +13,9 @@ One argument is passed to @aconnect:<br>
 > @aconnect me=+who ; +bbscan
 ```
 
-**See Also:**
+::: seealso
 - [@adisconnect]
 - [action lists]
 - [EVENTS]
+:::
 

@@ -8,10 +8,11 @@
   If there is a syntax error like a ! without a following power, '#-1 INVALID POWER' is returned. Unknown powers are treated as being not set.
 
 
-**See Also:**
+::: seealso
 - [POWERS()]
 - [ANDLPOWERS()]
 - [@power]
 - [@power]
 - [ORFLAGS()]
+:::
 

@@ -12,9 +12,10 @@ These attributes contain the message shown to others in the enactor's location w
 ```
 
 
-**See Also:**
+::: seealso
 - [look]
 - [@describe]
 - [@idescribe]
 - [action lists]
+:::
 

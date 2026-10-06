@@ -9,9 +9,10 @@
   hostname() is an alias for host().
 
 
-**See Also:**
+::: seealso
 - [Connection functions]
 - [IPADDR()]
 - [LPORTS()]
 - [LPORTS()]
+:::
 

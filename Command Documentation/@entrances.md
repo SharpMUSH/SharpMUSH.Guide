@@ -3,6 +3,8 @@
 
 This command will show you all objects linked to `<object>`. If you don't specify an `<object>`, your current location is used. You can limit the range of the dbrefs searched by specifying `<begin>` and `<end>`.
 
+Output: the dbrefs of the entrances found, as `entrances()` returns them.
+
 You can use any combination of switches to limit the types of objects:
 - /exits show only exits linked to `<object>`
 - /things show only things which have their homes in `<object>`
@@ -12,8 +14,9 @@ You can use any combination of switches to limit the types of objects:
 If you control `<object>`, or have the Search or See_All powers, all objects linked to `<object>` are listed. Otherwise, only objects which you can examine will be shown.
 
 
-**See Also:**
+::: seealso
 - [@link]
 - [@search]
 - [ENTRANCES()]
+:::
 

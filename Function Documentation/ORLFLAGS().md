@@ -12,9 +12,10 @@
     > say orlflags(%#, wizard dark !ansi)
 
 
-**See Also:**
+::: seealso
 - [ANDFLAGS()]
 - [FLAGS()]
 - [LFLAGS()]
 - [ORLPOWERS()]
+:::
 

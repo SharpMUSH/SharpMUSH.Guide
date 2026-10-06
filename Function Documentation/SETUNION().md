@@ -16,8 +16,9 @@ You say, "bar baz foo gleep moof"
     You say, "1.0 1.1"
 
 
-**See Also:**
+::: seealso
 - [SETDIFF()]
 - [SETINTER()]
 - [SETSYMDIFF()]
+:::
 

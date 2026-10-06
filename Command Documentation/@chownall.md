@@ -8,6 +8,7 @@ If one or more of `/things`, `/rooms` or `/exits` are provided, only objects of 
 This command can only be used by Wizards.
 
 
-**See Also:**
+::: seealso
 - [@chown]
+:::
 

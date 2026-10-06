@@ -14,6 +14,7 @@ AARDVARK AARDVARKS AARDVARK'S etc...
 ```
 
 
-**See Also:**
+::: seealso
 - [@SUGGEST]
+:::
 

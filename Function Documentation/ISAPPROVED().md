@@ -15,8 +15,9 @@ think isapproved(me)
 ```
 
 
-**See Also:**
+::: seealso
 - [HASFLAG()]
 - [@flag]
 - [FLAG LIST]
+:::
 

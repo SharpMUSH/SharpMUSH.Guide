@@ -15,11 +15,12 @@
   The final form of this function is equivilent to get(me/`<attribute>`), but is usually slightly more efficient.
 
 
-**See Also:**
+::: seealso
 - [STACK]
 - [registers]
 - [%]
 - [GET()]
 - [R()]
 - [attributes]
+:::
 

@@ -6,8 +6,9 @@
   Elements of `<list>` and `<words>` are both separated by `<delimiter>`, which defaults to a space.
 
 
-**See Also:**
+::: seealso
 - [INSERT()]
 - [LDELETE()]
 - [SETDIFF()]
+:::
 

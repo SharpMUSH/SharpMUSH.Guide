@@ -12,9 +12,10 @@ You say, "1 4 8"
 ```
 
 
-**See Also:**
+::: seealso
 - [POS()]
 - [MEMBER()]
 - [element()]
 - [WORDPOS()]
+:::
 

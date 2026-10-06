@@ -8,9 +8,10 @@
   This is a SharpMUSH function; PennMUSH offers the zone lists through [lsearch()] and [ZWHO()].
 
 
-**See Also:**
+::: seealso
 - [ZWHO()]
 - [ZONE()]
 - [@chzone]
 - [lsearch()]
+:::
 

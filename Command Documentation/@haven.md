@@ -10,10 +10,11 @@ When someone attempts to page `<player>` and is unable to, either because `<play
 ```
 
 
-**See Also:**
+::: seealso
 - [HAVEN]
 - [page]
 - [LOCKING]
 - [@away]
 - [@idle]
+:::
 

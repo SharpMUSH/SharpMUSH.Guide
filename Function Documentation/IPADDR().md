@@ -6,9 +6,10 @@
   The caller can use the function on himself, but using on any other player requires privileged power such as Wizard, Royalty or SEE_ALL.
 
 
-**See Also:**
+::: seealso
 - [Connection functions]
 - [HOST()]
 - [LPORTS()]
 - [LPORTS()]
+:::
 

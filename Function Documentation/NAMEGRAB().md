@@ -16,7 +16,8 @@
     You say, "#0 #2"
 
 
-**See Also:**
+::: seealso
 - [NAMELIST()]
 - [locate()]
+:::
 

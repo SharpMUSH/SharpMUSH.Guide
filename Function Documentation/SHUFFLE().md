@@ -12,7 +12,8 @@ You say, "baz foo gleep bar"
 ```
 
 
-**See Also:**
+::: seealso
 - [SCRAMBLE()]
 - [RANDWORD()]
+:::
 

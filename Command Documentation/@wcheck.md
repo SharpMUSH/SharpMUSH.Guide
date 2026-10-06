@@ -10,8 +10,9 @@ The second form of the command runs @wcheck on every object in the database and 
 The third runs it on all objects the player owns that aren't set NO_WARN.
 
 
-**See Also:**
+::: seealso
 - [@warnings]
 - [WARNINGS]
 - [NO_WARN]
+:::
 

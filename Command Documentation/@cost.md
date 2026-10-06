@@ -24,10 +24,11 @@ Your exit has been created.
 ```
 
 
-**See Also:**
+::: seealso
 - [give]
 - [MONEY]
 - [@pay]
 - [MONEY()]
 - [buy]
+:::
 

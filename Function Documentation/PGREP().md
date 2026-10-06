@@ -23,8 +23,9 @@
   pgrep() works like grep(), but also checks attributes inherited from parents.
 
 
-**See Also:**
+::: seealso
 - [@grep]
 - [LATTR()]
 - [WILDCARDS]
+:::
 

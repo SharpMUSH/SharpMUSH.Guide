@@ -11,11 +11,12 @@ You're holding: Red Ball, Pickle, and Piano
 ```
 
 
-**See Also:**
+::: seealso
 - [inventory]
 - [@conformat]
 - [@exitformat]
 - [@nameformat]
 - [@descformat]
 - [@idescformat]
+:::
 

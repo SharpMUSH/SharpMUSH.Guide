@@ -24,10 +24,11 @@ You say, "Turn south at the junction"
   replace() is an alias for lreplace(), for backwards compatability.
 
 
-**See Also:**
+::: seealso
 - [LDELETE()]
 - [INSERT()]
 - [SETDIFF()]
 - [SPLICE()]
 - [STRREPLACE()]
+:::
 

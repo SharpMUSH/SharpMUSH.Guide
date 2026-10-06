@@ -11,9 +11,10 @@ and<br>
 `@lock/enter <object>`
 
 
-**See Also:**
+::: seealso
 - [LOCKING]
 - [locktypes]
 - [enter]
 - [ENTER_OK]
+:::
 

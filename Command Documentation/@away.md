@@ -9,7 +9,8 @@ If `<message>` evaluates to something non-null, it will be shown to anyone who p
 ```
 
 
-**See Also:**
+::: seealso
 - [@idle]
 - [@haven]
+:::
 

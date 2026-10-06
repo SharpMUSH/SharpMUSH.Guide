@@ -15,11 +15,12 @@ Several arguments are passed to @adisconnect:<br>
 > @adisconnect me = home
 ```
 
-**See Also:**
+::: seealso
 - [@aconnect]
 - [action lists]
 - [RECV()]
 - [SENT()]
 - [CMDS()]
 - [EVENTS]
+:::
 

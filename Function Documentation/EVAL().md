@@ -15,9 +15,10 @@ test
 ```
 
 
-**See Also:**
+::: seealso
 - [GET()]
 - [u()]
 - [GET()]
 - [EDEFAULT()]
+:::
 

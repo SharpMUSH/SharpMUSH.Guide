@@ -15,10 +15,11 @@ If `/<attribute>` is specified, it acts as an alias for @atrchown; see [@atrchow
 ```
 
 
-**See Also:**
+::: seealso
 - [CHOWN_OK]
 - [zone masters]
 - [@chownall]
 - [OWNER()]
 - [@atrchown]
+:::
 

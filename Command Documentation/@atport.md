@@ -19,8 +19,9 @@ In all of these attributes, %0 is the object which teleported `<object>`, and %1
 ```
 
 
-**See Also:**
+::: seealso
 - [@teleport]
 - [action lists]
 - [verbs]
+:::
 

@@ -6,9 +6,10 @@
   See [@lset] for more information on what flags are available.
 
 
-**See Also:**
+::: seealso
 - [LOCKFLAGS()]
 - [LLOCKFLAGS()]
 - [LOCK()]
 - [LOCKOWNER()]
+:::
 

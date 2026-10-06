@@ -21,11 +21,12 @@
   See [SQL Examples] for more examples.
 
 
-**See Also:**
+::: seealso
 - [SQLESCAPE()]
 - [MAPSQL()]
 - [@sql]
 - [setq()]
 - [R()]
 - [@mapsql]
+:::
 

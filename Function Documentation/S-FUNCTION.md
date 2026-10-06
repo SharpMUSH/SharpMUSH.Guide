@@ -12,7 +12,8 @@ You say, "When we eval [ucstr(test)], we get TEST"
 ```
 
 
-**See Also:**
+::: seealso
 - [OBJEVAL()]
 - [DECOMPOSE()]
+:::
 

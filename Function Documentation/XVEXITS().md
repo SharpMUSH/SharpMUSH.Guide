@@ -10,8 +10,9 @@
   xvexits() is identical, but follows the restrictions of lvexits().
 
 
-**See Also:**
+::: seealso
 - [NVEXITS()]
 - [LEXITS()]
 - [LVEXITS()]
+:::
 

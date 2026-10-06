@@ -11,9 +11,10 @@ Valid flags include:
 - locked (+) This lock can only be set by the owner of the lock.
 
 
-**See Also:**
+::: seealso
 - [LOCKING]
 - [LOCKFLAGS()]
 - [LLOCKFLAGS()]
 - [LSET()]
+:::
 

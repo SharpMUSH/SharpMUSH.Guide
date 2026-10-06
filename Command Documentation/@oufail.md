@@ -11,10 +11,11 @@ Note that these attributes are @ufail, NOT @ufailure, for TinyMUSH compatibility
 
 Although the Use @lock also restricts who can trigger $-commands or ^-listens on an object, these attributes will not be triggered for those failures. Instead, the COMMAND_LOCK`* and LISTEN_LOCK`* attributes are triggered. See [failure] for more information.
 
-**See Also:**
+::: seealso
 - [use]
 - [@ause]
 - [failure]
 - [action lists]
 - [verbs]
+:::
 

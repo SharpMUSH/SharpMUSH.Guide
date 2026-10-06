@@ -19,9 +19,10 @@ You don\'t say
   You must be a WIZARD or have the Sql_Ok power to use this function.
 
 
-**See Also:**
+::: seealso
 - [SQL()]
 - [MAPSQL()]
 - [@sql]
 - [@mapsql]
+:::
 

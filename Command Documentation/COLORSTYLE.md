@@ -18,9 +18,10 @@ SharpMUSH determines 'auto' from the terminal type your client reports (RFC 1091
 In the event that your client receives a color that it is unable to display, SharpMUSH will attempt to find a close match that can fit your client's capabilities.
 
 
-**See Also:**
+::: seealso
 - [ANSI]
 - [COLOR]
 - [XTERM256]
 - [@SOCKSET]
+:::
 

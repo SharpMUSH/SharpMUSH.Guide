@@ -8,9 +8,10 @@ Connects you to a character from the login screen. Quote a name that contains sp
 See [cd] and [cd] to connect with your `DARK` flag forced on or off.
 
 
-**See Also:**
+::: seealso
 - [QUIT]
 - [login]
 - [register]
 - [who]
+:::
 

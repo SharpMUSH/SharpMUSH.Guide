@@ -10,9 +10,9 @@ This is \[a%b[ansi(y,test)]\] %b%b
 ```
 
 
-**See Also:**
+::: seealso
 - [@decompile output switches]
 - [ESCAPE()]
 - [SECURE()]
-- []
+:::
 

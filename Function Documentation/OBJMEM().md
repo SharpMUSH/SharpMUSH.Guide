@@ -6,6 +6,7 @@
   **Not implemented.** SharpMUSH always answers 0, whatever object it is asked about, so no caller can tell a large object from a small one.
 
 
-**See Also:**
+::: seealso
 - [PLAYERMEM()]
+:::
 

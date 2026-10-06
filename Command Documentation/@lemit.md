@@ -8,7 +8,8 @@ The `/noeval` switch prevents `<message>` from being evaluated.<br>
 The `/spoof` switch causes nospoof notifications to show the enactor's dbref instead of the executor's dbref, and requires control over the enactor or the Can_spoof power.
 
 
-**See Also:**
+::: seealso
 - [@remit]
 - [@nspemit]
+:::
 

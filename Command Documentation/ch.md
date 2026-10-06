@@ -14,7 +14,8 @@ Connecting using 'cv' causes the Dark flag to be cleared prior to connection mes
 None of those commands affect the hidden status of other connections, if you're reconnecting.
 
 
-**See Also:**
+::: seealso
 - [DARK]
 - [@hide]
+:::
 

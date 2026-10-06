@@ -18,10 +18,11 @@ think testlock(\\+FOO:BAR,*Walker)
 
 
 
-**See Also:**
+::: seealso
 - [LOCKING]
 - [LOCK()]
 - [ELOCK()]
 - [LOCKFILTER()]
 - [locktypes]
+:::
 

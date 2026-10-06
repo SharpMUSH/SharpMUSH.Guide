@@ -18,9 +18,10 @@ strdistance(,é😀)
 
   These return `3`, `1`, and `2`, respectively.
 
-**See Also:**
+::: seealso
 - [SUGGEST()]
 - [GRAPHEMECOUNT()]
 - [GRAPHEMES()]
+:::
 
 

@@ -23,10 +23,12 @@ Name set.
 ```
 
 
-**See Also:**
+::: seealso
 - [@alias]
 - [@ONAME]
 - [NAME()]
 - [FULLNAME()]
+:::
+
 Config options: player_name_spaces, player_name_len, only_ascii_in_names
 

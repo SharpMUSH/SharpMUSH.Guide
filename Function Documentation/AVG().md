@@ -7,8 +7,9 @@
   avg() is an alias for mean(), for Rhost compatibility.
 
 
-**See Also:**
+::: seealso
 - [MEDIAN()]
 - [STDDEV()]
 - [LMATH()]
+:::
 

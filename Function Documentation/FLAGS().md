@@ -20,7 +20,8 @@ Tnp
     $vp
 
 
-**See Also:**
+::: seealso
 - [LFLAGS()]
 - [LIST()]
+:::
 

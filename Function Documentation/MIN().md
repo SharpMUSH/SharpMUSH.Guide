@@ -4,9 +4,10 @@
   This function returns the smallest number in its list of arguments. It can take any number of arguments.
 
 
-**See Also:**
+::: seealso
 - [MAX()]
 - [LMATH()]
 - [BOUND()]
 - [ALPHAMIN()]
+:::
 

@@ -14,7 +14,8 @@ think unique(1|2|3|3, n, |, _)
 ```
 
 
-**See Also:**
+::: seealso
 - [SETUNION()]
 - [SORT()]
+:::
 

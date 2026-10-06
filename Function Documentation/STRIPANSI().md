@@ -4,10 +4,11 @@
   Returns the string with all ansi and HTML codes removed.
 
 
-**See Also:**
+::: seealso
 - [STRIPACCENTS()]
 - [ansi()]
 - [TAG()]
 - [RENDER()]
+:::
 
 

@@ -15,7 +15,7 @@ These attributes contain the message shown to a player who successfully buys som
 ```
 
 
-**See Also:**
+::: seealso
 - [buy]
 - [@pricelist]
 - [MONEY]
@@ -23,4 +23,5 @@ These attributes contain the message shown to a player who successfully buys som
 - [verbs]
 - [@cost]
 - [give]
+:::
 

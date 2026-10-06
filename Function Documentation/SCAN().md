@@ -19,10 +19,11 @@
   The order of searching for the "break" switch is the same as the order for normal $-command matching, as described in [evaluation order].
 
 
-**See Also:**
+::: seealso
 - [@scan]
 - [@sweep]
 - [MASTER ROOM]
 - [evaluation order]
 - [$-commands]
+:::
 

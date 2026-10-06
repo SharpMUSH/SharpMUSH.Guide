@@ -6,9 +6,10 @@
   member() is case-sensitive, and does not perform wildcard matching. If you need to do a wildcard match, use match(). To compare two strings (instead of a word and list elements), consider comp().
 
 
-**See Also:**
+::: seealso
 - [element()]
 - [GRAB()]
 - [COMP()]
 - [STRMATCH()]
+:::
 

@@ -14,9 +14,10 @@ These attributes only have meaning for players and things (as rooms/exits cannot
 ```
 
 
-**See Also:**
+::: seealso
 - [enter]
 - [leave]
 - [go]
 - [ENTER_OK]
+:::
 

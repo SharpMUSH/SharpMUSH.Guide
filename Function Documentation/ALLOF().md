@@ -25,9 +25,10 @@
     You say, "foo bar baz"
 ```
 
-**See Also:**
+::: seealso
 - [FIRSTOF()]
 - [boolean values]
 - [STRFIRSTOF()]
 - [FILTER()]
+:::
 

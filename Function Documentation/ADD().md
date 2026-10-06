@@ -4,7 +4,8 @@
   Returns the sum of the given numbers.
 
 
-**See Also:**
+::: seealso
 - [Math functions]
 - [LMATH()]
+:::
 

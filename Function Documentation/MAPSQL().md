@@ -20,10 +20,11 @@
   See [SQL Examples] for examples.
 
 
-**See Also:**
+::: seealso
 - [anonymous attributes]
 - [SQLESCAPE()]
 - [SQL()]
 - [@sql]
 - [@mapsql]
+:::
 

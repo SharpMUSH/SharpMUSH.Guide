@@ -22,9 +22,10 @@ You say "this Trash is the Brash string"
 ```
 
 
-**See Also:**
+::: seealso
 - [EDIT()]
 - [@edit]
 - [regmatch()]
 - [GRAB()]
+:::
 

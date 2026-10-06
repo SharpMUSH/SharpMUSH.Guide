@@ -23,9 +23,10 @@ Announcement: Room Zero shouts, "Dunce wins his first typo trophy!"
 ```
 
 
-**See Also:**
+::: seealso
 - [@hook]
 - [evaluation order]
 - [WARN_ON_MISSING]
 - [UNIMPLEMENTED_COMMAND]
+:::
 

@@ -6,9 +6,10 @@
    Wizards may also specify a `<dbref>`; if this refers to a garbage object, the new object is created with this dbref.
 
 
-**See Also:**
+::: seealso
 - [@create]
 - [PCREATE()]
 - [DIG()]
 - [OPEN()]
+:::
 

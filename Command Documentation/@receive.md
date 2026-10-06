@@ -10,11 +10,12 @@ These attributes contain the message shown `<recipient>` when he receives an obj
 In all cases, %0 is the dbref of the object received. If the object was 'give'n, %1 will be the dbref of the giver.
 
 
-**See Also:**
+::: seealso
 - [give]
 - [get]
 - [@give]
 - [@asuccess]
 - [action lists]
 - [verbs]
+:::
 

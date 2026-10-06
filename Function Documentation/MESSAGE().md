@@ -19,9 +19,10 @@ Formatted> Foo Bar Baz
   Formatted> Backwards Compatability Is Annoying Sometimes
 
 
-**See Also:**
+::: seealso
 - [@message]
 - [OEMIT()]
 - [REMIT()]
 - [speak()]
+:::
 

@@ -18,10 +18,11 @@ printf(lit(%+08.2f),12.345)
 printf(lit(%4s|%-4s),ansi(r,界),ansi(b,😀))
 ```
 
-**See Also:**
+::: seealso
 - [DISPLAYWIDTH()]
 - [align()]
 - [TABLE()]
 - [WRAP()]
+:::
 
 

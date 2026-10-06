@@ -3,7 +3,10 @@
 
 This wizard-only command creates a player with the given name and password. If specified, `<dbref>` is the dbref of a garbage object to be used for the new player.
 
+Output: the new player's dbref, as `pcreate()` returns it.
 
-**See Also:**
+
+::: seealso
 - [PCREATE()]
+:::
 

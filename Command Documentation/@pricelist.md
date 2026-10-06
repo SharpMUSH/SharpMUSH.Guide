@@ -15,11 +15,12 @@ A player must pass `<object>`'s @lock/pay in order to purchase from it.
 ```
 
 
-**See Also:**
+::: seealso
 - [buy]
 - [@buy]
 - [MONEY]
 - [@cost]
 - [give]
 - [LOCKING]
+:::
 

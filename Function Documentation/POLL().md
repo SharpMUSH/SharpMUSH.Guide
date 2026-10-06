@@ -4,8 +4,9 @@
   This function returns the current @poll.
 
 
-**See Also:**
+::: seealso
 - [@poll]
 - [DOING()]
 - [@doing]
+:::
 

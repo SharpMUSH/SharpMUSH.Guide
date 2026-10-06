@@ -7,11 +7,12 @@
   will return the latter). A room's "real" location is always Nothing (the LOC() function will return its drop-to).
 
 
-**See Also:**
+::: seealso
 - [ROOM()]
 - [LOC()]
 - [RNUM()]
 - [locate()]
 - [HOME()]
 - [@whereis]
+:::
 

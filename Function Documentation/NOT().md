@@ -6,11 +6,12 @@
   The definition of truth and falsehood depends on configuration settings; see [boolean values] for details.
 
 
-**See Also:**
+::: seealso
 - [Boolean functions]
 - [T()]
 - [AND()]
 - [OR()]
 - [NOR()]
 - [XOR()]
+:::
 

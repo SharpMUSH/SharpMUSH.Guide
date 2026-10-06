@@ -13,8 +13,9 @@ Exit aliases used to be a part of their name, though all newly created exits use
 For other types of object, @alias has no special meaning.
 
 
-**See Also:**
+::: seealso
 - [@name]
 - [ALIAS()]
 - [ALIAS()]
+:::
 

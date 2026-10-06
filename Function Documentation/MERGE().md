@@ -18,7 +18,8 @@ You say, "ABcdEF"
 ```
 
 
-**See Also:**
+::: seealso
 - [SPLICE()]
 - [TR()]
+:::
 

@@ -5,7 +5,8 @@ This changes your password. Please note that passwords ARE case-sensitive. The a
 The `<new password>` must not contain whitespace, unprintable characters, or '='.
 
 
-**See Also:**
+::: seealso
 - [@newpassword]
 - [CHECKPASS()]
+:::
 

@@ -8,7 +8,8 @@
   mwhoid() returns a list of objids instead.
 
 
-**See Also:**
+::: seealso
 - [LWHO()]
 - [NMWHO()]
+:::
 

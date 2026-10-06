@@ -12,10 +12,11 @@ If the destination is "home", those who travel through the exit will be sent to 
 LINK_OK objects can also be used as semaphores, and any object can be @parented to them.
 
 
-**See Also:**
+::: seealso
 - [EXITS]
 - [@open]
 - [@dig]
 - [DROP-TO]
 - [HOMES]
+:::
 

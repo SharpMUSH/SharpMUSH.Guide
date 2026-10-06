@@ -10,6 +10,7 @@ The locale applies to the connection that ran the command and is stored as the `
 This is a SharpMUSH command; PennMUSH has no @locale.
 
 
-**See Also:**
+::: seealso
 - [@set]
+:::
 

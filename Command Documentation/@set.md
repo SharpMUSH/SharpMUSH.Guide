@@ -20,8 +20,9 @@ An important difference between these two forms is that @set will always evaluat
 The fourth form sets (or unsets) an attribute flag on the specified attribute. See [attribute flags].
 
 
-**See Also:**
+::: seealso
 - [ATTRIB_SET]
 - [ATTRIB_SET()]
 - [SET()]
+:::
 

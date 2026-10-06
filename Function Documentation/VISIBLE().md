@@ -6,7 +6,8 @@
   If `<object>`, `<victim>`, or `<attribute>` is invalid, the function returns 0.
 
 
-**See Also:**
+::: seealso
 - [CONTROLS()]
 - [VISUAL]
+:::
 

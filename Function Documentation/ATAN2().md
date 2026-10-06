@@ -10,11 +10,12 @@
   See 'HELP ANGLES' for more on the angle type.
 
 
-**See Also:**
+::: seealso
 - [ACOS()]
 - [ASIN()]
 - [COS()]
 - [CTU()]
 - [SIN()]
 - [TAN()]
+:::
 

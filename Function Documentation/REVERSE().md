@@ -11,6 +11,7 @@ You say, "zab rab oof"
 ```
 
 
-**See Also:**
+::: seealso
 - [REVWORDS()]
+:::
 

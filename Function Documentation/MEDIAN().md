@@ -4,8 +4,9 @@
   Returns the median (the middlemost numerically) of its arguments.
 
 
-**See Also:**
+::: seealso
 - [AVG()]
 - [STDDEV()]
 - [LMATH()]
+:::
 

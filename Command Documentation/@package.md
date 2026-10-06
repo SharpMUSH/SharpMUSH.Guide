@@ -13,7 +13,8 @@ This single-step export only succeeds when the selection is **self-contained** �
 `@package` obeys the same visibility rules as `@decompile`: an object must pass your examine permission, and only the attributes you can see — VEILED attributes excluded — are scanned or written into the manifest.
 
 
-**See Also:**
+::: seealso
 - [@decompile]
 - [PACKAGES]
+:::
 

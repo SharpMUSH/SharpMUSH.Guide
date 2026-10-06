@@ -18,7 +18,8 @@ NO_COMMAND PUPPET
     NO_COMMAND VISUAL
 
 
-**See Also:**
+::: seealso
 - [FLAGS()]
 - [LIST()]
+:::
 

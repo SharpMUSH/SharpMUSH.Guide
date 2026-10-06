@@ -17,7 +17,7 @@ You say "apple orange banana"
     You say "No fruits!"
 ```
 
-**See Also:**
+::: seealso
 - [GET()]
 - [HASATTR()]
 - [u()]
@@ -25,4 +25,5 @@ You say "apple orange banana"
 - [UDEFAULT()]
 - [UDEFAULT()]
 - [STRFIRSTOF()]
+:::
 

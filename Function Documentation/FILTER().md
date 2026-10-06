@@ -17,7 +17,7 @@ You say, "1 3 5"
 ```
 
 
-**See Also:**
+::: seealso
 - [anonymous attributes]
 - [FIRSTOF()]
 - [ALLOF()]
@@ -26,4 +26,5 @@ You say, "1 3 5"
 - [E()]
 - [E()]
 - [boolean values]
+:::
 

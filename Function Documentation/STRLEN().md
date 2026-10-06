@@ -16,7 +16,8 @@ You say, "2"
 ```
 
 
-**See Also:**
+::: seealso
 - [WORDS()]
 - [STRFIRSTOF()]
+:::
 

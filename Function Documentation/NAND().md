@@ -10,10 +10,11 @@
   Equivalent to not(and()) and not(cand()), but more efficient.
 
 
-**See Also:**
+::: seealso
 - [LMATH()]
 - [AND()]
 - [AND()]
 - [OR()]
 - [NOR()]
+:::
 

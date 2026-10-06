@@ -11,6 +11,7 @@ These wizard-only commands change any boolean @config option (see [@config param
 Like @config/set, the change is stored and lasts across restarts.
 
 
-**See Also:**
+::: seealso
 - [@config]
+:::
 

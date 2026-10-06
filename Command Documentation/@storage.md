@@ -33,7 +33,8 @@ The policy is set on the server, not with `@config`. **The default keeps everyth
 Undo stops at the oldest version that survives. A wiki rollback can only go back to a revision that survives. See `deploy/README.md` for the settings.
 
 
-**See Also:**
+::: seealso
 - [@backup]
 - [@stats]
+:::
 

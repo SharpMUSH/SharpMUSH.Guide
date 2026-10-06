@@ -12,8 +12,9 @@ Whenever `<object>`'s name is changed (via @name), others in the same location w
 ```
 
 
-**See Also:**
+::: seealso
 - [@name]
 - [NAME()]
 - [verbs]
+:::
 

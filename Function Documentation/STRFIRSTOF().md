@@ -20,11 +20,12 @@ You say, "foo"
     You say, "foo| |bar|baz|#-1"
 
 
-**See Also:**
+::: seealso
 - [ALLOF()]
 - [FIRSTOF()]
 - [FIRST()]
 - [STRLEN()]
 - [CAT()]
 - [DEFAULT()]
+:::
 

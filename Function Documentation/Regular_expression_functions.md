@@ -10,8 +10,9 @@
 | [RESWITCH()]     | [RESWITCH()]  | [RESWITCH()] | [RESWITCH()]    |
 | [XATTR()]     | [XATTR()]    |                  |                  |
 
-**See Also:**
+::: seealso
 - [String functions]
 - [regexp]
+:::
 
 

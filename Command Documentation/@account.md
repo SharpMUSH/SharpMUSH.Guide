@@ -14,8 +14,9 @@ With no switch, shows one account's details. `/list` lists every account, or tho
 Accounts are a SharpMUSH concept; PennMUSH has no equivalent command.
 
 
-**See Also:**
+::: seealso
 - [@pcreate]
 - [@newpassword]
 - [register]
+:::
 

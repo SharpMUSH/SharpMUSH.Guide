@@ -9,7 +9,8 @@
   decode64() converts a base-64 encoded `<string>` back to its original form.
 
 
-**See Also:**
+::: seealso
 - [ENCRYPT()]
 - [DIGEST()]
+:::
 

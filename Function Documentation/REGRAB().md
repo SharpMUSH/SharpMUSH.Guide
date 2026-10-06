@@ -12,10 +12,11 @@
   or the regular expression variation thereof.
 
 
-**See Also:**
+::: seealso
 - [GRABALL()]
 - [element()]
 - [EXTRACT()]
 - [ELEMENTS()]
 - [regmatch()]
+:::
 

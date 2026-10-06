@@ -7,6 +7,7 @@
   5
 
 
-**See Also:**
+::: seealso
 - [Vector functions]
+:::
 

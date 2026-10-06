@@ -6,11 +6,12 @@
   You must control `<player>` or have the See_All or Quotas @powers to use this function.
 
 
-**See Also:**
+::: seealso
 - [@quota]
 - [@quota administrative quota changes]
 - [@quota administrative quota changes]
 - [QUOTAS]
 - [@power]
 - [@power]
+:::
 

@@ -13,7 +13,8 @@ think hastype(test object, PLAYER THING)
 ```
 
 
-**See Also:**
+::: seealso
 - [TYPES OF OBJECTS]
 - [TYPE()]
+:::
 

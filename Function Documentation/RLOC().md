@@ -6,10 +6,11 @@
   If rloc() encounters a room, the dbref of that room is returned. If rloc() encounters an exit, the dbref of that exit's destination is returned. You must control `<object>`, be near it, or it must be a findable player.
 
 
-**See Also:**
+::: seealso
 - [LOC()]
 - [WHERE()]
 - [ROOM()]
 - [RNUM()]
 - [locate()]
+:::
 

@@ -6,9 +6,10 @@ Drops `<object>`, if you are presently carrying it. If the room the object is dr
 In order to drop an object, you must pass it's Drop lock and your location's DropIn lock.
 
 
-**See Also:**
+::: seealso
 - [empty]
 - [get]
 - [STICKY]
 - [DROP-TO]
+:::
 

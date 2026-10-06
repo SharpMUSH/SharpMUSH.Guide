@@ -14,7 +14,7 @@
   The list returned may contain duplicates (for instance, if %0 and %q0 both have a value, the list will include "0" twice), and is not sorted in any particular order.
 
 
-**See Also:**
+::: seealso
 - [LISTQ()]
 - [setq()]
 - [setq()]
@@ -23,4 +23,5 @@
 - [V()]
 - [STEXT()]
 - [ilev()]
+:::
 

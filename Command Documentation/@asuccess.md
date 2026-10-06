@@ -23,7 +23,7 @@ In all cases, %0 is the dbref of the moving object's original location.
 ```
 
 
-**See Also:**
+::: seealso
 - [get]
 - [go]
 - [LOCKING]
@@ -32,4 +32,5 @@ In all cases, %0 is the dbref of the moving object's original location.
 - [@adrop]
 - [action lists]
 - [verbs]
+:::
 

@@ -20,8 +20,9 @@ a test
     last three elements
 
 
-**See Also:**
+::: seealso
 - [INDEX()]
 - [ELEMENTS()]
 - [GRAB()]
+:::
 

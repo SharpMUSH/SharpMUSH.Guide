@@ -6,7 +6,8 @@
   Note that the use of this function is very rarely needed.
 
 
-**See Also:**
+::: seealso
 - [DECOMPOSE()]
 - [ESCAPE()]
+:::
 

@@ -12,8 +12,9 @@ a&lt;b&gt; <span style="color: #ff5555">red</span>
   This is a SharpMUSH function; PennMUSH has no decomposeweb().
 
 
-**See Also:**
+::: seealso
 - [DECOMPOSE()]
 - [ansi()]
 - [RENDER()]
+:::
 

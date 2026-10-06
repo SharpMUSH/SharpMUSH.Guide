@@ -9,6 +9,7 @@
 | [STRINGSECS()]   | [time()]         | [timecalc()]     | [timefmt()]      |
 | [TIMESTRING()]   | [UPTIME()]       | [time()]      |                  |
 
-**See Also:**
+::: seealso
 - [timezones]
+:::
 

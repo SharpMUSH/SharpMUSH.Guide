@@ -33,9 +33,10 @@ The next object to be created will be #33.
     0
 
 
-**See Also:**
+::: seealso
 - [database]
 - [OBJIDS]
 - [NUM()]
 - [OBJID()]
+:::
 

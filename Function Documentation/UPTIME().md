@@ -12,7 +12,7 @@
     warnings  - The time of the next automatic warnings check, or -1 if automated warnings are disabled.
 
 
-**See Also:**
+::: seealso
 - [@uptime]
 - [SECS()]
 - [CONVSECS()]
@@ -26,4 +26,5 @@
 - [@config]
 - [@dump]
 - [@shutdown]
+:::
 

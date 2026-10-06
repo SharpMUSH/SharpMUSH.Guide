@@ -18,8 +18,9 @@ You say, "foo bar!"
 ```
 
 
-**See Also:**
+::: seealso
 - [switch()]
 - [RESWITCH()]
 - [@switch]
+:::
 

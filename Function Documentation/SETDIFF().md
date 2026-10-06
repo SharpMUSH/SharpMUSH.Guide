@@ -10,8 +10,9 @@ You say, "baz foo"
 ```
 
 
-**See Also:**
+::: seealso
 - [SETINTER()]
 - [SETSYMDIFF()]
 - [SETUNION()]
+:::
 

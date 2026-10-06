@@ -11,9 +11,10 @@ Q-registers (set via setq() and similar functions) are inherited from the @confo
 ```
 
 
-**See Also:**
+::: seealso
 - [TRANSPARENT]
 - [@conformat]
 - [@nameformat]
 - [@descformat]
+:::
 

@@ -20,11 +20,12 @@
   You must have see_all, or use terminfo() on yourself, to see all information or use a `<descriptor>`. Mortals using terminfo() on another player will always receive "unknown" for the client name, and will not get telnet/gmcp/ssl/prompt_newlines in the output list.
 
 
-**See Also:**
+::: seealso
 - [PUEBLO()]
 - [WIDTH()]
 - [WIDTH()]
 - [SSL()]
 - [@SOCKSET]
 - [OOB()]
+:::
 

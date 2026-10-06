@@ -15,6 +15,7 @@
   Leaving out the {}'s will not work in the above.
 
 
-**See Also:**
+::: seealso
 - [DECOMPOSE()]
+:::
 

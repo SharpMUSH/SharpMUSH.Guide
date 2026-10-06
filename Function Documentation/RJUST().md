@@ -23,9 +23,10 @@ You say, "-   foo-"
     You say, " too long"
 
 
-**See Also:**
+::: seealso
 - [align()]
 - [CENTER()]
 - [LJUST()]
 - [RIGHT()]
+:::
 

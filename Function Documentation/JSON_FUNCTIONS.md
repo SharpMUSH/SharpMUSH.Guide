@@ -8,6 +8,7 @@
 `oob()`
 
 
-**See Also:**
+::: seealso
 - [JSON PATHS]
+:::
 

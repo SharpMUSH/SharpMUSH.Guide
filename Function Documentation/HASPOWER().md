@@ -6,8 +6,9 @@
   You can check the powers of any object, whether you control it or not.
 
 
-**See Also:**
+::: seealso
 - [@power]
 - [@power]
 - [HASFLAG()]
+:::
 

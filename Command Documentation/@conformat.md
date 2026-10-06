@@ -19,12 +19,13 @@ Show just the object names (with no ansi) in a table:
 ```
 
 
-**See Also:**
+::: seealso
 - [look]
 - [@exitformat]
 - [@nameformat]
 - [@descformat]
 - [@invformat]
 - [@idescformat]
+:::
 
 

@@ -12,8 +12,9 @@
     > say andlflags(%#, wizard dark !ansi)
 
 
-**See Also:**
+::: seealso
 - [ORFLAGS()]
 - [FLAGS()]
 - [LFLAGS()]
+:::
 

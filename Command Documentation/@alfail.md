@@ -10,11 +10,12 @@ These attributes contain the message shown to objects who try to leave `<object>
 Such a failure usually occurs because `<object>` is set NO_LEAVE, or because the person trying to leave does not pass `<object>`'s @lock/leave.
 
 
-**See Also:**
+::: seealso
 - [leave]
 - [@leave]
 - [NO_LEAVE]
 - [locktypes]
 - [action lists]
 - [verbs]
+:::
 

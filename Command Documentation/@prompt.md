@@ -8,10 +8,11 @@ If `<message>` is omitted, an empty prompt is sent.
 @prompt supports the following @pemit switches: `/silent`, `/noisy`, `/spoof`, `/noeval`
 
 
-**See Also:**
+::: seealso
 - [@pemit]
 - [@nspemit]
 - [PEMIT()]
 - [PEMIT()]
 - [PROMPT_NEWLINES]
+:::
 

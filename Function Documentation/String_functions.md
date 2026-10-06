@@ -23,6 +23,7 @@
 | [WRAP()]         | [DISPLAYWIDTH()] | [GRAPHEMECOUNT()] | [GRAPHEMES()]     |
 | [PRINTF()]       | [STRDISTANCE()]  |                  |                  |
 
-**See Also:**
+::: seealso
 - [STRINGS]
+:::
 

@@ -14,6 +14,7 @@ You say, "http://www.testmush.com"
 ```
 
 
-**See Also:**
+::: seealso
 - [CONFIG()]
+:::
 

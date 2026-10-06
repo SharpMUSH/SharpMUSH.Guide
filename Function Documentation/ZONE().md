@@ -6,9 +6,10 @@
   If a `<new zone>` is given, zone() attempts to change the zone of `<object>` to `<new zone>` first - see help @chzone for details.
 
 
-**See Also:**
+::: seealso
 - [@chzone]
 - [ZFUN()]
 - [ZWHO()]
 - [zemit() ZONES]
+:::
 

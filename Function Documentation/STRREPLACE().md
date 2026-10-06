@@ -17,9 +17,10 @@ You say, "abcdefgh"
     Fix the typo
 
 
-**See Also:**
+::: seealso
 - [STRDELETE()]
 - [STRINSERT()]
 - [LDELETE()]
 - [LREPLACE()]
+:::
 

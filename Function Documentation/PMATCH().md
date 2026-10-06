@@ -6,8 +6,9 @@
   pmatch() does not check for the string "me". If you wish to do that, you should use locate (for example, locate(`<player>`, `<name>`, PFym)).
 
 
-**See Also:**
+::: seealso
 - [NUM()]
 - [NAMELIST()]
 - [locate()]
+:::
 

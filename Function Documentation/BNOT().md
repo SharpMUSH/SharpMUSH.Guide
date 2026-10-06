@@ -4,6 +4,7 @@
   Returns the bitwise complement of `<integer>`. Every bit set in it is cleared, and every clear bit is set.
 
 
-**See Also:**
+::: seealso
 - [Bitwise functions]
+:::
 

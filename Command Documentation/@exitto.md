@@ -21,10 +21,11 @@ Note that, unlike most attributes, @destination cannot be abbreviated and must b
 ```
 
 
-**See Also:**
+::: seealso
 - [EXITS]
 - [@link]
 - [@open]
 - [LINK_OK]
 - [Link_Anywhere Power]
+:::
 

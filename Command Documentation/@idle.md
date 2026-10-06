@@ -11,7 +11,8 @@ This message is sent in return to every page which successfully reaches you if i
 Players paging me will only see the "I'm idle" message if I've been idle for over 2 minutes (120 seconds).
 
 
-**See Also:**
+::: seealso
 - [@away]
 - [@haven]
+:::
 

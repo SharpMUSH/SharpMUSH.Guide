@@ -17,8 +17,9 @@ From outside, Test bounces.
 ```
 
 
-**See Also:**
+::: seealso
 - [@prefix]
 - [@listen]
 - [@infilter]
+:::
 

@@ -6,7 +6,8 @@
   This is equivilent to first(sort(`<word>` ... `<wordN>`,a)).
 
 
-**See Also:**
+::: seealso
 - [ALPHAMAX()]
 - [MIN()]
+:::
 

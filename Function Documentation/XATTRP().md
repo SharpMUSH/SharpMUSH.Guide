@@ -17,9 +17,10 @@
   xattrp() and regxattrp() will include attributes from parents. Do note that parent attributes are listed _after_ child attributes, not sorted alphabetically.
 
 
-**See Also:**
+::: seealso
 - [NATTR()]
 - [LATTR()]
 - [WILDCARDS]
 - [regexp]
+:::
 

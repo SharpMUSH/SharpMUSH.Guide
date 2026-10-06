@@ -10,9 +10,10 @@ The second form attempts to lock (for 'on') or unlock (for 'off') the given attr
 If you wish to lock an attribute without gaining ownership, you can set it "locked" with `@set <obj>/<attr>=locked` - be aware that you'll be unable to make any changes to the attribute after this, including unlocking it!
 
 
-**See Also:**
+::: seealso
 - [ATRLOCK()]
 - [@atrchown]
 - [attributes]
 - [NON-STANDARD ATTRIBUTES]
+:::
 

@@ -13,9 +13,10 @@ You say, "301"
     You say, "95232300"
 
 
-**See Also:**
+::: seealso
 - [TIMESTRING()]
 - [etimefmt()]
 - [CONVTIME()]
 - [ETIME()]
+:::
 

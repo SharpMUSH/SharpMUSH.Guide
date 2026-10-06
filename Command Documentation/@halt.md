@@ -18,10 +18,11 @@ A cancelled delayed entry remains reserved until its scheduled trigger is confir
 `@halt/all` is a synonym for @allhalt, and is a wizard-only command which halts all objects in the game in an effort to free up the queue.
 
 
-**See Also:**
+::: seealso
 - [@wait]
 - [@ps]
 - [semaphores]
 - [@drain]
 - [@notify]
+:::
 

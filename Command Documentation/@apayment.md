@@ -15,11 +15,12 @@ These attributes contain the messages shown to someone who pays `<object>` penni
 ```
 
 
-**See Also:**
+::: seealso
 - [give]
 - [@cost]
 - [buy]
 - [MONEY]
 - [action lists]
 - [verbs]
+:::
 

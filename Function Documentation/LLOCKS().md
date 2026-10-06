@@ -17,10 +17,11 @@ Basic USER:ITSME Use
 ```
 
 
-**See Also:**
+::: seealso
 - [LOCK()]
 - [LSET()]
 - [LOCKFLAGS()]
 - [LLOCKFLAGS()]
 - [LOCKOWNER()]
+:::
 

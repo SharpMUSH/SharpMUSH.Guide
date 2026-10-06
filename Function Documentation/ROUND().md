@@ -22,7 +22,8 @@ think floor(3.14159)
 ```
 
 
-**See Also:**
+::: seealso
 - [BOUND()]
 - [TRUNC()]
+:::
 

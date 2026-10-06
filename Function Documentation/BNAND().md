@@ -4,6 +4,7 @@
   Returns `<integer1>` with every bit that was set in `<integer2>` cleared.
 
 
-**See Also:**
+::: seealso
 - [Bitwise functions]
+:::
 

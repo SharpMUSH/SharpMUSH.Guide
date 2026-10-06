@@ -7,10 +7,11 @@
   Given no arguments, this function returns a space-separated list of all the names of all lock flags known to the server.
 
 
-**See Also:**
+::: seealso
 - [LOCKFLAGS()]
 - [LSET()]
 - [LOCK()]
 - [LLOCKS()]
 - [LOCKOWNER()]
+:::
 

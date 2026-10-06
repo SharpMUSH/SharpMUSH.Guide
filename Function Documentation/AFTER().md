@@ -13,7 +13,8 @@ You say, " baz"
 You say, "r baz"
 ```
 
-**See Also:**
+::: seealso
 - [BEFORE()]
 - [REST()]
+:::
 

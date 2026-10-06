@@ -12,8 +12,9 @@ You say, "es"
 ```
 
 
-**See Also:**
+::: seealso
 - [LEFT()]
 - [RIGHT()]
 - [STRDELETE()]
+:::
 

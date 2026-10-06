@@ -15,7 +15,8 @@ think words(1 2%b%b3, %b)
     4
 
 
-**See Also:**
+::: seealso
 - [STRLEN()]
 - [ITEMS()]
+:::
 

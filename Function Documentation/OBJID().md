@@ -8,9 +8,10 @@
   The substitution %: returns the object id of the enactor.
 
 
-**See Also:**
+::: seealso
 - [NUM()]
 - [CTIME()]
 - [CTIME()]
 - [%#]
+:::
 

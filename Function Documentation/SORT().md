@@ -8,7 +8,8 @@
   The optional third argument gives the list's delimiter character. If not present, `<delimiter>` defaults to a space. The optional fourth argument gives a string that will delimit the resulting list; it defaults to `<delimiter>`.
 
 
-**See Also:**
+::: seealso
 - [SORTBY()]
 - [SORTKEY()]
+:::
 

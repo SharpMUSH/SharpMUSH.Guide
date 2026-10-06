@@ -14,10 +14,11 @@ You can use this command to set yourself or any of your objects to be male, fema
 ```
 
 
-**See Also:**
+::: seealso
 - [GENDER]
 - [SUBJ()]
 - [POSS()]
 - [APOSS()]
 - [OBJ()]
+:::
 

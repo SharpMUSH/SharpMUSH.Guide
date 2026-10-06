@@ -10,7 +10,8 @@
   [ATTRIB_SET()] until that is fixed.
 
 
-**See Also:**
+::: seealso
 - [ATTRIB_SET()]
 - [SET()]
+:::
 

@@ -16,7 +16,7 @@
   qregisters can also be accessed via the %qX (for one-char register names) or %q`\<X\>` (for registers with longer names) substitutions.
 
 
-**See Also:**
+::: seealso
 - [setq()]
 - [LETQ()]
 - [LISTQ()]
@@ -27,4 +27,5 @@
 - [STEXT()]
 - [ilev()]
 - [STEXT()]
+:::
 

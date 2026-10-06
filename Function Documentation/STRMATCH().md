@@ -24,10 +24,11 @@ You say, "1"
     You say, "1/foo/bar/baz"
 
 
-**See Also:**
+::: seealso
 - [COMP()]
 - [element()]
 - [setq()]
 - [R()]
 - [WILDCARDS]
+:::
 

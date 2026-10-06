@@ -16,10 +16,11 @@ You say, "One|PLAYER"
 ```
 
 
-**See Also:**
+::: seealso
 - [CHAIN()]
 - [MAP()]
 - [iter()]
 - [fold()]
 - [u()]
+:::
 

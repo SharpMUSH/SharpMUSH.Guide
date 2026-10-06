@@ -6,11 +6,12 @@
 `ufun(zone(me)/<attribute>[, <arg0>[, ... , <arg29>]])`
 
 
-**See Also:**
+::: seealso
 - [u()]
 - [GET()]
 - [ZONE()]
 - [ZEMIT()]
 - [ZWHO()]
 - [zones]
+:::
 

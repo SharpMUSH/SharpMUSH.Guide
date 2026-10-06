@@ -6,7 +6,8 @@
   This function can only be used by wizards.
 
 
-**See Also:**
+::: seealso
 - [@password]
 - [@newpassword]
+:::
 

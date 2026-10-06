@@ -19,9 +19,10 @@ The `<object>`'s new location is in %0 and the old location it moved from in %1.
 ```
 
 
-**See Also:**
+::: seealso
 - [go]
 - [@move]
 - [action lists]
 - [verbs]
+:::
 

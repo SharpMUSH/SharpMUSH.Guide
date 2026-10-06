@@ -4,6 +4,8 @@
 
 This command creates a copy of `<object>`. The clone will have the same name as the original unless a `<new name>` is given for it. You can only clone things, rooms and exits, not players. You must control `<object>`. The new object will be owned by the player who performs the @clone, not the owner of the original `<object>`.
 
+Output: the clone's dbref, as `clone()` returns it.
+
 When cloning things and exits, the clone will be placed in your current location, not the location of `<object>`. When cloning rooms, the exits and contents in the room are not cloned as well.
 
 The cloned object will have the same modification time as the original object, to make tracking revisions easier, but will have a different creation time.
@@ -21,9 +23,10 @@ To clone a room and all its exits, use code like:
 Note: If @create is restricted or disabled, it will also restrict or disable this command.
 
 
-**See Also:**
+::: seealso
 - [@create]
 - [CLONE()]
 - [CREATE()]
 - [@cpattr]
+:::
 

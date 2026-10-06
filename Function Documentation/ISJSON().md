@@ -16,6 +16,7 @@ think isjson("quoted")
 ```
 
 
-**See Also:**
+::: seealso
 - [json()]
+:::
 

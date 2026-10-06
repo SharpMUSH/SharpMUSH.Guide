@@ -7,8 +7,9 @@
 | [OEMIT()]             | [PEMIT()]             | [REMIT()]             | [ZEMIT()]             |
 | [PAGERECALL()]        | [PAGECONVERSATIONS()] |                       |                       |
 
-**See Also:**
+::: seealso
 - [channel functions]
 - [Mail Functions]
+:::
 
 

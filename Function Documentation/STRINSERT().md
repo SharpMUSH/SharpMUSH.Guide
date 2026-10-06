@@ -14,8 +14,9 @@ My name
 ```
 
 
-**See Also:**
+::: seealso
 - [STRDELETE()]
 - [INSERT()]
 - [STRREPLACE()]
+:::
 

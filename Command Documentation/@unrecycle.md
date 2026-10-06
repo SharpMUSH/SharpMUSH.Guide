@@ -11,8 +11,9 @@ If `<object>` is a player and the 'destroy_possessions' @config option is on, al
 @unrecycle is an alias for @undestroy.
 
 
-**See Also:**
+::: seealso
 - [@destroy]
 - [GOING]
 - [@startup]
+:::
 

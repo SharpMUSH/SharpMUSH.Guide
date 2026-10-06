@@ -5,7 +5,7 @@
 This command stops you from following an object that you were formerly following. If no object is given, you stop following everyone you were following.
 
 
-**See Also:**
+::: seealso
 - [follow]
 - [dismiss]
 - [desert]
@@ -13,4 +13,5 @@ This command stops you from following an object that you were formerly following
 - [@follow]
 - [@follow]
 - [@follow]
+:::
 

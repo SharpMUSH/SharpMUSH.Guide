@@ -4,8 +4,9 @@
   Returns the product of some numbers.
 
 
-**See Also:**
+::: seealso
 - [LMATH()]
 - [DIV()]
 - [DIV()]
+:::
 

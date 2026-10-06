@@ -7,9 +7,10 @@
 
   All three Unicode functions take normally evaluated arguments and use the usual function invocation and recursion limits. The evaluator permits at most 5,242,880 UTF-16 code units per function result. GRAPHEMES checks the expanded length before constructing its output and returns `#-1 OUTPUT EXCEEDED MAXIMUM SIZE` if it would exceed that ceiling. Cluster length itself has no separate fixed limit. Text is not normalized; malformed UTF-16 is retained under the library's segmentation policy.
 
-**See Also:**
+::: seealso
 - [DISPLAYWIDTH()]
 - [GRAPHEMECOUNT()]
 - [FLIP()]
+:::
 
 

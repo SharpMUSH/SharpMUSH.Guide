@@ -23,9 +23,10 @@ You say, "foo   "
     You say, "This is t"
 
 
-**See Also:**
+::: seealso
 - [align()]
 - [CENTER()]
 - [RJUST()]
 - [LEFT()]
+:::
 

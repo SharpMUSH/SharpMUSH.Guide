@@ -6,8 +6,9 @@ Sets the actions to be taken by `<object>` whenever it's @cloned. This command c
 Please note that there are no @clone or @oclone attributes.
 
 
-**See Also:**
+::: seealso
 - [@clone]
 - [@create]
 - [action lists]
+:::
 

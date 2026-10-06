@@ -15,10 +15,11 @@ You say, "101"
   val() is an alias for trunc().
 
 
-**See Also:**
+::: seealso
 - [ROUND()]
 - [ROUND()]
 - [BOUND()]
 - [ROUND()]
 - [LEFT()]
+:::
 

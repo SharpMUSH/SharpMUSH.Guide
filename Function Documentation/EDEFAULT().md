@@ -15,11 +15,12 @@ You say "You have lost 6 marbles."
     You say "You have no marbles."
 
 
-**See Also:**
+::: seealso
 - [GET()]
 - [EVAL()]
 - [u()]
 - [DEFAULT()]
 - [UDEFAULT()]
 - [HASATTR()]
+:::
 

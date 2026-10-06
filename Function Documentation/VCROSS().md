@@ -11,6 +11,7 @@
   -3 6 -3
 
 
-**See Also:**
+::: seealso
 - [Vector functions]
+:::
 

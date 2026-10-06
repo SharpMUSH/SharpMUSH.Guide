@@ -8,10 +8,11 @@
   nsemit() works like @nsemit.
 
 
-**See Also:**
+::: seealso
 - [PEMIT()]
 - [REMIT()]
 - [NSLEMIT()]
 - [OEMIT()]
 - [ZEMIT()]
+:::
 

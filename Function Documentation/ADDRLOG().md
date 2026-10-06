@@ -8,7 +8,8 @@
   This function must be enabled (by the use_connlog @config option); if disabled, it returns #-1.
 
 
-**See Also:**
+::: seealso
 - [connlog()]
 - [CONNRECORD()]
+:::
 

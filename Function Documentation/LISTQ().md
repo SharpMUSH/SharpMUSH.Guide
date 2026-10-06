@@ -24,11 +24,12 @@ LOC
 ```
 
 
-**See Also:**
+::: seealso
 - [setq()]
 - [LETQ()]
 - [R()]
 - [LOCALIZE()]
 - [REGISTERS()]
 - [WILDCARDS]
+:::
 

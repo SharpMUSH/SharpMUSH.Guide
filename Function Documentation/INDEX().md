@@ -15,8 +15,9 @@ You say, "Mug of Beer"
     cute doll"
 
 
-**See Also:**
+::: seealso
 - [EXTRACT()]
 - [ELEMENTS()]
 - [GRAB()]
+:::
 

@@ -9,9 +9,10 @@ think fmod(6.1,2.5)
 1.1
 ```
 
-**See Also:**
+::: seealso
 - [DIV()]
 - [DIV()]
 - [MOD()]
 - [LMATH()]
+:::
 

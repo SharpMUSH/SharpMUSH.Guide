@@ -15,6 +15,7 @@
 
   stats() is an alias for lstats().
 
-**See Also:**
+::: seealso
 - [lsearch()]
+:::
 

@@ -13,11 +13,12 @@ Q-registers (set via setq() and similar functions) are inherited from the @namef
 ```
 
 
-**See Also:**
+::: seealso
 - [look]
 - [@exitformat]
 - [@nameformat]
 - [@conformat]
 - [@idescformat]
 - [@invformat]
+:::
 

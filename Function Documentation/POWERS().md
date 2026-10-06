@@ -8,9 +8,10 @@
   With two arguments, it attempts to set `<power>` on `<object>`, as per @power `<object>`=`<power>`.
 
 
-**See Also:**
+::: seealso
 - [ANDLPOWERS()]
 - [ORLPOWERS()]
 - [@power]
 - [@power]
+:::
 

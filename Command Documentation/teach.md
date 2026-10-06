@@ -3,6 +3,9 @@
 `teach/list <action list>`
 
 The teach command shows its argument (unparsed) to others in your location, and then executes it as a command. If the `/list` switch is given, it will run an `<action list>` of commands in much the same way as @triggering an attribute. Otherwise, it executes a single `<command>`, exactly as if you'd entered `<command>` from your client. Useful for helping newbies and demonstrating commands.
+
+Output: the output of the last command it ran. See [command output].
+
 ```sharp
 > say To do a pose, use :<action>
 You say "To do a pose, use :<action>"
@@ -25,7 +28,8 @@ You say, "Third"
 ```
 
 
-**See Also:**
+::: seealso
 - [@trigger]
 - [@include]
+:::
 

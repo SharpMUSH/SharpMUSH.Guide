@@ -13,10 +13,11 @@ Kept: 12 7 / Dropped: apples pears
 ```
 
 
-**See Also:**
+::: seealso
 - [FILTER()]
 - [FILTER()]
 - [E()]
 - [E()]
 - [setq()]
+:::
 

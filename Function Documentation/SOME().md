@@ -22,10 +22,11 @@
   The same shape works as a command guard: `@assert every(ISNUM, %0, , bad)=@pemit %#=Not numbers: %q<bad>`
 
 
-**See Also:**
+::: seealso
 - [FILTER()]
 - [FILTER()]
 - [FILTERQ()]
 - [setq()]
 - [CHAIN()]
+:::
 

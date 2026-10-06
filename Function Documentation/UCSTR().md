@@ -16,7 +16,8 @@ You say, "GRÜSSEN
 ```
 
 
-**See Also:**
+::: seealso
 - [LCSTR()]
 - [CAPSTR()]
+:::
 

@@ -14,8 +14,9 @@
   These are SharpMUSH functions; PennMUSH exposes the same text only through [@motd].
 
 
-**See Also:**
+::: seealso
 - [@motd]
 - [POLL()]
 - [@poll]
+:::
 

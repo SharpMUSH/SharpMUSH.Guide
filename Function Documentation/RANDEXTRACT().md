@@ -21,7 +21,8 @@ You say, "this test is this is is"
 ```
 
 
-**See Also:**
+::: seealso
 - [RAND()]
 - [RANDWORD()]
+:::
 

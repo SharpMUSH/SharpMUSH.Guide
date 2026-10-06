@@ -9,7 +9,8 @@
 | [GTE()]      | [LT()]       | [LTE()]      | [NAND()]     | [NEQ()]      |
 | [NOR()]      | [NOT()]      | [OR()]       | [T()]        | [XOR()]      |
 
-**See Also:**
+::: seealso
 - [boolean values]
 - [@config]
+:::
 

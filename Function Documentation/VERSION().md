@@ -19,6 +19,7 @@ You say "1008001004"
     You say, "1008005007"
 
 
-**See Also:**
+::: seealso
 - [@version]
+:::
 

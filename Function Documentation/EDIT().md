@@ -17,7 +17,8 @@ You say "I think this is an exam."
   edit() can not replace a literal single ^ or $. Use regedit() for that.
 
 
-**See Also:**
+::: seealso
 - [@edit]
 - [REGEDIT()]
+:::
 

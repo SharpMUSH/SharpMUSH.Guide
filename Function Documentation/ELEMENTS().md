@@ -18,8 +18,9 @@ You say "Ack Moo"
     You say "foo"
 
 
-**See Also:**
+::: seealso
 - [EXTRACT()]
 - [INDEX()]
 - [GRAB()]
+:::
 

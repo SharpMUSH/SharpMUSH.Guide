@@ -12,7 +12,8 @@ think power(3, 3)
 ```
 
 
-**See Also:**
+::: seealso
 - [SQRT()]
 - [POWER()]
+:::
 

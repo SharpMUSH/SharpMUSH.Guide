@@ -12,10 +12,11 @@
   xvthings() is identical, except it follows the restrictions of lvthings().
 
 
-**See Also:**
+::: seealso
 - [NVTHINGS()]
 - [LTHINGS()]
 - [LVTHINGS()]
 - [XVPLAYERS()]
 - [XVEXITS()]
+:::
 

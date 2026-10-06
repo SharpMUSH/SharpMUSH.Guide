@@ -26,7 +26,8 @@ You say "Trim Test"
 ```
 
 
-**See Also:**
+::: seealso
 - [SQUISH()]
 - [EDIT()]
+:::
 

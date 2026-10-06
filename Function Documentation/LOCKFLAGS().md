@@ -7,10 +7,11 @@
   Given no arguments, this function returns a string consisting of all the flag letters the server knows.
 
 
-**See Also:**
+::: seealso
 - [LLOCKFLAGS()]
 - [LSET()]
 - [LOCK()]
 - [LLOCKS()]
 - [LOCKOWNER()]
+:::
 

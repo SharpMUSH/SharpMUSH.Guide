@@ -4,10 +4,11 @@
   Returns the first element of a list.
 
 
-**See Also:**
+::: seealso
 - [BEFORE()]
 - [REST()]
 - [LAST()]
 - [FIRSTOF()]
 - [STRFIRSTOF()]
+:::
 

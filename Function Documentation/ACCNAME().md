@@ -5,9 +5,10 @@
   @nameaccent, if any.
 
 
-**See Also:**
+::: seealso
 - [NAME()]
 - [FULLNAME()]
 - [INAME()]
 - [accents]
+:::
 

@@ -18,10 +18,11 @@ d - e -
     d - e
 
 
-**See Also:**
+::: seealso
 - [MAP()]
 - [iter()]
 - [fold()]
 - [anonymous attributes]
 - [REGISTERS()]
+:::
 

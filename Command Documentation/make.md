@@ -6,8 +6,9 @@ Creates a character, links it to the account you are logged in to, and connects 
 This is a SharpMUSH command; PennMUSH's equivalent is `create`, which makes an unlinked character.
 
 
-**See Also:**
+::: seealso
 - [login]
 - [play]
 - [register]
+:::
 

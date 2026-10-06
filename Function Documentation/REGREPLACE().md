@@ -10,8 +10,9 @@
   This is a SharpMUSH function. PennMUSH spells the same idea [REGEDIT()], which takes alternating pattern/replacement pairs instead of a flags argument and uses `$1` / `$<name>` softcode capture substitutions.
 
 
-**See Also:**
+::: seealso
 - [REGEDIT()]
 - [regmatch()]
 - [regexp syntax]
+:::
 

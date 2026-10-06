@@ -10,6 +10,7 @@ You say, "cfaedb"
 ```
 
 
-**See Also:**
+::: seealso
 - [SHUFFLE()]
+:::
 

@@ -6,9 +6,10 @@ Authenticates to an existing account from the login screen and puts your connect
 This is a SharpMUSH command; PennMUSH has no account layer.
 
 
-**See Also:**
+::: seealso
 - [register]
 - [play]
 - [make]
 - [connect]
+:::
 

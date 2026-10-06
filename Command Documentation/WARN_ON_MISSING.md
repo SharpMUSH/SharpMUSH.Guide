@@ -16,7 +16,8 @@ By default it sends the owner of the offending object a message, so they can fix
 ```
 
 
-**See Also:**
+::: seealso
 - [HUH_COMMAND]
 - [UNIMPLEMENTED_COMMAND]
+:::
 

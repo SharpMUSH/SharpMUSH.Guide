@@ -4,9 +4,10 @@ This command shows the message "This command has not been implemented." It can b
 A command added with @command/add and not @hooked shows the same message, but it does so itself: it does not run UNIMPLEMENTED_COMMAND, so a hook on UNIMPLEMENTED_COMMAND does not change it. To change what an added command does, @hook the added command. This differs from PennMUSH; see [compatibility commands].
 
 
-**See Also:**
+::: seealso
 - [HUH_COMMAND]
 - [WARN_ON_MISSING]
 - [@command]
 - [@hook]
+:::
 

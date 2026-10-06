@@ -12,7 +12,7 @@ think hasflag(me, wizard)
 ```
 
 
-**See Also:**
+::: seealso
 - [ORFLAGS()]
 - [ANDFLAGS()]
 - [ORFLAGS()]
@@ -23,4 +23,5 @@ think hasflag(me, wizard)
 - [@flag]
 - [HASPOWER()]
 - [HASTYPE()]
+:::
 

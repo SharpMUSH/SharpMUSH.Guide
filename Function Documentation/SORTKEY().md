@@ -16,8 +16,9 @@
     You say, "#2 #3 #1"
 
 
-**See Also:**
+::: seealso
 - [anonymous attributes]
 - [SORTING]
 - [SORTBY()]
+:::
 

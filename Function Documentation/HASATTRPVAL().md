@@ -21,7 +21,8 @@
   single argument carrying no `/` is `#-1 BAD ARGUMENT FORMAT TO <function>`.
 
 
-**See Also:**
+::: seealso
 - [VISIBLE()]
 - [LATTR()]
+:::
 

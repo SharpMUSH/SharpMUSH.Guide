@@ -7,6 +7,8 @@ The ? wildcard matches a single character except a backtick (`).<br>
 The ** wildcard matches any number of characters, including backticks.<br>
 For example, to see all the attributes that began with a 'v' you could do ex `<object>`/v**
 
+Output: the dbref of the object examined.
+
 The `/brief` switch is equivalent to the 'brief' command.<br>
 The `/debug` switch is wizard-only and shows raw values for certain fields in an object.<br>
 The `/mortal` switch shows an object as if you were a mortal other than the object's owner and is primarily useful to admins. This switch ignores the object's VISUAL flag (but not its attribute flags)<br>
@@ -15,9 +17,10 @@ The `/all` switch shows the values of VEILED attributes.<br>
 The `/opaque` switch omits contents listings.
 
 
-**See Also:**
+::: seealso
 - [attribute trees]
 - [brief]
 - [LATTR()]
 - [WILDCARDS]
+:::
 

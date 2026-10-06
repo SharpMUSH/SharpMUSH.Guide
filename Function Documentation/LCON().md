@@ -15,11 +15,12 @@
     puppet             - return only THINGs set PUPPET
 
 
-**See Also:**
+::: seealso
 - [LEXITS()]
 - [LPLAYERS()]
 - [LTHINGS()]
 - [CON()]
 - [NEXT()]
 - [LVCON()]
+:::
 

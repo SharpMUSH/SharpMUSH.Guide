@@ -19,8 +19,9 @@ BIRD
 ```
 
 
-**See Also:**
+::: seealso
 - [SUGGEST()]
+:::
 
 
 

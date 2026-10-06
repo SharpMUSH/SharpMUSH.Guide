@@ -6,8 +6,9 @@ Connects you to one of the characters linked to the account you are logged in to
 This is a SharpMUSH command; PennMUSH has no account layer.
 
 
-**See Also:**
+::: seealso
 - [login]
 - [make]
 - [connect]
+:::
 

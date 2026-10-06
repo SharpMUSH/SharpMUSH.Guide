@@ -12,7 +12,8 @@
 | [RLOC()]         | [RNUM()]         | [ROOM()]         | [WHERE()]        |
 | [ZONE()]         |                  |                  |                  |
 
-**See Also:**
+::: seealso
 - [database]
 - [Information functions]
+:::
 

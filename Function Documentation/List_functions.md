@@ -16,7 +16,8 @@
 | [SORTBY()]       | [SORTKEY()]      | [SPLICE()]       | [STEP()]         |
 | [TABLE()]        | [UNIQUE()]       | [WORDPOS()]      | [WORDS()]        |
 
-**See Also:**
+::: seealso
 - [LISTS]
+:::
 
 

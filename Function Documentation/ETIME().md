@@ -18,8 +18,9 @@ think etime(61, 5)
 ```
 
 
-**See Also:**
+::: seealso
 - [etimefmt()]
 - [TIMESTRING()]
 - [STRINGSECS()]
+:::
 

@@ -18,8 +18,9 @@ You say, "foo ~ bar ~ boing"
 ```
 
 
-**See Also:**
+::: seealso
 - [STRDELETE()]
 - [REMOVE()]
 - [INSERT()]
+:::
 

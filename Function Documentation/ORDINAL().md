@@ -10,6 +10,7 @@ first
 ```
 
 
-**See Also:**
+::: seealso
 - [SPELLNUM()]
+:::
 

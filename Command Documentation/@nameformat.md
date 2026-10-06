@@ -14,7 +14,7 @@ Show the room's zone after its name.
 ```
 
 
-**See Also:**
+::: seealso
 - [look]
 - [@exitformat]
 - [@conformat]
@@ -23,4 +23,5 @@ Show the room's zone after its name.
 - [@invformat]
 - [@idescformat]
 - [INAME()]
+:::
 

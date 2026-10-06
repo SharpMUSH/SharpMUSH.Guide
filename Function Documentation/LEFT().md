@@ -4,8 +4,9 @@
   Returns the first `<length>` characters from `<string>`.
 
 
-**See Also:**
+::: seealso
 - [RIGHT()]
 - [MID()]
 - [LJUST()]
+:::
 

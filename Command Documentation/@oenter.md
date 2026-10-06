@@ -20,10 +20,11 @@ The old location of the entering object is passed in %0, if `<object>` had permi
 ```
 
 
-**See Also:**
+::: seealso
 - [enter]
 - [@ealias]
 - [leave]
 - [action lists]
 - [verbs]
+:::
 

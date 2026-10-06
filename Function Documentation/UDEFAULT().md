@@ -20,7 +20,7 @@ You say "-- BOOM --"
 ```
 
 
-**See Also:**
+::: seealso
 - [GET()]
 - [EVAL()]
 - [u()]
@@ -28,4 +28,5 @@ You say "-- BOOM --"
 - [EDEFAULT()]
 - [ulocal()]
 - [LOCALIZE()]
+:::
 

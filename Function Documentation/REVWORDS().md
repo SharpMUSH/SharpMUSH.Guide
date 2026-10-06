@@ -10,6 +10,7 @@ You say, "eep baz bar foo"
 ```
 
 
-**See Also:**
+::: seealso
 - [FLIP()]
+:::
 

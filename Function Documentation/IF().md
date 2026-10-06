@@ -6,10 +6,11 @@
   These functions evaluate the `<condition>` and return `<true expression>` if the `<condition>` is true, or `<false expression>` (if provided) if the `<condition>` is false. Only the returned `<expression>` is evaluated.
 
 
-**See Also:**
+::: seealso
 - [boolean values]
 - [switch()]
 - [@if]
 - [@break]
 - [COND()]
+:::
 

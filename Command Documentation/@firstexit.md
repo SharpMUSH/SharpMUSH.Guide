@@ -19,8 +19,9 @@ One, Two, and Three
 ```
 
 
-**See Also:**
+::: seealso
 - [EXITS]
 - [@open]
 - [@link]
+:::
 

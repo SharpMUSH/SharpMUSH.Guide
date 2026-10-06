@@ -20,7 +20,8 @@ and whether one is also taken automatically on an interval are deployment settin
 process, not `@config` options. See `deploy/README.md`.
 
 
-**See Also:**
+::: seealso
 - [@dump]
 - [@shutdown]
+:::
 

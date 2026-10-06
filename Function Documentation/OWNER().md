@@ -8,9 +8,10 @@
   If changing ownership, #-1 or 0 is returned on failure, 1 on success.
 
 
-**See Also:**
+::: seealso
 - [LOCKOWNER()]
 - [@chown]
 - [@atrchown]
+:::
 
 

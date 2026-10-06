@@ -15,7 +15,8 @@ ROOM
 ```
 
 
-**See Also:**
+::: seealso
 - [HASTYPE()]
 - [TYPES OF OBJECTS]
+:::
 

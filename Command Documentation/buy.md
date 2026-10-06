@@ -16,9 +16,10 @@ You enjoy a delicious coke.
 ```
 
 
-**See Also:**
+::: seealso
 - [@buy]
 - [@pricelist]
 - [give]
 - [@cost]
+:::
 

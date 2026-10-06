@@ -12,9 +12,10 @@
   lwhoid() returns a list of objid's instead.
 
 
-**See Also:**
+::: seealso
 - [MWHO()]
 - [NMWHO()]
 - [XWHO()]
 - [LPORTS()]
+:::
 

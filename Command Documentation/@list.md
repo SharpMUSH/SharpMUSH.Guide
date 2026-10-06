@@ -21,7 +21,7 @@ By default, information is shown in upper-case. Add the `/lowercase` switch to s
 "commands" and "functions" show built-in and local commands/functions by default. The `/builtin` or `/local` switches can be given to limit this.
 
 
-**See Also:**
+::: seealso
 - [LIST()]
 - [@config]
 - [CONFIG()]
@@ -35,4 +35,5 @@ By default, information is shown in upper-case. Add the `/lowercase` switch to s
 - [@motd]
 - [@motd]
 - [locktypes]
+:::
 

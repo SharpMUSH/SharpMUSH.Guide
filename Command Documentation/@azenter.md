@@ -12,10 +12,11 @@ Entry into a new zone is said to occur when a player goes from a room not in the
 Zone entry is assumed to occur before room entry, so these are triggered before the room's @[oa]enter.
 
 
-**See Also:**
+::: seealso
 - [@zleave]
 - [zones]
 - [@zemit]
 - [ZWHO()]
 - [verbs]
+:::
 

@@ -10,7 +10,8 @@ Foo bar baz
 ```
 
 
-**See Also:**
+::: seealso
 - [LCSTR()]
 - [UCSTR()]
+:::
 

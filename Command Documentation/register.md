@@ -8,9 +8,10 @@ The game may refuse the command from your address; see [SITELOCK].
 This is a SharpMUSH command; PennMUSH's `register` mails a password for a new character instead.
 
 
-**See Also:**
+::: seealso
 - [login]
 - [make]
 - [play]
 - [@account]
+:::
 

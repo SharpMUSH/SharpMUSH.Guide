@@ -4,6 +4,7 @@
 The @purge command should almost never need to be performed manually. If you do use it manually, you may want to use it twice in a row to make sure that everything marked GOING is actually destroyed.
 
 
-**See Also:**
+::: seealso
 - [@dbck]
+:::
 

@@ -15,6 +15,7 @@
   beginning with #-1.
 
 
-**See Also:**
+::: seealso
 - [RANDWORD()]
+:::
 

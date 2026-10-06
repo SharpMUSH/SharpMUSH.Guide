@@ -8,7 +8,8 @@
   nslemit() like @nslemit.
 
 
-**See Also:**
+::: seealso
 - [@lemit]
 - [REMIT()]
+:::
 

@@ -7,7 +7,8 @@ The first form of this command unlinks an exit from its destination room. Unlink
 The second form removes the DROP-TO on the room.
 
 
-**See Also:**
+::: seealso
 - [@link]
 - [DROP-TO]
+:::
 

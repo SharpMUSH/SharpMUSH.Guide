@@ -18,8 +18,9 @@
     You say, "2;4;6;8;10"
 
 
-**See Also:**
+::: seealso
 - [anonymous attributes]
 - [iter()]
 - [@dolist]
+:::
 
