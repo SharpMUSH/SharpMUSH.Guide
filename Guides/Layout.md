@@ -71,6 +71,8 @@ think box(Body,Title,30,json(object,border,"[if(%q<formal>,double,single)]"))
 
 An unknown or misspelled key is an error, not a silent no-op: `#-1 UNKNOWN LAYOUT OPTION <KEY>`.
 
+In a package's `package.yaml`, `{{` starts a reference to an object (`{{jobs}}`), so an inline option object there is refused at install. Build options with `json()` in a package.
+
 ## Tables
 
 `datatable()` takes the rows written out, each row's cells split by `|`. A heading starting with `<`, `-` or `>` places its column left, centred or right, as in `align()`. Column widths come from the content, so there is no width arithmetic to keep in step with the headings.
@@ -117,6 +119,14 @@ A table built from a list is a column at a time: `datacolumns()` takes each colu
 ```sharp
 think datacolumns(json(object,delim,json(string,%r)),ID%r[iter(%q<scenes>,%i0,,%r)],Title%r[iter(%q<scenes>,scene(%i0,title),,%r)])
 ```
+
+The option lists (`"nowrap"`, `"min"`, `"max"`, `"priority"`) are split by the same delimiter as the cells, so with a newline delimiter they are written with `%r` too:
+
+```sharp
+json(object,delim,json(string,%r),nowrap,json(string,1%r3),min,json(string,%r12))
+```
+
+Written `"1|3"`, the list is one item that is not a column number, and the table answers `#-1 ARGUMENT OUT OF RANGE`.
 
 Writing `{{"delim":"\n"}}` inline does not work: the evaluator eats the backslash, the delimiter becomes the letter `n`, and the table comes out empty with no error.
 
