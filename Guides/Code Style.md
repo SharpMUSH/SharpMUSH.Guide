@@ -31,3 +31,6 @@ and(), or(), nand() and nor() always evaluate every argument. Use them only when
 
 ## Authorization
 Ask the game who may do what instead of keeping a list of staff. Gate a command on a permission with permission(%#, <permission>), and use roles to tag what someone is, such as Approved. See [Roles and Permissions](Roles%20and%20Permissions.md).
+
+## Layout
+Draw a screen with the layout functions, not with padding: box() for a titled frame, rule() for dividers, fields() for labelled values, datatable() and datacolumns() for tables. Leave their width empty so each reader gets the layout at their own width, and the web portal and screen readers get structure instead of box art. See [Layout](Layout.md).

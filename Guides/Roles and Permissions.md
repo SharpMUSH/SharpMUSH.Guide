@@ -110,10 +110,7 @@ Built-in commands and functions can be restricted to a permission without softco
 - **A new custom permission is held by nobody** but #1 and holders of `administrator` until a role or override allows it. Wizards do not hold it automatically.
 - **Account or character.** `/account` on `@role/assign` and `@permission/allow` reaches every character on the account. Use it for things about the person (portal staff, a banned writer), not the character (approval, a guild).
 
-## Coming soon
+## From packages and HTTP routes
 
-These are not in a released build yet:
-
-- Packages declaring their own roles, permissions and categories in `package.yaml`, so a package stops creating them from install softcode ([SharpMUSH#1615](https://github.com/SharpMUSH/SharpMUSH/pull/1615)).
-- `%q<viewer>` on `/http` routes: the objid of the character the web session belongs to, so an HTTP route can run `permission(%q<viewer>, ...)` ([SharpMUSH#1617](https://github.com/SharpMUSH/SharpMUSH/pull/1617)).
-- A softcode job system whose buckets are gated by roles.
+- A package declares the roles, permissions and categories it needs in `package.yaml` (format 1.2: `categories:`, `permissions:`, `roles:`) instead of creating them from install softcode. Install creates what the game lacks, and uninstall removes what nothing else relies on. See `help roles packages`.
+- On `/http` routes, `%q<viewer>` is the objid of the character the web session belongs to, or empty for an anonymous request, so a route can run `permission(%q<viewer>, ...)`. See `help http`.

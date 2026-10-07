@@ -1,6 +1,6 @@
 ---
 name: writing-sharpmush-softcode
-description: Use when writing, reviewing, or debugging SharpMUSH softcode — $-commands, +commands, MUSH functions, attribute code, event handlers, or HTTP endpoints on a SharpMUSH game. Covers SharpMUSH's own idioms — pre-seeded #8/#9 handlers, routed HTTP, pipeline functions, backtick attribute trees, role and permission checks — and how to look the rest up in its helpfiles.
+description: Use when writing, reviewing, or debugging SharpMUSH softcode — $-commands, +commands, MUSH functions, attribute code, event handlers, or HTTP endpoints on a SharpMUSH game. Covers SharpMUSH's own idioms — pre-seeded #8/#9 handlers, routed HTTP, pipeline functions, backtick attribute trees, role and permission checks, layout functions for screens — and how to look the rest up in its helpfiles.
 ---
 
 # Writing SharpMUSH Softcode
@@ -162,7 +162,7 @@ Who may do what is the game's job, not a staff list in an attribute. Roles are n
 - **A Deny role does not cancel another role's Allow.** Take a permission from one person with `@permission/deny`, from a group by removing it from their role.
 - **Typos fail closed.** An unknown role makes `hasrole()` `0`; an unknown permission makes `permission()` `#-1 NO SUCH PERMISSION`, which is false. Check names with `valid(permission, <name>)` / `valid(rolename, <name>)`; `@role/player <obj>` shows where each permission came from.
 
-Upcoming, not merged: packages declaring roles and permissions in `package.yaml` (SharpMUSH#1615), and `%q<viewer>` on `/http` routes so a route can ask `permission(%q<viewer>, …)` (SharpMUSH#1617).
+A package declares the roles, permissions and categories it needs in `package.yaml` (format 1.2: `categories:`, `permissions:`, `roles:`) instead of creating them from `AINSTALL`; `help roles packages`. On `/http` routes, `%q<viewer>` is the portal visitor's character (empty when anonymous), so a route asks `permission(%q<viewer>, …)`.
 
 ---
 
@@ -212,10 +212,29 @@ Shape the data in one pass and let each stage consume the last, rather than re-a
 
 # Formatting output
 
-- `align(<widths>, <col>…)` — each width is `[justification]Width[options][(ansi)]`. Justify `<` `-` `>` `_` `=`; `X` truncates instead of wrapping, `$` suppresses fill, `` ` ``/`'` merge into a neighbour. **ANSI belongs in the spec** (`28X(hc)`), not wrapped around the content, so codes aren't inside the text `align` must measure. The spec is evaluated, so a colour can be an argument: `5(%2)`.
-- `rendermarkdown(<md>[, <width>])` renders CommonMark to ANSI; width is clamped 10–1000 and a smaller value errors, so guard a computed per-column width with `max(10,…)`. `rendermarkdowncustom(<md>, <obj>[, <width>])` adds `` RENDERMARKUP`<ELEMENT> `` templates held on `<obj>`.
-- `width(%#)` is the enactor's screen width — size from it, don't assume 78.
-- `center()`, `ljust()`, `rjust()` take a fill character (banners, rules); `table()` for a uniform grid.
+**Draw screens with the layout functions.** `help layout functions`. Describe the shape once; a telnet client gets box art at its own width, a client without UTF-8 gets ASCII, the web portal gets a card, a table and a definition list, a screen reader the content alone. Hand-padded `align()`/`center()`/`header()` output is one fixed text for all of them.
+
+| Want | Use |
+|---|---|
+| Titled frame | `box(<body>, <title>)` |
+| Divider / footer | `rule(<title>)` on its own line inside the box; footer = `[rule()]%r<text>` |
+| `Label: value` sheet | `fields(, <label>, <value>, …)`; `{{"cols":2}}` for two columns |
+| Table, rows written out | `datatable(<opts>, <h1>\|<h2>, <c1>\|<c2>, …)` |
+| Table from computed lists | `datacolumns(<opts>, <heading>\|<cells…>, …)`, one `iter()` per column |
+| Names in columns / a list / a tree | `grid()` / `bullets()` / `tree()` + `node()` |
+| Side by side | `flex(<opts>, item(<content>, <width>), …)` |
+| Bar / status tag | `gauge(<v>, <max>, <label>)` / `badge(<text>, ok\|warn\|error\|info\|muted)` |
+
+- **Leave the width empty.** Empty means the width of the connection that ran the command, and each telnet reader is re-sent it at their own; that is what makes `@remit` right for a whole room. `width(%#)` pins every reader to the enactor's width; a number pins everyone. No column arithmetic (`sub(width(%#),37)`): table columns size from their content.
+- **Options are one JSON object**: inline with doubled braces, `box(x,T,,{{"title":"left"}})`, or `json(object,…)` when a value is computed. A misspelled key errors (`#-1 UNKNOWN LAYOUT OPTION`). An inline `\n` is eaten by evaluation and silently becomes `n`; build a newline with `json(string,%r)`.
+- **Nesting is by line.** A `fields()`/`datatable()`/`flex()`/`tree()` on a line of its own inside `box()` keeps its layout; a `rule()` on its own line becomes a divider meeting the box's sides. After other text on the same line, a block layout falls apart. Inline pieces (`badge()`, `cmdlink()`) are fine anywhere.
+- **Tables: say what to keep.** Too wide, wrapping columns shrink first, then the highest `"priority"` number is dropped. A wrapping column with no `"min"` shrinks to a letter per line before anything drops. Mark names, numbers, times and statuses `"nowrap"` (shown whole or not at all), leave free text wrapping with a `"min"`, give droppable columns priority 2+. `<` `-` `>` before a heading aligns its column.
+- **Player text in a table needs another delimiter.** Cells split at `|`, and a title can hold one. Join those columns with `%r` and pass `json(object,delim,json(string,%r))`.
+- **An empty table still draws its headings** — `if(words(%q<l>),<table>,No scenes.)`.
+- **Build the layout last.** `left()`, `edit()` or other text surgery on a layout leaves plain text: no per-reader width, no portal structure. Colour goes in the cells, a border piece (`"top":"[ansi(hb,=)]"`) or `gradient()`.
+- **Don't pick the game's border.** `layout_border` is the default style; pass `"border"` only where a box should differ from the rest.
+- `rendermarkdown(<md>[, <width>])` renders CommonMark to ANSI; width is clamped 10–1000 and a smaller value errors, so guard a computed width with `max(10,…)`. Inside a box, render at `sub(width(%#,78),4)` (two borders, two pads). `rendermarkdowncustom(<md>, <obj>[, <width>])` adds `` RENDERMARKUP`<ELEMENT> `` templates held on `<obj>`.
+- `align(<widths>, <col>…)` remains for fixed-width text that must stay text (a log line, a channel message): ANSI belongs in the spec (`28X(hc)`), not round the content.
 
 ---
 
@@ -288,6 +307,10 @@ Prefer queued `@dolist` (with `/notify` + semaphore `@wait`) over `/inline` for 
 | `@teleport obj=#2` before setting its attributes | Name matching reaches only your location and inventory — publish last |
 | `json_query(<grouped>, get, %2)` inside `json_map` | `json_map` already handed you the value as `%1` |
 | `ansi()` around an `align()` column's content | Put it in the column spec: `28X(hc)` |
+| `header()` + `align()` rows + `footer()` with `sub(width(%#),N)` column maths | `box()` round a `datatable()`/`datacolumns()`; no width given |
+| `[ansi(h,rjust(%0:,14))] %1` label gutters | `fields(, <label>, <value>, …)` |
+| `width(%#)` passed to a layout function | Leave it empty; each reader gets their own width |
+| `{{"delim":"\n"}}` inline | `json(object,delim,json(string,%r))` |
 | Carrying JSON through a render and querying per row | Flatten to a record list once, then `first()`/`rest()` |
 | Parallel trees keyed the same (`` TITLE`<k> `` + `` MOD`<k> ``) | One tree — containment makes the invariant structural |
 | Game data on a player left unflagged | They control themselves and can set it; flag the root |
