@@ -82,6 +82,7 @@ When the table is too wide, wrapping columns give way first, then the least impo
 - Mark every column that holds a name, a number, a time or a status `"nowrap"`. It is then shown whole or not at all.
 - Leave free text (a title, a description) wrapping, and give it a `"min"` it is still readable at.
 - Give the columns a reader can do without a higher `"priority"` number.
+- Give the free-text column a `"grow"` share, such as `"grow":"|1"`, when the table should span the screen. Without one, a table is only as wide as its cells.
 
 ```sharp
 think box(datatable({{"priority":"1|1|3|2","nowrap":"1|4","min":"|10|8|"}},>ID|Title|Where|>Cast,12|Tea at the Docks|Harbour|3,14|Night Watch|Gate|2),Scenes,40)
@@ -120,7 +121,7 @@ A table built from a list is a column at a time: `datacolumns()` takes each colu
 think datacolumns(json(object,delim,json(string,%r)),ID%r[iter(%q<scenes>,%i0,,%r)],Title%r[iter(%q<scenes>,scene(%i0,title),,%r)])
 ```
 
-The option lists (`"nowrap"`, `"min"`, `"max"`, `"priority"`) are split by the same delimiter as the cells, so with a newline delimiter they are written with `%r` too:
+The option lists (`"nowrap"`, `"min"`, `"max"`, `"priority"`, `"grow"`) are split by the same delimiter as the cells, so with a newline delimiter they are written with `%r` too:
 
 ```sharp
 json(object,delim,json(string,%r),nowrap,json(string,1%r3),min,json(string,%r12))
