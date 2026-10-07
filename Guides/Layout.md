@@ -51,9 +51,9 @@ think box(%q<body>%r[rule()]%r+help <topic> reads one,Help)
 
 ## Width: leave it empty
 
-Every layout function takes a width. Leave it empty. The layout is then drawn at the width of the connection that ran the command, and each telnet reader is sent it again at the width their own client reported. That is also what makes an `@remit` right for everyone in the room.
+Every layout function except `badge()` takes a width: `box()` and `rule()` as an argument, the others as a `"width"` option. Leave it out. The layout is then drawn at the width of the connection that ran the command, and each telnet reader is sent it again at the width their own client reported. That is also what makes an `@remit` right for everyone in the room.
 
-Passing `width(%#)` fixes the width to the enactor's for every reader, and a number fixes it for everyone. Use a number only where the width is part of the design, such as a fixed-size badge. The examples on this page pass one so their output is predictable.
+Passing `width(%#)` fixes the width to the enactor's for every reader, and a number fixes it for everyone. Use a number only where the width is part of the design, such as a gauge of a set length. The examples on this page pass one so their output is predictable.
 
 ## Options are a JSON object
 
