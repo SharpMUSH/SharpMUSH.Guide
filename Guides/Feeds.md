@@ -42,7 +42,7 @@ Move them with `@feed/rename`:
 @feed/rename walkie/alpha=bravo
 ```
 
-Every line keeps its id, so ids your code saved still work with `feedmsg()`, and each member keeps how far they have read. If a feed is already at the new key, the two are merged: lines go together in id order, someone on both keeps their place on the new key, and the new key keeps its own settings and locks.
+Every line keeps its id, so ids your code saved still work with `feedmsg()`, and each member keeps how far they have read. If a feed is already at the new key, `@feed/rename` refuses. `@feed/rename/override` merges the two: lines go together in id order, someone on both keeps their place on the new key, and the new key keeps its own settings and locks.
 
 Anything of yours that saved the old key, such as a list of feeds or a tap that files lines by key, has to be changed by your code. To drop the old feed instead, use `@feed/delete walkie/alpha`.
 
