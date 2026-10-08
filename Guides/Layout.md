@@ -137,6 +137,48 @@ An empty list still draws the headings. Say so in words instead:
 think box(if(words(%q<scenes>),<the table>,No scenes.),Scenes)
 ```
 
+## Themes
+
+A theme sets the colours and border pieces of every layout: the box's lines, its title, field labels, bullets, gauges. Leave it to the player. Each player picks theirs with `@theme me=<theme>`, and a layout with no `"theme"` option is drawn in it, or in the game's `layout_theme` when they have none. `@theme/list` shows the themes the game offers, and `think themes()` gives their names as a list.
+
+Pass `"theme"` only where a layout must look the same for everyone, such as a red warning. It wins over the player's choice:
+
+```sharp
+think box(fields(,Name,Mira,Faction,Rebel,Status,On watch),Character,36,{{"theme":"harbour"}})
+```
+
+```text
+╔═══════════╡ Character ╞══════════╗
+║ Name:    Mira                    ║
+║ Faction: Rebel                   ║
+║ Status:  On watch                ║
+╚══════════════════════════════════╝
+```
+
+That is the box as a Unicode client gets it, its colours left out. `harbour` is not built in: staff with `layout.admin` added it with `@theme/add harbour={{"preset":"nord","colors":{"primary":"#bf616a"}}}`.
+
+A player with no theme of their own takes the `THEME` of their parent, then of the player ancestor, so a theme can follow from what a character is. `@theme` works on any object you control, and keeps the text exactly as typed. It is evaluated each time it is needed, as the player, so `%#` is the player:
+
+```sharp
+@theme Rebel Faction=horror
+@theme #4=[switch(get(%#/FACTION),Rebel,horror,Crown,nord)]
+```
+
+The first gives everyone parented to `Rebel Faction` the horror theme. The second, on the player ancestor, picks by each player's `FACTION`, and a player it picks nothing for gets the game's theme.
+
+The theme is worked out when the player connects, when `@theme` changes it, and on `@theme/refresh <player>`. Code that changes what a theme depends on refreshes it in the same action. This one sets an attribute on the player, so its object needs to control them (here, the `WIZARD` flag):
+
+```sharp
+&CMD`JOIN Faction Desk=$+join *:&FACTION %#=%0; @theme/refresh %#
+```
+
+Two things catch people out:
+
+- **JSON goes in two pairs of braces**, the same as layout options: `@theme me={{"seed":"#d08770"}}`.
+- **Lists need `\[ \]`.** `@theme` keeps code, and code runs `[ ]` even inside braces, so a list in a theme is typed `\["( "," )"\]`.
+
+The full guide, for staff as well as coders, is [Layout Themes](https://sharpmush.com/guides/layout-themes/) on the docs site.
+
 ## Things to avoid
 
 - **Editing a layout afterwards.** The result is text, so `strlen()` and listen patterns work on it, but a layout cut or edited by another function (`left()`, `edit()`) is shown as the text it now is, in the portal too, and is no longer re-laid out for each reader. Build the layout last. Colour belongs inside it: in the cells, in a border piece (`"top":"[ansi(hb,=)]"`), or through `gradient()`.
