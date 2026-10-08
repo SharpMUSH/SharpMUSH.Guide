@@ -124,7 +124,7 @@ An evaluation lock gets the feed key in `%0` and the kind in `%1`, so one attrib
 A tap is another object that hears every line of a kind, for example to copy it into a scene or a staff log:
 
 ```sharp
-@feed/tap radio=Radio/TAP`LOG
+@feed/tap radio=Radio Scene Log/TAP`LOG
 ```
 
 The attribute is queued for each line with `%0` the line id, `%1` the feed, `%2` who received it, `%3` the speaker, `%4` the style, `%5` the message and `%6` the `/as` name.
@@ -174,13 +174,32 @@ The bundled `radio` package is a full radio built on a feed kind. Install it fro
 ===============================< End of recall >==============================
 ```
 
-Moderators restrict and list players, admins create, rename and lock frequencies, and `+radio/log` copies what a player hears into the scene they are in through a tap. `+help radio` on the game lists every command.
+Moderators restrict and list players, and admins create, rename and lock frequencies. `+help radio` on the game lists every command.
 
 How it is split:
 
 - The feed kind `radio` has one feed per frequency, keyed by number: `radio/1`, `radio/2`.
-- The `radio` object keeps each frequency's name, category, description, member, moderator and admin lists and locks under `` F`<id>` ``, and each player's title, callsign, colour and logging under `` P`<player>` ``.
+- The `radio` object keeps each frequency's name, category, description, member, moderator and admin lists and locks under `` F`<id>` ``, and each player's title, callsign and colour under `` P`<player>` ``.
 - `FEED`RADIO`FORMAT` draws every line, and recall calls the same code.
-- `TAP`LOG` is the tap that writes into scenes, once per scene however many people in it are logging.
 
 Read `examples/packages/radio/package.yaml` in the SharpMUSH repository for the code.
+
+## Joining two systems: radio in scenes
+
+The radio knows nothing about scenes, and the scene system knows nothing about the radio. A third package, `radio-scene`, joins them. It depends on both, and adds `+radio/log <frequency>`: what that player hears on the frequency goes into the scene they are in, until `+radio/stoplog`.
+
+```text
+> +radio/log Ship
+[RADIO] Done: What you hear on Ship goes into your scene until +radio/stoplog.
+> +radio/log
+[RADIO] Logged into your scene: Ship.
+```
+
+It needs two things from the radio, and changes neither package's code:
+
+- **A tap.** `TAP`LOG` on its own object hears every radio line. For each listener who logs that frequency and is in a scene, it adds the line to the scene with `@scene/addpose`, drawn with the radio's own `FUN`LINE`, once per scene however many people in it are logging.
+- **A switch.** The radio looks for `` EXT`<switch> `` on itself before it says a switch does not exist. `radio-scene` attaches `` EXT`LOG `` and `` EXT`STOPLOG `` to the radio object, naming its own object, and the radio runs that object's `` INC`LOG `` with the registers it has already set. Uninstalling `radio-scene` takes the switches away again.
+
+One trap when one package's code runs inside another's: a `{{ref}}` in a package's code is looked up on whatever object is running it. While the radio includes `` INC`LOG ``, the radio is the executor, and it holds none of `radio-scene`'s refs. So the included code names the radio `%!`, and its own object comes in a register (`%q<ext>`) that the radio sets before it includes it. `TAP`LOG` runs on `radio-scene`'s own object, so its refs work there.
+
+Read `examples/packages/radio-scene/package.yaml` for the code.
