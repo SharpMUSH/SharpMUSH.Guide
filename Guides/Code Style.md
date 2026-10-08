@@ -34,3 +34,11 @@ Ask the game who may do what instead of keeping a list of staff. Gate a command 
 
 ## Layout
 Draw a screen with the layout functions, not with padding: box() for a titled frame, rule() for dividers, fields() for labelled values, datatable() and datacolumns() for tables. Leave their width empty so each reader gets the layout at their own width, and the web portal and screen readers get structure instead of box art. See [Layout](Layout.md).
+
+## Paging
+A command whose list can outgrow the reader's screen shows it a page at a time, and takes the page as its last switch: `+scene/old/2`, `+jobs/2`, `+help/list/3 <source>`. Without one, the reader gets the first page.
+
+- Match the page in the command's pattern, after any other switch, so `+scene/old` and `+scene/o/2` are the same command: `` $(?is)^\+scene/ol(?:d)?(?:/(\d+))?$ ``. A command that parses its switches itself takes a last switch of digits as the page.
+- Size a page from the reader's screen, `height(%#, 24)`, less the lines the frame takes.
+- End each page but the last with the command for the next one, as typed: `page 1 of 3 - +scene/old/2`.
+- Answer a page past the end with how many pages there are, and a page of 0 with the command's usage line. A command that lists nothing says it takes no page number.
