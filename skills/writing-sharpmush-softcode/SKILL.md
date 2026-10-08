@@ -31,6 +31,26 @@ SharpMUSH is a functional MUSH server with its own idioms: handlers come pre-pop
 
 `%0`–`%9` args · `%#` enactor dbref · `%:` enactor objid · `%!` executor · `%L` enactor's location · `%q<name>` named register (`setq`/`setr`; case-insensitive) · `%i0`/`itext(0)` current iteration element · `%b` space · `%r` newline.
 
+## Registers and their scope
+
+A q-register lives for the whole queue entry: set it in one command and every later command in the list reads it, and so does code the list runs with `@include` or `@trigger` (which copies the registers it is given). That is what makes `think [setq(…)]` before the real work useful, and it is also how a callee overwrites a register its caller still needs.
+
+Fence a callee off when it sets registers of its own:
+
+| Running | Use | Registers it sets |
+|---|---|---|
+| a function attribute | `ulocal(obj/attr, …)` in place of `u()` | discarded on return |
+| an expression | `localize(<expr>)` | discarded |
+| an expression with a few set for it | `letq(<reg>, <value>, …, <expr>)` | only the listed ones restored |
+| an attribute of commands | `@include/localize`, `@trigger/localize` (`@trigger/inplace` includes it) | restored after |
+| a list per item, or per case | `@dolist/localize`, `@switch/localize`, `@force/localize` | restored after each run |
+| a hooked command | `@hook/localize` (`@hook/inplace` includes it) | restored after |
+| an `@function` | `@function/preserve`, or the `localize` restriction | discarded on return |
+
+Add `/clearregs` to start the callee with no registers at all. `listq([<pattern>])` lists the registers set in the current scope and `unsetq([<patterns>])` clears them; both are the way to see what reached you.
+
+Every built-in command also sets registers for what it runs: always `ARGS` (its whole argument text), `LS` and `LSAC` (how many arguments), `RS` and `EQUALS` when it was split on `=`, `SWITCHES` when it has switches, and `LSA1`, `LSA2`… per argument. They reach `@trigger`ed code and the rest of a queued list, and `listq()` shows them, so never use those names for your own registers. A command's own arguments do not see its set: `think %q<ls>` typed at the prompt gives nothing.
+
 ## Attribute names
 
 - **Trees use backticks**: `` CMD`SETRANK ``, `` DATA`GUILD`<key> ``. `*`/`?` stop at a backtick; `**` crosses it.
@@ -163,6 +183,28 @@ Who may do what is the game's job, not a staff list in an attribute. Roles are n
 - **Typos fail closed.** An unknown role makes `hasrole()` `0`; an unknown permission makes `permission()` `#-1 NO SUCH PERMISSION`, which is false. Check names with `valid(permission, <name>)` / `valid(rolename, <name>)`; `@role/player <obj>` shows where each permission came from.
 
 A package declares the roles, permissions and categories it needs in `package.yaml` (format 1.2: `categories:`, `permissions:`, `roles:`) instead of creating them from `AINSTALL`; `help roles packages`. On `/http` routes, `%q<viewer>` is the portal visitor's character (empty when anonymous), so a route asks `permission(%q<viewer>, …)`.
+
+
+## Message streams: feeds
+
+A system where people send lines to a group and read them back later (a radio, text messages, a staff log) is a **feed kind**, not member lists and history kept in attributes. See `help @feed` and `help feed functions`; the bundled `radio` package (`+radio`) is the worked example.
+
+| The feed owns | The system owns |
+|---|---|
+| Lines, with every name as it was when sent | Names, categories and descriptions of its streams |
+| Limits: `max_messages`, `max_bytes`, `max_length`, `max_age` | Moderator and admin lists, and their locks |
+| Members, gag, and each member's read position | Titles, personas, colours, restrictions, announcements |
+| Two locks: `read` (who may be joined) and `send` (who may speak) | How a line looks: `` FEED`<KIND>`FORMAT ``, listings, recall layout |
+| Delivery, and taps that hear every line | Its commands, and who may run them |
+
+- **A wizard defines the kind once**, owned by the system's object: `@feed/define radio=<object>` (needs `feed.admin`, which the wizard role has). From then on, code that controls the owner runs every feed of the kind. Players never type `@feed`; the system's commands do.
+- **Key feeds by a stable id, not the name players see.** Feeds are `<kind>/<key>` and have no rename. Keep `` F`<id>`NAME `` in the system and look ids up, so a rename is one attribute.
+- **Send as the player.** `@feed/send radio/<id>=%q<text>` from a `$`-command speaks as `%#` (`:` poses, `;` semiposes). `@feed/send/as radio/<id>=<persona>/<text>` stores the name the line appears under.
+- **`@feed`'s own messages go to the executor**, the system object, not the player. Report success yourself, and check state with functions (`feedmember()`, `feedinfo()`), not by reading what `@feed` said.
+- **One formatter for live lines and recall.** `` FEED`<KIND>`FORMAT `` gets `%0` message, `%1` recipient, `%2` speaker, `%3` style, `%4` key, `%5` persona, `%6` line id. Recall is `feedrecall(<feed>,<n>)` (line ids), then `feedmsg(<id>,text|name|display|style|speaker)` through the same `u()`.
+- **Two locks only.** An evaluation lock sees the feed key in `%0`. Everything else about who may do what (moderators, a restriction until a time) is the system's own attributes and `testlock()`.
+- **Taps hear every line**: `` @feed/tap radio=<obj>/TAP`LOG `` gets `%0` line id, `%1` feed, `%2` recipients, `%3` speaker, `%4` style, `%5` message, `%6` persona. Use one to copy lines into scenes or a staff log; don't hook delivery for it.
+- **Watch the size.** `@feed/list` shows lines and stored bytes per kind; `feedinfo(<kind>,stored)` and `feedinfo(<kind>/<key>,stored)` give them to code. Set `max_messages` or `max_age` on the kind so a busy stream cannot grow without end.
 
 ---
 
@@ -324,3 +366,6 @@ Prefer queued `@dolist` (with `/notify` + semaphore `@wait`) over `/inline` for 
 | Making a player-owned tool wizard "so it can work" | Control rule 8 — an object controls its owner already |
 | Evaluating stored player text to interpret `%r` | Store literal; formatting comes from the player's own `@desc`. `decompose()` to round-trip |
 | Flagging the event handler wizard "so it can act" | Seeded `#9` already is; only custom handlers need it |
+| `setq(ls,…)`, `setq(args,…)` as your own registers | Every command sets `%q<args>`, `%q<ls>` and `%q<lsac>` for its own run, and `%q<rs>`, `%q<equals>`, `%q<switches>`, `%q<lsa1>`… when it has them, so a command between your `setq()` and its use overwrites yours. Pick other names; see "Registers and their scope" |
+| A `;` in message text inside a command list (`@pemit %#=Use 30m; or 2h`) | A bare `;` ends the command and runs the rest as another (`Huh?`); inside `[…]` it makes the whole list do nothing, silently. Write `%;` |
+| Member lists and history in attributes for a radio or text system | A feed kind: `help @feed` |
