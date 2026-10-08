@@ -30,6 +30,8 @@ A wizard defines a kind once, owned by your system's object:
 
 That needs the `feed.admin` permission, which the wizard role has. After that, any code that controls the owner object runs every feed of the kind. Players never type `@feed`; your commands do.
 
+If the owner object is destroyed, the kind goes to the player who owned it, who could already run it. If that player is destroyed, their kinds go to the probate judge (`@config probate_judge`), the same as their channels. The feeds and their lines stay. A destroyed object also leaves every feed it was on, and its taps are removed. Its tie-in attributes were on the destroyed object, so until you `@feed/define` the kind on a new object, its lines go out in the default format.
+
 Use a stable key, such as a number, rather than the name players see. Keep the name in your own attribute, and renaming the frequency or conversation only changes that.
 
 ## When a key changes
@@ -195,10 +197,11 @@ The radio knows nothing about scenes, and the scene system knows nothing about t
 [RADIO] Logged into your scene: Ship.
 ```
 
-It needs two things from the radio, and changes neither package's code:
+It uses three hooks, and changes neither package's code:
 
 - **A tap.** `TAP`LOG` on its own object hears every radio line. For each listener who logs that frequency and is in a scene, it adds the line to the scene with `@scene/addpose`, drawn with the radio's own `FUN`LINE`, once per scene however many people in it are logging.
 - **A switch.** The radio looks for `` EXT`<switch> `` on itself before it says a switch does not exist. `radio-scene` attaches `` EXT`LOG `` and `` EXT`STOPLOG `` to the radio object, naming its own object, and the radio runs that object's `` INC`LOG `` with the registers it has already set. Uninstalling `radio-scene` takes the switches away again.
+- **Help.** It adds `+help radio log` to the radio's help and `+help scene radio` to the scene's, by attaching those topics to each package's help object. `+help radio` and `+help scene` list them as subtopics, and uninstalling `radio-scene` removes them.
 
 One trap when one package's code runs inside another's: a `{{ref}}` in a package's code is looked up on whatever object is running it. While the radio includes `` INC`LOG ``, the radio is the executor, and it holds none of `radio-scene`'s refs. So the included code names the radio `%!`, and its own object comes in a register (`%q<ext>`) that the radio sets before it includes it. `TAP`LOG` runs on `radio-scene`'s own object, so its refs work there.
 
