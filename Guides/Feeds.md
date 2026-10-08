@@ -30,7 +30,21 @@ A wizard defines a kind once, owned by your system's object:
 
 That needs the `feed.admin` permission, which the wizard role has. After that, any code that controls the owner object runs every feed of the kind. Players never type `@feed`; your commands do.
 
-Use a stable key, such as a number, rather than the name players see. Feeds have no rename. Keep the name in your own attribute, and a rename only changes that.
+Use a stable key, such as a number, rather than the name players see. Keep the name in your own attribute, and renaming the frequency or conversation only changes that.
+
+## When a key changes
+
+A feed's lines and members are stored under its key. If your code starts sending to a new key, say because it built the key from a name that changed, it gets a new, empty feed. The old key keeps its lines and members: they no longer reach anyone, but they still take space (`@feed/list` and `@storage` count them) until they age out under `max_age` or are deleted.
+
+Move them with `@feed/rename`:
+
+```sharp
+@feed/rename walkie/alpha=bravo
+```
+
+Every line keeps its id, so ids your code saved still work with `feedmsg()`, and each member keeps how far they have read. If a feed is already at the new key, the two are merged: lines go together in id order, someone on both keeps their place on the new key, and the new key keeps its own settings and locks.
+
+Anything of yours that saved the old key, such as a list of feeds or a tap that files lines by key, has to be changed by your code. To drop the old feed instead, use `@feed/delete walkie/alpha`.
 
 ## A small example
 

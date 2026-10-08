@@ -31,6 +31,26 @@ SharpMUSH is a functional MUSH server with its own idioms: handlers come pre-pop
 
 `%0`–`%9` args · `%#` enactor dbref · `%:` enactor objid · `%!` executor · `%L` enactor's location · `%q<name>` named register (`setq`/`setr`; case-insensitive) · `%i0`/`itext(0)` current iteration element · `%b` space · `%r` newline.
 
+## Registers and their scope
+
+A q-register lives for the whole queue entry: set it in one command and every later command in the list reads it, and so does code the list runs with `@include` or `@trigger` (which copies the registers it is given). That is what makes `think [setq(…)]` before the real work useful, and it is also how a callee overwrites a register its caller still needs.
+
+Fence a callee off when it sets registers of its own:
+
+| Running | Use | Registers it sets |
+|---|---|---|
+| a function attribute | `ulocal(obj/attr, …)` in place of `u()` | discarded on return |
+| an expression | `localize(<expr>)` | discarded |
+| an expression with a few set for it | `letq(<reg>, <value>, …, <expr>)` | only the listed ones restored |
+| an attribute of commands | `@include/localize`, `@trigger/localize` (`@trigger/inplace` includes it) | restored after |
+| a list per item, or per case | `@dolist/localize`, `@switch/localize`, `@force/localize` | restored after each run |
+| a hooked command | `@hook/localize` (`@hook/inplace` includes it) | restored after |
+| an `@function` | `@function/preserve`, or the `localize` restriction | discarded on return |
+
+Add `/clearregs` to start the callee with no registers at all. `listq([<pattern>])` lists the registers set in the current scope and `unsetq([<patterns>])` clears them; both are the way to see what reached you.
+
+Every built-in command also sets registers for what it runs: always `ARGS` (its whole argument text), `LS` and `LSAC` (how many arguments), `RS` and `EQUALS` when it was split on `=`, `SWITCHES` when it has switches, and `LSA1`, `LSA2`… per argument. They reach `@trigger`ed code and the rest of a queued list, and `listq()` shows them, so never use those names for your own registers. A command's own arguments do not see its set: `think %q<ls>` typed at the prompt gives nothing.
+
 ## Attribute names
 
 - **Trees use backticks**: `` CMD`SETRANK ``, `` DATA`GUILD`<key> ``. `*`/`?` stop at a backtick; `**` crosses it.
@@ -346,6 +366,6 @@ Prefer queued `@dolist` (with `/notify` + semaphore `@wait`) over `/inline` for 
 | Making a player-owned tool wizard "so it can work" | Control rule 8 — an object controls its owner already |
 | Evaluating stored player text to interpret `%r` | Store literal; formatting comes from the player's own `@desc`. `decompose()` to round-trip |
 | Flagging the event handler wizard "so it can act" | Seeded `#9` already is; only custom handlers need it |
-| `setq(ls,…)`, `setq(args,…)` as your own registers | Every command sets `%q<args>`, `%q<ls>` and `%q<lsac>` for its own run, and `%q<rs>`, `%q<equals>`, `%q<switches>`, `%q<lsa1>`… when it has them, so a command between your `setq()` and its use overwrites yours. Pick other names |
+| `setq(ls,…)`, `setq(args,…)` as your own registers | Every command sets `%q<args>`, `%q<ls>` and `%q<lsac>` for its own run, and `%q<rs>`, `%q<equals>`, `%q<switches>`, `%q<lsa1>`… when it has them, so a command between your `setq()` and its use overwrites yours. Pick other names; see "Registers and their scope" |
 | A `;` in message text inside a command list (`@pemit %#=Use 30m; or 2h`) | A bare `;` ends the command and runs the rest as another (`Huh?`); inside `[…]` it makes the whole list do nothing, silently. Write `%;` |
 | Member lists and history in attributes for a radio or text system | A feed kind: `help @feed` |
