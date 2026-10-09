@@ -179,6 +179,22 @@ Two things catch people out:
 
 The full guide, for staff as well as coders, is [Layout Themes](https://sharpmush.com/guides/layout-themes/) on the docs site.
 
+## Colour that means something: tone()
+
+`ansi()` paints a colour. `tone()` paints a meaning: one of the theme's colours, named for what it is for. Each reader sees it in their own theme, so an out-of-character remark is in everyone's `muted` colour, whatever their `muted` is.
+
+```sharp
+think tone(muted,<OOC> Back in five.)
+```
+
+```text
+<OOC> Back in five.
+```
+
+The colours are `foreground`, `primary`, `secondary`, `tertiary`, `muted`, `success`, `warning`, `error` and `info`. Like a layout, a tone is painted when the line is sent, not when it is written: a player who changes `@theme` sees their new colour on the next line, and the portal paints it from the reader's portal theme. A reader with no theme gets the game's `layout_theme` colour, or a standard one: grey for `muted`, cyan for `info`, green, yellow and red for `success`, `warning` and `error`.
+
+Use `tone()` where the colour says what kind of thing the text is, and `ansi()` where the colour is the point, such as a name colour a player chose. The scene package draws its pose types with it.
+
 ## Things to avoid
 
 - **Editing a layout afterwards.** The result is text, so `strlen()` and listen patterns work on it, but a layout cut or edited by another function (`left()`, `edit()`) is shown as the text it now is, in the portal too, and is no longer re-laid out for each reader. Build the layout last. Colour belongs inside it: in the cells, in a border piece (`"top":"[ansi(hb,=)]"`), or through `gradient()`.
