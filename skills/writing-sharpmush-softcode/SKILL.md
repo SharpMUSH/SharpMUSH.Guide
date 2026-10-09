@@ -255,7 +255,7 @@ Shape the data in one pass and let each stage consume the last, rather than re-a
 
 # Formatting output
 
-**Draw screens with the layout functions.** `help layout functions`. Describe the shape once; a telnet client gets box art at its own width, a client without UTF-8 gets ASCII, the web portal gets a card, a table and a definition list, a screen reader the content alone. Hand-padded `align()`/`center()`/`header()` output is one fixed text for all of them.
+**Draw screens with the layout functions.** `help layout functions`. Describe the shape once; a telnet client gets box art at its own width, a client without UTF-8 gets ASCII, the web portal gets a card, a table and a definition list, a screen reader the content alone. Hand-padded `align()`/`center()` output is one fixed text for all of them; a titled divider is `rule(<title>)`.
 
 | Want | Use |
 |---|---|
@@ -353,7 +353,7 @@ Prefer queued `@dolist` (with `/notify` + semaphore `@wait`) over `/inline` for 
 | Using an objid as an attribute-tree key | `:` is illegal in attribute names — key by something else, keep objids in values |
 | `@assert %#` to detect system events | `%#` is `#1` there; gate on event args |
 | `ibreak()add(…)` trailing function unevaluated | `ibreak()[add(…)]` |
-| `[[]x[]]` to print `[x]`; a bare `(` inside `header()`/`align()` | `%[x%]`; `%(` `%)`. Empty `[]` is a parse error, and a bare paren closes the call |
+| `[[]x[]]` to print `[x]`; a bare `(` inside `rule()`/`align()` | `%[x%]`; `%(` `%)`. Empty `[]` is a parse error, and a bare paren closes the call |
 | `and(…)`/`or(…)` as the default boolean | `cand()`/`cor()` stop at the first deciding argument; `and()`/`or()` evaluate everything |
 | `if(t(<x>),…)`, `@assert t(<x>)` | Both already test truthiness |
 | `##`/`#@` in `@dolist`/`iter` | Spliced textually *before* evaluation, so elements run as code and nesting resolves to the outermost loop. Use `%i0`/`inum(0)`. `##` is still correct in `lsearch` eval classes — no iteration context there |
