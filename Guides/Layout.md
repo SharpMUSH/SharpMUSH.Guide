@@ -7,7 +7,7 @@ SharpMUSH draws screens with layout functions instead of padding text by hand. Y
 - The web portal gets page structure: a bordered card, a real table that hides columns on a phone, a definition list.
 - A screen reader gets the content alone, in reading order, with no borders.
 
-`align()`, `center()` and `ljust()` still work, but what they draw is fixed text: one width for everyone, the same in the portal as in a terminal, and nothing for a screen reader to skip. Use the layout functions for anything a player reads as a screen. The `header()` and `footer()` many PennMUSH games define are `rule(<title>)` here.
+`align()`, `center()` and `ljust()` still work, but what they draw is fixed text: one width for everyone, the same in the portal as in a terminal, and nothing for a screen reader to skip. Use the layout functions for anything a player reads as a screen. The `header()` many PennMUSH games define is `rule(<title>)` here, and a footer is `rule()` with the footer text under it.
 
 See `help layout functions` on the game for every function and option, and `help layout borders` for border styles.
 
