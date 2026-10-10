@@ -9,7 +9,7 @@
     "skills"
   ],
   "url": "https://context7.com/sharpmush/sharpmush.guide",
-  "public_key": "pk_Sc3VcvDFH3HBcTOdqwWqA"
+  "public_key": "pk_Sc3VcvDFH3HBcTOdqwWqA",
   "excludeFiles": [],
   "rules": [
     "SharpMUSH uses a DSL also referred to as 'softcode' for in-game programming",
