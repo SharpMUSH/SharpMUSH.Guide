@@ -331,9 +331,9 @@ Prefer queued `@dolist` (with `/notify` + semaphore `@wait`) over `/inline` for 
 `@input/start[/wild|/regex] <prompt>=<exit pattern>,<exit attr>[,<pattern>,<attr>...][,<seconds>]` captures every line the player sends and runs the attribute of the first pattern it matches. Nothing typed runs as a command, which is the point: plain text with no risk of setting off other commands. The first pair is the exit and is required: its line ends the session, then its attribute runs; save the work there. Later pairs keep the session open; `*` takes any other line. A line nothing matches runs nothing and the player is told the exit. Patterns are exact (trimmed, any case) unless `/wild` or `/regex`, which capture into `%0`-`%9` like `$`-commands; exact and `*` pass the line in `%0`. `%q<reason>` is `exit`, `input` or `timeout`. Attributes are `attr` on the executor or `obj/attr`. Pick an exit nobody types as text (`.done`, not `done`) and name it in every prompt. At expiry the exit attribute runs with `timeout`; **never let the timeout be the way out**, it fires a fixed time after the start whether or not the player is still typing. The player's own `@input/cancel` escape runs nothing, so it saves nothing.
 
 ```sharp
-&CMD`NOTE Notepad=$+note:&DATA`DRAFT me; @input/start Type your note. Send .done on a line by itself to save it.=.done,FINISH`NOTE,*,INPUT`NOTE,1800
-&INPUT`NOTE Notepad=&DATA`DRAFT me=[v(DATA`DRAFT)][if(hasattr(me,DATA`DRAFT),%r)]%0; @input/prompt Next line, or .done to save:
-&FINISH`NOTE Notepad=&DATA`NOTE me=v(DATA`DRAFT); @pemit %#=[if(strmatch(%q<reason>,timeout),Time ran out%, so your note was saved as it was.,Note saved.)]
+&CMD`NOTE Notepad=$+note:&DATA`DRAFT me; @input/start Type your note. Send .done on a line by itself to save it.=.done,INPUT`NOTE`DONE,*,INPUT`NOTE`LINE,1800
+&INPUT`NOTE`LINE Notepad=&DATA`DRAFT me=[v(DATA`DRAFT)][if(hasattr(me,DATA`DRAFT),%r)]%0; @input/prompt Next line, or .done to save:
+&INPUT`NOTE`DONE Notepad=&DATA`NOTE me=v(DATA`DRAFT); @pemit %#=[if(strmatch(%q<reason>,timeout),Time ran out%, so your note was saved as it was.,Note saved.)]
 ```
 
 `%0` is data: storing or substituting it never evaluates brackets or runs `;`. `` &DATA`DRAFT me `` with no `=` clears the draft; `` &DATA`DRAFT me= `` leaves an empty attribute.
@@ -384,4 +384,4 @@ Prefer queued `@dolist` (with `/notify` + semaphore `@wait`) over `/inline` for 
 | `setq(ls,…)`, `setq(args,…)` as your own registers | Every command sets `%q<args>`, `%q<ls>` and `%q<lsac>` for its own run, and `%q<rs>`, `%q<equals>`, `%q<switches>`, `%q<lsa1>`… when it has them, so a command between your `setq()` and its use overwrites yours. Pick other names; see "Registers and their scope" |
 | A `;` in message text inside a command list (`@pemit %#=Use 30m; or 2h`) | A bare `;` ends the command and runs the rest as another (`Huh?`); inside `[…]` it makes the whole list do nothing, silently. Write `%;` |
 | Member lists and history in attributes for a radio or text system | A feed kind: `help @feed` |
-| `@input` session that only ends on its timeout, or one attribute branching on every line | A pattern and attribute per key (`q,QUIT,*,KEY`); the first pair is the required exit, and its attribute also runs at the timeout (`%q<reason>`) |
+| `@input` session that only ends on its timeout, or one attribute branching on every line | A pattern and attribute per key (`` q,INPUT`READER`QUIT,*,INPUT`READER`KEY ``); the first pair is the required exit, and its attribute also runs at the timeout (`%q<reason>`) |
