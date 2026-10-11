@@ -77,7 +77,7 @@ A position, count or lookup is a condition already. `match()`, `member()` and `w
 
 - `filter()` keeps only elements whose result is exactly `1`: with `&ITSELF me=%0`, `filter(me/ITSELF,1 2 abc 0)` gives `1`. Use `filterbool()` rather than wrapping the predicate.
 - `switch()`, `case()`, `@switch` and `@select` compare text: `switch(1,match(a b c,c),yes,no)` gives `no`, because `match()` gave `3`. Use `cond()` for a ladder of tests.
-- Arithmetic: `add(t(abc),t(0),t(5))` counts two true values, and without `t()` `add()` refuses `abc` with `#-1 ARGUMENTS MUST BE NUMBERS`.
+- Arithmetic: `add(t(abc),t(0),t(5))` counts two true values (one with `tiny_booleans` on, where text is false), and without `t()` `add()` refuses `abc` with `#-1 ARGUMENTS MUST BE NUMBERS`.
 - A flag that is stored or printed and must read `1` or `0`.
 
 `strlen()` is a different test, not a longer spelling: `0` is false, but `strlen(0)` is `1`. Use it only where the empty string must be the only false value.
@@ -90,7 +90,7 @@ PennMUSH works the same way: its `t()`, `if()`, `@break` and `@assert` all call 
 - **`&` vs `@set` on the value.** `@set obj/ATTR=<v>` always evaluates `<v>`. `&ATTR obj=<v>` stores verbatim when typed at a client — which is why `&` stores code — but evaluates when run from inside an attribute. Brace `{}` what must survive.
 - **Executor identity depends on how you were called.** A hardcode-invoked template — a `` RENDERMARKUP`<ELEMENT> `` for `rendermarkdowncustom()` — is evaluated with the **caller** as executor, so `me`/`%!` is not the object holding it and `` me/FUN`X `` silently resolves against the wrong object. Address its helpers by explicit dbref. A global `@function` is the opposite: it runs as its backing object. Check which you have before writing `me/`.
 - **Clearing: omit the `=`.** `&ATTR obj` always clears. `&ATTR obj=` clears only when `empty_attrs` is off; otherwise it stores empty. Cleanup written with `=` works on one game and silently leaves data on another.
-- **Truthiness.** Empty, `0` and anything starting `#-` are false; everything else is true, including `{}`, so an empty JSON object is *true*: test the list you built it from. A condition needs no `t()` (see `t()` inside a condition).
+- **Truthiness.** With `tiny_booleans` off, the default, empty, `0` and anything starting `#-` are false and everything else is true, including `{}`, so an empty JSON object is *true*: test the list you built it from. With it on, only a value that starts with a nonzero integer is true. A condition needs no `t()` (see `t()` inside a condition).
 - **Booleans: `cand()`/`cor()`, not `and()`/`or()`.** The `c` forms stop at the first argument that settles the answer and never evaluate the rest, so a costly test placed last runs only when it matters, and a later argument can rely on the earlier ones: `` cand(isdbref(%0), u(me/FUN`IS`MEMBER, %0)) `` never calls the predicate on a non-object. Same for the negations: `ncand()`/`ncor()` over `nand()`/`nor()`. `and()`/`or()` evaluate every argument; reach for them only when each argument has a side effect that must run.
 - **`@assert` is not if-then** — it *stops the list*. For a conditional effect, compute the value instead: `&WORN obj=if(strmatch(%q<w>,%q<old>),%q<new>,%q<w>)`.
 
