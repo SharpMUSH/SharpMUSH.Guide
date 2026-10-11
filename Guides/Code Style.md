@@ -40,7 +40,7 @@ Brackets are needed for a call that follows:
 
 Brackets do not stop code from evaluating: run from inside an attribute, `&OUT obj=add(1,2)` stores `3`. Use braces, `&OUT obj={add(1,2)}`, to store code as written.
 
-A function's name followed straight away by `(` at the start is a call even when it was meant as text: `@pemit %#=name(s) of the winners` prints `#-1 NO MATCH of the winners`. Write `\name(s)`.
+A function's name followed straight away by `(` at the start is a call even when it was meant as text: `@pemit %#=Last(minute) changes are fine` prints `minute changes are fine`. Write `\Last(minute)`.
 
 ## Boolean Logic
 Prefer cand() and cor() over and() and or(). The cancelling forms stop evaluating at the first argument that decides the result: cand() at the first false one, cor() at the first true one.
