@@ -12,9 +12,9 @@ The remote features below are an implementation contract under development. Auto
 
 ## Protocol and client compatibility
 
-The remote MCP plugin references `ModelContextProtocol.AspNetCore` 2.2.0. A package version does not establish the negotiated MCP protocol revision or compatibility with every client; those still require implementation validation. Use a client compatible with the server's implemented lifecycle and transport. This guide does not claim support for the latest MCP revision.
+The remote MCP plugin pins `ModelContextProtocol.AspNetCore` 2.2.0. That SDK supports MCP revisions `2024-11-05`, `2025-03-26`, `2025-06-18`, `2025-11-25` and `2026-07-28`. Clients can pin a supported revision. The `2026-07-28` path uses `server/discover` and per-request metadata; older revisions use `initialize`. Default SDK clients prefer `2026-07-28`, while the older HTTP fixtures explicitly use `2025-06-18`. These are distinct lifecycle paths. MCP lifecycle and cancellation remain SDK-owned, separate from the LSP dispatcher. Explicit revision-pinned validation is still pending; SDK support alone does not establish tested compatibility with every client.
 
-Remote LSP uses the custom `sharpmush-lsp-v1` WebSocket transport and the capabilities listed below. The bridge adapts ordinary stdio clients to that transport. These capabilities do not imply support for every feature in the latest LSP specification. Protocol revision and tested client compatibility remain pending final engineering evidence.
+Remote LSP targets a **3.17 capability subset**, advertising only implemented capabilities. Its custom `sharpmush-lsp-v1` WebSocket transport carries the requests listed below; the bridge adapts ordinary stdio clients to it. This does not claim full LSP 3.17 or latest-specification support. WebSocket and bridge validation is still in progress.
 
 ## Server setup
 
@@ -181,6 +181,8 @@ an unauthenticated parameterless constructor. No tool schema gains a principal o
 
 
 ## Validation boundary
+
+Current engineering evidence reports 42/42 MCP integration tests passing, including HTTP principal-filtered God/ordinary visibility and restriction refresh. Explicit revision-pinned tests, WebSocket/bridge validation and final implementation evidence are still pending.
 
 Source work and local build artifacts do not enable a deployed service. Synthetic identities, virtual HTTP/WebSocket transports and framing streams exercise automated behavior without a listening port, TLS key or new credential/world fixture. Real production boot, account/password changes, TLS/reverse-proxy behavior and a separate bridge process over real sockets remain unverified. Such fixture work and operator changes require separate authorization.
 
