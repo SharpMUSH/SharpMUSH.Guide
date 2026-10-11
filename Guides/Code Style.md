@@ -20,6 +20,28 @@ Use attributes to composite function functionality and keeping individual attrib
 Commands can be evaluated by commands, such as @trigger and @include.
 Use attributes to composite command functionality and keep individual attributes or logic smaller.
 
+## Brackets
+A function call evaluates on its own wherever it starts a piece of code, and needs `[]` only when it comes after something else. Each pair of brackets is one more step for the parser, paid again on every pass of a loop, so leave them out where they change nothing.
+
+A piece of code starts at:
+
+- the start of an attribute that u(), a lock or an event evaluates: `` &FUN`NEXT obj=add(%0,1) ``
+- the start of each function argument: `add(mul(2,3),1)`, `iter(%0,name(%i0))`
+- the start of each command argument: `think setq(total,0)`, `` @pemit %#=u(FUN`DISPLAY) ``, `@assert cand(%0,%1)=...`
+
+Text after a leading call is still evaluated, so `name(%#) says hello` needs no brackets either.
+
+Brackets are needed for a call that follows:
+
+- text: `think Total: [add(%0,%1)]`
+- a substitution: `%q<label>[add(%0,1)]`
+- another call: `ibreak()[add(%0,1)]`
+- text inside an argument: `iter(%0,%i0: [name(%i0)])`. Without them the call's own commas and closing paren split and close `iter()`.
+
+Brackets do not stop code from evaluating: run from inside an attribute, `&OUT obj=add(1,2)` stores `3`. Use braces, `&OUT obj={add(1,2)}`, to store code as written.
+
+A function's name followed straight away by `(` at the start is a call even when it was meant as text: `@pemit %#=name(s) of the winners` prints `#-1 NO MATCH of the winners`. Write `\name(s)`.
+
 ## Boolean Logic
 Prefer cand() and cor() over and() and or(). The cancelling forms stop evaluating at the first argument that decides the result: cand() at the first false one, cor() at the first true one.
 
