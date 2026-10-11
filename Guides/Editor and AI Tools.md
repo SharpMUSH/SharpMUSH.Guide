@@ -85,6 +85,8 @@ quotas terminate/reject the operation explicitly. Cancellation/control messages 
 Disconnect, idle/session deadline and host stop cancel work and release documents; uncooperative
 workers still retain their execution admission until termination. Responses have bounded result counts.
 
+`MaxConcurrentReaders` bounds fragmented messages with growing buffers. Quiet clients and small single-frame control messages bypass those reader slots. If synchronization diagnostics cannot be admitted under overload, the server explicitly closes the connection rather than retaining the newest text without analysis. After an explicit close, reconnect, initialize a fresh session and reopen documents; there is no automatic document resume.
+
 ## Stdio bridge and editor
 
 Build the bridge with the same .NET 11 SDK as the server:
