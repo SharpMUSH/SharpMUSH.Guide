@@ -26,7 +26,7 @@ A function call evaluates on its own wherever it starts a piece of code, and nee
 A piece of code starts at:
 
 - the start of an attribute that u(), a lock or an event evaluates: `` &FUN`NEXT obj=add(%0,1) ``
-- the start of each function argument: `add(mul(2,3),1)`, `iter(%0,name(%i0))`
+- the start of each argument a function evaluates: `add(mul(2,3),1)`, `iter(%0,name(%i0))`. A function such as `lit()` that takes an argument as text evaluates nothing in it.
 - the start of each command argument: `think setq(total,0)`, `` @pemit %#=u(FUN`DISPLAY) ``, `@assert cand(%0,%1)=...`
 
 Text after a leading call is still evaluated, so `name(%#) says hello` needs no brackets either.
@@ -36,7 +36,7 @@ Brackets are needed for a call that follows:
 - text: `think Total: [add(%0,%1)]`
 - a substitution: `%q<label>[add(%0,1)]`
 - another call: `ibreak()[add(%0,1)]`
-- text inside an argument: `iter(%0,%i0: [name(%i0)])`. Without them the call's own commas and closing paren split and close `iter()`.
+- text inside an argument: `iter(%0,%i0: [name(%i0)])`. Without them the call's own commas and closing paren split and close `iter()` (with `paren_groups` off, the default).
 
 Brackets do not stop code from evaluating: run from inside an attribute, `&OUT obj=add(1,2)` stores `3`. Use braces, `&OUT obj={add(1,2)}`, to store code as written.
 
