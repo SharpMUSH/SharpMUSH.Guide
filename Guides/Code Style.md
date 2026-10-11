@@ -51,6 +51,14 @@ Prefer cand() and cor() over and() and or(). The cancelling forms stop evaluatin
 
 and(), or(), nand() and nor() always evaluate every argument. Use them only when each argument has a side effect that must run regardless of the result, which is rare once side effects live in commands.
 
+A condition needs no t(). Every condition, from if() and cond() to @assert and @break, reads its value with the same test t() makes, so `if(t(match(%0,yes no)),...)` is `if(match(%0,yes no),...)` with one more call. A position, count or lookup is a condition already: match() and member() give 0 when nothing matches, and pos() gives #-1, which is false.
+
+Keep t() where the value is used as text rather than tested:
+
+- filter() keeps only results that are exactly 1. Use filterbool() instead of wrapping the predicate.
+- switch() and @switch compare text: `switch(1,match(a b c,c),yes,no)` gives `no`. Use cond() for a ladder of tests.
+- add() counts numbers: `add(t(%0),t(%1))` counts the true ones.
+
 ## Authorization
 Ask the game who may do what instead of keeping a list of staff. Gate a command on a permission with permission(%#, <permission>), and use roles to tag what someone is, such as Approved. See [Roles and Permissions](Roles%20and%20Permissions.md).
 
