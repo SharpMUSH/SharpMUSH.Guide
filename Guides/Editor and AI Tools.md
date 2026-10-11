@@ -10,6 +10,12 @@ SharpMUSH offers two analysis protocols. **LSP** (Language Server Protocol) supp
 
 The remote features below are an implementation contract under development. Automated transport, bridge, editor and packaging checks are still in progress. No production boot, credentials, TLS/reverse-proxy deployment or real-socket bridge verification is claimed.
 
+## Protocol and client compatibility
+
+The remote MCP plugin references `ModelContextProtocol.AspNetCore` 2.2.0. A package version does not establish the negotiated MCP protocol revision or compatibility with every client; those still require implementation validation. Use a client compatible with the server's implemented lifecycle and transport. This guide does not claim support for the latest MCP revision.
+
+Remote LSP uses the custom `sharpmush-lsp-v1` WebSocket transport and the capabilities listed below. The bridge adapts ordinary stdio clients to that transport. These capabilities do not imply support for every feature in the latest LSP specification. Protocol revision and tested client compatibility remain pending final engineering evidence.
+
 ## Server setup
 
 Publish `SharpMUSH.Server` normally. Shipped optional plugins are `plugins/mcp/` and `plugins/lsp/`.
