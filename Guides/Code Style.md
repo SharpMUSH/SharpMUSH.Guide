@@ -20,6 +20,28 @@ Use attributes to composite function functionality and keeping individual attrib
 Commands can be evaluated by commands, such as @trigger and @include.
 Use attributes to composite command functionality and keep individual attributes or logic smaller.
 
+## Brackets
+A function call evaluates on its own wherever it starts a piece of code, and needs `[]` only when it comes after something else. Each pair of brackets is one more step for the parser, paid again on every pass of a loop, so leave them out where they change nothing.
+
+A piece of code starts at:
+
+- the start of an attribute that u(), a lock or an event evaluates: `` &FUN`NEXT obj=add(%0,1) ``
+- the start of each argument a function evaluates: `add(mul(2,3),1)`, `iter(%0,name(%i0))`. A function such as `lit()` that takes an argument as text evaluates nothing in it.
+- the start of each command argument: `think setq(total,0)`, `` @pemit %#=u(FUN`DISPLAY) ``, `@assert cand(%0,%1)=...`
+
+Text after a leading call is still evaluated, so `name(%#) says hello` needs no brackets either.
+
+Brackets are needed for a call that follows:
+
+- text: `think Total: [add(%0,%1)]`
+- a substitution: `%q<label>[add(%0,1)]`
+- another call: `ibreak()[add(%0,1)]`
+- text inside an argument: `iter(%0,%i0: [name(%i0)])`. Without them the call's own commas and closing paren split and close `iter()` (with `paren_groups` off, the default).
+
+Brackets do not stop code from evaluating: run from inside an attribute, `&OUT obj=add(1,2)` stores `3`. Use braces, `&OUT obj={add(1,2)}`, to store code as written.
+
+A function's name followed straight away by `(` at the start is a call even when it was meant as text: `@pemit %#=Last(minute) changes are fine` prints `minute changes are fine`. Write `\Last(minute)`.
+
 ## Boolean Logic
 Prefer cand() and cor() over and() and or(). The cancelling forms stop evaluating at the first argument that decides the result: cand() at the first false one, cor() at the first true one.
 
@@ -28,6 +50,14 @@ Prefer cand() and cor() over and() and or(). The cancelling forms stop evaluatin
 - The negations follow the same rule: ncand() and ncor() over nand() and nor().
 
 and(), or(), nand() and nor() always evaluate every argument. Use them only when each argument has a side effect that must run regardless of the result, which is rare once side effects live in commands.
+
+A condition needs no t(). Every condition, from if() and cond() to @assert and @break, reads its value with the same test t() makes, so `if(t(match(%0,yes no)),...)` is `if(match(%0,yes no),...)` with one more call. A position, count or lookup is a condition already: match() and member() give 0 when nothing matches, and pos() gives #-1, which is false.
+
+Keep t() where the value is used as text rather than tested:
+
+- filter() keeps only results that are exactly 1. Use filterbool() instead of wrapping the predicate.
+- switch() and @switch compare text: `switch(1,match(a b c,c),yes,no)` gives `no`. Use cond() for a ladder of tests.
+- add() counts numbers: `add(t(%0),t(%1))` counts the true ones.
 
 ## Authorization
 Ask the game who may do what instead of keeping a list of staff. Gate a command on a permission with permission(%#, <permission>), and use roles to tag what someone is, such as Approved. See [Roles and Permissions](Roles%20and%20Permissions.md).

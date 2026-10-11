@@ -13,19 +13,86 @@ SharpMUSH is a functional MUSH server with its own idioms: handlers come pre-pop
 
 # Language
 
+## Brackets: only where a call follows something
+
+A call evaluates without `[]` wherever it starts a piece of code. Brackets are needed only for a call that comes after something else in the same piece. Each pair is an extra evaluation step, about 0.5 to 1 microsecond on the profile harness, and inside a loop body it is paid per element: `iter(lnum(20),[add(%i0,1)])` runs 10-20% slower than `iter(lnum(20),add(%i0,1))`. Write them where they change the result and nowhere else.
+
+**Where a piece of code starts** (no brackets needed):
+
+- An attribute body that `u()`, a lock or an event evaluates: `` &FUN`NEXT obj=add(%0,1) ``.
+- Each argument a function evaluates: `add(mul(2,3),1)`, `` if(%0,u(FUN`A),u(FUN`B)) ``, `iter(%0,name(%i0))`. `lit()`, `@@()` and the other functions that take an argument as text evaluate nothing in it, brackets or not: `lit(add(1,2))` gives `add(1,2)`.
+- Each command argument: after the command word (`think setq(total,0)`), after `=` (`` @pemit %#=u(FUN`DISPLAY) ``, `@assert cand(…)=…`, `` @dolist lattr(me/DATA`*)=… ``), and after each `,` of a command that splits on commas (`` @include me/INC`SETRANK=%q<who>,lcstr(%1) ``).
+
+Spaces after the command word, `=`, `(` and `,` are skipped. Anything else first (text, a `%`-substitution, `%b`, a space at the start of an attribute body, a `(`) makes the call plain text.
+
+Text after a leading call is still evaluated, so only a *later* call needs brackets: `name(%#) says hello`, `setq(total,0)%q<total>`, `` v(DATA`DRAFT)[if(…,%r)]%0 ``.
+
+**Where brackets are needed:**
+
+| A call after | Write |
+|---|---|
+| literal text | `think Total: [add(%0,%1)]` |
+| a substitution | `%q<label>[add(%0,1)]`, `%r[rule()]` |
+| another call | `ibreak()[add(%0,1)]`, `a()[b()]` |
+| text inside an argument | `iter(%0,%i0: [name(%i0)])` |
+| an opening brace inside an argument | `if(%0,{[u(FUN`A)]})`: braces stop calls being recognised, brackets inside them start it again |
+
+The argument case breaks more than the one call: the unevaluated call's own `,` and `)` split and close the outer call. `cat(a,b add(1,2))` gives `a b add(1 2)`, and `iter(1 2,%i0: add(%i0,1))` gives `: add(1 2: add( 2)`. That is with `paren_groups` off, the default; with it on, a bare `(` opens a group of text that keeps its `,` and `)` (`help compatibility config`).
+
+**Never needed:** round a whole attribute body (`[add(%0,1)]`), a nested call (`add([mul(2,3)],1)`), a whole argument (`` if(%0,[u(FUN`A)]) ``), a whole command argument (`think [setq(…)]`, `@pemit %#=[u(…)]`, `@assert [cand(…)]=`), a substitution (`[%0]`), or another pair (`[[add(1,2)]]`). Each gives the same result as without, except in an argument the function does not evaluate, where they stay as text: `lit([add(1,2)])` gives `[add(1,2)]`.
+
+**Brackets are not what makes code evaluate.** Run from inside an attribute, `&OUT obj=add(1,2)` stores `3`, brackets or not; brace the value (`&OUT obj={add(1,2)}`) to store it as written. Typed at a client, `&` stores its value as written either way.
+
+**Traps:**
+
+- A function's name with `(` straight after it, at the start, is a call even when you meant text: `@pemit %#=Last(minute) changes are fine` prints `minute changes are fine`. Write `\Last(minute)`, or put other text first. `add (1,2)`, with a space, is text.
+- A second call straight after a call is text: `add(1,2)mul(2,3)` gives `3mul(2,3)`. Write `add(1,2)[mul(2,3)]`.
+- An unknown name is text outside brackets (`Smile(s) all round` prints as typed) and an error inside them (`[smile(s)]` gives `#-1 FUNCTION (SMILE) NOT FOUND`).
+- `@@(<note>)` heads code bare; `[@@(<note>)]` is the same comment, but turns the call after it into a call after text.
+- **A literal `[ ] ( )` needs `%[` `%]` `%(` `%)`.** An unescaped `(` inside a function argument closes the call early — `` [header(Home ([wiki(%0,namespace)]))] `` prints `Home (main` and leaks the `)` after the rule. `\[` also escapes, but only where the backslash survives to evaluation: it does in a value the package manager or `@set` wrote, and inside a `[...]` region, but a client-typed `&ATTR obj=A\[B\]C` stores `A[B]C` and the bracket is then read as an evaluation bracket. `%[` survives every path — prefer it.
+- **`[[]x[]]` is not an escape for `[x]`.** An empty `[]` evaluates to nothing, as in PennMUSH, so `A[[]x[]]B` gives `AxB`. Escape them.
+
+These are PennMUSH's rules too: its parser looks for a function only at the start of an expression and inside brackets, and reports an unknown one only inside brackets. `BracketEvaluationGuideTests` in SharpMUSH checks these rules.
+
+## `t()` inside a condition: never
+
+Every condition turns its value into true or false with the same test `t()` uses, so `t()` inside one tests a value twice and gives the same answer, for the cost of one more call. That holds with `tiny_booleans` on as well, since both read the option. The conditions:
+
+- Functions: `if()`, `ifelse()`, `cond()`, `condall()`, `ncond()`, `ncondall()`, `not()`, `and()`, `or()`, `xor()`, `nand()`, `nor()`, `cand()`, `cor()`, `ncand()`, `ncor()`, and the predicate of `filterbool()`, `every()` and `some()`.
+- Commands: `@break`, `@assert`, `@if`/`@ifelse`.
+
+Write the test bare:
+
+| Not | But |
+|---|---|
+| `if(t(match(%0,yes no)),…)` | `if(match(%0,yes no),…)` |
+| `@assert t(member(%q<list>,%0))=…` | `@assert member(%q<list>,%0)=…` |
+| `not(t(get(%0/HIDDEN)))` | `not(get(%0/HIDDEN))` |
+| `cand(t(pos(=,%1)),…)` | `cand(pos(=,%1),…)` |
+| `if(t(%0),1,0)` | `t(%0)` |
+
+A position, count or lookup is a condition already. `match()`, `member()` and `words()` give `0` when there is nothing, and `pos()` and `num()` give `#-1`, which is false like every value starting `#-`.
+
+**Where `t()` changes the result,** the value is used as text, not tested:
+
+- `filter()` keeps only elements whose result is exactly `1`: with `&ITSELF me=%0`, `filter(me/ITSELF,1 2 abc 0)` gives `1`. Use `filterbool()` rather than wrapping the predicate.
+- `switch()`, `case()`, `@switch` and `@select` compare text: `switch(1,match(a b c,c),yes,no)` gives `no`, because `match()` gave `3`. Use `cond()` for a ladder of tests.
+- Arithmetic: `add(t(abc),t(0),t(5))` counts two true values (one with `tiny_booleans` on, where text is false), and without `t()` `add()` refuses `abc` with `#-1 ARGUMENTS MUST BE NUMBERS`.
+- A flag that is stored or printed and must read `1` or `0`.
+
+`strlen()` is a different test, not a longer spelling: `0` is false, but `strlen(0)` is `1`. Use it only where the empty string must be the only false value.
+
+PennMUSH works the same way: its `t()`, `if()`, `@break` and `@assert` all call `parse_boolean()`, and its `filter()` keeps only `1`. `TruthinessGuideTests` in SharpMUSH checks these rules.
+
 ## Evaluation
 
-- **A function after literal text needs `[brackets]`**: `think Kept: [filter(...)]`. A bare leading function evaluates alone: `&F obj=add(%0,1)` works, `&F obj=ibreak()add(%0,1)` does not — write `ibreak()[add(%0,1)]`.
-- **A literal `[ ] ( )` needs `%[` `%]` `%(` `%)`.** An unescaped `(` inside a function argument closes the call early — `` [header(Home ([wiki(%0,namespace)]))] `` prints `Home (main` and leaks the `)` after the rule. `\[` also escapes, but only where the backslash survives to evaluation: it does in a value the package manager or `@set` wrote, and inside a `[...]` region, but a client-typed `&ATTR obj=A\[B\]C` stores `A[B]C` and the bracket is then read as an evaluation bracket. `%[` survives every path — prefer it.
-- **`[[]x[]]` is not an escape for `[x]`.** An empty `[]` is not a function call, and SharpMUSH refuses it — sometimes as `#-1 PARSER FAILURE`, sometimes by swallowing the whole line, so `&ATTR me=A[[]x[]]B` can silently store nothing at all. (PennMUSH evaluates it away to a bare `x`, so the brackets are lost there too.) Escape them.
-- **Never bracket a bare %-substitution.** `%0`, `%q<name>`, `%#` as-is; `[%0]` does nothing.
 - **Player-typed input is single-command mode**: a typed `;` is literal. Command lists exist only inside stored attributes and command arguments. Brace `{}` a segment whose own `;` must not split the list.
 - **`&` vs `@set` on the value.** `@set obj/ATTR=<v>` always evaluates `<v>`. `&ATTR obj=<v>` stores verbatim when typed at a client — which is why `&` stores code — but evaluates when run from inside an attribute. Brace `{}` what must survive.
 - **Executor identity depends on how you were called.** A hardcode-invoked template — a `` RENDERMARKUP`<ELEMENT> `` for `rendermarkdowncustom()` — is evaluated with the **caller** as executor, so `me`/`%!` is not the object holding it and `` me/FUN`X `` silently resolves against the wrong object. Address its helpers by explicit dbref. A global `@function` is the opposite: it runs as its backing object. Check which you have before writing `me/`.
 - **Clearing: omit the `=`.** `&ATTR obj` always clears. `&ATTR obj=` clears only when `empty_attrs` is off; otherwise it stores empty. Cleanup written with `=` works on one game and silently leaves data on another.
-- **Truthiness.** `if()`, `@assert`, `@break`, `filterbool()` already test it, so `t()` inside them is always redundant: `if(t(%1),…)` is `if(%1,…)`. Empty and `0` are falsy, everything else truthy — including `{}`, so an empty JSON object is *true*; test the list you built it from. `filter()`/`filterq()` are the exception, keeping only exactly `1`.
+- **Truthiness.** With `tiny_booleans` off, the default, empty, `0` and anything starting `#-` are false and everything else is true, including `{}`, so an empty JSON object is *true*: test the list you built it from. With it on, only a value that starts with a nonzero integer is true. A condition needs no `t()` (see `t()` inside a condition).
 - **Booleans: `cand()`/`cor()`, not `and()`/`or()`.** The `c` forms stop at the first argument that settles the answer and never evaluate the rest, so a costly test placed last runs only when it matters, and a later argument can rely on the earlier ones: `` cand(isdbref(%0), u(me/FUN`IS`MEMBER, %0)) `` never calls the predicate on a non-object. Same for the negations: `ncand()`/`ncor()` over `nand()`/`nor()`. `and()`/`or()` evaluate every argument; reach for them only when each argument has a side effect that must run.
-- **`@assert` is not if-then** — it *stops the list*. For a conditional effect, compute the value instead: `&WORN obj=[if(strmatch(%q<w>,%q<old>),%q<new>,%q<w>)]`.
+- **`@assert` is not if-then** — it *stops the list*. For a conditional effect, compute the value instead: `&WORN obj=if(strmatch(%q<w>,%q<old>),%q<new>,%q<w>)`.
 
 ## Substitutions
 
@@ -110,7 +177,7 @@ Guard with `@assert`/`@break`, one specific error per check, real work last:
 ```sharp
 @permission/define guild.rank=Staff/Set guild ranks
 @role/allow <rank-manager role>=guild.rank
-&CMD`SETRANK obj=$+setrank *=*: @assert permission(%#,guild.rank)=@pemit %#=Permission denied.; @assert isdbref(setr(who, locate(%#, %0, PFym)))=@pemit %#=No such player: %0; @assert match(recruit member officer, lcstr(%1))=@pemit %#=Rank must be one of those.; @include me/INC`SETRANK=%q<who>,[lcstr(%1)]
+&CMD`SETRANK obj=$+setrank *=*: @assert permission(%#,guild.rank)=@pemit %#=Permission denied.; @assert isdbref(setr(who, locate(%#, %0, PFym)))=@pemit %#=No such player: %0; @assert match(recruit member officer, lcstr(%1))=@pemit %#=Rank must be one of those.; @include me/INC`SETRANK=%q<who>,lcstr(%1)
 ```
 
 - `@assert <bool>=<action>` stops the list unless true; `@break` is the inverse.
@@ -119,7 +186,7 @@ Guard with `@assert`/`@break`, one specific error per check, real work last:
 - **Parameterize a guard by register name** so one include serves twice in a command: `` &INC`IS`VALIDSLOT obj=@assert regmatch(setr(%1,ucstr(trim(%0))),…)=… `` called as `` …=%0,slot `` then `` …=[rest(%0,=)],new ``.
 - **Stage registers with `think`, not `@assert`.** `think <text>` is `@pemit/silent me=<text>`, so on a global object it reaches the object and not the player — the command for running `setq()` before the real work. `@assert [setq(…)]=@@` has nothing to assert and stops the list silently if it ever fails.
 - **`setq()` takes multiple pairs** — `setq(a,1,b,2)` — but evaluates *every* argument before setting *any* register, so a value that reads an earlier register needs its own `setq()`. Two `think`s, not one.
-- **Document in the code, not the file.** A manifest's or script's `#` comments do not survive install; `examine obj/ATTR` shows only the attribute. `@@ <text>;` heads a command list, `[@@(<text>)]` heads a function expression, and both evaluate to nothing. Two traps: a `;` inside an `@@` comment splits the command list and runs the tail as a command, and prefixing `[@@(…)]` turns a bare leading function into a function *after text*, so `add(…)` must become `[add(…)]`. (`@@()` does not evaluate its argument; `null()` does, and exists to swallow output.)
+- **Document in the code, not the file.** A manifest's or script's `#` comments do not survive install; `examine obj/ATTR` shows only the attribute. `@@ <text>;` heads a command list, `@@(<text>)` heads a function expression, and both evaluate to nothing. Two traps: a `;` inside an `@@` comment splits the command list and runs the tail as a command, and a comment heading a function expression is its leading call, so the call after it needs brackets: `@@(<text>)[add(…)]`. (`@@()` does not evaluate its argument; `null()` does, and exists to swallow output.)
 - **Flag each code attribute `cmdsyntax` or `funsyntax`** so `examine` and `@grep/PRINT` lay it out as the dialect it is — `cmdsyntax` for command lists, `funsyntax` for function expressions, `cmdsyntax` winning when both are set. Display only: they never change how an attribute runs. They do **not** propagate down a tree, so they go on every leaf; the `Inheritable` flag they carry is parent-*object* inheritance, a different axis.
 - **Match switches loosely, validate inside.** `$+desc/save *` then split on `=` beats `$+desc/save *=*`, which fails to match and gives a bare `Huh?`. Two patterns where one line matches both will both fire.
 - Regex commands need the attribute flagged `Regex`; read named captures with `r(<name>, args)`.
@@ -293,7 +360,7 @@ Shape the data in one pass and let each stage consume the last, rather than re-a
 ### Events — add an attribute to #9
 
 ```sharp
-&PLAYER`CONNECT #9=@cemit Admin=[name(%0)] connected (connection %1).
+&PLAYER`CONNECT #9=@cemit Admin=name(%0) connected (connection %1).
 ```
 
 - Names are `` <type>`<event> `` (dump, db, log, object, player, socket, http, signal, sql). Args are per-event — `help event <type>`. `` player`connect `` = (objid, count, descriptor); `` player`create `` = (objid, name, how, descriptor, email).
@@ -332,11 +399,11 @@ Prefer queued `@dolist` (with `/notify` + semaphore `@wait`) over `/inline` for 
 
 ```sharp
 &CMD`NOTE Notepad=$+note:&DATA`DRAFT me; @input/start Type your note. Send .done on a line by itself to save it.=.done,INPUT`NOTE`DONE,*,INPUT`NOTE`LINE,1800
-&INPUT`NOTE`LINE Notepad=&DATA`DRAFT me=[v(DATA`DRAFT)][if(hasattr(me,DATA`DRAFT),%r)]%0; @input/prompt Next line, or .done to save:
-&INPUT`NOTE`DONE Notepad=&DATA`NOTE me=v(DATA`DRAFT); @pemit %#=[if(strmatch(r(reason,args),timeout),Time ran out%, so your note was saved as it was.,Note saved.)]
+&INPUT`NOTE`LINE Notepad=&DATA`DRAFT me=v(DATA`DRAFT)[if(hasattr(me,DATA`DRAFT),%r)]%0; @input/prompt Next line, or .done to save:
+&INPUT`NOTE`DONE Notepad=&DATA`NOTE me=v(DATA`DRAFT); @pemit %#=if(strmatch(r(reason,args),timeout),Time ran out%, so your note was saved as it was.,Note saved.)
 ```
 
-`%0` is data: storing or substituting it never evaluates brackets or runs `;`. To evaluate typed text on purpose, evaluate it as the player, once, in the exit attribute: `` [objevals(%#,v(DATA`DRAFT))] ``. `objeval()` would only substitute the attribute and give the text back. Never `s()` typed text, and only do this from an object that controls its players (wizard-owned), since `objevals()` otherwise falls back to the object's own privileges. `` &DATA`DRAFT me `` with no `=` clears the draft; `` &DATA`DRAFT me= `` leaves an empty attribute.
+`%0` is data: storing or substituting it never evaluates brackets or runs `;`. To evaluate typed text on purpose, evaluate it as the player, once, in the exit attribute: `` objevals(%#,v(DATA`DRAFT)) ``. `objeval()` would only substitute the attribute and give the text back. Never `s()` typed text, and only do this from an object that controls its players (wizard-owned), since `objevals()` otherwise falls back to the object's own privileges. `` &DATA`DRAFT me `` with no `=` clears the draft; `` &DATA`DRAFT me= `` leaves an empty attribute.
 
 ---
 
@@ -354,9 +421,10 @@ Prefer queued `@dolist` (with `/notify` + semaphore `@wait`) over `/inline` for 
 | Using an objid as an attribute-tree key | `:` is illegal in attribute names — key by something else, keep objids in values |
 | `@assert %#` to detect system events | `%#` is `#1` there; gate on event args |
 | `ibreak()add(…)` trailing function unevaluated | `ibreak()[add(…)]` |
-| `[[]x[]]` to print `[x]`; a bare `(` inside `rule()`/`align()` | `%[x%]`; `%(` `%)`. Empty `[]` is a parse error, and a bare paren closes the call |
+| `[…]` round a whole attribute body, argument or command argument (`think [setq(…)]`, `if(%0,[u(…)])`) | Drop them: a call that starts the code evaluates on its own. Brackets are for a call after text, a substitution or another call |
+| `[[]x[]]` to print `[x]`; a bare `(` inside `rule()`/`align()` | `%[x%]`; `%(` `%)`. An empty `[]` evaluates to nothing, and a bare paren closes the call |
 | `and(…)`/`or(…)` as the default boolean | `cand()`/`cor()` stop at the first deciding argument; `and()`/`or()` evaluate everything |
-| `if(t(<x>),…)`, `@assert t(<x>)` | Both already test truthiness |
+| `if(t(<x>),…)`, `@assert t(<x>)`, `not(t(<x>))` | Drop the `t()`: every condition already tests truthiness the same way. Keep it only where the value is compared or counted (`switch(1,t(…),…)`, `add(t(…),…)`); use `filterbool()` over `filter()` with `t()` |
 | `##`/`#@` in `@dolist`/`iter` | Spliced textually *before* evaluation, so elements run as code and nesting resolves to the outermost loop. Use `%i0`/`inum(0)`. `##` is still correct in `lsearch` eval classes — no iteration context there |
 | `$`-command correct but never fires | Room or Master Room, not `HALTED`/`No_command`, passes `@lock/use` + `@lock/command` |
 | `@set obj=no_command` to protect a data attribute | Object flag — kills every `$`-command. Attribute flag needs the slash |
