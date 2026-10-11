@@ -27,4 +27,4 @@ Install it into Claude Code:
 
 ## Editor and AI analysis
 
-See [Editor and AI Tools](Guides/Editor%20and%20AI%20Tools.md) for local stdio versus optional authenticated remote LSP/MCP, operator settings, editor bridge usage and resource limits. Remote implementation validation is still in progress; this is not a production deployment claim.
+See [Editor and AI Tools](Guides/Editor%20and%20AI%20Tools.md) for local stdio versus optional authenticated remote LSP/MCP, operator settings, editor bridge usage and resource limits. Local validation is documented alongside the remaining real-network and IDE checks; this is not a production deployment claim.

@@ -8,13 +8,13 @@ SharpMUSH offers two analysis protocols. **LSP** (Language Server Protocol) supp
 | Remote LSP | Editor starts the stdio bridge; bridge connects over authenticated WSS | Refreshed metadata filtered for the authenticated character |
 | Remote MCP | MCP client connects over authenticated Streamable HTTP | Refreshed metadata filtered for the authenticated character |
 
-The remote features below are an implementation contract under development. Automated transport, bridge, editor and packaging checks are still in progress. No production boot, credentials, TLS/reverse-proxy deployment or real-socket bridge verification is claimed.
+The remote features below describe implementation commit `ba22e6d6caf4b3aa4cabb202e1fd740227afa2ea`, which is awaiting remote publication and review. Local automated checks pass as described below. No production boot, deployed credential exchange, TLS/reverse-proxy deployment or real-socket bridge verification is claimed.
 
 ## Protocol and client compatibility
 
-The remote MCP plugin pins `ModelContextProtocol.AspNetCore` 2.2.0. That SDK supports MCP revisions `2024-11-05`, `2025-03-26`, `2025-06-18`, `2025-11-25` and `2026-07-28`. Clients can pin a supported revision. The `2026-07-28` path uses `server/discover` and per-request metadata; older revisions use `initialize`. Default SDK clients prefer `2026-07-28`, while the older HTTP fixtures explicitly use `2025-06-18`. These are distinct lifecycle paths. MCP lifecycle and cancellation remain SDK-owned, separate from the LSP dispatcher. Explicit revision-pinned validation is still pending; SDK support alone does not establish tested compatibility with every client.
+The remote MCP plugin pins `ModelContextProtocol.AspNetCore` 2.2.0. That SDK supports MCP revisions `2024-11-05`, `2025-03-26`, `2025-06-18`, `2025-11-25` and `2026-07-28`. Clients can pin a supported revision. The `2026-07-28` path uses `server/discover` and per-request metadata; older revisions use `initialize`. Default SDK clients prefer `2026-07-28`, while the older HTTP fixtures explicitly use `2025-06-18`. These are distinct lifecycle paths. MCP lifecycle and cancellation remain SDK-owned, separate from the LSP dispatcher. Explicit lifecycle and tool-discovery tests pass for `2025-06-18`, `2025-11-25` and `2026-07-28`; the `2025-11-25` tests also verify notification HTTP 202 and invalid protocol-header HTTP 400. SDK support alone does not establish tested compatibility with every client. No SDK upgrade occurred for this work.
 
-Remote LSP targets a **3.17 capability subset**, advertising only implemented capabilities. Its custom `sharpmush-lsp-v1` WebSocket transport carries the requests listed below; the bridge adapts ordinary stdio clients to it. This does not claim full LSP 3.17 or latest-specification support. WebSocket and bridge validation is still in progress.
+Remote LSP targets a **3.17 capability subset**, advertising only implemented capabilities. Its custom `sharpmush-lsp-v1` WebSocket transport carries the requests listed below; the bridge adapts ordinary stdio clients to it. This does not claim full LSP 3.17 or latest-specification support. Virtual WebSocket and bridge framing/disconnect checks pass; native sockets and a real editor UI remain untested.
 
 ## Server setup
 
@@ -112,8 +112,8 @@ session and must initialize/reopen documents. The initial bridge requires .NET 1
 example; a Node/self-contained distribution is separate packaging work. Browser WebSocket clients
 cannot supply arbitrary Basic headers; no browser-ticket/query-token mechanism is provided.
 
-The VS Code desktop example is being updated with explicit offline/remote modes, all five
-extensions, SecretStorage-driven remote launch and a tsconfig; its validation is pending. The portal's static Monaco metadata
+The VS Code desktop example has explicit offline/remote modes, all five
+extensions, endpoint-bound SecretStorage-driven remote launch and a strict tsconfig. Packaging uses project-local tools; VSCE 4 requires Node 22 or newer. The portal's static Monaco metadata
 is not a remote LSP integration. No global editor/network setup is changed by these code changes.
 
 
@@ -184,7 +184,18 @@ an unauthenticated parameterless constructor. No tool schema gains a principal o
 
 ## Validation boundary
 
-Current engineering evidence reports 42/42 MCP integration tests passing, including HTTP principal-filtered God/ordinary visibility and restriction refresh. Explicit revision-pinned tests, WebSocket/bridge validation and final implementation evidence are still pending.
+Evidence recorded for implementation commit `ba22e6d6caf4b3aa4cabb202e1fd740227afa2ea`:
+
+| Local validation | Result |
+| --- | --- |
+| Standalone stdio host | 42 assertions passed across all five file modes |
+| Analyzer, local LSP handler and cooperative token regressions | 50, 21 and 3 tests passed |
+| Catalog and parser | 9 and 5 tests passed |
+| Fresh published private plugin payload | 42 transport tests passed, including dependency/type identity |
+| MCP | 46 tests passed, including principal isolation, catalog refresh, quotas, HTTP admission and revision-specific lifecycle |
+| Desktop example | Strict TypeScript compile, mocked launch/SecretStorage harness and actual VSIX packaging passed; its npm audit reported zero vulnerabilities |
+
+A whole-branch review identified six transport findings, addressed with focused regressions. The editor harness is mocked, and TestServer identity injection does not exercise a deployed Basic-auth exchange. VSIX dependency bundling and pre-existing license manifest/package reconciliation remain packaging follow-ups; packaging emits warnings. The world-backed integration suite was not run, so these results are not a full-suite or deployment-ready claim.
 
 Source work and local build artifacts do not enable a deployed service. Synthetic identities, virtual HTTP/WebSocket transports and framing streams exercise automated behavior without a listening port, TLS key or new credential/world fixture. Real production boot, account/password changes, TLS/reverse-proxy behavior and a separate bridge process over real sockets remain unverified. Such fixture work and operator changes require separate authorization.
 
