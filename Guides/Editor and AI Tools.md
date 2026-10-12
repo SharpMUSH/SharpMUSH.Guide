@@ -8,7 +8,7 @@ SharpMUSH offers two analysis protocols. **LSP** (Language Server Protocol) supp
 | Remote LSP | Editor starts the stdio bridge; bridge connects over authenticated WSS | Refreshed metadata filtered for the authenticated character |
 | Remote MCP | MCP client connects over authenticated Streamable HTTP | Refreshed metadata filtered for the authenticated character |
 
-The remote features below describe implementation commit `ba22e6d6caf4b3aa4cabb202e1fd740227afa2ea`, which is awaiting remote publication and review. Local automated checks pass as described below. No production boot, deployed credential exchange, TLS/reverse-proxy deployment or real-socket bridge verification is claimed.
+The remote features below describe implementation commit `ba22e6d6caf4b3aa4cabb202e1fd740227afa2ea`, proposed in [SharpMUSH draft PR #1800](https://github.com/SharpMUSH/SharpMUSH/pull/1800) and awaiting review. Local automated checks pass as described below. No production boot, deployed credential exchange, TLS/reverse-proxy deployment or real-socket bridge verification is claimed.
 
 ## Protocol and client compatibility
 
