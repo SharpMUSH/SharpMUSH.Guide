@@ -184,7 +184,7 @@ an unauthenticated parameterless constructor. No tool schema gains a principal o
 
 ## Validation boundary
 
-Latest focused evidence for implementation commit `bba6cffb79692e36eb77f0bdb5215a48d55ffa43`: analyzer 50/50, catalog 10/10, published transport 47/47 and MCP 46/46 pass. Hosted CI for this follow-up is pending.
+Latest focused evidence for implementation commit `bba6cffb79692e36eb77f0bdb5215a48d55ffa43`: analyzer 50/50, catalog 10/10, published transport 47/47 and MCP 46/46 pass. Hosted CI for this follow-up is terminal, with results below.
 
 The following broader local evidence was recorded for the preceding implementation commit `ba22e6d6caf4b3aa4cabb202e1fd740227afa2ea`:
 
@@ -197,9 +197,9 @@ The following broader local evidence was recorded for the preceding implementati
 | MCP | 46 tests passed, including principal isolation, catalog refresh, quotas, HTTP admission and revision-specific lifecycle |
 | Desktop example | Strict TypeScript compile, mocked launch/SecretStorage harness and actual VSIX packaging passed; its npm audit reported zero vulnerabilities |
 
-A whole-branch review identified six transport findings, addressed with focused regressions. The editor harness is mocked, and TestServer identity injection does not exercise a deployed Basic-auth exchange. VSIX dependency bundling and pre-existing license manifest/package reconciliation remain packaging follow-ups; packaging emits warnings. Hosted CI on that preceding commit also passed the [full .NET workflow](https://github.com/SharpMUSH/SharpMUSH/actions/runs/38188332861): build, formatting, help-integrity checks, 15,558 unit tests (49 skipped), 790 integration tests, 2,373 portal tests and 111 scene plugin tests. CodeQL, parity and dependency-submission checks passed. The existing hosted integration suite ran; no local real-world/TLS/network fixture was launched.
+A whole-branch review identified six transport findings, addressed with focused regressions. The editor harness is mocked, and TestServer identity injection does not exercise a deployed Basic-auth exchange. VSIX dependency bundling and pre-existing license manifest/package reconciliation remain packaging follow-ups; packaging emits warnings. Hosted CI on current commit `bba6cffb79692e36eb77f0bdb5215a48d55ffa43` passed the [full .NET workflow](https://github.com/SharpMUSH/SharpMUSH/actions/runs/38190264163): build, formatting, help-integrity checks, 15,558 unit tests (49 skipped), 796 integration tests, 2,373 portal tests and 111 scene plugin tests. CodeQL, parity and dependency-submission checks passed. The existing hosted integration suite ran; no local real-world/TLS/network fixture was launched.
 
-Automated review remains incomplete: [Claude Code Review](https://github.com/SharpMUSH/SharpMUSH/actions/runs/38188332819) failed after initialization without completed findings or an exposed underlying cause, and CodeRabbit's success status explicitly skipped draft review. These results do not establish production readiness or successful real TLS/proxy/native bridge authentication and IDE UI behavior.
+Automated review remains incomplete: [Claude Code Review](https://github.com/SharpMUSH/SharpMUSH/actions/runs/38190264092) failed after initialization without completed findings or an exposed underlying cause. No implementation jobs remain pending; overall checks are not fully green. These results do not establish production readiness or successful real TLS/proxy/native bridge authentication and IDE UI behavior.
 
 Source work and local build artifacts do not enable a deployed service. Synthetic identities, virtual HTTP/WebSocket transports and framing streams exercise automated behavior without a listening port, TLS key or new credential/world fixture. Real production boot, account/password changes, TLS/reverse-proxy behavior and a separate bridge process over real sockets remain unverified. Such fixture work and operator changes require separate authorization.
 
