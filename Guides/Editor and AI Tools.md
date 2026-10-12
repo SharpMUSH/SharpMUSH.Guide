@@ -8,7 +8,7 @@ SharpMUSH offers two analysis protocols. **LSP** (Language Server Protocol) supp
 | Remote LSP | Editor starts the stdio bridge; bridge connects over authenticated WSS | Refreshed metadata filtered for the authenticated character |
 | Remote MCP | MCP client connects over authenticated Streamable HTTP | Refreshed metadata filtered for the authenticated character |
 
-The remote features below describe implementation commit `ba22e6d6caf4b3aa4cabb202e1fd740227afa2ea`, proposed in [SharpMUSH draft PR #1800](https://github.com/SharpMUSH/SharpMUSH/pull/1800) and awaiting review. Local automated checks pass as described below. No production boot, deployed credential exchange, TLS/reverse-proxy deployment or real-socket bridge verification is claimed.
+The remote features below describe implementation commit `bba6cffb79692e36eb77f0bdb5215a48d55ffa43` in [SharpMUSH PR #1800](https://github.com/SharpMUSH/SharpMUSH/pull/1800). The owner marked the implementation PR ready for review; it has not been merged. Local automated checks pass as described below. No production boot, deployed credential exchange, TLS/reverse-proxy deployment or real-socket bridge verification is claimed.
 
 ## Protocol and client compatibility
 
@@ -47,7 +47,7 @@ retains its slot until actual termination; these are cooperative deadlines, not 
 
 MCP stays stateless Streamable HTTP at `/mcp`. Eight tools/arguments/result DTOs remain: validate,
 format, hover, complete, signature_help, document_symbols, open_document, close_document. Intelligence
-uses refreshed principal-filtered metadata. Owner-local functions are not exposed as ordinary global
+uses refreshed principal-filtered metadata. Filtered command hover preserves command locks, including for aliases. Owner-local functions are not exposed as ordinary global
 calls. Format retains its existing literal-whitespace limitation. The MCP limits section below describes byte, document, idle-time and HTTP caps. Enabled GET without an SSE stream returns authenticated 405.
 
 ## Remote LSP
@@ -85,7 +85,7 @@ quotas terminate/reject the operation explicitly. Cancellation/control messages 
 Disconnect, idle/session deadline and host stop cancel work and release documents; uncooperative
 workers still retain their execution admission until termination. Responses have bounded result counts.
 
-`MaxConcurrentReaders` bounds fragmented messages with growing buffers. Quiet clients and small single-frame control messages bypass those reader slots. If synchronization diagnostics cannot be admitted under overload, the server explicitly closes the connection rather than retaining the newest text without analysis. After an explicit close, reconnect, initialize a fresh session and reopen documents; there is no automatic document resume.
+`MaxConcurrentReaders` bounds fragmented messages with growing buffers. Quiet clients and small single-frame control messages bypass those reader slots. If synchronization diagnostics cannot be admitted under overload, the server explicitly closes the connection rather than retaining the newest text without analysis. After an explicit close, reconnect, initialize a fresh session and reopen documents; there is no automatic document resume. A per-analysis diagnostics deadline is different: it publishes a generation-checked warning with code `analysis-timeout`, preserves usable session/document state and retries on the next edit. A timeout alone does not require reopening the document.
 
 ## Stdio bridge and editor
 
@@ -184,7 +184,9 @@ an unauthenticated parameterless constructor. No tool schema gains a principal o
 
 ## Validation boundary
 
-Evidence recorded for implementation commit `ba22e6d6caf4b3aa4cabb202e1fd740227afa2ea`:
+Latest focused evidence for implementation commit `bba6cffb79692e36eb77f0bdb5215a48d55ffa43`: analyzer 50/50, catalog 10/10, published transport 47/47 and MCP 46/46 pass. Hosted CI for this follow-up is pending.
+
+The following broader local evidence was recorded for the preceding implementation commit `ba22e6d6caf4b3aa4cabb202e1fd740227afa2ea`:
 
 | Local validation | Result |
 | --- | --- |
@@ -195,7 +197,7 @@ Evidence recorded for implementation commit `ba22e6d6caf4b3aa4cabb202e1fd740227a
 | MCP | 46 tests passed, including principal isolation, catalog refresh, quotas, HTTP admission and revision-specific lifecycle |
 | Desktop example | Strict TypeScript compile, mocked launch/SecretStorage harness and actual VSIX packaging passed; its npm audit reported zero vulnerabilities |
 
-A whole-branch review identified six transport findings, addressed with focused regressions. The editor harness is mocked, and TestServer identity injection does not exercise a deployed Basic-auth exchange. VSIX dependency bundling and pre-existing license manifest/package reconciliation remain packaging follow-ups; packaging emits warnings. Hosted CI on the same implementation commit also passed the [full .NET workflow](https://github.com/SharpMUSH/SharpMUSH/actions/runs/38188332861): build, formatting, help-integrity checks, 15,558 unit tests (49 skipped), 790 integration tests, 2,373 portal tests and 111 scene plugin tests. CodeQL, parity and dependency-submission checks passed. The existing hosted integration suite ran; no local real-world/TLS/network fixture was launched.
+A whole-branch review identified six transport findings, addressed with focused regressions. The editor harness is mocked, and TestServer identity injection does not exercise a deployed Basic-auth exchange. VSIX dependency bundling and pre-existing license manifest/package reconciliation remain packaging follow-ups; packaging emits warnings. Hosted CI on that preceding commit also passed the [full .NET workflow](https://github.com/SharpMUSH/SharpMUSH/actions/runs/38188332861): build, formatting, help-integrity checks, 15,558 unit tests (49 skipped), 790 integration tests, 2,373 portal tests and 111 scene plugin tests. CodeQL, parity and dependency-submission checks passed. The existing hosted integration suite ran; no local real-world/TLS/network fixture was launched.
 
 Automated review remains incomplete: [Claude Code Review](https://github.com/SharpMUSH/SharpMUSH/actions/runs/38188332819) failed after initialization without completed findings or an exposed underlying cause, and CodeRabbit's success status explicitly skipped draft review. These results do not establish production readiness or successful real TLS/proxy/native bridge authentication and IDE UI behavior.
 
