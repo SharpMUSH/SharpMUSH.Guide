@@ -349,6 +349,13 @@ Shape the data in one pass and let each stage consume the last, rather than re-a
 - `rendermarkdown(<md>[, <width>])` renders CommonMark to ANSI; a width outside 10–1000 is an error, not clamped, so guard a computed width with `max(10,…)`. Inside a box, render at `max(10,sub(width(%#,78),4))` (two borders, two pads). `rendermarkdowncustom(<md>, <obj>[, <width>])` adds `` RENDERMARKUP`<ELEMENT> `` templates held on `<obj>`.
 - `align(<widths>, <col>…)` remains for fixed-width text that must stay text (a log line, a channel message): ANSI belongs in the spec (`28X(hc)`), not round the content.
 
+**Chat cards: a panel with command links.** A roll result with Apply, an invitation with Accept and Decline: `box()` and `fields()` draw the panel, `cmdlink(<text>, <command>, <hint>)` each button. The docs site's Chat Cards guide has a worked example.
+
+- `cmdlink()` needs a Wizard or `Send_OOB` on the object drawing the card (`@power <obj>=Send_OOB`), or every link is `#-1 PERMISSION DENIED`. A new thing is created `NO_COMMAND`: `@set <obj>=!no_command` before its `$`-commands match.
+- **A click is the reader typing the command.** `%#` is whoever clicked, and anyone can type the same line, so sending the card to one player limits nothing. Every command behind a link checks `%#`: `` @assert strmatch(get(me/DATA`%0`TO),%:)=… `` for "only the player it was sent to", `permission(%#, <perm>)` for staff.
+- The link names an id (`+invite/accept 3`), never a name or player text. Check it (`isint(%0)`) before it becomes part of an attribute name, look the rest up, and remove or mark the record after acting, so a second click finds nothing.
+- Make the link text the command itself: a client that cannot click shows the text, and its reader can type it.
+
 ---
 
 # Platform
@@ -411,6 +418,7 @@ Prefer queued `@dolist` (with `/notify` + semaphore `@wait`) over `/inline` for 
 
 | Mistake | Fix |
 |---|---|
+| A command behind a `cmdlink()` that trusts whoever clicked | The click is the reader typing it; check `%#` in the command |
 | `@create Event Handler` + `@config/set event_handler=…` | `#9` exists and is configured — just `` &EVENT`NAME #9=… `` |
 | `$GET /path:` for HTTP, `@pemit %#=` as body, telnet-port URL | `` GET`PATH `` on `#8`; `think` = body; URL under `/http/` |
 | `CMD.NAME`, `GUILD.56` dot-namespaces | Backtick trees: `` CMD`NAME ``, `` DATA`<guild>`NAME `` |
