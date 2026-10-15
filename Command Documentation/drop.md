@@ -10,6 +10,6 @@ In order to drop an object, you must pass it's Drop lock and your location's Dro
 - [empty]
 - [get]
 - [STICKY]
-- [DROP-TO]
+- [DROP-TOS]
 :::
 

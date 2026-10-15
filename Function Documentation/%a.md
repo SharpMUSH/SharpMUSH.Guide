@@ -1,4 +1,4 @@
-# APOSS()
+# aposs()
 # %a
 `aposs(<object>)`
 

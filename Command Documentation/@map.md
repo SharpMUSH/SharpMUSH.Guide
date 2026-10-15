@@ -14,6 +14,6 @@ This is a SharpMUSH command; PennMUSH spells the same idea with [@dolist] and [M
 - [@dolist]
 - [@include]
 - [MAP()]
-- [QUEUE CONTROL]
+- [@queue]
 :::
 

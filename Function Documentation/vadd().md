@@ -1,0 +1,15 @@
+# vadd()
+`vadd(<vector1>, <vector2>[, <delimiter>[, <osep>]])`
+
+  Returns the sum of two vectors. A vector is a list of numbers separated by spaces or `<delimiter>`.
+
+  > think vadd(1 2 3, 4 5 6)<br>
+  5 7 9<br>
+  > think vadd(0|0|0, 1|2|3, |)<br>
+  1|2|3
+
+
+::: seealso
+- [Vector functions]
+:::
+

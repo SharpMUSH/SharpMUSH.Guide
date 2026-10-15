@@ -1,0 +1,18 @@
+# zemit()
+# nszemit()
+`zemit(<zone>, <message>)`<br>
+`nszemit(<zone>, <message>)`
+
+  zemit() emits `<message>` in every room @chzone'd to `<zone>`, as per @zemit.
+
+  nszemit() works like @nszemit.
+
+
+::: seealso
+- [@zemit]
+- [ZONE()]
+- [ZFUN()]
+- [ZWHO()]
+- [zones]
+:::
+

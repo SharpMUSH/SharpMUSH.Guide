@@ -1,5 +1,5 @@
 # @forwardlist
-# forwardlist
+# FORWARDLIST
 `@forwardlist <object>[=<list of dbrefs>]`
 
 If `<object>` is set AUDIBLE, any sound it hears which passes its @filter and @lock/filter will be forwarded (prefixed with its @prefix) to each of the dbrefs given in its @forwardlist attribute, in much the same way as puppets forward sound to their owners.

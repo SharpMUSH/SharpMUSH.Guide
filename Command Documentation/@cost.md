@@ -27,7 +27,7 @@ Your exit has been created.
 ::: seealso
 - [give]
 - [MONEY]
-- [@pay]
+- [@payment]
 - [MONEY()]
 - [buy]
 :::

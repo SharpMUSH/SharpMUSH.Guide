@@ -2,7 +2,7 @@
 `@set <object>=[!]<flag> [[!]<flag> ...]`<br>
 `@<pre-defined attribute> <object>=<value>`<br>
 `@set <object>=<attribute>:<value>`<br>
-`@set <object>/<attribute>=[!]<attrflag>`
+`@set <object>/<attribute pattern>=[!]<attrflag> [[!]<attrflag> ...]`
 
 The first form sets (or unsets) flag(s) on `<object>`. See [flags].<br>
 Ex: `@set me=VISUAL`<br>
@@ -17,7 +17,19 @@ Ex: `@set Test Object=random:This is a random attribute.`<br>
 `&random Test Object=This is a random attribute.`<br>
 An important difference between these two forms is that @set will always evaluate the `<value>` before setting it on `<object>`, while the `&<attribute>` form will not evaluate when entered directly by a player in his client (and is usually what you want).
 
-The fourth form sets (or unsets) an attribute flag on the specified attribute. See [attribute flags].
+The third form keeps everything after the first colon as the value, commas included.
+
+The fourth form sets (or unsets) attribute flags on every attribute of `<object>`'s own that matches `<attribute pattern>` and that you can see. The pattern takes the wildcards `*` and `?`; `**` also matches inside attribute trees. A plain attribute name matches only that attribute. An attribute you may not change is reported and skipped, and the rest are still changed. See [attribute flags] and [wildcards].
+
+### Examples
+```sharp
+> @set me/CMD`*=no_inherit
+```
+Output: one "- no_inherit set." line for each attribute under CMD on you.
+```sharp
+> @set Test Object=list:red,green,blue
+```
+Output: Test Object/LIST - Set. The value is "red,green,blue".
 
 
 ::: seealso

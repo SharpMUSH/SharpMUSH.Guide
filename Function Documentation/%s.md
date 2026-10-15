@@ -1,4 +1,4 @@
-# SUBJ()
+# subj()
 # %s
 `subj(<object>)`
 

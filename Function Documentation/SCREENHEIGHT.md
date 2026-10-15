@@ -1,5 +1,5 @@
-# WIDTH()
-# HEIGHT()
+# width()
+# height()
 # SCREENWIDTH
 # SCREENHEIGHT
 `width(<player|descriptor>[, <default>])`<br>

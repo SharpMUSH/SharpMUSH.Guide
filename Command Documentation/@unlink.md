@@ -9,6 +9,6 @@ The second form removes the DROP-TO on the room.
 
 ::: seealso
 - [@link]
-- [DROP-TO]
+- [DROP-TOS]
 :::
 

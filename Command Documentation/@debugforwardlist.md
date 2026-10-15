@@ -1,5 +1,5 @@
 # @debugforwardlist
-# debugforwardlist
+# DEBUGFORWARDLIST
 `@debugforwardlist <object>[=<list of dbrefs>]`
 
 When `<object>` has an @debugforwardlist attribute set, any debug output it produces (either because it has the DEBUG flag set, or because an attribute with the DEBUG attribute flag is evaluated) is forwarded to all the dbrefs listed in the debugforwardlist.

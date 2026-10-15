@@ -1,0 +1,27 @@
+# elock()
+`elock(<object>[/<locktype>], <victim>)`
+
+  elock() returns 1 if the `<victim>` would pass the @lock/`<locktype>` on `<object>`, and 0 if it would fail. Any locktype can be given, including user-defined "user:" @locks. If no `<locktype>` is given, it defaults to the Basic lock.
+
+  You must be able to examine the lock, which means either that you must control `<object>`, it must be @set VISUAL, or the `<locktype>` lock must be @lset VISUAL.
+
+  Examples:
+```sharp
+@lock/drop Dancing Slippers=#0
+think elock(Dancing Slippers/drop, Princess)
+0
+```
+
+    > @lock/user:test map==*Fred|=*George<br>
+    > think elock(map/test,*Snape)<br>
+    0
+
+
+::: seealso
+- [LOCKING]
+- [locktypes]
+- [TESTLOCK()]
+- [LOCKFILTER()]
+- [@lset]
+:::
+

@@ -1,0 +1,27 @@
+# llocks()
+# locks()
+`llocks([<object>])`<br>
+`locks(<object>)`
+
+`llocks() and locks() both list @locks set on <object>, including user-defined locks (prefixed with USER:)`
+
+  If no object is given, llocks() returns all the predefined lock types available.
+
+  Example:
+```sharp
+@lock me==me
+@lock/use me==me
+@lock/user:itsme me==me
+th llocks(me)
+Basic USER:ITSME Use
+```
+
+
+::: seealso
+- [LOCK()]
+- [LSET()]
+- [LOCKFLAGS()]
+- [LLOCKFLAGS()]
+- [LOCKOWNER()]
+:::
+

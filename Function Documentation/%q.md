@@ -1,6 +1,6 @@
-# R()
+# r()
 # %q
-# R-FUNCTION
+# r-function
 `r(<register>[, <type>])`
 
   The r() function can be used to access registers. It can retrieve the value of q-registers set with setq() and related functions, as well as the 30 stack values (the first ten of which are also available via %0-%9), and also iter() and switch() context (also available through itext() and stext(), respectively). The registers() function can be used to obtain a list of available registers.
@@ -8,7 +8,7 @@
   `<type>` defaults to "qregisters", and must be one of:
 
     qregisters - registers set with setq(), setr() and similar functions<br>
-    args       - the stack, usually accessed via %0-%9. There are up to 30 stack registers, plus named stack registers from regexp $-commands<br>
+    args       - the stack, usually accessed via %0-%9. There are up to 30 stack registers, plus named arguments from regexp $-commands, mapsql() and uargs(), also available as %`\<name\>`. Names are case-insensitive.<br>
     iter       - itext() context from iter() or @dolist. Must be an int, or "L" for the outermost itext().<br>
     switch     - stext() context from switch() or @switch. Must be an int, or "L" for the outermost stext()<br>
     regexp     - regexp capture names from re*() regexp functions
