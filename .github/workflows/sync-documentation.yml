@@ -22,14 +22,15 @@ jobs:
 
     permissions:
       contents: write
+      pull-requests: write
+      # Re-arms the schedule; see "Keep the schedule alive".
+      actions: write
 
     steps:
       - name: Checkout current repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          # Needed so the keepalive step can read the age of the last commit.
-          fetch-depth: 0
 
       - name: Setup Git
         run: |
@@ -96,11 +97,16 @@ jobs:
             git diff --cached --stat
           fi
 
-      - name: Commit and push changes
-        # Guarded on main for the same reason as the keepalive step below:
-        # workflow_dispatch can run on any branch, actions/checkout takes the
-        # triggering ref, and this pushes HEAD to main.
+      - name: Open or update the sync pull request
+        # main only accepts changes through a pull request, so the sync commit
+        # goes to a branch of its own and a PR carries it. The branch is rebuilt
+        # from main on every run, so an open PR always shows the latest sync.
+        # Guarded on main: workflow_dispatch can run on any branch, and the
+        # sync must be computed against main.
         if: steps.check_changes.outputs.changes == 'true' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SYNC_BRANCH: docs-sync
         run: |
           git commit -m "docs: sync documentation from SharpMUSH/SharpMUSH" -m "Updated documentation:
           - Functions: ${{ steps.process_docs.outputs.function_count }} files
@@ -110,30 +116,29 @@ jobs:
           Source: SharpMUSH/SharpMUSH repository
           Date: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
 
-          git push origin HEAD:main
+          git push --force origin "HEAD:refs/heads/$SYNC_BRANCH"
 
-      - name: Keep the schedule alive
-        if: steps.check_changes.outputs.changes != 'true' && github.ref == 'refs/heads/main'
-        run: |
-          # GitHub disables a scheduled workflow after 60 days without repository
-          # activity, and a sync commit is the only activity this repo normally
-          # gets. Upstream helpfiles went untouched from 2026-03-04 to
-          # 2026-06-14 (102 days), which is exactly what silently disabled this
-          # workflow. Commit a dated marker before the repo reaches the cutoff.
-          last_commit_epoch=$(git log -1 --format=%ct)
-          age_days=$(( ( $(date -u +%s) - last_commit_epoch ) / 86400 ))
-          echo "Days since last commit: $age_days"
-
-          if [ "$age_days" -lt 45 ]; then
-            echo "Below the 45-day keepalive threshold; nothing to do."
-            exit 0
+          open_pr=$(gh pr list --head "$SYNC_BRANCH" --base main --state open --json url --jq '.[0].url')
+          if [ -n "$open_pr" ]; then
+            echo "Updated $open_pr"
+          else
+            gh pr create --head "$SYNC_BRANCH" --base main \
+              --title "docs: sync documentation from SharpMUSH/SharpMUSH" \
+              --body "Regenerated from the helpfiles in SharpMUSH/SharpMUSH by the daily sync. Each run replaces this branch with a fresh sync against main, so merging this PR takes the latest helpfiles."
           fi
 
-          date -u '+%Y-%m-%dT%H:%M:%SZ' > .github/last-sync-check
-          git add .github/last-sync-check
-          git commit -m "chore: keepalive commit so the docs sync schedule is not auto-disabled"
-          git push origin HEAD:main
-          echo "keepalive=true" >> $GITHUB_ENV
+      - name: Keep the schedule alive
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # GitHub disables a scheduled workflow after 60 days without repository
+          # activity. Upstream helpfiles went untouched from 2026-03-04 to
+          # 2026-06-14 (102 days), which is exactly what silently disabled this
+          # workflow once. main only takes pull requests, so instead of a
+          # keepalive commit this re-enables the workflow through the API,
+          # which resets the inactivity timer.
+          gh api -X PUT "repos/${{ github.repository }}/actions/workflows/sync-documentation.yml/enable"
 
       - name: Create summary
         if: always()
@@ -144,7 +149,7 @@ jobs:
             if [ "${{ job.status }}" != "success" ]; then
               echo "❌ **Sync failed** - see the failing step above"
             elif [ "${{ steps.check_changes.outputs.changes }}" == "true" ]; then
-              echo "✅ **Documentation successfully synced**"
+              echo "✅ **Documentation sync pull request opened or updated** (branch \`docs-sync\`)"
               echo ""
               echo "### Entries extracted:"
               echo "- **Functions**: ${{ steps.process_docs.outputs.function_count }} files"
@@ -152,10 +157,6 @@ jobs:
               echo "- **Configuration**: ${{ steps.process_docs.outputs.config_count }} files"
             elif [ "${{ steps.check_changes.outputs.changes }}" == "false" ]; then
               echo "✅ **No changes detected** - documentation is already up to date"
-              if [ "${keepalive:-}" == "true" ]; then
-                echo ""
-                echo "A keepalive commit was pushed to stop GitHub auto-disabling this schedule."
-              fi
             else
               echo "❌ **Sync failed before the change check** - see the failing step above"
             fi
