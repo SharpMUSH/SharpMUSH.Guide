@@ -18,6 +18,7 @@ See `help layout functions` on the game for every function and option, and `help
 | A titled frame round a screen | `box(<body>, <title>)` |
 | A divider, with or without a title | `rule(<title>)` on a line of its own inside the box |
 | `Label: value` lines, values lined up | `fields(<options>, <label>, <value>, ...)` |
+| The same, from lists you compute | `lfields(<options>, <labels>, <values>, <delimiter>)` |
 | A table from rows you write out | `datatable(<options>, <headings>, <row>, ...)` |
 | A table from lists you compute | `datacolumns(<options>, <column>, ...)` |
 | Names in as many columns as fit | `grid(<list>)` |
@@ -41,6 +42,17 @@ think box(fields(,Species,Human,Job,Dark Warrior,Online,1h)%r[rule(Quote)]%rHooo
 +====================< Quote >===================+
 | Hooooo?                                        |
 +================================================+
+```
+
+When the fields come from a list, such as one attribute per field, build the labels and the values as two lists and hand them to `lfields()`. Its delimiter splits both, so `Full Name` needs one other than a space:
+
+```sharp
+think lfields({{"width":40}},Full Name|Origin,Mannaz Byron|Super Robot Wars AG,|)
+```
+
+```text
+Full Name: Mannaz Byron
+Origin:    Super Robot Wars AG
 ```
 
 A footer is a `rule()` with no title and the line under it:
