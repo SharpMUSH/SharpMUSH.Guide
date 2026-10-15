@@ -1,4 +1,4 @@
-# POSS()
+# poss()
 # %p
 `poss(<object>)`
 

@@ -1,0 +1,12 @@
+# power()
+`power(<number>, <exponent>)`
+
+  Returns `<number>` to the power of `<exponent>`.
+
+  (For the functional version of @power, see [POWERS()].)
+
+
+::: seealso
+- [ROOT()]
+:::
+

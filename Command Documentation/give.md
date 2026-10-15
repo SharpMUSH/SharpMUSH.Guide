@@ -10,7 +10,7 @@ The last two forms of this command give an `<object>` from your inventory to `<r
 
 
 ::: seealso
-- [@pay]
+- [@payment]
 - [@cost]
 - [LOCKING]
 - [inventory]

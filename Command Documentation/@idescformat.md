@@ -1,7 +1,7 @@
 # @idescformat
 `@idescformat <object>[=<format>]`
 
-When set, this attribute is evaluated and displayed instead of `<object>`'s inside description when someone looks at `<object>` while inside it. The evaluated @idescribe is passed to @idescformat as %0; use v(idescribe) to get the unevaluated description.
+When set, this attribute is evaluated and displayed instead of `<object>`'s inside description when someone looks at `<object>` while inside it. The evaluated @idescribe is passed to @idescformat as %0, and by name as %`\<description\>` (see [named arguments]); use v(idescribe) to get the unevaluated description.
 
 If no @idescribe is set, @idescformat formats the evaluated @describe instead. When neither @idescribe nor @idescformat is set, the normal @describe and @descformat attributes are used.
 

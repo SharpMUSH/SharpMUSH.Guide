@@ -1,0 +1,11 @@
+# secs()
+`secs([<precision>])`
+
+  This function returns the number of elapsed seconds since midnight, January 1, 1970 UTC. UTC is the base time zone, formerly GMT. This is a good way of synchronizing things that must run at a certain time.
+
+
+::: seealso
+- [CONVSECS()]
+- [time()]
+:::
+

@@ -1,7 +1,9 @@
 # @cpattr
 # @mvattr
 `@cpattr[/noflagcopy] <obj>/<attr>=<obj1>[/<attr1>][, ..., <objN>[/<attrN>]]`<br>
-`@mvattr[/noflagcopy] <obj>/<attr>=<obj1>[/<attr1>][, ..., <objN>[/<attrN>]]`
+`@mvattr[/noflagcopy] <obj>/<attr>=<obj1>[/<attr1>][, ..., <objN>[/<attrN>]]`<br>
+`@cpattr[/noflagcopy] <obj>/<attribute pattern>=<obj1>[, ..., <objN>]`<br>
+`@mvattr[/noflagcopy] <obj>/<attribute pattern>=<obj1>[, ..., <objN>]`
 
 @cpattr copies the `<attr>` attribute from `<obj>` to `<obj1>` (and any other objects given). By default, the new attributes will have the same name as the original, but you can specify a different name to be used on each object if you wish.
 
@@ -18,6 +20,12 @@ would check the object "box" for an attribute named TEST and then copy it to the
 > @cpattr box/test=cube
 ```
 would copy the TEST attribute from "box" to TEST on "cube".
+
+When `<attr>` is a wildcard pattern (see [wildcards]), every attribute of `<obj>`'s own that matches it and that you can see is copied, each under its own name, so each destination names only an object. PennMUSH copies one attribute at a time; patterns are a SharpMUSH addition.
+```sharp
+> @cpattr box/CMD`**=cube
+```
+Output: one "Attribute <name> copied to 1 destination." line for each attribute under CMD on "box". Each copy on "cube" has the same name as its original.
 
 
 ::: seealso

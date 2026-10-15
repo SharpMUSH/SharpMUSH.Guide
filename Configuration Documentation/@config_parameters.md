@@ -22,4 +22,6 @@ Options which take a *<time>* will accept either a number of seconds or a combin
 
 *<dbref>* options can be given with or without the leading '#', so '1' and '#1' are the same.
 
+A few options map names to lists of words, such as `command_aliases`, `command_restrictions`, `sitelock_rules` and `mssp`. `@config <category>` and `@config <option>` show one entry per line, the name followed by its words.
+
 

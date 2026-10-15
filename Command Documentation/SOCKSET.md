@@ -1,4 +1,4 @@
-# @SOCKSET
+# @sockset
 # SOCKSET
 `SOCKSET [<option>=<value>]`<br>
 `@sockset [<descriptor>][=<option>, <value>[, ..., <optionN>, <valueN>]]`
@@ -11,6 +11,12 @@ With no args, SOCKSET shows the current value of the socket options. With an `<o
 
 Options:
 - colorstyle: See [COLORSTYLE]
+- hyperlinks, commandlinks: See [HYPERLINKS]
+- graphics: See [GRAPHICS]
+- animation: See [ANIMATION]
+- terminal: See [TERMINAL]
+- charset: See [CHARSET]
+- screenreader: on, off or auto. Same as SCREENREADER; see [screenreader client]
 - outputprefix: Same as OUTPUTPREFIX
 - outputsuffix: Same as OUTPUTSUFFIX
 - pueblo: Sets Pueblo-related options. If value has md5=...", then it will set the pueblo checksum. If empty, Pueblo mode is turned off.
@@ -19,7 +25,7 @@ Options:
 - height: Set your height(), same as SCREENHEIGHT
 - terminaltype: Your terminal type, used by terminfo()
 - prompt_newlines: Set whether a newline is shown after prompts from @prompt, same as PROMPT_NEWLINES
-- stripaccents: Strip accents for this connection. Like the NOACCENTS flag, but connection-specific. Set by default on connections which negotiate charset as [US-]ASCII
+- stripaccents: Send this connection plain ASCII, each other character replaced as [CHARSET] describes. Like the NOACCENTS flag, but connection-specific.
 - noquota: Input command quota is set to max every refresh. Can only be set by a logged-in Wizard.
 
 Note that changing 'telnet' or 'pueblo' may stop your client from parsing or displaying output correctly; only use if you know what you're doing!
@@ -30,6 +36,10 @@ Note that changing 'telnet' or 'pueblo' may stop your client from parsing or dis
 - [TERMINFO()]
 - [pueblo]
 - [COLORSTYLE]
+- [HYPERLINKS]
+- [GRAPHICS]
+- [TERMINAL]
+- [CHARSET]
 - [@prompt]
 :::
 

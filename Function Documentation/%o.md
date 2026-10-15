@@ -1,4 +1,4 @@
-# OBJ()
+# obj()
 # %o
 `obj(<object>)`
 
