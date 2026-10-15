@@ -100,7 +100,7 @@ PennMUSH works the same way: its `t()`, `if()`, `@break` and `@assert` all call 
 
 ## Registers and their scope
 
-A q-register lives for the whole queue entry: set it in one command and every later command in the list reads it, and so does code the list runs with `@include` or `@trigger` (which copies the registers it is given). That is what makes `think [setq(…)]` before the real work useful, and it is also how a callee overwrites a register its caller still needs.
+A q-register lives for the whole queue entry: set it in one command and every later command in the list reads it, and so does code the list runs with `@include` or `@trigger/inline` (a queued `@trigger` gets a copy). That is what makes `think [setq(…)]` before the real work useful, and it is also how a callee overwrites a register its caller still needs.
 
 Fence a callee off when it sets registers of its own:
 
@@ -182,6 +182,7 @@ Guard with `@assert`/`@break`, one specific error per check, real work last:
 
 - `@assert <bool>=<action>` stops the list unless true; `@break` is the inverse.
 - Factor steps into `` INC`<NAME> `` and pull them in with `@include` — runs inline, its `@break` stops the caller; `/nobreak`, `/localize`, `/clearregs` fence that off.
+- **Run another object's code as that object: `@trigger/inline/nobreak/args`, not `@include`.** An `@include`d attribute runs as the caller, so `%!`, `v()` and a package's `{{ref}}`s read the caller and a package API breaks when another object includes it. `@trigger/inline` runs it as its holder and, without `/localize`, hands back the registers it sets (`%q<result>`); `/nobreak` keeps its `@assert` from stopping the caller.
 - `` @include/chain me/INC`A me/INC`B=%0 `` — same args to every link, shared registers, first failure short-circuits. Use plain sequential `@include` when links need *different* args.
 - **Parameterize a guard by register name** so one include serves twice in a command: `` &INC`IS`VALIDSLOT obj=@assert regmatch(setr(%1,ucstr(trim(%0))),…)=… `` called as `` …=%0,slot `` then `` …=[rest(%0,=)],new ``.
 - **Stage registers with `think`, not `@assert`.** `think <text>` is `@pemit/silent me=<text>`, so on a global object it reaches the object and not the player — the command for running `setq()` before the real work. `@assert [setq(…)]=@@` has nothing to assert and stops the list silently if it ever fails.
@@ -243,6 +244,7 @@ Who may do what is the game's job, not a staff list in an attribute. Roles are n
 - **Status is a role in a category**: `@role/category/create Status=<description>`, `@role/create approved=Status/Approved`. The category must exist first; role and permission categories are separate lists (`Staff` starts in both).
 - **Tagging from softcode**: a wizard global runs `@role/assign %q<who>=approved`. It acts as the **executor**, which needs `roles.admin` and must rank above the role and the target, so a wizard target is refused. The command reports to the global; confirm with `@assert hasrole(%q<who>,approved)=@pemit %#=<failure>`. Run the checks on `%#`: `permission(me, …)` asks about the global, a wizard holding nearly every built-in permission and no custom one.
 - **Character, not account.** `@role/assign/account` and `@permission/allow/account` reach every character on the account: right for who the person is, wrong for approval or a guild.
+- **Which account a character is on**: `account(<player>)` is the account's id (empty when on none), `account(<player>, name)` its username (needs `players.view`), and `accountchars(<player>)` every character on it. A character may ask about its own account. The `` player`link `` and `` player`unlink `` events fire when a link changes, however it was made.
 - **Find holders with a lock search**: `lsearch(all, type, player, elock, role^approved)`, from a privileged object (a mortal sees only what they can examine). Needs SharpMUSH#1619: before it, `elock` tested the searcher instead of each candidate, so lock searches (attribute keys included) matched everything or nothing.
 - **Whole commands**: `@lock/command <obj>=perm^<perm>` gates every `$`-command on the object; built-ins take `@command/restrict <cmd>=PERM^<perm>` and `@function/restrict <fn>=<perm>`.
 - **Role priority is not control.** Ranking higher gives no power over anyone; control is ownership, zones, locks, `control.all`/`protect.*`. Priority only orders who may manage roles, so never build an "outranks" check for game actions on it.
