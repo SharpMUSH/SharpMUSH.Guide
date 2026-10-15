@@ -19,10 +19,12 @@ See `help layout functions` on the game for every function and option, and `help
 | A divider, with or without a title | `rule(<title>)` on a line of its own inside the box |
 | `Label: value` lines, values lined up | `fields(<options>, <label>, <value>, ...)` |
 | A table from rows you write out | `datatable(<options>, <headings>, <row>, ...)` |
+| A table with a row per record | `ldatatable(<options>, <headings>, <rows>, <delimiter>)` |
 | A table from lists you compute | `datacolumns(<options>, <column>, ...)` |
 | Names in as many columns as fit | `grid(<list>)` |
 | A bulleted or numbered list | `bullets(<list>)` |
 | Items under their parents | `tree(<options>, node(...))` |
+| A row, tree or node from a list | `lflex()`, `ltree()`, `lnode()` |
 | Things side by side | `flex(<options>, item(...), ...)` |
 | A bar for HP, progress, a vote | `gauge(<value>, <max>, <label>)` |
 | A coloured status tag | `badge(<text>, ok)` |
@@ -114,6 +116,14 @@ A table built from a list is a column at a time: `datacolumns()` takes each colu
 ```sharp
 &FUN`WHO obj=box(datacolumns({{"nowrap":"1|2|3","priority":"1|1|2"}},Name|[iter(mwho(),name(%i0),,|)],>Idle|[iter(mwho(),timestring(idle(%i0)),,|)],>Connected|[iter(mwho(),timestring(conn(%i0)),,|)]),Who's Online)
 ```
+
+When each record is a row, `ldatatable()` takes the rows as one list, so one `iter()` makes the whole table. The cells are still split by `|`; the rows by the delimiter after the list:
+
+```sharp
+&FUN`WHO obj=box(ldatatable({{"nowrap":"1|2|3","priority":"1|1|2"}},Name|>Idle|>Connected,iter(mwho(),[name(%i0)]|[timestring(idle(%i0))]|[timestring(conn(%i0))],,^),^),Who's Online)
+```
+
+The same goes for the other layouts that take any number of items: `lflex()`, `ltree()` and `lnode()` take them as a list. A list of layouts needs a delimiter their art never holds; `|` and spaces appear in borders and tree guides, so use `^`.
 
 **Player text needs another delimiter.** A title or a description can hold a `|`, which would split it into two cells. Join those columns with `%r` and make a newline the delimiter, built with `json()`:
 
