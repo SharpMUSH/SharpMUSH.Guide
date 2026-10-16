@@ -1,0 +1,63 @@
+format: 1
+package: bbs-lite
+version: 0.10.0-beta
+authors: [SharpMUSH]
+description: "Tiny bulletin board demonstrating dependencies, typed configure params, cross-package refs, and locks."
+license: MIT
+keywords: [bbs, boards, example]
+requires_server: ">=0.1"
+
+depends:
+  - package: who-where
+    version: ">=1.0"
+    source:
+      repo: https://github.com/SharpMUSH/SharpMUSH-Packages
+      path: who-where/
+      branch: main
+
+conflicts:
+  - legacy-bbs
+
+configure:
+  bbs_storage:
+    label: "Object that stores board posts (any thing the game owns)"
+    type: dbref
+  board_name:
+    label: "Display name of the board"
+    type: string
+    default: "Community Board"
+
+objects:
+  - ref: bbsl_gobjects:
+  - ref: bbsl_global
+    type: thing
+    name: BBS-Lite Global Object
+    attributes:
+      # Each post is a DATA`POST`<n> branch with TEXT, AUTHOR (objid) and TIME leaves. <n> comes
+      # from DATA`NEXT, so two posts in the same second never share a number.
+      CMD`BBPOST: |-
+        $+bbpost *:think setq(post_num,inc(default({{?bbs_storage}}/DATA`NEXT,0))); &DATA`NEXT {{?bbs_storage}}=%q<post_num>; &DATA`POST`%q<post_num>`TEXT {{?bbs_storage}}=%0; &DATA`POST`%q<post_num>`AUTHOR {{?bbs_storage}}=%:; &DATA`POST`%q<post_num>`TIME {{?bbs_storage}}=secs(); @pemit %#=notice(BBS,Posted to {{?board_name}} as post %q<post_num>.,ok)
+      CMD`BBREAD: |-
+        $+bbread:@pemit %#=u({{bbsl_functions}}/FUN`DISPLAY`LIST,{{?bbs_storage}})
+
+  - ref: bbsl_functions
+    type: thing
+    name: BBS-Lite Function Object
+    parent: "{{who-where/ww_functions}}"
+    flags: [no_command]
+    locks:
+      use: "{{bbsl_global}}"
+    attributes:
+      # %0 is the storage object. Posts are listed by number, oldest first.
+      FUN`DISPLAY`LIST:
+        value: |-
+          firstof(iter(sort(iter(lattr(%0/DATA`POST`*),last(%i0,`)),n),u(%!/FUN`DISPLAY`POST,%0,%i0),,%r),notice(BBS,No posts on {{?board_name}} yet.))
+        flags: [no_clone]
+      # %0 is the storage object, %1 the post number.
+      FUN`DISPLAY`POST: |-
+        %1. [name(get(%0/DATA`POST`%1`AUTHOR))] ([convsecs(get(%0/DATA`POST`%1`TIME))]): [get(%0/DATA`POST`%1`TEXT)]
+
+  - ref: bbsl_lounge
+    type: room
+    name: BBS Lounge
+    parent: "{{$room_zero}}"
