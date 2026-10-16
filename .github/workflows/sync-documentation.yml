@@ -14,7 +14,10 @@ on:
       - '.github/scripts/**'
 
 env:
-  UPSTREAM_DOCS: temp-sharpmush/SharpMUSH.Documentation/Helpfiles/SharpMUSH
+  # SharpMUSH's help-export branch: the general help as the game serves it, plugin help
+  # and the plugin listings on the index topics included, with a manifest of every article.
+  # SharpMUSH's help-export workflow publishes it from main.
+  UPSTREAM_DOCS: temp-sharpmush
 
 jobs:
   sync-docs:
@@ -37,38 +40,33 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
-      - name: Clone SharpMUSH repository
-        run: |
-          # Only the helpfiles are needed; the rest of the tree is a large
-          # checkout we would immediately throw away.
-          git clone --depth 1 --filter=blob:none --sparse \
-            https://github.com/SharpMUSH/SharpMUSH.git temp-sharpmush
-          git -C temp-sharpmush sparse-checkout set SharpMUSH.Documentation/Helpfiles
+      - name: Fetch the SharpMUSH help export
+        run: git clone --depth 1 --branch help-export https://github.com/SharpMUSH/SharpMUSH.git temp-sharpmush
 
-      - name: Verify upstream documentation layout
+      - name: Verify the help export layout
         run: |
           # Fail loudly rather than "succeeding" with an empty sync: a silent
           # no-op here is indistinguishable from "upstream had no changes", and
-          # would hide an upstream path rename for months.
-          if [ ! -d "$UPSTREAM_DOCS" ]; then
-            echo "::error::Upstream documentation folder not found at $UPSTREAM_DOCS. Did SharpMUSH/SharpMUSH move its helpfiles?"
+          # would hide an upstream layout change for months.
+          if [ ! -f "$UPSTREAM_DOCS/articles.json" ] || [ ! -d "$UPSTREAM_DOCS/help" ]; then
+            echo "::error::$UPSTREAM_DOCS is not a help export (no articles.json or help/). Did SharpMUSH change its help-export branch?"
             exit 1
           fi
 
           missing=0
           for helpfile in sharpfunc.md sharpcmd.md sharpconf.md; do
-            if [ ! -f "$UPSTREAM_DOCS/$helpfile" ]; then
-              echo "::error::Expected helpfile '$helpfile' is missing from $UPSTREAM_DOCS"
+            if [ ! -f "$UPSTREAM_DOCS/help/$helpfile" ]; then
+              echo "::error::Expected helpfile '$helpfile' is missing from $UPSTREAM_DOCS/help"
               missing=1
             fi
           done
           if [ "$missing" -ne 0 ]; then
             echo "Files actually present:"
-            ls -la "$UPSTREAM_DOCS"
+            ls -la "$UPSTREAM_DOCS/help"
             exit 1
           fi
 
-          echo "Upstream documentation layout verified."
+          echo "Help export layout verified."
 
       - name: Make scripts executable
         run: chmod +x .github/scripts/*.sh
@@ -113,7 +111,7 @@ jobs:
           - Commands: ${{ steps.process_docs.outputs.command_count }} files
           - Configuration: ${{ steps.process_docs.outputs.config_count }} files
 
-          Source: SharpMUSH/SharpMUSH repository
+          Source: SharpMUSH/SharpMUSH help-export branch
           Date: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
 
           git push --force origin "HEAD:refs/heads/$SYNC_BRANCH"
@@ -124,7 +122,7 @@ jobs:
           else
             gh pr create --head "$SYNC_BRANCH" --base main \
               --title "docs: sync documentation from SharpMUSH/SharpMUSH" \
-              --body "Regenerated from the helpfiles in SharpMUSH/SharpMUSH by the daily sync. Each run replaces this branch with a fresh sync against main, so merging this PR takes the latest helpfiles."
+              --body "Regenerated from the help export in SharpMUSH/SharpMUSH (its help-export branch) by the daily sync. Each run replaces this branch with a fresh sync against main, so merging this PR takes the latest helpfiles."
           fi
 
       - name: Keep the schedule alive

@@ -12,29 +12,29 @@ echo "================================================="
 echo "🧹 Cleaning up previous test artifacts..."
 rm -rf temp-sharpmush temp-processed test-output
 
-# Test 1: Clone the source repository
+# Test 1: Fetch the help export
 echo ""
-echo "📥 Step 1: Testing repository cloning..."
-if git clone https://github.com/SharpMUSH/SharpMUSH.git temp-sharpmush; then
-    echo "✅ Repository cloned successfully"
+echo "📥 Step 1: Testing the help export fetch..."
+if git clone --depth 1 --branch help-export https://github.com/SharpMUSH/SharpMUSH.git temp-sharpmush; then
+    echo "✅ Help export fetched successfully"
 else
-    echo "❌ Failed to clone repository"
+    echo "❌ Failed to fetch the help export"
     exit 1
 fi
 
-# Test 2: Check if documentation exists
+# Test 2: Check that it is a help export
 echo ""
-echo "📂 Step 2: Checking documentation existence..."
-if [ -d "temp-sharpmush/SharpMUSH.Documentation/Helpfiles/SharpMUSH" ]; then
-    echo "✅ Documentation folder found"
-    SOURCE_DIR="temp-sharpmush/SharpMUSH.Documentation/Helpfiles/SharpMUSH"
+echo "📂 Step 2: Checking the help export..."
+if [ -f "temp-sharpmush/articles.json" ] && [ -d "temp-sharpmush/help" ]; then
+    echo "✅ Help export found"
+    SOURCE_DIR="temp-sharpmush"
     
     # List available files
     echo "📄 Available documentation files:"
-    ls -la "$SOURCE_DIR"/*.md 2>/dev/null || echo "   No .md files found"
+    ls -la "$SOURCE_DIR"/help/*.md 2>/dev/null || echo "   No .md files found"
 else
-    echo "❌ Documentation folder not found"
-    echo "   Expected: temp-sharpmush/SharpMUSH.Documentation/Helpfiles/SharpMUSH"
+    echo "❌ Help export not found"
+    echo "   Expected: temp-sharpmush/articles.json and temp-sharpmush/help/"
     echo "   Cleaning up and exiting..."
     rm -rf temp-sharpmush
     exit 1

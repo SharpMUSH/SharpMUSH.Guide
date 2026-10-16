@@ -10,18 +10,18 @@ echo "=== LOCAL DOCUMENTATION PROCESSING TEST ==="
 # Clean up any previous test runs
 rm -rf temp-sharpmush temp-processed test-local-output
 
-# Clone the SharpMUSH repository
-echo "1. Cloning SharpMUSH repository..."
-git clone https://github.com/SharpMUSH/SharpMUSH.git temp-sharpmush
+# Fetch SharpMUSH's help export
+echo "1. Fetching the SharpMUSH help export..."
+git clone --depth 1 --branch help-export https://github.com/SharpMUSH/SharpMUSH.git temp-sharpmush
 
-# Check if documentation exists
-SOURCE_DIR="temp-sharpmush/SharpMUSH.Documentation/Helpfiles/SharpMUSH"
-if [ ! -d "$SOURCE_DIR" ]; then
-    echo "❌ Documentation folder not found at: $SOURCE_DIR"
+# Check that it is a help export
+SOURCE_DIR="temp-sharpmush"
+if [ ! -f "$SOURCE_DIR/articles.json" ] || [ ! -d "$SOURCE_DIR/help" ]; then
+    echo "❌ No help export (articles.json and help/) at: $SOURCE_DIR"
     exit 1
 fi
 
-echo "✅ Documentation folder found"
+echo "✅ Help export found"
 
 # Get the directory where this script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
