@@ -14,6 +14,8 @@
 
   Whether or not the a sort type is case-sensitive or not depends on the particular MUSH and its environment.
 
+  With the `mux_collation` @config option on, a comparison with no `<type>` orders text as TinyMUX does, by letter first and lower case before upper case: `comp(a,B)` is -1, where it is otherwise 1. See [compatibility config].
+
 ::: seealso
 - [STRMATCH()]
 - [EQ()]

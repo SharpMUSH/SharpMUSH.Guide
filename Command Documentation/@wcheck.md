@@ -13,6 +13,5 @@ The third runs it on all objects the player owns that aren't set NO_WARN.
 ::: seealso
 - [@warnings]
 - [WARNINGS]
-- [NO_WARN]
 :::
 

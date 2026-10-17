@@ -1,6 +1,4 @@
 # trim()
-# trimpenn()
-# trimtiny()
 `trim(<string>[, <characters to trim>[, <trim style>]])`<br>
 `trimpenn(<string>[, <characters to trim>[, <trim style>]])`<br>
 `trimtiny(<string>[, <trim style>[, <characters to trim>]])`
@@ -12,6 +10,10 @@
   If no `<trim style>` is specified, characters are trimmed from both the left and right sides of the string. If the 'l' trim style is specified, characters are only trimmed from the left side. If the 'r' trim style is specified, characters are only trimmed from the right side. If the 'b' trim style is specified, or a style is omitted, characters are trimmed off of both sides of the string.
 
   Normally, the arguments for trim() are in the same order as trimpenn(). However, if the tiny_trim_fun @config option is on, the `<characters to trim>` and `<trim style>` arguments are reversed. Use trimpenn() or trimtiny() if you want to specify a particular argument sequence no matter how the option is set.
+
+- [trim examples]: trimming spaces, single characters and sides
+
+## Examples
 
   Examples:
 ```sharp

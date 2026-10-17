@@ -3,7 +3,7 @@
 
   This function returns `<string>`, padded with the string `<fill>` until it's `<length>` characters long. `<fill>` can be more than one character in length, and defaults to a single space.
 
-  If `<string>` is longer than `<length>`, it will be returned unaltered, unless `<truncate?>` is true, in which case only the first `<length>` characters of `<string>` are returned.
+  If `<string>` is longer than `<length>`, it will be returned unaltered, unless `<truncate?>` is true, in which case only the first `<length>` characters of `<string>` are returned. With the `mux_justify` @config option on, it is cut unless `<truncate?>` is 0, as TinyMUX's ljust() always cuts. See [compatibility config].
 
   Examples:
 ```sharp

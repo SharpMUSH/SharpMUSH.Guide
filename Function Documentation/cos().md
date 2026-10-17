@@ -13,7 +13,7 @@ You say, "0"
     You say, "0"
 ```
 
-  See 'HELP ANGLES' for more on the angle type.
+  See [angles] for more on the angle type.
 
 ::: seealso
 - [ACOS()]

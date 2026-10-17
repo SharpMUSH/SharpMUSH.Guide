@@ -5,6 +5,6 @@
 
 
 ::: seealso
-- [digest().]
+- [digest()]
 :::
 

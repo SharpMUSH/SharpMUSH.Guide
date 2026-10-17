@@ -9,7 +9,7 @@ These attributes set the message shown to a player when he enters the zone `<obj
 
 Entry into a new zone is said to occur when a player goes from a room not in the zone to a room in the zone. "Room" in this context means the player's absolute room (outermost container), so entering and leaving unzoned objects within a zoned room doesn't trigger these.
 
-Zone entry is assumed to occur before room entry, so these are triggered before the room's @[oa]enter.
+Zone entry is assumed to occur before room entry, so these are triggered before the room's `@[oa]enter`.
 
 
 ::: seealso

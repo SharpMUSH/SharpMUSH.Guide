@@ -1,7 +1,4 @@
 # textfile()
-# textentries()
-# textsearch()
-# dynhelp()
 `textfile(<type>, <entry>)`<br>
 `textentries(<type>, <pattern>[, <osep>])`<br>
 `textsearch(<type>, <pattern>[, <osep>])`
@@ -13,6 +10,10 @@
   Both textfile() and textentries() return #-1 NO SUCH FILE for a `<type>` that is not a text-file category, and #-1 PERMISSION DENIED for an administrator-only one (ahelp) to anyone who is not a wizard or royalty.
 
   textsearch() returns the names of all topics whose contents matches the given `<pattern>`, the same as "help/search `<pattern>`", with topic names separated by `<osep>`.
+
+- [textfile examples]: listing, searching and reading help topics
+
+## Examples
 
   Example:
 ```sharp
