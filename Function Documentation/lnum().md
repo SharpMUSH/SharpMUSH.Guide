@@ -1,8 +1,8 @@
 # lnum()
-`lnum(<number>)`<br>
+`lnum([<number>])`<br>
 `lnum(<start number>, <end number>[, <output separator>[, <step>]])`
 
-  With one argument, lnum returns a list of numbers, from 0 to `<number - 1>`. For example, lnum(4) returns the list "0 1 2 3". This is useful for creating loops.
+  With one argument, lnum returns a list of numbers, from 0 to `<number - 1>`. For example, lnum(4) returns the list "0 1 2 3". This is useful for creating loops. With no argument, or an empty one, it returns nothing, as in TinyMUX.
 
   With two arguments, the numbers range from the first to the second argument. For example, lnum(1,4) => 1 2 3 4
 

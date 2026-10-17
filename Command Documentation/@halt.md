@@ -1,5 +1,5 @@
 # @halt
-# @allhalt
+
 `@halt[/noeval] <object>[=<action list>]`<br>
 `@halt/pid <pid>`<br>
 `@halt/all`<br>
@@ -11,12 +11,23 @@ If `<object>` is a player, it clears the queue for the player and all of his obj
 
 Only wizards and objects with the halt @power can @halt other player's objects. Note that halting an object does NOT affect any objects waiting on it as a semaphore.
 
+- [@halt pid]: cancelling a single queue entry by its pid
+- [@halt all]: halting every object in the game, for wizards
+
+## Cancelling one queue entry
+
+`@halt/pid <pid>`
+
 `@halt/pid` will cancel a single queue entry with the given pid (the number in parenthesis before it in @ps). You must control the object that queued the command or have the halt power to do this.
 
 A cancelled delayed entry remains reserved until its scheduled trigger is confirmed removed. If scheduling or cancellation reports a cleanup failure, the command stays cancelled and consumes its queue allowance; retry `@halt/pid <pid>` after the scheduler is available to finish cleanup.
 
-`@halt/all` is a synonym for @allhalt, and is a wizard-only command which halts all objects in the game in an effort to free up the queue.
+## Halting everything
 
+`@halt/all`<br>
+`@allhalt`
+
+`@halt/all` is a synonym for @allhalt, and is a wizard-only command which halts all objects in the game in an effort to free up the queue.
 
 ::: seealso
 - [@wait]
