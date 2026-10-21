@@ -351,7 +351,7 @@ Shape the data in one pass and let each stage consume the last, rather than re-a
 | Bar / status tag | `gauge(<v>, <max>, <label>)` / `badge(<text>, ok\|warn\|error\|info\|muted)` |
 
 - **Leave the width empty.** Empty means the width of the connection that ran the command, and each telnet reader is re-sent it at their own; that is what makes `@remit` right for a whole room. `width(%#)` pins every reader to the enactor's width; a number pins everyone. No column arithmetic (`sub(width(%#),37)`): table columns size from their content.
-- **Options are one JSON object**: inline with doubled braces, `box(x,T,,{{"title":"left"}})`, or `json(object,…)` when a value is computed. A misspelled key errors (`#-1 UNKNOWN LAYOUT OPTION`). An inline `\n` is eaten by evaluation and silently becomes `n`; build a newline with `json(string,%r)`.
+- **Options are one JSON object**: inline with doubled braces, `box(x,T,,{{"title":"left"}})`, or `json(object,…)` when a value is computed. A misspelled key errors (`#-1 UNKNOWN LAYOUT OPTION`). An inline `\n` is eaten by evaluation and silently becomes `n`; write `%r` instead (`{{"delim":"%r"}}`). An option error names the option (`#-1 LAYOUT OPTION GROW: INVALID ARGUMENT`), and broken JSON says what it expected and where.
 - **Nesting is by line.** A `fields()`/`datatable()`/`flex()`/`tree()` on a line of its own inside `box()` keeps its layout; a `rule()` on its own line becomes a divider meeting the box's sides. After other text on the same line, a block layout falls apart. Inline pieces (`badge()`, `cmdlink()`) are fine anywhere.
 - **Tables: say what to keep.** Too wide, wrapping columns shrink first, then the highest `"priority"` number is dropped. A wrapping column with no `"min"` shrinks to a letter per line before anything drops. Mark names, numbers, times and statuses `"nowrap"` (shown whole or not at all), leave free text wrapping with a `"min"`, give droppable columns priority 2+. `<` `-` `>` before a heading aligns its column. Give the free-text column a `"grow"` share (`"grow":"|1"`) to span the screen; without one a table is as wide as its cells.
 - **Player text in a table needs a marked delimiter.** Cells split at `|`, and a title can hold one. Write the cell delimiter marked into the options, `{{"delim":"%*<^>"}}`, and separate cells with `%*<^>`; `json()` drops the mark. Put typed text through `unmark()` first, or a player's own `%*<^>` splits the cell. The option lists (`nowrap`, `priority`, ...) split on the same delimiter. See `help list separators`.
@@ -480,7 +480,7 @@ Push and drop from the commands and events that change the state (`` OBJECT`MOVE
 | `header()` + `align()` rows + `footer()` with `sub(width(%#),N)` column maths | `box()` round a `datatable()`/`datacolumns()`; no width given |
 | `[ansi(h,rjust(%0:,14))] %1` label gutters | `fields(, <label>, <value>, …)` |
 | `width(%#)` passed to a layout function | Leave it empty; each reader gets their own width |
-| `{{"delim":"\n"}}` inline | `json(object,delim,json(string,%r))` |
+| `{{"delim":"\n"}}` inline | `{{"delim":"%r"}}` |
 | Carrying JSON through a render and querying per row | Flatten to a record list once, then `first()`/`rest()` |
 | Parallel trees keyed the same (`` TITLE`<k> `` + `` MOD`<k> ``) | One tree — containment makes the invariant structural |
 | Game data on a player left unflagged | They control themselves and can set it; flag the root |

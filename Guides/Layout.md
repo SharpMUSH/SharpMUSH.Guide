@@ -137,21 +137,21 @@ When each record is a row, `ldatatable()` takes the rows as one list, so one `it
 
 The same goes for the other layouts that take any number of items: `lflex()`, `ltree()` and `lnode()` take them as a list. A list of layouts needs a delimiter their art never holds; `|` and spaces appear in borders and tree guides, so use `^`.
 
-**Player text needs another delimiter.** A title or a description can hold a `|`, which would split it into two cells. Join those columns with `%r` and make a newline the delimiter, built with `json()`:
+**Player text needs another delimiter.** A title or a description can hold a `|`, which would split it into two cells. Join those columns with `%r` and make a newline the delimiter:
 
 ```sharp
-think datacolumns(json(object,delim,json(string,%r)),ID%r[iter(%q<scenes>,%i0,,%r)],Title%r[iter(%q<scenes>,scene(%i0,title),,%r)])
+think datacolumns({{"delim":"%r"}},ID%r[iter(%q<scenes>,%i0,,%r)],Title%r[iter(%q<scenes>,scene(%i0,title),,%r)])
 ```
 
 The option lists (`"nowrap"`, `"min"`, `"max"`, `"priority"`, `"grow"`) are split by the same delimiter as the cells, so with a newline delimiter they are written with `%r` too:
 
 ```sharp
-json(object,delim,json(string,%r),nowrap,json(string,1%r3),min,json(string,%r12))
+{{"delim":"%r","nowrap":"1%r3","min":"%r12"}}
 ```
 
-Written `"1|3"`, the list is one item that is not a column number, and the table answers `#-1 ARGUMENT OUT OF RANGE`.
+Written `"1|3"`, the list is one item that is not a column number, and the table answers `#-1 LAYOUT OPTION NOWRAP: ARGUMENT OUT OF RANGE`.
 
-Writing `{{"delim":"\n"}}` inline does not work: the evaluator eats the backslash, the delimiter becomes the letter `n`, and the table comes out empty with no error.
+Write the newline as `%r`, not `\n`: the evaluator eats the backslash, the delimiter becomes the letter `n`, and the table comes out empty with no error.
 
 An empty list still draws the headings. Say so in words instead:
 
