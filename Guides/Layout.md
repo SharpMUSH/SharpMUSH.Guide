@@ -85,7 +85,7 @@ think box(Body,Title,30,json(object,border,"[if(%q<formal>,double,single)]"))
 
 An unknown or misspelled key is an error, not a silent no-op: `#-1 UNKNOWN LAYOUT OPTION <KEY>`.
 
-In a package's `package.yaml`, `{{` starts a reference to an object (`{{jobs}}`), so an inline option object there is refused at install. Build options with `json()` in a package.
+In a package's `package.yaml`, `{{` starts a reference to an object (`{{jobs}}`), so an inline option object there is refused at install. Write fixed options as `lit({"border":"single"})` in a package, and use `json()` when a value is computed.
 
 ## Tables
 
