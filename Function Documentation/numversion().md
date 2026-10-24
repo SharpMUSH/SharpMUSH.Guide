@@ -3,20 +3,15 @@
 `version()`<br>
 `numversion()`
 
-  version() returns a string which contains various version information for the MUSH you're on. numversion() returns an integer representation of the version/patchlevel which can be used for softcode comparison.
+  version() returns "PennMUSH emulated in SharpMUSH " followed by the server's version. numversion() returns the same version as one integer, for comparing versions in softcode: the major version, then three digits each for the next three parts. Version 2.1.3.0 is 2001003000.
 
   Example:
 ```sharp
 say version()
-You say "SharpMUSH version 1.8.1 patchlevel 4 [12/06/2005]"
+You say, "PennMUSH emulated in SharpMUSH 2.0.0.0"
 say numversion()
-You say "1008001004"
+You say, "2000000000"
 ```
-
-    > say version()<br>
-    You say, "SharpMUSH version 1.8.5 patchlevel 7 [03/16/2015] (rev ebdea0a)"<br>
-    > say numversion()<br>
-    You say, "1008005007"
 
 
 ::: seealso

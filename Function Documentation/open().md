@@ -5,7 +5,7 @@
 
   If a `<destination>` is given, it will attempt to link the exit to `<destination>` after opening it.
 
-  Wizards and objects with the pick_dbref power can specify a garbage dbref to use for the new exit.
+  Wizards and objects with the PICK_DBREFS power can specify an unused dbref for the new exit.
 
   It returns the dbref of the newly created exit, or #-1 on error.
 

@@ -9,6 +9,10 @@
 
   `<delim>` defaults to a space, and is the delimiter of `<dbrefs>` and the list returned by lockfilter().
 
+- [lockfilter examples]: filtering connected players by name, flag and attribute
+
+## Examples
+
   Examples:
 ```sharp
 Get all male players with a name starting with 'W'.

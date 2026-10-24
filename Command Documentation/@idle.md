@@ -1,7 +1,7 @@
 # @idle
 `@idle <player>[=<message>]`
 
-This message is sent in return to every page which successfully reaches you if it evaluates non-null. It is useful if you are idle for long periods of time and wish to inform people where you are, or if you are in a meeting and cannot quickly return pages.
+This message is sent in return to every page which reaches you, if it evaluates non-null. It is useful if you are idle for long periods of time and wish to tell people where you are, or if you are in a meeting and cannot quickly return pages.
 
 ### Example
 ```sharp

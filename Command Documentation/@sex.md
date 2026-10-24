@@ -13,8 +13,12 @@ You can use this command to set yourself or any of your objects to be male, fema
 > @sex me=No thank you (silly, but possible)
 ```
 
+`@sex` always sets the SEX attribute, as it does in PennMUSH. If the game keeps gender in another attribute (the `gender_attr` option), use [@gender] instead.
+
 
 ::: seealso
+- [@gender]
+- [@config attribs]
 - [GENDER]
 - [SUBJ()]
 - [POSS()]

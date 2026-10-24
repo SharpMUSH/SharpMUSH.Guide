@@ -13,13 +13,13 @@ These '@' command set other standard attributes on objects that don't follow the
 
 |                |                |                |                |                |
 |----------------|----------------|----------------|----------------|----------------|
-| [@aahear]      | [@aclone]      | [@aconnect]    | [@adisconnect] | [@amail]       |
-| [@amhear]      | [@away]        | [@charges]     | [@chatformat]  | [@conformat]   |
-| [@cost]        | [@descformat]  | [@ealias]      | [@exitformat]  | [@filter]      |
-| [@forwardlist] | [@haven]       | [@idescformat] | [@idle]        | [@infilter]    |
-| [@inprefix]    | [@lalias]      | [@listen]      | [@nameformat]  | [@oxenter]     |
-| [@oxleave]     | [@oxmove]      | [@oxtport]     | [@pageformat]  | [@prefix]      |
-| [@runout]      | [@sex]         | [@startup]     |                |                |
+| [@aahear]      | [@aclone]      | [@aconnect]    | [@adestroy]    | [@adisconnect] |
+| [@amail]       | [@amhear]      | [@away]        | [@charges]     | [@chatformat]  |
+| [@conformat]   | [@cost]        | [@descformat]  | [@ealias]      | [@exitformat]  |
+| [@filter]      | [@forwardlist] | [@gender]      | [@haven]       | [@idescformat] |
+| [@idle]        | [@infilter]    | [@inprefix]    | [@lalias]      | [@listen]      |
+| [@nameformat]  | [@oxenter]     | [@oxleave]     | [@oxmove]      | [@oxtport]     |
+| [@pageformat]  | [@prefix]      | [@runout]      | [@sex]         | [@startup]     |
 
 
 ::: seealso

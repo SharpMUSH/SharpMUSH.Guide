@@ -5,9 +5,12 @@
     ( ) [ ] { } $ % , ^ ;<br>
   Note that the use of this function is very rarely needed.
 
+  Marked list separators in `<string>` lose their mark, as with unmark(): see [list separators].
+
 
 ::: seealso
 - [DECOMPOSE()]
 - [ESCAPE()]
+- [UNMARK()]
 :::
 

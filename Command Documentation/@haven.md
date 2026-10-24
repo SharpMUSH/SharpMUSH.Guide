@@ -1,7 +1,7 @@
 # @haven
 `@haven <player>[=<message>]`
 
-When someone attempts to page `<player>` and is unable to, either because `<player>` is set HAVEN or because of his page lock, they will be shown `<message>`, if it evaluates to something non-null.
+When someone tries to page `<player>` and cannot, either because `<player>` is set HAVEN or because of `<player>`'s page lock, they are shown `<message>`, if it evaluates to something non-null.
 
 ### Example
 ```sharp

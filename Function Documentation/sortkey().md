@@ -4,7 +4,7 @@
   This function creates a list of keys by passing every element of `<list>` into the ufun given in `<attrib>`. The list is then sorted according to the sorting method in `<sort type>`, or is automatically guessed (as per [SORTING]).
 
   This is equivalent to:<br>
-    > &munge_sort me=sort(%0[, `<sort type>`])<br>
+    > &munge_sort me=sort(%0\[, `<sort type>`\])<br>
     > say munge(munge_sort, map(`<attrib>`, `<list>`), `<list>`)
 
   Only there is no risk with delimiters occurring within the list.

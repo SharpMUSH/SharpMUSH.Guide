@@ -1,10 +1,5 @@
 # @slave
 `@slave/restart [info|ssl]`
 
-@slave is a wizard-only command used to control the various subprocesses used by the mush to do various things. The only switch it currently takes is `/restart`, which will shut down and relaunch the slave daemon process in question.
-
-Two different daemons are used:
-
-info: Resolves IP addresses into host names whenever a new connection is established.<br>
-ssl : Handles encrypted SSL connections across @shutdown/reboots.
+@slave is accepted for compatibility and does nothing: SharpMUSH has no helper daemons to restart, and it only replies that the command does nothing. It needs the `server.operate` permission.
 

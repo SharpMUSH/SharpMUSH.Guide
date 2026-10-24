@@ -7,12 +7,14 @@
 | [ATAN()]     | [ATAN2()]    | [BOUND()]    | [CEIL()]     |
 | [COS()]      | [CTU()]      | [DIST2D()]   | [DIST3D()]   |
 | [E()]        | [EXP()]      | [FDIV()]     | [FLOOR()]    |
-| [FMOD()]     | [FRACTION()] | [LMATH()]    | [LN()]       |
-| [LOG()]      | [MAX()]      | [MEAN()]     | [MEDIAN()]   |
-| [MIN()]      | [MUL()]      | [PI()]       | [POWER()]    |
-| [ROOT()]     | [ROUND()]    | [SIGN()]     | [SIN()]      |
-| [SQRT()]     | [STDDEV()]   | [SUB()]      | [TAN()]      |
-| [TRUNC()]    | [VAL()]      |              |              |
+| [FMOD()]     | [FRACTION()] | [LADD()]     | [LAVG()]     |
+| [LDIV()]     | [LMATH()]    | [LMAX()]     | [LMIN()]     |
+| [LMUL()]     | [LN()]       | [LOG()]      | [LSUB()]     |
+| [MAX()]      | [MEAN()]     | [MEDIAN()]   | [MIN()]      |
+| [MUL()]      | [PI()]       | [POWER()]    | [ROOT()]     |
+| [ROUND()]    | [SIGN()]     | [SIN()]      | [SQRT()]     |
+| [STDDEV()]   | [SUB()]      | [TAN()]      | [TRUNC()]    |
+| [VAL()]      |              |              |              |
 
   These functions operate only on integers (if passed floating point numbers, they will return an error or misbehave):
 

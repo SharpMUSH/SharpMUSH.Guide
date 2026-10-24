@@ -10,6 +10,7 @@
 - [@chzone]
 - [ZFUN()]
 - [ZWHO()]
-- [zemit() ZONES]
+- [zemit()]
+- [ZONES]
 :::
 

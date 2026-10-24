@@ -1,11 +1,14 @@
 # isdbref()
-# isobjid()
 `isdbref(<string>)`<br>
 `isobjid(<string>)`
 
   isobjid() returns 1 if `<string>` is the object id of an existing object. If `<string>` is not a full objid, or is the objid of a garbage object, it returns 0.
 
   isdbref() functions the same, but will also return 1 if `<string>` is the dbref of an existing (or garbage) object.
+
+- [isdbref examples]: dbrefs and objids that do and do not exist
+
+## Examples
 
   Examples:
 ```sharp

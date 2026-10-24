@@ -1,7 +1,7 @@
 # controls()
 `controls(<object>, <victim>[/<attribute>])`
 
-  With no `<attribute>`, this function returns 1 if `<object>` controls `<victim>`, or 0, if it does not. With an `<attribute>`, it will return 1 if `<object>` could successfully set `<attribute>` on `<victim>` (or alter `<attribute>`, if it already exists). If one of the objects does not exist, it will return #-1 ARGN NOT FOUND (where N is the argument which is the invalid object). If `<attribute>` is not a valid attribute name, it will return #-1 BAD ATTR NAME. You must control `<object>` or `<victim>`, or have the See_All power, to use this function.
+  With no `<attribute>`, this function returns 1 if `<object>` controls `<victim>`, or 0, if it does not. With an `<attribute>`, it will return 1 if `<object>` could successfully set `<attribute>` on `<victim>` (or alter `<attribute>`, if it already exists). If `<object>` or `<victim>` cannot be matched, it returns #-1 ARG1 NOT FOUND or #-1 ARG2 NOT FOUND, and an `<attribute>` that is not a valid name returns #-1 BAD ATTR NAME. You must control `<object>` or `<victim>`, or be See_All; otherwise it returns #-1 PERMISSION DENIED.
 
 
 ::: seealso

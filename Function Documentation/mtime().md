@@ -7,7 +7,7 @@
 
   msecs() returns the time as the number of seconds since the epoch.
 
-  Only things, rooms, and exits have modification times. You must be able to examine an object to see its modification time.
+  Every type of object, players included, has a modification time. You must be able to examine `<object>`; otherwise both return #-1 PERMISSION DENIED.
 
 
 ::: seealso

@@ -3,6 +3,12 @@
 
   Returns a list with at least one element - the type of client used by the player, or "unknown" if the client being used doesn't support being asked to identify itself using RFC 1091.
 
+- [terminfo capabilities]: every capability in the list, and the color style
+- [terminfo visibility]: what you see about other players, and screen readers
+- [terminfo example]: the portal with Screen reader mode on
+
+## Capabilities
+
   Other elements in the list describe client capabilities, and currently include:<br>
   pueblo           present if the client is in Pueblo mode.<br>
   mxp              present if the client is in MXP mode.<br>
@@ -21,15 +27,19 @@
 
   One of the color styles shown in [COLORSTYLE] will also be included.
 
+## Who sees what
+
+  You must have see_all, or use terminfo() on yourself, to see all information or use a `<descriptor>`. Mortals using terminfo() on another player will always receive "unknown" for the client name, and will not get telnet/gmcp/ssl/prompt_newlines in the output list.
+
   Anyone may see pueblo, mxp, screenreader, stripaccents and the color style. Softcode can use screenreader to leave out what only draws, such as a logo made of characters. A screen reader on telnet is sent no color, links or pictures, so its color style is plain; the web portal draws them itself, so it keeps its own.
+
+## Example
 
   Example, in the web portal with Screen reader mode on:
 ```sharp
 think terminfo(me)
 SHARPMUSH-PORTAL screenreader websocket commandlinks truecolor
 ```
-
-  You must have see_all, or use terminfo() on yourself, to see all information or use a `<descriptor>`. Mortals using terminfo() on another player will always receive "unknown" for the client name, and will not get telnet/gmcp/ssl/prompt_newlines in the output list.
 
 
 ::: seealso
