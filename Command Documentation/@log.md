@@ -2,9 +2,9 @@
 `@log[/<switch>] <message>`<br>
 `@log/recall/<switch> [<number>]`
 
-This wizard-only command puts `<message>` in a log file, tagged with the time and object executing the command. The available switches are /check, /cmd, /conn, /err, /trace, and /wiz, specifying which file to log to. /cmd is default.
+This command writes `<message>` to the server log, tagged with the object executing the command. It needs the `server.operate` permission. The available switches are /check, /cmd, /conn, /err, /trace, and /wiz, specifying which log category to use. /cmd is default.
 
-Adding the `/recall` switch will display the last `<number>` lines written to that log file, or the entire log buffer (Which is the last 1 kilobyte or so of data written to the log) if omitted.
+Adding the `/recall` switch displays the last `<number>` entries in that category: 100 if omitted, and at most 1000.
 
 
 ::: seealso

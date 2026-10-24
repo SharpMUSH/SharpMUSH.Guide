@@ -5,7 +5,7 @@
 
   Returns `<string>` with all letters converted to uppercase.
 
-  If the MUSH is compiled with ICU Unicode support, ucstr2() does the same thing except the returned string might be a different length, and ansi colors and other markup are stripped.
+  ucstr2() does the same thing except that ansi colors and other markup are stripped, and the returned string might be a different length.
 
   Example:
 ```sharp

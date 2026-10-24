@@ -1,7 +1,7 @@
 # hastype()
 `hastype(<object>, <type list>)`
 
-  Returns 1 if `<object>` belongs to one of the types given in `<type list>`, and 0 otherwise. Valid types are PLAYER, THING, ROOM, EXIT and GARBAGE.
+  Returns 1 if `<object>` belongs to one of the types given in `<type list>`, and 0 otherwise. Valid types are PLAYER, THING, ROOM and EXIT.
 
   Example:
 ```sharp

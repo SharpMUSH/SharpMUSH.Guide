@@ -26,6 +26,6 @@ Note that, unlike most attributes, @destination cannot be abbreviated and must b
 - [@link]
 - [@open]
 - [LINK_OK]
-- [Link_Anywhere Power]
+- [@power]
 :::
 

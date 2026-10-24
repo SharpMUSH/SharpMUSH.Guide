@@ -1,9 +1,8 @@
 # lattr()
-# lattrp()
-# reglattr()
-# reglattrp()
 `lattr(<object>[/<attribute pattern>][, <output separator>])`<br>
 `lattrp(<object>[/<attribute pattern>][, <output separator>])`<br>
+`lattr(<object>[/<pattern>][, <target>[, <type>[, <flags>[, <regexp>[, <tree>]]]]])`<br>
+`lattrp(<object>[/<pattern>][, <target>[, <type>[, <flags>[, <regexp>[, <tree>]]]]])`<br>
 `reglattr(<object>[/<regexp>][, <output separator>])`<br>
 `reglattrp(<object>[/<regexp>][, <output separator>])`
 
@@ -16,6 +15,12 @@
   lattrp() and reglattrp() also include attributes inherited from parents.
 
   When returning large numbers of attributes, the results may be truncated due to buffer limits. In these cases, you can use nattr() and xattr() to retrieve the results in smaller pieces.
+
+- [lattr rhost]: the arguments lattr() takes with rhost_lattr on
+
+## RhostMUSH arguments
+
+  With the `rhost_lattr` option on, lattr() and lattrp() take RhostMUSH's arguments instead of an output separator: `lattr(<object>[/<pattern>][, <target>[, <type>[, <flags>[, <regexp>[, <tree>]]]]])`. This form comes from RhostMUSH; see [compatibility config] for what each argument does.
 
 
 ::: seealso

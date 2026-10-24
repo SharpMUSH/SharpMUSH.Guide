@@ -1,7 +1,7 @@
 # @kick
-`@kick <number>`
+`@kick <player>`
 
-This wizard-only command forces the immediate execution of `<number>` items from the queue. Rarely useful. If your MUSH is lagging badly, chances are high that it stems from network problems. Check the queue before using this command.
+Disconnects every connection `<player>` has, telling each one "You have been disconnected." It needs the `server.operate` permission. See [@boot] to disconnect a single connection.
 
 
 ::: seealso

@@ -9,7 +9,7 @@ If `<return exit name>` is given, the MUSH will attempt to open an exit back fro
 
 Both `<exit name>` and `<return exit name>` can include any number of aliases for the exits, separated by semicolons. See [@name] for details.
 
-Wizards and objects with the pick_dbref power can specify garbage dbrefs to use for the exit and return exit.
+Wizards and objects with the PICK_DBREFS power can specify garbage dbrefs to use for the exit and return exit.
 
 To open an exit in a room, you must control the room, have the Open_Anywhere @power, or the room must be set OPEN_OK and you must pass its @lock/open.
 

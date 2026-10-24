@@ -7,7 +7,7 @@
 
   If a `<timezone>` argument is given, the return value is based on that timezone instead of the MUSH server's local time. See [timezones] for more information on valid timezones.
 
-  If Extended convtime() is supported (see @config compile), negative values for `<seconds>` representing dates prior to 1970 are allowed.
+  Negative values for `<seconds>`, representing dates prior to 1970, are allowed.
 
   convutcsecs(`<seconds>`) is an alias for convsecs(`<seconds>`, utc).
 

@@ -1,7 +1,7 @@
 # @poor
-`@poor <value>`
+`@poor <player>`
 
-This command sets the pennies of every player on the MUSH to `<value>`. It can only be used by God.
+This command sets `<player>`'s building quota to 0, so they cannot build until it is raised again with [@quota]. It needs the `players.moderate` permission, and refuses when quotas are disabled.
 
 
 ::: seealso

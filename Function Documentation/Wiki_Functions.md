@@ -4,7 +4,7 @@
 |                  |                  |                  |                  |
 |------------------|------------------|------------------|------------------|
 | [WIKI()]         | [WIKICATEGORY()] | [WIKILIST()]     | [WIKIRECENT()]   |
-| [WIKISEARCH()]   | [WIKIACCESS()]   |                  |                  |
+| [WIKISEARCH()]   | [WIKIACCESS()]   | [WIKIFACT()]     | [WIKIQUERY()]    |
 
 ::: seealso
 - [wiki]

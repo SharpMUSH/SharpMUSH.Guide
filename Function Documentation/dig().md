@@ -3,7 +3,7 @@
 
   This function digs a room called `<name>`, and optionally opens and links `<exit to>` and `<exit from>`, like the normal @dig command. It returns the dbref number of the new room.
 
-  Wizards and objects with the pick_dbref power can supply optional fourth through sixth arguments to specify garbage objects to use for the new room and exits.
+  Wizards and objects with the PICK_DBREFS power can supply optional fourth through sixth arguments to specify unused dbrefs for the new room and exits.
 
 
 ::: seealso

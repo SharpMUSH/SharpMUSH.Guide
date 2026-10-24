@@ -5,6 +5,12 @@
 
   If `<string>` divides `<width>` into uneven portions, the left side will be one character shorter than the right side.
 
+  A `<string>` longer than `<width>` is returned unaltered. With the `mux_justify` @config option on, it is cut to `<width>` characters, as TinyMUX does. See [compatibility config].
+
+- [center examples]: fill strings and long fills
+
+## Examples
+
   Examples:
 ```sharp
 say center(X,5,-)

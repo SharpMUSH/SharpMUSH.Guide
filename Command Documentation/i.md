@@ -2,7 +2,7 @@
 # i
 `inventory`
 
-Lists what you are carrying. Can be abbreviated by just 'i', or 'inv'. It also tells you how much MUSH money you have. If you are not set OPAQUE, others will also be able to see what is in your inventory by looking at you.
+Lists what you are carrying. Can be abbreviated by just 'i', or 'inv'. If you are not set OPAQUE, others will also be able to see what is in your inventory by looking at you.
 
 Output: the dbrefs of what you carry, separated by spaces.
 

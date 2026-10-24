@@ -1,12 +1,12 @@
 # @config costs
-These options control how many pennies various things cost.
+SharpMUSH has no money, so only quota_cost has an effect.
 
-- `object_cost=<number>`: How many pennies it costs to create an object.
-- `exit_cost=<number>`: How many pennies it costs to create an exit.
-- `link_cost=<number>`: How many pennies it costs to use @link.
-- `room_cost=<number>`: How many pennies it costs to @dig a room.
-- `queue_cost=<number>`: How many pennies it costs to queue a command. Refunded when the command executes.
-- `quota_cost=<number>`: How much @quota goes down by for each object.
-- `find_cost=<number>`: How many pennies it costs to use @search, @find, @entrances, and their function versions.
+- `object_cost=<number>`: Accepted but ignored.
+- `exit_cost=<number>`: Accepted but ignored.
+- `link_cost=<number>`: Accepted but ignored.
+- `room_cost=<number>`: Accepted but ignored.
+- `queue_cost=<number>`: Accepted but ignored.
+- `quota_cost=<number>`: How much @quota each object uses.
+- `find_cost=<number>`: Accepted but ignored.
 
 
