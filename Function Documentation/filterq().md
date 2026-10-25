@@ -15,8 +15,6 @@ Kept: 12 7 / Dropped: apples pears
 
 ::: seealso
 - [FILTER()]
-- [FILTER()]
-- [E()]
 - [E()]
 - [setq()]
 :::

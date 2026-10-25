@@ -3,7 +3,7 @@
 `nplayers(<object>)`<br>
 `nvplayers(<object>)`
 
-  These functions return a count of the players in `<object>`. They are equivilent to words(lplayers(`<object>`)) and words(lvplayers(`<object>`)) respectively, though are more efficient and do not suffer from buffer constraints.
+  These functions return a count of the players in `<object>`. They are equivalent to words(lplayers(`<object>`)) and words(lvplayers(`<object>`)) respectively, though are more efficient and do not suffer from buffer constraints.
 
 
 ::: seealso

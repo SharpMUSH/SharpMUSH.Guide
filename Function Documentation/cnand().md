@@ -13,7 +13,6 @@
 ::: seealso
 - [LMATH()]
 - [AND()]
-- [AND()]
 - [OR()]
 - [NOR()]
 :::

@@ -13,7 +13,6 @@ Such a failure usually occurs because `<object>` is set NO_LEAVE, or because the
 ::: seealso
 - [leave]
 - [@leave]
-- [NO_LEAVE]
 - [locktypes]
 - [action lists]
 - [verbs]

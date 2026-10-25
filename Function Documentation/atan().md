@@ -7,7 +7,7 @@
 
   atan2(x, y) is like atan(fdiv(x, y)), except y can be 0, and the signs of both arguments are used in determining the sign of the result. It is useful in converting between cartesian and polar coordinates.
 
-  See 'HELP ANGLES' for more on the angle type.
+  See [angles] for more on the angle type.
 
 
 ::: seealso

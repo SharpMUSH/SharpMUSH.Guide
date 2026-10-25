@@ -7,7 +7,7 @@ With animation on, a moving picture (an animated GIF) plays, as long as pictures
 A terminal known not to play moving pictures (Ghostty, Konsole, mintty and Visual Studio Code among them) is sent the first frame even with animation on. terminfo() includes 'animation' while moving pictures play.
 
 Example:
-```
+```sharp
 > SOCKSET animation=on
 Animation set to 'on'
 ```

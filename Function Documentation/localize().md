@@ -20,7 +20,6 @@ You say, "Outside-Inside-Inside"
 ::: seealso
 - [LETQ()]
 - [setq()]
-- [setq()]
 - [R()]
 - [ulocal()]
 - [UDEFAULT()]

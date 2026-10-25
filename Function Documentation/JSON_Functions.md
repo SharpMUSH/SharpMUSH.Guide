@@ -1,12 +1,17 @@
 # JSON Functions
   JSON functions are used to create and modify JSON objects.
 
-`isjson()    json()     json_array()     json_fill()     json_group_by()     json_map()     json_query()     json_mod()`
+|                   |                   |                   |                   |
+|-------------------|-------------------|-------------------|-------------------|
+| [ISJSON()]        | [JSON()]          | [JSON_ARRAY()]    | [JSON_FILL()]     |
+| [JSON_GROUP_BY()] | [JSON_MAP()]      | [JSON_MOD()]      | [JSON_QUERY()]    |
+| [APPFIELDS()]     |                   |                   |                   |
 
-  This function sends a JSON object to GMCP and WebSocket connections.
+  oob() sends a JSON object to GMCP and WebSocket connections. gmcpsupports() says which GMCP packages a client asked for, and exitmap() builds the exits object a client's mapper reads.
 
-`oob()`
-
+|                  |                  |                  |                  |
+|------------------|------------------|------------------|------------------|
+| [EXITMAP()]      | [GMCPSUPPORTS()] | [OOB()]          |                  |
 
 ::: seealso
 - [JSON PATHS]

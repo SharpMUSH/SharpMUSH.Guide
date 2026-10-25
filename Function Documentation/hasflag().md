@@ -15,8 +15,6 @@ think hasflag(me, wizard)
 ::: seealso
 - [ORFLAGS()]
 - [ANDFLAGS()]
-- [ORFLAGS()]
-- [ANDFLAGS()]
 - [FLAGS()]
 - [LFLAGS()]
 - [attribute flags]

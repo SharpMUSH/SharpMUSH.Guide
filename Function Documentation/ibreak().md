@@ -19,7 +19,5 @@ You say, "Test 1! Test 2! Test 3!"
 ::: seealso
 - [iter()]
 - [ilev()]
-- [ilev()]
-- [ilev()]
 :::
 

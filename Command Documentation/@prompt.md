@@ -12,7 +12,6 @@ If `<message>` is omitted, an empty prompt is sent.
 - [@pemit]
 - [@nspemit]
 - [PEMIT()]
-- [PEMIT()]
 - [PROMPT_NEWLINES]
 :::
 

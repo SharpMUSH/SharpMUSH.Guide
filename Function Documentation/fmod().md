@@ -11,7 +11,6 @@ think fmod(6.1,2.5)
 
 ::: seealso
 - [DIV()]
-- [DIV()]
 - [MOD()]
 - [LMATH()]
 :::

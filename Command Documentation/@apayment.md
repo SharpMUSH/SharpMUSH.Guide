@@ -5,7 +5,7 @@
 `@opayment <object>[=<message>]`<br>
 `@apayment <object>[=<action list>]`
 
-These attributes contain the messages shown to someone who pays `<object>` pennies with the "give" command, the message shown to others when someone pays `<object>`, and the actions to be taken by `<object>` when it's paid. Each attribute is passed the number of pennies paid as %0.
+These attributes can be set, but SharpMUSH has no money: "give" never pays an object, so they are never shown or run.
 
 ### Example
 ```sharp

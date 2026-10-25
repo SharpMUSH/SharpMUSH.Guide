@@ -17,9 +17,7 @@ You say, "101"
 
 ::: seealso
 - [ROUND()]
-- [ROUND()]
 - [BOUND()]
-- [ROUND()]
 - [LEFT()]
 :::
 

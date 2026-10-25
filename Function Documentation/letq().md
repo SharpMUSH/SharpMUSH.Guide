@@ -16,8 +16,6 @@ think setr(A, 1)[setr(B,1)]:[letq(A, 2, %qA[setr(B,2)])]:%qA%qB
 
 ::: seealso
 - [setq()]
-- [setq()]
-- [LISTQ()]
 - [LISTQ()]
 - [LOCALIZE()]
 - [ulocal()]

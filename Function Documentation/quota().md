@@ -9,9 +9,7 @@
 ::: seealso
 - [@quota]
 - [@quota administrative quota changes]
-- [@quota administrative quota changes]
 - [QUOTAS]
-- [@power]
 - [@power]
 :::
 

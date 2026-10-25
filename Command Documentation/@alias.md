@@ -16,6 +16,5 @@ For other types of object, @alias has no special meaning.
 ::: seealso
 - [@name]
 - [ALIAS()]
-- [ALIAS()]
 :::
 

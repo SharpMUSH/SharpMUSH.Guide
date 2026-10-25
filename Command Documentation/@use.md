@@ -21,7 +21,6 @@ Note that, if `<object>` has a CHARGES attribute set and it does not contain a n
 ::: seealso
 - [use]
 - [@charges]
-- [@charges]
 - [action lists]
 - [verbs]
 :::

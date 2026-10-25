@@ -8,8 +8,6 @@
 
 ::: seealso
 - [ROUND()]
-- [ROUND()]
-- [ROUND()]
 - [TRUNC()]
 :::
 

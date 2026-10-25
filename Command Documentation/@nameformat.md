@@ -1,7 +1,7 @@
 # @nameformat
 `@nameformat <object>[=<format>]`
 
-When set, this attribute is evaluated and displayed in place of `<object>`'s name, when objects inside `<object>` "look". The room's dbref is passed as %0 or %`\<object\>`, and the default-formatted name (as it would be displayed with no @nameformat set) is passed as %1 or %`\<name\>`. Each is passed by position and by name (see [named arguments]).
+When set, this attribute is evaluated and displayed in place of `<object>`'s name, when objects inside `<object>` "look". The room's dbref is passed as %0 or `%<object>`, and the default-formatted name (as it would be displayed with no @nameformat set) is passed as %1 or `%<name>`. Each is passed by position and by name (see [named arguments]).
 
 @nameformat is not used when people who are outside the object look at it.
 

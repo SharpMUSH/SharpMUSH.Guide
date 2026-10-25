@@ -11,7 +11,7 @@
 
   If X and Y are non-numeric strings, the result of comp(X,Y) is used to determine which string is alphabetically before (less than) the other.
 
-  If you need to have a leading `< or >` that's treated like a normal character in a wildcard match, use \\`< or \\>` (the \\ will turn into \ when the argument is evaluated, and then that single \ will stop the greater/less than check).
+  If you need to have a leading `< or >` that's treated like a normal character in a wildcard match, use `\\<` or `\\>` (the \\ will turn into \ when the argument is evaluated, and then that single \ will stop the greater/less than check).
 
 
 ::: seealso
