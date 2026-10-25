@@ -161,7 +161,7 @@ Every built-in command also sets registers for what it runs: always `ARGS` (its 
 | `every`/`some(<pred>, <list>[, <delim>[, <reg>]])` | 1/0; register captures the failures / non-matches | validation naming offenders |
 | `filterq(<reg>, <pred>, <list>[, …])` | filter() + rejects into the register | A/B split in one pass |
 | `json_group_by(<keyattr>, <list>)` | key computed per element; JSON object of arrays, **keys in first-seen order** | bucketing |
-| `json_map(<attr>, <json>[, <osep>[, args…]])` | `%0` type, **`%1` raw JSON value** (a string arrives quoted — `json_query(%1,unescape)` for the text), `%2` key or index, args from `%3` | consuming a grouped object |
+| `json_map(<attr>, <json>[, <osep>[, args…]])` | `%0` type, `%1` value (a string as its text, an array or object as its JSON), `%2` key or index, args from `%3` | consuming a grouped object |
 | `map`/`fold`/`filter`/`filterbool`/`iter` | classic | transform / reduce / select |
 
 `` @assert every(FUN`IS`NUM, %0, , bad)=@pemit %#=Not numbers: %q<bad> `` beats filter+setr gymnastics. (Mid-2026 additions; `help chain()` confirms availability.)
