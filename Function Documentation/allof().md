@@ -7,7 +7,7 @@
 ```sharp
     > &s me=Bats are similar to Rats which are afraid of Cats
     > say allof(grab(v(s),rats),grab(v(s),mats),grab(v(s),bats),)
-    You say, "Rats Bats"
+    You say, "RatsBats"
 ```
 
 ```sharp

@@ -11,11 +11,11 @@
   Examples:
 ```sharp
 say randextract(this is a test,3)
-You say "this test a"
+You say, "this test a"
 say randextract(this@is@a@test,3,@)
-You say "this@a@test"
+You say, "this@a@test"
 say randextract(this is a test,3,,L,*)
-You say "this*is*a"
+You say, "this*is*a"
 say randextract(this is a test,6,,D)
 You say, "this test is this is is"
 ```

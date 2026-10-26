@@ -8,7 +8,7 @@ This is a SharpMUSH command; PennMUSH has no account layer.
 
 ::: seealso
 - [login]
-- [make]
+- [create]
 - [claim]
 - [connect]
 :::

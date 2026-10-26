@@ -1,7 +1,7 @@
 # login
 `login <name-or-email> <password>`
 
-Authenticates to an existing account from the login screen and puts your connection into account mode, where [make], [play] and [claim] work. It does not connect you to a character; use [play] for that.
+Authenticates to an existing account from the login screen and puts your connection into account mode, where [create], [play] and [claim] work. It does not connect you to a character; use [play] for that.
 
 This is a SharpMUSH command; PennMUSH has no account layer.
 
@@ -9,7 +9,7 @@ This is a SharpMUSH command; PennMUSH has no account layer.
 ::: seealso
 - [register]
 - [play]
-- [make]
+- [create]
 - [connect]
 :::
 

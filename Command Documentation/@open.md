@@ -15,7 +15,7 @@ To open an exit in a room, you must control the room, have the Open_Anywhere @po
 
 ### Example
 ```sharp
-> @open Up \<U\>;up;u;climb=#255, Down \<D\>;down;d;fall
+> @open Up <U>;up;u;climb=#255, Down <D>;down;d;fall
 ```
 
 
