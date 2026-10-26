@@ -10,11 +10,11 @@
   Examples:
 ```sharp
 say graball(This is a test of a test,test)
-You say "test test"
+You say, "test test"
 say graball(This|is|testing|a|test,tes*,|)
-You say "testing|test"
+You say, "testing|test"
 say regraball(This is testing a test,s$)
-You say "This is"
+You say, "This is"
 ```
 
 

@@ -9,12 +9,12 @@
 ```sharp
 &TEST me=apple orange banana
 say default(me/Test, No fruits!)
-You say "apple orange banana"
+You say, "apple orange banana"
 ```
 ```sharp
     > &TEST ME
     > say default(me/Test, No fruits!)
-    You say "No fruits!"
+    You say, "No fruits!"
 ```
 
 ::: seealso

@@ -8,7 +8,7 @@ The teach command shows its argument (unparsed) to others in your location, and 
 
 ```sharp
 > say To do a pose, use :<action>
-You say "To do a pose, use :<action>"
+You say, "To do a pose, use :<action>"
 > teach :waves hello.
 Javelin types --> :waves hello.
 Javelin waves hello.

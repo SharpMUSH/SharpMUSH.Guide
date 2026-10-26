@@ -4,9 +4,10 @@ Limits and other constants.
 
 - `max_dbref=<dbref>`: The highest dbref an object can have. If 0, there is no limit on database size.
 - `max_attrs_per_obj=<number>`: The maximum attributes an object can have.
+- `max_attribute_value_length=<number>`: The longest attribute value, in UTF-8 bytes of its plain text, that `valid(attrvalue, ...)` accepts. From 100 to 1000000; 8192 by default.
 - `max_logins=<number>`: The maximum number of connected players.
 - `max_guests=<number>`: The maximum number of connected guests. If 0, no limit. If -1, limited by the number of guest players in the db.
-- `max_named_qregs=<number>`: The maximum number of qregs except for a-z and 0-9. The limit is per-localize()-call.
+- `max_named_qregs=<number>`: Accepted but ignored: SharpMUSH does not limit named q-registers.
 - `connect_fail_limit=<count>`: Once an IP address has failed this many logins in ten minutes, its login attempts are refused until the oldest failure is ten minutes old, from 1 to 100.
 - `idle_timeout=<time>`: The number of seconds a player can be idle before getting booted, from 0 to 86400. 0 means no limit.
 - `unconnected_idle_timeout=<time>`: The number of seconds a connection can sit at the login screen before getting booted, from 0 to 3600. 0 means no limit.
@@ -28,6 +29,7 @@ Limits and other constants.
 
 - `function_recursion_limit=<number>`: The depth to which softcode functions can call more functions.
 - `function_invocation_limit=<number>`: The maximum number of softcode functions that can be called in one command.
+- `guest_output_limit=<number>`: The most characters one function may produce while a guest's input is evaluated, from 1024 to 5242880; 65536 by default. Everyone else may produce 5242880.
 - `guest_paycheck=<number>`: How many pennies guests get each day.
 - `max_guest_pennies=<number>`: The maximum pennies a guest can have.
 - `player_name_len=<number>`: The maximum length of a player name.
@@ -41,7 +43,7 @@ Limits and other constants.
 - `push_idle_seconds=<number>`: Seconds without input after which `@push` treats a player as away, unless a portal tab of theirs is in view (see [@push]).
 - `push_limit=<number>`: The most push notifications `@push` sends one player in a minute.
 - `push_devices=<number>`: The most browsers one account may turn push notifications on in.
-- `keepalive_timeout=<time>`: How often should an 'Are you still there?' query be sent to clients, to stop players' routers booting idle connections?
+- `keepalive_timeout=<time>`: How long a KEEPALIVE player's telnet connection can go without output before it is sent a telnet NOP, to stop routers dropping idle connections. See [KEEPALIVE].
 - `max_parents=<number>`: The maximum number of levels of parenting allowed.
 - `call_limit=<number>`: The maximum number of times the parser can be called recursively for any one expression.
 - `chunk_migrate=<number>`: Maximum number of attributes that can be moved to disk cache per second.

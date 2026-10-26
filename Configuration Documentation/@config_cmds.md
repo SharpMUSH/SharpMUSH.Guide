@@ -10,5 +10,6 @@ These options affect command behavior.
 - `wiz_noaenter=<boolean>`: If yes, dark players don't trigger @aenters.
 - `really_safe=<boolean>`: Does SAFE prevent @nuking?
 - `destroy_possessions=<boolean>`: When a player is destroyed, are their objects as well?
+- `probate_judge=<dbref>`: The player who is given a destroyed player's objects, channels and feed kinds when they are kept. #1 by default.
 
 

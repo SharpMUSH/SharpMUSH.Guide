@@ -13,10 +13,10 @@
 ```sharp
 &TEST me=center(%0,5,*)
 say udefault(Test,-- BOOM --,ACK)
-You say "*ACK*"
+You say, "*ACK*"
 &TEST me
 say udefault(me/Test,-- BOOM --,ACK)
-You say "-- BOOM --"
+You say, "-- BOOM --"
 ```
 
 

@@ -5,6 +5,7 @@ Networking and connection-related options.
 - [@config net web]: the game's name, its web address, and HTTP requests
 - [@config net logins]: logins, guests, DNS, Pueblo and client media
 - [@config net sql]: the SQL server and SSL client certificates
+- [@config net ignored]: listening addresses, ports and other options that are accepted and ignored
 
 ## Game name and web
 
@@ -17,7 +18,7 @@ Networking and connection-related options.
 
 - `use_dns=<boolean>`: Are IP addresses resolved into hostnames?
 - `logins=<boolean>`: Are mortal logins enabled?
-- `player_creation=<boolean>`: Can `register` and `make` be used from the login screen?
+- `player_creation=<boolean>`: Can `register` and `create` be used from the login screen?
 - `guests=<boolean>`: Are guest logins allowed?
 - `pueblo=<boolean>`: Is Pueblo support turned on?
 - `media_base_url=<string>`: The web address a GMCP client such as Mudlet fetches the game's sounds and music from, when [sound()] or [music()] names a file rather than a full address. It is sent as GMCP Client.Media.Default when a client agrees to GMCP, and to every such client when it changes; a `/` is added if it does not end in one. Empty sends nothing, and such a client then needs full addresses.
@@ -29,4 +30,14 @@ Networking and connection-related options.
 - `sql_database=<string>`: The name of the database on the SQL server. Only God sees it.
 - `sql_username=<string>`: The user name to log in to the SQL server with. Only God sees it. The password is the `sql.password` secret: see [@secret].
 - `ssl_require_client_cert=<boolean>`: Are client certificates verified in SSL connections?
+
+## Options with no effect
+
+These options are accepted and ignored. Where the servers listen is set where they are deployed, not in the game.
+
+- `ip_addr=<string>` and `ssl_ip_addr=<string>`: the connection server listens on every address.
+- `portal_port=<number>` and `ssl_portal_port=<number>`: the web portal listens where the server's ASPNETCORE_URLS setting says.
+- `socket_file=<string>`: there is no separate SSL process. TLS telnet runs on the connection server's TLS port, with the certificate it is given.
+- `use_ws=<boolean>` and `ws_url=<string>`: WebSocket connections are always on, at `/ws` on the connection server's HTTP port.
+- `json_unsafe_unescape=<boolean>`: accepted and ignored.
 

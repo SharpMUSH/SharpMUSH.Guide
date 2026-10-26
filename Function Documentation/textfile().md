@@ -24,5 +24,5 @@ cwho() lwho() mwho() nmwho() xwho() zwho()
 ```
 
 ```sharp
-> think textfile(help, ln\(\))
+> think textfile(help, pi\(\))
 

@@ -11,7 +11,7 @@
   Example:
 ```sharp
 say edit(this is a test,^,I think%b,$,.,a test,an exam)
-You say "I think this is an exam."
+You say, "I think this is an exam."
 ```
 
   edit() can not replace a literal single ^ or $. Use regedit() for that.

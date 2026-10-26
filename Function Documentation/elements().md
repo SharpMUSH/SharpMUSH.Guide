@@ -8,14 +8,14 @@
   Examples:
 ```sharp
 say elements(Foo Ack Beep Moo Zot,2 4)
-You say "Ack Moo"
+You say, "Ack Moo"
 ```
 
     > say elements(Foof|Ack|Beep|Moo,3 1,|)<br>
-    You say "Beep|Foof"
+    You say, "Beep|Foof"
 
     > say elements(The last word is foo, -1)<br>
-    You say "foo"
+    You say, "foo"
 
 
 ::: seealso

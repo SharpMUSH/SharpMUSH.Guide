@@ -16,9 +16,9 @@
   Examples:
 ```sharp
 say regedit(this test is the best string, %(?<char>.%)est, $<char>rash)
-You say "this trash is the best string"
+You say, "this trash is the best string"
 say regeditall(this test is the best string, %(.%)est, capstr($1)rash)
-You say "this Trash is the Brash string"
+You say, "this Trash is the Brash string"
 ```
 
 
