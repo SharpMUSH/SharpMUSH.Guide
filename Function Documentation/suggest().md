@@ -5,7 +5,7 @@
 
  This is the same mechanism used to suggest help entries, function names, etc. when an unknown one is encountered.
 
- If the dict_file @config option is set, loads that file into the 'words' category.
+ Categories and their words are added with @suggest. If the dict_file @config option is set, the server loads that file into the 'words' category at startup, one word per line.
 
  Example:
 ```sharp

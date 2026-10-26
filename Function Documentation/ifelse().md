@@ -1,9 +1,9 @@
 # if()
 # ifelse()
 `if(<condition>, <true expression>[, <false expression>])`<br>
-`ifelse(<condition>, <true expression>, <false expression>)`
+`ifelse(<condition>, <true expression>[, <false expression>])`
 
-  These functions evaluate the `<condition>` and return `<true expression>` if the `<condition>` is true, or `<false expression>` (if provided) if the `<condition>` is false. Only the returned `<expression>` is evaluated.
+  These functions evaluate the `<condition>` and return `<true expression>` if the `<condition>` is true, or `<false expression>` (if provided) if the `<condition>` is false. Only the returned `<expression>` is evaluated. The two are the same function: PennMUSH requires all three arguments of ifelse(), RhostMUSH does not.
 
   In the expression that is evaluated, "#$" stands for the evaluated `<condition>`, unless a switch() around or inside it names its own `<string>`. The value is never evaluated as code. The branch also counts as a switch on the `<condition>` for stext(), %$0 and slev(). See [compatibility parser in case and if].
 

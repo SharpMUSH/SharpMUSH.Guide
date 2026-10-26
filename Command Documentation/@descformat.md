@@ -1,7 +1,7 @@
 # @descformat
 `@descformat <object>[=<format>]`
 
-When set, this attribute is evaluated and displayed instead of `<object>`'s @describe, when someone looks at `<object>`. The evaluated @describe, which would be shown if no @descformat were set, is passed to the @descformat as %0, and by name as %`\<description\>` (see [named arguments]); use v(describe) to get the unevaluated description.
+When set, this attribute is evaluated and displayed instead of `<object>`'s @describe, when someone looks at `<object>`. The evaluated @describe, which would be shown if no @descformat were set, is passed to the @descformat as %0, and by name as `%<description>` (see [named arguments]); use v(describe) to get the unevaluated description.
 
 This is primarily useful for room parents, to enforce a consistent look for all rooms without having to apply formatting to ever @describe. Note that this object is only used with @describe - to format the @idescribe, use @idescformat.
 

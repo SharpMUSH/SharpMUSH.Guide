@@ -27,7 +27,6 @@ These commands work like @emit, @lemit, @pemit, @prompt, @remit, @oemit, and @ze
 - [EMIT()]
 - [NSLEMIT()]
 - [PEMIT()]
-- [PEMIT()]
 - [REMIT()]
 - [OEMIT()]
 - [ZEMIT()]

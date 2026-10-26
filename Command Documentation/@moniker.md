@@ -23,6 +23,5 @@ Show the first letter in orange, and the rest with no color
 - [ansi()]
 - [@nameformat]
 - [@nameaccent]
-- [MONIKER()]
 :::
 

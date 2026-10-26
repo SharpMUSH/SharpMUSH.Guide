@@ -11,7 +11,7 @@ The terminals SharpMUSH knows:
 - kitty, ghostty, wezterm, iterm2, konsole, foot, xterm, windows-terminal, mintty, vscode (Visual Studio Code's terminal), contour, rio, mlterm, alacritty, vte (GNOME Terminal, Tilix, Terminator and other VTE terminals), tmux
 
 Example:
-```
+```sharp
 > SOCKSET terminal=windows-terminal
 Terminal set to 'windows-terminal'
 ```

@@ -8,11 +8,11 @@
 
     0-9, #, @, !, n, l, and c.
 
-  Unlike %-subs, the v() function is not case-sensitive: v(n) and v(N) are both equivilent to %n (whereas %N is equivilent to [capstr(%n)]).
+  Unlike %-subs, the v() function is not case-sensitive: v(n) and v(N) are both equivalent to %n (whereas %N is equivalent to `[capstr(%n)]`).
 
-  v() can also return the value of stack registers. v(0) is equivilent to %0, but v() can return up to 30 registers (v(0) through v(29)). Calling v() with an integer arg that is not between 0 and 29 (inclusive) will return an out-of-range error.
+  v() can also return the value of stack registers %0 through %9: v(0) is equivalent to %0. A number of two or more digits, such as v(10), is treated as an attribute name; use %`<10>` or r(10,args) for argument 10 and higher.
 
-  The final form of this function is equivilent to get(me/`<attribute>`), but is usually slightly more efficient.
+  The final form of this function is equivalent to get(me/`<attribute>`), but is usually slightly more efficient.
 
 
 ::: seealso

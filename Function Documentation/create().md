@@ -1,9 +1,9 @@
 # create()
 `create(<object>[, <cost>[, <dbref>]])`
 
-   This function creates an object with name `<object>` for `<cost>` pennies, and returns the dbref number of the created object. It returns #-1 on error.
+   This function creates an object with name `<object>`, and returns the dbref number of the created object. It returns #-1 on error. The `<cost>` argument is accepted but ignored.
 
-   Wizards may also specify a `<dbref>`; if this refers to a garbage object, the new object is created with this dbref.
+   Wizards and objects with the PICK_DBREFS power may also specify an unused `<dbref>` for the new object.
 
 
 ::: seealso

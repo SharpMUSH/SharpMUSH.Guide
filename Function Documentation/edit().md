@@ -16,6 +16,8 @@ You say "I think this is an exam."
 
   edit() can not replace a literal single ^ or $. Use regedit() for that.
 
+  With the `rhost_edit` option on, edit() takes RhostMUSH's form, `edit(<string>, <search>, <replace>[, <first only>[, <ansi mode>]])`: a fourth argument starting with a nonzero number replaces only the first match, and the fifth is accepted and ignored. This form comes from RhostMUSH; see [compatibility config].
+
 
 ::: seealso
 - [@edit]

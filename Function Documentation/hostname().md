@@ -13,6 +13,5 @@
 - [Connection functions]
 - [IPADDR()]
 - [LPORTS()]
-- [LPORTS()]
 :::
 

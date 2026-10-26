@@ -5,9 +5,9 @@
 
     ansi      --  Convert colors to raw ANSI tags (requires Can_Spoof power)<br>
     html      --  Escape HTML entities (< to &lt;, etc) and convert Pueblo to HTML tags<br>
+    markdown  --  Write the string as Markdown, with highlighting as bold and a table as a pipe table<br>
     noaccents --  Downgrade accented characters, as per stripaccents()<br>
-    markup    --  Leave any markup not already converted by ansi/html as internal markup tags. Without this, unhandled markup<br>
-                  will be stripped, as per stripansi()
+    markup    --  Accepted for compatibility; it has no effect
 
   Examples:
 ```sharp

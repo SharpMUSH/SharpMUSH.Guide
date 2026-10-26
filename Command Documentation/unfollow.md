@@ -11,7 +11,5 @@ This command stops you from following an object that you were formerly following
 - [desert]
 - [FOLLOWERS()]
 - [@follow]
-- [@follow]
-- [@follow]
 :::
 

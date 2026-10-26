@@ -6,7 +6,7 @@
 
   When given a second argument of "on" (or "off"), attempts to lock (or unlock) the specified attribute, as per @atrlock.
 
-  A locked attribute is one which has the "locked" attribute flag, so this function is roughly equivilent to:
+  A locked attribute is one which has the "locked" attribute flag, so this function is roughly equivalent to:
 
 `hasattr(<object>/<attrib>, locked)`<br>
 `set(<object>/<attribute>, [!]locked)`

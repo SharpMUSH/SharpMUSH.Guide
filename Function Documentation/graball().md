@@ -20,7 +20,6 @@ You say "This is"
 
 ::: seealso
 - [element()]
-- [element()]
 - [GRAB()]
 - [regmatch()]
 :::

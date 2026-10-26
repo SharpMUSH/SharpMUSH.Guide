@@ -18,7 +18,6 @@ test
 ::: seealso
 - [GET()]
 - [u()]
-- [GET()]
 - [EDEFAULT()]
 :::
 

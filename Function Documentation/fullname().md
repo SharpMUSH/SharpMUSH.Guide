@@ -15,6 +15,5 @@ You say, "South;sout;sou;so;s"
 - [ACCNAME()]
 - [INAME()]
 - [ALIAS()]
-- [ALIAS()]
 :::
 

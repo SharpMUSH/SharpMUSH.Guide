@@ -12,7 +12,6 @@
 - [POWERS()]
 - [ANDLPOWERS()]
 - [@power]
-- [@power]
 - [ORFLAGS()]
 :::
 

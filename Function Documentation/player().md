@@ -6,6 +6,5 @@
 
 ::: seealso
 - [LPORTS()]
-- [LPORTS()]
 :::
 

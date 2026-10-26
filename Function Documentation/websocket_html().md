@@ -1,13 +1,11 @@
 # websocket_html()
-# websocket_json()
-`websocket_html(<html>[, <player>])`<br>
-`websocket_json(<json>[, <player>])`
+`websocket_html(<html>[, <player>])`
 
-  Reserved for sending raw HTML or a raw JSON payload out-of-band to a WebSocket client, defaulting to the caller when no `<player>` is given.
+  Reserved for sending raw HTML out-of-band to a WebSocket client, defaulting to the caller when no `<player>` is given.
 
-  **Neither function is implemented yet.** Both validate their arguments and then return an error; no data reaches any connection. They are registered so that softcode written against them keeps its name, and so that this gap is visible from in-game help rather than only from the source. Use [OOB()] for GMCP, which does work.
+  **It is not implemented yet.** It checks that `<player>` exists and then returns nothing; no data reaches any connection. It is registered so that softcode written against it keeps its name, and so that this gap is visible from in-game help rather than only from the source. Use [wshtml()] for HTML in the text, and [OOB()] for JSON, which reaches GMCP and WebSocket clients.
 
-  These are SharpMUSH functions; PennMUSH has neither.
+  This is a SharpMUSH function; PennMUSH has none.
 
 
 ::: seealso

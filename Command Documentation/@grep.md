@@ -3,7 +3,7 @@
 
 @grep returns a list of all attributes on `<object>` which match `<pattern>`. If `<attrs>` is specified, only attributes which match the wildcard pattern `<attrs>` are checked; it defaults to "*". Use "**" for all attributes.
 
-Output: the names of the attributes matched, as `grep()` returns them.
+`@grep` outputs the names of the attributes matched, as `grep()` returns them.
 
 By default, attributes which contain the string `<pattern>` are returned. However, if the `/wild` switch is given, `<pattern>` is treated as a wildcard pattern, and attributes which match the pattern are returned. If the `/regexp` switch is given, `<pattern>` is treated as a regular expression, and attributes matching the regexp are returned. Please note that `<pattern>` will NOT be evaluated, so you can easily grep for code strings.
 
@@ -17,8 +17,6 @@ For backwards compatability, the `/list` switch provides the default behaviour o
 
 
 ::: seealso
-- [GREP()]
-- [GREP()]
 - [GREP()]
 - [WILDCARDS]
 :::

@@ -1,7 +1,7 @@
 # @speechmod
 `@speechmod <object>[=<modifier>]`
 
-When set, this attribute modifies everything `<object>` says, poses, semiposes and @emits. The original text spoken/posed/emitted is passed as %0 or %`\<message\>`, with %1 or %`\<type\>` passed as " (for say), : (for pose), ; (for semipose) or | (for @emit). Each is passed by position and by name (see [named arguments]).
+When set, this attribute modifies everything `<object>` says, poses, semiposes and @emits. The original text spoken/posed/emitted is passed as %0 or `%<message>`, with %1 or `%<type>` passed as " (for say), : (for pose), ; (for semipose) or | (for @emit). Each is passed by position and by name (see [named arguments]).
 
 If the attribute evaluates to an empty string, the original text will be used. Otherwise, the result of the attribute is used.
 

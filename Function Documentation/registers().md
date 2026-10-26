@@ -17,7 +17,6 @@
 ::: seealso
 - [LISTQ()]
 - [setq()]
-- [setq()]
 - [LETQ()]
 - [R()]
 - [V()]

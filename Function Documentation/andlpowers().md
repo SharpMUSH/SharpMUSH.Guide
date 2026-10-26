@@ -12,6 +12,5 @@
 - [POWERS()]
 - [ORLPOWERS()]
 - [@power]
-- [@power]
 :::
 

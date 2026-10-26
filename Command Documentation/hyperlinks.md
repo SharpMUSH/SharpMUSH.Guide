@@ -13,7 +13,7 @@ Neither is sent unless SharpMUSH knows your client reads it, because a client th
 Use 'on' or 'off' to override that, and 'auto' to go back to it. SOCKSET shows the setting in effect, as "auto (on)" or "auto (off)" when nothing is set. terminfo() includes 'hyperlinks' and 'commandlinks' while they are on.
 
 Example:
-```
+```sharp
 > SOCKSET hyperlinks=on
 Hyperlinks set to 'on'
 ```

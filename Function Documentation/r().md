@@ -8,23 +8,20 @@
   `<type>` defaults to "qregisters", and must be one of:
 
     qregisters - registers set with setq(), setr() and similar functions<br>
-    args       - the stack, usually accessed via %0-%9. There are up to 30 stack registers, plus named arguments from regexp $-commands, mapsql() and uargs(), also available as %`\<name\>`. Names are case-insensitive.<br>
+    args       - the stack, usually accessed via %0-%9. There are up to 30 stack registers, plus named arguments from regexp $-commands, mapsql() and uargs(), also available as `%<name>`. Names are case-insensitive.<br>
     iter       - itext() context from iter() or @dolist. Must be an int, or "L" for the outermost itext().<br>
     switch     - stext() context from switch() or @switch. Must be an int, or "L" for the outermost stext()<br>
     regexp     - regexp capture names from re*() regexp functions
 
-  qregisters can also be accessed via the %qX (for one-char register names) or %q`\<X\>` (for registers with longer names) substitutions.
+  qregisters can also be accessed via the %qX (for one-char register names) or `%q<X>` (for registers with longer names) substitutions.
 
 
 ::: seealso
 - [setq()]
 - [LETQ()]
 - [LISTQ()]
-- [LISTQ()]
 - [REGISTERS()]
 - [V()]
-- [ilev()]
-- [STEXT()]
 - [ilev()]
 - [STEXT()]
 :::

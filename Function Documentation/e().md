@@ -24,7 +24,6 @@
 
 ::: seealso
 - [FILTER()]
-- [FILTER()]
 - [FILTERQ()]
 - [setq()]
 - [CHAIN()]

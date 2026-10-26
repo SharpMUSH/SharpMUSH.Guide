@@ -8,22 +8,18 @@
 
   Returns a checksum (hash, digest, etc.) of `<string>` using the given `<algorithm>`. The result is a unique large number represented in base 16.
 
-  Typically at least the following algorithms are supported:
+  The supported algorithms are:
 
-  md4 md5 ripemd160 sha1 sha224 sha256 sha384 sha512 whirlpool
+  md5 sha1 sha256 sha384 sha512
 
-  Depending on the host's OpenSSL version and how it was configured, there might be more (or less) available. digest(list) returns the methods a particular server understands if the OpenSSL library version being used is recent enough (1.0.0 and higher), or '#-1 LISTING NOT SUPPORTED' on older versions. For portable code, stick with MD5, SHA1 and the SHA2 family.
+  digest(list) returns that list. An unknown algorithm gives #-1 ARGUMENT OUT OF RANGE.
 
   Example:
 ```sharp
 think iter(digest(list), %i0(foo) => [digest(%i0, foo)], %b, %r)
-...
-MD4(foo) => 0ac6700c491d70fb8650940b1ca1e4b2
 MD5(foo) => acbd18db4cc2f85cedef654fccc4a4d8
-MDC2(foo) => 5da2a8f36bf237c84fddf81b67bd0afc
-RIPEMD160(foo) => 42cfa211018ea492fdee45ac637b7972a0ad6873
 SHA1(foo) => 0beec7b5ea3f0fdbc95d0dd47f3c5bc275da8a33
-SHA224(foo) => 0808f64e60d58979fcb676c96ec938270dea42445aeefcd3a4e6f8db
+SHA256(foo) => 2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f98a5e886266e7ae
 ...
 ```
 

@@ -1,9 +1,7 @@
 # @prefix
 `@prefix <object>[=<message>]`
 
-This attribute is meant to be used in conjunction with the AUDIBLE flag. The @prefix of the object is prepended to messages propagated via AUDIBLE. Pronoun substitution is done on @prefix messages.
-
-For example, if you have an audible exit "Outside" leading from a room Garden to a room Street, with @prefix "From the garden nearby," if Joe does a ":waves to everyone." from the Garden, the people at Street will see the message, "From the garden nearby, Joe waves to everyone."
+This attribute is meant to be used with the AUDIBLE flag. It is evaluated, with %0 the message, and prepended to the sound an AUDIBLE object passes on to its @forwardlist; without one, the sound starts "From `<object>`, ". SharpMUSH does not propagate sound through AUDIBLE exits yet, so @prefix is not used for them.
 
 
 ::: seealso

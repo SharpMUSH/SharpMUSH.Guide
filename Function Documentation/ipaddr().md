@@ -10,6 +10,5 @@
 - [Connection functions]
 - [HOST()]
 - [LPORTS()]
-- [LPORTS()]
 :::
 

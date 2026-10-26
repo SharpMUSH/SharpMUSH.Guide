@@ -8,7 +8,6 @@
 
 ::: seealso
 - [@power]
-- [@power]
 - [HASFLAG()]
 :::
 
