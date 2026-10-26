@@ -28,7 +28,6 @@ configure:
     default: "Community Board"
 
 objects:
-  - ref: bbsl_gobjects:
   - ref: bbsl_global
     type: thing
     name: BBS-Lite Global Object
