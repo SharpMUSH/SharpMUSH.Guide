@@ -7,7 +7,7 @@ See `help roles`, `help @role` and `help @permission` on the game for the full r
 ## The pieces
 
 - A **permission** names one thing someone may do: `wiki.edit`, `players.moderate`, `game.see_all`. A game can define its own with `@permission/define`, such as `scene.close` or `chargen.approve`.
-- A **role** is a named set of permissions. Each role allows, denies or leaves alone each permission. `wizard`, `royalty`, `builder`, `helper`, `moderator`, `player` and `guest` exist in a new game; you can add your own.
+- A **role** is a named set of permissions. Each role allows, denies or leaves alone each permission. `wizard`, `royalty`, `builder`, `player` and `guest` exist in every game, with `helper` and `moderator` beside them, or RhostMUSH's `guildmaster`, `architect`, `councilor` and `immortal` if setup chose those; you can add your own.
 - **Objects and accounts both hold roles.** A character holds the roles assigned to it plus the roles of the account it is linked to. Every object holds `everyone`, and every non-guest player holds `player`.
 - An **override** sets one permission on one object or account, and beats every role it holds.
 - Every role and every custom permission sits in a **category**. Role categories and permission categories are separate lists, and a category must exist before anything goes in it.
