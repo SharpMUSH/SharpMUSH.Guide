@@ -11,6 +11,8 @@ To get an object from someone else's inventory, the possessive_get @config optio
 
 'take' is usually an alias for the 'get' command.
 
+`get/quiet` leaves out the success message and @osuccess; @asuccess still runs. With the `mux_quiet` @config option on, it leaves out @osuccess and @asuccess instead, and only when you control the object; you still see the success message.
+
 
 ::: seealso
 - [LOCKING]

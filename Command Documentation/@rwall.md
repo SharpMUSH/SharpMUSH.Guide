@@ -1,7 +1,7 @@
 # @wall
 # @rwall
 # @wizwall
-`@wall[/emit][/noeval] <message>`<br>
+`@wall[/emit][/noeval][/admin|/wizard] <message>`<br>
 `@rwall[/emit][/noeval] <message>`<br>
 `@wizwall[/emit][/noeval] <message>`
 
@@ -10,6 +10,8 @@
 `<message>` can be prefixed with : or ; to pose or semi-pose it, respectively, or the `/emit` switch can be given to emit the message. If `<message>` begins with a " and the chat_strip_quote option is on, the " will be stripped.
 
 The message is prefixed with the value of the wall_prefix, rwall_prefix or wizwall_prefix options, depending on the command used.
+
+TinyMUX's `@wall/admin` is @rwall, and `@wall/wizard` is @wizwall.
 
 
 ::: seealso

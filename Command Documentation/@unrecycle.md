@@ -13,6 +13,7 @@ If `<object>` is a player and the 'destroy_possessions' @config option is on, al
 
 ::: seealso
 - [@destroy]
+- [@recover]
 - [GOING]
 - [@startup]
 :::

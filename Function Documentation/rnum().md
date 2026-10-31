@@ -5,7 +5,7 @@
 
   You must be able to examine `<container>` to use this function.
 
-  This function has been deprecated and may be removed in a future patchlevel; locate(`<container>`, `<object>`, i) should be used instead.
+  This function is deprecated; locate(`<container>`, `<object>`, i) should be used instead.
 
 
 ::: seealso
