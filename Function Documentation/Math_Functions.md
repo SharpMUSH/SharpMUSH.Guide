@@ -1,20 +1,22 @@
 # Math Functions
   Math functions take one or more floating point numbers and return a numeric value.
 
-|              |              |              |              |
-|--------------|--------------|--------------|--------------|
-| [ABS()]      | [ACOS()]     | [ADD()]      | [ASIN()]     |
-| [ATAN()]     | [ATAN2()]    | [BOUND()]    | [CEIL()]     |
-| [COS()]      | [CTU()]      | [DIST2D()]   | [DIST3D()]   |
-| [E()]        | [EXP()]      | [FDIV()]     | [FLOOR()]    |
-| [FMOD()]     | [FRACTION()] | [LADD()]     | [LAVG()]     |
-| [LDIV()]     | [LMATH()]    | [LMAX()]     | [LMIN()]     |
-| [LMUL()]     | [LN()]       | [LOG()]      | [LSUB()]     |
-| [MAX()]      | [MEAN()]     | [MEDIAN()]   | [MIN()]      |
-| [MUL()]      | [PI()]       | [POWER()]    | [ROOT()]     |
-| [ROUND()]    | [SIGN()]     | [SIN()]      | [SQRT()]     |
-| [STDDEV()]   | [SUB()]      | [TAN()]      | [TRUNC()]    |
-| [VAL()]      |              |              |              |
+|                |                |                |                |
+|----------------|----------------|----------------|----------------|
+| [ABS()]        | [ACOS()]       | [ADD()]        | [ASIN()]       |
+| [ATAN()]       | [ATAN2()]      | [BETWEEN()]    | [BOUND()]      |
+| [CEIL()]       | [COS()]        | [COSH()]       | [CTU()]        |
+| [DIST2D()]     | [DIST3D()]     | [DISTRIBUTE()] | [E()]          |
+| [EXP()]        | [FBETWEEN()]   | [FDIV()]       | [FLOOR()]      |
+| [FMOD()]       | [FRACTION()]   | [LADD()]       | [LAVG()]       |
+| [LDIV()]       | [LMATH()]      | [LMAX()]       | [LMIN()]       |
+| [LMUL()]       | [LN()]         | [LOG()]        | [LRAND()]      |
+| [LSUB()]       | [MAX()]        | [MEAN()]       | [MEDIAN()]     |
+| [MIN()]        | [MUL()]        | [PI()]         | [POWER()]      |
+| [ROMAN()]      | [ROOT()]       | [ROUND()]      | [SIGN()]       |
+| [SIN()]        | [SINH()]       | [SQRT()]       | [STDDEV()]     |
+| [SUB()]        | [TAN()]        | [TANH()]       | [TRUNC()]      |
+| [VAL()]        |                |                |                |
 
   These functions operate only on integers (if passed floating point numbers, they will return an error or misbehave):
 

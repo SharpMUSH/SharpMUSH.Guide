@@ -5,16 +5,17 @@
 |-----------------------|-----------------------|-----------------------|-----------------------|
 | [APOSS()]             | [ATTRIB_SET#()]       | [ATTRIB_SET()]        | [ATTRWATCH()]         |
 | [DEFAULT()]           | [EDEFAULT()]          | [EVAL()]              | [FLAGS()]             |
-| [GET()]               | [GREP()]              | [GREPI()]             | [HASATTR()]           |
-| [HASATTRP()]          | [HASATTRVAL()]        | [HASFLAG()]           | [INDEXED()]           |
-| [LATTR()]             | [LFLAGS()]            | [NATTR()]             | [OBJ()]               |
-| [OWNER()]             | [PFUN()]              | [POSS()]              | [REGLATTR()]          |
-| [REGREP()]            | [REGREPI()]           | [REGXATTR()]          | [SET()]               |
+| [GET()]               | [GREP()]              | [GREPI()]             | [HASARG()]            |
+| [HASATTR()]           | [HASATTRP()]          | [HASATTRVAL()]        | [HASFLAG()]           |
+| [INDEXED()]           | [LATTR()]             | [LATTRCMDS()]         | [LCMDS()]             |
+| [LFLAGS()]            | [NATTR()]             | [OBJ()]               | [OWNER()]             |
+| [PFUN()]              | [POSS()]              | [REGLATTR()]          | [REGREP()]            |
+| [REGREPI()]           | [REGXATTR()]          | [SET()]               | [STREVAL()]           |
 | [SUBJ()]              | [SYNTAXDIAGNOSTICS()] | [U()]                 | [U2()]                |
 | [U2DEFAULT()]         | [U2LDEFAULT()]        | [U2LOCAL()]           | [UARGS()]             |
-| [UDEFAULT()]          | [UFUN()]              | [ULAMBDA()]           | [ULDEFAULT()]         |
-| [ULOCAL()]            | [V()]                 | [WILDGREP()]          | [WILDGREPI()]         |
-| [XATTR()]             | [XGET()]              | [ZFUN()]              | [HASARG()]            |
+| [UDEFAULT()]          | [UEVAL()]             | [UFUN()]              | [ULAMBDA()]           |
+| [ULDEFAULT()]         | [ULOCAL()]            | [V()]                 | [WILDGREP()]          |
+| [WILDGREPI()]         | [XATTR()]             | [XGET()]              | [ZFUN()]              |
 
 ::: seealso
 - [attributes]
