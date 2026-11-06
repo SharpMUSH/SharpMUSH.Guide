@@ -256,7 +256,7 @@ A package declares the roles, permissions and categories it needs in `package.ya
 
 ## Message streams: feeds
 
-A system where people send lines to a group and read them back later (a radio, text messages, a staff log) is a **feed kind**, not member lists and history kept in attributes. See `help @feed` and `help feed functions`; the bundled `radio` package (`+radio`) is the worked example.
+A system where people send lines to a group and read them back later (a radio, text messages, a staff log) is a **feed kind**, not member lists and history kept in attributes. See `help @feed` and `help feed functions`; the `radio` package (`+radio`) in the official package library is the worked example.
 
 | The feed owns | The system owns |
 |---|---|
