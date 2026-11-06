@@ -4,7 +4,7 @@ A **feed** is a stream of messages that a group of people reads: a radio frequen
 
 A system built on feeds needs no member lists in attributes, no history attributes that grow until someone trims them, and no code of its own to tell a scene recorder what was said.
 
-See `help @feed` and `help feed functions` on the game for every switch and function. The bundled `radio` package (`+radio`) is a complete system built this way, and it is shown at the end of this guide.
+See `help @feed` and `help feed functions` on the game for every switch and function. The `radio` package (`+radio`), in the official package library, is a complete system built this way, and it is shown at the end of this guide.
 
 ## What the feed keeps, and what your code keeps
 
@@ -155,7 +155,7 @@ A line older than `max_age` is dropped the next time its feed is written to, and
 
 ## The +radio package
 
-The bundled `radio` package is a full radio built on a feed kind. Install it from the portal's Packages page. Players get:
+The `radio` package, in the official package library, is a full radio built on a feed kind. Install it from the portal's Packages page once the library is added as a remote. Players get:
 
 ```text
 > +radio/join pol
@@ -184,7 +184,7 @@ How it is split:
 - The `radio` object keeps each frequency's name, category, description, member, moderator and admin lists and locks under `` F`<id>` ``, and each player's title, callsign and colour under `` P`<player>` ``.
 - `FEED`RADIO`FORMAT` draws every line, and recall calls the same code.
 
-Read `examples/packages/radio/package.yaml` in the SharpMUSH repository for the code.
+Read `radio/package.yaml` in the SharpMUSH.Packages repository for the code.
 
 ## Joining two systems: radio in scenes
 
@@ -206,4 +206,4 @@ It uses three hooks, and changes neither package's code:
 
 One trap when one package's code runs inside another's: a `{{ref}}` in a package's code is looked up on whatever object is running it. While the radio includes `` INC`LOG ``, the radio is the executor, and it holds none of `radio-scene`'s refs. So the included code names the radio `%!`, and its own object comes in a register (`%q<ext>`) that the radio sets before it includes it. `TAP`LOG` runs on `radio-scene`'s own object, so its refs work there.
 
-Read `examples/packages/radio-scene/package.yaml` for the code.
+Read `radio-scene/package.yaml` in the same repository for the code.
