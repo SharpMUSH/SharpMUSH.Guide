@@ -1,7 +1,8 @@
 # @dolist
 
 `@dolist[/<switches>][/notify][/delimit <delim>] <list>=<action list>`<br>
-`@dolist/pid <object> <list>=<action list>`
+`@dolist/pid <object> <list>=<action list>`<br>
+`@dolist/then <list>=<action list>,<afterwards>`
 
 @dolist queues the `<action list>` for execution once for each element in `<list>`. `<list>` is space-separated, unless the `/delimit` switch is given, in which case it is a `<delim>`-separated list. A marked `<delim>`, such as `%*<|>`, splits only where it is marked: see [list separators]. The `/space` switch asks for the default, a space-separated list, and changes nothing; it comes from RhostMUSH.
 
@@ -9,6 +10,7 @@ With `/inline` or `/inplace`, `@dolist` outputs what the last command it ran out
 
 - [@dolist substitutions]: `%i0`, `inum()`, `%d0`, `##` and `#@` in the action list
 - [@dolist notification and delimiters]: `/notify`, `/pid`, `/inline` and the switches that go with it
+- [@dolist then]: `/then`, an action list run after the last element
 - [@dolist iteration examples]: positions and `/notify`
 - [@dolist nested examples]: one @dolist inside another, and inside iter()
 
@@ -24,7 +26,7 @@ For backwards compatibility, "##" also stands for the current element of the lis
 
 If the `/notify` switch is given, the command "@notify me" is queued after all copies of `<action list>` have been queued. This is useful for object synchronization with semaphores. With `/pid`, the first word of `<list>` is taken out of it and names the object to notify instead of you; `/notify` wins over `/pid`, and `/delimit` turns it off.
 
-If the `/inline` switch is given, @dolist will run the new action lists instantly, instead of queueing them to be run later.
+If the `/inline` switch (or TinyMUX's `/now`) is given, @dolist will run the new action lists instantly, instead of queueing them to be run later.
 
 When using `@dolist/inline`, an @break in an `<action list>` will stop the calling action list (and any further `<action list>`s) from running. Each `<action list>` will also be able to see/alter the q-registers for the calling action list. The following switches can be used with `/inline` to alter this behaviour:
 - /nobreak: @breaks in `<action list>` do not effect to the calling action list
@@ -43,6 +45,20 @@ Without `/inline` or `/inplace`, /localize and /clearregs do nothing: each queue
 - [semaphores]
 - [action lists]
 :::
+
+## Running something afterwards
+
+`@dolist/then <list>=<action list>,<afterwards>`
+
+With `/then`, the action list after the last comma runs once after every copy of `<action list>`, with the number of elements in %0, even when `<list>` is empty. Queued, it is queued after them; with `/inline`, it runs in place after the last one. Put braces around an action list that has a comma of its own.
+
+```sharp
+> @dolist/then a b c=say %i0,say That was %0.
+You say, "a"
+You say, "b"
+You say, "c"
+You say, "That was 3."
+```
 
 ## Iteration examples
 

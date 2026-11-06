@@ -1,6 +1,6 @@
 # @ascii
 
-`@ascii`<br>
+`@ascii[/list]`<br>
 `@ascii <character>=<text>`<br>
 `@ascii/remove <character>`
 

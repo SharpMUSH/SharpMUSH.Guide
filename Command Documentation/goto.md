@@ -12,8 +12,11 @@ Moving outputs the dbref of the room you arrive in.
 
 'go home' is a special command that returns you to your home room/object.
 
+`goto/quiet` leaves out the exit's success and drop messages and your @move and @omove; the action attributes still run. With the `mux_quiet` @config option on, it leaves out the exit's @osuccess, @asuccess, @odrop and @adrop instead, and only when you control the exit; you still see its success and drop messages.
+
 
 ::: seealso
+- [walk]
 - [HOMES]
 - [@link]
 - [@ealias]
