@@ -7,7 +7,7 @@
 
   Prefer cor(): it skips work the answer no longer needs. Use or() only when every argument has a side effect that must run.
 
-  As in TinyMUX, a single argument is tested on its own: `or(0)` is 0. With the `mux_logic` @config option on, each argument is tested by its leading signed integer, as TinyMUX does, so `or(0,abc)` is 0. See [compatibility config].
+  As in TinyMUX, a single argument is tested on its own: `or(0)` is 0. With the `mux_logic` @config option on, each argument is tested by its leading signed integer, as TinyMUX and RhostMUSH do, so `or(0,abc)` is 0. See [compatibility config].
 
 
 ::: seealso

@@ -3,21 +3,22 @@
 
 |                 |                 |                 |                 |
 |-----------------|-----------------|-----------------|-----------------|
-| [CHAIN()]       | [CITER()]       | [ELEMENTS()]    | [EVERY()]       |
-| [EXTRACT()]     | [FILTER()]      | [FILTERBOOL()]  | [FILTERQ()]     |
-| [FIRST()]       | [FOLD()]        | [GRAB()]        | [GRABALL()]     |
-| [INDEX()]       | [INF()]         | [ITEMIZE()]     | [ITEMS()]       |
-| [ITER()]        | [JITER()]       | [LAST()]        | [LDELETE()]     |
+| [CHAIN()]       | [CHOOSE()]      | [CITER()]       | [ELEMENTS()]    |
+| [EVERY()]       | [EXTRACT()]     | [FILTER()]      | [FILTERBOOL()]  |
+| [FILTERQ()]     | [FIRST()]       | [FOLD()]        | [GRAB()]        |
+| [GRABALL()]     | [INDEX()]       | [INF()]         | [ITEMIZE()]     |
+| [ITEMS()]       | [ITER()]        | [JITER()]       | [KEEPFLAGS()]   |
+| [KEEPTYPE()]    | [LAST()]        | [LDELETE()]     | [LEDIT()]       |
 | [LINSERT()]     | [LISTDIFF()]    | [LISTINTER()]   | [LISTSET()]     |
 | [LISTUNION()]   | [LOCKFILTER()]  | [LREPLACE()]    | [MAP()]         |
 | [MATCH()]       | [MATCHALL()]    | [MEMBER()]      | [MIX()]         |
 | [MUNGE()]       | [NAMEGRAB()]    | [NAMEGRABALL()] | [NSITER()]      |
-| [RANDEXTRACT()] | [RANDWORD()]    | [REMOVE()]      | [REST()]        |
-| [REVWORDS()]    | [SETDIFF()]     | [SETINTER()]    | [SETSYMDIFF()]  |
-| [SETUNION()]    | [SHUFFLE()]     | [SOME()]        | [SORT()]        |
-| [SORTBY()]      | [SORTKEY()]     | [SPLICE()]      | [STEP()]        |
-| [STEPARGS()]    | [TABLE()]       | [UNIQUE()]      | [WHILE()]       |
-| [WORDPOS()]     | [WORDS()]       |                 |                 |
+| [RANDEXTRACT()] | [RANDWORD()]    | [REMFLAGS()]    | [REMOVE()]      |
+| [REMTYPE()]     | [REST()]        | [REVWORDS()]    | [SETDIFF()]     |
+| [SETINTER()]    | [SETSYMDIFF()]  | [SETUNION()]    | [SHUFFLE()]     |
+| [SOME()]        | [SORT()]        | [SORTBY()]      | [SORTKEY()]     |
+| [SPLICE()]      | [STEP()]        | [STEPARGS()]    | [TABLE()]       |
+| [UNIQUE()]      | [WHILE()]       | [WORDPOS()]     | [WORDS()]       |
 
 ::: seealso
 - [LISTS]

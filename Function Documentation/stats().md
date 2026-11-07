@@ -10,8 +10,8 @@
   `<Total objects>` `<Rooms>` `<Exits>` `<Things>` `<Players>`
 
   PennMUSH's own help lists six columns for both forms, but fun_lstats prints the garbage column
-  only for the whole database; SharpMUSH follows the code. A destroyed object is removed here
-  rather than kept as garbage, so that column is always 0.
+  only for the whole database; SharpMUSH follows the code. Garbage is the free numbers (see
+  [garbage]), and the whole database's total counts them.
 
   stats() is an alias for lstats().
 

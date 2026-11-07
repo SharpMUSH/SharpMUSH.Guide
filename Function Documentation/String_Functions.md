@@ -1,5 +1,5 @@
 # String Functions
-  String functions take at least one string and return a transformed string, parts of a string, or a value related to the string(s).
+  These functions return part of a string, a changed copy, or a fact about it.
 
 |                          |                          |                          |                          |
 |--------------------------|--------------------------|--------------------------|--------------------------|
@@ -7,23 +7,25 @@
 | [ALPHAMIN()]             | [ART()]                  | [BEFORE()]               | [BRACKETS()]             |
 | [CAPSTR()]               | [CASE()]                 | [CASEALL()]              | [CAT()]                  |
 | [CENTER()]               | [CHR()]                  | [COLUMNS()]              | [COMP()]                 |
-| [COND()]                 | [CONDALL()]              | [DECODE64()]             | [DECOMPOSE()]            |
-| [DECOMPOSEWEB()]         | [DECRYPT()]              | [DIGEST()]               | [DISPLAYWIDTH()]         |
-| [EDIT()]                 | [ELEMENTPOS()]           | [ENCODE64()]             | [ENCRYPT()]              |
-| [ESCAPE()]               | [FLIP()]                 | [FOREACH()]              | [FORMDECODE()]           |
-| [FORMQ()]                | [GRAPHEMECOUNT()]        | [GRAPHEMES()]            | [HMAC()]                 |
-| [IF()]                   | [IFELSE()]               | [LCSTR()]                | [LEFT()]                 |
-| [LIT()]                  | [LJUST()]                | [LPOS()]                 | [MERGE()]                |
+| [COND()]                 | [CONDALL()]              | [CPAD()]                 | [CRC32()]                |
+| [DECODE64()]             | [DECOMPOSE()]            | [DECOMPOSEWEB()]         | [DECRYPT()]              |
+| [DIGEST()]               | [DISPLAYWIDTH()]         | [EDIT()]                 | [ELEMENTPOS()]           |
+| [ENCODE64()]             | [ENCRYPT()]              | [ESCAPE()]               | [ESCAPEX()]              |
+| [FLIP()]                 | [FOREACH()]              | [FORMDECODE()]           | [FORMQ()]                |
+| [GRAPHEMECOUNT()]        | [GRAPHEMES()]            | [HMAC()]                 | [IF()]                   |
+| [IFELSE()]               | [LCSTR()]                | [LEFT()]                 | [LIT()]                  |
+| [LJUST()]                | [LPAD()]                 | [LPOS()]                 | [MERGE()]                |
 | [MID()]                  | [ORD()]                  | [ORDINAL()]              | [POS()]                  |
 | [PRINTF()]               | [REGEDIT()]              | [REGMATCH()]             | [RENDER()]               |
 | [RENDERMARKDOWN()]       | [RENDERMARKDOWNCUSTOM()] | [REPEAT()]               | [RIGHT()]                |
-| [RJUST()]                | [SCRAMBLE()]             | [SECURE()]               | [SHA0()]                 |
-| [SPACE()]                | [SPELLNUM()]             | [SQUISH()]               | [STANDIN()]              |
-| [STRALLOF()]             | [STRCAT()]               | [STRDELETE()]            | [STRDISTANCE()]          |
-| [STRFIRSTOF()]           | [STRINSERT()]            | [STRIPACCENTS()]         | [STRIPANSI()]            |
-| [STRLEN()]               | [STRMATCH()]             | [STRREPLACE()]           | [SWITCH()]               |
-| [TR()]                   | [TRIM()]                 | [UCSTR()]                | [UNMARK()]               |
-| [URLDECODE()]            | [URLENCODE()]            | [WRAP()]                 |                          |
+| [RJUST()]                | [RPAD()]                 | [SCRAMBLE()]             | [SECURE()]               |
+| [SHA0()]                 | [SPACE()]                | [SPELLNUM()]             | [SQUISH()]               |
+| [STANDIN()]              | [STRALLOF()]             | [STRCAT()]               | [STRDELETE()]            |
+| [STRDISTANCE()]          | [STRFIRSTOF()]           | [STRINSERT()]            | [STRIP()]                |
+| [STRIPACCENTS()]         | [STRIPANSI()]            | [STRLEN()]               | [STRMATCH()]             |
+| [STRMEM()]               | [STRREPLACE()]           | [SWITCH()]               | [TR()]                   |
+| [TRIM()]                 | [UCSTR()]                | [UNMARK()]               | [URLDECODE()]            |
+| [URLENCODE()]            | [WRAP()]                 |                          |                          |
 
 Boxes, titled rules, columns, labelled fields, trees, pictures, gauges, lists and tables that the web portal draws as real layout are [LAYOUT FUNCTIONS].
 
