@@ -3,14 +3,14 @@
 
 |                  |                  |                  |                  |
 |------------------|------------------|------------------|------------------|
-| [ADDRLOG()]      | [CLIENTZONE()]   | [CMDS()]         | [CONN()]         |
-| [CONNLOG()]      | [CONNRECORD()]   | [DOING()]        | [GMCPSUPPORTS()] |
-| [HEIGHT()]       | [HIDDEN()]       | [HOST()]         | [IDLE()]         |
-| [IPADDR()]       | [LPORTS()]       | [LWHO()]         | [LWHOID()]       |
-| [MWHO()]         | [MWHOID()]       | [NMWHO()]        | [NWHO()]         |
-| [PLAYER()]       | [PORTS()]        | [PUEBLO()]       | [RECV()]         |
-| [SENT()]         | [SSL()]          | [TERMINFO()]     | [WIDTH()]        |
-| [XMWHO()]        | [XMWHOID()]      | [XWHO()]         | [XWHOID()]       |
-| [ZMWHO()]        | [ZWHO()]         |                  |                  |
+| [ADDRLOG()]      | [CLIENTZONE()]   | [CLOAK()]        | [CMDS()]         |
+| [CONN()]         | [CONNLOG()]      | [CONNRECORD()]   | [DOING()]        |
+| [GMCPSUPPORTS()] | [HEIGHT()]       | [HIDDEN()]       | [HOST()]         |
+| [IDLE()]         | [IPADDR()]       | [LPORTS()]       | [LWHO()]         |
+| [LWHOID()]       | [MWHO()]         | [MWHOID()]       | [NMWHO()]        |
+| [NWHO()]         | [PLAYER()]       | [PORTS()]        | [PUEBLO()]       |
+| [RECV()]         | [SENT()]         | [SSL()]          | [TERMINFO()]     |
+| [TOTCMDS()]      | [WIDTH()]        | [XMWHO()]        | [XMWHOID()]      |
+| [XWHO()]         | [XWHOID()]       | [ZMWHO()]        | [ZWHO()]         |
 
 

@@ -3,22 +3,24 @@
 
 |                 |                 |                 |                 |
 |-----------------|-----------------|-----------------|-----------------|
-| [CHAIN()]       | [CHOOSE()]      | [CITER()]       | [ELEMENTS()]    |
+| [AINDEX()]      | [BUTLAST()]     | [CAPLIST()]     | [CHAIN()]       |
+| [CHOOSE()]      | [CITER()]       | [DELEXTRACT()]  | [ELEMENTS()]    |
 | [EVERY()]       | [EXTRACT()]     | [FILTER()]      | [FILTERBOOL()]  |
 | [FILTERQ()]     | [FIRST()]       | [FOLD()]        | [GRAB()]        |
 | [GRABALL()]     | [INDEX()]       | [INF()]         | [ITEMIZE()]     |
 | [ITEMS()]       | [ITER()]        | [JITER()]       | [KEEPFLAGS()]   |
-| [KEEPTYPE()]    | [LAST()]        | [LDELETE()]     | [LEDIT()]       |
-| [LINSERT()]     | [LISTDIFF()]    | [LISTINTER()]   | [LISTSET()]     |
-| [LISTUNION()]   | [LOCKFILTER()]  | [LREPLACE()]    | [MAP()]         |
-| [MATCH()]       | [MATCHALL()]    | [MEMBER()]      | [MIX()]         |
-| [MUNGE()]       | [NAMEGRAB()]    | [NAMEGRABALL()] | [NSITER()]      |
-| [RANDEXTRACT()] | [RANDWORD()]    | [REMFLAGS()]    | [REMOVE()]      |
-| [REMTYPE()]     | [REST()]        | [REVWORDS()]    | [SETDIFF()]     |
-| [SETINTER()]    | [SETSYMDIFF()]  | [SETUNION()]    | [SHUFFLE()]     |
-| [SOME()]        | [SORT()]        | [SORTBY()]      | [SORTKEY()]     |
-| [SPLICE()]      | [STEP()]        | [STEPARGS()]    | [TABLE()]       |
-| [UNIQUE()]      | [WHILE()]       | [WORDPOS()]     | [WORDS()]       |
+| [KEEPTYPE()]    | [LAST()]        | [LCAT()]        | [LDELETE()]     |
+| [LEDIT()]       | [LINSERT()]     | [LISTDIFF()]    | [LISTINTER()]   |
+| [LISTSET()]     | [LISTUNION()]   | [LOCKFILTER()]  | [LREPLACE()]    |
+| [LREST()]       | [MAP()]         | [MATCH()]       | [MATCHALL()]    |
+| [MEMBER()]      | [MIX()]         | [MUNGE()]       | [NAMEGRAB()]    |
+| [NAMEGRABALL()] | [NSITER()]      | [RANDEXTRACT()] | [RANDWORD()]    |
+| [REMFLAGS()]    | [REMOVE()]      | [REMTYPE()]     | [REST()]        |
+| [REVWORDS()]    | [SETDIFF()]     | [SETINTER()]    | [SETSYMDIFF()]  |
+| [SETUNION()]    | [SHUFFLE()]     | [SOME()]        | [SORT()]        |
+| [SORTBY()]      | [SORTKEY()]     | [SPLICE()]      | [STEP()]        |
+| [STEPARGS()]    | [TABLE()]       | [TOTMEMBER()]   | [UNIQUE()]      |
+| [WHILE()]       | [WORDPOS()]     | [WORDS()]       | [WRAPCOLUMNS()] |
 
 ::: seealso
 - [LISTS]

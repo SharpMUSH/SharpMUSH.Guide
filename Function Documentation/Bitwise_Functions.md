@@ -6,7 +6,8 @@
 |              |              |              |              |
 |--------------|--------------|--------------|--------------|
 | [BAND()]     | [BASECONV()] | [BNAND()]    | [BNOT()]     |
-| [BOR()]      | [BXOR()]     | [PACK()]     | [SHL()]      |
-| [SHR()]      | [UNPACK()]   |              |              |
+| [BOR()]      | [BXOR()]     | [LBAND()]    | [LBOR()]     |
+| [LBXOR()]    | [MASK()]     | [PACK()]     | [SHL()]      |
+| [SHR()]      | [TOBIN()]    | [UNPACK()]   |              |
 
 
