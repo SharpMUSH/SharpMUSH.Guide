@@ -10,4 +10,5 @@ format reference is `examples/packages/README.md` in the SharpMUSH repository, w
 | [`starter-area/`](starter-area/) | Rooms and exits (`location:` / `destination:`) |
 | [`coast-guide/`](coast-guide/) | A content pack (format 1.4): wiki pages and nothing else, bodies in files and inline, a category pinned to the wiki home, a page that requires a permission the package declares |
 | [`bbs-lite/`](bbs-lite/) | Dependencies with source hints, typed configure params, cross-package refs, conflicts, locks, prerelease versions |
+| [`hello-ui/`](hello-ui/) | A plugin package (`kind: plugin`): the compiled plugin from `examples/plugins/hello-ui/` in the SharpMUSH repository, with each file's SHA-256 |
 
