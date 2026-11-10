@@ -348,6 +348,7 @@ Shape the data in one pass and let each stage consume the last, rather than re-a
 | A variadic layout from a computed list | the l-form: `ldatatable()`, `lflex()`, `ltree()`, `lnode()` take the items as one list, then a delimiter; `lfields()` takes the labels and values as two lists and one delimiter for both; a list of layouts or of player text needs a marked delimiter, such as `%*<^>`, which splits only where it is marked |
 | Names in columns / a list / a tree | `grid()` / `bullets()` / `tree()` + `node()` |
 | Side by side | `flex(<opts>, item(<content>, <width>), …)` |
+| Panes in a box, lines joined to its edges | `box(flex({{"join":true}}, item(<a>%r[rule()]%r<b>, <width>), <c>), <title>)`; see `help flex() panes` |
 | Bar / status tag | `gauge(<v>, <max>, <label>)` / `badge(<text>, ok\|warn\|error\|info\|muted)` |
 
 - **Leave the width empty.** Empty means the width of the connection that ran the command, and each telnet reader is re-sent it at their own; that is what makes `@remit` right for a whole room. `width(%#)` pins every reader to the enactor's width; a number pins everyone. No column arithmetic (`sub(width(%#),37)`): table columns size from their content.
