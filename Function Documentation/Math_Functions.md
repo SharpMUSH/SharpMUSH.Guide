@@ -9,14 +9,14 @@
 | [DIST2D()]     | [DIST3D()]     | [DISTRIBUTE()] | [E()]          |
 | [EXP()]        | [FBETWEEN()]   | [FDIV()]       | [FLOOR()]      |
 | [FMOD()]       | [FRACTION()]   | [LADD()]       | [LAVG()]       |
-| [LDIV()]       | [LMATH()]      | [LMAX()]       | [LMIN()]       |
-| [LMUL()]       | [LN()]         | [LOG()]        | [LRAND()]      |
-| [LSUB()]       | [MAX()]        | [MEAN()]       | [MEDIAN()]     |
-| [MIN()]        | [MUL()]        | [PI()]         | [POWER()]      |
-| [ROMAN()]      | [ROOT()]       | [ROUND()]      | [SIGN()]       |
-| [SIN()]        | [SINH()]       | [SQRT()]       | [STDDEV()]     |
-| [SUB()]        | [TAN()]        | [TANH()]       | [TRUNC()]      |
-| [VAL()]        |                |                |                |
+| [LDIV()]       | [LIMATH()]     | [LMATH()]      | [LMAX()]       |
+| [LMIN()]       | [LMUL()]       | [LN()]         | [LOG()]        |
+| [LRAND()]      | [LSUB()]       | [MAX()]        | [MEAN()]       |
+| [MEDIAN()]     | [MIN()]        | [MUL()]        | [PI()]         |
+| [POWER()]      | [ROMAN()]      | [ROOT()]       | [ROUND()]      |
+| [SIGN()]       | [SIN()]        | [SINH()]       | [SQRT()]       |
+| [STDDEV()]     | [SUB()]        | [TAN()]        | [TANH()]       |
+| [TRUNC()]      | [VAL()]        |                |                |
 
   These functions operate only on integers (if passed floating point numbers, they will return an error or misbehave):
 

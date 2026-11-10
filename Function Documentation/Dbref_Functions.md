@@ -10,10 +10,10 @@
 | [LTHINGS()]   | [LVCON()]     | [LVEXITS()]   | [LVPLAYERS()] |
 | [LVTHINGS()]  | [NAMELIST()]  | [NCON()]      | [NEXITS()]    |
 | [NEXT()]      | [NEXTDBREF()] | [NPLAYERS()]  | [NTHINGS()]   |
-| [NUM()]       | [OWNER()]     | [PARENT()]    | [PMATCH()]    |
-| [RLOC()]      | [RNUM()]      | [ROOM()]      | [WHERE()]     |
-| [XCON()]      | [XEXITS()]    | [XPLAYERS()]  | [XTHINGS()]   |
-| [ZFIND()]     | [ZONE()]      |               |               |
+| [NUM()]       | [OWNER()]     | [PARENT()]    | [PARENTS()]   |
+| [PFIND()]     | [PMATCH()]    | [RLOC()]      | [RNUM()]      |
+| [ROOM()]      | [WHERE()]     | [XCON()]      | [XEXITS()]    |
+| [XPLAYERS()]  | [XTHINGS()]   | [ZFIND()]     | [ZONE()]      |
 
 ::: seealso
 - [database]
