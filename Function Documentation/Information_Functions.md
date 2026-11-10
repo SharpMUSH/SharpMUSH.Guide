@@ -12,17 +12,19 @@
 | [GETPIDS()]      | [GLOBALROOM()]   | [HASATTR()]      | [HASATTRP()]     |
 | [HASFLAG()]      | [HASPOWER()]     | [HASROLE()]      | [HASRXLEVEL()]   |
 | [HASTXLEVEL()]   | [HASTYPE()]      | [INAME()]        | [ISAPPROVED()]   |
-| [ISTAG()]        | [LFLAGS()]       | [LISTRLEVELS()]  | [LISTTAGS()]     |
-| [LIVEWIRE()]     | [LLOCKFLAGS()]   | [LOCK()]         | [LOCKFLAGS()]    |
-| [LOCKOWNER()]    | [LOCKS()]        | [LPIDS()]        | [LSTATS()]       |
-| [MONEY()]        | [MONIKER()]      | [MOTD()]         | [MSECS()]        |
-| [MTIME()]        | [MUDNAME()]      | [MUDURL()]       | [NAME()]         |
-| [NATTR()]        | [NEARBY()]       | [OBJID()]        | [OBJMEM()]       |
-| [ORFLAGS()]      | [ORLFLAGS()]     | [ORLPOWERS()]    | [PERMISSION()]   |
-| [PIDINFO()]      | [PLAYERMEM()]    | [POLL()]         | [POWERS()]       |
-| [QUOTA()]        | [RESTARTS()]     | [ROLES()]        | [RXLEVEL()]      |
-| [TAGMATCH()]     | [TAGREF()]       | [TXLEVEL()]      | [TYPE()]         |
-| [VERSION()]      | [VISIBLE()]      | [WIZMOTD()]      |                  |
+| [ISTAG()]        | [LFLAGS()]       | [LISTCOMMANDS()] | [LISTFLAGS()]    |
+| [LISTRLEVELS()]  | [LISTTAGS()]     | [LIVEWIRE()]     | [LLOCKFLAGS()]   |
+| [LOCK()]         | [LOCKFLAGS()]    | [LOCKOWNER()]    | [LOCKS()]        |
+| [LPIDS()]        | [LSTATS()]       | [MONEY()]        | [MONIKER()]      |
+| [MOTD()]         | [MSECS()]        | [MTIME()]        | [MUDNAME()]      |
+| [MUDURL()]       | [NAME()]         | [NATTR()]        | [NEARBY()]       |
+| [OBJID()]        | [OBJMEM()]       | [ORFLAGS()]      | [ORLFLAGS()]     |
+| [ORLPOWERS()]    | [PERMISSION()]   | [PIDINFO()]      | [PLAYERMEM()]    |
+| [PLAYMEM()]      | [POLL()]         | [POWERS()]       | [QUOTA()]        |
+| [RESTARTS()]     | [ROLES()]        | [RXDESC()]       | [RXLEVEL()]      |
+| [SIZE()]         | [TAGMATCH()]     | [TAGREF()]       | [TXLEVEL()]      |
+| [TYPE()]         | [VATTRCNT()]     | [VERSION()]      | [VISIBLE()]      |
+| [WIZMOTD()]      |                  |                  |                  |
 
 ::: seealso
 - [Dbref functions]
