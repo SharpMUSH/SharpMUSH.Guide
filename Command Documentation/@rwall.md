@@ -1,7 +1,7 @@
 # @wall
 # @rwall
 # @wizwall
-`@wall[/emit][/noeval][/admin|/wizard] <message>`<br>
+`@wall[/emit][/noeval][/pose][/admin|/wizard] <message>`<br>
 `@rwall[/emit][/noeval] <message>`<br>
 `@wizwall[/emit][/noeval] <message>`
 
@@ -11,7 +11,7 @@
 
 The message is prefixed with the value of the wall_prefix, rwall_prefix or wizwall_prefix options, depending on the command used.
 
-TinyMUX's `@wall/admin` is @rwall, and `@wall/wizard` is @wizwall.
+TinyMUX's `@wall/admin` is @rwall, and `@wall/wizard` is @wizwall. `@wall/pose` puts your name before the message.
 
 
 ::: seealso
