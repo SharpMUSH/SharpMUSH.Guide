@@ -1,7 +1,8 @@
 # allof()
-`allof(<expr>[, ... , <exprN>], <osep>)`
+`allof(<expr>[, ... , <exprN>], <osep>)`<br>
+`allof(<expr>)`
 
-  Evaluates every `<expr>` argument (including side-effects) and returns the results of those which are true, in a list separated by `<osep>`. The output separator argument is required, and can be a string of any length (including an empty string; use %b for a space).
+  Evaluates every `<expr>` argument (including side-effects) and returns the results of those which are true, in a list separated by `<osep>`. The output separator can be a string of any length (including an empty string; use %b for a space). With one argument, as TinyMUX takes it, that argument is the only `<expr>`.
 
   The meaning of true or false depends on configuration options as explained in the 'BOOLEAN VALUES' help topics.
 ```sharp
