@@ -1,9 +1,15 @@
 # table()
-`table(<list>[, <field width>[, <line length>[, <delimiter>[, <osep>]]]])`
+`table(<list>[, <field width>[, <line length>[, <delimiter>[, <osep>[, <fill>]]]]])`
 
   This function returns the elements of `<list>` in a tabular format. All other parameters are optional. `<field width>` specifies how wide each table entry is allowed to be, and defaults to 10. If `<field width>` begins with a "`<", it is left-aligned. ">`" makes it right-aligned, and "-" makes it centered. Elements longer than `<field width>` are truncated to fit.
 
-  `<line length>` is how wide a table row can be, and defaults to 78. `<delimiter>` is the delimiter used in `<list>`, and defaults to a space. `<osep>` is a single character to be used between entries in the table, and also defaults to a space.
+  `<line length>` is how wide a table row can be, and defaults to 78. `<delimiter>` is the delimiter used in `<list>`, and defaults to a space. `<osep>` is a single character to be used between entries in the table, and also defaults to a space. `<fill>` pads each entry in place of spaces.
+
+```sharp
+think table(a b c,3,8,%b,|,.)
+a..|b..
+c..
+```
 
   Examples:
 ```sharp
