@@ -1,7 +1,7 @@
 # isjson()
-`isjson(<text>)`
+`isjson(<text>[, <type>])`
 
-  This function returns 1 if its argument is valid JSON, 0 if not.
+  This function returns 1 if its argument is valid JSON, 0 if not. With a `<type>` it also asks what the JSON is: `string`, `number`, `object`, `array`, `true`, `false`, `null` or `boolean`. Any other type returns `#-1 UNKNOWN JSON TYPE`.
 
   Examples:
 ```sharp

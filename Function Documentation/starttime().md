@@ -1,9 +1,11 @@
 # starttime()
 # restarttime()
+# restartsecs()
 `starttime()`<br>
-`restarttime()`
+`restarttime()`<br>
+`restartsecs()`
 
-  starttime() returns the time the MUSH was last started, and restarttime() returns the time it was last restarted, including @shutdown/reboots. The times are in the same format as time().
+  starttime() returns the time the MUSH was last started, and restarttime() returns the time it was last restarted, including @shutdown/reboots. The times are in the same format as time(). restartsecs() returns the restart time in seconds since 1970, as secs() does; it comes from TinyMUX.
 
   Example:
 ```sharp

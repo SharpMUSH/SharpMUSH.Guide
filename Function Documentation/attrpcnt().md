@@ -7,11 +7,12 @@
 `nattr(<object>[/<attribute pattern>])`<br>
 `nattrp(<object>[/<attribute pattern>])`<br>
 `regnattr(<object>[/<regexp>])`<br>
+`regnattr(<object>, <regexp>)`<br>
 `regnattrp(<object>[/<regexp>])`
 
   nattr() returns the number of attributes on `<object>` that you can see which match the given `<attribute pattern>`. It is considerably faster than words(lattr()) and doesn't suffer from buffer length constraints. It's designed primarily for statistical purposes. `<attribute pattern>` defaults to "*", which does not include branches in attribute trees; use "**" if you need to count attribute trees.
 
-  regnattr() matches attribute names against the regular expression `<regexp>`.
+  regnattr() matches attribute names against the regular expression `<regexp>`. TinyMUX's form gives `<regexp>` as a second argument, so it may hold a `/`.
 
   nattrp() and regnattrp() also count matching attributes on the parent.
 

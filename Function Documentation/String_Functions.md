@@ -16,10 +16,11 @@
 | [IF()]                   | [IFELSE()]               | [LCSTR()]                | [LEFT()]                 |
 | [LIT()]                  | [LJUST()]                | [LPAD()]                 | [LPOS()]                 |
 | [MERGE()]                | [MID()]                  | [ORD()]                  | [ORDINAL()]              |
-| [PARSESTR()]             | [POS()]                  | [PRINTF()]               | [REGEDIT()]              |
-| [REGMATCH()]             | [RENDER()]               | [RENDERMARKDOWN()]       | [RENDERMARKDOWNCUSTOM()] |
-| [REPEAT()]               | [RIGHT()]                | [RJUST()]                | [RPAD()]                 |
-| [SCRAMBLE()]             | [SECURE()]               | [SHA0()]                 | [SHA1()]                 |
+| [PARENMATCH()]           | [PARENSTR()]             | [PARSESTR()]             | [POS()]                  |
+| [PRINTF()]               | [RANDPOS()]              | [REGEDIT()]              | [REGMATCH()]             |
+| [RENDER()]               | [RENDERMARKDOWN()]       | [RENDERMARKDOWNCUSTOM()] | [REPEAT()]               |
+| [RIGHT()]                | [RJUST()]                | [RPAD()]                 | [SCRAMBLE()]             |
+| [SECURE()]               | [SETQMATCH()]            | [SHA0()]                 | [SHA1()]                 |
 | [SPACE()]                | [SPELLNUM()]             | [SQUISH()]               | [STANDIN()]              |
 | [STRALLOF()]             | [STRCAT()]               | [STRDELETE()]            | [STRDISTANCE()]          |
 | [STRFIRSTOF()]           | [STRINSERT()]            | [STRIP()]                | [STRIPACCENTS()]         |

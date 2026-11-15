@@ -10,17 +10,18 @@ These '@' commands are general utility and programming commands:
 | [@decompile] | [@doing]     | [@dolist]    | [@drain]     | [@edit]      |
 | [@emit]      | [@entrances] | [@eval]      | [@find]      | [@folder]    |
 | [@force]     | [@function]  | [@gedit]     | [@grep]      | [@halt]      |
-| [@if]        | [@include]   | [@input]     | [@job]       | [@lemit]     |
-| [@list]      | [@listmotd]  | [@locale]    | [@ltag]      | [@mail]      |
-| [@malias]    | [@map]       | [@message]   | [@notify]    | [@nsemit]    |
-| [@nslemit]   | [@nsoemit]   | [@nspemit]   | [@nsprompt]  | [@nsremit]   |
-| [@nszemit]   | [@oemit]     | [@password]  | [@pemit]     | [@pipe]      |
-| [@profile]   | [@prompt]    | [@ps]        | [@queue]     | [@remit]     |
-| [@restart]   | [@retry]     | [@roll]      | [@rollback]  | [@scan]      |
-| [@search]    | [@select]    | [@sockset]   | [@stats]     | [@sweep]     |
-| [@switch]    | [@teleport]  | [@theme]     | [@trigger]   | [@verb]      |
-| [@version]   | [@wait]      | [@warnings]  | [@wcheck]    | [@whereis]   |
-| [@wiki]      | [@zemit]     |              |              |              |
+| [@if]        | [@include]   | [@input]     | [@job]       | [@last]      |
+| [@lemit]     | [@list]      | [@listmotd]  | [@locale]    | [@ltag]      |
+| [@mail]      | [@malias]    | [@map]       | [@message]   | [@notify]    |
+| [@nsemit]    | [@nslemit]   | [@nsoemit]   | [@nspemit]   | [@nsprompt]  |
+| [@nsremit]   | [@nszemit]   | [@oemit]     | [@password]  | [@pemit]     |
+| [@pipe]      | [@profile]   | [@program]   | [@progreset] | [@prompt]    |
+| [@ps]        | [@queue]     | [@remit]     | [@restart]   | [@retry]     |
+| [@roll]      | [@rollback]  | [@scan]      | [@search]    | [@select]    |
+| [@sockset]   | [@stats]     | [@sweep]     | [@switch]    | [@teleport]  |
+| [@theme]     | [@toggle]    | [@trigger]   | [@verb]      | [@version]   |
+| [@wait]      | [@warnings]  | [@wcheck]    | [@whereis]   | [@wiki]      |
+| [@zemit]     |              |              |              |              |
 
 From plugins: [@discord]
 

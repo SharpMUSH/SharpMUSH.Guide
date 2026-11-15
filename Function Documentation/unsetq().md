@@ -5,7 +5,7 @@
 
   listq() returns a space-separated list of set q-registers with values available in the current q-register scope. If `<pattern>` is provided, then only those that match the wildcard pattern `<pattern>` will be returned.
 
-  unsetq() without arguments clears all registers. Otherwise, unsetq() treats its argument as a list of register name patterns, and will unset all those registers within the local scope.
+  unsetq() without arguments clears all registers. Otherwise, unsetq() treats its arguments as lists of register name patterns, and will unset all those registers within the local scope. TinyMUX names one register an argument: `unsetq(a,b)` clears a and b.
 
   If unsetq() is inside of a letq(), and does not have an argument, it will clear the registers that letq() has protected. unsetq() with arguments clears the specified registers.
 

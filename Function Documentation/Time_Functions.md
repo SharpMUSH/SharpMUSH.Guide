@@ -4,11 +4,12 @@
 |                 |                 |                 |                 |
 |-----------------|-----------------|-----------------|-----------------|
 | [CONVSECS()]    | [CONVTIME()]    | [CONVUTCSECS()] | [CONVUTCTIME()] |
-| [CTIME()]       | [DATEPARSE()]   | [ETIME()]       | [ETIMEFMT()]    |
-| [ISDAYLIGHT()]  | [MOON()]        | [MTIME()]       | [RESTARTTIME()] |
-| [SECS()]        | [STARTTIME()]   | [STRINGSECS()]  | [TIME()]        |
+| [CTIME()]       | [DATEPARSE()]   | [DIGITTIME()]   | [ETIME()]       |
+| [ETIMEFMT()]    | [EXPTIME()]     | [ISDAYLIGHT()]  | [MOON()]        |
+| [MTIME()]       | [RESTARTSECS()] | [RESTARTTIME()] | [SECS()]        |
+| [SINGLETIME()]  | [STARTTIME()]   | [STRINGSECS()]  | [TIME()]        |
 | [TIMECALC()]    | [TIMEFMT()]     | [TIMESTRING()]  | [UPTIME()]      |
-| [UTCTIME()]     |                 |                 |                 |
+| [UTCTIME()]     | [WRITETIME()]   |                 |                 |
 
 ::: seealso
 - [timezones]
