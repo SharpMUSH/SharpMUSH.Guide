@@ -11,6 +11,8 @@
 
   lwhoid() returns a list of objid's instead.
 
+  With the `mux_arguments` @config option on, as after a TinyMUX import, lwho() with one argument is TinyMUX's: a true argument lists each connection as `#<dbref>:<descriptor>` for a See_All player, and a false one lists what lwho() does.
+
 
 ::: seealso
 - [MWHO()]

@@ -14,13 +14,14 @@
 | [LISTSET()]     | [LISTUNION()]   | [LOCKFILTER()]  | [LREPLACE()]    |
 | [LREST()]       | [MAP()]         | [MATCH()]       | [MATCHALL()]    |
 | [MEMBER()]      | [MIX()]         | [MUNGE()]       | [NAMEGRAB()]    |
-| [NAMEGRABALL()] | [NSITER()]      | [RANDEXTRACT()] | [RANDWORD()]    |
-| [REMFLAGS()]    | [REMOVE()]      | [REMTYPE()]     | [REST()]        |
-| [REVWORDS()]    | [SETDIFF()]     | [SETINTER()]    | [SETSYMDIFF()]  |
-| [SETUNION()]    | [SHUFFLE()]     | [SOME()]        | [SORT()]        |
-| [SORTBY()]      | [SORTKEY()]     | [SPLICE()]      | [STEP()]        |
-| [STEPARGS()]    | [TABLE()]       | [TOTMEMBER()]   | [UNIQUE()]      |
-| [WHILE()]       | [WORDPOS()]     | [WORDS()]       | [WRAPCOLUMNS()] |
+| [NAMEGRABALL()] | [NSITER()]      | [NUMMEMBER()]   | [RANDEXTRACT()] |
+| [RANDWORD()]    | [REMFLAGS()]    | [REMOVE()]      | [REMTYPE()]     |
+| [REST()]        | [REVWORDS()]    | [SETDIFF()]     | [SETINTER()]    |
+| [SETSYMDIFF()]  | [SETUNION()]    | [SHUFFLE()]     | [SOME()]        |
+| [SORT()]        | [SORTBY()]      | [SORTKEY()]     | [SPLICE()]      |
+| [STEP()]        | [STEPARGS()]    | [TABLE()]       | [TOTMEMBER()]   |
+| [UNIQUE()]      | [WHILE()]       | [WORDPOS()]     | [WORDS()]       |
+| [WRAPCOLUMNS()] |                 |                 |                 |
 
 ::: seealso
 - [LISTS]
