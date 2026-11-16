@@ -96,7 +96,7 @@ Things to notice:
 - `FEED`WALKIE`FORMAT` on the owner decides how each listener sees a line. It gets `%0` the message, `%1` the listener, `%2` the speaker, `%3` the style, `%4` the feed key, `%5` the name the line was sent under (see `/as` below), and `%6` the line's id.
 - Recall uses the same formatter, so a recalled line looks like a live one. `feedrecall()` gives line ids, and `feedmsg()` reads each one.
 - `@feed` reports to the object running it, not to the player. Tell the player yourself, and check state with functions such as `feedmember()` and `feedinfo()`.
-- A plain `$`-command evaluates what the player typed when it runs (`+walkie alpha=[add(1,2)]` sends `3`). `+radio` avoids that by adding its command with `@command/add/noparse/rsnoparse` and an `@hook/override/inline`, so text reaches the code as typed.
+- A plain `$`-command evaluates what the player typed when it runs (`+walkie alpha=[add(1,2)]` sends `3`). `+radio` does the same: it adds its command with `@command/add` and an `@hook/override/inline`, so a message is evaluated as the player who sent it, as `say` is.
 
 ## Sending under another name
 
