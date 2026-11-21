@@ -33,5 +33,6 @@ Output: the number of your connections that took Room.Info. A Mudlet that listed
 
 ::: seealso
 - [json()]
+- [wsjson()]
 :::
 
