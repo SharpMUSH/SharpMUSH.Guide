@@ -5,6 +5,7 @@
 |------------------|------------------|------------------|------------------|
 | [WIKI()]         | [WIKICATEGORY()] | [WIKILIST()]     | [WIKIRECENT()]   |
 | [WIKISEARCH()]   | [WIKIACCESS()]   | [WIKIFACT()]     | [WIKIQUERY()]    |
+| [WIKIMEMBERS()]  | [WIKIMEMBER()]   |                  |                  |
 
 ::: seealso
 - [wiki]

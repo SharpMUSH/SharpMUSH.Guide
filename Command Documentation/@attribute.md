@@ -123,6 +123,23 @@ Output: after the last line your client is sent Char.Vitals {"hp":25,"maxhp":40}
 
 Both attributes run the same handler, so it reads both values again rather than using `%<new>`, and each message carries the whole gauge. It is sent to the player whose attribute changed, and oob() sends nothing to a connection that did not agree to GMCP. If the attribute is on a thing rather than a player, nobody is connected as it and nothing is sent.
 
+## Keys in the attribute table
+
+`@attribute/lock/read <attrib>[=<key>]`<br>
+`@attribute/lock/write <attrib>[=<key>]`
+
+These give the standard attribute `<attrib>` a read or a write key (see [attribute keys]). Whoever passes the read key may read the attribute on every object, and whoever passes the write key may set or create it, without controlling the object. Without `=` the command shows the key; an empty `<key>` takes it off.
+
+`<attrib>` must already be a standard attribute. `@attribute <attrib>` shows its keys to holders of `config.admin`, and `@attribute/decompile` writes the lines that set them again. Only those with the config.admin permission can change a key.
+
+Example:
+```sharp
+> @attribute/access XP=none
+> @attribute/lock/write XP=role^xpclerk
+> @attribute XP
+```
+Output: "XP - write key set.", then XP's entry, with the line "  Write key: ROLE^xpclerk".
+
 ## Attribute entries from packages
 
 A package can add standard attributes to the table itself, in the `attributes:` block of its manifest (format 1.5), instead of running `@attribute` from its install code. Each entry names the attribute and gives what `@attribute` would set: default `flags`, and a `limit` or an `enum` (with a `delimiter` when a choice holds a space).

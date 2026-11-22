@@ -12,10 +12,19 @@ think get(me/test)
 This is [a test].
 ```
 
+  `<object>` can be an account's `#acct:<key>`, which [account()] returns. Its characters and staff with `players.view` read it; see [accounts attribute permissions].
+
+    Example:
+```sharp
+think get(account(me, ref)/XP)
+10
+```
+
 
 ::: seealso
 - [HASATTR()]
 - [VISIBLE()]
+- [accounts attributes]
 - [u()]
 - [DEFAULT()]
 - [UDEFAULT()]

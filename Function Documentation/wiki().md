@@ -50,5 +50,6 @@ en
 - [WIKISEARCH()]
 - [WIKIRECENT()]
 - [WIKIACCESS()]
+- [WIKIMEMBERS()]
 :::
 
