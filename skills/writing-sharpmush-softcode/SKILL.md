@@ -96,7 +96,10 @@ PennMUSH works the same way: its `t()`, `if()`, `@break` and `@assert` all call 
 
 ## Substitutions
 
-`%0`–`%9` args · `%#` enactor dbref · `%:` enactor objid · `%!` executor · `%L` enactor's location · `%q<name>` named register (`setq`/`setr`; case-insensitive) · `%i0`/`itext(0)` current iteration element · `%b` space · `%r` newline.
+`%0`–`%9` args · `%#` enactor dbref · `%:` enactor objid · `%!` executor · `%L` enactor's location · `%q<name>` named register (`setq`/`setr`; case-insensitive) · `%<name>` named argument · `%i0`/`itext(0)` current iteration element · `%b` space · `%r` newline.
+
+- **Values the game hands you have names: read them.** Every event passes its arguments by name as well as by position (`` player`connect `` gives `%<objid>`, `%<connections>`, `%<descriptor>`; `help event list`); feed tie-ins and taps get `%<id>`, `%<speaker>`, `%<text>`, `%<recipient>` and the rest (`help @feed tie-ins`); an `/http` route gets `%<path>`, `%<body>`, `%<viewer>`, `%<headers>` and `%<hdr.<name>>`. The positions are there for PennMUSH code; `%<style>` says what it is, `%2` makes the reader look it up.
+- **Hand values to a helper by name, not in q-registers.** ``uargs(me/FN`ROW, name, %<name>, count, 3)`` for a function, ``@include/args me/INC`STEP=who, %q<who>, rank, %1`` for an include (each value also takes its numbered slot from `%0`; the caller's slots past those stay), `@trigger/args` for queued work; also `stepargs()`, and `@function/args` for a global function. A `setq()` lasts the whole queue entry, so a register set for a helper leaks into everything after it and a helper reading one picks up whatever the last caller left there. A value with commas in it arrives whole. Use `uargs()` over a `u()` of four or more positions, whose meaning the reader has to look up. Keep q-registers for what they are good at: state one command shares across its steps (its parsed parts), values a helper hands BACK to its caller, and caches.
 
 ## Registers and their scope
 
@@ -122,7 +125,7 @@ Every built-in command also sets registers for what it runs: always `ARGS` (its 
 
 - **Trees use backticks**: `` CMD`SETRANK ``, `` DATA`GUILD`<key> ``. `*`/`?` stop at a backtick; `**` crosses it.
 - **A tree path is just a name.** Backticks are part of the name, not separate syntax, so anywhere a name is accepted a path is: `get()`, `lattr()` patterns, `@attribute/access`, attribute locks — `` lsearch(all,type,player,elock,GROUP`IRONGUARD:*) `` finds every player holding that leaf, free.
-- Legal characters are limited (no `:`, so **an objid cannot be a key**). Validate player input before it becomes a name: `` @assert regmatch(setr(key,ucstr(%0)),^[A-Z0-9_-]+$) ``.
+- Legal characters are limited (no `:`, so **an objid cannot be a key**; no `/`, which ends the object in `<obj>/<attr>`, so `` POSE`BEFORE `` not `POSE/BEFORE`). Validate player input before it becomes a name: `` @assert regmatch(setr(key,ucstr(%0)),^[A-Z0-9_-]+$) ``.
 
 ---
 
@@ -243,15 +246,18 @@ Who may do what is the game's job, not a staff list in an attribute. Roles are n
 - **A job the game lacks is a custom permission**: `@permission/define chargen.approve=Staff/Approve new characters`, then `@role/allow <role>=chargen.approve`. Nobody holds it but #1 and `administrator` holders until something allows it, wizards included.
 - **Status is a role in a category**: `@role/category/create Status=<description>`, `@role/create approved=Status/Approved`. The category must exist first; role and permission categories are separate lists (`Staff` starts in both).
 - **Tagging from softcode**: a wizard global runs `@role/assign %q<who>=approved`. It acts as the **executor**, which needs `roles.admin` and must rank above the role and the target, so a wizard target is refused. The command reports to the global; confirm with `@assert hasrole(%q<who>,approved)=@pemit %#=<failure>`. Run the checks on `%#`: `permission(me, …)` asks about the global, a wizard holding nearly every built-in permission and no custom one.
+- **Approval is the built-in `approved` role**: `isapproved(<obj>)` reads it (staff count as approved, guests never), so test that rather than `hasrole(<obj>, approved)`. There is no APPROVED flag.
 - **Character, not account.** `@role/assign/account` and `@permission/allow/account` reach every character on the account: right for who the person is, wrong for approval or a guild.
 - **Which account a character is on**: `account(<player>)` is the account's id (empty when on none), `account(<player>, name)` its username (needs `players.view`), and `accountchars(<player>)` every character on it. A character may ask about its own account. The `` player`link `` and `` player`unlink `` events fire when a link changes, however it was made.
+- **Data about the person, not the character: account attributes.** `account(<player>, ref)` is `#acct:<key>`, which holds attributes as an object does: `` &XP account(%#, ref)=10 ``, `` get(account(*Ariel, ref)/XP) ``, `lattr()`, `@set`, `@decompile`. It runs no code (`u()`, `@trigger` and `$`-commands never reach it). `players.moderate` writes them; `players.view` and the account's own characters read them. `help accounts attributes`.
+- **Let a role read or write one attribute everywhere: attribute keys.** `@attribute/lock/write XP=role^xpclerk` (`config.admin`; the attribute must be in the table) lets xpclerk set XP on every object and account without controlling it; `/lock/read` the same for reading. The nearest key up the tree applies, a key only grants, attribute flags still apply, and a write key never clears or reflags. On an account an evaluation key (`CHECK/1`) never passes. `help attribute keys`.
 - **Find holders with a lock search**: `lsearch(all, type, player, elock, role^approved)`, from a privileged object (a mortal sees only what they can examine). Needs SharpMUSH#1619: before it, `elock` tested the searcher instead of each candidate, so lock searches (attribute keys included) matched everything or nothing.
 - **Whole commands**: `@lock/command <obj>=perm^<perm>` gates every `$`-command on the object; built-ins take `@command/restrict <cmd>=PERM^<perm>` and `@function/restrict <fn>=<perm>`.
 - **Role priority is not control.** Ranking higher gives no power over anyone; control is ownership, zones, locks, `control.all`/`protect.*`. Priority only orders who may manage roles, so never build an "outranks" check for game actions on it.
 - **A Deny role does not cancel another role's Allow.** Take a permission from one person with `@permission/deny`, from a group by removing it from their role.
 - **Typos fail closed.** An unknown role makes `hasrole()` `0`; an unknown permission makes `permission()` `#-1 NO SUCH PERMISSION`, which is false. Check names with `valid(permission, <name>)` / `valid(rolename, <name>)`; `@role/player <obj>` shows where each permission came from.
 
-A package declares the roles, permissions and categories it needs in `package.yaml` (format 1.2: `categories:`, `permissions:`, `roles:`) instead of creating them from `AINSTALL`; `help roles packages`. On `/http` routes, `%q<viewer>` is the portal visitor's character (empty when anonymous), so a route asks `permission(%q<viewer>, …)`.
+A package declares the roles, permissions and categories it needs in `package.yaml` (format 1.2: `categories:`, `permissions:`, `roles:`) instead of creating them from `AINSTALL`; `help roles packages`. On `/http` routes, `%<viewer>` is the portal visitor's character (empty when anonymous), so a route asks `permission(%<viewer>, …)`.
 
 
 ## Message streams: feeds
@@ -350,6 +356,7 @@ Shape the data in one pass and let each stage consume the last, rather than re-a
 | Side by side | `flex(<opts>, item(<content>, <width>), …)` |
 | Panes in a box, lines joined to its edges | `box(flex({{"join":true}}, item(<a>%r[rule()]%r<b>, <width>), <c>), <title>)`; see `help flex() panes` |
 | Bar / status tag | `gauge(<v>, <max>, <label>)` / `badge(<text>, ok\|warn\|error\|info\|muted)` |
+| A command's message to the player | `notice(<SOURCE>, <text>, ok\|warn\|error\|info)`: `[JOBS] Warning: There is no job 12.`; `warn` for a typing mistake, `error` only for permission refusals and real failures; one source name per package, in capitals |
 
 - **Leave the width empty.** Empty means the width of the connection that ran the command, and each telnet reader is re-sent it at their own; that is what makes `@remit` right for a whole room. `width(%#)` pins every reader to the enactor's width; a number pins everyone. No column arithmetic (`sub(width(%#),37)`): table columns size from their content.
 - **Options are one JSON object**: inline with doubled braces, `box(x,T,,{{"title":"left"}})`, or `json(object,…)` when a value is computed. A misspelled key errors (`#-1 UNKNOWN LAYOUT OPTION`). An inline `\n` is eaten by evaluation and silently becomes `n`; write `%r` instead (`{{"delim":"%r"}}`). An option error names the option (`#-1 LAYOUT OPTION GROW: INVALID ARGUMENT`), and broken JSON says what it expected and where.
@@ -367,7 +374,8 @@ Shape the data in one pass and let each stage consume the last, rather than re-a
 
 **Chat cards: a panel with command links.** A roll result with Apply, an invitation with Accept and Decline: `box()` and `fields()` draw the panel, `cmdlink(<text>, <command>, <hint>)` each button. Worked example: [Chat Cards](https://sharpmush.com/guides/chat-cards/).
 
-- `cmdlink()` needs a Wizard or `Send_OOB` on the object drawing the card (`@power <obj>=Send_OOB`), or every link is `#-1 PERMISSION DENIED`. A new thing is created `NO_COMMAND`: `@set <obj>=!no_command` before its `$`-commands match.
+- `cmdlink()` needs no power: anyone may make one, since a click only sends what the reader could type. A new thing is created `NO_COMMAND`: `@set <obj>=!no_command` before its `$`-commands match.
+- **Names in a pose as links**: `renderplayers(<obj>/<attr>, <text>[, <count>[, <players>[, <prefix>[, <options>]]]])` calls the attribute for each player name in the text (`%0` dbref, `%1` the name as written, `%2` the whole match) and keeps the text's markup: `` &LINK obj=cmdlink(%1,+finger %0) ``. Whole words, any case, full names and aliases; `<count>` 1 by default, 0 every time, -1 off. `help renderplayers()`.
 - **A click is the reader typing the command.** `%#` is whoever clicked, and anyone can type the same line, so sending the card to one player limits nothing. Every command behind a link checks `%#`: `` @assert strmatch(get(me/DATA`%0`TO),%:)=… `` for "only the player it was sent to", `permission(%#, <perm>)` for staff.
 - The link names an id (`+invite/accept 3`), never a name or player text. Check it (`isint(%0)`) before it becomes part of an attribute name, look the rest up, and remove or mark the record after acting, so a second click finds nothing.
 - Make the link text the command itself: a client that cannot click shows the text, and its reader can type it.
@@ -398,7 +406,7 @@ Verb routers (`&GET`, `&POST`, …) are pre-installed. URLs live under `/http/` 
 &GET`GUILDROSTER #8=@respond/type application/json; think json_array(iter(lattr(#300/DATA`*`NAME), json(string, get(#300/%i0))))
 ```
 
-- `%0` = raw request body; query params pre-decoded as `%q<form.name>`; headers as `%q<hdr.host>`.
+- `%0` = raw request body, also `%<body>`; `%<path>` the path and query; query params pre-decoded as `%q<form.name>`; headers as named arguments, `%<hdr.host>` etc. (`Authorization`, `Proxy-Authorization` and `Cookie` are withheld); the signed-in caller's objid as `%<viewer>` (empty when anonymous). They reach an `@include`d step, not a `u()` function or queued work: pass a helper the viewer as an argument.
 - Everything `think`/`@pemit`-ed during the run **is** the response body; queued work never reaches the client — write inline.
 - `@respond <code> <text>`, `@respond/type`, `@respond/header <name>=<value>`.
 - Build JSON with `json()`, `json_array()`, `json_group_by()`, `json_query()` — never hand-concatenate brackets.
@@ -495,6 +503,10 @@ Push and drop from the commands and events that change the state (`` OBJECT`MOVE
 | Making a player-owned tool wizard "so it can work" | Control rule 8 — an object controls its owner already |
 | Evaluating stored player text to interpret `%r` | Store literal; formatting comes from the player's own `@desc`. `decompose()` to round-trip |
 | Flagging the event handler wizard "so it can act" | Seeded `#9` already is; only custom handlers need it |
+| A positional `%0`–`%9` in an event, feed tie-in or route | Its name, such as `%<how>` in `` player`create ``, `%<speaker>` in a feed formatter, `%<body>` in a route |
+| `%q<viewer>`, `%q<hdr.host>` in an `/http` route | `%<viewer>`, `%<hdr.host>`: named arguments, not registers |
+| ``think setq(who,…); @include me/INC`STEP`` | ``@include/args me/INC`STEP=who,…``, read as `%<who>` |
+| ``u(me/FN`ROW,%0,%1,%2,%3,%4)`` | ``uargs(me/FN`ROW,name,…,rank,…)`` |
 | `setq(ls,…)`, `setq(args,…)` as your own registers | Every command sets `%q<args>`, `%q<ls>` and `%q<lsac>` for its own run, and `%q<rs>`, `%q<equals>`, `%q<switches>`, `%q<lsa1>`… when it has them, so a command between your `setq()` and its use overwrites yours. Pick other names; see "Registers and their scope" |
 | A `;` in message text inside a command list (`@pemit %#=Use 30m; or 2h`) | A bare `;` ends the command and runs the rest as another (`Huh?`); inside `[…]` it makes the whole list do nothing, silently. Write `%;` |
 | Member lists and history in attributes for a radio or text system | A feed kind: `help @feed` |
