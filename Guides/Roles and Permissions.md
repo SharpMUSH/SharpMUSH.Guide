@@ -113,4 +113,4 @@ Built-in commands and functions can be restricted to a permission without softco
 ## From packages and HTTP routes
 
 - A package declares the roles, permissions and categories it needs in `package.yaml` (format 1.2: `categories:`, `permissions:`, `roles:`) instead of creating them from install softcode. Install creates what the game lacks, and uninstall removes what nothing else relies on. See `help roles packages`.
-- On `/http` routes, `%q<viewer>` is the objid of the character the web session belongs to, or empty for an anonymous request, so a route can run `permission(%q<viewer>, ...)`. See `help http`.
+- On `/http` routes, `%<viewer>` is the objid of the character the web session belongs to, or empty for an anonymous request, so a route can run `permission(%<viewer>, ...)`. See `help http`.
