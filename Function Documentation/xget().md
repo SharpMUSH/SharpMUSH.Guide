@@ -16,7 +16,7 @@ This is [a test].
 
     Example:
 ```sharp
-think get(account(me, ref)/XP)
+think get(account(me)/XP)
 10
 ```
 

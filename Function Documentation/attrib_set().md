@@ -9,7 +9,7 @@
 
   Example:
 ```sharp
-think attrib_set(account(*Ariel, ref)/XP, 12)[get(account(*Ariel, ref)/XP)]
+think attrib_set(account(*Ariel)/XP, 12)[get(account(*Ariel)/XP)]
 12
 ```
 

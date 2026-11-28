@@ -8,8 +8,8 @@
 | [ETIMEFMT()]    | [EXPTIME()]     | [ISDAYLIGHT()]  | [MOON()]        |
 | [MTIME()]       | [RESTARTSECS()] | [RESTARTTIME()] | [SECS()]        |
 | [SINGLETIME()]  | [STARTTIME()]   | [STRINGSECS()]  | [TIME()]        |
-| [TIMECALC()]    | [TIMEFMT()]     | [TIMESTRING()]  | [UPTIME()]      |
-| [UTCTIME()]     | [WRITETIME()]   |                 |                 |
+| [TIMECALC()]    | [TIMEFMT()]     | [TIMESTRING()]  | [TIMEZONE()]    |
+| [UPTIME()]      | [UTCTIME()]     | [WRITETIME()]   |                 |
 
 ::: seealso
 - [timezones]
